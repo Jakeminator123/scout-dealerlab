@@ -113,7 +113,10 @@ test('source intervals and missing motion evidence survive the projection withou
   assert.equal(deal.sourceCandidates[0].binding?.endFrameExclusive, 360);
   assert.equal(deal.sourceCandidates[0].releaseFrame, null);
   assert.deepEqual(deal.layoutContext, { recipientId: 'P1', layoutHandId: 'H1', cardOrdinal: 1, engineHandId: null, cardInstanceId: null, shoeDraw: null });
-  assert.equal(review.objects['p1.c1.return-vila'].sourceCandidates[0].binding, null);
+  const c1Return = review.objects['p1.c1.return-vila'].sourceCandidates.find(c => c.motionId === 'return.P1.K1.direct');
+  assert.equal(c1Return?.binding?.startFrame, 0);
+  assert.equal(c1Return?.binding?.endFrameExclusive, 60);
+  assert.equal(review.objects['p1.c2.return-vila'].sourceCandidates[0].binding, null);
   assert.equal(review.objects['p1.c1.return-vila'].requirements.requiredReturnMode, 'direct');
   assert.equal(review.objects['p1.c1.return-vila'].observation.returnMode, 'UNKNOWN');
   assert.equal(review.objects['p1.c1.return-redo'].sourceCandidates.length, 0);

@@ -1,0 +1,2229 @@
+{
+  "schemaVersion": 1,
+  "project": "snyggare-dealer",
+  "dealerId": "pamela-pilot",
+  "createdAt": "2026-11-10T06:37:08.226Z",
+  "status": "metadata-reuse-candidates-not-variant-acceptance",
+  "productionAccepted": false,
+  "registry": {
+    "path": "references/pamela-two-sided-bank.json",
+    "sha256": "1efa08dbd03e64b804198fbfa3d312970c954ad569c61555203c30e8495079f1",
+    "verified": true
+  },
+  "bankEvidence": {
+    "path": "runs/20261110-pamela-mask-bank/take-01/evidence.json",
+    "sha256": "ed63d72517802affc241445070c3242c5440d0ab2122d6f55a36b22f372967dc",
+    "verified": true
+  },
+  "plan": {
+    "path": "runs/20261110-pamela-mask-bank/take-01/plan.json",
+    "sha256": "607dc697b6abcf505011ef339dee7559e1eb016897c2eebac1f9710613026c6d",
+    "verified": true
+  },
+  "bankReview": {
+    "path": "runs/20261110-pamela-mask-bank/take-01/native-review/evidence.json",
+    "sha256": "dbb6e70f9fb17cf2a405539117b05a70421a9df7ca4fd766afac9ad8fd703026",
+    "verified": true
+  },
+  "bankBrowserReview": {
+    "path": "runs/20261110-pamela-mask-bank/take-01/browser-review/evidence.json",
+    "sha256": "19516c46f12635e0eb7a791303f339e48ed12db5c7c693ce2d0ece100eed53b6",
+    "verified": true
+  },
+  "idleRegistry": {
+    "path": "references/pamela-idle-window-review.json",
+    "sha256": "c9d16084c42493ee214d6d205f5148d6e60d4fc5a4e02353cffb04c1d61800c4",
+    "verified": true
+  },
+  "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+  "entries": [
+    {
+      "id": "C1-P1",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/retakes/seat-1-symmetric-v2/original/pamela-seat-1-wan3-symmetric-v2.mp4",
+        "sha256": "8402ddfcaabf1356b25b28fc8e7e3ca59121260eee6b188b7bfed431b2af9307",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C1-P1.json",
+        "sha256": "f047f841b69f0c1901b9f093613dae9d1848d89b4185dad21d80917c4ad74ec3",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-edge-card-track/take-02/p1/evidence.json",
+        "sha256": "ad69cc9a91f68292213f4d23e0a7d0a8ec5912c582444deb117b388db5ac91e9",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-edge-card-track/take-04-probe/independent-review/review.json",
+        "sha256": "0602d59c2b705ca0ca13caf4f0cd3c6f84878ec2a17f1648855b91fdaff01f8d",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 1
+      },
+      "priorObservation": {
+        "classification": "NO_CLEAR_TURN",
+        "reason": "Broad paper persists through sampled extraction, travel and landing. Current source matches the earlier no-hidden-interval stop.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            222,
+            996
+          ],
+          [
+            209,
+            1057
+          ],
+          [
+            131,
+            1070
+          ],
+          [
+            147,
+            1008
+          ]
+        ],
+        "centerPx": {
+          "x": 177.25,
+          "y": 1032.75
+        },
+        "orientationDeg": -9.28,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-edge-card-track/take-02/p1/evidence.json",
+          "sha256": "ad69cc9a91f68292213f4d23e0a7d0a8ec5912c582444deb117b388db5ac91e9",
+          "verified": true
+        },
+        "evidencePointer": "records[359].quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C1-P1.png",
+          "sha256": "ba02ca5bb91c19d2c6945218dab08748a4db891e008e9319652a2a175a3afc96",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-edge-card-track/take-02/p1/coverage/frame-0359.png",
+            "sha256": "f44093c5a00ae246d3bc1889896a6e150b4bc76a06d0b1d6aad0def78a1a8e03",
+            "verified": true,
+            "type": "coverage"
+          },
+          {
+            "path": "runs/20261109-pamela-edge-card-track/take-02/p1/hand-guards/frame-0359.png",
+            "sha256": "69b65eeea7ef72cf4b3bb12e4e0c3cf9bb35259b79932e9e83c0752549b27912",
+            "verified": true,
+            "type": "hand-guards"
+          },
+          {
+            "path": "runs/20261109-pamela-edge-card-track/take-02/p1/reclassified/frame-0359.png",
+            "sha256": "69b65eeea7ef72cf4b3bb12e4e0c3cf9bb35259b79932e9e83c0752549b27912",
+            "verified": true,
+            "type": "reclassified"
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": null,
+        "uvRepresentation": "authored-cross-section-mesh-in-selection-evidence",
+        "staticSurface": null,
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C1-P1.mp4",
+          "sha256": "ef2eeb592db2a9e8bedeed398af0acc3027610e12e179f38a91e172420f75faf",
+          "verified": true
+        },
+        "patchEvidence": null
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance."
+      ]
+    },
+    {
+      "id": "C1-P2",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/batches/middle-end-card-v1/original/pamela-seat-2-wan3-end-card-v1.mp4",
+        "sha256": "dc9e35760fd708a6b7c004e3bc255e9c5e8207aa6ddd5bc274c0e3c62dd3f001",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C1-P2.json",
+        "sha256": "10b9e39b80b13efd9c16fdfb0e0d14e62d4b9755621701757119922b129b36f4",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p2-stable-integration/evidence.json",
+        "sha256": "5bf4c6c97f32b10097e74a53e2ecc4f6bd2c4b57db4e1886858a735771ac17a0",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p2-stable-integration/visual-review.json",
+        "sha256": "34e6fe2159ed582bfa2609b6a99fc9c72834b242c2d3d25b28b59c71770846c3",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 1
+      },
+      "priorObservation": {
+        "classification": "NO_CLEAR_TURN",
+        "reason": "Broad face throughout sampled travel; no narrow candidate in the full recorded quad timeline.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            494,
+            936
+          ],
+          [
+            489,
+            999
+          ],
+          [
+            412,
+            1011
+          ],
+          [
+            424,
+            950
+          ]
+        ],
+        "centerPx": {
+          "x": 454.75,
+          "y": 974
+        },
+        "orientationDeg": -10.03,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-middle-card-track/take-07/p2-stable-integration/evidence.json",
+          "sha256": "5bf4c6c97f32b10097e74a53e2ecc4f6bd2c4b57db4e1886858a735771ac17a0",
+          "verified": true
+        },
+        "evidencePointer": "frames[359].record.quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C1-P2.png",
+          "sha256": "fc2a145262eb4d871892b6ade47c00a1aa605a51a798468dda12e60c4d30f354",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p2-stable-integration/masks/frame-0359-coverage.png",
+            "sha256": "ac447e3b6d1b230a6d402fb3f1be82e4c0e25013fec55340d319d5b96a512c64",
+            "verified": true,
+            "type": "coverage"
+          },
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p2-stable-integration/masks/frame-0359-hand.png",
+            "sha256": "523368f03f49daaa86f0f58bb63e4546d13a63187fc7ba08a226977ad476b428",
+            "verified": true,
+            "type": "hand"
+          },
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p2-stable-integration/masks/frame-0359-shoe.png",
+            "sha256": "b23ee0d240c743abc19e4b9f00b2debc9406114bb668fd8568d50002c784b697",
+            "verified": true,
+            "type": "shoe"
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": {
+          "path": "runs/20261109-pamela-middle-card-track/take-07/p2-stable-integration/uv/frame-0359.f32le.gz",
+          "sha256": "17db8fe5f74fb3b364ea4b50e71d0759d7d5426de2b280ab417a15f447dc6f81",
+          "verified": true
+        },
+        "uvRepresentation": "stored-pixel-UV",
+        "staticSurface": null,
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C1-P2.mp4",
+          "sha256": "b0aeaf40081cfcf74ea0206e50bada658da63049f047900648821b99ca500c5f",
+          "verified": true
+        },
+        "patchEvidence": null
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance."
+      ]
+    },
+    {
+      "id": "C1-P3",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/batches/middle-end-card-v1/original/pamela-seat-3-wan3-end-card-v1.mp4",
+        "sha256": "312f8d9b612cf58cf7cf21a26c77b169bb930d00e3348ffe9fa1cdf0dc574eb9",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C1-P3.json",
+        "sha256": "5c3e096247209a63c48531936d88abc9c57d80dbd9e48e3fb021cc334c0914e1",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p3-stable-integration/evidence.json",
+        "sha256": "83d2e4764d05b0dd17b7b60e186c5e2ec1320b52ae4765097e5f62ef3f87f49e",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p3-stable-integration/visual-review.json",
+        "sha256": "12cd9df82215c260e4bc3aedc79f7b38bda70f730eb87fadd7a7310726696622",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 1
+      },
+      "priorObservation": {
+        "classification": "NO_CLEAR_TURN",
+        "reason": "All18 consecutive lead frames retain a wide bent wedge. The minimum at110 is not an edge-on passage.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            711,
+            986
+          ],
+          [
+            705,
+            1052
+          ],
+          [
+            629,
+            1057
+          ],
+          [
+            634,
+            992
+          ]
+        ],
+        "centerPx": {
+          "x": 669.75,
+          "y": 1021.75
+        },
+        "orientationDeg": -4.112,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-middle-card-track/take-07/p3-stable-integration/evidence.json",
+          "sha256": "83d2e4764d05b0dd17b7b60e186c5e2ec1320b52ae4765097e5f62ef3f87f49e",
+          "verified": true
+        },
+        "evidencePointer": "frames[359].record.quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C1-P3.png",
+          "sha256": "d2587910a3b96288674d227342d3f8c963c737269df22e8f871e9bdb67a5158b",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p3-stable-integration/masks/frame-0359-coverage.png",
+            "sha256": "218d8861bcd9a6fe8fe82864083ca9066300b5d5df575e1d53e195563003be85",
+            "verified": true,
+            "type": "coverage"
+          },
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p3-stable-integration/masks/frame-0359-hand.png",
+            "sha256": "523368f03f49daaa86f0f58bb63e4546d13a63187fc7ba08a226977ad476b428",
+            "verified": true,
+            "type": "hand"
+          },
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p3-stable-integration/masks/frame-0359-shoe.png",
+            "sha256": "b23ee0d240c743abc19e4b9f00b2debc9406114bb668fd8568d50002c784b697",
+            "verified": true,
+            "type": "shoe"
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": {
+          "path": "runs/20261109-pamela-middle-card-track/take-07/p3-stable-integration/uv/frame-0359.f32le.gz",
+          "sha256": "649860882b4ac7ced22f818c81683057a01682fafddb8547bd79ba16f3be5acb",
+          "verified": true
+        },
+        "uvRepresentation": "stored-pixel-UV",
+        "staticSurface": null,
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C1-P3.mp4",
+          "sha256": "70ffcf647267609c53026b2798d9125ba4cfc55aa11b5796fdc03c8de95996d1",
+          "verified": true
+        },
+        "patchEvidence": null
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance."
+      ]
+    },
+    {
+      "id": "C1-P4",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/batches/middle-end-card-v1/original/pamela-seat-4-wan3-end-card-v1.mp4",
+        "sha256": "4e252be2235ce42cec5de9d49b993d0ffed1c029de9890faea6686f46824f87c",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C1-P4.json",
+        "sha256": "b378ff02dc33c9c50e3311d2b6c5779faec9e17b66c26fcaa7e0cd77d690ccb9",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p4-stable-integration/evidence.json",
+        "sha256": "7cf6d4a8891a613646ed978e575810d0812158174cbc064aa639643b035c0015",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p4-stable-integration/visual-review.json",
+        "sha256": "45208894d5d114f898c86afaf8880cd6beba108d7b81dc859e95a20b1e189666",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 0
+      },
+      "priorObservation": {
+        "classification": "NO_CLEAR_TURN",
+        "reason": "26 consecutive extraction frames show bending and a substantial vertical strip, never a vanishing edge.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            843,
+            1010
+          ],
+          [
+            919,
+            1010
+          ],
+          [
+            919,
+            1079
+          ],
+          [
+            842,
+            1079
+          ]
+        ],
+        "centerPx": {
+          "x": 880.75,
+          "y": 1044.5
+        },
+        "orientationDeg": 0,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-middle-card-track/take-07/p4-stable-integration/evidence.json",
+          "sha256": "7cf6d4a8891a613646ed978e575810d0812158174cbc064aa639643b035c0015",
+          "verified": true
+        },
+        "evidencePointer": "frames[359].record.quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C1-P4.png",
+          "sha256": "3989695d77fa9da5bd6b7e536ae0ba47a27756ef02bb2ce973eccde22b2a8628",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p4-stable-integration/masks/frame-0359-coverage.png",
+            "sha256": "4ba79fca4f391c385cf4d8ff78367b61e6b76af35a774842e9843048323ace39",
+            "verified": true,
+            "type": "coverage"
+          },
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p4-stable-integration/masks/frame-0359-hand.png",
+            "sha256": "523368f03f49daaa86f0f58bb63e4546d13a63187fc7ba08a226977ad476b428",
+            "verified": true,
+            "type": "hand"
+          },
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p4-stable-integration/masks/frame-0359-shoe.png",
+            "sha256": "b23ee0d240c743abc19e4b9f00b2debc9406114bb668fd8568d50002c784b697",
+            "verified": true,
+            "type": "shoe"
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": {
+          "path": "runs/20261109-pamela-middle-card-track/take-07/p4-stable-integration/uv/frame-0359.f32le.gz",
+          "sha256": "94de6e4f78f359c2196af3b7453e01586a1d3e0f8008fa5ec3b7d71e5605eba8",
+          "verified": true
+        },
+        "uvRepresentation": "stored-pixel-UV",
+        "staticSurface": null,
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C1-P4.mp4",
+          "sha256": "acd04f6cf5e5562233a81ff669245d5a2a895935851cc60d9d2789c674499a3b",
+          "verified": true
+        },
+        "patchEvidence": null
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance."
+      ]
+    },
+    {
+      "id": "C1-P5",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/batches/middle-end-card-v1/original/pamela-seat-5-wan3-end-card-v1.mp4",
+        "sha256": "edd74e2620327c41080d0f1610e2865d0ddfc44bd2b9e7bf56f114a408e26acf",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C1-P5.json",
+        "sha256": "be3999a5267a3cc7a98078e15a43577df996fb722bff78ba1a24808ca9be10af",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p5-stable-integration/evidence.json",
+        "sha256": "3ea39a7a3988ae0b9afba0c584c40f5169e39a4998ca0aa2e306e2bbc2ab2ebd",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p5-stable-integration/visual-review.json",
+        "sha256": "7d52b928425d98e79318349ff4c989f44eda27881f22113ba533ca93d2ed4ae7",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 0
+      },
+      "priorObservation": {
+        "classification": "NO_CLEAR_TURN",
+        "reason": "Broad paper during extraction, lift and landing in current native overview.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            1050,
+            986
+          ],
+          [
+            1125,
+            990
+          ],
+          [
+            1133,
+            1057
+          ],
+          [
+            1056,
+            1053
+          ]
+        ],
+        "centerPx": {
+          "x": 1091,
+          "y": 1021.5
+        },
+        "orientationDeg": 3.013,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-middle-card-track/take-07/p5-stable-integration/evidence.json",
+          "sha256": "3ea39a7a3988ae0b9afba0c584c40f5169e39a4998ca0aa2e306e2bbc2ab2ebd",
+          "verified": true
+        },
+        "evidencePointer": "frames[359].record.quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C1-P5.png",
+          "sha256": "e6134a32702f6de6e290a9337c3580ead64a0580285b77b546830c12ed1f6f79",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p5-stable-integration/masks/frame-0359-coverage.png",
+            "sha256": "5d970b765991b886688266c93ea98b942133258a3e2b8a5f5f0a17bec5e9e914",
+            "verified": true,
+            "type": "coverage"
+          },
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p5-stable-integration/masks/frame-0359-hand.png",
+            "sha256": "523368f03f49daaa86f0f58bb63e4546d13a63187fc7ba08a226977ad476b428",
+            "verified": true,
+            "type": "hand"
+          },
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p5-stable-integration/masks/frame-0359-shoe.png",
+            "sha256": "b23ee0d240c743abc19e4b9f00b2debc9406114bb668fd8568d50002c784b697",
+            "verified": true,
+            "type": "shoe"
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": {
+          "path": "runs/20261109-pamela-middle-card-track/take-07/p5-stable-integration/uv/frame-0359.f32le.gz",
+          "sha256": "60e01f282ff51cabc053e5fb09cae321f5372c0615542c06fe9199302b83454f",
+          "verified": true
+        },
+        "uvRepresentation": "stored-pixel-UV",
+        "staticSurface": null,
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C1-P5.mp4",
+          "sha256": "9aca4ca347ee25c4913b185573dcb17c24a8d493c643ce3f5d5cd738444d4b9b",
+          "verified": true
+        },
+        "patchEvidence": null
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance."
+      ]
+    },
+    {
+      "id": "C1-P6",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/batches/middle-end-card-v1/original/pamela-seat-6-wan3-end-card-v1.mp4",
+        "sha256": "dee43b673dbd3014efdcdccd4b5dbea9a4256a1bc33bf760b554d1fbcfe633bb",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C1-P6.json",
+        "sha256": "94389251db0a6592696d90dcd926903e49da5a699648a7419de4cfc265727291",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p6-source99-integration/evidence.json",
+        "sha256": "3a4d4e0aa5a792085628a21801a2a4fd8ae06ec123d45c6736bb8ea42cd719ac",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p6-source99-integration/visual-review.json",
+        "sha256": "f157ad3d3d068ca69ec7d78f3e4fceca02315eeacd42759ce240a251b1d8c1ce",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 0
+      },
+      "priorObservation": {
+        "classification": "NO_CLEAR_TURN",
+        "reason": "The paper stays broad from shoe to table in the current overview and recorded geometry.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            1260,
+            936
+          ],
+          [
+            1335,
+            948
+          ],
+          [
+            1349,
+            1013
+          ],
+          [
+            1272,
+            999
+          ]
+        ],
+        "centerPx": {
+          "x": 1304,
+          "y": 974
+        },
+        "orientationDeg": 9.707,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-middle-card-track/take-07/p6-source99-integration/evidence.json",
+          "sha256": "3a4d4e0aa5a792085628a21801a2a4fd8ae06ec123d45c6736bb8ea42cd719ac",
+          "verified": true
+        },
+        "evidencePointer": "frames[359].record.quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C1-P6.png",
+          "sha256": "bb074975fb1f1b76f681aa71b6f26bcc04eff2a8e33f55653c93298635f2e06a",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p6-source99-integration/masks/frame-0359-coverage.png",
+            "sha256": "3c06415623dad11b0575c7eedd03b8e0cfac3ddc0a320dbfe6eb32b8d6aa373b",
+            "verified": true,
+            "type": "coverage"
+          },
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p6-source99-integration/masks/frame-0359-hand.png",
+            "sha256": "1157cb363a07a18e58b5d984aa0106e59a4349e78b5615598d418d9c5e93bb7e",
+            "verified": true,
+            "type": "hand"
+          },
+          {
+            "path": "runs/20261109-pamela-middle-card-track/take-07/p6-source99-integration/masks/frame-0359-shoe.png",
+            "sha256": "b23ee0d240c743abc19e4b9f00b2debc9406114bb668fd8568d50002c784b697",
+            "verified": true,
+            "type": "shoe"
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": {
+          "path": "runs/20261109-pamela-middle-card-track/take-07/p6-source99-integration/uv/frame-0359.f32le.gz",
+          "sha256": "d894c9c89391aed6e8a9255e2cf062f66c3027f9aeebe7dc140955bb3f4d0769",
+          "verified": true
+        },
+        "uvRepresentation": "stored-pixel-UV",
+        "staticSurface": null,
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C1-P6.mp4",
+          "sha256": "649278fa57d66f46de0413ae071971ddae92b3f0c5d0952314ef54d247f51dde",
+          "verified": true
+        },
+        "patchEvidence": null
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance."
+      ]
+    },
+    {
+      "id": "C1-P7",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/retakes/seat-7-end-card-v3/original/pamela-seat-7-wan3-end-card-v3.mp4",
+        "sha256": "b37dbc6cafa99378786eff51ac1e8cb69c3bb01824b2107d390ddd7032a4620e",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C1-P7.json",
+        "sha256": "27798ebf2398702da73e43db12546d3aba44d1cc8f708dceafe7217020c8e06b",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-edge-card-track/take-03/p7/evidence.json",
+        "sha256": "3fdcd73b06165ae4069365fdf10de718b7b3b9f05e4c9c8be4402a351143b116",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-edge-card-track/take-03/independent-review/review.json",
+        "sha256": "3c910b181b358eae7a98ebe92dc8d04da9bbeff8d06041a86c57ea72fc8e4eec",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 0
+      },
+      "priorObservation": {
+        "classification": "NO_CLEAR_TURN",
+        "reason": "All22 consecutive frames retain a clear white triangle, including95. Current source matches the previous stop.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            1537,
+            994
+          ],
+          [
+            1614,
+            1007
+          ],
+          [
+            1633,
+            1070
+          ],
+          [
+            1549,
+            1061
+          ]
+        ],
+        "centerPx": {
+          "x": 1583.25,
+          "y": 1033
+        },
+        "orientationDeg": 7.781,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-edge-card-track/take-03/p7/evidence.json",
+          "sha256": "3fdcd73b06165ae4069365fdf10de718b7b3b9f05e4c9c8be4402a351143b116",
+          "verified": true
+        },
+        "evidencePointer": "records[359].quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C1-P7.png",
+          "sha256": "d10b24549aacccb5615e036faaac6c3ad3ccb0a8675497daf382ee5a9d4be33b",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-edge-card-track/take-03/p7/coverage/frame-0359.png",
+            "sha256": "55ae6059113c9f93a80b4a5229d7d5577a776b5dd6d60424e53894aecb0706f5",
+            "verified": true,
+            "type": "coverage"
+          },
+          {
+            "path": "runs/20261109-pamela-edge-card-track/take-03/p7/hand-guards/frame-0359.png",
+            "sha256": "69b65eeea7ef72cf4b3bb12e4e0c3cf9bb35259b79932e9e83c0752549b27912",
+            "verified": true,
+            "type": "hand-guards"
+          },
+          {
+            "path": "runs/20261109-pamela-edge-card-track/take-03/p7/reclassified/frame-0359.png",
+            "sha256": "69b65eeea7ef72cf4b3bb12e4e0c3cf9bb35259b79932e9e83c0752549b27912",
+            "verified": true,
+            "type": "reclassified"
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": null,
+        "uvRepresentation": "authored-cross-section-mesh-in-selection-evidence",
+        "staticSurface": null,
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C1-P7.mp4",
+          "sha256": "60bb759a2d2d6c71063c9cbe49ca57ab47f04f92b1dbd7856827296cc5fadfe8",
+          "verified": true
+        },
+        "patchEvidence": {
+          "path": "runs/20261110-pamela-bank-mask-integration/take-03/evidence.json",
+          "sha256": "31bbe80ab77120897512dc90a733d9616b935f679e276df287978cddc4ab2487",
+          "verified": true
+        }
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance.",
+        "C1-P7/C2-P6 mask corrections are bound separately; original f359/landed layers were retained by the selected bank."
+      ]
+    },
+    {
+      "id": "C2-P1",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/c2/bank-v2-stage-1/original/pamela-seat-1-wan3-c2-bank-v2.mp4",
+        "sha256": "98ff074a7815cf5ecb2e58a85748e9da79b8acd04a9a97048222ddb104bb6813",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C2-P1.json",
+        "sha256": "b6655cbd24a5d750b8dce46238ed4d14204fa89be3553d19a087073ae7b5fd7c",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-1/draft-02/track.json",
+        "sha256": "cc9a001383f96eeacbd18ce62a77949b1efdd52ecf5a9892503a03e1a2d0bd17",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-1/draft-02-independent-review/review.json",
+        "sha256": "e0701b15414249506c45bb4fd2b1ea5a28a6f7e697d37ab69e11968aac7bed7c",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 83,
+            "side": "FRONT"
+          },
+          {
+            "start": 83,
+            "end": 104,
+            "side": "EDGE"
+          },
+          {
+            "start": 104,
+            "end": 114,
+            "side": "BACK"
+          },
+          {
+            "start": 114,
+            "end": 119,
+            "side": "EDGE"
+          },
+          {
+            "start": 119,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261110-pamela-p1-side-calibration/take-01/evidence.json",
+          "sha256": "ed81117d47658916925ea9832e17e72d9720c6a08532ef0a928fb5b95207d6c9",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 0
+      },
+      "priorObservation": {
+        "classification": "UNCERTAIN",
+        "reason": "Long narrow hand-to-hand transfer followed by a second closing/reopening passage. A single BACK→FRONT event is not determined by this blank source.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            178,
+            998
+          ],
+          [
+            253,
+            986
+          ],
+          [
+            241,
+            1046
+          ],
+          [
+            163,
+            1058
+          ]
+        ],
+        "centerPx": {
+          "x": 208.75,
+          "y": 1022
+        },
+        "orientationDeg": -8.915,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-1/draft-02/track.json",
+          "sha256": "cc9a001383f96eeacbd18ce62a77949b1efdd52ecf5a9892503a03e1a2d0bd17",
+          "verified": true
+        },
+        "evidencePointer": "frames[359].quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C2-P1.png",
+          "sha256": "0adc8f315ad96960df12a87a03ecc711b32f456ce121ca140b6689bbd3c8b9e7",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-1/draft-02/masks/frame-0359.png",
+            "sha256": "c8718a60eadcf8655a560543db710e7a215e0d600e84800d998d9fb69b56a710",
+            "verified": true
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": null,
+        "uvRepresentation": "authored-quad-in-selection-evidence",
+        "staticSurface": {
+          "sampleFrame": 350,
+          "evidence": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/surfaces.json",
+            "sha256": "2a385af1c707539dd85315ee2f02d85a5b44012b51709900442470f608b4e4ff",
+            "verified": true
+          },
+          "visibleSurface": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-1/C2-visible-surface.rgba.png",
+            "sha256": "3a5877b079ec7c8230d95ab607d2bfcc9dd3d59349f64210158c857554641886",
+            "verified": true
+          },
+          "coverage": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-1/C2-visible-coverage.png",
+            "sha256": "02fad7360b11d59790cc509251c54cba3c87047396abe77529acc2633cf08f17",
+            "verified": true
+          },
+          "uv": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-1/C2-uv.f32",
+            "sha256": "cb33cefe771aaabbbea476172142e91bac686c67c8f4e5121733629e110a1e5e",
+            "verified": true
+          }
+        },
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C2-P1.mp4",
+          "sha256": "eeca95ebaffd8bdc8d63a2171d46f9a388b845375538f3947a1190380d862e80",
+          "verified": true
+        },
+        "patchEvidence": null
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance.",
+        "Cirka 1–2 pixlars blandkant och konservativt otryckt greppyta i källruta 115–118. Begränsat integrationsprov; fysisk kortsida är UNKNOWN."
+      ]
+    },
+    {
+      "id": "C2-P2",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/c2/bank-v2-stage-2/original/pamela-seat-2-wan3-c2-bank-v2.mp4",
+        "sha256": "ba257d6f88f95536521fe3170f5c5517f53bb447ced7de908cea94683795d77c",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C2-P2.json",
+        "sha256": "3c4cd8c50902fe767ffcd34d811a1ce742e2af05fa2629ef9f6ef8afb50e1dce",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-2/draft-02/track.json",
+        "sha256": "78b42df54c83c0189a70e0924d1ab35e28b54c654c2a7146161d5cb9a91e90e0",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-2/draft-02/review.json",
+        "sha256": "245c15a2fa3225e12115622fc0458450aec11af9dca4595d2b05a8f63c87b9f8",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 79,
+            "side": "BACK"
+          },
+          {
+            "start": 79,
+            "end": 89,
+            "side": "EDGE"
+          },
+          {
+            "start": 89,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-p2-card-calibration/take-05/evidence.json",
+          "sha256": "94ebd4c1c31015a82dca9c81d371b72172aeabbd867c3da105cd5e8b2dbca183",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 0
+      },
+      "priorObservation": {
+        "classification": "OBSERVED_TURN_PASSAGE",
+        "reason": "Clear narrowing to a continuous edge followed by reopening under one grip. Frozen moving-paper mask follows the edge at85.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            456,
+            937
+          ],
+          [
+            527,
+            929
+          ],
+          [
+            515,
+            990
+          ],
+          [
+            441,
+            1000
+          ]
+        ],
+        "centerPx": {
+          "x": 484.75,
+          "y": 964
+        },
+        "orientationDeg": -7.076,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-2/draft-02/track.json",
+          "sha256": "78b42df54c83c0189a70e0924d1ab35e28b54c654c2a7146161d5cb9a91e90e0",
+          "verified": true
+        },
+        "evidencePointer": "frames[359].quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C2-P2.png",
+          "sha256": "32967178ebb917482f89c0001d38a2bd3b5a12df6404f09c0bf8a7d2f170f69b",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-2/draft-02/masks/frame-0359.png",
+            "sha256": "c163b03a8b8091315e86f9e52e337f857e963ca02ecf6a8c0647b9bfd087e22a",
+            "verified": true
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": null,
+        "uvRepresentation": "authored-quad-in-selection-evidence",
+        "staticSurface": {
+          "sampleFrame": 350,
+          "evidence": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/surfaces.json",
+            "sha256": "2a385af1c707539dd85315ee2f02d85a5b44012b51709900442470f608b4e4ff",
+            "verified": true
+          },
+          "visibleSurface": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-2/C2-visible-surface.rgba.png",
+            "sha256": "c4acfb04b7599c8799f50233a64810b5067235190e15e4c538b8f1861e43dcd9",
+            "verified": true
+          },
+          "coverage": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-2/C2-visible-coverage.png",
+            "sha256": "a68c185b12c7160030055d62e08345b3a11bdf0bd6ea2e9ea1a2b9743e1f427a",
+            "verified": true
+          },
+          "uv": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-2/C2-uv.f32",
+            "sha256": "65df518555c3c43740f06a0da4391dbd157e69ab03bb70529b2f7f46e74dc82c",
+            "verified": true
+          }
+        },
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C2-P2.mp4",
+          "sha256": "f39c8696b69ade03d65b58290ab61faa2c44be98461b9e96e2918bd50ee2a1ea",
+          "verified": true
+        },
+        "patchEvidence": null
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance."
+      ]
+    },
+    {
+      "id": "C2-P3",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/c2/bank-v2-stage-2/original/pamela-seat-3-wan3-c2-bank-v2.mp4",
+        "sha256": "bce1003fedde8573cfd85470367a16e439d40c230e3f526c5a51a105d151794b",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C2-P3.json",
+        "sha256": "2c22f742f01e1a5a7fa07e94e4afd3912e302cd7859c66adde9c0226443de414",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-3/draft-01/track.json",
+        "sha256": "19d20efd01824a8032662caaf575a196247472bbc8dff7451f9aa2895ca73692",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-3/draft-01/review.json",
+        "sha256": "bc34506d24df61c7391d241231a6c564210e436b86d83a3c7672f075b1e23fed",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 52,
+            "side": "BACK"
+          },
+          {
+            "start": 52,
+            "end": 67,
+            "side": "EDGE"
+          },
+          {
+            "start": 67,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-p3-card-calibration/take-02/evidence.json",
+          "sha256": "a701be22b859a8bcf28323169ff9ecd646f3e0ce2c2c0f1584c68162c11d1453",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 0
+      },
+      "priorObservation": {
+        "classification": "OBSERVED_TURN_PASSAGE",
+        "reason": "Continuous thin passage and subsequent opening are visible in consecutive native frames. Existing quad at54 is broad despite the optically narrow source.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            664,
+            980
+          ],
+          [
+            735,
+            977
+          ],
+          [
+            732,
+            1040
+          ],
+          [
+            656,
+            1044
+          ]
+        ],
+        "centerPx": {
+          "x": 696.75,
+          "y": 1010.25
+        },
+        "orientationDeg": -2.726,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-3/draft-01/track.json",
+          "sha256": "19d20efd01824a8032662caaf575a196247472bbc8dff7451f9aa2895ca73692",
+          "verified": true
+        },
+        "evidencePointer": "frames[359].quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C2-P3.png",
+          "sha256": "b9c82898820d03e4b9ed8d038ef686d6eec83fbfb73613922bedf11c64e2d437",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-3/draft-01/masks/frame-0359.png",
+            "sha256": "113bd2bfc121dd229d5b1b61bbb4f669f0d6954d1b0f90a38ae786921be53db4",
+            "verified": true
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": null,
+        "uvRepresentation": "authored-quad-in-selection-evidence",
+        "staticSurface": {
+          "sampleFrame": 350,
+          "evidence": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/surfaces.json",
+            "sha256": "2a385af1c707539dd85315ee2f02d85a5b44012b51709900442470f608b4e4ff",
+            "verified": true
+          },
+          "visibleSurface": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-3/C2-visible-surface.rgba.png",
+            "sha256": "c1f41aa7ab258a8c2c51b5908cea9f7c62441556b94639a2c6d3e8073d2b4351",
+            "verified": true
+          },
+          "coverage": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-3/C2-visible-coverage.png",
+            "sha256": "384de3d9a05004d09d9218ea06f4a65c3c1dad1747becab00b34b58815f6bfb4",
+            "verified": true
+          },
+          "uv": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-3/C2-uv.f32",
+            "sha256": "4630dea1049220d8a7ebc0bed1ebae65624114be9d5c57a69c8e107b2cdf2435",
+            "verified": true
+          }
+        },
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C2-P3.mp4",
+          "sha256": "7755041cdd8f836b9a6a30b7ae184fef1c6af85568025d1a2fcda896f957cf3a",
+          "verified": true
+        },
+        "patchEvidence": null
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance."
+      ]
+    },
+    {
+      "id": "C2-P4",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/c2/bank-v2-stage-2/original/pamela-seat-4-wan3-c2-bank-v2.mp4",
+        "sha256": "67319ed86cde67cc7a7566553d451a89f8aac11384a55f8f8b460d1403d30167",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C2-P4.json",
+        "sha256": "ad450b282801d9f255a85158ab194baef18c4b3251a73572dec345360b172d9f",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-4/draft-03/track.json",
+        "sha256": "5f7bdf302f9a1cc602c0addac3a691888af019fefede75d671fe59ccff1bb4d8",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-4/draft-03/review.json",
+        "sha256": "19321babe318833089da1a47ab7fdd0037af8ebdb952949b31ab7392e8a119ac",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 98,
+            "side": "BACK"
+          },
+          {
+            "start": 98,
+            "end": 99,
+            "side": "EDGE"
+          },
+          {
+            "start": 99,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-card-atlas/take-03/evidence.json",
+          "sha256": "d96a3094c39cc94e096847ea989ebe4edc85d1412304f6189e78a8584a86dddf",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 0
+      },
+      "priorObservation": null,
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            868,
+            1000
+          ],
+          [
+            945,
+            1000
+          ],
+          [
+            945,
+            1068
+          ],
+          [
+            868,
+            1068
+          ]
+        ],
+        "centerPx": {
+          "x": 906.5,
+          "y": 1034
+        },
+        "orientationDeg": 0,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-4/draft-03/track.json",
+          "sha256": "5f7bdf302f9a1cc602c0addac3a691888af019fefede75d671fe59ccff1bb4d8",
+          "verified": true
+        },
+        "evidencePointer": "frames[359].quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C2-P4.png",
+          "sha256": "76b4ccba56a052fbefa3872ef629a804b2e2b31e89f8d2216dc4c9b394ad7f65",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-4/draft-03/masks/frame-0359.png",
+            "sha256": "3cb8f4e366b5264602c50df038a588e6c58f2912a33e01e9339edcaea059a2d4",
+            "verified": true
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": null,
+        "uvRepresentation": "authored-quad-in-selection-evidence",
+        "staticSurface": {
+          "sampleFrame": 350,
+          "evidence": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/surfaces.json",
+            "sha256": "2a385af1c707539dd85315ee2f02d85a5b44012b51709900442470f608b4e4ff",
+            "verified": true
+          },
+          "visibleSurface": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-4/C2-visible-surface.rgba.png",
+            "sha256": "fdd448eae582a5dc6c9db4e86ade97679f69d8ac443b44dcef9562281d7bf81b",
+            "verified": true
+          },
+          "coverage": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-4/C2-visible-coverage.png",
+            "sha256": "65e6210adc4dce073c2b209ecba0c34a9be11bba06d73857173deb77ead27d7f",
+            "verified": true
+          },
+          "uv": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-4/C2-uv.f32",
+            "sha256": "67eb3f75a242e2466f7ca9a58014028ed4462576ad4b0fb30d3fdc39dc089850",
+            "verified": true
+          }
+        },
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C2-P4.mp4",
+          "sha256": "8abd1223edec6ba838dc6aa0df37cba4aa32a46a8b2809a78d1a5daed93bf225",
+          "verified": true
+        },
+        "patchEvidence": null
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance."
+      ]
+    },
+    {
+      "id": "C2-P5",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/c2/bank-v2-stage-2/original/pamela-seat-5-wan3-c2-bank-v2.mp4",
+        "sha256": "9a73beb62ccaa93325c7f3d0a65feb3c767ad873d1d3678f9ad494e53a8b0a58",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C2-P5.json",
+        "sha256": "6de9a82dd384fb6b0acfb83067d2b0cd12362e409990162a0774c535857a68e9",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-5/draft-01/track.json",
+        "sha256": "a3d3962c461bd7e651143058410d07394025dd05ec376626056db94b69622220",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-5/draft-01/review.json",
+        "sha256": "8b8068e7773ceffb1cdd6bfa1bf2596918f26217641f7463c7f0361c6a5a2cb1",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 88,
+            "side": "BACK"
+          },
+          {
+            "start": 88,
+            "end": 94,
+            "side": "EDGE"
+          },
+          {
+            "start": 94,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-p5-card-calibration/take-03/evidence.json",
+          "sha256": "8f0a5481336aea24047a5f5a790e7b5fe957a853ba5970fdebef5a1a2c4be64e",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 0
+      },
+      "priorObservation": {
+        "classification": "OBSERVED_TURN_PASSAGE",
+        "reason": "Compact face→thin edge→opening sequence. Thin paper overlaps the finger region and nearly disappears through green reflection.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            1073,
+            976
+          ],
+          [
+            1147,
+            981
+          ],
+          [
+            1155,
+            1044
+          ],
+          [
+            1080,
+            1039
+          ]
+        ],
+        "centerPx": {
+          "x": 1113.75,
+          "y": 1010
+        },
+        "orientationDeg": 3.84,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-5/draft-01/track.json",
+          "sha256": "a3d3962c461bd7e651143058410d07394025dd05ec376626056db94b69622220",
+          "verified": true
+        },
+        "evidencePointer": "frames[359].quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C2-P5.png",
+          "sha256": "a4d12c7ccf5325b3d74453fb571916830a80940125e4837fa3991996c1c6c33b",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-5/draft-01/masks/frame-0359.png",
+            "sha256": "e3bf491784c48bb24574f65c645080ba15ec96538e4c93187eaca76bd52f5158",
+            "verified": true
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": null,
+        "uvRepresentation": "authored-quad-in-selection-evidence",
+        "staticSurface": {
+          "sampleFrame": 350,
+          "evidence": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/surfaces.json",
+            "sha256": "2a385af1c707539dd85315ee2f02d85a5b44012b51709900442470f608b4e4ff",
+            "verified": true
+          },
+          "visibleSurface": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-5/C2-visible-surface.rgba.png",
+            "sha256": "a489cf0f643b01b88c0c4bf5df4035851ea753618ce929ddc2acaafecb17eebb",
+            "verified": true
+          },
+          "coverage": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-5/C2-visible-coverage.png",
+            "sha256": "cf260a561ab7d6bed132f481d6bb23f3b43d0f9c53b6e49542b210985d9470b9",
+            "verified": true
+          },
+          "uv": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-5/C2-uv.f32",
+            "sha256": "8a49aaee1ac14c74809ee3a3fcdbc889e1ed71b25e04f8e7d3c4d5a6079f6d86",
+            "verified": true
+          }
+        },
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C2-P5.mp4",
+          "sha256": "850ffb972281deebbbc8ff63ad281270481aa4ba0010db63a017913f508530cc",
+          "verified": true
+        },
+        "patchEvidence": null
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance."
+      ]
+    },
+    {
+      "id": "C2-P6",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/c2/bank-v2-stage-2/original/pamela-seat-6-wan3-c2-bank-v2.mp4",
+        "sha256": "daf180780c20f398f123c30e966c1ab03e1698556ffd5dbfd2221da35f0538f5",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C2-P6.json",
+        "sha256": "df21657a082be868a022ca1167b4ce86a1d92f4349171169bc2d8a51a682997c",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-6/draft-02/track.json",
+        "sha256": "4f2ceef57d52ea5ffb3619377617e48639183204d443929ad069ceba6f4eab19",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-6/draft-02/review.json",
+        "sha256": "6a4174844341ad1ce7216f01eea443e0454d892bc7bb0faeb0828d271bac22f2",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 0
+      },
+      "priorObservation": {
+        "classification": "NO_CLEAR_TURN",
+        "reason": "Broad face remains visible through the minimum near115 and subsequent placement.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            1281,
+            928
+          ],
+          [
+            1353,
+            938
+          ],
+          [
+            1370,
+            1000
+          ],
+          [
+            1295,
+            989
+          ]
+        ],
+        "centerPx": {
+          "x": 1324.75,
+          "y": 963.75
+        },
+        "orientationDeg": 8.13,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-6/draft-02/track.json",
+          "sha256": "4f2ceef57d52ea5ffb3619377617e48639183204d443929ad069ceba6f4eab19",
+          "verified": true
+        },
+        "evidencePointer": "frames[359].quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C2-P6.png",
+          "sha256": "2f0a51c860a2b54a73336f34838cc1b574044099184e84c9fb6391c0c0035749",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-6/draft-02/masks/frame-0359.png",
+            "sha256": "71ec401bdd6e45ed57f041b5009e822c9f168ccf88033f1242d4d59759323877",
+            "verified": true
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": null,
+        "uvRepresentation": "authored-quad-in-selection-evidence",
+        "staticSurface": {
+          "sampleFrame": 350,
+          "evidence": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/surfaces.json",
+            "sha256": "2a385af1c707539dd85315ee2f02d85a5b44012b51709900442470f608b4e4ff",
+            "verified": true
+          },
+          "visibleSurface": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-6/C2-visible-surface.rgba.png",
+            "sha256": "a3b4f5dae6774f08c66f40207bcba33102d93af13e8d76772f21d95f5d4c4a7c",
+            "verified": true
+          },
+          "coverage": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-6/C2-visible-coverage.png",
+            "sha256": "2c96ba3a3824ab94fcb82958382dc4e6154a231d9e7b82d1310a104b07407b2a",
+            "verified": true
+          },
+          "uv": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-6/C2-uv.f32",
+            "sha256": "7007a1c9fe501414f5cb027da11a3bb7424b73cbe5e4804019a2d584ed9f6970",
+            "verified": true
+          }
+        },
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C2-P6.mp4",
+          "sha256": "9116172f93bb4d40fd78a0a65cc03357a66a8e25052855f6ea8cf3967e963cee",
+          "verified": true
+        },
+        "patchEvidence": {
+          "path": "runs/20261110-pamela-bank-mask-integration/take-03/evidence.json",
+          "sha256": "31bbe80ab77120897512dc90a733d9616b935f679e276df287978cddc4ab2487",
+          "verified": true
+        }
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance.",
+        "C1-P7/C2-P6 mask corrections are bound separately; original f359/landed layers were retained by the selected bank."
+      ]
+    },
+    {
+      "id": "C2-P7",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-seat-bank/c2/bank-v2-stage-1/original/pamela-seat-7-wan3-c2-bank-v2.mp4",
+        "sha256": "d1ecb53516f3b5a4c7fd173a5129775845dbdfca4c35f495e0ac6d2378dd5dbf",
+        "verified": true,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frames": 360
+      },
+      "evidence": {
+        "path": "runs/20261110-pamela-mask-bank/take-01/C2-P7.json",
+        "sha256": "352658802e9335143f4435737c0c59fd0b45ecb905ee256880ef84d5cb77304d",
+        "verified": true
+      },
+      "selectionEvidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-7/draft-02/track.json",
+        "sha256": "76037f72ab544a57a608e4d961a2b06114656c3d8be499c8048a6650cc4f2050",
+        "verified": true
+      },
+      "selectionReview": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-7/draft-02/review.json",
+        "sha256": "78ceac5bab9f7886a8e472b1d0a15dd674d39ea28f2f826b3842d56b3c9dc1dc",
+        "verified": true
+      },
+      "physicalSide": "UNKNOWN",
+      "authoredSidePolicy": {
+        "physicalSide": "UNKNOWN",
+        "segments": [
+          {
+            "start": 0,
+            "end": 360,
+            "side": "FRONT"
+          }
+        ],
+        "basis": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        },
+        "canonicalUvQuarterTurns": 0
+      },
+      "priorObservation": {
+        "classification": "NO_CLEAR_TURN",
+        "reason": "Broad face remains visible through extraction and placement. No narrow interval found in the inspected source/geometry.",
+        "evidence": {
+          "path": "runs/20261109-pamela-side-bank-survey/review.json",
+          "sha256": "ffb63873fb30e5a75ac44e309bf5f960a8af42d9cf9b225c8f5ccc05cf8ac6f0",
+          "verified": true
+        }
+      },
+      "geometry": {
+        "sourceFrame": 359,
+        "sampleKind": "final-frame-sample",
+        "sampleLabel": "Slutprov f359",
+        "quad": [
+          [
+            1557,
+            986
+          ],
+          [
+            1633,
+            998
+          ],
+          [
+            1651,
+            1057
+          ],
+          [
+            1570,
+            1045
+          ]
+        ],
+        "centerPx": {
+          "x": 1602.75,
+          "y": 1021.5
+        },
+        "orientationDeg": 8.691,
+        "coordinateSpace": "source-pixels-x-right-y-down",
+        "method": "Arithmetic mean of four source-pixel quad vertices; orientation is atan2(dy,dx) of the mean of the longer opposing projected edge pair, normalized to point right (or down when vertical). Degrees clockwise from source-image +X, in [-90,90]. This is an authored contour/track estimate at the final sample, not measured physical yaw or a release angle.",
+        "releaseFrame": null,
+        "releaseAngleDeg": null,
+        "evidence": {
+          "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-7/draft-02/track.json",
+          "sha256": "76037f72ab544a57a608e4d961a2b06114656c3d8be499c8048a6650cc4f2050",
+          "verified": true
+        },
+        "evidencePointer": "frames[359].quad",
+        "physical3dYawDeg": null
+      },
+      "assets": {
+        "landedLayer": {
+          "path": "runs/20261110-pamela-two-sided-bank/take-02/layers/C2-P7.png",
+          "sha256": "5f82a1dfce75a51f6a5ca794097c8983c6eda515b7f366e420ad4baedd7f067e",
+          "verified": true
+        },
+        "masks": [
+          {
+            "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-7/draft-02/masks/frame-0359.png",
+            "sha256": "c05440be1802c1112bb5c42eac18ab5cabcc887d132ec2c6f7c9460b946413f0",
+            "verified": true
+          }
+        ],
+        "maskSampleFrame": 359,
+        "maskScope": "Existing selected track sample; patchEvidence separately binds C1-P7/C2-P6 corrections. This is not new all-frame mask QA.",
+        "uv": null,
+        "uvRepresentation": "authored-quad-in-selection-evidence",
+        "staticSurface": {
+          "sampleFrame": 350,
+          "evidence": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/surfaces.json",
+            "sha256": "2a385af1c707539dd85315ee2f02d85a5b44012b51709900442470f608b4e4ff",
+            "verified": true
+          },
+          "visibleSurface": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-7/C2-visible-surface.rgba.png",
+            "sha256": "58fe2ad137c2c4c2d90c10630cf799ef710e636630456e879e82ffa680b3e76a",
+            "verified": true
+          },
+          "coverage": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-7/C2-visible-coverage.png",
+            "sha256": "26bd4b4271ee539a9a4d530c1ba2abc24de1e78c1b8c6743c8f2dd3066f0585f",
+            "verified": true
+          },
+          "uv": {
+            "path": "runs/20261109-pamela-c2-card-surfaces/take-01/seat-7/C2-uv.f32",
+            "sha256": "f7994bd8d0598d1e2ba447780845db97505418ccab03a1240c75995ed72a98e5",
+            "verified": true
+          }
+        },
+        "selectedMovie": {
+          "path": "runs/20261110-pamela-mask-bank/take-01/render/C2-P7.mp4",
+          "sha256": "3226332afaef703d315138df2fd7ac2e0ddd89d29342a27486b1ab0199210d63",
+          "verified": true
+        },
+        "patchEvidence": null
+      },
+      "limitations": [
+        "Metadata inventory only: no new raw-video, pixel or continuous visual QA.",
+        "Blank source prop: FRONT/BACK is an authored display policy, not observed semantic side identity.",
+        "Quad, center and angle are source-bound authored track estimates at f359; f359 is not claimed to be the release frame.",
+        "Reuse candidate does not imply accepted gameplay variant, approved turn, safe retiming, new camera view or production acceptance."
+      ]
+    }
+  ],
+  "idleCandidates": [
+    {
+      "id": "VILA-zero",
+      "title": "VILA utan blinkning",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-idle-anchor-pilot/run-01/original/pamela-01-wan3.mp4",
+        "sha256": "5cc9b0cd7604262a4859140f08bfdb36c96cf51828d7b0caa0cf5fa02248633c",
+        "verified": true
+      },
+      "evidence": {
+        "path": "runs/20261109-pamela-idle-window-probe/take-01/evidence.json",
+        "sha256": "a809ce887a4bf1661a2db601cfede8600d76c049065e5e618216c60dce3414c0",
+        "verified": true
+      },
+      "review": {
+        "path": "runs/20261109-pamela-idle-window-probe/take-01/root-review.json",
+        "sha256": "43b6ff495951700a7ab74055fb1620fdbfd2bcb1cc86cf2142bae52fe5dfe31b",
+        "verified": true
+      },
+      "movie": {
+        "path": "runs/20261109-pamela-idle-window-probe/take-01/render/zero-three-turns.mp4",
+        "sha256": "56591c8c754badc6bb1766bf6dfe796a3f85235147123fecf4ae61954fc41ff9",
+        "verified": true
+      },
+      "sourceStart": 289,
+      "sourceEndExclusive": 327,
+      "windowFrames": 38,
+      "fps": 30,
+      "blinksPerCycle": 0,
+      "geometry": null,
+      "limitation": "Existing B-to-B idle window candidate only; no accepted A/REDO connection, runtime or production acceptance."
+    },
+    {
+      "id": "VILA-one",
+      "title": "VILA med en blinkning",
+      "candidateReuse": true,
+      "approvedVariant": false,
+      "productionAccepted": false,
+      "source": {
+        "path": "runs/20261109-pamela-idle-anchor-pilot/run-01/original/pamela-01-wan3.mp4",
+        "sha256": "5cc9b0cd7604262a4859140f08bfdb36c96cf51828d7b0caa0cf5fa02248633c",
+        "verified": true
+      },
+      "evidence": {
+        "path": "runs/20261109-pamela-idle-window-probe/take-01/evidence.json",
+        "sha256": "a809ce887a4bf1661a2db601cfede8600d76c049065e5e618216c60dce3414c0",
+        "verified": true
+      },
+      "review": {
+        "path": "runs/20261109-pamela-idle-window-probe/take-01/root-review.json",
+        "sha256": "43b6ff495951700a7ab74055fb1620fdbfd2bcb1cc86cf2142bae52fe5dfe31b",
+        "verified": true
+      },
+      "movie": {
+        "path": "runs/20261109-pamela-idle-window-probe/take-01/render/one-three-turns.mp4",
+        "sha256": "4fa5205e114cdb3b381cb115b86c4aae844a5da8cfe55ce1e62a3bad32ed9926",
+        "verified": true
+      },
+      "sourceStart": 252,
+      "sourceEndExclusive": 317,
+      "windowFrames": 65,
+      "fps": 30,
+      "blinksPerCycle": 1,
+      "geometry": null,
+      "limitation": "Existing B-to-B idle window candidate only; no accepted A/REDO connection, runtime or production acceptance."
+    }
+  ],
+  "summary": {
+    "cardCandidates": 14,
+    "idleCandidates": 2,
+    "sourceBoundFinalQuads": 14,
+    "knownPhysicalSides": 0,
+    "knownReleaseAngles": 0,
+    "approvedVariants": 0,
+    "storedFinalSamplePixelUvMaps": 5,
+    "staticC2SurfaceUvMaps": 7,
+    "verifiedUniqueFiles": 157,
+    "hashFailures": 0
+  },
+  "limitations": [
+    "Blank original semantic side UNKNOWN; display schedules are authored",
+    "C1 and C2 P6/P7 show a continuous broad face; no invented turn",
+    "P1 two passages are a limited optical candidate with a protected grip and mixed edge at115–118",
+    "Old outer idle/ready seams retained; new bridge is not accepted",
+    "No production engine, GPU or interchangeable shoe claim for this bank",
+    "Full round uses one design; the second design is independently checked in the preflight",
+    "Preliminary dealer matte and hard source pose seams remain",
+    "Compact display is re-encoded after whole-frame trimming",
+    "Numeric checks are not continuous perceptual acceptance",
+    "Two corrected full clips replace C1-P7/C2-P6; twelve original full clips, twelve original trims, all outer clips and landed layers are reused with hashes.",
+    "Per-frame exact source/paper/core guarantees derive from frozen base and patch records. Decoded movie equality is checked separately and does not imply optical acceptance.",
+    "Only two trim exports are re-encoded; no new source rendering is performed here. Continuous native/full-round acceptance remains a separate review."
+  ]
+}

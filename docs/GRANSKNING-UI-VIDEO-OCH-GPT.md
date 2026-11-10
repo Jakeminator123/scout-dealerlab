@@ -1,6 +1,6 @@
 # Granskning: UI/UX, klippstandarder och GPT-underlag
 
-Dokumentversion 5 · 2026-11-10. Detta är den stabila ingången. Sakfynd redigeras i rätt ämnesfil när evidens eller beslut ändras; ingen ny rapport eller omläsning krävs per chatt. Baslinjer och högst två föregångare bevaras. Historiska original är oförändrade.
+Dokumentversion 7 · 2026-11-10. Detta är den stabila ingången. Sakfynd redigeras i rätt ämnesfil när evidens eller beslut ändras; ingen ny rapport eller omläsning krävs per chatt. Baslinjer och högst två föregångare bevaras. Historiska original är oförändrade.
 
 | Behöver du… | Läs |
 |---|---|
@@ -8,6 +8,10 @@ Dokumentversion 5 · 2026-11-10. Detta är den stabila ingången. Sakfynd redige
 | Använda gemensamma kortnamn, hand/sida och rörelsesträngar | [Namn och rörelsesträngar](studio/NAMN-OCH-RORELSESTRANGAR.md) |
 | Bedöma eller skapa Keystone/ankare | [Keystone](granskning/KEYSTONE.md) |
 | Förstå studion, GPT-mappen och dokumentkartan | [Studiokartan](studio/KARTA.md) |
+
+Den aktuella visuella nodkartan på `/nodkarta` använder samma V2-kontrakt och DL1-etiketter. Återbruksinventeringen i `references/pamela-reuse-review.json` skiljer källbundna bildkoordinater/lager från fysisk sidobservation och godkänd variant.
+
+Aktuellt läge, nästa demonstrationsfilm och kvarstående grindar finns i [masterplanen](MASTERPLAN.md). Äldre försöksbeskrivningar är samlade i [historiken](MASTERPLAN-HISTORIK-20261110.md).
 
 ## Slutsats och arbetsordning
 
@@ -20,6 +24,6 @@ Följ GPT-underlagets huvudlinje: **behåll main och den kalibrerade 2,5D-kedjan
 
 ## Verifieringsgräns och nästa arbete
 
-Main: `d86a6b47c85f4b1341e4ffe2a7a49f08800bc544`. Bevarat Kevin-underlag: `61612e8f4d9d6ca66b9d57b90a47fc76f7c4cb65`, kompletterat med de historiska revisionerna som anges i [Keystone](granskning/KEYSTONE.md). Källpaketet och referensrepot har inte ändrats.
+Scout-revisioner är historiskt verifierade läsreferenser och ska kontrolleras på nytt inför integration; inga nya Scout-ändringar ingår. Nya Browser-GPT-underlag är hashbevarade i `references/browser-gpt-r03-sources.json`.
 
-Kvar: originalankare/metodik, Blankurius jobb och publicerade policy, verkliga filmhashar till scheman, kalibrerad komposition, hela rörelseskarvar och godkänd genereringspilot. Dessa är öppna sakfrågor, inte pågående bakgrundsjobb. En begärd lokal preview får stå kvar; `STOPP.cmd` i projektroten stänger den.
+Kvar: korrekt C2-kedja, resterande grundgivningar/dealerkort, idle-varianter, slutliga släppankare, utbytbara lager och helfilms-QA. Huvudagenten avslutar nu inför överlämning. `STOPP.cmd` stänger den verifierade lokala previewn.

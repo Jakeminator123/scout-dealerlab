@@ -5,9 +5,10 @@
   "sourceBranch": "jakob/test",
   "sourceIsWorkingTreeSnapshot": true,
   "reviewSnapshot": "review-hub-20261110053953764",
+  "pendingReviewSnapshot": "review-hub-20261110063919131",
   "reviewUrl": "https://scout-dealerlab.vercel.app/granskning.html",
   "deploymentId": "dpl_DJvUUMHjf1Dk41Ki7k1Y34mVCPgo",
-  "sourceTreeSha256": "9cd87f29c9eae7e232f68e9c3d0fa70a9073397a8a1b3b2e990eac3952dd7b0a",
+  "sourceTreeSha256": "3f7e897d9ad41b9c518b0167b9957f06b5bda4c562a2a908798a8d9d9828ee4c",
   "files": [
     {
       "path": ".env.example",
@@ -181,8 +182,8 @@
     },
     {
       "path": "docs/GRANSKNING-UI-VIDEO-OCH-GPT.md",
-      "sha256": "88c34973412e3b066f6c158011029b4ae5057ce46f06a43a653176d57ebcc248",
-      "bytes": 2140
+      "sha256": "cf31360ea10caa3b80b2d96dc15a8291819ac8f6dd37a1d90df908a253054ec0",
+      "bytes": 2475
     },
     {
       "path": "docs/KALLKARTA.md",
@@ -190,9 +191,14 @@
       "bytes": 231
     },
     {
+      "path": "docs/MASTERPLAN-HISTORIK-20261110.md",
+      "sha256": "f7e160be55357a590d6b4f4403d635d2238a41c282b2f8643672129df09cd2f3",
+      "bytes": 79356
+    },
+    {
       "path": "docs/MASTERPLAN.md",
-      "sha256": "ab0e2f346b07300c4ebd3f29ad758d7a86fe4ee6491a366edf6a10cccff6a0b0",
-      "bytes": 78986
+      "sha256": "4a738cf19939f1c02c7d573736f132cb711fd332198b0a81d954dae500609405",
+      "bytes": 8753
     },
     {
       "path": "docs/drift/ARBETSSATT.md",
@@ -323,6 +329,11 @@
       "path": "references/blob-storage.json",
       "sha256": "299283864baa3dcaa33cf9245c9a3c2591327e589d0ae7b8e4f38a721c2b3b1a",
       "bytes": 432
+    },
+    {
+      "path": "references/browser-gpt-r03-sources.json",
+      "sha256": "382ec43e378204d8b6305c4289b8d58c63d0a0e22f841d9afca980c1943600b8",
+      "bytes": 1351
     },
     {
       "path": "references/card-materials/new-front2/card-geometry.ts",
@@ -481,8 +492,8 @@
     },
     {
       "path": "references/pamela-motion-labels-review.json",
-      "sha256": "bb6c3ed8a5406616b030c0f378c32edf07a540619f34e2157c00bbb4e96aa083",
-      "bytes": 301376
+      "sha256": "3398e10f2903c04ff4aefa33c23ff82ae2d366fee63c949063037bfafe949747",
+      "bytes": 309286
     },
     {
       "path": "references/pamela-physical-deal-review.json",
@@ -503,6 +514,11 @@
       "path": "references/pamela-rest-ready-review.json",
       "sha256": "5730464671f0f5cc6f50f21976911589609bf77e7a26ed5d821af0d0704af317",
       "bytes": 1125
+    },
+    {
+      "path": "references/pamela-reuse-review.json",
+      "sha256": "b02d4df6ce3876e84e14006a6c827b5d18da85394ad2b8beea15f352daba48a0",
+      "bytes": 90687
     },
     {
       "path": "references/pamela-sequence.json",
@@ -716,8 +732,8 @@
     },
     {
       "path": "scripts/build-review-hub.ts",
-      "sha256": "7d896c1ecbba70c3a93e26fa912f3c989ad3474e4c2613a5be0d57383223b884",
-      "bytes": 39402
+      "sha256": "0aa5a1f7ec1026d196ba0f7f2d18cb3177e58e78ff0f37874ad13c270a32788e",
+      "bytes": 41458
     },
     {
       "path": "scripts/bundle-card-material.ts",
@@ -953,6 +969,21 @@
       "path": "src/dealer-motion-contract.ts",
       "sha256": "ff39d55e16fb5f91e4ed3ecefdceb1d32edb48040adf1e02b8406942d6c25463",
       "bytes": 30131
+    },
+    {
+      "path": "src/dealer-node-review-client.ts",
+      "sha256": "5f4db98245ee76b7afa8752677c7227c587372188b6f156243909b80264dcd23",
+      "bytes": 33145
+    },
+    {
+      "path": "src/dealer-node-review-page.ts",
+      "sha256": "0d0a879608f2513ca720d89b6b08d704a3c60ef109a1dd815f589667a85cb027",
+      "bytes": 12961
+    },
+    {
+      "path": "src/dealer-node-review.ts",
+      "sha256": "b11556115e4f8d9614c9c5e5922b8df89afbc1354ba9adfc2da1a36e4193f5cc",
+      "bytes": 20575
     },
     {
       "path": "src/dealer-relations.ts",
@@ -1641,8 +1672,13 @@
     },
     {
       "path": "test/dealer-motion-labels.test.ts",
-      "sha256": "53508f419cbe08c0ecff08003698e60a78587b1b4300fa5ff122f14942f1986a",
-      "bytes": 8540
+      "sha256": "5171b71fd4e8fd3c4bb41a4f6519abde7aff80d47591683b6f004b1356884900",
+      "bytes": 8769
+    },
+    {
+      "path": "test/dealer-node-review.test.ts",
+      "sha256": "6da55f65c354d1a6aae3f415ecf91207f4a9406afa03df13ebf20d14f2dcd8f0",
+      "bytes": 7249
     },
     {
       "path": "test/dealer-video-job.test.ts",

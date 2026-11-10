@@ -7,12 +7,12 @@
     "dealerId": "pamela-pilot",
     "bankId": "pamela-workspace-v1",
     "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-    "sourceRevision": "candidate-20261110-v2-r1"
+    "sourceRevision": "candidate-20261110-v2-r2"
   },
   "provenance": {
     "contract": {
       "path": "references/pamela-motion-contract-v2.json",
-      "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+      "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
     },
     "norm": {
       "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -39,7 +39,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P1.K1",
       "canonicalId": "P1.C1",
       "aliasVersion": 1
@@ -49,7 +49,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P1.K2",
       "canonicalId": "P1.C2",
       "aliasVersion": 1
@@ -59,7 +59,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P2.K1",
       "canonicalId": "P2.C1",
       "aliasVersion": 1
@@ -69,7 +69,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P2.K2",
       "canonicalId": "P2.C2",
       "aliasVersion": 1
@@ -79,7 +79,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P3.K1",
       "canonicalId": "P3.C1",
       "aliasVersion": 1
@@ -89,7 +89,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P3.K2",
       "canonicalId": "P3.C2",
       "aliasVersion": 1
@@ -99,7 +99,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P4.K1",
       "canonicalId": "P4.C1",
       "aliasVersion": 1
@@ -109,7 +109,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P4.K2",
       "canonicalId": "P4.C2",
       "aliasVersion": 1
@@ -119,7 +119,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P5.K1",
       "canonicalId": "P5.C1",
       "aliasVersion": 1
@@ -129,7 +129,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P5.K2",
       "canonicalId": "P5.C2",
       "aliasVersion": 1
@@ -139,7 +139,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P6.K1",
       "canonicalId": "P6.C1",
       "aliasVersion": 1
@@ -149,7 +149,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P6.K2",
       "canonicalId": "P6.C2",
       "aliasVersion": 1
@@ -159,7 +159,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P7.K1",
       "canonicalId": "P7.C1",
       "aliasVersion": 1
@@ -169,7 +169,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "P7.K2",
       "canonicalId": "P7.C2",
       "aliasVersion": 1
@@ -179,7 +179,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "D.K1",
       "canonicalId": "D.C1",
       "aliasVersion": 1
@@ -189,7 +189,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "D.K2",
       "canonicalId": "D.C2",
       "aliasVersion": 1
@@ -199,7 +199,7 @@
       "dealerId": "pamela-pilot",
       "bankId": "pamela-workspace-v1",
       "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0#cardPlacements",
-      "sourceRevision": "candidate-20261110-v2-r1",
+      "sourceRevision": "candidate-20261110-v2-r2",
       "originalId": "D.K3",
       "canonicalId": "D.C3",
       "aliasVersion": 1
@@ -212,7 +212,7 @@
         "id": "p1.c1.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p1.c1.deal",
-        "sha256": "f426b0a9da64effda0b020ff623a5d6f672c3fbb41da83b556c7c8f2f1f35db7",
+        "sha256": "c06dd2f833fa4848adf6d03f527b4af1635f6f98e93f002560ac835da66a19be",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -222,7 +222,7 @@
         "id": "p1.c1.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p1.c1.return-vila",
-        "sha256": "640e8e1458efe345e3908efabd90868f14e2722f18df59b04c848ade6f312a71",
+        "sha256": "00e32a0e7026cb4b3894c74e7fa4519e6ce0e0b1123120eca06e711aeb3ca134",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -232,7 +232,7 @@
         "id": "p1.c1.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p1.c1.return-redo",
-        "sha256": "b75dd405e7fa227171dd97a728eb37dfbf005e99e82904b5163d082c4bdcb4c9",
+        "sha256": "a831a40266291f774e602fedfb6ff3ab37074579a9557a2d80bbdbd4ef125236",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -242,7 +242,7 @@
         "id": "p1.c2.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p1.c2.deal",
-        "sha256": "4f993a23b537a137d89992c9d30b582e0a0054e4bc0de2d27f1277bd45042cc7",
+        "sha256": "a5b2ef7c308db1245652f350eb2ef15808c5d64147391e79b4a67b7cdae17965",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -252,7 +252,7 @@
         "id": "p1.c2.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p1.c2.return-vila",
-        "sha256": "9c7c0d1251d6bd02d4357ba510363603903a7e978458bb38ee642acd23a061d9",
+        "sha256": "f87928e75efd68da0230f3315cc5c243554a01c572f3c6561f6b45ff8691dc9b",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -262,7 +262,7 @@
         "id": "p1.c2.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p1.c2.return-redo",
-        "sha256": "5e0450b5f3c995a62f0f60c24e891b7736db72a6762586113a78640c78d94d07",
+        "sha256": "9bf629d2aec3ff17dd37d3b3ef988e3ab453a131ff80f2c36c7c70487b7dde62",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -272,7 +272,7 @@
         "id": "p2.c1.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p2.c1.deal",
-        "sha256": "7296c093bc4355f092a5e1f304fc3cf0d3ed6ed2af3f1995adc4a604b2e37d7c",
+        "sha256": "25f29ab53442884a4f771b6339f461258945eadb503dd41e645fa09fc343985b",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -282,7 +282,7 @@
         "id": "p2.c1.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p2.c1.return-vila",
-        "sha256": "f3f703de9c94afab3c574571d97a607e733cb084f0ac8d70f38435f1475b4afb",
+        "sha256": "dc62a9a14913ddc1a3c08b2b0698624927604ae5dbc57b3763ab258f41c0891f",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -292,7 +292,7 @@
         "id": "p2.c1.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p2.c1.return-redo",
-        "sha256": "8d77c7be3cb4c5999b5149b7333b21095a7d705c774b41a7e2ffa44000d00edc",
+        "sha256": "b51b736b21104277aacb9f7e36c090b5db8501c6540f56524698724f17be81c2",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -302,7 +302,7 @@
         "id": "p2.c2.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p2.c2.deal",
-        "sha256": "6f2706cdcc441f1dbd4365891ccbf06305d4f80a708ad019ecdf37c45fe865e7",
+        "sha256": "bcaf1103dc8e2924508dc9091707ab55466be48e8cc0dcc044bea2fc8045438c",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -312,7 +312,7 @@
         "id": "p2.c2.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p2.c2.return-vila",
-        "sha256": "827c5b75c098d085b0313b45d236392e328996b17f986a0992e3edcc4c87fea1",
+        "sha256": "2fc054a38db2182193231a5a109bdedbbe5662e1571e8a96623196c4388a4047",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -322,7 +322,7 @@
         "id": "p2.c2.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p2.c2.return-redo",
-        "sha256": "2ffe489ca4aa49610913d7d00660a51d45769f32b84f3c23c9d0b260385a0e84",
+        "sha256": "25091c976ac706f3530d3d1b8252d27806356762a237ed7acded49bac2c30ff1",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -332,7 +332,7 @@
         "id": "p3.c1.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p3.c1.deal",
-        "sha256": "7604d92fbb9330878b08ce29d5852bbef0d5a5636764e3810fe4d4f650ac6bda",
+        "sha256": "d0d54c5c3e10e08365c1dfe0b2e52b49cb3fa46a259d8d35e7d244715e54416b",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -342,7 +342,7 @@
         "id": "p3.c1.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p3.c1.return-vila",
-        "sha256": "9d0db46d12e653797635daee34c50bd4c19e8e0f04878af8a20a7d0b39d42fe2",
+        "sha256": "42c9e74b9a2e2fbe784700ed28ace1b4880223727e3f523e2dd8f51779691445",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -352,7 +352,7 @@
         "id": "p3.c1.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p3.c1.return-redo",
-        "sha256": "11b263aade286f302a1248b709ae72e934396c6a90e13b40e66fab5383c3975d",
+        "sha256": "7f16acd6360b50e0278a8ce3bdaeeee8e2d1e6fb020ddf51dbbaa1e2d0891b39",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -362,7 +362,7 @@
         "id": "p3.c2.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p3.c2.deal",
-        "sha256": "a5c2792fb0e3d8d82234f5567a6a2b10fe569b4c096bbee5a6ebdcd85469bac3",
+        "sha256": "520c6e17ed03e292b5ffb64871ced9648ca6a1a1956b3d863648607aac92c4a3",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -372,7 +372,7 @@
         "id": "p3.c2.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p3.c2.return-vila",
-        "sha256": "454b1ca0acf812f1f9a101adec42be5bc7d550cf6d0a9c5b30ad46a92b8bf658",
+        "sha256": "455b371945c516c3eb2b07cf29c3c2a5bb67f59da16beb8dbe68b186e923cc89",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -382,7 +382,7 @@
         "id": "p3.c2.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p3.c2.return-redo",
-        "sha256": "f751e204486e53f6bd33e16a71aa75a4c11f77e0de7c37d4ff8d2cf4704756e1",
+        "sha256": "2565262cfd08dc8d270efa072906d50b94fc82063d72a9b2d59562ac4a839a50",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -392,7 +392,7 @@
         "id": "p4.c1.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p4.c1.deal",
-        "sha256": "61d36f919cccc7d9d1727af9ec694c867179cd1e46f30715858734d265c27d6a",
+        "sha256": "7198df7e164bf9e995fbb3bc065aa416312d9ebc2fd202a1480f42c0c57a62db",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -402,7 +402,7 @@
         "id": "p4.c1.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p4.c1.return-vila",
-        "sha256": "612d77e3695abbc3634c23270c0b31b9a607ab2a0e668ec9f4bbf665d545b352",
+        "sha256": "423b8bf42f4fde8594ac5831aaee7e133c06b08ef1cf9b34d7c244fb850e4516",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -412,7 +412,7 @@
         "id": "p4.c1.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p4.c1.return-redo",
-        "sha256": "fd83c48cd6f6f77c0dff1d1230b60716c2f5bd2f6e99fda4a4ea5eca1318a7a9",
+        "sha256": "4a3249c13c7aa9c2ba6cd15fa1e5a349f99973d354043a4321c2914910e44191",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -422,7 +422,7 @@
         "id": "p4.c2.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p4.c2.deal",
-        "sha256": "3445ffd6157e1a053a0c86653123312f292fff49deea25abfc5665f5fdb52e6e",
+        "sha256": "1005dc64f578ff58ade2cc39a90d3153bbecb4b8f8a48598e70b2ceb6cc8b1b7",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -432,7 +432,7 @@
         "id": "p4.c2.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p4.c2.return-vila",
-        "sha256": "1846eecdaa05b09c950957d516b3d2c6a5d81c7b2b8a505b382dd4a63f0e61b0",
+        "sha256": "8d64afc2feaabe20fae97c72ea7f477e0338d2dc31c15114dc93c5f1a7b6e84e",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -442,7 +442,7 @@
         "id": "p4.c2.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p4.c2.return-redo",
-        "sha256": "d658416439fd4140aa23358f7da87ca0c22bea1c775eb9cd299b038e07cf629a",
+        "sha256": "0348b32fb14c3c0a364394b8e51297f20cc4b5471debba0a9cb01804d8b9019d",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -452,7 +452,7 @@
         "id": "p5.c1.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p5.c1.deal",
-        "sha256": "718540494e46e42f8f8a5f19b71371774394784e68ad14ec14d5dcca40599c04",
+        "sha256": "485f1e655a2787d1000c50286ef96b366b0a36b20e1d4e7f7867d1d84a0f0847",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -462,7 +462,7 @@
         "id": "p5.c1.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p5.c1.return-vila",
-        "sha256": "7f03cc010658849c4842fb9e37343478807bfc0a4bc24f68362911d7b472b7f9",
+        "sha256": "30b7fa4263580918c031a3b1980d254d7a6c894afd31c68a8a2d5579a8c04104",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -472,7 +472,7 @@
         "id": "p5.c1.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p5.c1.return-redo",
-        "sha256": "839dbaf6ac8d6262e900905061de71f0365f6f2c92ec0dd5faa67c5ff239db9b",
+        "sha256": "02e6d3674bf6fdab1083bdbe72cf3df1e9fd918dcb38d54ed0c3430f10dabe7e",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -482,7 +482,7 @@
         "id": "p5.c2.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p5.c2.deal",
-        "sha256": "a59d3cd3c2cd4bdfc191ff567c8efc375a973766a9a7a993aae9041a70218d80",
+        "sha256": "533e8f37560331df2f6dfcb72d1c46c5c38d3819ab04469034fbc3b8b35774a9",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -492,7 +492,7 @@
         "id": "p5.c2.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p5.c2.return-vila",
-        "sha256": "7724c209809ba62aebcbe61fc9f1a526c85ca8f68014fa98507f310b3802262f",
+        "sha256": "ab866bab5309073753949e04eb8580caf48d4df63f1ccc679692207c031db4ae",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -502,7 +502,7 @@
         "id": "p5.c2.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p5.c2.return-redo",
-        "sha256": "c02154aa94e81db1455c4b2b2a83d881df351697021886db0ea4fc7d91a6d425",
+        "sha256": "1ebc07874e5fdd9ec7a5a90237c0f020b79f32e53e8443b9e434cc4e1f6cfe7b",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -512,7 +512,7 @@
         "id": "p6.c1.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p6.c1.deal",
-        "sha256": "47081c4ff36021a23d7f2c79256b3e7448fbf23513c156c947dc4e18810f1563",
+        "sha256": "c478ee457528650eda35d0f2e8a8e951f6c7057882de1d14cb77cafc4677bcec",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -522,7 +522,7 @@
         "id": "p6.c1.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p6.c1.return-vila",
-        "sha256": "062beaacfba59bb3867e3c2a0d298245a8fad4d06f191f8134f1d31d7e74de14",
+        "sha256": "c3ccdc3f2c7a9f1df5e58d3e71c725e320afa7bef53278aa3a4cdd52ff2ec84e",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -532,7 +532,7 @@
         "id": "p6.c1.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p6.c1.return-redo",
-        "sha256": "f41c31cb3041aa4777b365de04838128d178c383bad3d656a32db66c126c1524",
+        "sha256": "5707d81ea046df5d626e89cef3d99d81cf0e16905c46563a3588acd98ce389c9",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -542,7 +542,7 @@
         "id": "p6.c2.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p6.c2.deal",
-        "sha256": "6f6108b15584b38eed3d26bb71614add911ba02fd07fe48ba65dbc71acf90477",
+        "sha256": "fd7c2c105a2281875df73fce7c16edc43a648b55678f550eb5f7116469663331",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -552,7 +552,7 @@
         "id": "p6.c2.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p6.c2.return-vila",
-        "sha256": "c487dbbb2602e19713ee7a984933e9a7d7367349eae1ebd5bf55fa0b06c830f8",
+        "sha256": "7cee1956ac6c82fe2772d7535758617cbe0991bb87942e6848a4763b66d84067",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -562,7 +562,7 @@
         "id": "p6.c2.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p6.c2.return-redo",
-        "sha256": "19f56f53dcc15ac04dab127b77477eb0ff77d66e84ecc3d6446ac52e08e432a2",
+        "sha256": "72bf7c54e197bc0d8f9e8db8d8206906b5aa56976a0362b0ce70cec370ad2974",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -572,7 +572,7 @@
         "id": "p7.c1.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p7.c1.deal",
-        "sha256": "9b22dcfeabfe8f05e2f8d706e917f25d04d5f89b9c78f4cf200195f3bff154bb",
+        "sha256": "bd8345aca0660dbc227cbe8506ba8f65da2d7288be0b3635399b01ea11116e08",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -582,7 +582,7 @@
         "id": "p7.c1.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p7.c1.return-vila",
-        "sha256": "ad13ac5bbd9d1fe5b98050efa7bc5a9203822b7f289b35641b7933711af5f093",
+        "sha256": "b9ad63dd62e887eb3f7062fffdbfbbff7758e637b9cc80e56a65d58e6a62fc55",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -592,7 +592,7 @@
         "id": "p7.c1.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p7.c1.return-redo",
-        "sha256": "c22eb702bf16a25b01bb179d7574fc00e7bbd15810a913cb1bede2425eaa7c5e",
+        "sha256": "4f46c53c81f76dc0de00351683b4379a5e25ebab3e7f8d15b332c4ef78e598e1",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -602,7 +602,7 @@
         "id": "p7.c2.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p7.c2.deal",
-        "sha256": "0c1fbab1deff47e6589e8306be1843b64b0f2e2e5e8286fa479a96c340d4ab00",
+        "sha256": "3a077ef31346ca5c2caedbf14467bf23861b511de710f58b043b8bf8ae8e023f",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -612,7 +612,7 @@
         "id": "p7.c2.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p7.c2.return-vila",
-        "sha256": "64dd83dd98494de165e63c77b70e9607f8ea3909ca70f379786fdcba59ffca0f",
+        "sha256": "73cd1a7fbb536b782bd2472112015ecfbe5ac93e53bc065d4a9f90c1c4421ddc",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -622,7 +622,7 @@
         "id": "p7.c2.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/p7.c2.return-redo",
-        "sha256": "564bbf192faa35253d7838e347df166c8aaa37e5e34d09e040b20b71be9c9ab1",
+        "sha256": "7c8ea7ecc1dbf4b9fe7d04f084824d97a5ebabe9d9fe8d1375a3215d48472f63",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -632,7 +632,7 @@
         "id": "d.c1.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/d.c1.deal",
-        "sha256": "d166824ea59431480bd2f62b423505a32e2f5e2cc13df2c845bbda35f0371053",
+        "sha256": "918e8cf3b31b9e6ccca92013f28182626bdbbd84b45a0c8e5a41d3d19a0fb17a",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -642,7 +642,7 @@
         "id": "d.c1.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/d.c1.return-vila",
-        "sha256": "5f9b976e7565fca22a5869a9ac4988fef750f76be44b853bdf9e157f750bff18",
+        "sha256": "c1a3cf8a8c69fbe1c0309c5ba13a6f5dd7800e18a10b61f74770b0fb49056f03",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -652,7 +652,7 @@
         "id": "d.c1.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/d.c1.return-redo",
-        "sha256": "fc248ae24f0b3d2872b1d68110ab74174150ad31ed8140b1c0c7ba5b49957891",
+        "sha256": "c636c809e91e218716e217df00eabb8d90b2f52b6fece70491784e8b224dd6e1",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -662,7 +662,7 @@
         "id": "d.c2.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/d.c2.deal",
-        "sha256": "27ea9839c90a03121ee6685de8a43ba46bae38b640bbec433d9ba65941b42306",
+        "sha256": "668818bae3c8797659ec2288ec58c021346125c5e48a3a5b6a45b59733d5b7b1",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -672,7 +672,7 @@
         "id": "d.c2.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/d.c2.return-vila",
-        "sha256": "45ee2de4451095e6bc340ab900d024cb931ee59cb3cb39f30cb9e67ea695cf3a",
+        "sha256": "9de8601ac3bc7db0fb25f9cd06f0e20364c4c1d5e62989b4560f6fea948170d3",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -682,7 +682,7 @@
         "id": "d.c2.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/d.c2.return-redo",
-        "sha256": "0cb65799dc0e1acfa7fd4ae695bf360681beab7c7cc74f5fe28b3654f9ceb965",
+        "sha256": "cae992a00748c3680a153a2b814a958c9b64377df114f98e77d9e381e07d2807",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -692,7 +692,7 @@
         "id": "d.c3.deal",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/d.c3.deal",
-        "sha256": "d7798a8d9b715aa8edd71fe7253f3000032a67e580800208d342a9a350288bce",
+        "sha256": "050e464199847eab939f4b570b631c9e74de68a97ef6133e52bd82a62dd45ff7",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -702,7 +702,7 @@
         "id": "d.c3.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/d.c3.return-vila",
-        "sha256": "72a14ae18f26216273bc2b2b67b14f9947b00593ea5c9dae407fee83470efa98",
+        "sha256": "305613f85ec1ab5badadcef8a2dd0624e843aae96b4c2348edeaf8ac73c52b33",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -712,7 +712,7 @@
         "id": "d.c3.return-redo",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/d.c3.return-redo",
-        "sha256": "1f536811e60a452c4e9e89e53dd24e8b8fbb5c16c94d23f9fac0b348008c2e0d",
+        "sha256": "f0f02d20771171be77d90fce697daa36f9a4d4e13309026e68c214a7d5a4dde8",
         "hashEncoding": "sorted-key-json-utf8"
       }
     },
@@ -722,7 +722,7 @@
         "id": "bridge.return-vila",
         "document": "references/pamela-motion-labels-review.json",
         "pointer": "/objects/bridge.return-vila",
-        "sha256": "02b0c2cdf75fa1154a3fa3a775197a06df8fbab2ca78c7a7cd31fdc6b4408952",
+        "sha256": "25f84c17528023d494b49b59f8d437d264a83f1acfa1cac710027d2e849d6542",
         "hashEncoding": "sorted-key-json-utf8"
       }
     }
@@ -735,12 +735,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -905,15 +905,102 @@
             "kind": "ACTION_BOUNDARY"
           },
           "declaredReturnMode": "none",
-          "releaseFrame": null,
-          "binding": null,
+          "releaseFrame": 95,
+          "binding": {
+            "assetId": "physical-P1-C1-deal-raw-take-02",
+            "sha256": "678965c828751b080edd9c1c50d9a73e4bb649226c12ca4a92b5c7cae71c65d9",
+            "startFrame": 0,
+            "endFrameExclusive": 103,
+            "presentation": "raw-reference",
+            "sourceCards": "unresolved",
+            "asset": {
+              "id": "physical-P1-C1-deal-raw-take-02",
+              "path": "runs/20261110-pamela-physical-deal-pilot/jobs/p1-back-front-keyframes-take-02/original.mp4",
+              "sha256": "678965c828751b080edd9c1c50d9a73e4bb649226c12ca4a92b5c7cae71c65d9",
+              "kind": "video",
+              "width": 1764,
+              "height": 1174,
+              "fps": 30,
+              "frames": 120
+            }
+          },
           "qa": {
             "status": "pending",
-            "evidence": null,
-            "reason": "Missing media and endpoint evidence; planning only."
+            "evidence": {
+              "path": "runs/20261110-pamela-physical-deal-pilot/review/keyframes-02/qa.json",
+              "sha256": "e934dd34e95dbf591c1d8dc9f3fbfcbf3dcfdd86c261105f9f0e73e6c2613d32"
+            },
+            "reason": "Local physical turn, direct P1 landing and release accepted in raw footage; separable layers, calibrated card track and hand masks remain pending."
           },
-          "filmPath": null,
-          "sideTrack": null
+          "filmPath": {
+            "sourceSha256": "678965c828751b080edd9c1c50d9a73e4bb649226c12ca4a92b5c7cae71c65d9",
+            "points": [
+              {
+                "pose": {
+                  "kind": "REDO"
+                },
+                "frame": 0
+              },
+              {
+                "pose": {
+                  "boundaryId": "release-event.P1.K1",
+                  "kind": "ACTION_BOUNDARY"
+                },
+                "frame": 95
+              },
+              {
+                "pose": {
+                  "boundaryId": "release.P1.K1",
+                  "kind": "ACTION_BOUNDARY"
+                },
+                "frame": 102
+              }
+            ],
+            "qa": {
+              "status": "pending",
+              "evidence": {
+                "path": "runs/20261110-pamela-physical-deal-pilot/review/keyframes-02/qa.json",
+                "sha256": "e934dd34e95dbf591c1d8dc9f3fbfcbf3dcfdd86c261105f9f0e73e6c2613d32"
+              },
+              "reason": "f94 is last visible fingertip contact; f95 is first clear frame. The later lifted-hand cut ends at f102; it is not the same physical pose as the release cue. Layer/node compatibility remains pending."
+            }
+          },
+          "sideTrack": {
+            "sourceSha256": "678965c828751b080edd9c1c50d9a73e4bb649226c12ca4a92b5c7cae71c65d9",
+            "markerLegendId": "blue-front-yellow-back-v1",
+            "ranges": [
+              {
+                "method": "unknown",
+                "startFrame": 0,
+                "endFrameExclusive": 40,
+                "side": "UNKNOWN"
+              },
+              {
+                "method": "marker-observation",
+                "startFrame": 40,
+                "endFrameExclusive": 47,
+                "side": "BACK"
+              },
+              {
+                "method": "marker-observation",
+                "startFrame": 47,
+                "endFrameExclusive": 49,
+                "side": "EDGE"
+              },
+              {
+                "method": "marker-observation",
+                "startFrame": 49,
+                "endFrameExclusive": 100,
+                "side": "FRONT"
+              },
+              {
+                "method": "unknown",
+                "startFrame": 100,
+                "endFrameExclusive": 103,
+                "side": "UNKNOWN"
+              }
+            ]
+          }
         }
       ],
       "blockers": [
@@ -930,12 +1017,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -1048,13 +1135,58 @@
           },
           "declaredReturnMode": "direct",
           "releaseFrame": null,
-          "binding": null,
+          "binding": {
+            "assetId": "physical-P1-C1-return-raw-take-01",
+            "sha256": "b84e92ca14a763adc180474e3fcc4cb7faef2274b1b7028fafb33ff59994743d",
+            "startFrame": 0,
+            "endFrameExclusive": 60,
+            "presentation": "raw-reference",
+            "sourceCards": "unresolved",
+            "asset": {
+              "id": "physical-P1-C1-return-raw-take-01",
+              "path": "runs/20261110-pamela-physical-return-pilot/jobs/p1-c1-lifted-to-vila-take-01/original.mp4",
+              "sha256": "b84e92ca14a763adc180474e3fcc4cb7faef2274b1b7028fafb33ff59994743d",
+              "kind": "video",
+              "width": 1764,
+              "height": 1174,
+              "fps": 30,
+              "frames": 60
+            }
+          },
           "qa": {
             "status": "pending",
-            "evidence": null,
-            "reason": "Missing media and endpoint evidence; planning only."
+            "evidence": {
+              "path": "runs/20261110-pamela-physical-return-pilot/review/take-01/qa.json",
+              "sha256": "608c2c6d095965cc321cfd9c070bf3b844a20e4b634d2474a3040725c24d290e"
+            },
+            "reason": "Local empty-hand return and raw join accepted, without REDO passage; separable layers, card/hand tracks and production endpoint compatibility remain pending."
           },
-          "filmPath": null,
+          "filmPath": {
+            "sourceSha256": "b84e92ca14a763adc180474e3fcc4cb7faef2274b1b7028fafb33ff59994743d",
+            "points": [
+              {
+                "pose": {
+                  "boundaryId": "release.P1.K1",
+                  "kind": "ACTION_BOUNDARY"
+                },
+                "frame": 0
+              },
+              {
+                "pose": {
+                  "kind": "VILA"
+                },
+                "frame": 59
+              }
+            ],
+            "qa": {
+              "status": "pending",
+              "evidence": {
+                "path": "runs/20261110-pamela-physical-return-pilot/review/take-01/qa.json",
+                "sha256": "608c2c6d095965cc321cfd9c070bf3b844a20e4b634d2474a3040725c24d290e"
+              },
+              "reason": "All60 return frames reviewed; no shoe/REDO visit or recontact. Canonical VILA matches visually, not pixel-identically; layer/node compatibility pending."
+            }
+          },
           "sideTrack": null
         }
       ],
@@ -1062,7 +1194,7 @@
         "Review request only; no runtime selection or media generation.",
         "Hand, physical sides and visibility are unobserved in this projection.",
         "Exact release boundary and complete contact/path/edge QA must be bound before use.",
-        "No bound source film for this requested motion."
+        "Candidate media are declared by V2; media bytes and motion acceptance are not reverified here."
       ]
     },
     "p1.c1.return-redo": {
@@ -1072,12 +1204,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -1191,12 +1323,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -1386,12 +1518,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -1528,12 +1660,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -1647,12 +1779,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -1820,12 +1952,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -1962,12 +2094,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -2081,12 +2213,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -2254,12 +2386,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -2396,12 +2528,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -2515,12 +2647,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -2688,12 +2820,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -2830,12 +2962,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -2949,12 +3081,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -3122,12 +3254,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -3264,12 +3396,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -3383,12 +3515,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -3556,12 +3688,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -3698,12 +3830,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -3817,12 +3949,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -3990,12 +4122,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -4132,12 +4264,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -4251,12 +4383,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -4424,12 +4556,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -4566,12 +4698,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -4685,12 +4817,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -4858,12 +4990,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -5000,12 +5132,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -5119,12 +5251,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -5292,12 +5424,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -5434,12 +5566,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -5553,12 +5685,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -5726,12 +5858,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -5868,12 +6000,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -5987,12 +6119,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -6160,12 +6292,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -6302,12 +6434,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -6421,12 +6553,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -6594,12 +6726,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -6736,12 +6868,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -6855,12 +6987,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -6997,12 +7129,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -7139,12 +7271,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -7258,12 +7390,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -7400,12 +7532,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -7542,12 +7674,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -7661,12 +7793,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -7803,12 +7935,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -7945,12 +8077,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -8064,12 +8196,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -8221,12 +8353,12 @@
         "dealerId": "pamela-pilot",
         "bankId": "pamela-workspace-v1",
         "sourceSchema": "urn:dealerlab:dealer-motion-contract:2.0.0",
-        "sourceRevision": "candidate-20261110-v2-r1"
+        "sourceRevision": "candidate-20261110-v2-r2"
       },
       "provenance": {
         "contract": {
           "path": "references/pamela-motion-contract-v2.json",
-          "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+          "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b"
         },
         "norm": {
           "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
@@ -8288,7 +8420,7 @@
       ],
       "sourceCandidates": [
         {
-          "motionId": "bridge.to-redo",
+          "motionId": "legacy.bridge.to-redo",
           "clipSlotId": "transition.shoe/to-shoe",
           "cardPlacementId": null,
           "from": {
@@ -8327,6 +8459,71 @@
             "reason": "Källrutor 3–89 används i V6; fristående lager och anslutningsgrind återstår."
           },
           "filmPath": null,
+          "sideTrack": null
+        },
+        {
+          "motionId": "bridge.to-redo",
+          "clipSlotId": "transition.shoe/to-shoe",
+          "cardPlacementId": null,
+          "from": {
+            "kind": "VILA"
+          },
+          "to": {
+            "kind": "REDO"
+          },
+          "declaredReturnMode": "none",
+          "releaseFrame": null,
+          "binding": {
+            "assetId": "physical-entry-raw-take-01",
+            "sha256": "cbaf81cd79f53eafcc38891847151a1311e3ee94275abe10463674ae6a6f66f2",
+            "startFrame": 0,
+            "endFrameExclusive": 59,
+            "presentation": "raw-reference",
+            "sourceCards": "unresolved",
+            "asset": {
+              "id": "physical-entry-raw-take-01",
+              "path": "runs/20261110-pamela-physical-entry-pilot/jobs/vila-to-shoe-take-01/original.mp4",
+              "sha256": "cbaf81cd79f53eafcc38891847151a1311e3ee94275abe10463674ae6a6f66f2",
+              "kind": "video",
+              "width": 1764,
+              "height": 1174,
+              "fps": 30,
+              "frames": 60
+            }
+          },
+          "qa": {
+            "status": "pending",
+            "evidence": {
+              "path": "runs/20261110-pamela-physical-entry-pilot/review/take-01/qa.json",
+              "sha256": "a6a7b4e16f44cbba4b0a5004a591583cc316159727777685f7babb7c92e9b324"
+            },
+            "reason": "Local raw movement and proof join reviewed; separable layers, card/hand tracks and production endpoint compatibility remain pending."
+          },
+          "filmPath": {
+            "sourceSha256": "cbaf81cd79f53eafcc38891847151a1311e3ee94275abe10463674ae6a6f66f2",
+            "points": [
+              {
+                "pose": {
+                  "kind": "VILA"
+                },
+                "frame": 0
+              },
+              {
+                "pose": {
+                  "kind": "REDO"
+                },
+                "frame": 58
+              }
+            ],
+            "qa": {
+              "status": "pending",
+              "evidence": {
+                "path": "runs/20261110-pamela-physical-entry-pilot/review/take-01/receipt.json",
+                "sha256": "1e3e06e442bce402dedf657e47e12e7e0fbf024417e7bed7d55941b1f61ceb2f"
+              },
+              "reason": "Source-bound entry0..58 from the 222-frame proof; raw pregrasp join accepted locally, layer/node compatibility pending."
+            }
+          },
           "sideTrack": null
         }
       ]
