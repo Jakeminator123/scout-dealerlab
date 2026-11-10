@@ -44,7 +44,8 @@ function setLocation() {
   history.replaceState(null, '', url);
 }
 function renderTree() {
-  byId('states').replaceChildren(...review.states.map(state => {
+  const entryStates = review.states.filter(state => !review.targets.some(t => t.id === state.id) && review.motions.some(m => !m.target && (m.from === state.id || m.to === state.id)));
+  byId('states').replaceChildren(...entryStates.map(state => {
     const button = make('button', '', 'state-node'); button.dataset.scope = state.id;
     button.setAttribute('aria-pressed', String(scope === state.id));
     const motions = review.motions.filter(m => !m.target && (m.from === state.id || m.to === state.id));
@@ -63,7 +64,7 @@ function renderTree() {
     return group;
   }));
 }
-function chooseInitial(motions: DealerNodeMotion[]) { return motions.find(m => m.candidate && m.kind === 'deal') ?? motions.find(m => m.candidate) ?? motions[0] ?? null; }
+function chooseInitial(motions: DealerNodeMotion[]) { return motions.find(m => m.candidate && m.kind === 'deal' && m.observation.localMotionReview.accepted === true) ?? motions.find(m => m.candidate && m.kind === 'deal') ?? motions.find(m => m.candidate) ?? motions[0] ?? null; }
 function selectScope(id: string, initialMotion?: DealerNodeMotion | null, initialRequirement = '') {
   scope = id; selectedRequirement = initialRequirement; byId<HTMLInputElement>('motion-search').value = '';
   const requirements = scopedRequirements(), filter = byId<HTMLSelectElement>('requirement-filter');

@@ -5,9 +5,10 @@
   "sourceBranch": "jakob/test",
   "sourceIsWorkingTreeSnapshot": true,
   "reviewSnapshot": "review-hub-20261110063919131",
+  "pendingReviewSnapshot": "review-hub-20261110064626749",
   "reviewUrl": "https://scout-dealerlab.vercel.app/granskning.html",
   "deploymentId": "dpl_ZV4UzLQtPUus2s7CHd8GMEWEdxr3",
-  "sourceTreeSha256": "af370653a86038cf103e951681a07d8f554c1633a8de8d0c16a7bf8fcbaffcba",
+  "sourceTreeSha256": "583eefd9430d1827603dcc32a22011f768dbf5a4c701cff318a12abf2461c1bb",
   "files": [
     {
       "path": ".env.example",
@@ -731,8 +732,8 @@
     },
     {
       "path": "scripts/build-review-hub.ts",
-      "sha256": "0aa5a1f7ec1026d196ba0f7f2d18cb3177e58e78ff0f37874ad13c270a32788e",
-      "bytes": 41458
+      "sha256": "b083673c683acf54c2ce7450c8e68859629bd43744b09ffe20589bd2a5d49fbf",
+      "bytes": 41558
     },
     {
       "path": "scripts/bundle-card-material.ts",
@@ -971,8 +972,8 @@
     },
     {
       "path": "src/dealer-node-review-client.ts",
-      "sha256": "5f4db98245ee76b7afa8752677c7227c587372188b6f156243909b80264dcd23",
-      "bytes": 33145
+      "sha256": "ce9e8f157996cefb5d428137e9516e454bc64509d8295ae8ace5c91d282ee1cc",
+      "bytes": 33435
     },
     {
       "path": "src/dealer-node-review-page.ts",

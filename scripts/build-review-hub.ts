@@ -146,7 +146,8 @@ const summaryText=JSON.stringify(summary,null,2);guard(summaryText,'review manif
 await writeFile(site+'/granskning/manifest.json',summaryText);await writeFile(site+'/granskning/noder.json',JSON.stringify(summary.nodeMap,null,2));
 const nodeHistory=site+'/granskning/nodkarta-historik.html';
 if(!await stat(nodeHistory).catch(()=>null))await copyFile(site+'/nodkarta.html',nodeHistory);
-const nodeHtml=dealerNodeReviewPage(currentNodeMap,new Map([...entries].map(([source,e])=>[source,e.url])));
+const nodeFileUrls=new Map(reviewReferences(currentNodeMap).flatMap(r=>{const e=entries.get(r.path);return e?[[r.path,e.url] as const]:[];}));
+const nodeHtml=dealerNodeReviewPage(currentNodeMap,nodeFileUrls);
 const nodeClient=stripTypeScriptTypes(await readFile('src/dealer-node-review-client.ts','utf8'),{mode:'strip'});
 guard(nodeHtml,'current node map');guard(nodeClient,'current node map client');
 await writeFile(site+'/nodkarta.html',nodeHtml);await writeFile(site+'/granskning/nodkarta.js',nodeClient);
