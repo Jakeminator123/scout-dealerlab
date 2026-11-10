@@ -20,6 +20,16 @@ export type CardSideReviewManifest = {
   clips: Clip[]; missing: string[]; verification: { gpuReviewStatus: string };
 };
 export type PresentationChecklistItem = { id: string; label: string; status: string; detail: string };
+/** The current blank-source review has no accepted physical turn evidence. */
+export function reviewFrontAllowed(input: {
+  authoredSide: 'FRONT' | 'BACK' | 'EDGE'; diagnostic: boolean; concealUnverifiedTurn: boolean;
+  revealAllowed: boolean; signal?: { frontAllowed: boolean; cardId: string | null };
+}): boolean {
+  if (input.authoredSide !== 'FRONT') return false;
+  if (input.diagnostic) return true;
+  return !input.concealUnverifiedTurn && input.revealAllowed && input.signal?.frontAllowed === true
+    && typeof input.signal.cardId === 'string' && input.signal.cardId.length > 0;
+}
 const fileUrl = (p: string, urls?: Record<string, string>) => {
   if (!p.startsWith('runs/') || p.split('/').some(x => x === '..' || x.startsWith('.'))) throw Error('Unexpected review file');
   const mapped = urls?.[p];
@@ -35,12 +45,16 @@ const sha = async (bytes: ArrayBuffer) => Array.from(new Uint8Array(await crypto
 /** Separate native-film review route. Source/guard data and the existing printCard
  * GLSL are reused; blue/yellow is deliberately NOT called an observed source side.
  */
-export default function PamelaCardSideReview({ manifest, manifestRef, code, fileUrls, checklist = [] }: { manifest: CardSideReviewManifest; manifestRef: Ref; code: Ref[]; fileUrls?: Record<string, string>; checklist?: PresentationChecklistItem[] }) {
+export default function PamelaCardSideReview({ manifest, manifestRef, code, fileUrls, checklist = [], initialConcealUnverifiedTurn = true }: { manifest: CardSideReviewManifest; manifestRef: Ref; code: Ref[]; fileUrls?: Record<string, string>; checklist?: PresentationChecklistItem[]; initialConcealUnverifiedTurn?: boolean }) {
+  const browserMode = typeof window === 'undefined' ? null : new URLSearchParams(window.location.search).get('mode');
+  const initialConceal = browserMode === null ? initialConcealUnverifiedTurn : browserMode !== 'authored-demo';
   const [clipIndex, setClipIndex] = useState(0), [frame, setFrame] = useState(0), [playing, setPlaying] = useState(false);
   const [status, setStatus] = useState('Laddar hashbundna texturer…'), [ready, setReady] = useState(false), [revealed, setRevealed] = useState(true);
+  const [concealUnverifiedTurn, setConcealUnverifiedTurn] = useState(initialConceal);
   const [stats, setStats] = useState({ textureHashes: 0, presentedFrames: 0, gpuDraws: 0, webglError: 0 });
   const revealAllowed = useRef(true);
-  const canvas = useRef<HTMLCanvasElement>(null), control = useRef<{ play(): Promise<void>; pause(): void; seek(f: number): void; reveal(value: boolean): void } | null>(null);
+  const concealUnverified = useRef(initialConceal);
+  const canvas = useRef<HTMLCanvasElement>(null), control = useRef<{ play(): Promise<void>; pause(): void; seek(f: number): void; reveal(value: boolean): void; repaint(): void } | null>(null);
   const clip = manifest.clips[clipIndex];
   useEffect(() => {
     let disposed = false, release = () => {}, textureHashes = 0, presentedFrames = 0, gpuDraws = 0;
@@ -135,7 +149,7 @@ void main(){vec3 source=texture2D(frameTexture,sourceUv).rgb;vec3 outColor=sourc
             const art = artwork[Math.max(0, variant - 1)], signal = manifest.engineFixture.cards.find(s => s.slotId === card.slotId);
             // The diagnostic marker describes authored side, independently of engine reveal.
             const diagnostic = variant === 1, frontId = diagnostic ? 'AC' : signal?.cardId;
-            const showFront = card.authoredDisplaySide === 'FRONT' && (diagnostic || (revealAllowed.current && signal?.frontAllowed));
+            const showFront = reviewFrontAllowed({ authoredSide: card.authoredDisplaySide, diagnostic, concealUnverifiedTurn: concealUnverified.current, revealAllowed: revealAllowed.current, signal });
             u['cardInk' + i].value = showFront && frontId ? art.front.get(frontId) ?? art.back : art.back;
           }
           mesh.material = material; const left = variant % 2 * 881, bottom = variant < 2 ? 587 : 0;
@@ -153,7 +167,7 @@ void main(){vec3 source=texture2D(frameTexture,sourceUv).rgb;vec3 outColor=sourc
       on('play', () => { setPlaying(true); if (callback !== undefined) video.cancelVideoFrameCallback(callback); callback = video.requestVideoFrameCallback(decoded); });
       on('pause', () => { setPlaying(false); if (callback !== undefined) video.cancelVideoFrameCallback(callback); callback = undefined; });
       on('ended', () => { setPlaying(false); draw(359); }); on('error', () => { setReady(false); setStatus('Källfilmen kunde inte avkodas.'); });
-      control.current = { play: () => video.play(), pause: () => video.pause(), seek: f => { video.pause(); video.currentTime = (Math.max(0, Math.min(359, f)) + .25) / 30; }, reveal: value => { revealAllowed.current = value; draw(currentFrame); } };
+      control.current = { play: () => video.play(), pause: () => video.pause(), seek: f => { video.pause(); video.currentTime = (Math.max(0, Math.min(359, f)) + .25) / 30; }, reveal: value => { revealAllowed.current = value; draw(currentFrame); }, repaint: () => draw(currentFrame) };
       video.src = fileUrl(clip.source.path, fileUrls); video.load();
     }
     void mount().catch(error => { if (!disposed) { setStatus(String(error)); setReady(false); } release(); });
@@ -161,26 +175,29 @@ void main(){vec3 source=texture2D(frameTexture,sourceUv).rgb;vec3 outColor=sourc
     // Each clip owns one renderer/video; changing the reveal checkbox only updates uniforms.
   }, [clip, manifest, fileUrls]);
   const seek = (f: number) => control.current?.seek(f);
+  const requestedMaterialFrontCards = clip.frames[frame]?.cards.filter(card => reviewFrontAllowed({ authoredSide: card.authoredDisplaySide, diagnostic: false, concealUnverifiedTurn, revealAllowed: revealed, signal: manifest.engineFixture.cards.find(s => s.slotId === card.slotId) })).map(card => card.slotId) ?? [];
   return <main style={{ maxWidth: 1500, margin: '0 auto', padding: 20, color: '#e8eef4', fontFamily: 'system-ui' }}>
     <h1>P1 · kortsidor i Three</h1>
     <nav style={{ display: 'flex', flexWrap: 'wrap', gap: 16 }}><a href={fileUrls ? '/granskning.html#direktreturer' : '/pamela-returer'}>Direktreturer till VILA</a><a href={fileUrls ? '/pamela-combined.html' : '/pamela-prov?view=combined-scene&id=C2-P1'}>Rum och bord · separat scenprov</a></nav>
     <p>{manifest.projectId} / {manifest.dealerId} / {manifest.bankId}. Blå FRONT och gul BACK är författad diagnostik på blank källa. Observerad fysisk sida: <strong>UNKNOWN</strong>.</p>
     <p>Detta prov byter korttryck på befintlig rörelse. Det skapar ingen fysisk kortvändning. Givning, eventuell vändning och tom hands återgång till VILA behöver egna rörelsebevis. Handen får täcka kortkanten under greppet.</p>
+    <p><a href="?mode=conceal-unverified">Öppna skyddad P1-visning</a> · {concealUnverifiedTurn ? <strong>Valörer dolda: fysisk vändning är inte verifierad. Båda slutdesignerna visar baksida genom hela provet. Detta är en visningsspärr, ingen godkänd givning.</strong> : 'Författat materialprov: visad valör är en demonstration och bevisar ingen fysisk vändning.'}</p>
     {checklist.length > 0 && <details><summary>Gemensam checklista · vad som är klart och återstår</summary><ol>{checklist.map(item => <li key={item.id}><strong>{item.label} — {item.status}.</strong> {item.detail}</li>)}</ol></details>}
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, alignItems: 'center', marginBottom: 14 }}>
       <label>Givning <select value={clipIndex} onChange={e => setClipIndex(Number(e.target.value))}>{manifest.clips.map((c, i) => <option key={c.id} value={i}>{c.id}</option>)}</select></label>
       <button disabled={!ready} onClick={() => playing ? control.current?.pause() : void control.current?.play().catch(e => setStatus(String(e)))}>{playing ? 'Pausa' : 'Spela 12 sekunder'}</button>
       <button disabled={!ready} onClick={() => seek(frame - 1)}>−1 ruta</button><button disabled={!ready} onClick={() => seek(frame + 1)}>+1 ruta</button>
-      <label><input type="checkbox" checked={revealed} onChange={e => { revealAllowed.current = e.target.checked; setRevealed(e.target.checked); control.current?.reveal(e.target.checked); }} /> Tillåt framsida i demonstrationen</label>
+      <label><input type="checkbox" checked={!concealUnverifiedTurn} onChange={e => { const conceal = !e.target.checked; concealUnverified.current = conceal; setConcealUnverifiedTurn(conceal); control.current?.repaint(); }} /> Historiskt materialprov: visa författade framsidor utan fysisk givningsacceptans</label>
+      <label><input type="checkbox" checked={revealed} disabled={concealUnverifiedTurn} onChange={e => { revealAllowed.current = e.target.checked; setRevealed(e.target.checked); control.current?.reveal(e.target.checked); }} /> Demo-reveal: tillåt framsida i materialprovet</label>
     </div>
     <div style={{ position: 'relative', background: '#10151b', border: '1px solid #425063' }}>
       <canvas key={clip.id} ref={canvas} aria-label="Fyra synkrona Three-vyer: original, blå/gul, SG/classic och blue/ivory" style={{ display: 'block', width: '100%', height: 'auto', aspectRatio: '1762 / 1174' }} />
-      {['Original · fysisk sida UNKNOWN', 'Blå FRONT / gul BACK · författat', 'SG / classic · slutdesign A', 'Blue / ivory · slutdesign B'].map((label, i) => <span key={label} style={{ position: 'absolute', left: `${i % 2 * 50}%`, top: `${i < 2 ? 0 : 50}%`, padding: '5px 10px', background: '#101820dd', fontSize: 14, pointerEvents: 'none' }}>{label}</span>)}
+      {['Original · fysisk sida UNKNOWN', 'Blå FRONT / gul BACK · enbart författad diagnostik', `SG / classic · ${concealUnverifiedTurn ? 'valör dold' : 'författat materialprov'}`, `Blue / ivory · ${concealUnverifiedTurn ? 'valör dold' : 'författat materialprov'}`].map((label, i) => <span key={label} style={{ position: 'absolute', left: `${i % 2 * 50}%`, top: `${i < 2 ? 0 : 50}%`, padding: '5px 10px', background: '#101820dd', fontSize: 14, pointerEvents: 'none' }}>{label}</span>)}
     </div>
     <label style={{ display: 'block', margin: '14px 0' }}>Källruta {frame}/359 · {(frame / 30).toFixed(3)} s <input aria-label="Källruta" type="range" min={0} max={359} step={1} value={frame} disabled={!ready} onChange={e => seek(Number(e.target.value))} style={{ width: '100%' }} /></label>
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>{clip.phaseWindows.map(p => <button key={p.label} disabled={!ready} onClick={() => seek(p.startFrame)}>{p.label}: {p.startFrame}–{p.endFrameExclusive - 1}</button>)}{(clip.id === 'C2-P1' ? [82, 83, 103, 104, 113, 114, 118, 119] : [170, 185, 195, 210]).map(f => <button key={f} disabled={!ready} onClick={() => seek(f)}>f{f}</button>)}</div>
     <p role="status">{status}</p>
-    <pre id="gpu-review-state" style={{ whiteSpace: 'pre-wrap', fontSize: 13 }}>{JSON.stringify({ renderer: 'Three.WebGLRenderer', clipId: clip.id, sourceSha256: clip.source.sha256, frame, authoredSide: clip.frames[frame]?.cards.at(-1)?.authoredDisplaySide, observedPhysicalSide: 'UNKNOWN', ready, ...stats, runtimeAccepted: false, videoDecoderGpuParityVerified: false }, null, 2)}</pre>
+    <pre id="gpu-review-state" style={{ whiteSpace: 'pre-wrap', fontSize: 13 }}>{JSON.stringify({ renderer: 'Three.WebGLRenderer', clipId: clip.id, sourceSha256: clip.source.sha256, frame, authoredSide: clip.frames[frame]?.cards.at(-1)?.authoredDisplaySide, observedPhysicalSide: 'UNKNOWN', displayMode: concealUnverifiedTurn ? 'conceal-unverified-turn' : 'authored-material-demo', requestedMaterialFrontCards, physicalTurnQaAccepted: false, ready, ...stats, runtimeAccepted: false, videoDecoderGpuParityVerified: false }, null, 2)}</pre>
     <p>Fasgränserna är granskningsfönster, inte godkända händelsecues. Hand-/skoskydd ingår i varje kortmask. C1:s CPU-referens har dessutom befintlig 0,65 px tryckmjukning; GPU-vyn är en separat granskning.</p>
     <details><summary>Källor, CPU-referenser och begränsningar</summary>
       <p>Manifest: <a href={fileUrl(manifestRef.path, fileUrls)}>{manifestRef.sha256}</a></p>

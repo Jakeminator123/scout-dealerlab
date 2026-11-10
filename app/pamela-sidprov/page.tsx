@@ -7,7 +7,8 @@ export const dynamic = 'force-dynamic';
 export const metadata = { title: 'Pamela P1 · kortsidor i Three' };
 const path = 'runs/20261110-pamela-card-side-review/take-01/manifest.json';
 const hash = (b: Uint8Array) => createHash('sha256').update(b).digest('hex');
-export default async function PamelaCardSideReviewPage() {
+export default async function PamelaCardSideReviewPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+  const initialConcealUnverifiedTurn = (await searchParams).mode !== 'authored-demo';
   let bytes: Buffer;
   try { bytes = await readFile(path); }
   catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return <main style={{ padding: 28 }}><h1>P1:s sidprov förbereds</h1><p>Ingen GPU-granskning är ännu klar. Original och aktiv bank ändras inte.</p></main>; throw error; }
@@ -20,5 +21,5 @@ export default async function PamelaCardSideReviewPage() {
   for (const p of ['src/pamela-card-side-review-client.tsx', 'src/pamela-card-atlas.ts', 'app/pamela-sidprov/page.tsx']) code.push({ path: p, sha256: hash(await readFile(p)) });
   const presentation = JSON.parse(await readFile('references/pamela-presentation-review.json', 'utf8'));
   assert.equal(presentation.projectId, manifest.projectId); assert.equal(presentation.dealerId, manifest.dealerId); assert.ok(Array.isArray(presentation.checklist));
-  return <PamelaCardSideReview manifest={manifest} manifestRef={{ path, sha256: hash(bytes) }} code={code} checklist={presentation.checklist} />;
+  return <PamelaCardSideReview manifest={manifest} manifestRef={{ path, sha256: hash(bytes) }} code={code} checklist={presentation.checklist} initialConcealUnverifiedTurn={initialConcealUnverifiedTurn} />;
 }

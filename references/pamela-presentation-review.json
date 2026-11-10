@@ -14,21 +14,21 @@
     },
     {
       "id": "deal-and-turn",
-      "label": "Fysisk givning och eventuell kortvändning",
-      "status": "Återstår att godkänna",
-      "detail": "Overlay skapar ingen fysisk vändning. Rätt synlig sida, grepp, vändning och släpp ska bevisas i källrörelsen. Handen får täcka kanten under greppet."
+      "label": "Fysisk BACK→EDGE→FRONT-givning",
+      "status": "C1 lokalt godkänd · två C2-prov underkända",
+      "detail": "C1:s fysiska grundrörelse,222-rutors VILA→C1→VILA och60-rutors tomhandsbrygga har klarat lokal rörelsegranskning. Båda C2-försöken är underkända. Det andra byter gul→blå f66–67 utan kantpassage och visar senare vit/tryckt kortyta under extra vändningar. Ingen C2-retur är beställd utifrån dessa filmer."
     },
     {
       "id": "direct-return",
       "label": "Direkt från släppt kort till VILA",
-      "status": "0/2 accepterade; två canonical C1-försök underkända",
-      "detail": "Fem avslutade WAN3-jobb kostade totalt 300 credits. Canonical C1 fick återkontakt med kortet även med högre startad hand. C2 är förberedd men osänd. Nästa prov kräver ändrat rörelseupplägg; ingen breddning ännu."
+      "status": "Ny C1 direktretur lokalt godkänd; äldre0/2 historiskt",
+      "detail": "222-rutors VILA→C1→VILA har direkt tomhandsretur. Ingen stillbildsförlängning eller återkontakt i den nya returen. C2-retur saknas."
     },
     {
       "id": "card-sides",
       "label": "Markörer, korttryck och handskydd",
       "status": "Sparat och funktionsprovat",
-      "detail": "Blå FRONT, gul BACK, EDGE, UV och masker finns per källruta. Fysisk sida är UNKNOWN; GPU/CPU-pixelparitet och generell materialacceptans återstår."
+      "detail": "Äldre blå/gula markörer är författade överlägg på fysisk UNKNOWN-källa. Standardläget visar därför baksidor; historiska framsidor kräver aktivt val. Ny genererad råfilm behöver egna spår, masker och handskydd."
     },
     {
       "id": "stage",
@@ -66,6 +66,7 @@
     "table": {
       "path": "references/pamela-table-review.json",
       "sha256": "76bcdbe1ebdbea068148fcef472d29e9a6adad987444857a4046550e1b0545d3"
-    }
+    },
+    "physicalDeal": "references/pamela-physical-deal-review.json"
   }
 }

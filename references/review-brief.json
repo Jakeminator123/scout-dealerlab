@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "project": "Snyggare dealer / Dealerlab",
   "goal": "Skapa en ny dealer genom ett sammanhängande, återkörbart flöde som i princip startas med ett knapptryck.",
-  "organisation": "Dealeridentitet, bank och källhashar är separata. Ett v2-kontrakt bevarar 24 tillgångar och 19 äldre handlingar och beskriver 17 givmål. De två P1-proven och kortsidprovet har egna hashbundna granskningspekare; produktionsbankens aktiva urval är oförändrat.",
+  "organisation": "Dealeridentitet, bank och källhashar är separata. Samma v2-kontrakt binder en-kortsvägen och planerar tvåkortsvägen med egna QA-grindar. Grundgivningar:1/17 med lokalt godkänd rörelse,16/17=94,1% återstår. Hela paketet inklusive övergångar, lager och varianter:80–90% återstår, uttrycklig skattning utan tidsprognos. Historiska14/17 är kandidattäckning och räknas inte som godkänd ny bank.",
   "questions": [
     {
       "id": "layout",
       "question": "Hur får alla sju platser en gemensam kortlayout i stället för M-formen?",
-      "current": "Landningslägena ärvs från källklippen. Gemensam sjusitslayout saknas.",
-      "next": "Pröva en plats, med definierad landningsyta och handsläpp, innan alla platser ändras."
+      "current": "Historiska landningslägen bildar en M-form. Den krävs inte för 3D.",
+      "next": "Förslaget är en grund båge P1–P7, lika kortstorlek i bordsplanet och separat D.C1–D.C3-zon. Kalibrera handsläpp och kamera före slutlig platsbank."
     },
     {
       "id": "turn",
       "question": "Varför syns inte en vändning i varje klipp?",
-      "current": "P1-provet visar blå FRONT/gul BACK, EDGE och två kortdesigner i samma Three-klient. Färgen är författad overlay; fysisk sida på den blanka källan är UNKNOWN.",
-      "next": "Skilj fysisk rörelse, synlig kortsida och motorns beslut att visa valören."
+      "current": "C1:s fysiska grundrörelse,222-rutors VILA→C1→VILA och60-rutors tomhandsbrygga har klarat lokal rörelsegranskning. Båda C2-försöken är underkända. Det andra byter gul→blå f66–67 utan kantpassage och visar senare vit/tryckt kortyta under extra vändningar. Ingen C2-retur är beställd utifrån dessa filmer.",
+      "next": "Förbered en exakt kalibrerad C2-slutreferens med samma hand som den fungerande C1-rörelsen före nästa generering. De två C2-filmerna och AI-bildkandidaten är underkända. Bordets mjuka båge kalibreras separat; samma kontrakt ska därefter styra VILA→C1→C2→VILA. D.C1–D.C3, övriga grundgivningar och produktionslager återstår."
     },
     {
       "id": "jitter",
@@ -25,8 +25,8 @@
     {
       "id": "timing",
       "question": "Hur går KORT N direkt till VILA utan REDO eller skobesök efter sista släppet?",
-      "current": "0/2 godkända direktreturer. Två C1-försök mot ursprunglig VILA-keystone underkändes för återkontakt med kortet. Äldre B-prov bevaras som jämförelse. C2 canonical är osänd.",
-      "next": "Förbered ett nytt rörelseupplägg eller en kontrollerad modelljämförelse före nästa betalda pilot; verifiera obrutet släpp→VILA och slutskarv."
+      "current": "Ny direktretur från redan lyft hand klarar lokal rörelse-QA och ingår i222-rutors C1-kedjan. Äldre fem returförsök förblir underkända och bevaras som historik.",
+      "next": "Verifiera C2:s fysiska vändning och bind en egen direktretur till tvåkorts-VILA."
     },
     {
       "id": "contact",
@@ -53,7 +53,7 @@
       "next": "En versionsstyrd beställning, idempotenta steg, kostnadstak, återupptagning, automatiska kvalitetsgrindar och explicit granskningsbeslut."
     }
   ],
-  "recommendation": "Bredda inte den underkända direktreturen. Rätt mål är ursprunglig VILA-keystone utan ny kortkontakt eller REDO/skobesök efter sista släppet. Separera fysisk kortvändning, overlay och motorns reveal. D.C1–D.C3 saknar ännu givfilm.",
+  "recommendation": "Förbered en exakt kalibrerad C2-slutreferens med samma hand som den fungerande C1-rörelsen före nästa generering. De två C2-filmerna och AI-bildkandidaten är underkända. Bordets mjuka båge kalibreras separat; samma kontrakt ska därefter styra VILA→C1→C2→VILA. D.C1–D.C3, övriga grundgivningar och produktionslager återstår. Samma handling, mål, start-/slutankare och kortföre/efter. Varje film anger hand och egen QA. Avsiktlig kortjustering har särskild kontaktklass och källrutor; den får aldrig bli en ny givning eller blandas med vanlig retur utan återkontakt. Blick och andra gester får variera inom samma godkända gränser.",
   "pipeline": [
     {
       "step": "Beställning",
@@ -72,7 +72,7 @@
     },
     {
       "step": "Generering och bearbetning",
-      "available": "Fem avslutade WAN3-jobb, totalt 300 credits, med immutable planer, ett POST per jobb, sparade task-ID och teknisk originalkontroll",
+      "available": "Tolv avslutade WAN3-jobb i denna pilotsvit: fem äldre returer/300 krediter, fyra fysiska givningsprov/400 och tre nya övergångar/120; totalt820 krediter. Inget videojobb kör längre. Interna pilotramar är inte Jakobs maxbelopp. Planer, original, task-ID och terminalkostnader är bevarade; inga automatiska återförsök. Den avvisade imagegen-referensens kostnad är okänd och ingår inte i Runway-summan.",
       "missing": "Generell beställningsorkestrering, automatiserad kostnadsavstämning före nästa jobb och godkända tillgångar för fler mål"
     },
     {

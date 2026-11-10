@@ -68,7 +68,7 @@ Plats 1–7 motsvarar **box0–box6**. Facken är `deal.player.left/box0–1`, `
 | Senare Kevin-mätning | Exempel plats 1 `(108.5,1024.5)`, dealer `(538.6,894.5)` | `meta.json` anger kort 79 × 106 och props med bredd 78–79. Dessa mätvärden ska inte skrivas över med profilens avrundade standardvärden. |
 | Bordsgrafik J3 | 2048 × 928 | `packages/presentation/contracts/table-standard.mjs`: kontur i bordspixlar, omräknad till fraktioner av bordsgrafiken. Filmens relingsrad är separat: 737 av 1920. |
 | Studio-bord | Normaliserade ankare mot hela bordsgrafiken, inklusive alfamarginal | `apps/studio/lib/coordinates/table-geometry.mjs`; scenmått desktop 1920 × 1080 och mobil 1080 × 1920. Film- och bordspixlar kräver explicit transform. |
-| Alternativ mall i `extra/` | Meter, Y upp; filt 0,809 m, reling 0,845 m | `extra/insperationsmall-alternativ/standard.json` och `LAS-MIG.md`; ursprung `C:/Users/jakem/Desktop/wow/blackjack-studio`. Separat källprojekt, inte verifierad Scoutgaming-kalibrering. |
+| Alternativ mall i `extra/` | Meter, Y upp; filt 0,809 m, reling 0,845 m | `extra/insperationsmall-alternativ/standard.json` och `LAS-MIG.md`; ursprung `C:/Users/jakem/Desktop/wow/blackjack-studio`. Ursprungsplatsen saknas vid kontroll 2026-11-10; de två angivna filerna i extra/ finns kvar. Separat källprojekt, inte verifierad Scoutgaming-kalibrering. |
 
 Kevin `table-layout.js` beskriver dynamisk spridning utifrån antal kort och splitthänder. Dess gränser för sko/händer är inte en komplett kamera- eller handkalibrering. Mains `services/game/public/card-presentation/` innehåller ytterligare kort- och handspår för presentation; ingen sådan handmask har antagits passa labbets kandidat.
 
@@ -76,7 +76,7 @@ Kevin `table-layout.js` beskriver dynamisk spridning utifrån antal kort och spl
 
 De fyra jämförda kontraktsområdena — `clip-naming.mjs`, `apps/studio/lib/clipmap/slots.mjs`, `filmed-profiles/` och `filmed-deal-sequence.mjs` — är oförändrade mellan ovanstående main och båda Claude-HEAD. UI-rörelsearbetets ocommittade filer rör bland annat CSS, typsnitt, layout och `packages/ui/motion.css`; detta belägger inget nytt dealer-rörelseschema.
 
-Den separat lästa, ocommittade filen `.worktrees/admin-varianter-1108/apps/admin/components/admin/dealer-slot-variants.mjs` hade SHA-256 `bca6eddc0003ab135abafbc6b89ba3fa44c23f55f16777dd8f14692090ad0480`. Den återinför administrativa alternativ **Slump, Regler, OpenClaw**, prioritet/villkor och flera grundloopar. Kommentaren skiljer uttryckligen dessa alternativ från den filmade givbankens posstyrda tagningar. Detta är ett lokalt arbetsutkast, inte innehåll i fryst HEAD och inte en verifierad driftsättning.
+Den separat lästa, ocommittade filen `.worktrees/admin-varianter-1108/apps/admin/components/admin/dealer-slot-variants.mjs` hade SHA-256 `bca6eddc0003ab135abafbc6b89ba3fa44c23f55f16777dd8f14692090ad0480`. Den återinför administrativa alternativ **Slump, Regler, OpenClaw**, prioritet/villkor och flera grundloopar. Kommentaren skiljer uttryckligen dessa alternativ från den filmade givbankens posstyrda tagningar. Detta är ett lokalt arbetsutkast, inte innehåll i fryst HEAD och inte en verifierad driftsättning. Den historiska worktree-sökvägen saknas vid kontroll 2026-11-10 i både Dealerlab och den angivna Scoutgaming-referensroten. Det registrerade hashvärdet bevarar uppgiften från lästillfället; aktuell filåtkomst är ej verifierad.
 
 ## Datakontrakt och användning
 

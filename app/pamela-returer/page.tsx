@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import { headers } from 'next/headers';
 import { safeFile } from '../../src/library.ts';
 import { directReturnReviewRefs, pamelaDirectReturnReviewSection, type DirectReturnRef, type DirectReturnReview } from '../../src/pamela-direct-return-review-page.ts';
+import { physicalDealReviewRefs, physicalDealReviewSection, type PhysicalDealReview } from '../../src/pamela-physical-deal-review.ts';
 
 export const dynamic = 'force-dynamic';
 export const metadata = { title: 'Pamela P1 · direktreturer till VILA' };
@@ -59,11 +60,16 @@ export default async function PamelaDirectReturnReviewPage() {
   const dealer = identities.dealers.find((d: { id: string }) => d.id === review.dealerId); assert.ok(dealer);
   const code = await readFile('src/dealer-motion-contract.ts');
   const html = pamelaDirectReturnReviewSection(review, urls, { manifest: fileUrl(pointer.manifest.path), contract: '#retur-kontrakt', identity: '#retur-identitet', simulator: '#retur-kod', dealerLabel: dealer.label });
+  const physical = checkReviewJson(await readFile('references/pamela-physical-deal-review.json')) as PhysicalDealReview;
+  const physicalUrls = new Map<string,string>();
+  for (const ref of physicalDealReviewRefs(physical)) { await checked(ref); physicalUrls.set(ref.path,fileUrl(ref.path)); }
+  const physicalHtml = physicalDealReviewSection(physical,physicalUrls);
   const nonce = (await headers()).get('x-nonce') ?? undefined;
   return <main style={{ maxWidth: 1200, margin: '0 auto', padding: 24 }}>
     <style nonce={nonce}>{`.pamela-returer video{width:100%;max-height:70vh;background:#07100b}.pamela-returer .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}.pamela-returer article{min-width:0}.pamela-returer p,.pamela-returer li{line-height:1.6}.pamela-returer small,pre{overflow-wrap:anywhere;white-space:pre-wrap}.pamela-returer details{margin:20px 0}`}</style>
     <nav><a href="/studio">Studion</a> · <a href="/pamela-sidprov">P1:s kortsidor</a></nav>
-    <div className="pamela-returer" dangerouslySetInnerHTML={{ __html: html }} />
+    <div className="pamela-returer" dangerouslySetInnerHTML={{ __html: physicalHtml }} />
+    <details><summary>Historiska returförsök · tidigare underkännanden</summary><div className="pamela-returer" dangerouslySetInnerHTML={{ __html: html }} /></details>
     <details id="retur-kontrakt"><summary>V2-kontrakt · SHA-256 {hash(contractBytes)}</summary><pre>{JSON.stringify(contract, null, 2)}</pre></details>
     <details id="retur-identitet"><summary>Pamela · Dealerlab: identitet och ankare</summary><pre>{JSON.stringify(dealer, null, 2)}</pre></details>
     <details id="retur-kod"><summary>Kontraktskod · SHA-256 {hash(code)}</summary><pre>{code.toString('utf8')}</pre></details>

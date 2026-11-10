@@ -4,7 +4,7 @@
   "projectId": "snyggare-dealer",
   "dealerId": "pamela-pilot",
   "bankId": "pamela-workspace-v1",
-  "revision": "candidate-20261110-v2-r1",
+  "revision": "candidate-20261110-v2-r2",
   "status": "candidate",
   "activeSelection": false,
   "productionAccepted": false,
@@ -33,12 +33,17 @@
     "id": "blue-front-yellow-back-v1",
     "front": "blue",
     "back": "yellow",
-    "status": "proposed",
-    "sourceHashes": [],
+    "status": "source-verified",
+    "sourceHashes": [
+      "678965c828751b080edd9c1c50d9a73e4bb649226c12ca4a92b5c7cae71c65d9"
+    ],
     "qa": {
-      "status": "pending",
-      "evidence": null,
-      "reason": "Requested blue/front yellow/back convention is not observed in the current blank source films."
+      "status": "approved",
+      "evidence": {
+        "path": "runs/20261110-pamela-physical-deal-pilot/review/keyframes-02/qa.json",
+        "sha256": "e934dd34e95dbf591c1d8dc9f3fbfcbf3dcfdd86c261105f9f0e73e6c2613d32"
+      },
+      "reason": "Marker orientation evidence only: this exact source shows yellow BACK through nativef46, EDGEf47..48 and blue FRONT fromf49. No legacy source, authored track, calibrated geometry, separable layer or motion approval is upgraded."
     }
   },
   "assets": [
@@ -305,6 +310,36 @@
       "fps": 30,
       "frames": 360,
       "role": "Second-card raw motion candidate; source contains existing C1 and moving C2. Keep source C1 separate from caller overlay. No runtime approval."
+    },
+    {
+      "id": "physical-entry-raw-take-01",
+      "path": "runs/20261110-pamela-physical-entry-pilot/jobs/vila-to-shoe-take-01/original.mp4",
+      "sha256": "cbaf81cd79f53eafcc38891847151a1311e3ee94275abe10463674ae6a6f66f2",
+      "kind": "video",
+      "width": 1764,
+      "height": 1174,
+      "fps": 30,
+      "frames": 60
+    },
+    {
+      "id": "physical-P1-C1-deal-raw-take-02",
+      "path": "runs/20261110-pamela-physical-deal-pilot/jobs/p1-back-front-keyframes-take-02/original.mp4",
+      "sha256": "678965c828751b080edd9c1c50d9a73e4bb649226c12ca4a92b5c7cae71c65d9",
+      "kind": "video",
+      "width": 1764,
+      "height": 1174,
+      "fps": 30,
+      "frames": 120
+    },
+    {
+      "id": "physical-P1-C1-return-raw-take-01",
+      "path": "runs/20261110-pamela-physical-return-pilot/jobs/p1-c1-lifted-to-vila-take-01/original.mp4",
+      "sha256": "b84e92ca14a763adc180474e3fcc4cb7faef2274b1b7028fafb33ff59994743d",
+      "kind": "video",
+      "width": 1764,
+      "height": 1174,
+      "fps": 30,
+      "frames": 60
     }
   ],
   "anchors": [
@@ -548,7 +583,7 @@
       "note": "Sporadiskt instick: 3 observerade blinkningar. Ska inte spelas som ständig grundloop."
     },
     {
-      "id": "bridge.to-redo",
+      "id": "legacy.bridge.to-redo",
       "label": "VILA → REDO",
       "kind": "approach",
       "from": {
@@ -1408,7 +1443,7 @@
     },
     {
       "id": "deal.P1.K1.release",
-      "label": "P1.K1 - missing release cut",
+      "label": "P1.C1 — physical give through lifted-hand boundary (K1 schema alias)",
       "kind": "deal",
       "from": {
         "kind": "REDO"
@@ -1421,17 +1456,94 @@
       "legacyV1": null,
       "cardPlacementId": "P1.K1",
       "returnMode": "none",
-      "binding": null,
+      "binding": {
+        "assetId": "physical-P1-C1-deal-raw-take-02",
+        "sha256": "678965c828751b080edd9c1c50d9a73e4bb649226c12ca4a92b5c7cae71c65d9",
+        "startFrame": 0,
+        "endFrameExclusive": 103,
+        "presentation": "raw-reference",
+        "sourceCards": "unresolved"
+      },
       "qa": {
         "status": "pending",
-        "evidence": null,
-        "reason": "Missing media and endpoint evidence; planning only."
+        "evidence": {
+          "path": "runs/20261110-pamela-physical-deal-pilot/review/keyframes-02/qa.json",
+          "sha256": "e934dd34e95dbf591c1d8dc9f3fbfcbf3dcfdd86c261105f9f0e73e6c2613d32"
+        },
+        "reason": "Local physical turn, direct P1 landing and release accepted in raw footage; separable layers, calibrated card track and hand masks remain pending."
       },
-      "releaseFrame": null,
-      "filmPath": null,
-      "sideTrack": null,
+      "releaseFrame": 95,
+      "filmPath": {
+        "sourceSha256": "678965c828751b080edd9c1c50d9a73e4bb649226c12ca4a92b5c7cae71c65d9",
+        "points": [
+          {
+            "pose": {
+              "kind": "REDO"
+            },
+            "frame": 0
+          },
+          {
+            "pose": {
+              "boundaryId": "release-event.P1.K1",
+              "kind": "ACTION_BOUNDARY"
+            },
+            "frame": 95
+          },
+          {
+            "pose": {
+              "boundaryId": "release.P1.K1",
+              "kind": "ACTION_BOUNDARY"
+            },
+            "frame": 102
+          }
+        ],
+        "qa": {
+          "status": "pending",
+          "evidence": {
+            "path": "runs/20261110-pamela-physical-deal-pilot/review/keyframes-02/qa.json",
+            "sha256": "e934dd34e95dbf591c1d8dc9f3fbfcbf3dcfdd86c261105f9f0e73e6c2613d32"
+          },
+          "reason": "f94 is last visible fingertip contact; f95 is first clear frame. The later lifted-hand cut ends at f102; it is not the same physical pose as the release cue. Layer/node compatibility remains pending."
+        }
+      },
+      "sideTrack": {
+        "sourceSha256": "678965c828751b080edd9c1c50d9a73e4bb649226c12ca4a92b5c7cae71c65d9",
+        "markerLegendId": "blue-front-yellow-back-v1",
+        "ranges": [
+          {
+            "method": "unknown",
+            "startFrame": 0,
+            "endFrameExclusive": 40,
+            "side": "UNKNOWN"
+          },
+          {
+            "method": "marker-observation",
+            "startFrame": 40,
+            "endFrameExclusive": 47,
+            "side": "BACK"
+          },
+          {
+            "method": "marker-observation",
+            "startFrame": 47,
+            "endFrameExclusive": 49,
+            "side": "EDGE"
+          },
+          {
+            "method": "marker-observation",
+            "startFrame": 49,
+            "endFrameExclusive": 100,
+            "side": "FRONT"
+          },
+          {
+            "method": "unknown",
+            "startFrame": 100,
+            "endFrameExclusive": 103,
+            "side": "UNKNOWN"
+          }
+        ]
+      },
       "geometry": null,
-      "note": "New proposed cut/boundary. Existing REDO-to-REDO footage is not relabelled or accepted."
+      "note": "C1 is primary terminology; P1.K1 is the stable schema alias. Selection is raw0..102, not the full120-frame original. Side observations use only the dense native f40..99 QA window; UNKNOWN elsewhere. No calibrated geometry, final material or production acceptance is implied."
     },
     {
       "id": "deal.P1.K2.release",
@@ -1458,11 +1570,11 @@
       "filmPath": null,
       "sideTrack": null,
       "geometry": null,
-      "note": "New proposed cut/boundary. Existing REDO-to-REDO footage is not relabelled or accepted."
+      "note": "Planning placeholder only. Physical C2 take01 was rejected and is not bound here; replacement source, release/side observations and layer QA remain pending."
     },
     {
       "id": "return.P1.K1.direct",
-      "label": "P1.K1 - missing direct return",
+      "label": "P1.C1 — physical direct return to VILA (K1 schema alias)",
       "kind": "return",
       "from": {
         "boundaryId": "release.P1.K1",
@@ -1475,17 +1587,52 @@
       "legacyV1": null,
       "cardPlacementId": null,
       "returnMode": "direct",
-      "binding": null,
+      "binding": {
+        "assetId": "physical-P1-C1-return-raw-take-01",
+        "sha256": "b84e92ca14a763adc180474e3fcc4cb7faef2274b1b7028fafb33ff59994743d",
+        "startFrame": 0,
+        "endFrameExclusive": 60,
+        "presentation": "raw-reference",
+        "sourceCards": "unresolved"
+      },
       "qa": {
         "status": "pending",
-        "evidence": null,
-        "reason": "Missing media and endpoint evidence; planning only."
+        "evidence": {
+          "path": "runs/20261110-pamela-physical-return-pilot/review/take-01/qa.json",
+          "sha256": "608c2c6d095965cc321cfd9c070bf3b844a20e4b634d2474a3040725c24d290e"
+        },
+        "reason": "Local empty-hand return and raw join accepted, without REDO passage; separable layers, card/hand tracks and production endpoint compatibility remain pending."
       },
       "releaseFrame": null,
-      "filmPath": null,
+      "filmPath": {
+        "sourceSha256": "b84e92ca14a763adc180474e3fcc4cb7faef2274b1b7028fafb33ff59994743d",
+        "points": [
+          {
+            "pose": {
+              "boundaryId": "release.P1.K1",
+              "kind": "ACTION_BOUNDARY"
+            },
+            "frame": 0
+          },
+          {
+            "pose": {
+              "kind": "VILA"
+            },
+            "frame": 59
+          }
+        ],
+        "qa": {
+          "status": "pending",
+          "evidence": {
+            "path": "runs/20261110-pamela-physical-return-pilot/review/take-01/qa.json",
+            "sha256": "608c2c6d095965cc321cfd9c070bf3b844a20e4b634d2474a3040725c24d290e"
+          },
+          "reason": "All60 return frames reviewed; no shoe/REDO visit or recontact. Canonical VILA matches visually, not pixel-identically; layer/node compatibility pending."
+        }
+      },
       "sideTrack": null,
       "geometry": null,
-      "note": "Missing actual direct-return source and verified path. No passage through REDO may be implied."
+      "note": "Return0..59 replaces omitted deal103 once at the join. The existing engine card remains on P1; no added DEAL, release or shoeDraw. Raw proof is222frames including59entry+103deal+60return."
     },
     {
       "id": "return.P1.K2.direct",
@@ -1918,9 +2065,157 @@
       "sideTrack": null,
       "geometry": null,
       "note": "Missing actual direct-return source and verified path. No passage through REDO may be implied."
+    },
+    {
+      "id": "bridge.to-redo",
+      "label": "VILA → REDO — physical entry take01",
+      "kind": "approach",
+      "from": {
+        "kind": "VILA"
+      },
+      "to": {
+        "kind": "REDO"
+      },
+      "clipSlotId": "transition.shoe/to-shoe",
+      "legacyV1": null,
+      "cardPlacementId": null,
+      "returnMode": "none",
+      "binding": {
+        "assetId": "physical-entry-raw-take-01",
+        "sha256": "cbaf81cd79f53eafcc38891847151a1311e3ee94275abe10463674ae6a6f66f2",
+        "startFrame": 0,
+        "endFrameExclusive": 59,
+        "presentation": "raw-reference",
+        "sourceCards": "unresolved"
+      },
+      "qa": {
+        "status": "pending",
+        "evidence": {
+          "path": "runs/20261110-pamela-physical-entry-pilot/review/take-01/qa.json",
+          "sha256": "a6a7b4e16f44cbba4b0a5004a591583cc316159727777685f7babb7c92e9b324"
+        },
+        "reason": "Local raw movement and proof join reviewed; separable layers, card/hand tracks and production endpoint compatibility remain pending."
+      },
+      "releaseFrame": null,
+      "filmPath": {
+        "sourceSha256": "cbaf81cd79f53eafcc38891847151a1311e3ee94275abe10463674ae6a6f66f2",
+        "points": [
+          {
+            "pose": {
+              "kind": "VILA"
+            },
+            "frame": 0
+          },
+          {
+            "pose": {
+              "kind": "REDO"
+            },
+            "frame": 58
+          }
+        ],
+        "qa": {
+          "status": "pending",
+          "evidence": {
+            "path": "runs/20261110-pamela-physical-entry-pilot/review/take-01/receipt.json",
+            "sha256": "1e3e06e442bce402dedf657e47e12e7e0fbf024417e7bed7d55941b1f61ceb2f"
+          },
+          "reason": "Source-bound entry0..58 from the 222-frame proof; raw pregrasp join accepted locally, layer/node compatibility pending."
+        }
+      },
+      "sideTrack": null,
+      "geometry": null,
+      "note": "Physical entry0..58; entry59 is omitted once at the join to deal0. Original v1 motion preserved as legacy.bridge.to-redo. No card is extracted by this approach; engine board is preserved."
+    },
+    {
+      "id": "return.P1.K1.to-redo",
+      "label": "P1.C1 — pending continuation to REDO for C2",
+      "kind": "return",
+      "from": {
+        "boundaryId": "release.P1.K1",
+        "kind": "ACTION_BOUNDARY"
+      },
+      "to": {
+        "kind": "REDO"
+      },
+      "clipSlotId": "local.to-redo",
+      "legacyV1": null,
+      "cardPlacementId": null,
+      "returnMode": "to-redo",
+      "binding": null,
+      "qa": {
+        "status": "pending",
+        "evidence": null,
+        "reason": "Planning only; the separate physical continuation source is not yet bound or accepted."
+      },
+      "releaseFrame": null,
+      "filmPath": null,
+      "sideTrack": null,
+      "geometry": null,
+      "note": "Preserves C1 and all existing engine cards while returning the empty hand to the shoe. No new DEAL, release or shoeDraw. The C2 take01 is rejected and is not a bank binding."
     }
   ],
-  "edgeGates": [],
+  "edgeGates": [
+    {
+      "from": {
+        "nodeId": "anchor.VILA",
+        "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+        "frame": 0
+      },
+      "to": {
+        "nodeId": "bridge.to-redo",
+        "sha256": "cbaf81cd79f53eafcc38891847151a1311e3ee94275abe10463674ae6a6f66f2",
+        "frame": 0
+      },
+      "qa": {
+        "status": "pending",
+        "evidence": {
+          "path": "runs/20261110-pamela-physical-entry-pilot/review/take-01/receipt.json",
+          "sha256": "1e3e06e442bce402dedf657e47e12e7e0fbf024417e7bed7d55941b1f61ceb2f"
+        },
+        "reason": "The222-frame raw proof passed local visual joins; these exact source endpoints still require separated-layer/node compatibility QA."
+      }
+    },
+    {
+      "from": {
+        "nodeId": "bridge.to-redo",
+        "sha256": "cbaf81cd79f53eafcc38891847151a1311e3ee94275abe10463674ae6a6f66f2",
+        "frame": 58
+      },
+      "to": {
+        "nodeId": "deal.P1.K1.release",
+        "sha256": "678965c828751b080edd9c1c50d9a73e4bb649226c12ca4a92b5c7cae71c65d9",
+        "frame": 0
+      },
+      "qa": {
+        "status": "pending",
+        "evidence": {
+          "path": "runs/20261110-pamela-physical-entry-pilot/review/take-01/receipt.json",
+          "sha256": "1e3e06e442bce402dedf657e47e12e7e0fbf024417e7bed7d55941b1f61ceb2f"
+        },
+        "reason": "The222-frame raw proof passed local visual joins; these exact source endpoints still require separated-layer/node compatibility QA."
+      }
+    },
+    {
+      "from": {
+        "nodeId": "deal.P1.K1.release",
+        "sha256": "678965c828751b080edd9c1c50d9a73e4bb649226c12ca4a92b5c7cae71c65d9",
+        "frame": 102
+      },
+      "to": {
+        "nodeId": "return.P1.K1.direct",
+        "sha256": "b84e92ca14a763adc180474e3fcc4cb7faef2274b1b7028fafb33ff59994743d",
+        "frame": 0
+      },
+      "qa": {
+        "status": "pending",
+        "evidence": {
+          "path": "runs/20261110-pamela-physical-entry-pilot/review/take-01/receipt.json",
+          "sha256": "1e3e06e442bce402dedf657e47e12e7e0fbf024417e7bed7d55941b1f61ceb2f"
+        },
+        "reason": "The222-frame raw proof passed local visual joins; these exact source endpoints still require separated-layer/node compatibility QA."
+      }
+    }
+  ],
   "plans": [
     {
       "id": "P1.after-K1.direct",
@@ -1937,7 +2232,8 @@
       "anchorId": "anchor.VILA",
       "motionIds": [
         "bridge.to-redo",
-        "deal.seat-1.first",
+        "deal.P1.K1.release",
+        "return.P1.K1.to-redo",
         "deal.P1.K2.release",
         "return.P1.K2.direct"
       ],

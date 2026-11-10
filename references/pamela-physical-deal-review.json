@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "dealerId": "pamela-pilot",
+  "productionAccepted": false,
+  "requirement": "Vanlig öppen givning: BACK vid skon → synlig fysisk vändning genom EDGE → FRONT på rätt landningsplats, utan nytt grepp efter släpp.",
+  "rawColourMethod": "I dessa råfilmer kommer gul BACK och blå FRONT från genereringen. Referensbilderna färgades före beställningen; filmerna har inga efterlagda färgmasker. I det äldre Three-sidprovet är blått/gult däremot en författad overlay och inget bevis för fysisk vändning.",
+  "nextStep": "Förbered en exakt kalibrerad C2-slutreferens med samma hand som den fungerande C1-rörelsen före nästa generering. De två C2-filmerna och AI-bildkandidaten är underkända. Bordets mjuka båge kalibreras separat; samma kontrakt ska därefter styra VILA→C1→C2→VILA. D.C1–D.C3, övriga grundgivningar och produktionslager återstår.",
+  "completedJobs": 4,
+  "terminalCostCredits": 400,
+  "takes": [
+    {
+      "id": "reference-01",
+      "label": "Försök 1 · fria bild- och rörelsereferenser",
+      "decision": "UNDERKÄND",
+      "localMotionAccepted": false,
+      "reasons": [
+        "Gul bred yta blir vit mellan ruta 88 och 89 utan synlig kantpassage.",
+        "Kortet släpps först centralt, berörs igen vid ruta 124 och skjuts därefter till P1.",
+        "Den gröna scenen och sluthanden följer inte referenserna."
+      ],
+      "taskId": "47bcb4b2-c886-4bfe-aaf7-31c3f6454319",
+      "model": "wan3",
+      "seconds": 6,
+      "frames": 180,
+      "fps": 30,
+      "terminalCostCredits": 120,
+      "qaSha256": "60b5692ea8ae81e68edaac8ef6defecee7f6a8b9081c87e5d19c8304bccf0f10",
+      "original": {
+        "path": "runs/20261110-pamela-physical-deal-pilot/jobs/p1-back-front-reference-take-01/original.mp4",
+        "sha256": "7cfde96b992de2b41946ad1512400dfffa5efd265c0ec0b601d30c5f2e4dbaf8"
+      },
+      "evidence": [
+        {
+          "path": "runs/20261110-pamela-physical-deal-pilot/review/reference-01/critical-colour-88-89-106-109-native.png",
+          "sha256": "26a6c5e941333f4a8165248906e69ef36021f8a51d845d1ed90a766c34137fdd",
+          "label": "Färgbyte utan kantpassage"
+        },
+        {
+          "path": "runs/20261110-pamela-physical-deal-pilot/review/reference-01/critical-release-114-116-123-124-native.png",
+          "sha256": "62f8eb492ad2c5ee07519b3f9983de0183e1a6c2c0f5b807650b54983c196737",
+          "label": "Mellansläpp och återkontakt"
+        }
+      ]
+    },
+    {
+      "id": "keyframes-02",
+      "label": "Försök 2 · fasta start- och slutbilder",
+      "decision": "GODKÄND RÖRELSEKANDIDAT",
+      "localMotionAccepted": true,
+      "reasons": [
+        "Lokalt godkänd fysisk rörelsekandidat: gul baksida → smal kant i ruta 47–48 → motsatt blå framsida från ruta 49.",
+        "Kortet bärs direkt till P1 och släpps utan mellannedläggning eller återkontakt; handen är fri från ruta 95.",
+        "Den gröna arbetsmiljön och ändposerna håller visuellt. Mindre kantbredd, rörelseoskärpa och ljusvariation återstår att hantera med nya kortspår och masker.",
+        "Detta godkänner grundrörelsen, inte färdiga lager, retur till VILA, andra kortplatser eller produktion."
+      ],
+      "taskId": "b4ec9d3f-7cfd-4344-88a4-708f559ce252",
+      "model": "wan3",
+      "seconds": 4,
+      "frames": 120,
+      "fps": 30,
+      "terminalCostCredits": 80,
+      "qaSha256": "e934dd34e95dbf591c1d8dc9f3fbfcbf3dcfdd86c261105f9f0e73e6c2613d32",
+      "original": {
+        "path": "runs/20261110-pamela-physical-deal-pilot/jobs/p1-back-front-keyframes-take-02/original.mp4",
+        "sha256": "678965c828751b080edd9c1c50d9a73e4bb649226c12ca4a92b5c7cae71c65d9"
+      },
+      "evidence": [
+        {
+          "path": "runs/20261110-pamela-physical-deal-pilot/review/keyframes-02/turn-40-49-native.png",
+          "sha256": "0b366b6c5e90438bbdb9b985f700fbf013b34604a86bab9c0b3832106891ea2e",
+          "label": "Verklig gul–kant–blå-vändning, rutor 40–49"
+        },
+        {
+          "path": "runs/20261110-pamela-physical-deal-pilot/review/keyframes-02/release-90-99-native.png",
+          "sha256": "74b4cdb1e21272bcc336e471ca99018329168e8d8e1fa46ae0603893c929aa1e",
+          "label": "Släpp utan återkontakt, rutor 90–99"
+        },
+        {
+          "path": "runs/20261110-pamela-physical-deal-pilot/review/keyframes-02/input-output-endpoints.png",
+          "sha256": "71b2ef448f154c340d8d167b6287e1a56a05e72c212884733feaa7e6f4b73a21",
+          "label": "Referenser och råfilens ändposer"
+        }
+      ],
+      "presentation": {
+        "path": "runs/20261110-pamela-physical-deal-pilot/review/release-endpoint-03/p1-c1-deal-f000-f103-lossless.mp4",
+        "sha256": "eded1bb140f7dd35661bbbfcc55f0c5f3b0b8c1f5b9c7f902d279f1c575ebfbf",
+        "frames": 104,
+        "sourceFrames": [
+          0,
+          103
+        ],
+        "note": "Förkortad vid upplyft hand före den extra sänkningen. Rutor 0–103 är pixelverifierade mot råoriginalet; inget bildinnehåll har retuscherats."
+      }
+    },
+    {
+      "id": "c2-keyframes-01",
+      "label": "C2 försök 1 · handbyte",
+      "decision": "UNDERKÄND VÄNDNING",
+      "localMotionAccepted": false,
+      "reasons": [
+        "Den breda gula ytan i ruta 50 blir direkt bred blå i ruta 51 utan synlig fysisk kantpassage.",
+        "Handbyte, direkt andra landning och släpp fungerar; C1 ligger kvar.",
+        "Ingen återkontakt efter släppet, men extra handsänkning i slutet. Klippet är ingen godkänd grundgivning eller godkänd variant."
+      ],
+      "taskId": "16bb45e8-b528-48a3-b54d-5f4e0d8cdafa",
+      "model": "wan3",
+      "seconds": 4,
+      "frames": 120,
+      "fps": 30,
+      "terminalCostCredits": 80,
+      "qaSha256": "d4c453cb4284ab942837dd92085da546454a41ccf4c66d6f5c445b2fa5f0d4ae",
+      "original": {
+        "path": "runs/20261110-pamela-physical-c2-pilot/jobs/p1-c2-back-front-take-01/original.mp4",
+        "sha256": "bb4e422cee7f3b2f9e3424f2998fc4e786066e9576fa6ed27f3e2b209f4d7e46"
+      },
+      "evidence": [
+        {
+          "path": "runs/20261110-pamela-physical-c2-pilot/review/take-01/turn-and-release-native.png",
+          "sha256": "bc2c5125dd55036c83bd9c1b68056eadc27709243c3c4b8f2e9aed4b3d5aa385",
+          "label": "Vändning och släpp i originalrutor"
+        },
+        {
+          "path": "runs/20261110-pamela-physical-c2-pilot/review/take-01/receipt.json",
+          "sha256": "d2180bd995e739fbd57d579163f06a0630db0d172fe927fe8cf9ae53cf21a68d",
+          "label": "C2:s granskningsbeslut"
+        }
+      ]
+    },
+    {
+      "id": "c2-separated-turn-02",
+      "label": "C2 försök 2 · vändning före handbyte",
+      "decision": "UNDERKÄND VÄNDNING OCH KORTYTA",
+      "localMotionAccepted": false,
+      "reasons": [
+        "Bred gul yta f66 blir direkt bred blå f67 utan kantpassage.",
+        "Senare extra vändningar visar vit/tryckt sida f113–122 innan blått återkommer. De är referensråvara men inte den beställda enda BACK→FRONT-vändningen.",
+        "Kortet landar och släpps, men ingen fortsättningsretur godkänns från ett underkänt givningsförlopp."
+      ],
+      "taskId": "66a814c2-2704-46b9-acf5-e461e7f14994",
+      "model": "wan3",
+      "seconds": 6,
+      "frames": 180,
+      "fps": 30,
+      "terminalCostCredits": 120,
+      "qaSha256": "b42180dd80e76358cd5445819446c452fff0b8253fad2a7514420cb8175c59d7",
+      "original": {
+        "path": "runs/20261110-pamela-physical-c2-separated-turn/jobs/p1-c2-turn-before-transfer-take-01/original.mp4",
+        "sha256": "3ba237d035aa80eb10da27f99d889785a9fb2e0f08bba9d77bfa36cb879f9c72"
+      },
+      "evidence": [
+        {
+          "path": "runs/20261110-pamela-physical-c2-separated-turn/review/take-01/turn-60-71-native.png",
+          "sha256": "ebecdb6af1102579a850df18b58c8ed6bbce38bfbcdb0d97efab1ae3d9a86082",
+          "label": "Det första färgbytet, originalrutor"
+        },
+        {
+          "path": "runs/20261110-pamela-physical-c2-separated-turn/review/take-01/hand-transfer-104-129-native.png",
+          "sha256": "c1f7ad2931f64949407e7537b134a71455ae22dc0eecc54944e9004eb29d0e1b",
+          "label": "Extra vändningar och fel kortyta"
+        },
+        {
+          "path": "runs/20261110-pamela-physical-c2-separated-turn/review/take-01/receipt.json",
+          "sha256": "e9d762e23c58468b53bbcd1e717c6de99fd54d6115298df28340d76e5f1295c8",
+          "label": "C2:s slutbeslut"
+        }
+      ]
+    }
+  ],
+  "sequences": [
+    {
+      "id": "p1-c1-vila-deal-vila",
+      "title": "VILA → P1.C1 → VILA · ny sammanhängande kedja",
+      "description": "222 originalrutor: VILA till sko, fysisk gul–kant–blå-givning och direkt tomhandsretur till VILA. Ingen extra handsänkning eller stillbild har lagts till. Rörelsen är lokalt granskad; skoövergången har en liten synlig skillnad i fingrar/kortkant. Masker, kortspår och produktion återstår.",
+      "frames": 222,
+      "fps": 30,
+      "video": {
+        "path": "runs/20261110-pamela-physical-entry-pilot/review/take-01/p1-c1-vila-deal-vila-lossless.mp4",
+        "sha256": "aea4c9e4874d56e108a2d7e072699979651453e0c9d80bba9359797482b41195"
+      },
+      "evidence": [
+        {
+          "path": "runs/20261110-pamela-physical-entry-pilot/review/take-01/both-seams-and-vila.png",
+          "sha256": "6a97373b31759b391800f0650db0ac803d2ccc7bcd39309a87f506d75bd22988",
+          "label": "Skarvar och VILA-ankare"
+        },
+        {
+          "path": "runs/20261110-pamela-physical-entry-pilot/review/take-01/receipt.json",
+          "sha256": "1e3e06e442bce402dedf657e47e12e7e0fbf024417e7bed7d55941b1f61ceb2f",
+          "label": "Råfiler och exakt klippning"
+        },
+        {
+          "path": "runs/20261110-pamela-physical-entry-pilot/review/take-01/browser-review.json",
+          "sha256": "ee483a6746031ae58f970b3858d41935aa56d26234e7d66dc7705a80002b440a",
+          "label": "Verifierad lokal uppspelning"
+        }
+      ]
+    },
+    {
+      "id": "p1-c1-to-c2-shoe",
+      "title": "Efter C1 → nästa skoankare · tomhandsövergång",
+      "description": "60 nya originalrutor. Samma tomma hand går från släppet till nästa skoankare. C1 ligger kvar; inget andra kort delas ut här och ingen VILA-paus ingår. C2:s givning och slutretur kräver egna godkända filmer.",
+      "frames": 60,
+      "fps": 30,
+      "video": {
+        "path": "runs/20261110-pamela-physical-bridge-pilot/jobs/p1-c1-release-to-c2-shoe-take-01/original.mp4",
+        "sha256": "990d8e79feaff23a386d487bbf75f6a62ea0b4796c576dbe9b25e3aa39bfa05b"
+      },
+      "evidence": [
+        {
+          "path": "runs/20261110-pamela-physical-bridge-pilot/review/take-01/receipt.json",
+          "sha256": "ec8dbc25df45de2be3d85e819d105824733c648811552bea181c4e7ff910160b",
+          "label": "Bryggans källor och beslut"
+        }
+      ]
+    }
+  ],
+  "transitionCostCredits": 120,
+  "baseCoverage": {
+    "acceptedMotionTargets": 1,
+    "totalTargets": 17
+  },
+  "variantPolicy": "Samma handling, mål, start-/slutankare och kortföre/efter. Varje film anger hand och egen QA. Avsiktlig kortjustering har särskild kontaktklass och källrutor; den får aldrig bli en ny givning eller blandas med vanlig retur utan återkontakt. Blick och andra gester får variera inom samma godkända gränser."
+}

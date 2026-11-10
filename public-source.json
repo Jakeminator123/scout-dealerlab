@@ -5,9 +5,10 @@
   "sourceBranch": "jakob/test",
   "sourceIsWorkingTreeSnapshot": true,
   "reviewSnapshot": "review-hub-20261110050427598",
+  "pendingReviewSnapshot": "review-hub-20261110053953764",
   "reviewUrl": "https://scout-dealerlab.vercel.app/granskning.html",
   "deploymentId": "dpl_3H4F5mwKbF6FTktx5xXRLzjadYMz",
-  "sourceTreeSha256": "7186321c3e79f136941bdeca93f43d9642dafbf6453bfcdfad48f9084caac6cc",
+  "sourceTreeSha256": "8ea183e50ac399f9384d50503c3b48d60fd4defe7381beb63568db23e576b326",
   "files": [
     {
       "path": ".env.example",
@@ -81,8 +82,8 @@
     },
     {
       "path": "app/pamela-returer/page.tsx",
-      "sha256": "1c7ec418c294f89d003c1d0d3452bc26d281f989bb2b13c6baa78b077335966c",
-      "bytes": 5246
+      "sha256": "011ffaf0678c136caee2df9723e45f359be60550d924b2e54040200e02f1fcc1",
+      "bytes": 5928
     },
     {
       "path": "app/pamela-scen/page.tsx",
@@ -96,8 +97,8 @@
     },
     {
       "path": "app/pamela-sidprov/page.tsx",
-      "sha256": "da0c257eed7e0a4ffdf1b11d901014f4ef87e39a96dd849013768f1b302d2c67",
-      "bytes": 2199
+      "sha256": "791517ce56c45a8bc886f9050dc7de28f532da84ef50274e4d8d6b7f50c54a81",
+      "bytes": 2435
     },
     {
       "path": "app/studio/page.tsx",
@@ -191,8 +192,8 @@
     },
     {
       "path": "docs/MASTERPLAN.md",
-      "sha256": "b58a84f423cfdb7c165bb29c45792dd7411d4c667fe4e39728797d5486ad5a63",
-      "bytes": 76016
+      "sha256": "ab0e2f346b07300c4ebd3f29ad758d7a86fe4ee6491a366edf6a10cccff6a0b0",
+      "bytes": 78986
     },
     {
       "path": "docs/drift/ARBETSSATT.md",
@@ -216,8 +217,8 @@
     },
     {
       "path": "docs/drift/PROVISORISK-STRUKTUR.md",
-      "sha256": "15aead4ca8963271ca1035d60fe88391a79108eb2e3aa1078163307ee595492e",
-      "bytes": 11987
+      "sha256": "24289071607e47d062adf74c40419b95d462e747677a34ade077beb04c931700",
+      "bytes": 12318
     },
     {
       "path": "docs/drift/STATUS.md",
@@ -261,13 +262,13 @@
     },
     {
       "path": "docs/studio/DEALERS-OCH-PIPELINES.md",
-      "sha256": "a61d6c163bf3ab563d9370653c1d213470d04fc35423fea1f00e722e2e0eedf7",
-      "bytes": 24967
+      "sha256": "50f0e9d2e92cb24fcd52ad8691948bc0eb46ca268b0fc60d044476f42d9d871b",
+      "bytes": 26182
     },
     {
       "path": "docs/studio/KALLKARTA.md",
-      "sha256": "9f8c78d7e84acb393d2e1c5b9d759e7afcb1c4edd8f0d9516f1d8b1f5d7f0777",
-      "bytes": 9499
+      "sha256": "6f6d34e1068b4773c88b987737b35f24f23403f30ec39a8435a8b6b9893054bf",
+      "bytes": 9829
     },
     {
       "path": "docs/studio/KARTA.md",
@@ -471,13 +472,23 @@
     },
     {
       "path": "references/pamela-motion-contract-v2.json",
-      "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6",
-      "bytes": 66086
+      "sha256": "02c33cb012c784ed26eb2f88392884959d3137c2ba27e49417b604733b32d58b",
+      "bytes": 77673
     },
     {
       "path": "references/pamela-motion-contract.json",
       "sha256": "6632426731aa50cf0cdf4f814e64e55dd0e8515c6099375dfd6a5f889f9f4c8a",
       "bytes": 35407
+    },
+    {
+      "path": "references/pamela-motion-labels-review.json",
+      "sha256": "bb6c3ed8a5406616b030c0f378c32edf07a540619f34e2157c00bbb4e96aa083",
+      "bytes": 301376
+    },
+    {
+      "path": "references/pamela-physical-deal-review.json",
+      "sha256": "ffedd975719183e0850b8db76dc495af4422de2217df793237e8afe1b989e873",
+      "bytes": 11393
     },
     {
       "path": "references/pamela-pilot.json",
@@ -486,8 +497,8 @@
     },
     {
       "path": "references/pamela-presentation-review.json",
-      "sha256": "edda78e74a8e865c9f77bcd26596737f427d2d3727d68349bf8d730d8f4f06c1",
-      "bytes": 3565
+      "sha256": "a5459dae1f90f3176a471b66c045f6e0fc69f420427a70333c50c94c7e2b25c6",
+      "bytes": 3801
     },
     {
       "path": "references/pamela-rest-ready-review.json",
@@ -556,8 +567,8 @@
     },
     {
       "path": "references/review-brief.json",
-      "sha256": "a9642d989ebd916af0bcabaa7fd4c519adf554e23daa5ddf69c7e6d07593e02a",
-      "bytes": 5412
+      "sha256": "5686dabf6f69fecf3de2bcc00a9694ae438188e872e553ee60b63f73f0c83254",
+      "bytes": 6656
     },
     {
       "path": "references/review-round.json",
@@ -706,8 +717,8 @@
     },
     {
       "path": "scripts/build-review-hub.ts",
-      "sha256": "201690c179233535af01e86454aa9eebfa3fd8d5ba106c2f3c9c441019503209",
-      "bytes": 37096
+      "sha256": "7d896c1ecbba70c3a93e26fa912f3c989ad3474e4c2613a5be0d57383223b884",
+      "bytes": 39402
     },
     {
       "path": "scripts/bundle-card-material.ts",
@@ -766,8 +777,8 @@
     },
     {
       "path": "scripts/review-blob-links.ts",
-      "sha256": "685e52c9905be4b019e97a143d589375f0e0b60433dea3de946dc593dcddec1d",
-      "bytes": 2878
+      "sha256": "b528332a0fda53e7d5b1c51fd023b6c050785ed5c9a911130b601368ee185830",
+      "bytes": 9942
     },
     {
       "path": "scripts/review-publication-policy.ts",
@@ -941,8 +952,8 @@
     },
     {
       "path": "src/dealer-motion-contract.ts",
-      "sha256": "87ace86c0a5859aa3a0275afbe11471cdb7540929dd53b095e119a166acc047e",
-      "bytes": 25407
+      "sha256": "ff39d55e16fb5f91e4ed3ecefdceb1d32edb48040adf1e02b8406942d6c25463",
+      "bytes": 30131
     },
     {
       "path": "src/dealer-relations.ts",
@@ -1161,8 +1172,8 @@
     },
     {
       "path": "src/pamela-card-side-review-client.tsx",
-      "sha256": "48d02bee58bc61b4106da86a3e8ed0c3b94560a17e4adcf0566af0a7ccfee58d",
-      "bytes": 18807
+      "sha256": "4269788e376738ab93c05099cd7829dc14b283567119222ee1b8f32023fcd058",
+      "bytes": 21303
     },
     {
       "path": "src/pamela-card-surfaces.ts",
@@ -1343,6 +1354,11 @@
       "path": "src/pamela-paper-material.ts",
       "sha256": "9794b7953638fb48410aef0aeea9fd3e1e6eb0cb86cedda365a6586ec3be5a60",
       "bytes": 3160
+    },
+    {
+      "path": "src/pamela-physical-deal-review.ts",
+      "sha256": "6289a3c2bfd8ff49be668982377f0a84261103769fd4a41709657ec25aa482e2",
+      "bytes": 4344
     },
     {
       "path": "src/pamela-proof-card-designs.ts",
@@ -1621,13 +1637,23 @@
     },
     {
       "path": "test/dealer-motion-contract.test.ts",
-      "sha256": "53107944a83c5069ef004dd1d605808341ba398d6ba65ba80853d71461cf0721",
-      "bytes": 20262
+      "sha256": "c34173a0f2ba93c849863a40bfd93399b8214250cae9985eb6f53e827965da07",
+      "bytes": 36723
+    },
+    {
+      "path": "test/dealer-motion-labels.test.ts",
+      "sha256": "53508f419cbe08c0ecff08003698e60a78587b1b4300fa5ff122f14942f1986a",
+      "bytes": 8540
     },
     {
       "path": "test/dealer-video-job.test.ts",
       "sha256": "08e9468e0f6cf7304299c80733a4f311b4745da4a7cdade859c809b4e002e8fb",
       "bytes": 8856
+    },
+    {
+      "path": "test/dealer-video-reference-job.test.ts",
+      "sha256": "f7fb4dbea6a6906d02bf2ad5f5b1e71629bd0403e81c5252020660e6411abd58",
+      "bytes": 7580
     },
     {
       "path": "test/material-preview.test.ts",
@@ -1678,6 +1704,11 @@
       "path": "test/pamela-card-scene-calibration.test.ts",
       "sha256": "57883adb23aaa9d37465c140248c7754482337c158e76301d4d3ecc996e88106",
       "bytes": 2623
+    },
+    {
+      "path": "test/pamela-card-side-review-policy.test.ts",
+      "sha256": "0a5415dd0a57cea99c22db240d132cf5376befdaa1fc3de37b9e3568f3b5563d",
+      "bytes": 4421
     },
     {
       "path": "test/pamela-idle-chain-plan.test.ts",
@@ -1740,6 +1771,11 @@
       "bytes": 4818
     },
     {
+      "path": "test/review-blob-links.test.ts",
+      "sha256": "dcc03ac3c525062794b5ca58158a2929359594be85600a9f65db5811aa99abf0",
+      "bytes": 9679
+    },
+    {
       "path": "test/review-publication-policy.test.ts",
       "sha256": "1bb1cd9b2f93e36426c8a34079b7d52a11ecfc43a48f058f50059c1a5e1ca2e5",
       "bytes": 5668
@@ -1770,9 +1806,34 @@
       "bytes": 9570
     },
     {
+      "path": "tools/dealer-map/data/dealer-map.json",
+      "sha256": "f9f7c85f875d8a187421576a7c81a8a91d15e295383b9e7824fb53674ce4803d",
+      "bytes": 1888540
+    },
+    {
+      "path": "tools/dealer-map/requirements.txt",
+      "sha256": "6733098038fe3507611258b55aa31b6bb81c00beda3ef50b90e98d8a7fe42099",
+      "bytes": 16
+    },
+    {
+      "path": "tools/dealer-map/web/index.html",
+      "sha256": "0b8915a0978a2c8ee0d54b141162c4d3187570bde08e8f2a1e61f991a9fc21ea",
+      "bytes": 76643
+    },
+    {
+      "path": "tools/dealer-motion-labels.ts",
+      "sha256": "b5b15f2455eec33842b92d7016a90f202c58d173fee6160620d7933e9c5c269e",
+      "bytes": 14273
+    },
+    {
       "path": "tools/dealer-video-job.ts",
       "sha256": "73e49fac0eff8f8b3ba74549dd6543b0c0e8b0049d5ad19d208a58b30edf8f90",
       "bytes": 17982
+    },
+    {
+      "path": "tools/dealer-video-reference-job.ts",
+      "sha256": "482e9601db5129a0df8fd179873bb8a1c83a80b4d7b6e77d002fa35874d53a12",
+      "bytes": 21894
     },
     {
       "path": "tools/pamela-anchor-return-qa.ts",
@@ -2618,6 +2679,15 @@
     "references/scene-composition/source/scene/vendor/LICENSE",
     "references/storage-archives.json",
     "snyggare-dealer.code-workspace",
+    "tools/dealer-map/STARTA-LOKAL-KARTA.cmd",
+    "tools/dealer-map/dealer_map.py",
+    "tools/dealer-map/dealer_map_data.py",
+    "tools/dealer-map/dealer_map_desktop.py",
+    "tools/dealer-map/dealer_map_io.py",
+    "tools/dealer-map/dealer_map_labels.py",
+    "tools/dealer-map/dealer_map_naming.py",
+    "tools/dealer-map/dealer_map_sequence.py",
+    "tools/dealer-map/test_local_review.py",
     "tools/maud-box4-pilot.ts",
     "tools/maud-gpu-watchdog.ts",
     "tools/pamela-bank-mask-integration.ts",

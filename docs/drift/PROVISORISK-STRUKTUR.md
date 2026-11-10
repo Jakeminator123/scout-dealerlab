@@ -69,9 +69,11 @@ Minsta väg mot ”några rader och ett knapptryck”: gemensam dealerbeställni
 
 Inventeringen 2026-11-10 omfattade projektets rot, dokument, stödfiler, källkod och filantal/storlek i materialmapparna. 434 filer av typerna TypeScript, TSX, PowerShell och JSON under app, src, tools, scripts och references jämfördes med SHA-256, med node_modules undantaget. Ingen byteidentisk dubblett hittades i det urvalet. Liknande namn och versionssuffix behöver därför granskas på beteende- och beroendenivå före sammanslagning.
 
-48 lösa dokumentutkast från flera arbetsmappar samlades i .runtime/archive/structure-20261110/files/. Varje fil matchade ett installerat dokument eller en bevarad dokumentversion. Sökning efter kandidatvägar i projektets textfiler och lokala hjälpskript gav inga träffar för dessa 48. Tio andra utkast med referenser lämnades för separat granskning. Dynamiskt sammansatta filvägar är en begränsning i textsökningen. Arkivflytten är återställbar.
+Av de 48 tidigare arkiverade dokumentutkasten har 43 gallrats efter en ny SHA-256-jämförelse mot bevarade dokument och versioner. Fem arkivkopior behålls eftersom deras tidigare motsvarigheter har roterat ur dokumenthistoriken. Tio refererade utkast står kvar för separat granskning. Dynamiskt sammansatta filvägar är en begränsning i referenssökningen.
 
-Två felplacerade rotfiler, {cleanup() och {console.error(e.message), flyttades till samma arkivs shell-residues/. Den första innehåller ett 318 byte långt granskningskvitto; den andra är tom. Alla 50 flyttar verifierades med SHA-256. Manifestet anger ursprung, destination, hash och dokumentmotsvarighet. Logisk filstorlek är 457773 byte. Ingen frigjord diskvolym har mätts.
+Den godkända gallringen 2026-11-10 omfattade även en kopia ur vart och ett av fyra ytterligare dubblettpar. AGENTS.md och README.md behölls, deras lösa kandidatkopior togs bort. ATKOMST-v0002-recovered.md behölls framför den identiska ATKOMST-runpod.md. MASTERPLAN-materialprov-final.md behölls framför den identiska .txt-kopian. Den tomma arkiverade filen {console.error(e.message) togs bort; {cleanup() innehåller ett 318 byte långt granskningskvitto och bevaras.
+
+Totalt gallrades 48 filer med 336963 byte logisk filstorlek. Frigjord fysisk diskvolym är inte uppmätt. Exakta borttagna sökvägar, hashvärden, bevarade motsvarigheter och de fem kvarvarande arkivkopiorna finns i .runtime/archive/structure-20261110/cleanup-20261110.json. Den tidigare flyttens manifest bevaras som historiskt kvitto; gallringskvittot anger den senare förändringen.
 
 | Område | Verifierat fynd | Fortsatt åtgärd |
 |---|---|---|
@@ -83,8 +85,8 @@ Två felplacerade rotfiler, {cleanup() och {console.error(e.message), flyttades 
 
 ### Kandidater för ytterligare borttagning
 
-- De 48 arkiverade utkastkopiorna kan gallras när respektive hashmatch i manifestet återkontrollerats. Historiska dokumentversioner kan roteras, så kontrollen behöver göras vid själva gallringen.
-- Den tomma arkiverade filen {console.error(e.message) kan raderas. Filen {cleanup() bevarar ett granskningskvitto och behöver hanteras som bevis.
+- Fem arkiverade utkast behålls som historiskt underlag. De saknar nu en separat, verifierad motsvarighet bland aktuella dokument och dokumenthistoriken. Exakta sökvägar finns i gallringskvittot.
+- Den arkiverade filen {cleanup() bevarar ett granskningskvitto och behöver hanteras som bevis.
 - Tio ytterligare hashidentiska utkast har referenser i hjälpskript eller dokument. Exakta filer och referenser finns i arkivets audit/structure-plan.json. Kontrollera användningen av dessa referenser före gallring.
 - tmp/pdfs/nytta-scoutgaming-20261109 innehåller två PNG-bilder, totalt 497215 byte. Återskapbarhet från rätt original är ännu inte verifierad.
 - .runtime/doc-version-check-facddb3ff3f3441791a225ae61c87417 är en syntetisk testarbetsyta med 16 filer. docs/drift/STATUS.md hänvisar till den som verifieringsbevis. Avveckling kräver ett uttryckligt beslut om det beviset.

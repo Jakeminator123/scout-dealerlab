@@ -7,7 +7,8 @@ export const DEALER_MOTION_SCHEMA_ID = 'urn:dealerlab:dealer-motion-contract:2.0
 export type HashRef = { path: string; sha256: string };
 export type Qa = { status: 'pending' | 'rejected' | 'approved'; evidence: HashRef | null; reason: string };
 export type Pose = { kind: 'VILA' | 'REDO' } | { kind: 'ACTION_BOUNDARY'; boundaryId: string };
-export type ReturnMode = 'none' | 'direct' | 'via-redo';
+/** to-redo is a card-preserving continuation after release, not a new deal. */
+export type ReturnMode = 'none' | 'direct' | 'via-redo' | 'to-redo';
 export type PhysicalSide = 'FRONT' | 'BACK' | 'EDGE' | 'UNKNOWN';
 export type SideMethod = 'unknown' | 'authored' | 'marker-observation' | 'geometry-observation';
 export type Asset = HashRef & { id: string; kind: 'image' | 'video'; width: number; height: number; fps: number; frames: number };
@@ -16,6 +17,20 @@ export type Slot = { id: string; recipientId: string; layoutHandId: string; card
 export type Binding = { assetId: string; sha256: string; startFrame: number; endFrameExclusive: number; presentation: 'raw-reference' | 'separable-layers'; sourceCards: 'unresolved' | 'separated' };
 /** Lossless run-length encoding: every source frame has one explicit side/method. */
 export type SideTrack = { sourceSha256: string; markerLegendId: string | null; ranges: { startFrame: number; endFrameExclusive: number; side: PhysicalSide; method: SideMethod }[] };
+/** Opt-in interchangeability requirements, never approval or automatic selection.
+ * Before/after list required occupied slots; all other board cards are preserved.
+ * Contact ranges annotate the source film, never emit another deal or release.
+ */
+export type MotionVariant = {
+  groupId: string;
+  hand: 'L' | 'R' | 'BOTH' | 'NONE' | 'UNKNOWN';
+  anchors: { start: Boundary; end: Boundary };
+  cardsBefore: string[]; cardsAfter: string[];
+  contact: { kind: 'no-recontact' } | {
+    kind: 'intentional-adjustment'; cardPlacementIds: string[];
+    ranges: { startFrame: number; endFrameExclusive: number }[];
+  };
+};
 export type Motion = {
   id: string; label: string; kind: 'idle' | 'approach' | 'deal' | 'return'; from: Pose; to: Pose;
   clipSlotId: string;
@@ -25,6 +40,7 @@ export type Motion = {
   filmPath: { sourceSha256: string; points: { frame: number; pose: Pose }[]; qa: Qa } | null;
   sideTrack: SideTrack | null;
   geometry: { sourceSha256: string; spaceId: string; cardTrack: HashRef; handMask: HashRef } | null;
+  variant?: MotionVariant;
   note: string;
 };
 export type DealerMotionContract = {
@@ -85,6 +101,7 @@ function pathErrors(m: Motion): string[] {
   const e: string[] = [], b = m.binding, p = m.filmPath;
   if (m.returnMode === 'direct' && (m.to.kind !== 'VILA' || m.kind === 'return' && m.from.kind !== 'ACTION_BOUNDARY' || !['deal', 'return'].includes(m.kind))) e.push('Direct return must connect a release action to VILA');
   if (m.returnMode === 'via-redo' && (m.to.kind !== 'VILA' || !['deal', 'return'].includes(m.kind))) e.push('Via-REDO return must end at VILA');
+  if (m.returnMode === 'to-redo' && (m.kind !== 'return' || m.from.kind !== 'ACTION_BOUNDARY' || m.to.kind !== 'REDO')) e.push('To-REDO return must connect an action boundary to REDO without dealing');
   if (m.kind === 'return' && m.returnMode === 'none') e.push('Return motion needs an explicit returnMode');
   if (m.kind === 'deal' && m.to.kind === 'VILA' && m.returnMode === 'none') e.push('Deal ending at VILA needs a returnMode');
   if (!p) { if (m.qa.status === 'approved') e.push('Approved motion needs verified film path'); return e; }
@@ -98,6 +115,39 @@ function pathErrors(m: Motion): string[] {
   if (m.returnMode === 'via-redo' && !after.some(x => x.pose.kind === 'REDO')) e.push('Via-REDO return lacks REDO evidence');
   if (m.qa.status === 'approved' && p.qa.status !== 'approved') e.push('Film path QA not approved');
   return e;
+}
+
+const sameSlots = (a: string[], b: string[]) => JSON.stringify([...a].sort()) === JSON.stringify([...b].sort());
+function variantErrors(c: DealerMotionContract, m: Motion): string[] {
+  const v = m.variant, e: string[] = [];
+  if (v === undefined) return e;
+  if (!v || !text(v.groupId) || !['L', 'R', 'BOTH', 'NONE', 'UNKNOWN'].includes(v.hand)) return ['Invalid variant identity/hand'];
+  for (const side of ['start', 'end'] as const) {
+    const b = v.anchors?.[side], a = b && c.anchors.find(a => a.id === b.nodeId);
+    if (!a || !sameBoundary(b, { nodeId: a.id, sha256: a.sha256, frame: 0 }) || !samePose(a.pose, side === 'start' ? m.from : m.to)) e.push('Invalid variant canonical anchor');
+  }
+  const slots = (ids: string[]) => Array.isArray(ids) && new Set(ids).size === ids.length && ids.every(id => c.cardPlacements.some(s => s.id === id));
+  if (!slots(v.cardsBefore) || !slots(v.cardsAfter)) return [...e, 'Invalid variant card state'];
+  const expectedAfter = m.kind === 'deal' ? [...v.cardsBefore, m.cardPlacementId!] : v.cardsBefore;
+  if (!sameSlots(v.cardsAfter, expectedAfter)) e.push('Variant card effect must match the single engine deal or preserve the board');
+  const contact = v.contact;
+  if (contact?.kind === 'no-recontact') {
+    if ('ranges' in contact || 'cardPlacementIds' in contact) e.push('No-recontact variant cannot contain adjustment metadata');
+  } else if (contact?.kind === 'intentional-adjustment') {
+    if (!slots(contact.cardPlacementIds) || !contact.cardPlacementIds.length || contact.cardPlacementIds.some(id => !v.cardsAfter.includes(id))) e.push('Invalid variant adjustment targets');
+    if (!m.binding || !Array.isArray(contact.ranges) || !contact.ranges.length || contact.ranges.some((r, i) => !integer(r.startFrame) || !integer(r.endFrameExclusive) || r.startFrame < m.binding!.startFrame || r.endFrameExclusive > m.binding!.endFrameExclusive || r.startFrame >= r.endFrameExclusive || i > 0 && r.startFrame < contact.ranges[i - 1].endFrameExclusive)) e.push('Invalid variant adjustment source ranges');
+    if (m.kind === 'deal' && contact.cardPlacementIds.includes(m.cardPlacementId!) && (m.releaseFrame === null || contact.ranges.some(r => r.startFrame <= m.releaseFrame!))) e.push('Adjustment of a newly dealt card must follow its original release');
+  } else e.push('Invalid variant contact policy');
+  return e;
+}
+function sameVariantAction(a: Motion, b: Motion): boolean {
+  const x = a.variant!, y = b.variant!;
+  return a.kind === b.kind && a.clipSlotId === b.clipSlotId && a.cardPlacementId === b.cardPlacementId && a.returnMode === b.returnMode
+    && samePose(a.from, b.from) && samePose(a.to, b.to)
+    && sameBoundary(x.anchors.start, y.anchors.start) && sameBoundary(x.anchors.end, y.anchors.end)
+    && sameSlots(x.cardsBefore, y.cardsBefore) && sameSlots(x.cardsAfter, y.cardsAfter)
+    && x.contact.kind === y.contact.kind
+    && (x.contact.kind !== 'intentional-adjustment' || y.contact.kind === 'intentional-adjustment' && sameSlots(x.contact.cardPlacementIds, y.contact.cardPlacementIds));
 }
 
 export function validateDealerMotionContract(value: unknown): string[] {
@@ -119,7 +169,7 @@ export function validateDealerMotionContract(value: unknown): string[] {
     const legend = c.markerLegend;
     if (!text(legend.id) || legend.front !== 'blue' || legend.back !== 'yellow' || !['proposed', 'source-verified'].includes(legend.status) || !validQa(legend.qa) || !Array.isArray(legend.sourceHashes) || legend.sourceHashes.some(x => !hash(x) || !c.assets.some(a => a.sha256 === x)) || legend.status === 'source-verified' && (!legend.sourceHashes.length || legend.qa.status !== 'approved')) errors.push('Invalid marker legend/source evidence');
     for (const m of c.motions) {
-      if (!text(m.label) || !text(m.clipSlotId) || !pose(m.from) || !pose(m.to) || !['idle', 'approach', 'deal', 'return'].includes(m.kind) || !['none', 'direct', 'via-redo'].includes(m.returnMode) || !validQa(m.qa)) errors.push(`Invalid motion: ${m.id}`);
+      if (!text(m.label) || !text(m.clipSlotId) || !pose(m.from) || !pose(m.to) || !['idle', 'approach', 'deal', 'return'].includes(m.kind) || !['none', 'direct', 'via-redo', 'to-redo'].includes(m.returnMode) || !validQa(m.qa)) errors.push(`Invalid motion: ${m.id}`);
       if (m.legacyV1 !== null && (!text(m.legacyV1.clipId) || m.legacyV1.slotId !== null && !text(m.legacyV1.slotId))) errors.push(`Invalid v1 crosswalk: ${m.id}`);
       if (m.kind === 'deal' ? !c.cardPlacements.some(s => s.id === m.cardPlacementId) : m.cardPlacementId !== null) errors.push(`Invalid motion slot: ${m.id}`);
       if (m.kind === 'idle' && (!samePose(m.from, m.to) || m.from.kind !== 'VILA') || m.kind === 'approach' && (m.from.kind !== 'VILA' || m.to.kind !== 'REDO') || !['deal', 'return'].includes(m.kind) && m.returnMode !== 'none') errors.push(`Invalid motion route: ${m.id}`);
@@ -143,6 +193,13 @@ export function validateDealerMotionContract(value: unknown): string[] {
       }
       if (b && m.kind === 'deal' && !t) errors.push(`Missing side-track: ${m.id}`);
       errors.push(...pathErrors(m).map(e => `${e}: ${m.id}`));
+      errors.push(...variantErrors(c, m).map(e => `${e}: ${m.id}`));
+    }
+    const variantGroups = new Map<string, Motion>();
+    for (const m of c.motions) if (m.variant && !variantErrors(c, m).length) {
+      const first = variantGroups.get(m.variant.groupId);
+      if (first && !sameVariantAction(first, m)) errors.push(`Incompatible variant group: ${m.variant.groupId}`);
+      else if (!first) variantGroups.set(m.variant.groupId, m);
     }
     const pairs = new Set<string>();
     for (const g of c.edgeGates) {
@@ -151,7 +208,7 @@ export function validateDealerMotionContract(value: unknown): string[] {
       if (!validQa(g.qa) || pairs.has(id) || !from || !to || !c.motions.some(m => m.id === g.to.nodeId) || !sameBoundary(from.boundary, g.from) || !sameBoundary(to.boundary, g.to) || !samePose(from.pose, to.pose)) errors.push(`Stale/incompatible endpoint gate: ${id}`);
       pairs.add(id);
     }
-    for (const p of c.plans) if (!c.anchors.some(a => a.id === p.anchorId) || !p.motionIds.length || p.motionIds.some(id => !c.motions.some(m => m.id === id)) || !['none', 'direct', 'via-redo'].includes(p.requiredReturnMode)) errors.push(`Invalid plan references: ${p.id}`);
+    for (const p of c.plans) if (!c.anchors.some(a => a.id === p.anchorId) || !p.motionIds.length || p.motionIds.some(id => !c.motions.some(m => m.id === id)) || !['none', 'direct', 'via-redo', 'to-redo'].includes(p.requiredReturnMode)) errors.push(`Invalid plan references: ${p.id}`);
   } catch { errors.push('Malformed dealer motion contract'); }
   return errors;
 }
@@ -171,7 +228,7 @@ function blockers(m: Motion): string[] {
 export function planDealerSequence(c: DealerMotionContract, request: DealerMotionContract['plans'][number]) {
   assertContract(c);
   const a = c.anchors.find(a => a.id === request.anchorId);
-  if (!a || !request.motionIds.length || !['none', 'direct', 'via-redo'].includes(request.requiredReturnMode)) throw Error('Invalid planning request');
+  if (!a || !request.motionIds.length || !['none', 'direct', 'via-redo', 'to-redo'].includes(request.requiredReturnMode)) throw Error('Invalid planning request');
   let currentPose = a.pose, previous = a.id;
   const issues: { motionId: string; reason: string }[] = [];
   const steps = request.motionIds.map(id => {
@@ -188,7 +245,8 @@ export function planDealerSequence(c: DealerMotionContract, request: DealerMotio
   if (request.requiredReturnMode !== 'none') {
     const lastDeal = steps.findLastIndex(s => c.motions.find(m => m.id === s.motionId)!.kind === 'deal');
     const ending = steps.slice(lastDeal < 0 ? 0 : lastDeal);
-    if (currentPose.kind !== 'VILA' || steps.at(-1)?.returnMode !== request.requiredReturnMode) issues.push({ motionId: previous, reason: 'required-return-not-satisfied' });
+    const requiredEndPose = request.requiredReturnMode === 'to-redo' ? 'REDO' : 'VILA';
+    if (currentPose.kind !== requiredEndPose || steps.at(-1)?.returnMode !== request.requiredReturnMode) issues.push({ motionId: previous, reason: 'required-return-not-satisfied' });
     if (request.requiredReturnMode === 'direct' && ending.some((s, i) => s.to.kind === 'REDO' || i > 0 && s.from.kind === 'REDO' || s.returnMode === 'via-redo')) issues.push({ motionId: previous, reason: 'direct-return-visits-REDO-after-final-deal' });
   }
   return freeze({ planId: request.id, steps: structuredClone(steps), issues, readyForLocalSimulation: issues.length === 0, runtimeApproved: false as const, productionAccepted: false as const });
@@ -228,6 +286,7 @@ export function checkDealerMotionTransition(c: DealerMotionContract, s: DealerMo
   const m = c.motions.find(m => m.id === motionId);
   if (!m) return [...e, 'Unknown motion'];
   e.push(...blockers(m)); if (!samePose(s.pose, m.from)) e.push('Pose mismatch');
+  if (m.variant?.cardsBefore.some(id => !s.board.some(card => card.cardPlacementId === id))) e.push('Variant card precondition not satisfied');
   const next = endpoint(c, motionId, 'start');
   if (!next || !c.edgeGates.some(g => g.qa.status === 'approved' && sameBoundary(g.from, s.boundary) && sameBoundary(g.to, next.boundary))) e.push('Endpoint compatibility gate not approved');
   if (m.kind === 'deal') {
