@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "projectId": "snyggare-dealer",
+  "dealerId": "pamela-pilot",
+  "bankId": "pamela-workspace-v1",
+  "status": "local-review-candidate",
+  "manifest": {
+    "path": "runs/20261110-pamela-card-side-review/take-01/manifest.json",
+    "sha256": "cf57437da49e14150abc31845e77f713e1f612538600d6e210c336ed080c5983"
+  },
+  "localRoute": "/pamela-sidprov",
+  "staticRoute": "/granskning/pamela-sidprov/index.html",
+  "observedPhysicalSide": "UNKNOWN",
+  "policyMethod": "authored",
+  "gpuAcceptance": "separate-review-required",
+  "productionAccepted": false,
+  "activeSelectionChanged": false,
+  "newApiJobs": 0
+}

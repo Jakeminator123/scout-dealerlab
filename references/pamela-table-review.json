@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "id": "pamela-table-review-candidate-1",
+  "projectId": "snyggare-dealer",
+  "dealerId": "pamela-pilot",
+  "bankId": "pamela-workspace-v1",
+  "createdAt": "2026-11-10T04:30:43.9071197Z",
+  "status": "hash-bound-existing-scene-candidate",
+  "productionAccepted": false,
+  "geometryAccepted": false,
+  "activeSelectionChanged": false,
+  "newApiJobs": 0,
+  "role": "Review pointer joining existing scene, card-side and direct-return evidence; not a new runtime registry or active profile.",
+  "selection": {
+    "tableVariantId": "emerald-leather",
+    "tableLabel": "Smaragd / brun läderkant",
+    "roomVariantId": "jade-salon",
+    "roomLabel": "Jadesalongen",
+    "lightProfileId": "neutral",
+    "selectionBasis": "Existing combined-scene defaults: jade-salon + emerald-leather + neutral light + original source shoe + centered camera. Chosen coherently with the background review; not accepted final geometry or aesthetics.",
+    "assetKind": "existing procedural Three geometry/materials, not a new generated image",
+    "stageContract": {
+      "path": "references/pamela-stage-contract.json",
+      "sha256": "7ece792cdf43ddcd9ab5e7f92572d5e97cc958da2a36bf52dd957bafa64bf3a2"
+    },
+    "tableModule": {
+      "path": "src/pamela-table-layer.ts",
+      "sha256": "1b2b1fb2aff9e970c77735deb72a4593d4dd269650fb24b253a23031906f33a7"
+    },
+    "backgroundModule": {
+      "path": "src/pamela-background-layer.ts",
+      "sha256": "57c7d6d63803464179ae51c78647d01dd7442247d95b14a038419283d68fb28d"
+    },
+    "combinedRenderer": {
+      "path": "src/pamela-combined-stage-client.tsx",
+      "sha256": "55be64a6c42cee3c80b8719c7caaeab3540041ead7ce2bfda218d22cd2172ce7"
+    },
+    "projectionModule": {
+      "path": "src/pamela-stage-projection.ts",
+      "sha256": "8d3fd42f995366f144ff02785e8e4bb7b1404b255434bdd19e1fdc9ac0922df0"
+    },
+    "currentCombinedDefault": {
+      "room": "jade-salon",
+      "changed": false,
+      "table": "emerald-leather"
+    },
+    "localReferenceRoute": "/pamela-prov?view=combined-scene",
+    "retainedCardSideRoute": "/pamela-sidprov",
+    "shoeMode": "source",
+    "initialCameraPan": [
+      0,
+      0
+    ],
+    "alternativeMaterialEvidence": {
+      "geometryAcceptanceChanged": false,
+      "tableVariantId": "blue-slate",
+      "status": "existing visual alternative, not the selected baseline",
+      "roomVariantId": "midnight-atrium",
+      "screenshotFrames": [
+        99,
+        180
+      ]
+    }
+  },
+  "geometry": {
+    "status": "authored-2.5D-candidate-not-recovered-physical-geometry",
+    "coordinateSpace": "native source pixels; x right, y down; shared source-camera projection into scene units",
+    "sourceWidth": 1762,
+    "sourceHeight": 1174,
+    "fps": 30,
+    "frameConvention": "integer source frame, zero-based; intervals half-open",
+    "camera": {
+      "mode": "perspective",
+      "position": [
+        0,
+        3.5,
+        8
+      ],
+      "target": [
+        0,
+        1.35,
+        0
+      ],
+      "fieldOfViewDegrees": 35,
+      "maxPan": [
+        0.16,
+        0.07
+      ],
+      "rotationLocked": true,
+      "basis": "authored, not a recovered source camera"
+    },
+    "tableDimensions": {
+      "cornerRadius": 0.46,
+      "thickness": 0.22,
+      "feltHeight": 0.014,
+      "rimWidth": 0.13,
+      "rimHeight": 0.075,
+      "depth": 3.5,
+      "units": "scene units, not measured metres",
+      "width": 7.6
+    },
+    "sourceProjection": {
+      "displayPlaneSeparation": 0.004,
+      "meaning": "y876 is a display fold, never a physical contact classifier",
+      "foldSourceY": 876,
+      "depth": -0.75,
+      "dealerWidth": 5.9
+    },
+    "otherProfile": {
+      "reference": {
+        "path": "references/scene-finish-contract.json",
+        "sha256": "e968900f36eca775cd60f01bf9d121d69d549ea7133dca9787f8d14548a7e374"
+      },
+      "compatibleWithoutRecalibration": false,
+      "note": "The separate finish candidate uses y817. It must not silently replace the y876 combined-scene projection.",
+      "contactLineY": 817
+    },
+    "cameraOrSilhouetteChangeRequiresNewCalibration": true,
+    "independentMaterialChangesDoNotAuthorizeNewGeometry": true
+  },
+  "cardLayoutAndContact": {
+    "sceneIndex": {
+      "path": "references/pamela-card-scenes.json",
+      "sha256": "325ee680dcab90509c49b981ea34ac62c54027875d3bc51fd52a46fa7c9fe739"
+    },
+    "sceneValidator": {
+      "path": "src/pamela-card-scene-calibration.ts",
+      "sha256": "4aae72301d6d41c1c92f3fe7a08b67cb9048de029079854a16bf4957c2a86612"
+    },
+    "currentCombinedSourceIds": [
+      "C2-P4",
+      "C2-P2",
+      "C2-P3",
+      "C2-P5"
+    ],
+    "membershipMeansAcceptance": false,
+    "contactModule": {
+      "path": "src/pamela-contact-calibration.ts",
+      "sha256": "fd06e3fed61d425c22733fa300a14f88ad111b604b1efd02efef8f0dc08d6d46"
+    },
+    "contactCalibrationId": "pamela-c2-p4-contact-v1",
+    "contactSource": {
+      "path": "runs/20261109-pamela-seat-bank/c2/bank-v2-stage-2/original/pamela-seat-4-wan3-c2-bank-v2.mp4",
+      "sha256": "67319ed86cde67cc7a7566553d451a89f8aac11384a55f8f8b460d1403d30167"
+    },
+    "p4AtlasEvidence": {
+      "path": "runs/20261109-pamela-card-atlas/take-03/evidence.json",
+      "sha256": "d96a3094c39cc94e096847ea989ebe4edc85d1412304f6189e78a8584a86dddf"
+    },
+    "p4AtlasManifest": {
+      "path": "runs/20261109-pamela-card-atlas/take-03/manifest.json",
+      "sha256": "f841b2f957a7ae53178de7244422a10bd26f8febbb68fe6aea95964e42cefc6e"
+    },
+    "contactTrack": {
+      "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-4/draft-03/track.json",
+      "sha256": "5f7bdf302f9a1cc602c0addac3a691888af019fefede75d671fe59ccff1bb4d8"
+    },
+    "p4OnlyIntervals": {
+      "fingerOnCard2": [
+        180,
+        212
+      ],
+      "releaseUnknown": [
+        212,
+        218
+      ],
+      "card2Supported": [
+        180,
+        360
+      ],
+      "card1Supported": [
+        0,
+        360
+      ],
+      "handRaised": [
+        218,
+        360
+      ]
+    },
+    "p4OnlyQuads": {
+      "second": [
+        [
+          868,
+          1000
+        ],
+        [
+          945,
+          1000
+        ],
+        [
+          945,
+          1068
+        ],
+        [
+          868,
+          1068
+        ]
+      ],
+      "first": [
+        [
+          846,
+          1010
+        ],
+        [
+          917,
+          1010
+        ],
+        [
+          919,
+          1077
+        ],
+        [
+          842,
+          1077
+        ]
+      ]
+    },
+    "coordinateReuseRule": "Per-frame corners, UVs, masks and hand guards are source-hash calibrated. Never copy P4 positions, timing or contact gates onto P1 or another clip.",
+    "maskPriority": "Existing per-frame hand/shoe guards and paper masks outrank approximate contour quads.",
+    "shadows": "Preserve baked source shading; the current combined renderer starts with no synthetic contact shadows. A finger on a card does not prove hand-to-table contact.",
+    "physicalDepth": "UNKNOWN",
+    "fullP1P7DealerTableLayoutAccepted": false
+  },
+  "p1Integration": {
+    "sideReviewPointer": {
+      "path": "references/pamela-card-side-review.json",
+      "sha256": "3e6a89642826522f58e2965853c23fa2e85e9419cc3be690cf6dcff919999040"
+    },
+    "sideReviewManifest": {
+      "path": "runs/20261110-pamela-card-side-review/take-01/manifest.json",
+      "sha256": "cf57437da49e14150abc31845e77f713e1f612538600d6e210c336ed080c5983"
+    },
+    "sources": [
+      {
+        "clipId": "C1-P1",
+        "source": {
+          "path": "runs/20261109-pamela-seat-bank/retakes/seat-1-symmetric-v2/original/pamela-seat-1-wan3-symmetric-v2.mp4",
+          "sha256": "8402ddfcaabf1356b25b28fc8e7e3ca59121260eee6b188b7bfed431b2af9307"
+        },
+        "tableProjection": "not-calibrated-for-this-candidate",
+        "physicalSide": "UNKNOWN",
+        "sidePolicy": "authored",
+        "contactAcceptance": "pending"
+      },
+      {
+        "clipId": "C2-P1",
+        "source": {
+          "path": "runs/20261109-pamela-seat-bank/c2/bank-v2-stage-1/original/pamela-seat-1-wan3-c2-bank-v2.mp4",
+          "sha256": "98ff074a7815cf5ecb2e58a85748e9da79b8acd04a9a97048222ddb104bb6813"
+        },
+        "tableProjection": "not-calibrated-for-this-candidate",
+        "physicalSide": "UNKNOWN",
+        "sidePolicy": "authored",
+        "contactAcceptance": "pending"
+      }
+    ],
+    "currentSideRenderer": {
+      "path": "src/pamela-card-side-review-client.tsx",
+      "sha256": "48d02bee58bc61b4106da86a3e8ed0c3b94560a17e4adcf0566af0a7ccfee58d"
+    },
+    "currentSideReviewHasReplacementTable": false,
+    "adapterMissing": true,
+    "reasons": [
+      "P1 is absent from the combined-scene validator.",
+      "C1-P1 uses bending UV data; C2-P1 has FRONT/EDGE/BACK/EDGE/FRONT policy. The older combined validator expects a different monotonic sequence.",
+      "P1 body/table contact and support/release intervals have no accepted scene calibration."
+    ],
+    "keepOriginalTracks": true,
+    "observedPhysicalSide": "UNKNOWN",
+    "directReturnProvesPhysicalTurn": false,
+    "returnClipCompatibility": {
+      "directReturnCandidates": {
+        "outputFrames": [
+          494,
+          834
+        ],
+        "width": 1764,
+        "fps": 30
+      },
+      "required": "Explicit new profile and frame mapping; never pass return timelines through the current 360-frame shader/validator as if already calibrated.",
+      "basis": "Root verified return dimensions/frame counts; existing combined validator independently enforces1762x1174/360f/30fps.",
+      "status": "not-directly-compatible",
+      "combinedScene": {
+        "sourceFrames": 360,
+        "height": 1174,
+        "width": 1762,
+        "fps": 30
+      }
+    }
+  },
+  "existingEvidence": {
+    "browserObservation": {
+      "path": "runs/20261109-pamela-combined-scene/browser-review.json",
+      "sha256": "b4363160091bb5c7d9328b9dccf25d1217da7afce73e8cbbcf0f9dafbaa42ee1"
+    },
+    "observationStatus": "historical browser report, re-read; not rerun in this task",
+    "screenshots": [
+      {
+        "path": "runs/20261109-pamela-combined-scene/front-f99.png",
+        "sha256": "7a609a3cc9984346db198ca4b64801039c940cd6e6e6fb4f62ab0c3712619fd6"
+      },
+      {
+        "path": "runs/20261109-pamela-combined-scene/pan-rounded-f180.png",
+        "sha256": "38415d627aeedc91be69dc3949e7578838139e6993a3d6f9e4ce7af186e80e87"
+      }
+    ],
+    "screenshotsInspectedNow": true,
+    "pixelParityVerified": false,
+    "newRenderPerformed": false,
+    "sourceHashesVerifiedNow": true,
+    "bodyTableLimitation": "Hard lower jacket/source-matte edge and seated torso occlusion remain candidates; folded projection is not recovered depth."
+  },
+  "relatedWork": [
+    {
+      "path": "references/pamela-direct-return-review.json",
+      "sha256": "411844d5ef18bc9031e065a1c0ba2824d1fbe1863e7b1a9636d897f5be1e23b1"
+    },
+    {
+      "path": "references/pamela-motion-contract-v2.json",
+      "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6"
+    },
+    {
+      "path": "references/pamela-two-sided-bank.json",
+      "sha256": "1efa08dbd03e64b804198fbfa3d312970c954ad569c61555203c30e8495079f1"
+    },
+    {
+      "path": "references/dealers.json",
+      "sha256": "8b36319e04d77dd0b0990ddc7a1d94bd96e7e999be46f3f255e777df14964cbd"
+    }
+  ],
+  "smallestNextChange": {
+    "status": "proposed-not-implemented",
+    "scope": "Add one optional C1-P1 candidate scene mode alongside the retained /pamela-sidprov.",
+    "action": "Reuse emerald-leather + jade-salon with neutral light, source shoe and centered locked source-camera projection; drive the current P1 video, bending UV atlas and hand guards through one shared projected mesh. Keep P1 contact UNKNOWN until checked; do not loosen the old validator or borrow P4 gates.",
+    "verificationFrames": [
+      0,
+      60,
+      75,
+      150,
+      170,
+      185,
+      195,
+      210,
+      359
+    ],
+    "gates": [
+      "Hash-match the exact C1-P1 source and existing side-track inputs.",
+      "No cropped hands, doubled paper, shifted landed card or hidden finger pixels.",
+      "Review lower torso/table occlusion independently of card overlay.",
+      "Verify table support and persistent card state; authored colour does not prove physical side."
+    ],
+    "then": "Calibrate C2-P1 separately before extending the same mode to its two passages and overlapping cards."
+  },
+  "acceptance": {
+    "existingCodeAndFilesVerified": true,
+    "existingScreenshotsInspected": true,
+    "newP1TableSceneVerified": false,
+    "physicalTurnVerified": false,
+    "bodyTableContactAccepted": false,
+    "handTableContactAccepted": false,
+    "full17PlacementLayoutAccepted": false,
+    "mainIntegrated": false
+  },
+  "limitations": [
+    "This file binds a candidate; it changes no renderer, UI, builder, active bank or runtime acceptance.",
+    "Existing P1 source videos lack direct return to VILA and begin with the card already held at the shoe.",
+    "Two P1 return candidates do not establish physical FRONT/BACK identity or full table compatibility.",
+    "No measured camera extrinsics, dealer depth, finger pressure, physical relighting or complete 17-placement table layout is available.",
+    "Hash changes require a new compatibility/QA decision; shared names are not identity."
+  ]
+}

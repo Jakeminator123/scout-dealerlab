@@ -2,25 +2,89 @@
   "schemaVersion": 1,
   "project": "Snyggare dealer / Dealerlab",
   "goal": "Skapa en ny dealer genom ett sammanhängande, återkörbart flöde som i princip startas med ett knapptryck.",
-  "organisation": "Filerna ligger ordnat per försök i runs och media, med kontrakt i references. Det är ännu inte ett komplett materialregister styrt av nodträdet. Senaste VILA-kedjan saknas i det äldre rörelsekontraktet och nodkartan.",
+  "organisation": "Dealeridentitet, bank och källhashar är separata. Ett v2-kontrakt bevarar 24 tillgångar och 19 äldre handlingar och beskriver 17 givmål. De två P1-proven och kortsidprovet har egna hashbundna granskningspekare; produktionsbankens aktiva urval är oförändrat.",
   "questions": [
-    {"id":"layout","question":"Hur får alla sju platser en gemensam kortlayout i stället för M-formen?","current":"Landningslägena ärvs från källklippen. Gemensam sjusitslayout saknas.","next":"Pröva en plats, med definierad landningsyta och handsläpp, innan alla platser ändras."},
-    {"id":"turn","question":"Varför syns inte en vändning i varje klipp?","current":"Fem av fjorton klipp har författade sidbyten. Nio visar framsida; fysisk sida är UNKNOWN.","next":"Skilj fysisk rörelse, synlig kortsida och motorns beslut att visa valören."},
-    {"id":"jitter","question":"Vad orsakar att kortens valörer skakar?","current":"Jakob har observerat skak. UV- eller geometrifel är en hypotes, inte fastställd orsak.","next":"Mät kortkontur och tryck separat på samma källrutor, särskilt vid grepp och släpp."},
-    {"id":"timing","question":"Hur kortas REDO-pauserna och hur går valfritt KORT N till VILA?","current":"Ny full VILA-kedja finns. Den bevisar inte valfri förgrening efter varje kort.","next":"Definiera återanvändbara utgångar, pose- och hastighetskrav och beständigt korttillstånd."},
-    {"id":"contact","question":"Hur löser vi att kroppen verkar sitta i bordet?","current":"Kropp/bord-ocklusion och inbakat dealerljus begränsar scenbyten.","next":"Fastställ kontaktplan, kamerakontrakt och lagerordning på ett representativt prov."},
-    {"id":"materials","question":"Kan kortvinkel, kortdesign, marker, bakgrund och bord bytas?","current":"Fyra källkalibrerade scenprov har lagerbyten. Direkt Three.js används. Three/Fiber-referenser och separat markerprov finns kvar.","next":"Skilj ändring efter handsläpp från ändring under grepp. Koppla materialval till samma geometriska kontrakt."},
-    {"id":"organisation","question":"Vilket nodsystem gäller och hur blir materialet begripligt?","current":"Scoutmotorn äger spelbeslut. Lokal nodmodell, källreferenser och senaste material är delvis separata. Historiska vyer är många.","next":"Ett register per dealer och nod ska peka på källa, kalibrering, lager, QA och vald export. Historik ska märkas tydligt."},
-    {"id":"one-click","question":"Vad återstår för att skapa en dealer med ett knapptryck?","current":"Återanvändbara byggstenar finns, men kedjan är inte automatiserad och godkänd från början till slut.","next":"En versionsstyrd beställning, idempotenta steg, kostnadstak, återupptagning, automatiska kvalitetsgrindar och explicit granskningsbeslut."}
+    {
+      "id": "layout",
+      "question": "Hur får alla sju platser en gemensam kortlayout i stället för M-formen?",
+      "current": "Landningslägena ärvs från källklippen. Gemensam sjusitslayout saknas.",
+      "next": "Pröva en plats, med definierad landningsyta och handsläpp, innan alla platser ändras."
+    },
+    {
+      "id": "turn",
+      "question": "Varför syns inte en vändning i varje klipp?",
+      "current": "P1-provet visar blå FRONT/gul BACK, EDGE och två kortdesigner i samma Three-klient. Färgen är författad overlay; fysisk sida på den blanka källan är UNKNOWN.",
+      "next": "Skilj fysisk rörelse, synlig kortsida och motorns beslut att visa valören."
+    },
+    {
+      "id": "jitter",
+      "question": "Vad orsakar att kortens valörer skakar?",
+      "current": "Jakob har observerat skak. UV- eller geometrifel är en hypotes, inte fastställd orsak.",
+      "next": "Mät kortkontur och tryck separat på samma källrutor, särskilt vid grepp och släpp."
+    },
+    {
+      "id": "timing",
+      "question": "Hur går KORT N direkt till VILA utan REDO eller skobesök efter sista släppet?",
+      "current": "0/2 godkända direktreturer. Två C1-försök mot ursprunglig VILA-keystone underkändes för återkontakt med kortet. Äldre B-prov bevaras som jämförelse. C2 canonical är osänd.",
+      "next": "Förbered ett nytt rörelseupplägg eller en kontrollerad modelljämförelse före nästa betalda pilot; verifiera obrutet släpp→VILA och slutskarv."
+    },
+    {
+      "id": "contact",
+      "question": "Hur löser vi att kroppen verkar sitta i bordet?",
+      "current": "Kropp/bord-ocklusion och inbakat dealerljus begränsar scenbyten.",
+      "next": "Fastställ kontaktplan, kamerakontrakt och lagerordning på ett representativt prov."
+    },
+    {
+      "id": "materials",
+      "question": "Kan kortvinkel, kortdesign, marker, bakgrund och bord bytas?",
+      "current": "Fyra källkalibrerade scenprov har lagerbyten. Direkt Three.js används. Three/Fiber-referenser och separat markerprov finns kvar.",
+      "next": "Skilj ändring efter handsläpp från ändring under grepp. Koppla materialval till samma geometriska kontrakt."
+    },
+    {
+      "id": "organisation",
+      "question": "Vilket nodsystem gäller och hur blir materialet begripligt?",
+      "current": "Scoutmotorn äger spelbeslut. Lokal nodmodell, källreferenser och senaste material är delvis separata. Historiska vyer är många.",
+      "next": "Ett register per dealer och nod ska peka på källa, kalibrering, lager, QA och vald export. Historik ska märkas tydligt."
+    },
+    {
+      "id": "one-click",
+      "question": "Vad återstår för att skapa en dealer med ett knapptryck?",
+      "current": "Hashbundna WAN3-planer, hållbar submit-spärr, task-ID, separat terminalkostnad och native-kontroll finns för den avgränsade piloten. Den generella kedjan är ännu inte färdig eller produktionsgodkänd.",
+      "next": "En versionsstyrd beställning, idempotenta steg, kostnadstak, återupptagning, automatiska kvalitetsgrindar och explicit granskningsbeslut."
+    }
   ],
-  "recommendation": "Samla granskningen och registrera nuvarande material först. Nästa visuella försök: en plats med enhetlig landning, stabilt tryck, tydlig vändning och kortare REDO till VILA. Ingen ytterligare hel bank innan kontraktet fungerar.",
+  "recommendation": "Bredda inte den underkända direktreturen. Rätt mål är ursprunglig VILA-keystone utan ny kortkontakt eller REDO/skobesök efter sista släppet. Separera fysisk kortvändning, overlay och motorns reveal. D.C1–D.C3 saknar ännu givfilm.",
   "pipeline": [
-    {"step":"Beställning","available":"Dealeridentitet och enskilda pilotkontrakt","missing":"Gemensamt schema för målbank, scen, modellstöd och kostnadstak"},
-    {"step":"Nod- och materialregister","available":"Nodkarta, rörelsekontrakt och hashbundna försök","missing":"Aktuella källor och valda kandidater kopplade till samma nod-ID"},
-    {"step":"Original och kalibrering","available":"Original, ankare och flera egna platskalibreringar","missing":"Generell kamerageometri, kontaktplan och gemensam sjusitslayout"},
-    {"step":"Generering och bearbetning","available":"Många lokala verktyg för klipp, masker och tryck","missing":"En återkörbar kedja som återupptar jobb via sparade task-ID utan dubbeldebitering"},
-    {"step":"QA och beslut","available":"Hashkontroller, rutmappning, native-bevis och browsergranskningar","missing":"Enhetliga automatiska grindar; tydlig manuell acceptans av kvarvarande visuella fel"},
-    {"step":"Export och publicering","available":"Statiska granskningskopior och klippaket","missing":"Generell godkänd dealerexport och separat import till spelmotorn"}
+    {
+      "step": "Beställning",
+      "available": "Dealeridentitet och enskilda pilotkontrakt",
+      "missing": "Gemensamt schema för målbank, scen, modellstöd och kostnadstak"
+    },
+    {
+      "step": "Nod- och materialregister",
+      "available": "V2-kandidat med 17 kortmål, förlustfri v1-migration, projekt/bank/ankare och P1-granskningspekare",
+      "missing": "Aktuella källor och valda kandidater kopplade till samma nod-ID"
+    },
+    {
+      "step": "Original och kalibrering",
+      "available": "Original, ankare och flera egna platskalibreringar",
+      "missing": "Generell kamerageometri, kontaktplan och gemensam sjusitslayout"
+    },
+    {
+      "step": "Generering och bearbetning",
+      "available": "Fem avslutade WAN3-jobb, totalt 300 credits, med immutable planer, ett POST per jobb, sparade task-ID och teknisk originalkontroll",
+      "missing": "Generell beställningsorkestrering, automatiserad kostnadsavstämning före nästa jobb och godkända tillgångar för fler mål"
+    },
+    {
+      "step": "QA och beslut",
+      "available": "Hashkontroller, rutmappning, native-bevis och browsergranskningar",
+      "missing": "Enhetliga automatiska grindar; tydlig manuell acceptans av kvarvarande visuella fel"
+    },
+    {
+      "step": "Export och publicering",
+      "available": "Statiska granskningskopior och klippaket",
+      "missing": "Generell godkänd dealerexport och separat import till spelmotorn"
+    }
   ],
   "productionAccepted": false
 }

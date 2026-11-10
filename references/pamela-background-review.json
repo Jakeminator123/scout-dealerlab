@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "id": "pamela-background-jade-neutral-v1",
+  "projectId": "snyggare-dealer",
+  "dealerId": "pamela-pilot",
+  "bankId": "pamela-workspace-v1",
+  "status": "canonical-review-candidate",
+  "selectedCandidateId": "jade-neutral-emerald-v1",
+  "selectionSha256": "5d46141ab47a65a6e4b098c3f1b41169bb1eee01a2e97ddb6d8bfda8e2afb95b",
+  "selectedForConsistentReview": true,
+  "accepted": false,
+  "productionAccepted": false,
+  "createdAt": "2026-11-10T04:32:12.160Z",
+  "scope": "Metadata-only selection of existing scene material; no new image, generation, render, UI change or automatic activation.",
+  "identity": {
+    "registry": {
+      "path": "references/dealers.json",
+      "sha256": "8b36319e04d77dd0b0990ddc7a1d94bd96e7e999be46f3f255e777df14964cbd"
+    },
+    "anchor": {
+      "path": "runs/20261108-pamela-v5-body/original/pamela-v5-body.png",
+      "sha256": "2f11686b223925d8fc791735c32a7b4550af5f1ea4936df8ee03d982c7607795"
+    },
+    "sourceDealerId": "pamela-pilot",
+    "identityRule": "Project, dealer ID and exact bytes; no inheritance from matching name or appearance.",
+    "excludedDealers": [
+      "goran-scout",
+      "blankurius-scout",
+      "goran-alternativ-helkropp",
+      "maud-scout"
+    ],
+    "legacyPamelaId": "Stage contract uses legacy id pamela; this record scopes its scene geometry to pamela-pilot only. Its old sourceFrame0 still is not a return clip."
+  },
+  "selection": {
+    "id": "jade-neutral-emerald-v1",
+    "label": "Jadesalongen · neutralt ljus · smaragd/brun läderkant",
+    "reason": "Existing default in both modular-scene and combined-scene; source-independent procedural room with restrained geometry and an existing visually inspected reference.",
+    "settings": {
+      "room": "jade-salon",
+      "lightProfile": "neutral",
+      "table": "emerald-leather",
+      "shoe": "source",
+      "pan": [
+        0,
+        0
+      ],
+      "camera": {
+        "position": [
+          0,
+          3.5,
+          8
+        ],
+        "target": [
+          0,
+          1.35,
+          0
+        ],
+        "fieldOfViewDegrees": 35,
+        "maxPan": [
+          0.16,
+          0.07
+        ],
+        "rotationLocked": true
+      },
+      "neutralLight": {
+        "label": "Neutral",
+        "key": "#fff3e3",
+        "keyIntensity": 2.2,
+        "fill": "#dfeaff",
+        "fillIntensity": 0.8,
+        "exposure": 1,
+        "roomTint": [
+          1,
+          1,
+          1
+        ]
+      },
+      "tableDimensions": {
+        "width": 7.6,
+        "depth": 3.5,
+        "thickness": 0.22,
+        "rimHeight": 0.075,
+        "cornerRadius": 0.46,
+        "rimWidth": 0.13,
+        "feltHeight": 0.014
+      },
+      "dealerPlacement": {
+        "width": 5.9,
+        "sourceWidth": 1762,
+        "cropHeight": 900,
+        "contactSourceY": 876,
+        "depth": -0.75,
+        "basis": "manual contact baseline near resting hand; shoe remains planar and lower edge is occluded by tabletop"
+      },
+      "tableMaterial": {
+        "id": "emerald-leather",
+        "felt": "#3d725b",
+        "rail": "#493126",
+        "body": "#302721",
+        "trim": "#a08a5b"
+      }
+    },
+    "settingsApplyTo": "Room, table and bounded camera only; card artwork, physical side and motion acceptance are separate.",
+    "sourceType": "Procedural Three geometry and shaders; no image texture is required for the selected room.",
+    "newImageAssets": 0,
+    "code": [
+      {
+        "path": "src/pamela-background-layer.ts",
+        "sha256": "57c7d6d63803464179ae51c78647d01dd7442247d95b14a038419283d68fb28d"
+      },
+      {
+        "path": "src/pamela-table-layer.ts",
+        "sha256": "1b2b1fb2aff9e970c77735deb72a4593d4dd269650fb24b253a23031906f33a7"
+      },
+      {
+        "path": "src/pamela-stage-projection.ts",
+        "sha256": "8d3fd42f995366f144ff02785e8e4bb7b1404b255434bdd19e1fdc9ac0922df0"
+      },
+      {
+        "path": "src/pamela-combined-stage-client.tsx",
+        "sha256": "55be64a6c42cee3c80b8719c7caaeab3540041ead7ce2bfda218d22cd2172ce7"
+      },
+      {
+        "path": "src/pamela-card-scene-calibration.ts",
+        "sha256": "4aae72301d6d41c1c92f3fe7a08b67cb9048de029079854a16bf4957c2a86612"
+      },
+      {
+        "path": "src/pamela-modular-stage-client.tsx",
+        "sha256": "3755f0f1329facc5e6bbe55b86985b436e018a8ef3618d326ec6b2692ee759cd"
+      },
+      {
+        "path": "src/pamela-scene-renderer.ts",
+        "sha256": "cd87f80cf314821356e2225f00e3ac2f1a7887f4b84e49ba637b36bcfd70321c"
+      }
+    ],
+    "stageContract": {
+      "path": "references/pamela-stage-contract.json",
+      "sha256": "7ece792cdf43ddcd9ab5e7f92572d5e97cc958da2a36bf52dd957bafa64bf3a2"
+    },
+    "visualReference": {
+      "path": "runs/20261109-pamela-table-layer/modular-start-frame0.png",
+      "sha256": "48bddda302cfa7f54fc93859b3397d7f45b03038048645783df36b5f1dd84e1d",
+      "width": 1714,
+      "height": 1389,
+      "role": "Existing screenshot of jade/neutral/emerald/source-shoe at P4frame0. It illustrates the room, not an accepted P1 return.",
+      "reviewedThisTask": true
+    }
+  },
+  "candidates": [
+    {
+      "id": "jade-neutral-emerald-v1",
+      "room": "jade-salon",
+      "status": "selected-review-candidate",
+      "accepted": false
+    },
+    {
+      "id": "midnight-neutral-blue-v1",
+      "room": "midnight-atrium",
+      "lightProfile": "neutral",
+      "table": "blue-slate",
+      "status": "alternative-unselected",
+      "accepted": false,
+      "visualReference": {
+        "path": "runs/20261109-pamela-combined-scene/blue-rounded-f80.png",
+        "sha256": "56ce15f0b0cb425d0ce4c6d010747799906fd4a74385801324d2ec67bbbc559a",
+        "width": 1720,
+        "height": 1394,
+        "role": "Historical Nattatriet screenshot; shoe and card presentation differ from the canonical candidate and convey no physical-side acceptance."
+      }
+    },
+    {
+      "id": "legacy-clean-room-raster",
+      "status": "legacy-comparison-only",
+      "accepted": false,
+      "image": {
+        "path": "runs/20261109-pamela-central-composite/scene-assets/pamela-clean-room-v1.png",
+        "sha256": "e1ae8b78b17beb8c133cb664544cd9b4c72cb97dbc17320db9e15ba838d318b4",
+        "width": 1536,
+        "height": 1024
+      },
+      "derivedRoom": {
+        "path": "runs/20261109-pamela-stage/room-reference.jpg",
+        "sha256": "57566206cf07e6f020cf09de0fe770c80f3dc21603efe160b9ffb5707b161abb",
+        "width": 1600,
+        "height": 1000
+      },
+      "renderer": {
+        "path": "src/pamela-scene-renderer.ts",
+        "sha256": "cd87f80cf314821356e2225f00e3ac2f1a7887f4b84e49ba637b36bcfd70321c"
+      },
+      "limits": [
+        "A different raster scene family, not the selected procedural room.",
+        "Legacy CPU renderer contains its own blur8/brightness0.58/saturation0.65 and contactLine817; do not silently mix that grade/calibration with the stage contact876.",
+        "Image generation provenance not re-audited in this metadata task."
+      ]
+    }
+  ],
+  "availableReviewSurfaces": [
+    {
+      "route": "/pamela-prov?view=combined-scene&id=C2-P4",
+      "status": "implemented-existing-route",
+      "settings": "Default is jade-salon/emerald-leather/source-shoe and neutral light; select room/table explicitly and reset view.",
+      "supportedSceneIds": [
+        "C2-P4",
+        "C2-P2",
+        "C2-P3",
+        "C2-P5"
+      ],
+      "routeCode": {
+        "path": "app/pamela-prov/page.tsx",
+        "sha256": "c738b3a5841ab82db3c3cb25fc797fb5bc5b5cff298d34e28f8fe24415b207d8"
+      },
+      "registry": {
+        "path": "references/pamela-card-scenes.json",
+        "sha256": "325ee680dcab90509c49b981ea34ac62c54027875d3bc51fd52a46fa7c9fe739"
+      },
+      "verification": "Current route and imports read from code; not live-opened during this task."
+    },
+    {
+      "route": "/pamela-prov?view=modular-scene",
+      "status": "implemented-existing-route",
+      "settings": "Choose Jadesalongen, Smaragd/brun läderkant, Källsko, Neutral; reset view.",
+      "verification": "Matching historical screenshot and source-bound browser receipt; live route not opened during this task."
+    }
+  ],
+  "cameraAndLight": {
+    "calibration": {
+      "coordinateSystem": "Existing Pamela stage; +X screen right, +Y up, +Z toward camera",
+      "camera": {
+        "position": [
+          0,
+          3.5,
+          8
+        ],
+        "target": [
+          0,
+          1.35,
+          0
+        ],
+        "fieldOfViewDegrees": 35,
+        "maxPan": [
+          0.16,
+          0.07
+        ],
+        "rotationLocked": true
+      },
+      "depthBands": {
+        "far": [
+          -10,
+          -9
+        ],
+        "middle": [
+          -7.5,
+          -6.5
+        ],
+        "near": [
+          -4.8,
+          -4.3
+        ]
+      },
+      "keyPosition": [
+        -3,
+        6,
+        4
+      ],
+      "fillPosition": [
+        4,
+        3,
+        2
+      ],
+      "lightTarget": [
+        0,
+        1.35,
+        0
+      ],
+      "hemisphereIntensity": 0.65,
+      "lightingBasis": "Authored relative intensities and directions, not measured lux, Kelvin or recovered dealer lighting",
+      "dealerLighting": "Baked source lighting unchanged; unlit room materials cannot physically relight Pamela",
+      "parallaxBasis": "Three fixed depth bands viewed by the existing bounded translating camera; no orbit, dealer warp or new dealer view",
+      "source": "Original procedural architecture; no downloaded, edited or generated image assets"
+    },
+    "comparisonPan": [
+      0,
+      0
+    ],
+    "allowPanOnlyForSecondaryReview": true,
+    "sourceCameraRecovered": false,
+    "physicalDealerRelighting": false,
+    "measuredLux": null,
+    "measuredKelvin": null,
+    "colorManagement": "Existing stage uses sRGB output/ACES for lit table; dealer and room are unlit/toneMapped:false and retain baked appearance.",
+    "limits": [
+      "No orbit, new dealer viewpoint, hidden body synthesis or automatic source warping.",
+      "Neutral intensities are authored relative values, not photometric measurements.",
+      "Room variants and three light profiles exist; freeze the selected neutral profile across comparable clips."
+    ]
+  },
+  "occlusionAndBoard": {
+    "roomBehindDealer": true,
+    "tableSourceFoldY": 876,
+    "tableHeight": 0.018000000000000002,
+    "shoePolicy": "Keep each exact source shoe/contact/outlet; no P4 shoe or contact mask borrowed by P1.",
+    "foregroundPolicy": "Native hand/card masks remain in front in the same source projection; test all active arm/card paths against table rail and torso boundary.",
+    "limits": [
+      "Dealer is a keyed plane/fold, not a depth-reconstructed body.",
+      "Hard lower jacket matte and table/torso contact remain source-specific.",
+      "Do not add a tray or raise the rail to conceal missing anatomy.",
+      "Keep landed-card state independently through1/2-card returns; never bake the wrong board state from this illustrative P4 screenshot."
+    ]
+  },
+  "integration": {
+    "implementedForNewReviews": false,
+    "targetRoutes": [
+      "/pamela-sidprov",
+      "/pamela-returer"
+    ],
+    "recommendation": [
+      "Reuse createPamelaBackgroundLayer with this exact settings/hash binding as a stable stage behind the dealer.",
+      "Build a separate source-aware adapter for each review type; preserve the existing raw original view beside the scene view.",
+      "Use native1764x1174 for the P1returns; preserve explicit x+1 mapping of1762-wide give sources, the exact selected manifest frame counts at30fps. Current P1 return acceptance is0/2; historical494/834-frame B comparisons must not be treated as accepted timelines.",
+      "For side comparison, use the same room/camera/light for all four panels; blue FRONT/yellow BACK remains an authored policy until a physical flip is independently verified.",
+      "Validate light and dark matte controls, dense joins, hand/card occlusion and retained board state before accepting the new scene composite."
+    ],
+    "currentAdapterBoundary": {
+      "calibration": "validateCardSceneAtlas currently permits only1762x1174,360frames,30fps and four source hashes.",
+      "shader": "Combined-scene pixel coordinates currently hardcode1762x1174.",
+      "timeline": "Combined-scene playback/seek assumes0..359.",
+      "result": "Do not directly pass1764-wide90f raw returns or494/834f proofs into this renderer; no resize, trim or inherited card-side timeline."
+    },
+    "currentScopePreserved": {
+      "directReturnLocalAcceptance": "Revoked by parent after Jakob reported apparent R→P1→R route; complete actual-proof route/start-end keystone audit pending. Background work does not change proof bytes.",
+      "physicalCardSide": "UNKNOWN for the blank originals; no physical-flip acceptance from this selection.",
+      "newSceneAcceptance": false,
+      "activeSelectionChanged": false
+    }
+  },
+  "evidence": {
+    "geometryProof": {
+      "path": "runs/20261109-pamela-background-layer/take-02/proof.json",
+      "sha256": "8d8283e99ec05fd4671bd422176863424a240c311f1fdc01e5f2c61969865a38"
+    },
+    "geometryProofCurrentFileHashes": [
+      {
+        "path": "src/pamela-background-layer.ts",
+        "recordedSha256": "57c7d6d63803464179ae51c78647d01dd7442247d95b14a038419283d68fb28d",
+        "currentSha256": "57c7d6d63803464179ae51c78647d01dd7442247d95b14a038419283d68fb28d",
+        "matched": true
+      },
+      {
+        "path": "tools/pamela-background-proof.ts",
+        "recordedSha256": "9cf7ef5bf8c9d6913f1568a172cba4ed6391bf9fd8b51a7c4568e125450e4f51",
+        "currentSha256": "9cf7ef5bf8c9d6913f1568a172cba4ed6391bf9fd8b51a7c4568e125450e4f51",
+        "matched": true
+      },
+      {
+        "path": "src/pamela-stage-projection.ts",
+        "recordedSha256": "8d3fd42f995366f144ff02785e8e4bb7b1404b255434bdd19e1fdc9ac0922df0",
+        "currentSha256": "8d3fd42f995366f144ff02785e8e4bb7b1404b255434bdd19e1fdc9ac0922df0",
+        "matched": true
+      },
+      {
+        "path": "references/pamela-stage-contract.json",
+        "recordedSha256": "7ece792cdf43ddcd9ab5e7f92572d5e97cc958da2a36bf52dd957bafa64bf3a2",
+        "currentSha256": "7ece792cdf43ddcd9ab5e7f92572d5e97cc958da2a36bf52dd957bafa64bf3a2",
+        "matched": true
+      },
+      {
+        "path": "references/pamela-stage-motion.json",
+        "recordedSha256": "b6aa666bb3177d8c9cffdad5010102a4b77a0224b247d0ea336bba513f500612",
+        "currentSha256": "b6aa666bb3177d8c9cffdad5010102a4b77a0224b247d0ea336bba513f500612",
+        "matched": true
+      },
+      {
+        "path": "references/card-materials/vendor/three.module.js",
+        "recordedSha256": "5289ca2dfde8572bd7715b9fa2ca929db12bae87e9a2cb53e431662df7039506",
+        "currentSha256": "5289ca2dfde8572bd7715b9fa2ca929db12bae87e9a2cb53e431662df7039506",
+        "matched": true
+      }
+    ],
+    "historicalBrowserReview": {
+      "path": "runs/20261109-pamela-table-layer/modular-browser-review.json",
+      "sha256": "45f462aeb933c78161df67558d805f406000e0a24ee30dbc2925b1b6d6666974"
+    },
+    "historicalBrowserCodeHashes": [
+      {
+        "path": "src/pamela-modular-stage-client.tsx",
+        "recordedSha256": "3755f0f1329facc5e6bbe55b86985b436e018a8ef3618d326ec6b2692ee759cd",
+        "currentSha256": "3755f0f1329facc5e6bbe55b86985b436e018a8ef3618d326ec6b2692ee759cd",
+        "matched": true
+      },
+      {
+        "path": "src/pamela-background-layer.ts",
+        "recordedSha256": "57c7d6d63803464179ae51c78647d01dd7442247d95b14a038419283d68fb28d",
+        "currentSha256": "57c7d6d63803464179ae51c78647d01dd7442247d95b14a038419283d68fb28d",
+        "matched": true
+      },
+      {
+        "path": "src/pamela-table-layer.ts",
+        "recordedSha256": "1b2b1fb2aff9e970c77735deb72a4593d4dd269650fb24b253a23031906f33a7",
+        "currentSha256": "1b2b1fb2aff9e970c77735deb72a4593d4dd269650fb24b253a23031906f33a7",
+        "matched": true
+      },
+      {
+        "path": "src/pamela-shoe-layer.ts",
+        "recordedSha256": "39304da2500cb57d4fe5836cd9f4a4a9044e65d07c4c518e0af94c2211a2ebfd",
+        "currentSha256": "39304da2500cb57d4fe5836cd9f4a4a9044e65d07c4c518e0af94c2211a2ebfd",
+        "matched": true
+      }
+    ],
+    "historicalCombinedReview": {
+      "path": "runs/20261109-pamela-combined-scene/browser-review.json",
+      "sha256": "b4363160091bb5c7d9328b9dccf25d1217da7afce73e8cbbcf0f9dafbaa42ee1"
+    },
+    "historicalCombinedSideLabels": "Reported BACK/EDGE/FRONT labels are authored presentation state; not independently accepted physical card-side truth.",
+    "sceneFinishContract": {
+      "path": "references/scene-finish-contract.json",
+      "sha256": "e968900f36eca775cd60f01bf9d121d69d549ea7133dca9787f8d14548a7e374"
+    },
+    "materialSelectionContract": {
+      "path": "references/pamela-material-selections.json",
+      "sha256": "46651969b31fcb29cc11ffab905bd5d4fd088d47c8866119493f70e36c1e3d31"
+    },
+    "otherDealerEnvironmentReference": {
+      "path": "references/scene-composition/manifest.json",
+      "sha256": "54ed062396d49d1de540e1b548d01bf6022680aabc1bd75b5b079c30ccf4b1ec",
+      "use": "Excluded from this selection: reference project identifies goran-alternativ-helkropp. Its screenshots/geometry are not Pamela identity or camera evidence."
+    },
+    "validationThisTask": [
+      "Relevant metadata and current source read",
+      "Selected and alternative existing screenshots visually inspected",
+      "Every path+sha256 in this record checked against current bytes",
+      "No render, test, API call, image generation or UI mutation"
+    ]
+  },
+  "remainingAcceptance": [
+    "New native adapter for side-review and direct-return views",
+    "Motion/matte/occlusion review on the selected scene",
+    "Explicit scene acceptance, separate from physical card-side acceptance"
+  ]
+}

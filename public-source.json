@@ -5,9 +5,10 @@
   "sourceBranch": "jakob/test",
   "sourceIsWorkingTreeSnapshot": true,
   "reviewSnapshot": "review-hub-20261110030156605",
+  "pendingReviewSnapshot": "review-hub-20261110050427598",
   "reviewUrl": "https://scout-dealerlab.vercel.app/granskning.html",
   "deploymentId": "dpl_5qv9gjbH4yfui9wAmeAbXQM3xS6i",
-  "sourceTreeSha256": "165ed64c0e4d3933006deee161565fbb8f2ce011f0c0331d3f315efe0ab46386",
+  "sourceTreeSha256": "6315a2d4738d45ecf79b3dfff821201d5ee509ee93f2cdd711bbe6308cf8c44a",
   "files": [
     {
       "path": ".env.example",
@@ -80,6 +81,11 @@
       "bytes": 49085
     },
     {
+      "path": "app/pamela-returer/page.tsx",
+      "sha256": "1c7ec418c294f89d003c1d0d3452bc26d281f989bb2b13c6baa78b077335966c",
+      "bytes": 5246
+    },
+    {
       "path": "app/pamela-scen/page.tsx",
       "sha256": "3eeb32b04452037296704d62336a6d178ea18492b764003b45ad28185b34dd91",
       "bytes": 280
@@ -88,6 +94,11 @@
       "path": "app/pamela-shoe-gpu/page.tsx",
       "sha256": "5a6a2ba9b6bce8c56162d9e94abfe7997c9aca040eb621c80e6e0fcd0636e778",
       "bytes": 2880
+    },
+    {
+      "path": "app/pamela-sidprov/page.tsx",
+      "sha256": "da0c257eed7e0a4ffdf1b11d901014f4ef87e39a96dd849013768f1b302d2c67",
+      "bytes": 2199
     },
     {
       "path": "app/studio/page.tsx",
@@ -171,8 +182,8 @@
     },
     {
       "path": "docs/GRANSKNING-UI-VIDEO-OCH-GPT.md",
-      "sha256": "49be9e986c7057b529d06f147b37da14ed98e2f16185335464f6550c7ab8278e",
-      "bytes": 2006
+      "sha256": "88c34973412e3b066f6c158011029b4ae5057ce46f06a43a653176d57ebcc248",
+      "bytes": 2140
     },
     {
       "path": "docs/KALLKARTA.md",
@@ -181,8 +192,8 @@
     },
     {
       "path": "docs/MASTERPLAN.md",
-      "sha256": "1b2384cbd577aa9734c70debf3268485fc6c92112279a726c3def4eea1ae32ec",
-      "bytes": 66901
+      "sha256": "b58a84f423cfdb7c165bb29c45792dd7411d4c667fe4e39728797d5486ad5a63",
+      "bytes": 76016
     },
     {
       "path": "docs/drift/ARBETSSATT.md",
@@ -206,8 +217,8 @@
     },
     {
       "path": "docs/drift/PROVISORISK-STRUKTUR.md",
-      "sha256": "a484266e6eec04fbc8ad6817c650853dc37c75ff502fcc1f466f94dd3bc3cdfe",
-      "bytes": 7170
+      "sha256": "15aead4ca8963271ca1035d60fe88391a79108eb2e3aa1078163307ee595492e",
+      "bytes": 11987
     },
     {
       "path": "docs/drift/STATUS.md",
@@ -251,8 +262,8 @@
     },
     {
       "path": "docs/studio/DEALERS-OCH-PIPELINES.md",
-      "sha256": "4ce299649d38594c8f2d3fec14333a96fdfc247eb7a25cb23723d25105ee0a11",
-      "bytes": 3313
+      "sha256": "a61d6c163bf3ab563d9370653c1d213470d04fc35423fea1f00e722e2e0eedf7",
+      "bytes": 24967
     },
     {
       "path": "docs/studio/KALLKARTA.md",
@@ -261,8 +272,13 @@
     },
     {
       "path": "docs/studio/KARTA.md",
-      "sha256": "8c96f4ace2050ef788b270003db4f36477a452c06dfcaa4cd85ee55de07ee8aa",
-      "bytes": 20482
+      "sha256": "657c3bf15e30af730cb24190d86667e989bdee711fef3b0f31e6d2898a1c7910",
+      "bytes": 20600
+    },
+    {
+      "path": "docs/studio/NAMN-OCH-RORELSESTRANGAR.md",
+      "sha256": "f5e218eb050f63b3b09976eada1248cff1698d8ad39b0bfc02024cb705df6b2a",
+      "bytes": 13933
     },
     {
       "path": "docs/terminologi.txt",
@@ -346,8 +362,8 @@
     },
     {
       "path": "references/dealers.json",
-      "sha256": "9e5726a7c51e767caeecfe2871cd38e7f60e03df3e5a1ba715076de045cec75f",
-      "bytes": 62908
+      "sha256": "8b36319e04d77dd0b0990ddc7a1d94bd96e7e999be46f3f255e777df14964cbd",
+      "bytes": 71238
     },
     {
       "path": "references/feedback/card-contact-20261109/manifest.json",
@@ -390,9 +406,24 @@
       "bytes": 284
     },
     {
+      "path": "references/pamela-background-review.json",
+      "sha256": "d175bfe9ae8c712f1edef19aeeec2315f5d743c557ce72ca85c08c21c5279a79",
+      "bytes": 17830
+    },
+    {
       "path": "references/pamela-card-scenes.json",
       "sha256": "325ee680dcab90509c49b981ea34ac62c54027875d3bc51fd52a46fa7c9fe739",
       "bytes": 2935
+    },
+    {
+      "path": "references/pamela-card-side-review.json",
+      "sha256": "3e6a89642826522f58e2965853c23fa2e85e9419cc3be690cf6dcff919999040",
+      "bytes": 631
+    },
+    {
+      "path": "references/pamela-direct-return-review.json",
+      "sha256": "411844d5ef18bc9031e065a1c0ba2824d1fbe1863e7b1a9636d897f5be1e23b1",
+      "bytes": 265
     },
     {
       "path": "references/pamela-feedback.json",
@@ -440,6 +471,11 @@
       "bytes": 9309
     },
     {
+      "path": "references/pamela-motion-contract-v2.json",
+      "sha256": "6ef62075a3ffd507d8c9b2bb84bc7cb573626d7e9bb0f768261a111b77c60db6",
+      "bytes": 66086
+    },
+    {
       "path": "references/pamela-motion-contract.json",
       "sha256": "6632426731aa50cf0cdf4f814e64e55dd0e8515c6099375dfd6a5f889f9f4c8a",
       "bytes": 35407
@@ -448,6 +484,11 @@
       "path": "references/pamela-pilot.json",
       "sha256": "649b76d879d775dce65bc382005786ebe673d9096b420df8bc9c726c192081c5",
       "bytes": 10639
+    },
+    {
+      "path": "references/pamela-presentation-review.json",
+      "sha256": "edda78e74a8e865c9f77bcd26596737f427d2d3727d68349bf8d730d8f4f06c1",
+      "bytes": 3565
     },
     {
       "path": "references/pamela-rest-ready-review.json",
@@ -473,6 +514,11 @@
       "path": "references/pamela-standard-audit.json",
       "sha256": "231d7adef6277cb4a515bb8abe7ef897f36bd5935b5a5a77cfa146ec3a4da455",
       "bytes": 21828
+    },
+    {
+      "path": "references/pamela-table-review.json",
+      "sha256": "76bcdbe1ebdbea068148fcef472d29e9a6adad987444857a4046550e1b0545d3",
+      "bytes": 13344
     },
     {
       "path": "references/pamela-two-sided-bank.json",
@@ -511,8 +557,8 @@
     },
     {
       "path": "references/review-brief.json",
-      "sha256": "55ad10eed304bc2ced980e58cc0a33e139c156dc19dbf426590c77f06852b275",
-      "bytes": 4367
+      "sha256": "a9642d989ebd916af0bcabaa7fd4c519adf554e23daa5ddf69c7e6d07593e02a",
+      "bytes": 5412
     },
     {
       "path": "references/review-round.json",
@@ -661,8 +707,8 @@
     },
     {
       "path": "scripts/build-review-hub.ts",
-      "sha256": "042b15dab322af88e093c0de4273480d0e3f70db6e858036743ded109c18980a",
-      "bytes": 26987
+      "sha256": "201690c179233535af01e86454aa9eebfa3fd8d5ba106c2f3c9c441019503209",
+      "bytes": 37096
     },
     {
       "path": "scripts/bundle-card-material.ts",
@@ -678,6 +724,11 @@
       "path": "scripts/bundle-composition.ts",
       "sha256": "ebc53200fc92323e0437f83c60f9de497f7366cc45dbac56c15b40917a03cda0",
       "bytes": 1726
+    },
+    {
+      "path": "scripts/bundle-pamela-card-side-review.ts",
+      "sha256": "896b49b8d13f3f160bb42b7bf76de2813fd8a14e8e5cc5c8707fcb4383cfcc6f",
+      "bytes": 3366
     },
     {
       "path": "scripts/bundle-studio-workbench.ts",
@@ -718,6 +769,11 @@
       "path": "scripts/review-blob-links.ts",
       "sha256": "685e52c9905be4b019e97a143d589375f0e0b60433dea3de946dc593dcddec1d",
       "bytes": 2878
+    },
+    {
+      "path": "scripts/review-publication-policy.ts",
+      "sha256": "5fef49dfa7fce56596d76d0a1cda817780047fd8d5a54dc9b2fa4367e2efc728",
+      "bytes": 4995
     },
     {
       "path": "scripts/save-local-login.ts",
@@ -883,6 +939,11 @@
       "path": "src/dealer-map.ts",
       "sha256": "245bb70a3fe55358ee8b42f03cae2361d0a93e258e1c110d1baf6ce35aec8a94",
       "bytes": 5387
+    },
+    {
+      "path": "src/dealer-motion-contract.ts",
+      "sha256": "87ace86c0a5859aa3a0275afbe11471cdb7540929dd53b095e119a166acc047e",
+      "bytes": 25407
     },
     {
       "path": "src/dealer-relations.ts",
@@ -1100,6 +1161,11 @@
       "bytes": 4092
     },
     {
+      "path": "src/pamela-card-side-review-client.tsx",
+      "sha256": "48d02bee58bc61b4106da86a3e8ed0c3b94560a17e4adcf0566af0a7ccfee58d",
+      "bytes": 18807
+    },
+    {
       "path": "src/pamela-card-surfaces.ts",
       "sha256": "9ddefcaf48406f714ee9309fd64ae5307229136fea71891acef6d1825907a15b",
       "bytes": 4444
@@ -1128,6 +1194,11 @@
       "path": "src/pamela-continuous-idle-page.ts",
       "sha256": "949982deb55b1b68950e12f172f96cc2fd5f33fb6638f04604ef8617c39764de",
       "bytes": 11480
+    },
+    {
+      "path": "src/pamela-direct-return-review-page.ts",
+      "sha256": "58a59e8c8a5801b6c1c776c2dff5948aaae43319c604a7e1974b7a0a9484f955",
+      "bytes": 8552
     },
     {
       "path": "src/pamela-edge-card-track.ts",
@@ -1441,8 +1512,8 @@
     },
     {
       "path": "src/server.ts",
-      "sha256": "fc260ca904171af2bca85ada5ff34713c5fb289e2addab82a13369c191865775",
-      "bytes": 13681
+      "sha256": "6d032439f6416da1420a20e2f69c4bc083dcafe61bd0cc09018944894cd56849",
+      "bytes": 13757
     },
     {
       "path": "src/source-tracks.ts",
@@ -1548,6 +1619,16 @@
       "path": "test/dealer-map.test.ts",
       "sha256": "7700477faff6208d5eeb262dce30e4fcf97f0701addfce4ddbecc920afe2cd02",
       "bytes": 2953
+    },
+    {
+      "path": "test/dealer-motion-contract.test.ts",
+      "sha256": "53107944a83c5069ef004dd1d605808341ba398d6ba65ba80853d71461cf0721",
+      "bytes": 20262
+    },
+    {
+      "path": "test/dealer-video-job.test.ts",
+      "sha256": "08e9468e0f6cf7304299c80733a4f311b4745da4a7cdade859c809b4e002e8fb",
+      "bytes": 8856
     },
     {
       "path": "test/material-preview.test.ts",
@@ -1660,6 +1741,11 @@
       "bytes": 4818
     },
     {
+      "path": "test/review-publication-policy.test.ts",
+      "sha256": "1bb1cd9b2f93e36426c8a34079b7d52a11ecfc43a48f058f50059c1a5e1ca2e5",
+      "bytes": 5668
+    },
+    {
       "path": "test/server.test.ts",
       "sha256": "8bbaa961f8d1dfea22da22d61552bc5bc871a52827d6613258a46f9444f4d2c9",
       "bytes": 7226
@@ -1683,6 +1769,11 @@
       "path": "tools/curate-sequence-round.ts",
       "sha256": "b07da48a228c6a23a71f2d640f48a285fa635413c650fa793e268238b4e49790",
       "bytes": 9570
+    },
+    {
+      "path": "tools/dealer-video-job.ts",
+      "sha256": "73e49fac0eff8f8b3ba74549dd6543b0c0e8b0049d5ad19d208a58b30edf8f90",
+      "bytes": 17982
     },
     {
       "path": "tools/pamela-anchor-return-qa.ts",
@@ -1770,6 +1861,11 @@
       "bytes": 4985
     },
     {
+      "path": "tools/pamela-canonical-return-review.ts",
+      "sha256": "be155c1688933bc4d4a52e695bc053af80e55702bb1caf3a20e847907b6e8ac7",
+      "bytes": 13708
+    },
+    {
       "path": "tools/pamela-card-atlas-build.ts",
       "sha256": "9bb987ade50c26014f7447bffb72b1f01c6d693391708d65f73683b9ffa42113",
       "bytes": 5850
@@ -1798,6 +1894,11 @@
       "path": "tools/pamela-card-side-proof.ts",
       "sha256": "a62bc0c7a7086a23c0498fde01e95b75584dc6c7a5a61ae015ffacc0ff688552",
       "bytes": 15745
+    },
+    {
+      "path": "tools/pamela-card-side-review.ts",
+      "sha256": "16201418827c7ee15e1da9b82ba6a41a71b8ef2decbd6e20cb692e0cbda6ed2e",
+      "bytes": 16759
     },
     {
       "path": "tools/pamela-central-composite.ts",
@@ -1873,6 +1974,16 @@
       "path": "tools/pamela-deal-pilot.ts",
       "sha256": "a0751f370deea7f6de114aed178cf790d61ff92c2812de3eb4d0cd74b019a0f7",
       "bytes": 8247
+    },
+    {
+      "path": "tools/pamela-direct-return-prepare.ts",
+      "sha256": "2be4269bcb70cc56e7e1bf7b36c75852f8f373effe9aabe8fe06a04b79b893b7",
+      "bytes": 18739
+    },
+    {
+      "path": "tools/pamela-direct-return-review.ts",
+      "sha256": "3b2d9ebba2753a22132cf8fd27b5d5e307b0634b93664914ca6be54d00bc9d2a",
+      "bytes": 27932
     },
     {
       "path": "tools/pamela-edge-card-track.ts",
@@ -2523,8 +2634,6 @@
     "tools/runpod-pilot/player.html",
     "tools/runpod-pilot/player.ts",
     "tools/runpod-pilot/relay.ts",
-    "tools/runpod-pilot/summarize.ts",
-    "{cleanup()",
-    "{console.error(e.message)"
+    "tools/runpod-pilot/summarize.ts"
   ]
 }

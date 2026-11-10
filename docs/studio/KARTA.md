@@ -7,6 +7,7 @@ Läs vid orientering eller ändringar i studions arkitektur. Läs andra ämnesfi
 | Aktuell leveransordning, numrerat GPT-underlag och Materialprov | [Masterplan](../MASTERPLAN.md) |
 | Gemensam riktning och verifieringsgräns | [Granskningsingången](../GRANSKNING-UI-VIDEO-OCH-GPT.md) |
 | Ord, synonymer och skillnader mellan systemen | [Terminologi](../terminologi.txt) |
+| Gemensamma kortnamn, hand/sida och rörelsesträngar | [Namn och rörelsesträngar](NAMN-OCH-RORELSESTRANGAR.md) |
 | Format, vila, grundloop, suffix och QA | [Format och kvalitet](../granskning/FORMAT-OCH-KVALITET.md) |
 | Nästa dealer enligt ny GPT-dialog | [GPT-kedjan](../granskning/GPT-KEDJAN.md) |
 | Keystone, bildproveniens och nästa bild | [Keystone](../granskning/KEYSTONE.md) |

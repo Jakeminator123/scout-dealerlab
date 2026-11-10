@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "projectId": "snyggare-dealer",
+  "dealerId": "pamela-pilot",
+  "bankId": "pamela-workspace-v1",
+  "productionAccepted": false,
+  "scope": "Samlad granskning av samma Pamela. Valda rörelseprov, kortmaterial och scenprofiler är separata bevis inom ett gemensamt kontrakt.",
+  "checklist": [
+    {
+      "id": "identity",
+      "label": "Identitet och nodkontrakt",
+      "status": "V2-kandidat sparad",
+      "detail": "C är primär kortnotation, K behålls som alias. Projekt, dealer, bank, källhash, kortplacering och rörelse har egna identiteter. Scoutmotorn äger kortvärde och reveal."
+    },
+    {
+      "id": "deal-and-turn",
+      "label": "Fysisk givning och eventuell kortvändning",
+      "status": "Återstår att godkänna",
+      "detail": "Overlay skapar ingen fysisk vändning. Rätt synlig sida, grepp, vändning och släpp ska bevisas i källrörelsen. Handen får täcka kanten under greppet."
+    },
+    {
+      "id": "direct-return",
+      "label": "Direkt från släppt kort till VILA",
+      "status": "0/2 accepterade; två canonical C1-försök underkända",
+      "detail": "Fem avslutade WAN3-jobb kostade totalt 300 credits. Canonical C1 fick återkontakt med kortet även med högre startad hand. C2 är förberedd men osänd. Nästa prov kräver ändrat rörelseupplägg; ingen breddning ännu."
+    },
+    {
+      "id": "card-sides",
+      "label": "Markörer, korttryck och handskydd",
+      "status": "Sparat och funktionsprovat",
+      "detail": "Blå FRONT, gul BACK, EDGE, UV och masker finns per källruta. Fysisk sida är UNKNOWN; GPU/CPU-pixelparitet och generell materialacceptans återstår."
+    },
+    {
+      "id": "stage",
+      "label": "Gemensamt rum och bord",
+      "status": "Gemensam kandidat vald och hashbunden",
+      "detail": "Jadesalongen, neutralt ljus, smaragd/brun bordskant och källsko. P1 saknar egen bordskontakt-QA. 1764 px-returerna behöver egen adapter till scenen som i dag använder 1762 px/360 rutor."
+    },
+    {
+      "id": "keystones",
+      "label": "Keystones och koordinater",
+      "status": "P1-ankare och kortspår sparade",
+      "detail": "Start efter släpp och slut i VILA är sparade med källruta, bildmått och hash. Fullständiga handposer, gemensam bordslayout och överföring till andra platser återstår."
+    },
+    {
+      "id": "bank",
+      "label": "Grundserie: P1–P7 C1/C2 och D.C1–C3",
+      "status": "14/17 givmål har kandidater",
+      "detail": "Dealerns tre filmer saknas. Övriga direktreturer väljs eller genereras först efter jämförelse av handläge, kort och skarvar. Antalet återanvändbara returer är ännu okänt."
+    },
+    {
+      "id": "pipeline",
+      "label": "Automatisk beställning och senare Scout-integration",
+      "status": "Delvis byggt",
+      "detail": "API-planer, task-ID, original och kostnadsjournal finns. Automatisk terminalkostnadsavstämning, generell QA och integrerad uppspelning återstår. Ingen Scout-gren ändras här."
+    }
+  ],
+  "reviewPointers": {
+    "directReturn": "references/pamela-direct-return-review.json",
+    "cardSides": "references/pamela-card-side-review.json",
+    "motionContract": "references/pamela-motion-contract-v2.json",
+    "background": {
+      "path": "references/pamela-background-review.json",
+      "sha256": "d175bfe9ae8c712f1edef19aeeec2315f5d743c557ce72ca85c08c21c5279a79"
+    },
+    "table": {
+      "path": "references/pamela-table-review.json",
+      "sha256": "76bcdbe1ebdbea068148fcef472d29e9a6adad987444857a4046550e1b0545d3"
+    }
+  }
+}

@@ -1,13 +1,59 @@
 # Masterplan – ny Pamela-referensbank
 
-Uppdaterad 2026-11-10. Ägare: HUVUDAGENT 2. Arbetsyta: `C:/Users/jakem/dev/super-feature-sg/snyggare-dealer`, lokal Git-gren `jakob/test`, utan remote. Scout Gaming och `/studio/snabb` är slutmål. Kevin/Emil arbetar i ett separat projekt och är enbart läsreferens. Ingen merge till Main ingår.
+Uppdaterad 2026-11-10. Ägare: HUVUDAGENT-3. Arbetsyta: `C:/Users/jakem/dev/super-feature-sg/snyggare-dealer`, lokal Git-gren `jakob/test`. Remote `origin` är det separata publika repot `Jakeminator123/scout-dealerlab`; endast granskningsurval publiceras genom det särskilda flödet. Scoutgaming och båda Kevin-grenarna är läsreferenser. Senaste prioritet är en sammanhängande lokal videobank före inkoppling mot Scout `main`.
 
 ## Slutmål och systematik
 
 Jakobs förtydligade slutmål 2026-11-10: i princip ett knapptryck för att skapa en dealer. Det kräver en sammanhängande, återkörbar kedja: beställning → dealer-/nodregister → original och kalibrering → generering och bearbetning → QA och beslut → export. Modellstöd, kostnadstak och sparade task-ID ska förhindra obeställd generering och dubbeldebitering. Scoutmotorn behåller spelbesluten.
 
-Dagens filmer är byggstenar, inte bevis för en färdig automatisk pipeline. Varje vald nod behöver identitet, källhash, tidsbas, kalibrering, lager, bevis och explicit beslut. Granskningsindexet får länka senaste filmer till nod-ID utan att märka dem runtimegodkända. En generisk KORT N→VILA, gemensam kortlayout och kropp/bord-kontakt återstår. Prioritet: ett avgränsat platsprov före en ny hel bank. Aktuella frågor och steg finns i references/review-brief.json.
+Dagens filmer är byggstenar, inte bevis för en färdig automatisk pipeline. Varje vald nod behöver identitet, källhash, tidsbas, kalibrering, lager, bevis och explicit beslut. Granskningsindexet får länka senaste filmer till nod-ID utan att märka dem runtimegodkända. En generisk KORT N→VILA, gemensam kortlayout och kropp/bord-kontakt återstår. Den aktuella prioriteringen nedan ersätter äldre avsnitts formuleringar om nästa arbete. Äldre försöksresultat och källor bevaras som historik.
 
+## Aktuell prioritet: filmkontrakt före integration
+
+Jakobs styrning 2026-11-10: samla de konkurrerande systemen runt nodträdets rörelser och skapa rätt filmer först. **Aktuellt scope är två kort per P1–P7 och tre till dealern: 17 givmål.** Senare utökning följer Scout `main`-grundseriens kortfall; två/tre är ingen blackjackregel eller global maxgräns. Sista given ska kunna gå **direkt från giv-/släppläget till VILA utan att först passera REDO/R**, inklusive Jakobs K5-exempel. Exakt mottagare/kortinstans/ruta ersätter otydliga K5-alias i kontraktet.
+
+Originalgivningen behöver inte innehålla någon kortvändning; de fem författade vändningsproven bevaras som separata framtida kandidater. Förtydligandet om ”svart vy” gäller **säker identifiering av kortsida**, exempelvis blå markör för framsida och knallgul för baksida som sedan ersätts av kortdesign. Färgkonventionen behöver provas och kräver egen källkalibrering. Befintlig Next/React-vy använder direkt Three.js; Fiber är inget verifierat beroende. Keystones är referens-/posebilder, medan faktisk film och skarv-QA bevisar övergången.
+
+| Ordning | Leverans | Klart när |
+|---|---|---|
+| 1 | Ett kontrakt för identitet, rörelse, kortplats, material och QA | Nodkarta, filmval och granskningsindex kan härledas från samma versionerade data; gamla fack-ID:n har uttryckliga översättningar. Släppändpunkter och direktreturer kan uttryckas. |
+| 2 | P1 efter C1 respektive C2, med direkt VILA-avslut | Sista given går till VILA utan omväg via REDO. Befintliga källor prövas först; saknad rörelse får en avgränsad genereringsplan. Rätt kort ligger kvar; skarvar, handkontakt, placering och tryck godkänns. Blå/gul overlay på blank källa bevisar bara författad sidpolicy. |
+| 3 | Fullfölj den lokala grundserien | P1–P7 C1/C2 och D.C1–D.C3, inklusive de direktreturer och reveal-fall som behövs. Återanvändning av en givfilm kräver eget bevis; saknad rörelse blir ingen tyst reserv. |
+| 4 | En återkörbar dealerbeställning | Profiler styr materialval, kostnad, jobb-ID, återupptagning och selektiv omkörning. En andra dealer prövas med egen kalibrering. |
+| 5 | Senare separat Scout-integration | Egen bank/profil, kompatibelt format och importerbara spår har verifierats; Scoutmotorn äger fortfarande regler och avslöjanden. |
+
+Verifierat i denna kartläggning: 14/14 valda råkällor och 14/14 bankfilmer matchar sina registrerade SHA-256. De täcker P1–P7 K1/K2 som kandidater, **14/17 = 82,4 % kandidattäckning av givmålen**. Dealerns tre givmål saknar vald film. Det bevarade v1-kontraktet har 19 klipp, alla `raw-reference`/`pending`, och 0 godkända anslutningsgrindar. De nya P1-proven redovisas separat nedan. Kandidattäckning är inte rörelse-/produktionsacceptans eller total färdigprocent.
+
+Den [sammanhållna system- och filmplanen](studio/DEALERS-OCH-PIPELINES.md#gemensamt-filmkontrakt-före-scout-integration) anger filmval, koordinater, källrevisioner, keystones, återanvändning och nästa prov. [Namn och rörelsesträngar](studio/NAMN-OCH-RORELSESTRANGAR.md) styr nya etiketter: C är primärt, K är schemaidentifierat alias, dealerhand och spelarhand hålls isär och REDO/REVEAL skrivs fullt. Befintliga hashbundna fil- och kontrakts-ID:n byter inte namn. Runway-API, lokal WebView och konkreta genereringsplaner har prövats. Material ligger kvar enligt [lagringsstrukturen](drift/PROVISORISK-STRUKTUR.md).
+
+## Verifierad P1-pilot och gemensamt kontrakt, 2026-11-10
+
+`references/pamela-motion-contract-v2.json` är en opt-in-kandidat (`candidate-20261110-v2-r1`), inte aktiv produktionsbank. Den bevarar samtliga 24 tillgångar och 19 äldre handlingar med fullhashar och källintervall, skiljer Scout-fack (`clipSlotId`) från kortplacering (`cardPlacementId`) och beskriver 17 givmål samt de två P1-planerna. `src/dealer-motion-contract.ts` validerar rörelseväg, beständiga kort, reveal och materialupplösning. Scoutmotorn behåller regler, slump, sko, kortidentiteter och tillstånd att avslöja kort.
+
+P1-resultat: **0/2 accepterade direktreturer**. Äldre B-prover är 494 rutor/16,467 s respektive 834 rutor/27,8 s, båda 1764×1174/30 fps. De passerar **inte REDO efter sista släppet**; underkännandet får inte beskrivas som en belagd sådan omväg. Däremot matchar deras B252/B326/B359-ankare inte ursprunglig VILA-keystone. De bevaras som teknisk och historisk evidens via `references/pamela-direct-return-review.json`, utan produktionsacceptans.
+
+| Nytt prov mot ursprunglig VILA-keystone | Beslut och exakt fel |
+|---|---|
+| P1.C1 canonical take01 | Underkänd: återkontakt med kortet efter släpp i råreturens rutor 5–13. |
+| P1.C1 canonical take02 | Underkänd: start i C1-källruta 210 med tydligt lyft hand, men ny återkontakt i råreturens rutor 12–18, motsvarande proof 223–229 / 7,433–7,633 s. Slutposen nås, men textur-/handformsskarv kvarstår till den uttryckligen märkta stillhold-sektionen. |
+| P1.C2 canonical | Förberedd, aldrig inskickad. Ingen ny C2-film eller acceptans finns. |
+
+Senaste [C1-proof](../runs/20261110-pamela-direct-return-pilot/review/canonical-c1-retake-02/P1-K1/take-01/P1-canonical-proof.mp4) har **331 rutor, 30 fps, 11,033333 s**, SHA-256 `6028923533a67551e9705abe77b37552bfecd635d225a4c32a24ad64b7123f5c`. Råoriginal, prompt, indata, task-ID, rutkarta och avvisade försök bevaras under `runs/20261110-pamela-direct-return-pilot/`. Sanerat publiceringsunderlag väljs separat; privata körjournaler och interna budgetrester ska inte följa med.
+
+**Fem separata WAN3-jobb är avslutade: 3 s och 60 credits vardera, totalt 300 credits = 3,00 USD före skatt.** Det är tre äldre B-försök och två canonical C1-försök. 300 credits var en intern planram, inte Jakobs beslutade maxbelopp. Inga jobb kör och ingen ny generering beställs nu. Jobbplan, indata och prompt är hashbundna; intent sparas före ett enda POST och task-ID före fortsatt arbete. Ingen automatisk POST-retry görs. Föregående terminalkostnad och lokal kostnadsavstämning ska kontrolleras före en ny beställning.
+
+Efter omstart är nästa steg ett nytt konkret rörelseupplägg med tydligare rörelsestyrning (conditioning), eller en avgränsad modelljämförelse med samma källor och QA. De fem WAN3-jobben visar inte vilken modell som ger bäst kvalitet. Ingen blind batch ska startas. Hela VILA→REDO-starten är fortfarande ogranskad och behöver egen sammanhängande rörelse-/skarvgranskning.
+
+`/pamela-sidprov` visar befintlig direkt Three-rendering med original, blå/gul diagnostik och två slutdesigner. 720 källrutor har kontrollerats; sex CPU-visningsfilmer och sju native-kontaktark finns i `runs/20261110-pamela-card-side-review/take-01/`. Färg i en overlay visar **författad sidpolicy**, medan fysisk sida fortsatt är **UNKNOWN**. EDGE behålls. Noll handskydds-/utanförkortändringar avser RGB före förlustkodning. WebView har verifierat full uppspelning av båda givningarna, C1→C2→C1 samt BACK/EDGE/FRONT och separat reveal. Pixelparitet mellan GPU och CPU samt generell kort-/rörelsekvalitet är inte godkända genom detta funktionsprov.
+
+Identitetsregistret visar projektrot, dealer-ID, bank/revision, källmanifest och hashbundna ankare. Sex undersökta projektmanifest i `blackjack-studio` belägger ingen Pamela; samband med Dealerlabs Pamela är **okänt**. Göran · Scout Main och Göran · blackjack-studio hålls isär. Naturbord · Liv har en belagd ankarhashkonflikt och får inte automatiskt återanvändas som Pamela.
+
+Detta är lokal dokumentstatus; ingen publicering av den senaste C1-kandidaten påstås här. Ett separat publiceringssteg använder det befintliga filtrerade GitHub-/Vercelflödet och verifieras genom `/latest.json` och publiceringskvittot. Scout `main` och Kevin-grenarna har inte ändrats. De tre dealergivmålen står kvar som saknade. 82,4 % beskriver kandidattäckning, inte godkänd kvalitet eller total färdiggrad.
+## Gemensam checklista och vald scen
+
+`references/pamela-presentation-review.json` samlar checklistan som också visas i `/pamela-sidprov`. Givning/kortvändning, retur efter släpp, kortmaterial och scengeometri är skilda granskningssteg. Overlay skapar ingen fysisk vändning. Handen får täcka kortkanten under greppet; återkontakt efter släpp är ett separat fel. Dolda kort kräver motorns reveal-beslut och källrörelse som visar rätt fysisk sida.
+
+Bakgrunds- och bordsvalen finns i `references/pamela-background-review.json` och `references/pamela-table-review.json`: Jadesalongen, neutralt ljus, smaragd/brun läderkant, källsko och centrerad kamera. Detta återanvänder befintliga profiler, inte nya bildförsök. Befintlig scen använder 1762×1174/360 rutor; de nya 1764×1174-returerna kräver uttrycklig adapter och ny kontakt-/ocklusionskontroll. P4:s bordskontakt får inte ärvas av P1. Kortspår och keystonebilder är sparade, men fullständiga handposer och en generell gemensam bordslayout återstår.
 ## Aktuellt: 14 materialfilmer, fem kortvändningar och separata scenbyten
 
 ### Lokalt efter R16: maskkorrigering, P2-sko och separat ny VILA-kedja
@@ -39,7 +85,7 @@ Den riktade granskningen av återstående kortsidor omfattade 300/3 240 unika ru
 - Helrundan är renderad MP4. combined-scene använder Next/React och direkt Three.js, inte React Three Fiber. Marker är en separat Three-studie utan gravitation eller dealerintegration. Det är ännu inte en gemensam spelrenderer.
 - UI har nio Next-sidor och 41 namngivna view-lägen i /pamela-prov, många historiska. Nästa UI-steg är en ingång: Helrunda / Byt scen / Granska fel, med äldre försök under Historik. Det är rekommenderat, inte genomfört.
 
-Återstartprioritet: ett avgränsat platsprov med överenskommen landningsposition, stabilt korttryck, tydlig vändning och kortare REDO→VILA-avslut. Först därefter breddning. Lokal demonstrator och generiskt återanvändbar pipeline är olika färdiggrader; tidigare skattning 20–30 % kvar gällde den visuella demonstratorn, inte hela målbilden. Kvar till den generiska lokala målbilden bedöms nu grovt till 35–45 % (skattning, ingen uppmätt täckning).
+Aktuell återstartprioritet finns överst: ett avgränsat P1-prov med överenskommen landningsposition, stabilt korttryck och två direkta VILA-avslut utan omväg via REDO efter sista givningen. Kortvändning är ett separat framtida rörelseval, inte krav på varje givning. Äldre procenttal här avsåg olika demonstratorer och ersätts inte med en ny totalmätning. Externa granskarens cirka 35 % färdiggrad för en generell pipeline är en historisk, osäker skattning på äldre snapshot; den är inte verifierad aktuell arbetsmängd eller tidsprognos.
 
 R16 är publicerad på https://scout-dealerlab.vercel.app/pamela-bank.html. Snapshot pamela-loop-review-20261110001708402, deployment dpl_Fy6SvJiWoHxo3U46ux1JwSt3CVWf. Hela rundan och ZIP finns där; /pamela-combined.html visar rum, bord och skokropp separat. Lokal väg /pamela-prov?view=two-sided-bank, enskild film med &id=C2-P1, oklippt med &length=full. Den ursprungliga centrala vändningen är plats 4, nollbaserat index 3.
 
@@ -66,7 +112,7 @@ Ljus/lager: rum bakom bord; ny sko bakom kvarvarande dealer/hand; korttryck inom
 
 **VILA/REDO återstår:** B→B med 14 kort och gratis returkandidat finns kvar på /pamela-idle-scene.html och /pamela-idle-ready.html. Den nya 3 s-bryggan är kandidat men INTE vald i helrundan: utgång 89→bank17 har ansikts-/handtextur, ljus- och greppskillnad. Rekommenderat trimprov B[305,327) → brygga[6,90) → bank[17,38) är 127 rutor; publicerat fullprov 133 rutor. Ingen övertoning, frysning eller tidsändring döljer skarven. Rörelsen är separat accepterad som kandidat, inte sömlös utgång.
 
-Ingen ny betald generering i R16. Senaste brygga: task 29f2f5d9-46a4-4a71-8a6f-82fb7e93d85c, WAN3, 60 krediter, original SHA 2df2e054051e85e4200025a8b955e0c871e41d6cf0fc78b59a25d107e941e569. Senast verifierade API-saldo 1 342 (2026-11-09), inte nytt kontobesked. Cirka 7 000 är tidigare totalram, ingen ny ram per chatt. Platsjobb P1=4/P2=2/P3=2/P4=2/P5=2/P6=2/P7=4, tak 10 per plats. Äldre idle-job02 är PREPARED_NOT_SUBMITTED och skickas inte automatiskt.
+Ingen ny betald generering i R16. Senaste brygga: task 29f2f5d9-46a4-4a71-8a6f-82fb7e93d85c, WAN3, 60 krediter, original SHA 2df2e054051e85e4200025a8b955e0c871e41d6cf0fc78b59a25d107e941e569. Kontosaldo hålls i privat driftunderlag. Cirka 7 000 är tidigare totalram, ingen ny ram per chatt. Platsjobb P1=4/P2=2/P3=2/P4=2/P5=2/P6=2/P7=4, tak 10 per plats. Äldre idle-job02 är PREPARED_NOT_SUBMITTED och skickas inte automatiskt.
 
 Nästa arbete följer avstämningsprioriteten ovan. Ingen runtime-/produktionsacceptans. Publik R15 återställning: dpl_ECY8WyPY6y5m6LZFbvDbhiG5zv7K, exports/pamela-loop-review-20261109-r15; R16 och den lokala avstämningsbanken är oförändrade.
 
@@ -104,9 +150,9 @@ R12 saknade gemensam kort-/scenspelare och utbytbar skokropp; dessa har nu ett R
 
 **Publikt:** https://scout-dealerlab.vercel.app/pamela-loop.html#fjorton-material visar R10, snapshot pamela-loop-review-20261109211718087. Hela 146,8 s/182,87 s-filmerna, 14 separata 12 s-klipp och ZIP finns där. Deployment och anonym hashverifiering: references/public-review.json och exports/pamela-loop-review-20261109-r10/published-verification.json. Endast scout-dealerlab, prj_mQwHzspK3GrrJA04eFOorFxth0d5 under team_Scxorb9qtZHjNae1YEQnFCaT, är publicerat. Scout main/admin, Neon/Render och Mauds läppsynk är orörda. Äldre prov är märkta som historik.
 
-**Budget och återställning:** senaste API-kontrollen 2026-11-09T21:15:15.813Z visade 1402 krediter på samma nyckel som den verifierade tidigare Pamela-tasken. Ny VILA-pilot: två 12 s WAN3-klipp, högst 240 krediter per jobb/480 totalt, 0 automatiska återförsök. Nu reserverat 240; jobb 01 ORIGINAL_PRESERVED_NATIVE_MISMATCH_BLOCKS_INTEGRATION, task 7dfbf7e3-750c-4803-8113-cb355535202d; jobb 02 PREPARED_NOT_SUBMITTED, task ej inskickat. Källor, ankare och budget finns i runs/20261109-pamela-idle-anchor-pilot/run-01. Materialbankens export gjorde 0 nya API-genereringar. Tidigare journal: 18 jobb/4 320 reserverade av cirka 7 000. Fem GPT-förfrågningar är förbrukade; senaste svaret gäller äldre 98,87 s-prov, inte den aktuella materialbanken. Återställningspunkterna .runtime/checkpoints/20261109T152233Z-before-gpt-browser-rounds och 20261109T195913Z-material-bank-code bevarar 319 respektive 398 Git-synliga filer, index och patchar. Originalmedia ligger separat. Ocommittat betyder ännu inte sparat som Git-commit. Preview hålls kvar; stopp: STOPP.cmd.
+**Historiskt VILA-prov och återställning:** två 12 s WAN3-klipp planerades; jobb 01 ORIGINAL_PRESERVED_NATIVE_MISMATCH_BLOCKS_INTEGRATION, task 7dfbf7e3-750c-4803-8113-cb355535202d, bevaras. Jobb 02 PREPARED_NOT_SUBMITTED skickades aldrig. Källor och ankare finns i runs/20261109-pamela-idle-anchor-pilot/run-01; faktisk API-kostnadsuppgift för jobb 01 redovisas i beslutet nedan. Materialbankens export gjorde 0 nya API-genereringar. Fem GPT-förfrågningar användes; senaste svaret gällde det äldre 98,87 s-provet. Återställningspunkterna .runtime/checkpoints/20261109T152233Z-before-gpt-browser-rounds och 20261109T195913Z-material-bank-code bevarar 319 respektive 398 Git-synliga filer, index och patchar. Originalmedia ligger separat. Ocommittat betyder ännu inte sparat som Git-commit. Preview stoppas med STOPP.cmd.
 
-**VILA-pilot – beslut:** jobb 01 är bevarat men avvisat som hel B→A-övergång. API-originalet är 1764×1174, 360 rutor/30 fps/12 s, två kolumner bredare än planen. Alla 845 280 ytterkantspixlar är gröna; det bevisar inte att en crop löser geometrin eller anslutningen. Åtta blinkningar och synlig ansikts-/blickskillnad mot slutankare A kvarstår. Root-beslut: runs/20261109-pamela-idle-anchor-pilot/run-01/root-job01-qa.json. Nativegrinden är fortsatt falsk och jobb 02 har inte skickats. API uppgav 240 krediter; observerat saldo gick från 1 642 till 1 402. Ingen ansiktsändring, crop eller automatisk retry har utförts.
+**VILA-pilot – beslut:** jobb 01 är bevarat men avvisat som hel B→A-övergång. API-originalet är 1764×1174, 360 rutor/30 fps/12 s, två kolumner bredare än planen. Alla 845 280 ytterkantspixlar är gröna; det bevisar inte att en crop löser geometrin eller anslutningen. Åtta blinkningar och synlig ansikts-/blickskillnad mot slutankare A kvarstår. Root-beslut: runs/20261109-pamela-idle-anchor-pilot/run-01/root-job01-qa.json. Nativegrinden är fortsatt falsk och jobb 02 har inte skickats. API uppgav 240 krediter; kostnadsavstämning bevaras i privat driftunderlag. Ingen ansiktsändring, crop eller automatisk retry har utförts.
 
 **VILA-fönster – separat prov:** zero: källrutor [289,327), 38 rutor/1.267 s, 0 blinkningar; one: källrutor [252,317), 65 rutor/2.167 s, 1 blinkningar. Varje trevarvsfilm har dessutom en originalstartruta för att visa tredje skarven. Fristående B→B-kandidater från verkliga originalrutor, inte godkänd A-anslutning. Nativebredden 1764 kvarstår. Referenser: references/pamela-idle-window-review.json och runs/20261109-pamela-idle-window-probe/take-01/evidence.json. Fulltagningens avvisning och jobb 02:s spärr gäller fortfarande.
 
@@ -172,7 +218,7 @@ Två Wan3-filmer är nu producerade från exakt samma VILA-bild som första och 
 
 - Andningsoriginal: SHA-256 `ea74eb1c8724246571600648bf3acfccbadea5a8caf74d8963ba0d56be368049`.
 - Blickoriginal: SHA-256 `af76918b478c78859d85733651ec987777e184fbc62dfe6097d4306c2c438564`. Ögonstängning omkring ruta 35–41 och 68–70; tydlig nedblick omkring 42–66. Insticket benämns därför nedblick **med blinkningar**.
-- API-prisuppgift: **180 krediter** för de två nya jobben. Pilotjournalen visar nu 12 slutförda jobb, 878 krediter plus 84 i tidigare säkerhetsreserv; **3 038 av 4 000 krediter kvar** efter Jakobs dubblering av budgeten. Faktisk faktura är inte verifierad. Ingen ny OpenAI-API-kostnad i denna omgång.
+- Historisk API-kostnadsuppgift: **180 krediter** för dessa två vilojobb. Faktisk faktura är inte verifierad. Ingen ny OpenAI-API-kostnad i den omgången. Äldre saldo-, reserv- och återstående budgetuppgifter används inte som aktuell beställningsram.
 - [Originalgranskning](../runs/20261109-pamela-idle-pilot/review-summary.json) och [komposition/tidslinje](../runs/20261109-pamela-idle-composite/composition.json). Viloskarvar, anslutningen till givkedjan och instickets frekvens ska godkännas före en spelpolicy.
 
 **Kort 2-provet är separat och avvisat som ofullständigt.** 119/180 rutor kunde renderas före en konservativ kompressionsspärr i grön bakgrund vid källruta 119. Det var inte ett observerat bevis på trasig arm. 33,9 % av den ompassade rörelsen återstår ogranskad. Nästa begränsade kontroll skiljer skyddad hand/ärm från bakgrunden men kräver fortsatt positiv lokal geometri överallt. Ingen ytterligare betald film behövs för den diagnosen. Originalens böjda papperskant och övergången vid släpp återstår också. [Exakt beslut och manifest](../runs/20261109-pamela-c2-retarget/retarget-manifest.json).
@@ -291,7 +337,9 @@ Kortets ordningsnummer och placering är egna egenskaper under rörelsen, skilda
 
 Skarvar behövs för spelstyrda val mellan klipp, men de ska vara visuellt kontinuerliga. Samma pose räcker inte om hastighet, ansikte, ljus, sko eller bordets korttillstånd hoppar. Three.js/Fiber kan senare rendera lager, men fysik eller gravitation löser inte denna mätning automatiskt.
 
-## Nästa konkreta arbete
+## Historiskt centralt prov: tidigare arbetsordning
+
+Avser det äldre centralprovet. Aktuell ordning är filmkontrakt och P1:s två returvägar överst i dokumentet.
 
 1. Granska den renderade centrala kompositionen i rörelse och dess tre råskarvar. Behåll aktuell kamera och hela arbetsytan.
 2. Förfina kanter, korttryck och skymning på befintliga filmer. Three.js/Fiber kan senare rendera lagren men ersätter inte uppmätta kortspår eller handmasker.
@@ -365,8 +413,8 @@ Original, input, prompt, modell/task-ID, mått, fps, rutantal, hash och granskni
 
 ## Budget, publicering och uppföljning
 
-- Jakob har fördubblat de monetära taken: totalt **4 000 Runway-krediter och 20 USD för OpenAI**. Högst 16 betalda videogenereringar och 250 krediter per jobb gäller fortsatt. Ingen ny genereringskostnad i ljus-/kortmaterialomgången.
-- **12 slutförda videogenereringar**. API-kostnadsuppgifter summerar till **878 krediter**. Med 84 krediter konservativ reserv räknas **962**, och **3 038** återstår. Faktura är inte verifierad. [Budgetjournal](../runs/20261108-pamela-deal-pilot/qa/budget-ledger.json).
+- Detta avsnitt beskriver äldre pilotomgångar. Deras dåvarande beställningsramar är inte aktuella maxbelopp för den nya P1-piloten; aktuell kostnad och nästa steg står överst i dokumentet.
+- Historisk [budgetjournal](../runs/20261108-pamela-deal-pilot/qa/budget-ledger.json): **12 slutförda videogenereringar**, API-kostnadsuppgifter **878 krediter**. Faktura är inte verifierad. Detta är en äldre delsammanställning, inte dagens totalkostnad eller en återstående beställningsram.
 - V5, de två stationsankarna och REDO-bilden med ett landat kort skapades med inbyggd bildgenerator. Exakt modell och kostnad exponeras inte och redovisas som okända, inte noll.
 - Runway Developer API är produktionsvägen. Pluginanslutningen är separat och behöver inte felsökas vidare för detta uppdrag.
 - Efter färdig granskningsomgång publiceras aktuell kandidat, masterplan, original, prompt, modell/task-ID, mått, fps, rutantal, hash och högst tre frågor. Gamla A/B-länkar kan behålla historiska val; använd aktuell startsida eller dess nya jämförelselänkar.

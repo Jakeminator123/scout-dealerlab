@@ -1,6 +1,8 @@
 {
   "checkedAt": "2026-11-08T23:13:31.955Z",
   "basis": "Jakobs uttryckliga identifiering och bilder 2026-11-08; separata dealer-ID:n lästa i inloggad Scoutgaming-admin. Hudton används inte som automatisk identitetsregel.",
+  "identityCheckedAt": "2026-11-10",
+  "identityPolicy": "Projektrot, verifierat projekt/dealer-ID och full filhash identifierar material. Samma namn eller bildlikhet är inte en koppling. Identitetsrelation innebär aldrig gemensam bank, kalibrering eller QA. Null betyder okänt; sourceCodeRevision är inte bankrevision.",
   "dealers": [
     {
       "id": "goran-scout",
@@ -10,7 +12,26 @@
       "idleClipId": "fbb08d0c-856c-52ca-a18b-1865866aa64f",
       "adminClipName": "Göran · vila_andning_01 · 9492f43d",
       "pipeline": "scout-main",
-      "referenceImage": "media/identities/goran-scout-reference.png"
+      "referenceImage": "media/identities/goran-scout-reference.png",
+      "identity": {
+        "sourceRoot": "C:/Users/jakem/dev/scoutgaming",
+        "sourceProjectId": null,
+        "sourceProjectName": "Scout Main",
+        "sourceDealerId": "goran",
+        "sourceCodeRevision": "66ccd80c053694fcc0173cec294cc2277962dd0c",
+        "bankId": null,
+        "profileId": null,
+        "bankRevision": null,
+        "sourceManifest": null,
+        "anchor": {
+          "path": "media/identities/goran-scout-reference.png",
+          "sha256": "34f939117088e36a9f65d919c7ab1ff12f7a3b5c11eb4b5f6c90eec50e267db6",
+          "role": "user-supplied-identity-reference",
+          "generationSourceVerified": false
+        },
+        "technique": "video-clips",
+        "calibration": null
+      }
     },
     {
       "id": "blankurius-scout",
@@ -30,11 +51,24 @@
         "sourceImageHash": null,
         "keystoneQuality": "Ej granskad",
         "verification": "Vägen och alternativen Grund/Utökad är bekräftade i koden. Blankurius specifika jobb- och bildkedja återstår att verifiera."
+      },
+      "identity": {
+        "sourceRoot": "C:/Users/jakem/dev/scoutgaming",
+        "sourceProjectId": null,
+        "sourceProjectName": "Scout Main",
+        "sourceDealerId": "blankurius",
+        "bankId": null,
+        "profileId": null,
+        "bankRevision": null,
+        "sourceManifest": null,
+        "anchor": null,
+        "technique": "video-clips",
+        "calibration": null
       }
     },
     {
       "id": "goran-alternativ-helkropp",
-      "label": "Göran · alternativ helkropp",
+      "label": "Göran · blackjack-studio",
       "scoutDealerId": null,
       "adminUrl": null,
       "pipeline": "runway-fullbody-experimental",
@@ -44,11 +78,46 @@
         "19 källfilmer, genererad dealer på bildplan i en Three.js-scen; inte en riggad 3D-kropp.",
         "Grön inspelningsbakgrund är belagd. Vit bakgrund är inte belagd."
       ],
-      "sourceProjectId": "e19d226c-c586-467e-b126-6a9f90e1675e"
+      "sourceProjectId": "e19d226c-c586-467e-b126-6a9f90e1675e",
+      "identity": {
+        "sourceRoot": "C:/Users/jakem/dev/super-feature-sg/local-studio/blackjack-studio",
+        "sourceProjectId": "e19d226c-c586-467e-b126-6a9f90e1675e",
+        "sourceProjectName": "Göran · levande blackjack",
+        "sourceDealerId": null,
+        "bankId": null,
+        "sourceAnimationSetId": "living-vila-v1",
+        "profileId": null,
+        "bankRevision": null,
+        "sourceProjectRevision": 103,
+        "sourceManifest": "data/typed-preview/e19d226c-c586-467e-b126-6a9f90e1675e/project.json",
+        "localManifest": "references/alternative-bank.json",
+        "creatorManifest": "data/creator/e19d226c-c586-467e-b126-6a9f90e1675e/project.json",
+        "creatorProjectRevision": 107,
+        "anchor": {
+          "assetId": "8fe99408-26c2-4dae-a1e7-bc5324061258",
+          "sourcePath": "data/typed-preview/e19d226c-c586-467e-b126-6a9f90e1675e/assets/8fe99408-26c2-4dae-a1e7-bc5324061258.png",
+          "path": "extra/insperationsmall-alternativ/goran-vila-referens.png",
+          "sha256": "54224fb918c5cb839554381e468ddbf4fdae64008c537150335ad21660db14a9",
+          "role": "generation-keystone",
+          "verification": "SHA-256 uppmätt för lokal kopia samt typed-preview och creator; samtliga byteidentiska."
+        },
+        "technique": "video-plane-in-threejs-scene",
+        "riggedBodyVerified": false,
+        "calibration": {
+          "source": "sourceManifest:dealer.calibration",
+          "projectRevision": 103,
+          "keystone": "8fe99408-26c2-4dae-a1e7-bc5324061258",
+          "scale": 100,
+          "height": 0,
+          "x": 0,
+          "depth": 0,
+          "acceptedForDealerlab": false
+        }
+      }
     },
     {
       "id": "pamela-pilot",
-      "label": "Pamela · Keystone-pilot",
+      "label": "Pamela · Dealerlab",
       "scoutDealerId": null,
       "adminUrl": null,
       "pipeline": "local-keystone-pilot",
@@ -56,16 +125,120 @@
       "notes": [
         "Fiktiv dealer skapad på Jakobs uppdrag. V5 är vald identitetsgrund; senare stationbilder och filmer är kandidater.",
         "Ny egen referensbank för Main-facken. Inga Astrid-kortspår ärvs, ingen Main-integration är godkänd."
-      ]
+      ],
+      "identity": {
+        "sourceRoot": "C:/Users/jakem/dev/super-feature-sg/snyggare-dealer",
+        "sourceProjectId": null,
+        "sourceProjectName": "Dealerlab",
+        "sourcePackageName": "snyggare-dealer-local",
+        "sourceDealerId": "pamela-pilot",
+        "bankId": "pamela-workspace-v1",
+        "profileId": null,
+        "bankRevision": "local-candidates-20261109-r5",
+        "sourceManifest": "references/pamela-motion-contract.json",
+        "candidateManifest": "references/pamela-motion-contract-v2.json",
+        "candidateRevision": "candidate-20261110-v2-r1",
+        "productionAccepted": false,
+        "anchor": {
+          "path": "runs/20261108-pamela-v5-body/original/pamela-v5-body.png",
+          "sha256": "2f11686b223925d8fc791735c32a7b4550af5f1ea4936df8ee03d982c7607795",
+          "role": "selected-identity-source",
+          "verification": "SHA-256 uppmätt lokalt; V5 är tidigare vald identitetsgrund."
+        },
+        "bankAnchors": [
+          {
+            "pose": "VILA",
+            "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+            "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621"
+          },
+          {
+            "pose": "REDO",
+            "path": "runs/20261109-pamela-reference-kit/original/pamela-redo-station.png",
+            "sha256": "a9dd4882d84da1cc6f0fb3258d0fbd6d81fddac5a7f78efdaa225d6f9538576d"
+          }
+        ],
+        "technique": "generated-scene-video-with-composite-candidates",
+        "riggedBodyVerified": false,
+        "calibration": null,
+        "calibrationNote": "Identitetsankaret och stationsbilderna är inte bevis för ett godkänt kortspår eller utbytbara lager. Native-rutor för ett specifikt filmjobb ska låsas separat med egna fullhashar."
+      }
     },
     {
       "id": "maud-scout",
       "label": "Maud · Scout-referens",
       "scoutDealerId": "maud",
       "pipeline": "scout-main",
-      "referenceImage": "media/maud-reference/contact-sheet.jpg"
+      "referenceImage": "media/maud-reference/contact-sheet.jpg",
+      "identity": {
+        "sourceRoot": "C:/Users/jakem/dev/scoutgaming",
+        "sourceProjectId": null,
+        "sourceProjectName": "Scout Main",
+        "sourceDealerId": "maud",
+        "bankId": null,
+        "profileId": null,
+        "bankRevision": null,
+        "sourceManifest": null,
+        "localManifest": "references/maud-blob-inventory.json",
+        "anchor": {
+          "path": "media/maud-reference/contact-sheet.jpg",
+          "sha256": "66a4a8b45b1837d328386eae5d647b39753dfb321705a2ab9c367c146bb8fa32",
+          "role": "derived-contact-sheet",
+          "generationSourceVerified": false
+        },
+        "technique": "video-clips",
+        "calibration": null
+      }
     }
   ],
+  "crossProjectIdentityAudit": {
+    "checkedAt": "2026-11-10",
+    "sourceRoot": "C:/Users/jakem/dev/super-feature-sg/local-studio/blackjack-studio",
+    "scope": "Tre project.json i data/typed-preview och motsvarande tre i data/creator; endast manifest och deras valda keystone-filer. Ingen mediafullscan.",
+    "pamela": {
+      "localDealerId": "pamela-pilot",
+      "otherProjectId": null,
+      "otherDealerId": null,
+      "otherDisplayName": null,
+      "sameIdentitySource": null,
+      "status": "unknown",
+      "evidence": "Ingen Pamela-text i de sex kontrollerade projektmanifesten. Ingen motsvarande källa eller hashproveniens är identifierad inom detta scope.",
+      "reuseAuthorizedByIdentity": false
+    },
+    "projects": [
+      {
+        "projectId": "aa898e87-e7b9-45ae-9fd3-e39fa47f4a66",
+        "name": "Göran · modelljämförelse · två klipp",
+        "typedPreviewRevision": 15,
+        "creatorRevision": 15,
+        "keystoneAssetId": "ca3a7392-ebed-41c5-94a4-5d1d49b9d097",
+        "measuredKeystoneSha256": "54224fb918c5cb839554381e468ddbf4fdae64008c537150335ad21660db14a9",
+        "relation": "Verifierad gemensam källbild med e19d226c-c586-467e-b126-6a9f90e1675e; dess keystone.metadata anger detta sourceProject/sourceAsset. Banker och kalibrering förblir separata."
+      },
+      {
+        "projectId": "e19d226c-c586-467e-b126-6a9f90e1675e",
+        "name": "Göran · levande blackjack",
+        "typedPreviewRevision": 103,
+        "creatorRevision": 107,
+        "keystoneAssetId": "8fe99408-26c2-4dae-a1e7-bc5324061258",
+        "measuredKeystoneSha256": "54224fb918c5cb839554381e468ddbf4fdae64008c537150335ad21660db14a9",
+        "relation": "Hashverifierad källa för goran-alternativ-helkropp; inte sammanförd med goran-scout."
+      },
+      {
+        "projectId": "b4289e0c-90d8-4667-8817-8a68cd40cc71",
+        "name": "Naturbord · Liv",
+        "dealerNameInManifest": "Goran",
+        "identityIdInManifest": "432854af-6389-4217-902a-ab2f9738e44c",
+        "typedPreviewRevision": 281,
+        "creatorRevision": 281,
+        "keystoneAssetId": "24b457e0-c6a7-4f6b-80a7-7e0c31d4a29a",
+        "measuredKeystoneSha256": "54224fb918c5cb839554381e468ddbf4fdae64008c537150335ad21660db14a9",
+        "declaredProjectKeystoneHash": "9676aa1a21c8bee666309ca271613cf85c8c50cea48e8fd826d38b69724b5090",
+        "status": "identity-conflict",
+        "evidence": "I både creator och typed-preview stämmer vald keystone-fils uppmätta hash med asset.sha256, men inte projektets keystoneHash. Namnet Liv eller Goran bevisar ingen Pamela-koppling.",
+        "reuseAuthorizedByIdentity": false
+      }
+    ]
+  },
   "assetMappings": [
     {
       "path": "gpt-underlag/uppackad-zip-underlag/01_original/goran_vila_grundloop.mp4",

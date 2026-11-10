@@ -1,10 +1,11 @@
 # Granskning: UI/UX, klippstandarder och GPT-underlag
 
-Dokumentversion 4 · 2026-11-08. Detta är den stabila ingången. Sakfynd redigeras i rätt ämnesfil när evidens eller beslut ändras; ingen ny rapport eller omläsning krävs per chatt. Baslinjer och högst två föregångare bevaras. Historiska original är oförändrade.
+Dokumentversion 5 · 2026-11-10. Detta är den stabila ingången. Sakfynd redigeras i rätt ämnesfil när evidens eller beslut ändras; ingen ny rapport eller omläsning krävs per chatt. Baslinjer och högst två föregångare bevaras. Historiska original är oförändrade.
 
 | Behöver du… | Läs |
 |---|---|
 | Förstå format, vila/grundloop, klippnamn och QA | [Format och kvalitet](granskning/FORMAT-OCH-KVALITET.md) |
+| Använda gemensamma kortnamn, hand/sida och rörelsesträngar | [Namn och rörelsesträngar](studio/NAMN-OCH-RORELSESTRANGAR.md) |
 | Bedöma eller skapa Keystone/ankare | [Keystone](granskning/KEYSTONE.md) |
 | Förstå studion, GPT-mappen och dokumentkartan | [Studiokartan](studio/KARTA.md) |
 

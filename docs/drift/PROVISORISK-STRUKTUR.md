@@ -65,6 +65,43 @@ Nodträdet beskriver beroenden och arbetssteg. Det ska referera till material-ID
 
 Minsta väg mot ”några rader och ett knapptryck”: gemensam dealerbeställning/materialkontrakt → återupptagbar körledare med sparad status och task-ID → gemensamma kvalitetskontroller → verifierad export. Börja med ett platsprov. Visuell acceptans och beslutad kostnadsram för generering ingår även när starten automatiseras.
 
+## Strukturgranskning och fortsatt städning
+
+Inventeringen 2026-11-10 omfattade projektets rot, dokument, stödfiler, källkod och filantal/storlek i materialmapparna. 434 filer av typerna TypeScript, TSX, PowerShell och JSON under app, src, tools, scripts och references jämfördes med SHA-256, med node_modules undantaget. Ingen byteidentisk dubblett hittades i det urvalet. Liknande namn och versionssuffix behöver därför granskas på beteende- och beroendenivå före sammanslagning.
+
+48 lösa dokumentutkast från flera arbetsmappar samlades i .runtime/archive/structure-20261110/files/. Varje fil matchade ett installerat dokument eller en bevarad dokumentversion. Sökning efter kandidatvägar i projektets textfiler och lokala hjälpskript gav inga träffar för dessa 48. Tio andra utkast med referenser lämnades för separat granskning. Dynamiskt sammansatta filvägar är en begränsning i textsökningen. Arkivflytten är återställbar.
+
+Två felplacerade rotfiler, {cleanup() och {console.error(e.message), flyttades till samma arkivs shell-residues/. Den första innehåller ett 318 byte långt granskningskvitto; den andra är tom. Alla 50 flyttar verifierades med SHA-256. Manifestet anger ursprung, destination, hash och dokumentmotsvarighet. Logisk filstorlek är 457773 byte. Ingen frigjord diskvolym har mätts.
+
+| Område | Verifierat fynd | Fortsatt åtgärd |
+|---|---|---|
+| .runtime | Blandar driftstatus, körbara hjälpskript, utkast, QA och återställningspunkter | Använd doc-drafts för nya utkast och archive för avslutat underlag. Flytta ytterligare filer först efter kontroll av läsare och ägare. |
+| src och tools | Många försöks- och versionsspecifika filer samt hårdkodade lokala verktygs- och körvägar | Granska en pipeline i taget. Behåll anropsvägar tills import-, kommandorads- och mediaberoenden verifierats. |
+| docs | Åtta äldre adresser är avsiktliga pekare till drift och studio | Behåll pekarna så länge äldre länkar används. |
+| tools/runpod-mcp | Eget paket med package.json, låsfil och node_modules | Behandla som separat verktygspaket vid beroendegranskning. |
+| runs och exports | 82901 respektive 52052 filer vid inventeringen, 44,558 respektive 74,812 GiB logiskt | Kontrollera aktuell användning och hårdlänkar per namngiven batch. Storlekarna visar inte frigörbart utrymme. |
+
+### Kandidater för ytterligare borttagning
+
+- De 48 arkiverade utkastkopiorna kan gallras när respektive hashmatch i manifestet återkontrollerats. Historiska dokumentversioner kan roteras, så kontrollen behöver göras vid själva gallringen.
+- Den tomma arkiverade filen {console.error(e.message) kan raderas. Filen {cleanup() bevarar ett granskningskvitto och behöver hanteras som bevis.
+- Tio ytterligare hashidentiska utkast har referenser i hjälpskript eller dokument. Exakta filer och referenser finns i arkivets audit/structure-plan.json. Kontrollera användningen av dessa referenser före gallring.
+- tmp/pdfs/nytta-scoutgaming-20261109 innehåller två PNG-bilder, totalt 497215 byte. Återskapbarhet från rätt original är ännu inte verifierad.
+- .runtime/doc-version-check-facddb3ff3f3441791a225ae61c87417 är en syntetisk testarbetsyta med 16 filer. docs/drift/STATUS.md hänvisar till den som verifieringsbevis. Avveckling kräver ett uttryckligt beslut om det beviset.
+- Äldre exporter, QA och återställningspunkter kräver en fullständig beroende- och ägarkontroll innan en raderingslista kan fastställas.
+
+### Förslag till schemalagd inventering och fördelad granskning
+
+HUVUDAGENT-3 rekommenderar återkommande inventering med kontroll av referenser och ägarskap före radering. Ett lämpligt första schema är en veckovis rapport med exakt sökväg, filstorlek, SHA-256, kvarvarande kopia, referenser och ägare. En senare automatisk gallring behöver en uttrycklig tillåtelselista, spärr för aktiva jobb, kontroll direkt före åtgärden och återställningskvitto. Den befintliga arkiveraren hanterar endast namngivna filer i runs och exports. Ett sådant schema är ännu ett förslag.
+
+Tre avgränsade läsuppdrag passar billigare agenter. Varje rapport bör ange fil och rad, konkret bevis samt osäkerhet.
+
+1. Dokumentlänkar i docs och README, med skillnad mellan avsiktliga pekare och brutna mål.
+2. Dubbletter bland stödfiler, med SHA-256, referenslista och separat hantering av sammanhållna återställningspunkter.
+3. Hårdkodade sökvägar i tools och scripts, med anropare, indata, utdata och föreslagen flyttgräns.
+
+Pågående filmskapande behöver en aktuell ägarlista. HUVUDAGENT-3 pekade särskilt ut direct-return-piloten, dealer-motion-contract, Pamela-kontrakt v2, dealeridentiteter och pågående generering/publicering. Dessa uppgifter måste uppdateras inför senare städning.
+
 ## Genomförandestatus
 
 Verifierat 2026-11-10T03:01:55.790Z: 9470 filer, 9.371 GiB logiskt, kopierades och SHA-256-verifierades på D: innan C-kopiorna togs bort. Exakt förteckning: references/storage-archives.json och D:/dealerlab-archive/snyggare-dealer/20261110-slask-02/manifest.json. Originalfilmer, aktiva materialval och publicerade exportbaser behölls. Ett första arkivförsök stoppade säkert efter metadataändring; dess 528 partiella D-kopior har jämförts mot det kompletta arkivet och städats bort. Kvittona behålls; inga C-filer raderades i det försöket.

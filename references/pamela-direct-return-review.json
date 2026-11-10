@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "dealerId": "pamela-pilot",
+  "manifest": {
+    "path": "runs/20261110-pamela-direct-return-pilot/review/manifest.json",
+    "sha256": "38239c5d042bee54689605ae613d81a2b2ffeb53d68785ec4aab4e932c84abc9"
+  },
+  "productionAccepted": false
+}

@@ -110,7 +110,7 @@ export function createLabServer(root: string, options: { shutdownToken?: string;
         await saveReview(root, { runId: form.runId ?? '', asset: form.asset ?? '', decision: form.decision ?? '', note: form.note ?? '' });
         res.writeHead(303, { Location: `/?run=${encodeURIComponent(form.runId)}&saved=review` }); return res.end();
       }
-      if (options.nextHandler && (url.pathname === '/' || url.pathname === '/admin-prototyp' || url.pathname === '/materialprov' || url.pathname === '/komposition' || url.pathname === '/studio' || url.pathname === '/pamela-prov' || url.pathname === '/maud-test' || url.pathname.startsWith('/_next/') || (url.pathname.startsWith('/__nextjs_font/') && url.pathname.endsWith('.woff2')))) {
+      if (options.nextHandler && (url.pathname === '/' || url.pathname === '/admin-prototyp' || url.pathname === '/materialprov' || url.pathname === '/komposition' || url.pathname === '/studio' || url.pathname === '/pamela-prov' || url.pathname === '/pamela-sidprov' || url.pathname === '/pamela-returer' || url.pathname === '/maud-test' || url.pathname.startsWith('/_next/') || (url.pathname.startsWith('/__nextjs_font/') && url.pathname.endsWith('.woff2')))) {
         req.headers['content-security-policy'] = csp;
         req.headers['x-nonce'] = nonce;
         await options.nextHandler(req, res); return;
