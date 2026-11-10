@@ -5,10 +5,10 @@
   "sourceBranch": "jakob/test",
   "sourceIsWorkingTreeSnapshot": true,
   "reviewSnapshot": "review-hub-20261110065307768",
-  "pendingReviewSnapshot": "review-hub-20261110140202586",
+  "pendingReviewSnapshot": "review-hub-20261110140906924",
   "reviewUrl": "https://scout-dealerlab.vercel.app/granskning.html",
   "deploymentId": "dpl_HcEQwgah8s6kn1T9p9f9ouY3dqev",
-  "sourceTreeSha256": "27b9527afbca27cc4ef9b68d0c31ec8e49df14969c285149672d4df8157c2bbc",
+  "sourceTreeSha256": "6860472b39dee861ad60d5085f42b72f08038d4fd96f4bd9942477478dbadeef",
   "files": [
     {
       "path": ".env.example",
@@ -779,6 +779,11 @@
       "path": "scripts/import-alternative-project.ts",
       "sha256": "c830f44b447efcf0d184aa58d5e4b3634ed6cd46d08cf07f36427160426d9a4f",
       "bytes": 5810
+    },
+    {
+      "path": "scripts/prepare-pamela-film-review.ts",
+      "sha256": "123272b798167098f186df27a96b657cfe6a77917e6b240d4ee1f207d7d18ea9",
+      "bytes": 8525
     },
     {
       "path": "scripts/publish-review-git.test.ps1",
