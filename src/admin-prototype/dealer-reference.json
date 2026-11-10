@@ -1,0 +1,117 @@
+{
+  "source": "https://www.scoutgaming.tech/admin/dealers",
+  "capturedAt": "2026-11-08T18:47:24.06Z",
+  "kind": "Read-only visual reference from the observed live admin; not an active backend connection",
+  "dealers": [
+    {
+      "id": "arga-clownen",
+      "name": "Arga Clownen",
+      "tables": 3,
+      "status": "Klipp klara",
+      "href": "https://www.scoutgaming.tech/admin/dealers/arga-clownen",
+      "image": "/files/media/admin-reference-20261108/arga-clownen.webp",
+      "imageSource": "https://www.scoutgaming.tech/admin-app/api/layer-assets/ec506f8a-6002-4a64-bc75-23778bfcd05e/preview",
+      "sha256": "14bf3593e6b1ef8e99a0e2bb488e16012d043b3d6b058dd3f457a11126d2e26c"
+    },
+    {
+      "id": "astrid-6",
+      "name": "Astrid",
+      "tables": 0,
+      "status": "Klipp klara",
+      "href": "https://www.scoutgaming.tech/admin/dealers/astrid-6",
+      "image": "/files/media/admin-reference-20261108/astrid-6.webp",
+      "imageSource": "https://www.scoutgaming.tech/admin-app/api/layer-assets/cccbc73d-0a37-4228-90da-c560932137b8/preview",
+      "sha256": "611ed5b6fc452eb8b55d585c090d18d2230886eac6417dc92b652655eff63d52"
+    },
+    {
+      "id": "blankurius",
+      "name": "Blankurius",
+      "tables": 1,
+      "status": "Klipp klara",
+      "href": "https://www.scoutgaming.tech/admin/dealers/blankurius",
+      "image": "/files/media/admin-reference-20261108/blankurius.webp",
+      "imageSource": "https://www.scoutgaming.tech/admin-app/api/layer-assets/5e23c6da-c91f-45df-91b6-d77bb657fd3a/preview",
+      "sha256": "dbbaa42eef5c43c4ed879f3f7f5c7b650f3aaaa7ba31b936ac5767311d07bc79"
+    },
+    {
+      "id": "empa",
+      "name": "Empa",
+      "tables": 2,
+      "status": "Klipp klara",
+      "href": "https://www.scoutgaming.tech/admin/dealers/empa",
+      "image": "/files/media/admin-reference-20261108/empa.webp",
+      "imageSource": "https://www.scoutgaming.tech/admin-app/api/layer-assets/a208d051-85ac-4006-8b01-d5c678348d8a/preview",
+      "sha256": "8ca12c7195c9e48e766127e77b34fb7b193d06fa14ce41deb7063af1bf4bb4e1"
+    },
+    {
+      "id": "goran",
+      "name": "Göran",
+      "tables": 1,
+      "status": "Klipp klara",
+      "href": "https://www.scoutgaming.tech/admin/dealers/goran",
+      "image": "/files/media/admin-reference-20261108/goran.webp",
+      "imageSource": "https://www.scoutgaming.tech/admin-app/api/layer-assets/de49e565-a7f2-4d90-b8c7-2e31ae8e97c1/preview",
+      "sha256": "8cafd7a473bb1f7c60c4d6cba04f1b37e268a486b30d963c7f5efcc307117681"
+    },
+    {
+      "id": "jakob-2",
+      "name": "Jakob",
+      "tables": 0,
+      "status": "Klipp klara",
+      "href": "https://www.scoutgaming.tech/admin/dealers/jakob-2",
+      "image": "/files/media/admin-reference-20261108/jakob-2.webp",
+      "imageSource": "https://www.scoutgaming.tech/admin-app/api/layer-assets/14627102-04f3-4457-942d-621607fc0904/preview",
+      "sha256": "3769ff95def2bd96cd75012c6c886f2e830d1d92807665048578c97ccbd9f123"
+    },
+    {
+      "id": "kevin-v3",
+      "name": "Kevin",
+      "tables": 0,
+      "status": "Klipp klara",
+      "href": "https://www.scoutgaming.tech/admin/dealers/kevin-v3",
+      "image": "/files/media/admin-reference-20261108/kevin-v3.webp",
+      "imageSource": "https://www.scoutgaming.tech/admin-app/api/layer-assets/8ba88f3f-cc43-480a-8447-55cfc2e424cf/preview",
+      "sha256": "415aed4f1292b43284339c931817af29e64299eb41bce2e6eee43b74ce72f179"
+    },
+    {
+      "id": "photo-2b6f3f97bacb",
+      "name": "Mannen i blått",
+      "tables": 1,
+      "status": "Klipp klara",
+      "href": "https://www.scoutgaming.tech/admin/dealers/photo-2b6f3f97bacb",
+      "image": "/files/media/admin-reference-20261108/photo-2b6f3f97bacb.webp",
+      "imageSource": "https://www.scoutgaming.tech/admin-app/api/layer-assets/42f89bee-6fab-4eca-a35b-0faec14454e5/preview",
+      "sha256": "b7bd193c03b44fd30c3b8aeb7569ecc052b7648992ca95e9a6f6f0841ab866cc"
+    },
+    {
+      "id": "maud",
+      "name": "Maud",
+      "tables": 6,
+      "status": "Klipp klara",
+      "href": "https://www.scoutgaming.tech/admin/dealers/maud",
+      "image": "/files/media/admin-reference-20261108/maud.webp",
+      "imageSource": "https://www.scoutgaming.tech/admin-app/api/layer-assets/18922e03-79a4-4027-be97-d7d9603a43a1/preview",
+      "sha256": "c3f9abf9956ba01c009109ad7507bf02520a9d52c9b864114f70c9a4e41046a9"
+    },
+    {
+      "id": "robot",
+      "name": "Orbit",
+      "tables": 2,
+      "status": "Klipp klara",
+      "href": "https://www.scoutgaming.tech/admin/dealers/robot",
+      "image": "/files/media/admin-reference-20261108/robot.webp",
+      "imageSource": "https://www.scoutgaming.tech/admin-app/api/layer-assets/55ef4d99-a2a0-40f9-94a6-5f776e8850c7/preview",
+      "sha256": "16c86ed227f5fc6f9bd462bf496529d5fa106d42e3b1617468dc9178e5a483e8"
+    },
+    {
+      "id": "vera-v1",
+      "name": "Vera",
+      "tables": 3,
+      "status": "Klipp klara",
+      "href": "https://www.scoutgaming.tech/admin/dealers/vera-v1",
+      "image": "/files/media/admin-reference-20261108/vera-v1.webp",
+      "imageSource": "https://www.scoutgaming.tech/admin-app/api/layer-assets/a185a50f-310b-4c80-9345-0d74033a703a/preview",
+      "sha256": "725e5abe749264092ed19e2325698bbb6c702db3524ee3175ff1759f0e8b5e9c"
+    }
+  ]
+}

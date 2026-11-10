@@ -1,0 +1,121 @@
+{
+  "schema": "dealerlab-sequence-review/1",
+  "updatedAt": "2026-11-09T00:14:39.411Z",
+  "bankId": "pamela-workspace-v1",
+  "scope": "New Pamela source media, no Main import",
+  "entries": [
+    {
+      "name": "central-base",
+      "mainSlot": "deal.player.centre/box3",
+      "variant": "base",
+      "poseBefore": "REDO",
+      "poseAfter": "REDO",
+      "film": {
+        "path": "runs/20261109-pamela-sequence/original/pamela-central-base-wan3.mp4",
+        "sha256": "2445bb2ef5122fe558134d582533d277603da72c4b98b6c782be01a5bf06235a",
+        "bytes": 16802367,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frameCount": 180,
+        "duration": 6,
+        "codec": "h264",
+        "pixelFormat": "yuv420p"
+      },
+      "model": "wan3",
+      "taskId": "390ff634-df94-4666-b9bd-8951b2ac686a",
+      "jobPath": "runs/20261109-pamela-sequence/central-base.json",
+      "qaPath": "runs/20261109-pamela-sequence/qa/central-base/inspection.json",
+      "input": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-redo-station.png",
+        "sha256": "a9dd4882d84da1cc6f0fb3258d0fbd6d81fddac5a7f78efdaa225d6f9538576d",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1365141
+      },
+      "lastInput": {
+        "path": "runs/20261109-pamela-sequence/original/pamela-redo-after-central.png",
+        "sha256": "f62974a66959462093fb2ecd5fa0c2470eb3cfbeece1726030218ae167f8daba",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1521480
+      },
+      "cardStateBefore": {
+        "tableCardCount": 0,
+        "description": "One card seated at shoe outlet, no landed tabletop card."
+      },
+      "cardStateAfter": {
+        "tableCardCount": 1,
+        "description": "One landed central card remains; the next card is seated at the shoe outlet. Same hand pose does not mean identical whole scene."
+      },
+      "apiCreditEstimate": 120,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "findings": [
+        "Alla 180 rutor finns i kontaktarket. Originalrutor 44,58,84,100,122,145,179 inspekterade: kort lyfts från skon, byter hand, når central förgrund och blir kvar när händerna återgår mot REDO.",
+        "I ruta 84 har kortets synliga kant böjd/mjuk form. Styv plan kortgeometri är inte godkänd; överföring och fingersläpp behöver granskas sammanhängande.",
+        "Händer och armbågar ligger inom bilden i översikten och de inspekterade originalrutorna. Plats 1/7 är ännu inte provade.",
+        "Slutrutans handpose liknar REDO men exakta råskarvar och hastighet är inte accepterade. Samma pose får inte nollställa det redan utdelade kortet."
+      ]
+    },
+    {
+      "name": "from-shoe",
+      "mainSlot": "transition.shoe/from-shoe",
+      "variant": null,
+      "poseBefore": "REDO",
+      "poseAfter": "VILA",
+      "film": {
+        "path": "runs/20261109-pamela-sequence/original/pamela-from-shoe-wan3.mp4",
+        "sha256": "81a63227a56531103bd9d86b364442869b72eef0ddd3be65e718f3494ee2147b",
+        "bytes": 8455042,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frameCount": 90,
+        "duration": 3,
+        "codec": "h264",
+        "pixelFormat": "yuv420p"
+      },
+      "model": "wan3",
+      "taskId": "d0f9d466-cd29-41ef-a2db-c9783bc78256",
+      "jobPath": "runs/20261109-pamela-sequence/from-shoe.json",
+      "qaPath": "runs/20261109-pamela-sequence/qa/from-shoe/inspection.json",
+      "input": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-redo-station.png",
+        "sha256": "a9dd4882d84da1cc6f0fb3258d0fbd6d81fddac5a7f78efdaa225d6f9538576d",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1365141
+      },
+      "lastInput": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+        "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1376790
+      },
+      "cardStateBefore": {
+        "tableCardCount": 0,
+        "description": "Single white card remains seated in the fixed black shoe; no card on the table."
+      },
+      "cardStateAfter": {
+        "tableCardCount": 0,
+        "description": "Single white card remains seated in the fixed black shoe; no card on the table."
+      },
+      "apiCreditEstimate": 60,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "findings": [
+        "Alla 90 rutor finns i kontaktarket. Originalrutor 32,39,51,89 inspekterade: handen lämnar skon och återgår till VILA; skons kort ligger kvar.",
+        "Händer och armbågar ligger inom bilden i översikten och de inspekterade originalrutorna. Detta bevisar inte hela givräckvidden.",
+        "Rå slutpose, identitet och rörelse genom skarven är inte godkända. Inga frysta ändar eller toningar har lagts till."
+      ]
+    }
+  ],
+  "productionAccepted": false,
+  "sequenceAssembly": {
+    "status": "not-composited-or-accepted",
+    "reason": "Central raw film retains one landed card, but the standalone return source has an empty tabletop. The final compositor must preserve that game card as its own layer with Pamela-specific track/mask; simply concatenating these originals would make it disappear."
+  },
+  "next": "Measure central card corners/contact/release and hand mask on these exact bytes; evaluate raw REDO joins before any further bank generation."
+}

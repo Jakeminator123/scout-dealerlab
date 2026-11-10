@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "project": "snyggare-dealer",
+  "projectId": "prj_mQwHzspK3GrrJA04eFOorFxth0d5",
+  "teamId": "team_Scxorb9qtZHjNae1YEQnFCaT",
+  "storeId": "store_76fWcWipNdC0aLAD",
+  "name": "scout-dealerlab-review-public",
+  "access": "public",
+  "region": "arn1",
+  "environment": "production",
+  "purpose": "Explicitly selected public review work material",
+  "createdAt": "2026-11-10T02:26:44.7018863Z"
+}

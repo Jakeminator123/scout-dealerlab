@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "scenes": [
+    {
+      "id": "C2-P4",
+      "evidence": {
+        "path": "runs/20261109-pamela-card-atlas/take-03/evidence.json",
+        "sha256": "d96a3094c39cc94e096847ea989ebe4edc85d1412304f6189e78a8584a86dddf"
+      },
+      "shoe": {
+        "path": "runs/20261109-pamela-shoe-geometry/take-04/evidence.json",
+        "sha256": "ad845c9e4bdafa4d647aeda016ae61554eb2935ebcc8556db110c4647cbddd5b"
+      },
+      "presentation": {
+        "first": {
+          "cardId": "4C",
+          "frontAllowed": true
+        },
+        "second": {
+          "cardId": "10D",
+          "frontAllowed": true
+        }
+      },
+      "comparisonHref": "/pamela-prov?view=flip"
+    },
+    {
+      "comparisonHref": "/pamela-prov?view=turn-comparison&id=C2-P2",
+      "id": "C2-P2",
+      "shoeBank": {
+        "path": "runs/20261110-pamela-shoe-p2/proof-01/evidence.json",
+        "sha256": "9513931d9de5b401e9b265549082a80b404545456cbde53fd0628980113ac634"
+      },
+      "presentation": {
+        "second": {
+          "cardId": "QD",
+          "frontAllowed": true
+        },
+        "first": {
+          "cardId": "2C",
+          "frontAllowed": true
+        }
+      },
+      "evidence": {
+        "sha256": "f3ad93f2e4592de6d959a417e802c20989114e362644c75b183caa5e0b11e266",
+        "path": "runs/20261109-pamela-p2-atlas/take-01/evidence.json"
+      }
+    },
+    {
+      "id": "C2-P3",
+      "evidence": {
+        "path": "runs/20261109-pamela-p3-atlas/take-01/evidence.json",
+        "sha256": "2d7a749423b35108dd0b5d104a8a63c3148e91257875d6e65e734980e84f09d0"
+      },
+      "presentation": {
+        "first": {
+          "cardId": "3S",
+          "frontAllowed": true
+        },
+        "second": {
+          "cardId": "JH",
+          "frontAllowed": true
+        }
+      },
+      "comparisonHref": "/pamela-prov?view=turn-comparison&id=C2-P3",
+      "shoeBank": {
+        "path": "runs/20261110-pamela-shoe-bank/proof-01-p3/evidence.json",
+        "sha256": "f8723db2bca994196bd6a8eb3edd25455e3ad9fa7627c00e6422d85001cd3d7b"
+      }
+    },
+    {
+      "id": "C2-P5",
+      "evidence": {
+        "path": "runs/20261109-pamela-p5-atlas/take-01/evidence.json",
+        "sha256": "678d71512c7bf62cbdef6644c0090712e6d11412e190f266d088c36852b1686f"
+      },
+      "presentation": {
+        "first": {
+          "cardId": "5S",
+          "frontAllowed": true
+        },
+        "second": {
+          "cardId": "9H",
+          "frontAllowed": true
+        }
+      },
+      "comparisonHref": "/pamela-prov?view=turn-comparison&id=C2-P5",
+      "shoeBank": {
+        "path": "runs/20261110-pamela-shoe-bank/proof-01-p5/evidence.json",
+        "sha256": "1c33c5a12667b9c6ea9c4fc4929817a0262fa9e498fd0262ce9d1fdb7926b9a5"
+      }
+    }
+  ],
+  "idleScene": {
+    "sha256": "2f39f40dfe0b897f50e67d949d69b7258ee832e9315ae582254717e131442117",
+    "path": "runs/20261109-pamela-idle-scene-proof/take-02/evidence.json"
+  }
+}

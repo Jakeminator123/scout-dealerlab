@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "repository": "Jakeminator123/scout-dealerlab",
+  "url": "https://github.com/Jakeminator123/scout-dealerlab",
+  "remote": "origin",
+  "localBranch": "public/main",
+  "remoteBranch": "main",
+  "purpose": "Public source snapshots synchronized with Dealerlab review releases",
+  "excludedFiles": []
+}

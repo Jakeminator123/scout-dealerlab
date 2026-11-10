@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "teamId": "team_Scxorb9qtZHjNae1YEQnFCaT",
+  "teamSlug": "scoutgaming",
+  "projectId": "prj_mQwHzspK3GrrJA04eFOorFxth0d5",
+  "projectName": "scout-dealerlab",
+  "access": "public-read-only",
+  "scope": "Static review copies only. No Scoutgaming production app, credentials, runtime server or admin prototype.",
+  "baselineSnapshot": "public-review-20261109043726",
+  "baselineContentId": "549c907854751fe8393056b27725d55dc6b7fc870358b441015c9cd731e05ba1",
+  "proof": {
+    "url": "https://scout-dealerlab.vercel.app/pamela-prov.html",
+    "manifestUrl": "https://scout-dealerlab.vercel.app/pamela-prov-manifest.json",
+    "manifestSha256": "2482f9b61f624e0000476ac9c6822b68abf38bdb61dd1fed663d213128f262d0",
+    "evidence": "runs/20261109-pamela-public-export-check/published-verification.json",
+    "mediaCount": 9,
+    "baselineLibraryUnchanged": true,
+    "legacyZipUpdated": false,
+    "note": "V6 films remain unchanged. latest.json now identifies the new seat pilot review and separately links the V6 proof and preserved baseline library/ZIP."
+  },
+  "pilot": {
+    "url": "https://scout-dealerlab.vercel.app/pamela-platser.html",
+    "manifestUrl": "https://scout-dealerlab.vercel.app/pamela-pilot-manifest.json",
+    "manifestSha256": "fbf3d707a2f3e1250bcbf6f9ebcfbddcd41e29a9928b887738bf56722ee54cdd",
+    "evidence": "runs/20261109-pamela-seat-pilot-plan/public-verification.json",
+    "mediaCount": 5,
+    "decision": "raw candidate only; source table/card preservation failed"
+  },
+  "motion": {
+    "url": "https://scout-dealerlab.vercel.app/pamela-bank.html",
+    "sceneUrl": "https://scout-dealerlab.vercel.app/pamela-scen.html",
+    "manifestUrl": "https://scout-dealerlab.vercel.app/pamela-motion-manifest.json",
+    "evidence": "exports/pamela-motion-review-20261109-r2/published-verification.json",
+    "mediaCount": 13,
+    "checks": 24,
+    "status": "review-candidates-not-production"
+  },
+  "blur": {
+    "url": "https://scout-dealerlab.vercel.app/pamela-kort-v8.html",
+    "manifest": "https://scout-dealerlab.vercel.app/pamela-blur-manifest.json",
+    "evidence": "exports/pamela-blur-review-20261109-r1/published-verification.json",
+    "acceptedAsFinal": false
+  },
+  "loop": {
+    "url": "https://scout-dealerlab.vercel.app/pamela-loop.html",
+    "manifest": "https://scout-dealerlab.vercel.app/pamela-loop-manifest.json",
+    "scene": "https://scout-dealerlab.vercel.app/pamela-givning.html",
+    "idle": "https://scout-dealerlab.vercel.app/pamela-vila.html",
+    "evidence": "exports/pamela-loop-review-20261110-r16/published-verification.json",
+    "runtimeAccepted": 0
+  },
+  "modular": {
+    "scene": "https://scout-dealerlab.vercel.app/pamela-modular.html",
+    "flip": "https://scout-dealerlab.vercel.app/pamela-flip.html",
+    "evidence": "exports/pamela-loop-review-20261110-r16/published-verification.json",
+    "productionAccepted": false
+  },
+  "combined": {
+    "scene": "https://scout-dealerlab.vercel.app/pamela-combined.html",
+    "manifest": "https://scout-dealerlab.vercel.app/pamela-combined-manifest.json",
+    "evidence": "exports/pamela-loop-review-20261110-r16/published-verification.json",
+    "productionAccepted": false
+  },
+  "twoSidedBank": {
+    "url": "https://scout-dealerlab.vercel.app/pamela-bank.html",
+    "manifest": "https://scout-dealerlab.vercel.app/pamela-bank-manifest.json",
+    "sourceEvidence": {
+      "path": "runs/20261110-pamela-two-sided-bank/take-02/evidence.json",
+      "sha256": "fd9cd8078f35d52fbe1932cb484c0ebd60db60cf5e4a0ef1716237598867fd82"
+    },
+    "bundle": {
+      "path": "runs/20261110-pamela-two-sided-bank/take-02/download-bundle/pamela-14-scenklipp.zip",
+      "sha256": "c58252b50c52458a61d07a0e422df99335ba654b73d6598e006c38155e94ec36",
+      "bytes": 68713988
+    },
+    "evidence": "exports/pamela-loop-review-20261110-r16/published-verification.json",
+    "browserReview": {
+      "path": "exports/pamela-loop-review-20261110-r16/browser-review/evidence.json",
+      "sha256": "b31834a37fa57aebafcba1cc40c87848253fe9a406bac8bc1556b1829950e2a9",
+      "bytes": 5405
+    },
+    "productionAccepted": false
+  },
+  "shoeBank": {
+    "url": "https://scout-dealerlab.vercel.app/pamela-shoe.html",
+    "scene": "https://scout-dealerlab.vercel.app/pamela-combined.html?id=C2-P5",
+    "calibratedSources": [
+      "C2-P3",
+      "C2-P5"
+    ],
+    "retainedSeparateP4Calibration": true,
+    "gpuEvidence": {
+      "path": "runs/20261110-pamela-shoe-bank/gpu-preflight/evidence.json",
+      "sha256": "88cfb0951dcf4b4c0a73d667ae444f41777994ea246da7907bcb042946420c30",
+      "bytes": 1390
+    },
+    "browserReview": {
+      "path": "exports/pamela-loop-review-20261110-r16/browser-review/evidence.json",
+      "sha256": "b31834a37fa57aebafcba1cc40c87848253fe9a406bac8bc1556b1829950e2a9",
+      "bytes": 5405
+    },
+    "productionAccepted": false
+  },
+  "publicUrl": "https://scout-dealerlab.vercel.app",
+  "deploymentId": "dpl_5qv9gjbH4yfui9wAmeAbXQM3xS6i",
+  "verifiedAt": "2026-11-10T03:06:09.1364485Z",
+  "contentId": "6c52c26f56dabb82b521aced8e3f578853685d21821ed4af035cdcd19131f28f",
+  "snapshot": "review-hub-20261110030156605",
+  "currentExport": "exports/review-hub-20261110030156605",
+  "reviewUrl": "https://scout-dealerlab.vercel.app/granskning.html"
+}

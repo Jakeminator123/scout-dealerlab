@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Local 2D material comparison backgrounds; not 3D geometry",
+  "sourceManifest": "references/scene-composition/manifest.json",
+  "verifiedAtUtc": "2026-11-08T19:55:32.9822362Z",
+  "files": [
+    {
+      "path": "media/materialprov/la-panorama.jpg",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\la-panorama.jpg",
+      "referenceSnapshot": "references/scene-composition/assets/la-panorama.jpg",
+      "sha256": "84d3a766369aec4129aef1d15d99098cac1e629b9868a61f01eea42339521920",
+      "bytes": 231259,
+      "transformed": false
+    },
+    {
+      "path": "media/materialprov/vegas-panorama.jpg",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\vegas-panorama.jpg",
+      "referenceSnapshot": "references/scene-composition/assets/vegas-panorama.jpg",
+      "sha256": "f3d13ff2009d9f19420bfece9cf173f1e3a6a976c1fc991ff88f5f6b1d6ee253",
+      "bytes": 567656,
+      "transformed": false
+    },
+    {
+      "path": "media/materialprov/panorama-4096.avif",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\panorama-4096.avif",
+      "referenceSnapshot": "references/scene-composition/assets/panorama-4096.avif",
+      "sha256": "ae26f10562b3d64fbdf96facfebce6ec61e80a032fe07f2da8bbd3877fd50699",
+      "bytes": 1032861,
+      "transformed": false
+    }
+  ]
+}

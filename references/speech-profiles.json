@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-11-08T19:50:14.327Z",
+  "profiles": [
+    {
+      "dealerId": "maud",
+      "provider": "elevenlabs",
+      "voiceId": "aSLKtNoVBZlxQEMsnGL2",
+      "voiceName": "Maud (Sanna, sv)",
+      "credentialVariable": "ELEVENLABS_SCOUT_API_KEY",
+      "runpodProfile": "kevin",
+      "endpointId": "e6v2vc74f416cj",
+      "sourceSetSha256": "4940e3a7914c7798307c11b14606f1eb35a940027d5df8d3ad47669e9c616791",
+      "visualApproval": false
+    },
+    {
+      "dealerId": "paow",
+      "provider": "elevenlabs",
+      "voiceId": "WZVEBKUreb9jAKojf0QF",
+      "credentialVariable": "ELEVENLABS_API_KEY"
+    },
+    {
+      "dealerId": "dragan",
+      "provider": "elevenlabs",
+      "voiceId": "7f95xPL4S3ySZ4OS1pw8",
+      "credentialVariable": "ELEVENLABS_API_KEY"
+    }
+  ],
+  "bindingStatus": "Explicit proposal for local lab; no gameplay integration or generation performed"
+}

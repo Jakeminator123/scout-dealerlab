@@ -1,0 +1,43 @@
+{
+  "status": "local-candidate-playback-verified",
+  "evidence": {
+    "path": "runs/20261109-pamela-idle-window-probe/take-01/evidence.json",
+    "sha256": "a809ce887a4bf1661a2db601cfede8600d76c049065e5e618216c60dce3414c0"
+  },
+  "clips": [
+    {
+      "id": "zero",
+      "title": "VILA utan blinkning",
+      "movie": {
+        "path": "runs/20261109-pamela-idle-window-probe/take-01/render/zero-three-turns.mp4",
+        "sha256": "56591c8c754badc6bb1766bf6dfe796a3f85235147123fecf4ae61954fc41ff9"
+      },
+      "frames": 115,
+      "fps": 30,
+      "windowFrames": 38,
+      "sourceStart": 289,
+      "sourceEndExclusive": 327,
+      "blinksPerCycle": 0
+    },
+    {
+      "id": "one",
+      "title": "VILA med en blinkning",
+      "movie": {
+        "path": "runs/20261109-pamela-idle-window-probe/take-01/render/one-three-turns.mp4",
+        "sha256": "4fa5205e114cdb3b381cb115b86c4aae844a5da8cfe55ce1e62a3bad32ed9926"
+      },
+      "frames": 196,
+      "fps": 30,
+      "windowFrames": 65,
+      "sourceStart": 252,
+      "sourceEndExclusive": 317,
+      "blinksPerCycle": 1
+    }
+  ],
+  "integrationAccepted": false,
+  "job02GateApproved": false,
+  "rootReview": {
+    "path": "runs/20261109-pamela-idle-window-probe/take-01/root-review.json",
+    "sha256": "43b6ff495951700a7ab74055fb1620fdbfd2bcb1cc86cf2142bae52fe5dfe31b"
+  }
+}

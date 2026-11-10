@@ -1,0 +1,20 @@
+import { readFile,writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+const base='https://scout-dealerlab.vercel.app',run='runs/20261109-pamela-central-composite';
+const local=JSON.parse(await readFile(`${run}/composition.json`,'utf8'));
+const target=JSON.parse(await readFile('references/public-review.json','utf8'));
+const fetchChecked=async(url:string)=>{const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error(`HTTP ${r.status}: ${url}`);return r;};
+const latest=await (await fetchChecked(`${base}/latest.json?verify=${Date.now()}`)).json();
+if(latest.snapshot!==target.snapshot)throw Error('Public snapshot differs from deployment receipt');
+const manifest=await (await fetchChecked(`${base}/manifest.json`)).json();
+const selected=[local.output.path,local.raw.path,...(local.portrait?[local.portrait.path]:[]),`${run}/render/pamela-visible-masks-v1.zip`];
+const results=await Promise.allSettled(selected.map(async source=>{
+ const item=manifest.files.find((f:any)=>f.sourcePath===source);if(!item)throw Error('Missing manifest record');
+ const data=Buffer.from(await(await fetchChecked(base+item.path)).arrayBuffer());
+ const digest=createHash('sha256').update(data).digest('hex');
+ if(digest!==item.sha256||digest!==createHash('sha256').update(await readFile(source)).digest('hex'))throw Error('Public bytes differ from source '+source);
+ return {source,url:base+item.path,sha256:digest,bytes:data.length};
+}));
+const failures=results.filter(r=>r.status==='rejected');if(failures.length)throw Error(failures.map(r=>String((r as PromiseRejectedResult).reason)).join('\n'));
+const report={checkedAt:new Date().toISOString(),snapshot:latest.snapshot,verified:results.map(r=>(r as PromiseFulfilledResult<unknown>).value),scope:'Full byte hashes over public HTTP, not visual acceptance'};
+await writeFile(`${run}/qa/public-verification.json`,JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

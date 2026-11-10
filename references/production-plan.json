@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "owner": "HUVUDAGENT 2",
+  "branch": "jakob/test",
+  "mergeRequires": "Jakobs uttryckliga godkännande",
+  "candidate": {
+    "path": "runs/20261108-pamela-v5-body/original/pamela-v5-body.png",
+    "sha256": "2f11686b223925d8fc791735c32a7b4550af5f1ea4936df8ee03d982c7607795",
+    "status": "user-selected-identity-base-not-motion-acceptance"
+  },
+  "steps": [
+    {
+      "label": "Pamela v5 och eget VILA/REDO",
+      "state": "Skapade kandidater",
+      "evidence": "Egen sko och eget 1536×1024-plan; original, prompt och hash bevarade.",
+      "doneWhen": "Identitet, kropp, sko och poser godkända; hela rörelseområdet verifierat."
+    },
+    {
+      "label": "VILA → REDO",
+      "state": "Ny film klar för granskning",
+      "evidence": "Wan3: 1762×1174, 30 fps, 90 rutor, 3 s. Ingen gammal kontrollvideo.",
+      "doneWhen": "Plockläge och anslutning till nästa REDO-klipp accepterade."
+    },
+    {
+      "label": "REDO → VILA",
+      "state": "Ny kandidat, ej accepterad",
+      "evidence": "1762×1174, 30 fps, 90 rutor; egen REDO→VILA. Skarv och kvarvarande spelkort i slutkomposition återstår.",
+      "doneWhen": "Återgången ansluter till exakt samma VILA utan skala-, läges- eller identitetshopp."
+    },
+    {
+      "label": "Central giv till plats 4 / box3",
+      "state": "Ny kandidat, ej accepterad",
+      "evidence": "1762×1174, 30 fps, 180 rutor; utdragning och landning syns, böjd kortkant i ruta 84. Egna korthörn/mask återstår.",
+      "doneWhen": "Fungerande plock, kontakt, landning och släpp; båda händerna ryms hela vägen."
+    },
+    {
+      "label": "Komponera och verifiera central kedja",
+      "state": "Komposit v2 renderad; visuell acceptans återstår",
+      "evidence": "520 rutor, 30 fps i både desktop och separat 1080×1920-mobil. Samma centrala giv återanvänds två gånger; korten ligger still på samma landningspunkt och det andra täcker det första. Förbättrad friläggning, mörkare oskarpt rum och nytt mörkt bord. Inga nya Runway-jobb. Rapport: runs/20261109-pamela-central-composite/composition.json",
+      "doneWhen": "Samma kroppsskala och bordkontakt genom VILA→REDO→centralgiv→VILA, utan posehopp eller att det utdelade kortet försvinner."
+    },
+    {
+      "label": "Ytterplatser och bildformat",
+      "state": "Återstår",
+      "evidence": "Plats 1 och 7 före resten; desktop och portrait använder samma definierade källa.",
+      "doneWhen": "Hela armarnas arbetsområde ryms, inget klipps vid filmgränsen."
+    },
+    {
+      "label": "Nytt preset i Scout /studio/snabb",
+      "state": "Kodkontrakt kartlagt; ej implementerat",
+      "evidence": "Ny versionerad bank/profil behövs; befintligt mätläge ger tracks:{} och importen tillåter inte godtyckliga nya spår.",
+      "doneWhen": "Egen bank kan registreras med hashbundna spår, filmer och masker. Inga ändringar i Main eller Kevin inom labbscope."
+    }
+  ],
+  "budget": {
+    "runwayCredits": 4000,
+    "openaiUsd": 20,
+    "maxVideoJobs": 16,
+    "maxCreditsPerJob": 250,
+    "knownReservedRunwayCredits": 1202,
+    "videoJobs": 13,
+    "conservativeJobCount": 14,
+    "submissionAttempts": 14,
+    "apiMaximumCredits": 1118,
+    "failedRequestReserve": 84,
+    "remainingCredits": 2798,
+    "noMainMerge": true,
+    "invoiceVerified": false
+  },
+  "referenceKit": {
+    "id": "pamela-workspace-v1",
+    "path": "runs/20261109-pamela-reference-kit/reference-kit.json",
+    "clip": "runs/20261109-pamela-reference-kit/original/pamela-vila-till-redo-wan3.mp4"
+  },
+  "productionDirection": "Egen referensuppsättning för nya dealers i Scout /studio/snabb. Kevin är ett separat projekt som bara används för jämförelse. Göran, salongen och panoramat ingår inte i detta paket.",
+  "updatedAt": "2026-11-09T04:23:35.477Z",
+  "sequenceReview": "references/pamela-sequence.json",
+  "dealerMap": "references/dealer-map.json",
+  "generationUnit": "Hybrid proposal: one continuous idle behaviour per take; independently validated pose-to-pose game actions. Multi-node playlists reference clips, not a new generated film for every combination.",
+  "nextAction": "Granska V4:s fulla grepp/släpp och de utklippta VILA-gränserna. Lås därefter REDO-kontrakt och kalibrerade ytterplatser; ingen hel bank beställs nu. Nästa kortfix kräver förbättrad maskgräns vid släpp117→118.",
+  "composite": {
+    "report": "runs/20261109-pamela-card-contact-v4/composition.json",
+    "reviewUrl": "/kortkontakt-v4",
+    "url": "/kortkontakt-v4",
+    "revision": 4,
+    "accepted": false,
+    "productionAccepted": false,
+    "sourceModels": [
+      "wan3"
+    ],
+    "apiCreditsThisRound": 0,
+    "previousRevisionUrl": "/kortkontakt",
+    "limitations": [
+      "Vid källruta 117 → 118 byter kortet från observerad böjd kontur till fast landningsplan. Två riktade prov avvisades: kvarstående hopp respektive ny dubbelkant. V4:s placering behålls; tryckets böjning och denna maskgräns är inte lösta.",
+      "V4 är en kandidat: 2D-approximerad kortböjning, grön kant vid källruta 76–78, färgbaserad synlig skomask, källans bålbegränsning och råa ansiktsskarvar återstår. Handretur 118–124 är en lokal ompassning, inte ett nytt inspelat giv."
+    ],
+    "sha256": "6b2f762db11f2b6357a8e2dca9c826b13178851d94a7301a2d6790930e6c9c9d",
+    "placement": {
+      "card1": [
+        [
+          820,
+          1026
+        ],
+        [
+          943,
+          1026
+        ],
+        [
+          963,
+          1093
+        ],
+        [
+          802,
+          1093
+        ]
+      ],
+      "card2": [
+        [
+          866,
+          1026
+        ],
+        [
+          989,
+          1026
+        ],
+        [
+          1009,
+          1093
+        ],
+        [
+          848,
+          1093
+        ]
+      ],
+      "offsetPixels": [
+        46,
+        0
+      ],
+      "overlapAreaPercent": 67.6056338028169,
+      "afterReleaseTranslation": false,
+      "overlapPercent": 67.6056338028169,
+      "rankVisibility": {
+        "card1": "A spade upper-left visible",
+        "card2": "K heart upper-left and lower-right visible",
+        "verified": "Native and 1080x1920 portrait stills at source179; temporal playback remains reviewable candidate"
+      }
+    }
+  },
+  "idle": {
+    "report": "runs/20261109-pamela-idle-composite/composition.json",
+    "reviewUrl": "/vila",
+    "productionAccepted": false,
+    "activated": false,
+    "credits": 180,
+    "frames": 270,
+    "sequenceFrames": 630
+  },
+  "contactExperiment": {
+    "report": "runs/20261109-pamela-c2-retarget/retarget-manifest.json",
+    "status": "rejected-incomplete",
+    "next": "Foreground-aware safety check, then complete return QA; no regeneration yet"
+  },
+  "finish": {
+    "url": "/scenfinish",
+    "report": "runs/20261109-pamela-finish-study/profile.json",
+    "appliedToFilms": false
+  },
+  "idleSeams": {
+    "report": "runs/20261109-pamela-idle-seams/inspection.json",
+    "accepted": false,
+    "issue": "Source facial-detail reset, not keyed opaque face pixels or a measured global translation."
+  },
+  "cardMaterial": {
+    "url": "/kortmaterial",
+    "report": "runs/20261109-card-sg-material/review-summary.json",
+    "integratedWithPamela": false
+  },
+  "workbench": {
+    "url": "/studio",
+    "package": "React19 via existing Next16 bundler; no dependency install",
+    "reference": "local-studio/blackjack-studio read-only",
+    "camera": "bounded shared 2D view transform",
+    "inspectionOnly": true
+  },
+  "idleCutProof": {
+    "metadata": "runs/20261109-pamela-idle-cut-proof/metadata.json",
+    "clipIds": [
+      "a-original-cut",
+      "b-trimmed-entry-candidate"
+    ],
+    "productionAccepted": false,
+    "decodedFrameMatches": "120/120 source-selected frames"
+  },
+  "sequenceStrategy": {
+    "report": "runs/20261109-sequence-strategy/proof-plan.json",
+    "status": "proposed-not-submitted",
+    "nextPilot": "One 12s Wan3 1080p idle take; maximum 240 credits. Existing 16-job ceiling remains.",
+    "newPaidJobs": 0
+  },
+  "chipMaterial": {
+    "url": "/markermaterial",
+    "report": "runs/20261109-chip-material-study/review-summary.json",
+    "integratedWithGame": false
+  },
+  "continuousIdle": {
+    "url": "/langtagning",
+    "report": "runs/20261109-pamela-continuous-idle/composition.json",
+    "qa": "runs/20261109-pamela-continuous-idle/qa/inspection.json",
+    "productionAccepted": false
+  },
+  "pipeline": {
+    "url": "/pipeline",
+    "report": "references/pipeline-map.json",
+    "automatedEndToEnd": false
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "projectId": "e19d226c-c586-467e-b126-6a9f90e1675e",
+  "projectName": "Göran · levande blackjack",
+  "sourceRevision": 103,
+  "sourceRoot": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio",
+  "sourceManifest": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\data\\typed-preview\\e19d226c-c586-467e-b126-6a9f90e1675e\\project.json",
+  "verifiedAt": "2026-11-08T19:05:44.124Z",
+  "keystoneHash": "54224fb918c5cb839554381e468ddbf4fdae64008c537150335ad21660db14a9",
+  "localRuntimeUrl": "http://127.0.0.1:4323/skapa?project=e19d226c-c586-467e-b126-6a9f90e1675e&play=1",
+  "launchFile": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\STARTA.cmd",
+  "runtimeStartedHere": false,
+  "visualQA": "Originalfile bytes verified; not a new visual acceptance.",
+  "assets": [
+    {
+      "id": "8fe99408-26c2-4dae-a1e7-bc5324061258",
+      "label": "Göran · VILA",
+      "role": "keystone",
+      "path": "extra/insperationsmall-alternativ/goran-vila-referens.png",
+      "sha256": "54224fb918c5cb839554381e468ddbf4fdae64008c537150335ad21660db14a9",
+      "bytes": 1349140,
+      "sourceFile": "8fe99408-26c2-4dae-a1e7-bc5324061258.png",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": []
+    },
+    {
+      "id": "90924b04-f54e-4486-8bec-11d8b09b47a0",
+      "label": "Andas naturligt",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/90924b04-f54e-4486-8bec-11d8b09b47a0.mp4",
+      "sha256": "9a840a11d5323c4e530e76a802fb97f24315239080c1a33fff5e7595b864aaf8",
+      "bytes": 19993962,
+      "sourceFile": "90924b04-f54e-4486-8bec-11d8b09b47a0.mp4",
+      "sourceModel": "wan3",
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "idle",
+          "label": "Andas naturligt",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "idle.ready",
+          "filename": "goran_idle.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": false
+        }
+      ]
+    },
+    {
+      "id": "2edf0d90-2380-475a-8980-5066f8527131",
+      "label": "Blinkar och mjuknar i blicken",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/2edf0d90-2380-475a-8980-5066f8527131.mp4",
+      "sha256": "3f65721e5fd604b60c3f566f61130125f97f8affe555471f9a2f24caa9c1662e",
+      "bytes": 15187226,
+      "sourceFile": "2edf0d90-2380-475a-8980-5066f8527131.mp4",
+      "sourceModel": "wan3",
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "idle-blink",
+          "label": "Blinkar och mjuknar i blicken",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "idle.ready",
+          "filename": "goran_idle-blink.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": false
+        }
+      ]
+    },
+    {
+      "id": "34b51580-da3e-4a00-b775-27c2dcebfb41",
+      "label": "Huvudkli · original med bildartefakt",
+      "role": "reference-video",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/34b51580-da3e-4a00-b775-27c2dcebfb41.mp4",
+      "sha256": "6350288ccf1b8b9ce59f5f4223f1735a9b342d6baf9ee2f8cdc01f89ce29a21f",
+      "bytes": 15537135,
+      "sourceFile": "34b51580-da3e-4a00-b775-27c2dcebfb41.mp4",
+      "sourceModel": "wan3",
+      "sourceTaskId": null,
+      "shots": []
+    },
+    {
+      "id": "4a0e7980-8127-4331-9642-421e9e99f012",
+      "label": "Kliar sig i huvudet",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/4a0e7980-8127-4331-9642-421e9e99f012.mp4",
+      "sha256": "125f3d860f68740d501ed17840d869a9051a55a309d79213493825da5e175044",
+      "bytes": 5277274,
+      "sourceFile": "4a0e7980-8127-4331-9642-421e9e99f012.mp4",
+      "sourceModel": "wan3",
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "idle-scratch",
+          "label": "Kliar sig i huvudet",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "idle.ready",
+          "filename": "goran_idle-scratch.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": false
+        }
+      ]
+    },
+    {
+      "id": "9497d643-2ba1-408c-8371-87926e305f9f",
+      "label": "Plats 4 · utdelning",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/9497d643-2ba1-408c-8371-87926e305f9f.mp4",
+      "sha256": "46ec653ba18e9ce8b2ec3b07ae0fbf9ed2b4ddb186676f7751e5b7030f39ea60",
+      "bytes": 15456023,
+      "sourceFile": "9497d643-2ba1-408c-8371-87926e305f9f.mp4",
+      "sourceModel": "wan3",
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "pos4-iv",
+          "label": "Plats 4 · VILA → VILA",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "deal.player.centre",
+          "filename": "goran_pos4-iv.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": true
+        }
+      ]
+    },
+    {
+      "id": "e710c374-c998-4662-8bcd-cfbd267bfcfc",
+      "label": "Liten vänlig nick",
+      "role": "clip",
+      "path": "media/runway/979a734bf850e7d8/Locked_camera__continuous_full_body_shot_of_exactly_the_older_male_dealer_in_the.mp4",
+      "sha256": "7d55c33b93d6a4fedf01777030e05d8a9b4384dace73daee32f692f0f6822b3e",
+      "bytes": 7486654,
+      "sourceFile": "e710c374-c998-4662-8bcd-cfbd267bfcfc.mp4",
+      "sourceModel": "wan3",
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "idle-nod",
+          "label": "Liten vänlig nick",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "idle.ready",
+          "filename": "goran_idle-nod.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": false
+        }
+      ]
+    },
+    {
+      "id": "0a7dd33f-be3a-438b-bc82-4a6eca17f13b",
+      "label": "Blick åt sidan",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/0a7dd33f-be3a-438b-bc82-4a6eca17f13b.mp4",
+      "sha256": "8bf0f26e1df5010643a1e3f39b4d222caa297ea8233d82d8d08926b91f9ebe25",
+      "bytes": 15251128,
+      "sourceFile": "0a7dd33f-be3a-438b-bc82-4a6eca17f13b.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "idle-glance",
+          "label": "Blick åt sidan",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "idle.ready",
+          "filename": "goran_idle-glance.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": false
+        }
+      ]
+    },
+    {
+      "id": "22019230-cc35-4344-880c-2004d52fd280",
+      "label": "Plats 1 · VILA → VILA",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/22019230-cc35-4344-880c-2004d52fd280.mp4",
+      "sha256": "d9d98215364cbce8dbafe21c82eb6626842ac15535fb342795d3fd3fef3d2bf7",
+      "bytes": 15989595,
+      "sourceFile": "22019230-cc35-4344-880c-2004d52fd280.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "pos1-iv",
+          "label": "Plats 1 · VILA → VILA",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "deal.player.left",
+          "filename": "goran_pos1-iv.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": true
+        }
+      ]
+    },
+    {
+      "id": "84706a6e-2849-4040-a7a3-67730c2c9d1e",
+      "label": "Plats 2 · VILA → VILA",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/84706a6e-2849-4040-a7a3-67730c2c9d1e.mp4",
+      "sha256": "fe91a50d765679cd93985f5b41e9805057166ab33f609d8f8ecff3711f14155e",
+      "bytes": 15904313,
+      "sourceFile": "84706a6e-2849-4040-a7a3-67730c2c9d1e.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "pos2-iv",
+          "label": "Plats 2 · VILA → VILA",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "deal.player.left",
+          "filename": "goran_pos2-iv.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": true
+        }
+      ]
+    },
+    {
+      "id": "c7ef9e9c-db77-4d83-85f7-15340f9fa125",
+      "label": "Träkasino · miljöprov",
+      "role": "environment",
+      "path": "extra/insperationsmall-alternativ/trakasino-foto-referens.png",
+      "sha256": "372722aa116e6734a87b3d3d131c2fb2096d91012aa15c406d0d8868f4e2d985",
+      "bytes": 2032664,
+      "sourceFile": "c7ef9e9c-db77-4d83-85f7-15340f9fa125.png",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": []
+    },
+    {
+      "id": "fe2f5d97-fa36-455d-8323-4a3791450b62",
+      "label": "Plats 3 · VILA → VILA",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/fe2f5d97-fa36-455d-8323-4a3791450b62.mp4",
+      "sha256": "4627c5dcfa8e27bc64583a3e92b31aa26bb61f5919e57a170f56792a109811b5",
+      "bytes": 15869142,
+      "sourceFile": "fe2f5d97-fa36-455d-8323-4a3791450b62.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": []
+    },
+    {
+      "id": "ad37cbf9-5266-4646-813f-316cd6e08220",
+      "label": "Plats 5 · VILA → VILA",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/ad37cbf9-5266-4646-813f-316cd6e08220.mp4",
+      "sha256": "f852769ae4e346f60879cf2c7c16e945b763ae6f28471bb2f36a0ae5cdabaf07",
+      "bytes": 15856617,
+      "sourceFile": "ad37cbf9-5266-4646-813f-316cd6e08220.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "pos5-iv",
+          "label": "Plats 5 · VILA → VILA",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "deal.player.centre",
+          "filename": "goran_pos5-iv.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": true
+        }
+      ]
+    },
+    {
+      "id": "fbbceb16-5e56-4856-9bd6-f4ae2f9f20c1",
+      "label": "Plats 6 · VILA → VILA",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/fbbceb16-5e56-4856-9bd6-f4ae2f9f20c1.mp4",
+      "sha256": "9868b3f0cac2ed6daaf7fe0ff2f7a1e6001a3715f85beb675c7dd4a71c6e3677",
+      "bytes": 15731344,
+      "sourceFile": "fbbceb16-5e56-4856-9bd6-f4ae2f9f20c1.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "pos6-iv",
+          "label": "Plats 6 · VILA → VILA",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "deal.player.right",
+          "filename": "goran_pos6-iv.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": true
+        }
+      ]
+    },
+    {
+      "id": "a20919b3-120b-40ae-926e-7ce73486172e",
+      "label": "Plats 7 · VILA → VILA",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/a20919b3-120b-40ae-926e-7ce73486172e.mp4",
+      "sha256": "351b2555f83855816a5389e94c10e54a76c62b7ea8c5ffbe185c6e819360371f",
+      "bytes": 15681339,
+      "sourceFile": "a20919b3-120b-40ae-926e-7ce73486172e.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "pos7-iv",
+          "label": "Plats 7 · VILA → VILA",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "deal.player.right",
+          "filename": "goran_pos7-iv.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": true
+        }
+      ]
+    },
+    {
+      "id": "e2c95829-d008-4f45-9917-92f126ea5e44",
+      "label": "Dealerns öppna kort · VILA → VILA",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/e2c95829-d008-4f45-9917-92f126ea5e44.mp4",
+      "sha256": "98ac754735865608cec76f43707027d1ec568ffe62e0ebbe0b9c5654d9cf58ad",
+      "bytes": 15485709,
+      "sourceFile": "e2c95829-d008-4f45-9917-92f126ea5e44.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "posdealer-iv",
+          "label": "Dealerns öppna kort · VILA → VILA",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "deal.dealer",
+          "filename": "goran_posdealer-iv.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": true
+        },
+        {
+          "id": "hole-i",
+          "label": "Dolt dealerkort · VILA → VILA",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "deal.dealer",
+          "filename": "goran_hole-i.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": true
+        }
+      ]
+    },
+    {
+      "id": "a9c2d516-9c40-49e0-9e55-523af71d83ae",
+      "label": "Vänd dealerns kort",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/a9c2d516-9c40-49e0-9e55-523af71d83ae.mp4",
+      "sha256": "9a744ab1e3f4b454fba1ae9d392e866d34ff22d0184262e4df74e0391b474154",
+      "bytes": 15498952,
+      "sourceFile": "a9c2d516-9c40-49e0-9e55-523af71d83ae.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "flip",
+          "label": "Vänd dealerns kort",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "reveal.dealer",
+          "filename": "goran_flip.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": true
+        }
+      ]
+    },
+    {
+      "id": "24f69524-cb3f-4698-b7df-9cdf0b6c3940",
+      "label": "Litet leende",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/24f69524-cb3f-4698-b7df-9cdf0b6c3940.mp4",
+      "sha256": "6b84ccf93c8dc232879ec32a30d92096341501f07eb1dc3cece2ac2e396a5dc9",
+      "bytes": 15404654,
+      "sourceFile": "24f69524-cb3f-4698-b7df-9cdf0b6c3940.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "idle-smile",
+          "label": "Litet leende",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "idle.ready",
+          "filename": "goran_idle-smile.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": false
+        }
+      ]
+    },
+    {
+      "id": "29a98d32-dbe1-4835-a178-6dd83678246d",
+      "label": "Plats 3 · VILA → VILA",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/29a98d32-dbe1-4835-a178-6dd83678246d.mp4",
+      "sha256": "daa8558f9eef6ed124db2300a9babe32071609e690429629a2092156dc533a72",
+      "bytes": 15489973,
+      "sourceFile": "29a98d32-dbe1-4835-a178-6dd83678246d.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "pos3-iv",
+          "label": "Plats 3 · VILA → VILA",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": "deal.player.centre",
+          "filename": "goran_pos3-iv.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": true
+        }
+      ]
+    },
+    {
+      "id": "9e6fcd2e-3dc9-4b93-aefc-dddf4262b78b",
+      "label": "Träkasino · 360° panorama",
+      "role": "environment",
+      "path": "extra/insperationsmall-alternativ/trakasino-360-panorama.png",
+      "sha256": "c78d8099a7d6c4c3adb9ab4d357dd37822c12366c9da6c4590d3a2ff59356a2b",
+      "bytes": 1907168,
+      "sourceFile": "9e6fcd2e-3dc9-4b93-aefc-dddf4262b78b.png",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": []
+    },
+    {
+      "id": "5ce772d0-0d47-4915-b5ef-d4ebace4582b",
+      "label": "Göran · avslappnad VILA · ny kandidat",
+      "role": "keystone-candidate",
+      "path": "extra/insperationsmall-alternativ/goran-vila-stangd-mun-kandidat.png",
+      "sha256": "2453f4a451974114df43ebc47a2b938eab32eede9e0463d10e837ba05b695f87",
+      "bytes": 1523866,
+      "sourceFile": "5ce772d0-0d47-4915-b5ef-d4ebace4582b.png",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": []
+    },
+    {
+      "id": "ca8d9d93-0e42-4ad8-9543-a6a800638b70",
+      "label": "Special · robotarmen",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/ca8d9d93-0e42-4ad8-9543-a6a800638b70.mp4",
+      "sha256": "b29ee5ed2df8724dc9759fe9ea8b78687b9872fcf06fbeb90d5e5abd8e6971cd",
+      "bytes": 37064091,
+      "sourceFile": "ca8d9d93-0e42-4ad8-9543-a6a800638b70.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "custom-d7221a7b-3627-464c-9730-cb0877d499cf",
+          "label": "Robotarmen · specialprov",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": null,
+          "filename": "dealer_custom-d7221a7b-3627-464c-9730-cb0877d499cf.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": false
+        }
+      ]
+    },
+    {
+      "id": "a10d95b7-4d38-4991-9e1e-25765c97720a",
+      "label": "Special · välkomnande high five",
+      "role": "clip",
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/a10d95b7-4d38-4991-9e1e-25765c97720a.mp4",
+      "sha256": "604ac6731ed919b285d42649989f9e2f25e5c83ad895230067d9418b157e5540",
+      "bytes": 27833087,
+      "sourceFile": "a10d95b7-4d38-4991-9e1e-25765c97720a.mp4",
+      "sourceModel": null,
+      "sourceTaskId": null,
+      "shots": [
+        {
+          "id": "custom-4f0bd1e5-af14-48a6-a7ec-786681478c81",
+          "label": "Välkomnande high five · specialprov",
+          "startPose": "VILA",
+          "endPose": "VILA",
+          "eventId": null,
+          "filename": "dealer_custom-4f0bd1e5-af14-48a6-a7ec-786681478c81.mp4",
+          "reviewed": false,
+          "reviewedSha256": null,
+          "hasSourceCalibration": false
+        }
+      ]
+    }
+  ]
+}

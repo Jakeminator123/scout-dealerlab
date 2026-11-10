@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "round": 14,
+  "updatedAt": "2026-11-09T04:23:35.477Z",
+  "title": "Två läsbara kort, verkligt klipprov och grafisk dealerpipeline",
+  "predecessorSnapshot": "public-review-20261109035611",
+  "sourceReview": {
+    "path": "gpt-underlag/3/extracted/Scoutgaming_granskning_2155/GRANSKNING.md",
+    "sha256": "24ce38e0297e7a0c66da90e2f260c2f86c012cf907a28faed7a9d8d53f445f57",
+    "packageFilesVerified": 42
+  },
+  "questions": [
+    "Fungerar kort 2:s sidoplacering och handens släpp utan glidning, dubbelkant eller hopp? Båda valörerna ska synas i bred och stående vy.",
+    "Är det utklippta VILA → sidoblick → VILA-provet användbart jämfört med hela 12-sekunderstagningen? Granska råa skarvar och ansiktsdetaljer.",
+    "Är REDO-navet och pipelinekartan tydliga: samma anslutningspose för alla boxar, separata kvarliggande kort och hashbundna masker/koordinater?"
+  ],
+  "featuredScene": "runs/20261109-pamela-card-contact-v4/render/pamela-two-deals-native-v4.mp4",
+  "comparisons": [
+    {
+      "id": "central-v3-v4",
+      "label": "V3 / V4 · samma giv, ny C2-placering och kortkontakt",
+      "a": "runs/20261109-pamela-card-side-proof/render/pamela-two-deals-native-v3-card-sides.mp4",
+      "b": "runs/20261109-pamela-card-contact-v4/render/pamela-two-deals-native-v4.mp4"
+    },
+    {
+      "id": "idle-old-long",
+      "label": "Tidigare andning / ny sammanhängande tagning",
+      "a": "runs/20261109-pamela-idle-composite/render/pamela-breath-native-v1.mp4",
+      "b": "runs/20261109-pamela-continuous-idle/render/pamela-continuous-native-v1.mp4"
+    }
+  ],
+  "primaryFilmPaths": [
+    "runs/20261109-pamela-continuous-idle/original/pamela-continuous-wan3.mp4"
+  ],
+  "films": [
+    {
+      "label": "Ny långtagning · fem önskade VILA-beteenden",
+      "path": "runs/20261109-pamela-continuous-idle/original/pamela-continuous-wan3.mp4",
+      "sha256": "213bf02130cf7e02fc9d68b9ddc6f34a08dff9c5cb22c537af82a0c56bffe3d8",
+      "bytes": 31874749,
+      "width": 1762,
+      "height": 1174,
+      "fps": 30,
+      "averageFps": 30,
+      "frameCount": 360,
+      "duration": 12,
+      "codec": "h264",
+      "model": "wan3",
+      "taskId": "7535ff6b-d4a7-4fc8-90fc-79e661c49b15",
+      "jobPath": "runs/20261109-pamela-continuous-idle/continuous.json",
+      "input": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+        "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+        "bytes": 1376790,
+        "width": 1536,
+        "height": 1024,
+        "transform": "none; identical complete original PNG supplied at first and last positions; no resize/crop/padding"
+      },
+      "lastInput": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+        "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+        "bytes": 1376790,
+        "width": 1536,
+        "height": 1024,
+        "transform": "none; identical complete original PNG supplied at first and last positions; no resize/crop/padding"
+      },
+      "motionSource": null,
+      "apiCreditEstimate": 240,
+      "invoiceVerified": false,
+      "endpointMode": "identical VILA first/last; intermediate returns requested in prompt, not forced keyframes",
+      "decision": "Alla 360 originalrutor granskade i översikt och native-ögonutsnitt. Cirka tio blinkförlopp samt en tydlig sidoblick åt bildens höger (217–233), åter framåt runt239–242. Huvud och handkontakt är stabila, men ansiktsdetaljerna matchar inte första/sista rutan exakt. Fem olika VILA-varianter är inte belagda. Två oacceptade klippförslag: [88,132) och [204,265); rörelse-/skarvgranskning återstår."
+    },
+    {
+      "label": "Nytt VILA-prov · Blick ned och tillbaka",
+      "path": "runs/20261109-pamela-idle-pilot/original/pamela-glance-wan3.mp4",
+      "sha256": "af76918b478c78859d85733651ec987777e184fbc62dfe6097d4306c2c438564",
+      "bytes": 7928613,
+      "width": 1762,
+      "height": 1174,
+      "fps": 30,
+      "frameCount": 90,
+      "duration": 3,
+      "codec": "h264",
+      "model": "wan3",
+      "taskId": "cd31a215-b13a-401a-8e33-f463c3901c0d",
+      "jobPath": "runs/20261109-pamela-idle-pilot/glance.json",
+      "input": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+        "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+        "bytes": 1376790,
+        "width": 1536,
+        "height": 1024,
+        "transform": "none; identical complete original PNG supplied at first and last positions; no resize/crop/padding"
+      },
+      "lastInput": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+        "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+        "bytes": 1376790,
+        "width": 1536,
+        "height": 1024,
+        "transform": "none; identical complete original PNG supplied at first and last positions; no resize/crop/padding"
+      },
+      "motionSource": null,
+      "apiCreditEstimate": 60,
+      "invoiceVerified": false,
+      "endpointMode": "identical VILA first and last; no temporal repair",
+      "decision": "retain-blink-and-downward-glance-candidate-pending-real-time-return-review"
+    },
+    {
+      "label": "Nytt VILA-prov · Lugn andning",
+      "path": "runs/20261109-pamela-idle-pilot/original/pamela-breath-wan3.mp4",
+      "sha256": "ea74eb1c8724246571600648bf3acfccbadea5a8caf74d8963ba0d56be368049",
+      "bytes": 15633800,
+      "width": 1762,
+      "height": 1174,
+      "fps": 30,
+      "frameCount": 180,
+      "duration": 6,
+      "codec": "h264",
+      "model": "wan3",
+      "taskId": "1b15ecb8-04a2-4dca-b6e5-b0606adc841b",
+      "jobPath": "runs/20261109-pamela-idle-pilot/breath.json",
+      "input": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+        "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+        "bytes": 1376790,
+        "width": 1536,
+        "height": 1024,
+        "transform": "none; identical complete original PNG supplied at first and last positions; no resize/crop/padding"
+      },
+      "lastInput": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+        "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+        "bytes": 1376790,
+        "width": 1536,
+        "height": 1024,
+        "transform": "none; identical complete original PNG supplied at first and last positions; no resize/crop/padding"
+      },
+      "motionSource": null,
+      "apiCreditEstimate": 120,
+      "invoiceVerified": false,
+      "endpointMode": "identical VILA first and last; no temporal repair",
+      "decision": "retain-breathing-candidate-pending-real-time-loop-review"
+    },
+    {
+      "path": "runs/20261109-pamela-sequence/original/pamela-from-shoe-wan3.mp4",
+      "sha256": "81a63227a56531103bd9d86b364442869b72eef0ddd3be65e718f3494ee2147b",
+      "bytes": 8455042,
+      "width": 1762,
+      "height": 1174,
+      "fps": 30,
+      "frameCount": 90,
+      "duration": 3,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "label": "Ny återgång · REDO → VILA · kandidat",
+      "model": "wan3",
+      "taskId": "d0f9d466-cd29-41ef-a2db-c9783bc78256",
+      "jobPath": "runs/20261109-pamela-sequence/from-shoe.json",
+      "input": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-redo-station.png",
+        "sha256": "a9dd4882d84da1cc6f0fb3258d0fbd6d81fddac5a7f78efdaa225d6f9538576d",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1365141
+      },
+      "lastInput": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+        "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1376790
+      },
+      "motionSource": null,
+      "apiCreditEstimate": 60,
+      "endpointMode": "REDO first, VILA last; no card extraction; raw joins not accepted"
+    },
+    {
+      "path": "runs/20261109-pamela-sequence/original/pamela-central-base-wan3.mp4",
+      "sha256": "2445bb2ef5122fe558134d582533d277603da72c4b98b6c782be01a5bf06235a",
+      "bytes": 16802367,
+      "width": 1762,
+      "height": 1174,
+      "fps": 30,
+      "frameCount": 180,
+      "duration": 6,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "label": "Nytt centralgiv · 4:base · kandidat",
+      "model": "wan3",
+      "taskId": "390ff634-df94-4666-b9bd-8951b2ac686a",
+      "jobPath": "runs/20261109-pamela-sequence/central-base.json",
+      "input": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-redo-station.png",
+        "sha256": "a9dd4882d84da1cc6f0fb3258d0fbd6d81fddac5a7f78efdaa225d6f9538576d",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1365141
+      },
+      "lastInput": {
+        "path": "runs/20261109-pamela-sequence/original/pamela-redo-after-central.png",
+        "sha256": "f62974a66959462093fb2ecd5fa0c2470eb3cfbeece1726030218ae167f8daba",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 1521480
+      },
+      "motionSource": null,
+      "apiCreditEstimate": 120,
+      "endpointMode": "REDO first, REDO plus one landed card last; raw joins not accepted"
+    },
+    {
+      "label": "Ny kandidat · VILA → REDO · egen arbetsyta",
+      "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-till-redo-wan3.mp4",
+      "sha256": "00efe62636916b79052b4cf9d5fa88ba1ad52c17d531f1dcc86875f94c91084c",
+      "bytes": 8164506,
+      "width": 1762,
+      "height": 1174,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "fps": 30,
+      "duration": 3,
+      "frameCount": 90,
+      "measured": true,
+      "model": "wan3",
+      "taskId": "d13b31d2-3cca-443a-a710-3827df8194c9",
+      "jobPath": "runs/20261109-pamela-reference-kit/wan3ready.json",
+      "input": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+        "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+        "width": 1536,
+        "height": 1024,
+        "resize": null,
+        "padding": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "lastInput": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-redo-station.png",
+        "sha256": "a9dd4882d84da1cc6f0fb3258d0fbd6d81fddac5a7f78efdaa225d6f9538576d"
+      },
+      "motionSource": null,
+      "apiCreditEstimate": 60,
+      "invoiceVerified": false,
+      "endpointMode": "VILA-first-REDO-last",
+      "decision": "Kandidat för övergång till sko. Ingen utdelning eller godkänd klippskarv ännu."
+    },
+    {
+      "label": "Historiskt försök · Wan3 fri giv · ej vald",
+      "path": "runs/20261108-pamela-v5-body/original/pamela-v5-pos4-iv-wan3.mp4",
+      "sha256": "85ed40ee85db31e13eb4aba631cc2dda8da53699fe57930eea4c9303da8bebf9",
+      "bytes": 15136861,
+      "width": 1762,
+      "height": 1174,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "fps": 30,
+      "duration": 6,
+      "frameCount": 180,
+      "measured": true,
+      "model": "wan3",
+      "taskId": "ac5822a7-47c6-4c55-b398-d1cb6f0e66d2",
+      "jobPath": "runs/20261108-pamela-v5-body/wan3give.json",
+      "input": {
+        "path": "runs/20261108-pamela-v5-body/original/pamela-v5-body.png",
+        "sha256": "2f11686b223925d8fc791735c32a7b4550af5f1ea4936df8ee03d982c7607795",
+        "width": 1536,
+        "height": 1024,
+        "resize": null,
+        "padding": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "lastInput": null,
+      "motionSource": null,
+      "apiCreditEstimate": 120,
+      "invoiceVerified": false,
+      "endpointMode": "same-first-and-last",
+      "decision": "Ej vald: modellen uppfinner ett tryckt kort och rörelsen saknar låst skokontakt."
+    },
+    {
+      "label": "Historiskt försök · Aleph2 v5 · ej vald",
+      "path": "runs/20261108-pamela-v5-body/original/pamela-v5-pos4-iv-aleph2.mp4",
+      "sha256": "66043abbf3d27b99168de1312066fd80c0073387823c53b4f315a383004108e8",
+      "bytes": 1024348,
+      "width": 1080,
+      "height": 1920,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "fps": 24,
+      "duration": 2.625,
+      "frameCount": 63,
+      "measured": true,
+      "model": "aleph2",
+      "taskId": "49a4d681-e05b-4e58-9ae4-6a7114488bb4",
+      "jobPath": "runs/20261108-pamela-v5-body/aleph2.json",
+      "input": {
+        "path": "runs/20261108-pamela-v5-body/input/pamela-v5-control-plane.png",
+        "sha256": "1a1664b5733c491985740101618120e9cd08a3a38749b15bf035f72bce2a6759",
+        "width": 1080,
+        "height": 1920,
+        "sourceSha256": "2f11686b223925d8fc791735c32a7b4550af5f1ea4936df8ee03d982c7607795",
+        "transform": {
+          "scale": 0.69921875,
+          "width": 1074,
+          "height": 716,
+          "x": 3,
+          "y": 126
+        },
+        "status": "provisional-pose-fit-not-calibration"
+      },
+      "lastInput": null,
+      "motionSource": {
+        "path": "media/blob/9c3589bb6b65d52c/5dcb18927d0b92fc481848920f6ea7680cd9eddfd0a398681b6a3f10c028b1ac.mp4",
+        "sha256": "5dcb18927d0b92fc481848920f6ea7680cd9eddfd0a398681b6a3f10c028b1ac",
+        "width": 1080,
+        "height": 1920,
+        "fps": 24,
+        "frames": 63,
+        "duration": 2.625
+      },
+      "apiCreditEstimate": 56,
+      "invoiceVerified": false,
+      "endpointMode": "motion-transfer; no exact endpoint guarantee",
+      "decision": "Ej vald: ansikte och kroppsform driver från v5. Rörelseöverföring från Astrid2, inte den nya referensbanken."
+    },
+    {
+      "label": "Wan3 · VILA med samma första/sista bild",
+      "path": "runs/20261108-pamela-model-comparison/original/pamela-v4-wan3-padded-idle.mp4",
+      "sha256": "3e8f1d6b280357d9ce5944cb3bccfe93970bba8b1615c56fea2f69e131ba5d60",
+      "bytes": 3327303,
+      "width": 1104,
+      "height": 832,
+      "fps": 30,
+      "frameCount": 150,
+      "duration": 5,
+      "jobPath": "runs/20261108-pamela-model-comparison/wan3.json",
+      "model": "wan3",
+      "taskId": "27ede105-b365-4d46-a90b-f4d5c8c03918",
+      "input": {
+        "path": "runs/20261108210457-pamela-v4-focused/input/pamela-v4-1104x832-padded.png",
+        "sha256": "cfbdff8b8c30b0a082613c3fb2f585c2771b3e57f6a115a75cc5b718d6c7cdf5",
+        "width": 1104,
+        "height": 832
+      },
+      "motionSource": null,
+      "endpointMode": "same-first-and-last",
+      "apiCreditEstimate": 50,
+      "invoiceVerified": false
+    },
+    {
+      "label": "Gen-4.5 · VILA från exaktformatbild",
+      "path": "runs/20261108-pamela-model-comparison/original/pamela-v4-gen45-padded-idle.mp4",
+      "sha256": "f777a3aef408e042b9c2e6cbf7cd96ec8e379406db09bacd10149959bab3c449",
+      "bytes": 642026,
+      "width": 1104,
+      "height": 832,
+      "fps": 24,
+      "frameCount": 121,
+      "duration": 5.041667,
+      "jobPath": "runs/20261108-pamela-model-comparison/gen45.json",
+      "model": "gen4.5",
+      "taskId": "e01e63eb-6aaf-4388-85a3-550b2007322c",
+      "input": {
+        "path": "runs/20261108210457-pamela-v4-focused/input/pamela-v4-1104x832-padded.png",
+        "sha256": "cfbdff8b8c30b0a082613c3fb2f585c2771b3e57f6a115a75cc5b718d6c7cdf5",
+        "width": 1104,
+        "height": 832
+      },
+      "motionSource": null,
+      "endpointMode": "first-only",
+      "apiCreditEstimate": 60,
+      "invoiceVerified": false
+    },
+    {
+      "label": "Aleph2 · giv utan synligt kort",
+      "path": "runs/20261108-pamela-deal-pilot/original/pamela-pos4-iv-aleph2-rigid-short.mp4",
+      "sha256": "2038742949ab3c5797b8af9a8877953e50059b6cf3051ab4e860e0c00a55aebf",
+      "bytes": 1352161,
+      "width": 1080,
+      "height": 1920,
+      "fps": 24,
+      "frameCount": 63,
+      "duration": 2.625,
+      "jobPath": "runs/20261108-pamela-deal-pilot/aleph2-rigid-short.json",
+      "model": "aleph2",
+      "taskId": "82e403e7-3637-4de3-937f-3fe1d934a055",
+      "input": {
+        "path": "runs/20261108-pamela-deal-pilot/input/pamela-v4-control-plane.png",
+        "sha256": "c20c46e17b2312d42be136bf5b12b693efc5f9fb8eecf817ea039fc6f3175235",
+        "width": 1080,
+        "height": 1920
+      },
+      "motionSource": {
+        "path": "media/blob/9c3589bb6b65d52c/5dcb18927d0b92fc481848920f6ea7680cd9eddfd0a398681b6a3f10c028b1ac.mp4",
+        "sha256": "5dcb18927d0b92fc481848920f6ea7680cd9eddfd0a398681b6a3f10c028b1ac",
+        "width": 1080,
+        "height": 1920,
+        "fps": 24,
+        "frames": 63,
+        "duration": 2.625
+      },
+      "endpointMode": "motion-reference or first-image only; see job",
+      "apiCreditEstimate": 56,
+      "invoiceVerified": false
+    },
+    {
+      "label": "Gen-4.5 · första formatprovet",
+      "path": "runs/20261108210457-pamela-v4-focused/original/pamela-v4-vila-gen45-5s.mp4",
+      "sha256": "2f97e12b523c10fd93873fc65bd871b8c3827d1d1b68c1d44819b2cccb9d32e7",
+      "bytes": 666637,
+      "width": 1104,
+      "height": 832,
+      "fps": 24,
+      "frameCount": 121,
+      "duration": 5.041667,
+      "jobPath": "runs/20261108210457-pamela-v4-focused/runway-pilot.json",
+      "model": "gen4.5",
+      "taskId": "7c8500a7-41ee-4965-96eb-2b0614693fd6",
+      "input": {
+        "path": "runs/20261108210457-pamela-v4-focused/original/pamela-vila-focused-v4.png",
+        "sha256": "4445634a5698da4121ad40bd7fcef76c8b8b8707c6fc24a87d095ad98348e5a7",
+        "width": 1536,
+        "height": 1024
+      },
+      "motionSource": null,
+      "endpointMode": "motion-reference or first-image only; see job",
+      "apiCreditEstimate": 60,
+      "invoiceVerified": false
+    },
+    {
+      "label": "Aleph2 · första giv, böjt kort",
+      "path": "runs/20261108-pamela-deal-pilot/original/pamela-pos4-iv-aleph2.mp4",
+      "sha256": "f9e90923c1e050ab09c5bac6376895830dea1ec4bf45707def767b95e7c73ba4",
+      "bytes": 1312925,
+      "width": 1080,
+      "height": 1920,
+      "fps": 24,
+      "frameCount": 63,
+      "duration": 2.625,
+      "jobPath": "runs/20261108-pamela-deal-pilot/aleph2.json",
+      "model": "aleph2",
+      "taskId": "d5701e97-88ba-4dbc-b16f-87dd82e5c245",
+      "input": {
+        "path": "runs/20261108-pamela-deal-pilot/input/pamela-v4-control-plane.png",
+        "sha256": "c20c46e17b2312d42be136bf5b12b693efc5f9fb8eecf817ea039fc6f3175235",
+        "width": 1080,
+        "height": 1920
+      },
+      "motionSource": {
+        "path": "media/blob/9c3589bb6b65d52c/5dcb18927d0b92fc481848920f6ea7680cd9eddfd0a398681b6a3f10c028b1ac.mp4",
+        "sha256": "5dcb18927d0b92fc481848920f6ea7680cd9eddfd0a398681b6a3f10c028b1ac",
+        "width": 1080,
+        "height": 1920,
+        "fps": 24,
+        "frames": 63,
+        "duration": 2.625
+      },
+      "endpointMode": "motion-reference or first-image only; see job",
+      "apiCreditEstimate": 56,
+      "invoiceVerified": false
+    }
+  ],
+  "diagnosis": "Ett längre original kan minska klippbyten men säkerställer inte identiska mellanankare. REDO är gemensamt nav; separata övergångar mellan alla boxpar behövs inte när samma gränskontrakt håller.",
+  "assessment": "V4 har uppmätt 67,6 % överlapp med C2 +46 px, båda hörnvalörerna synliga, kort 1 kvar och ändrad handretur efter släpp. V4 är en kandidat: 2D-approximerad kortböjning, grön kant vid källruta 76–78, färgbaserad synlig skomask, källans bålbegränsning och råa ansiktsskarvar återstår. Handretur 118–124 är en lokal ompassning, inte ett nytt inspelat giv. Alla 360 originalrutor granskade i översikt och native-ögonutsnitt. Cirka tio blinkförlopp samt en tydlig sidoblick åt bildens höger (217–233), åter framåt runt239–242. Huvud och handkontakt är stabila, men ansiktsdetaljerna matchar inte första/sista rutan exakt. Fem olika VILA-varianter är inte belagda. Två oacceptade klippförslag: [88,132) och [204,265); rörelse-/skarvgranskning återstår. Vid källruta 117 → 118 byter kortet från observerad böjd kontur till fast landningsplan. Två riktade prov avvisades: kvarstående hopp respektive ny dubbelkant. V4:s placering behålls; tryckets böjning och denna maskgräns är inte lösta.",
+  "next": "Granska V4:s fulla grepp/släpp och de utklippta VILA-gränserna. Lås därefter REDO-kontrakt och kalibrerade ytterplatser; ingen hel bank beställs nu. Nästa kortfix kräver förbättrad maskgräns vid släpp117→118.",
+  "costThisRound": {
+    "paidVideoJobs": 1,
+    "runwayApiReportedCredits": 240,
+    "openaiApiUsd": 0
+  },
+  "publicationNote": "En ny Wan3-källfilm, fullupplösta scen-/porträttderivat och tre direkta upprepningar. Ingen toning, fryst slutruta eller ny fps. Kandidater; ingen spelaktivering. Central V4 återanvänder befintliga givoriginal: ny C2-placering, större valörer och SG-kort i skon. Pipelinehubben samlar samtliga uttryckligen publicerade dokument.",
+  "featuredLabel": "Central V4 · två läsbara kort med 67,6 % överlapp",
+  "featuredEvidence": "/kortkontakt-v4",
+  "poseAnchors": [
+    {
+      "label": "VILA",
+      "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+      "meaning": "Händer i vilopose; blicken framåt."
+    },
+    {
+      "label": "REDO",
+      "path": "runs/20261109-pamela-reference-kit/original/pamela-redo-station.png",
+      "meaning": "Blick mot sko; vänster hand vid det vita kortets övre kant. Kortet kvar i skon."
+    }
+  ],
+  "identityBase": {
+    "dealerId": "pamela-pilot",
+    "base": "runs/20261108-pamela-v5-body/original/pamela-v5-body.png",
+    "baseSha256": "2f11686b223925d8fc791735c32a7b4550af5f1ea4936df8ee03d982c7607795",
+    "userFeedback": "Jakob beskrev denna nya bild som svinbra; det är inte acceptans av senare filmer eller kamerakalibrering."
+  },
+  "historicalEndpointFailure": {
+    "qa": "runs/20261108-pamela-contact-round2/qa/endpoint-review.json",
+    "image": "runs/20261108-pamela-contact-round2/qa/endpoint-first-last.png",
+    "finding": "Händernas hudcentrum ligger 23–24 px lägre vid slutet; fast skala men olika frysta ändposer. Underkänd för sömlös VILA-återgång."
+  },
+  "featuredPoster": "runs/20261109-pamela-card-contact-v4/qa/sequence-000.png",
+  "composite": {
+    "report": "runs/20261109-pamela-card-contact-v4/composition.json",
+    "reviewUrl": "/kortkontakt-v4",
+    "url": "/kortkontakt-v4",
+    "revision": 4,
+    "accepted": false,
+    "productionAccepted": false,
+    "sourceModels": [
+      "wan3"
+    ],
+    "apiCreditsThisRound": 0,
+    "previousRevisionUrl": "/kortkontakt",
+    "limitations": [
+      "Vid källruta 117 → 118 byter kortet från observerad böjd kontur till fast landningsplan. Två riktade prov avvisades: kvarstående hopp respektive ny dubbelkant. V4:s placering behålls; tryckets böjning och denna maskgräns är inte lösta.",
+      "V4 är en kandidat: 2D-approximerad kortböjning, grön kant vid källruta 76–78, färgbaserad synlig skomask, källans bålbegränsning och råa ansiktsskarvar återstår. Handretur 118–124 är en lokal ompassning, inte ett nytt inspelat giv."
+    ],
+    "sha256": "6b2f762db11f2b6357a8e2dca9c826b13178851d94a7301a2d6790930e6c9c9d",
+    "placement": {
+      "card1": [
+        [
+          820,
+          1026
+        ],
+        [
+          943,
+          1026
+        ],
+        [
+          963,
+          1093
+        ],
+        [
+          802,
+          1093
+        ]
+      ],
+      "card2": [
+        [
+          866,
+          1026
+        ],
+        [
+          989,
+          1026
+        ],
+        [
+          1009,
+          1093
+        ],
+        [
+          848,
+          1093
+        ]
+      ],
+      "offsetPixels": [
+        46,
+        0
+      ],
+      "overlapAreaPercent": 67.6056338028169,
+      "afterReleaseTranslation": false,
+      "overlapPercent": 67.6056338028169,
+      "rankVisibility": {
+        "card1": "A spade upper-left visible",
+        "card2": "K heart upper-left and lower-right visible",
+        "verified": "Native and 1080x1920 portrait stills at source179; temporal playback remains reviewable candidate"
+      }
+    }
+  },
+  "supplementalReview": {
+    "path": "gpt-underlag/7/GPT-granskning-scen-och-kort-original.txt",
+    "basis": "Older v1; current v2 and new requested card2 overlap checked separately."
+  },
+  "materialReview": {
+    "url": "/scenfinish",
+    "cardUrl": "/kortmaterial",
+    "sourceFilmsChanged": false,
+    "newPaidJobs": 0
+  },
+  "studio": {
+    "url": "/studio",
+    "noNewPaidJobs": false,
+    "sourceFilmsChanged": true,
+    "newContinuousIdle": true,
+    "newComposite": true
+  },
+  "latestSourceReview": {
+    "path": "gpt-underlag/11/GPT-skarvar-langtagning-original.txt",
+    "sha256": "2ddb7375650ec5fecaa5905b0131e8f20e9f9113ab56b499dcad07ed4a205a5d"
+  },
+  "materialStudy": {
+    "url": "/kortmaterial",
+    "report": "runs/20261109-card-sg-material/review-summary.json",
+    "integratedWithPamela": false,
+    "cornerRefinement": "48x96 grid; material and motion unchanged; measured corner approximation error reduced 51.4 percent"
+  },
+  "sequenceStrategy": {
+    "url": "/scenfinish#sekvenser",
+    "report": "runs/20261109-sequence-strategy/proof-plan.json",
+    "newPaidJobs": 0
+  },
+  "chipMaterial": {
+    "url": "/markermaterial",
+    "report": "runs/20261109-chip-material-study/review-summary.json",
+    "integratedWithGame": false
+  },
+  "browserReview": {
+    "snapshot": "public-review-20261109035013",
+    "decodedFrames": 520,
+    "droppedFrames": 0,
+    "phaseAt94Verified": true,
+    "markerControlsVerified": true,
+    "productionAccepted": false
+  },
+  "continuousIdle": {
+    "url": "/langtagning",
+    "report": "runs/20261109-pamela-continuous-idle/composition.json",
+    "qa": "runs/20261109-pamela-continuous-idle/qa/inspection.json",
+    "productionAccepted": false
+  },
+  "pipeline": {
+    "url": "/pipeline",
+    "report": "references/pipeline-map.json",
+    "automatedEndToEnd": false
+  },
+  "budget": {
+    "runwayCredits": 4000,
+    "openaiUsd": 20,
+    "maxVideoJobs": 16,
+    "maxCreditsPerJob": 250,
+    "knownReservedRunwayCredits": 1202,
+    "videoJobs": 13,
+    "conservativeJobCount": 14,
+    "submissionAttempts": 14,
+    "apiMaximumCredits": 1118,
+    "failedRequestReserve": 84,
+    "remainingCredits": 2798,
+    "noMainMerge": true,
+    "invoiceVerified": false
+  }
+}

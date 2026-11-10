@@ -1,0 +1,9 @@
+{
+  "project": "snyggare-dealer",
+  "dealerId": "pamela",
+  "plan": {
+    "path": "runs/20261109-pamela-material-bank/plans/take-03.json",
+    "sha256": "c8ecd2d1cb8295aca960e38f1111dca19bd9be512ac00bd6b55b2d4580f32c6a"
+  },
+  "purpose": "Local candidate progress; full bank selection requires separate review."
+}

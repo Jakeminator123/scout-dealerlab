@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "project": "snyggare-dealer",
+  "dealerId": "pamela-pilot",
+  "snapshot": "review-hub-20261110021224034",
+  "storeId": "store_76fWcWipNdC0aLAD",
+  "access": "public",
+  "originalsRetained": true,
+  "files": [
+    {
+      "source": "runs/20261110-pamela-idle-chain/take-01/render/vila-fourteen-vila.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/9b9f9d84e75ff537e4dadae6ded9755fce38b4aa973f20e76ce32336d02d8dcf.mp4",
+      "sha256": "9b9f9d84e75ff537e4dadae6ded9755fce38b4aa973f20e76ce32336d02d8dcf",
+      "bytes": 63475860,
+      "kind": "mp4",
+      "objectPath": "objects/9b9f9d84e75ff537e4dadae6ded9755fce38b4aa973f20e76ce32336d02d8dcf.mp4",
+      "verifiedAt": "2026-11-10T02:27:07.835Z"
+    },
+    {
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/vila-fourteen-materials-trim.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/ffd9bf98298f9bedd9b85ae0fd29115426d8fc01f412d545308e3dc2cc3ff530.mp4",
+      "sha256": "ffd9bf98298f9bedd9b85ae0fd29115426d8fc01f412d545308e3dc2cc3ff530",
+      "bytes": 62767435,
+      "kind": "mp4",
+      "objectPath": "objects/ffd9bf98298f9bedd9b85ae0fd29115426d8fc01f412d545308e3dc2cc3ff530.mp4",
+      "verifiedAt": "2026-11-10T02:27:14.578Z"
+    },
+    {
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/vila-fourteen-materials-vila.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/fbfd97b475920daa2a95c0340f264e55a9b5e3142be77ac54cf0fd3a07f25d43.mp4",
+      "sha256": "fbfd97b475920daa2a95c0340f264e55a9b5e3142be77ac54cf0fd3a07f25d43",
+      "bytes": 74322783,
+      "kind": "mp4",
+      "objectPath": "objects/fbfd97b475920daa2a95c0340f264e55a9b5e3142be77ac54cf0fd3a07f25d43.mp4",
+      "verifiedAt": "2026-11-10T02:27:23.588Z"
+    },
+    {
+      "id": "C1-P1",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C1-P1.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/ef2eeb592db2a9e8bedeed398af0acc3027610e12e179f38a91e172420f75faf.mp4",
+      "sha256": "ef2eeb592db2a9e8bedeed398af0acc3027610e12e179f38a91e172420f75faf",
+      "bytes": 5493482,
+      "kind": "mp4",
+      "objectPath": "objects/ef2eeb592db2a9e8bedeed398af0acc3027610e12e179f38a91e172420f75faf.mp4",
+      "verifiedAt": "2026-11-10T02:27:26.683Z"
+    },
+    {
+      "id": "C1-P2",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C1-P2.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/b0aeaf40081cfcf74ea0206e50bada658da63049f047900648821b99ca500c5f.mp4",
+      "sha256": "b0aeaf40081cfcf74ea0206e50bada658da63049f047900648821b99ca500c5f",
+      "bytes": 5098551,
+      "kind": "mp4",
+      "objectPath": "objects/b0aeaf40081cfcf74ea0206e50bada658da63049f047900648821b99ca500c5f.mp4",
+      "verifiedAt": "2026-11-10T02:27:29.854Z"
+    },
+    {
+      "id": "C1-P3",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C1-P3.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/70ffcf647267609c53026b2798d9125ba4cfc55aa11b5796fdc03c8de95996d1.mp4",
+      "sha256": "70ffcf647267609c53026b2798d9125ba4cfc55aa11b5796fdc03c8de95996d1",
+      "bytes": 4758005,
+      "kind": "mp4",
+      "objectPath": "objects/70ffcf647267609c53026b2798d9125ba4cfc55aa11b5796fdc03c8de95996d1.mp4",
+      "verifiedAt": "2026-11-10T02:27:33.313Z"
+    },
+    {
+      "id": "C1-P4",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C1-P4.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/acd04f6cf5e5562233a81ff669245d5a2a895935851cc60d9d2789c674499a3b.mp4",
+      "sha256": "acd04f6cf5e5562233a81ff669245d5a2a895935851cc60d9d2789c674499a3b",
+      "bytes": 5043510,
+      "kind": "mp4",
+      "objectPath": "objects/acd04f6cf5e5562233a81ff669245d5a2a895935851cc60d9d2789c674499a3b.mp4",
+      "verifiedAt": "2026-11-10T02:27:36.301Z"
+    },
+    {
+      "id": "C1-P5",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C1-P5.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/9aca4ca347ee25c4913b185573dcb17c24a8d493c643ce3f5d5cd738444d4b9b.mp4",
+      "sha256": "9aca4ca347ee25c4913b185573dcb17c24a8d493c643ce3f5d5cd738444d4b9b",
+      "bytes": 4675895,
+      "kind": "mp4",
+      "objectPath": "objects/9aca4ca347ee25c4913b185573dcb17c24a8d493c643ce3f5d5cd738444d4b9b.mp4",
+      "verifiedAt": "2026-11-10T02:27:39.661Z"
+    },
+    {
+      "id": "C1-P6",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C1-P6.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/649278fa57d66f46de0413ae071971ddae92b3f0c5d0952314ef54d247f51dde.mp4",
+      "sha256": "649278fa57d66f46de0413ae071971ddae92b3f0c5d0952314ef54d247f51dde",
+      "bytes": 4492498,
+      "kind": "mp4",
+      "objectPath": "objects/649278fa57d66f46de0413ae071971ddae92b3f0c5d0952314ef54d247f51dde.mp4",
+      "verifiedAt": "2026-11-10T02:27:42.867Z"
+    },
+    {
+      "id": "C1-P7",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C1-P7.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/60bb759a2d2d6c71063c9cbe49ca57ab47f04f92b1dbd7856827296cc5fadfe8.mp4",
+      "sha256": "60bb759a2d2d6c71063c9cbe49ca57ab47f04f92b1dbd7856827296cc5fadfe8",
+      "bytes": 4821644,
+      "kind": "mp4",
+      "objectPath": "objects/60bb759a2d2d6c71063c9cbe49ca57ab47f04f92b1dbd7856827296cc5fadfe8.mp4",
+      "verifiedAt": "2026-11-10T02:27:45.330Z"
+    },
+    {
+      "id": "C2-P1",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C2-P1.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/eeca95ebaffd8bdc8d63a2171d46f9a388b845375538f3947a1190380d862e80.mp4",
+      "sha256": "eeca95ebaffd8bdc8d63a2171d46f9a388b845375538f3947a1190380d862e80",
+      "bytes": 5537064,
+      "kind": "mp4",
+      "objectPath": "objects/eeca95ebaffd8bdc8d63a2171d46f9a388b845375538f3947a1190380d862e80.mp4",
+      "verifiedAt": "2026-11-10T02:27:49.103Z"
+    },
+    {
+      "id": "C2-P2",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C2-P2.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/f39c8696b69ade03d65b58290ab61faa2c44be98461b9e96e2918bd50ee2a1ea.mp4",
+      "sha256": "f39c8696b69ade03d65b58290ab61faa2c44be98461b9e96e2918bd50ee2a1ea",
+      "bytes": 5056682,
+      "kind": "mp4",
+      "objectPath": "objects/f39c8696b69ade03d65b58290ab61faa2c44be98461b9e96e2918bd50ee2a1ea.mp4",
+      "verifiedAt": "2026-11-10T02:27:51.633Z"
+    },
+    {
+      "id": "C2-P3",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C2-P3.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/7755041cdd8f836b9a6a30b7ae184fef1c6af85568025d1a2fcda896f957cf3a.mp4",
+      "sha256": "7755041cdd8f836b9a6a30b7ae184fef1c6af85568025d1a2fcda896f957cf3a",
+      "bytes": 4821455,
+      "kind": "mp4",
+      "objectPath": "objects/7755041cdd8f836b9a6a30b7ae184fef1c6af85568025d1a2fcda896f957cf3a.mp4",
+      "verifiedAt": "2026-11-10T02:27:54.515Z"
+    },
+    {
+      "id": "C2-P4",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C2-P4.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/8abd1223edec6ba838dc6aa0df37cba4aa32a46a8b2809a78d1a5daed93bf225.mp4",
+      "sha256": "8abd1223edec6ba838dc6aa0df37cba4aa32a46a8b2809a78d1a5daed93bf225",
+      "bytes": 4797460,
+      "kind": "mp4",
+      "objectPath": "objects/8abd1223edec6ba838dc6aa0df37cba4aa32a46a8b2809a78d1a5daed93bf225.mp4",
+      "verifiedAt": "2026-11-10T02:27:56.731Z"
+    },
+    {
+      "id": "C2-P5",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C2-P5.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/850ffb972281deebbbc8ff63ad281270481aa4ba0010db63a017913f508530cc.mp4",
+      "sha256": "850ffb972281deebbbc8ff63ad281270481aa4ba0010db63a017913f508530cc",
+      "bytes": 4691864,
+      "kind": "mp4",
+      "objectPath": "objects/850ffb972281deebbbc8ff63ad281270481aa4ba0010db63a017913f508530cc.mp4",
+      "verifiedAt": "2026-11-10T02:28:00.231Z"
+    },
+    {
+      "id": "C2-P6",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C2-P6.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/9116172f93bb4d40fd78a0a65cc03357a66a8e25052855f6ea8cf3967e963cee.mp4",
+      "sha256": "9116172f93bb4d40fd78a0a65cc03357a66a8e25052855f6ea8cf3967e963cee",
+      "bytes": 4456908,
+      "kind": "mp4",
+      "objectPath": "objects/9116172f93bb4d40fd78a0a65cc03357a66a8e25052855f6ea8cf3967e963cee.mp4",
+      "verifiedAt": "2026-11-10T02:28:03.714Z"
+    },
+    {
+      "id": "C2-P7",
+      "source": "runs/20261110-pamela-mask-bank/take-01/render/C2-P7.mp4",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/3226332afaef703d315138df2fd7ac2e0ddd89d29342a27486b1ab0199210d63.mp4",
+      "sha256": "3226332afaef703d315138df2fd7ac2e0ddd89d29342a27486b1ab0199210d63",
+      "bytes": 4931907,
+      "kind": "mp4",
+      "objectPath": "objects/3226332afaef703d315138df2fd7ac2e0ddd89d29342a27486b1ab0199210d63.mp4",
+      "verifiedAt": "2026-11-10T02:28:07.035Z"
+    },
+    {
+      "source": "runs/20261110-pamela-mask-bank/take-01/download-bundle/pamela-14-scenklipp.zip",
+      "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/objects/65df554b58a732e9d4351eb19e5c9b0d4c1ea9f31bea54d3ff834c49289fba62.zip",
+      "sha256": "65df554b58a732e9d4351eb19e5c9b0d4c1ea9f31bea54d3ff834c49289fba62",
+      "bytes": 68714084,
+      "kind": "zip",
+      "objectPath": "objects/65df554b58a732e9d4351eb19e5c9b0d4c1ea9f31bea54d3ff834c49289fba62.zip",
+      "verifiedAt": "2026-11-10T02:28:15.714Z"
+    }
+  ],
+  "completedAt": "2026-11-10T02:28:15.716Z",
+  "bytes": 337957087,
+  "complete": true,
+  "publicIndex": {
+    "url": "https://76fwcwipndc0alad.public.blob.vercel-storage.com/indexes/f91f0e34d6c70d6609c4b7e5e52169cae78db34596fd62f7793bf47f1568ca39.json",
+    "sha256": "f91f0e34d6c70d6609c4b7e5e52169cae78db34596fd62f7793bf47f1568ca39"
+  }
+}

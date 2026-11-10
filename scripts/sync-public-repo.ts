@@ -1,0 +1,75 @@
+/** Filtered public Git branch. Never changes the checkout, normal index, or local history. */
+import {execFileSync} from 'node:child_process';
+import {readFileSync,existsSync,lstatSync,mkdirSync,writeFileSync,unlinkSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {parseEnv} from 'node:util';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {pathToFileURL} from 'node:url';
+
+const root=path.resolve(import.meta.dirname,'..');
+const hash=(b:Buffer|string)=>createHash('sha256').update(b).digest('hex');
+export function allowedPublicPath(file:string):boolean {
+  if(!file||file.includes('\\')||/[\x00-\x1f]/.test(file)||file.split('/').some(p=>p==='..'))return false;
+  if(/(?:^|\/)(?:node_modules|private|\.git|\.env[^/]*|\.runtime|\.history)(?:\/|$)/i.test(file))return file==='.env.example';
+  if(/(?:ATKOMST|INTEGRATION|RUNPOD|provider-accounts|agent-roles|maud-blob-inventory|maud-pamela-reuse-audit|wallet|credential|account)/i.test(file))return false;
+  if(/^docs\/(?:roller\/|STATUS\.md|ARBETSSATT\.md)|^tools\/maud-|^references\/storage-archives\.json$/.test(file))return false;
+  return /^(?:app|src|tools|scripts|test|templates|references|builds|docs)\/[\w./ -]+\.(?:ts|tsx|js|json|md|txt|ps1|css|html)$/.test(file)||/^(?:package(?:-lock)?\.json|tsconfig\.json|next\.config\.ts|next-env\.d\.ts|\.gitignore|\.env\.example|(?:START|STOPP|STATUS|UPPDATERA-GRANSKNING|EXPORTERA-GPT)\.cmd)$/.test(file);
+}
+export function assertPublicText(text:string,secrets:string[],file:string){
+  if(secrets.some(s=>text.includes(s)))throw Error('Private value: '+file);
+  if(/\bsk-(?:proj-|live-)?[A-Za-z0-9_-]{28,}|\bgh[pousr]_[A-Za-z0-9]{25,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/.test(text))throw Error('Credential pattern: '+file);
+  for(const m of text.matchAll(/https?:\/\/[^\s"'<>`]+/g)){
+    let u:URL;try{u=new URL(m[0]);}catch{continue;}
+    const fixture=file==='test/server.test.ts'&&u.username==='user'&&u.password==='pass'&&u.hostname==='2jzgrf9f6fnlhvtz.private.blob.vercel-storage.com'&&!u.search;
+    if((u.username||u.password)&&!fixture||[...u.searchParams].some(([k,v])=>/^(?:_jwt|token|signature|X-Amz-Signature)$/i.test(k)&&v.length>15))throw Error('Authenticated URL: '+file);
+  }
+}
+export function main(args=process.argv.slice(2)){
+  process.chdir(root);
+  const read=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
+  const config=read('references/public-git.json');
+  assert.equal(config.repository,'Jakeminator123/scout-dealerlab');assert.equal(config.localBranch,'public/main');assert.equal(config.remoteBranch,'main');
+  const pkg=read('package.json');assert.equal(process.version,'v'+pkg.volta.node);
+  const git=(a:string[],options:any={})=>execFileSync('git',a,{cwd:root,encoding:'utf8',...options}).trim();
+  const secrets=Object.entries(parseEnv(existsSync('.env.local')?readFileSync('.env.local','utf8'):''))
+    .flatMap(([k,v])=>/KEY|TOKEN|SECRET|PASSWORD|CREDENTIAL|^(?:PW|UN)$/i.test(k)&&v.length>=8?[v]:[]);
+  const candidates=[...new Set(git(['ls-files','--cached','--others','--exclude-standard','-z']).split('\0'))].filter(Boolean).sort();
+  const files=new Map<string,Buffer>(),omitted:string[]=[],failures:string[]=[];
+  for(const file of candidates){
+    if(!existsSync(file))continue;
+    if(!allowedPublicPath(file)||config.excludedFiles.includes(file)){omitted.push(file);continue;}
+    for(let parent=path.resolve(file);parent!==path.parse(parent).root;parent=path.dirname(parent))assert.ok(!lstatSync(parent).isSymbolicLink(),'Linked source parent: '+file);
+    const s=lstatSync(file);assert.ok(s.isFile()&&!s.isSymbolicLink(),'Linked/non-file source: '+file);
+    assert.ok(s.size<10*1024*1024,'Unexpected large public text: '+file);
+    const b=readFileSync(file);try{assertPublicText(b.toString('utf8'),secrets,file);}catch(e){failures.push((e as Error).message);continue;}
+    files.set(file,b);
+  }
+  if(failures.length)throw Error('Public export blocked:\n'+failures.join('\n'));
+  const release=read('references/public-review.json');
+  files.set('README.md',Buffer.from(`# Scout Dealerlab\n\nPublic source snapshots for Snyggare dealer, a local dealer/video presentation studio related to Scoutgaming.\n\n- [Live review](${release.reviewUrl})\n- [Reviewer instructions](${release.publicUrl}/granskning/starttext.txt)\n- [Material index](${release.publicUrl}/granskning/manifest.json)\n- [Provisional structure](docs/drift/PROVISORISK-STRUKTUR.md)\n\nThis repository contains code, selected documentation and material metadata. Original media, archives, credentials and private operations documents remain outside Git. Public media URLs are in references/work-material.json. A fresh clone does not include the local video archive.\n\nNode ${pkg.volta.node} (Volta), npm ci, then START.cmd on Windows when the required local media/configuration is available.\n\nLocal work remains on jakob/test. The public branch is generated by scripts/sync-public-repo.ts; it does not include private local Git history. UPPDATERA-GRANSKNING.cmd synchronizes public source before promotion and the release receipt afterwards. No Scoutgaming game-engine or production integration is enabled.\n`));
+  const inventory=[...files].map(([p,b])=>({path:p,sha256:hash(b),bytes:b.length}));
+  const pendingIndex=args.indexOf('--pending-snapshot');
+  const pendingReviewSnapshot=pendingIndex>=0?args[pendingIndex+1]:undefined;
+  if(pendingIndex>=0)assert.match(pendingReviewSnapshot??'',/^[A-Za-z0-9_-]+$/);
+  const snapshot={schemaVersion:1,repository:config.repository,sourceCommit:git(['rev-parse','HEAD']),sourceBranch:git(['branch','--show-current']),sourceIsWorkingTreeSnapshot:true,reviewSnapshot:release.snapshot,pendingReviewSnapshot,reviewUrl:release.reviewUrl,deploymentId:release.deploymentId,sourceTreeSha256:hash(JSON.stringify(inventory)),files:inventory,excludedFiles:omitted};
+  files.set('public-source.json',Buffer.from(JSON.stringify(snapshot,null,2)+'\n'));
+  mkdirSync('.runtime',{recursive:true});writeFileSync('.runtime/public-git-audit.json',JSON.stringify({files:files.size,bytes:[...files.values()].reduce((n,b)=>n+b.length,0),omitted,sourceTreeSha256:snapshot.sourceTreeSha256},null,2));
+  if(args.includes('--check')){console.log(JSON.stringify({files:files.size,sourceTreeSha256:snapshot.sourceTreeSha256,omitted:omitted.length}));return;}
+  const remote=git(['remote','get-url',config.remote]);assert.ok([config.url,config.url+'.git','git@github.com:'+config.repository+'.git'].includes(remote),'Unexpected Git destination');
+  const index=path.join(root,'.runtime','public-git-index-'+process.pid),env={...process.env,GIT_INDEX_FILE:index};
+  try{
+    git(['read-tree','--empty'],{env});
+    const records=[...files].map(([p,b])=>'100644 '+git(['hash-object','-w','--stdin'],{input:b})+'\t'+p+'\n').join('');
+    git(['update-index','--index-info'],{env,input:records});const tree=git(['write-tree'],{env});
+    let parent='';try{parent=git(['rev-parse','--verify','refs/heads/'+config.localBranch],{stdio:['pipe','pipe','ignore']});}catch{}
+    const changed=!parent||git(['rev-parse',parent+'^{tree}'])!==tree;
+    let commit=parent;
+    if(changed){commit=git(['commit-tree',tree,...(parent?['-p',parent]:[])],{input:'Public Dealerlab snapshot: '+release.snapshot+'\n'});git(['update-ref','refs/heads/'+config.localBranch,commit,parent||'0'.repeat(40)]);}
+    git(['push',config.remote,'refs/heads/'+config.localBranch+':refs/heads/'+config.remoteBranch],{stdio:['pipe','pipe','pipe']});
+    const remoteHead=git(['ls-remote',config.remote,'refs/heads/'+config.remoteBranch]).split(/\s+/)[0];assert.equal(remoteHead,commit,'Remote head mismatch');
+    writeFileSync('.runtime/public-git-last-sync.json',JSON.stringify({repository:config.repository,commit,reviewSnapshot:release.snapshot,sourceTreeSha256:snapshot.sourceTreeSha256,syncedAt:new Date().toISOString()},null,2));
+    console.log(JSON.stringify({repository:config.url,commit,files:files.size,changed}));
+  }finally{if(existsSync(index))unlinkSync(index);}
+}
+if(process.argv[1]&&pathToFileURL(path.resolve(process.argv[1])).href===import.meta.url)main();

@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-09T04:23:35.477Z",
+  "previousSnapshot": "public-review-20261109035611",
+  "changes": [
+    "En ny Wan3-källfilm, fullupplösta scen-/porträttderivat och tre direkta upprepningar. Ingen toning, fryst slutruta eller ny fps. Kandidater; ingen spelaktivering. Central V4 återanvänder befintliga givoriginal: ny C2-placering, större valörer och SG-kort i skon. Pipelinehubben samlar samtliga uttryckligen publicerade dokument.",
+    "Ett längre original kan minska klippbyten men säkerställer inte identiska mellanankare. REDO är gemensamt nav; separata övergångar mellan alla boxpar behövs inte när samma gränskontrakt håller.",
+    "V4 har uppmätt 67,6 % överlapp med C2 +46 px, båda hörnvalörerna synliga, kort 1 kvar och ändrad handretur efter släpp. V4 är en kandidat: 2D-approximerad kortböjning, grön kant vid källruta 76–78, färgbaserad synlig skomask, källans bålbegränsning och råa ansiktsskarvar återstår. Handretur 118–124 är en lokal ompassning, inte ett nytt inspelat giv. Alla 360 originalrutor granskade i översikt och native-ögonutsnitt. Cirka tio blinkförlopp samt en tydlig sidoblick åt bildens höger (217–233), åter framåt runt239–242. Huvud och handkontakt är stabila, men ansiktsdetaljerna matchar inte första/sista rutan exakt. Fem olika VILA-varianter är inte belagda. Två oacceptade klippförslag: [88,132) och [204,265); rörelse-/skarvgranskning återstår."
+  ],
+  "unchanged": [
+    "Labb på lokal jakob/test utan remote. Kevin och Scout är endast läsreferenser.",
+    "Ingen push, merge eller ändring av scoutgaming.tech.",
+    "Lokalservern är stoppad; inga pågående genereringsjobb."
+  ],
+  "git": {
+    "branch": "jakob/test",
+    "remote": null,
+    "headBeforeThisRound": "976aeda2e34e5a45332e3e16332f397bbf7acc51",
+    "publicationRevisionLocation": "/latest.json → sourceRevision",
+    "note": "SourceRevision i latest.json visar commit och ocommittade filnamn vid exporten; den publika sidan har ingen direktkontakt med den lokala checkouten."
+  },
+  "runway": {
+    "developerApi": {
+      "checkedAt": "2026-11-08T22:44:45.5160521Z",
+      "endpoint": "https://api.dev.runwayml.com",
+      "credentialSource": ".env.local / RUNWAY_API_KEY",
+      "organization": {
+        "httpStatus": 200,
+        "returnedFields": [
+          "tier",
+          "creditBalance",
+          "usage"
+        ],
+        "id": null,
+        "name": null,
+        "organizationId": null,
+        "projectId": null,
+        "creditBalance": 2038
+      },
+      "pilotTask": {
+        "httpStatus": 200,
+        "id": "27ede105-b365-4d46-a90b-f4d5c8c03918",
+        "status": "SUCCEEDED",
+        "createdAt": "2026-11-08T20:36:31.05Z",
+        "returnedFields": [
+          "id",
+          "createdAt",
+          "status",
+          "output",
+          "cost"
+        ]
+      }
+    },
+    "organizationIdentity": "Okänd: GET /v1/organization returnerar tier, creditBalance och usage, inte organisations-/projektnamn eller ID.",
+    "connector": {
+      "checkedAt": "2026-11-08T22:48:17.476Z",
+      "workspaceId": 67037521,
+      "workspaceName": "Jakob",
+      "organization": null,
+      "isPersonal": true,
+      "credits": 17,
+      "pilotTask": {
+        "id": "27ede105-b365-4d46-a90b-f4d5c8c03918",
+        "httpStatus": 404,
+        "message": "Could not find Task",
+        "verifiedHere": true
+      }
+    },
+    "interpretation": "Samma Pamela-task ger SUCCEEDED via pilotens Developer API och 404 via Runway-pluginen. Två separata anslutningar och kreditkonton är belagda; det är inte ett produktionsfel. Nya filmer körs via Developer API inom pilotbudgeten.",
+    "documentation": "https://help.runwayml.com/hc/en-us/articles/50683115755155-Runway-API-FAQs",
+    "budget": {
+      "cap": 4000,
+      "successfulJobs": 12,
+      "apiCostCeilings": 878,
+      "failedRequestReserve": 84,
+      "accountedWithReserve": 962,
+      "remainingPilotAllowance": 3038,
+      "invoiceVerified": false
+    },
+    "newPaidJobs": 2,
+    "balanceNote": "Kontosaldona nedan är daterade historiska läsningar. Aktuell pilotram följer budgetjournalen, inte dessa saldon."
+  },
+  "lineage": {
+    "conclusion": "Ja, delvis: Livs helkroppsbild gav pose och utsnitt till alternativa Görans keystone. Görans uppladdade bild gav identitet. Därefter använde de 19 registrerade Göran-filmerna Görans egen keystone som bildreferens.",
+    "scope": "Verifierat för denna alternativa bank. Inte ett påstående om alla historiska Göran-versioner eller Scout Main-Göran. Ingen kvinnlig kontrollvideo är angiven som direkt referens till dessa 19 jobb.",
+    "sourceProject": {
+      "id": "b4289e0c-90d8-4667-8817-8a68cd40cc71",
+      "name": "Naturbord · Liv",
+      "revision": 281,
+      "manifestSha256": "90ef209e7a2a31054cc668b8042ec343ddb88b4270b7a60f9dcba464ce0a6aa7"
+    },
+    "keystoneJob": {
+      "id": "afa9c32c-7bc5-4c15-bcf0-67688112a9cf",
+      "provider": "openai",
+      "model": "okänd i jobbmetadata",
+      "createdAt": "2026-11-07T17:59:11.086Z",
+      "prompt": "Photorealistic seated adult dealer, full body including bent knees and shoes, wide 16:9 frame, room for outstretched arms. Robust man i 65 års ålder Match @identity if supplied; match @pose body framing and scale. Soft even frontal light. Uniform vivid green background and floor. No table, stool, card shoe, cards, text or guides. Both hands palm-down, separated at waist height, fingers toward camera, fingertips on y52.3%. Head top near y7%, shoe soles near y95%. Hands should extend naturally forward over an invisible table edge.",
+      "referenceHashes": [
+        "f90aface11f3ac8acc0ca27445f330b563c04169bd7948036369ca6f043a8936",
+        "9676aa1a21c8bee666309ca271613cf85c8c50cea48e8fd826d38b69724b5090"
+      ]
+    },
+    "liv": {
+      "id": "f9f7fbe2-ac53-4526-8ce5-f4b277103283",
+      "sha256": "9676aa1a21c8bee666309ca271613cf85c8c50cea48e8fd826d38b69724b5090",
+      "role": "pose/framing reference"
+    },
+    "goranIdentity": {
+      "id": "432854af-6389-4217-902a-ab2f9738e44c",
+      "sha256": "f90aface11f3ac8acc0ca27445f330b563c04169bd7948036369ca6f043a8936",
+      "role": "identity reference"
+    },
+    "goranKeystone": {
+      "id": "24b457e0-c6a7-4f6b-80a7-7e0c31d4a29a",
+      "sha256": "54224fb918c5cb839554381e468ddbf4fdae64008c537150335ad21660db14a9"
+    },
+    "chain": [
+      {
+        "projectId": "b4289e0c-90d8-4667-8817-8a68cd40cc71",
+        "assetId": "24b457e0-c6a7-4f6b-80a7-7e0c31d4a29a"
+      },
+      {
+        "projectId": "aa898e87-e7b9-45ae-9fd3-e39fa47f4a66",
+        "assetId": "ca3a7392-ebed-41c5-94a4-5d1d49b9d097"
+      },
+      {
+        "projectId": "e19d226c-c586-467e-b126-6a9f90e1675e",
+        "assetId": "8fe99408-26c2-4dae-a1e7-bc5324061258"
+      }
+    ],
+    "bank": {
+      "projectId": "e19d226c-c586-467e-b126-6a9f90e1675e",
+      "revision": 103,
+      "videos": 19,
+      "sameGoranReferenceHash": "54224fb918c5cb839554381e468ddbf4fdae64008c537150335ad21660db14a9",
+      "sourceShotsReviewed": 0,
+      "sourceShotCount": 18
+    },
+    "copies": [
+      {
+        "path": "media/alternative-provenance/liv-vila-reference.png",
+        "label": "Liv · VILA · bred helkropp",
+        "sha256": "9676aa1a21c8bee666309ca271613cf85c8c50cea48e8fd826d38b69724b5090",
+        "sourceAssetId": "f9f7fbe2-ac53-4526-8ce5-f4b277103283"
+      },
+      {
+        "path": "media/alternative-provenance/goran-fullbody-keystone.png",
+        "label": "Grundpose",
+        "sha256": "54224fb918c5cb839554381e468ddbf4fdae64008c537150335ad21660db14a9",
+        "sourceAssetId": "24b457e0-c6a7-4f6b-80a7-7e0c31d4a29a"
+      }
+    ],
+    "pamela": "Aktuell VILA→REDO bygger på nya Pamela v5-ankare utan Astrid-rörelsevideo. Historiska Aleph2-försök använde Astrid2; Liv/Göran är separata referenser."
+  },
+  "next": "Granska V4:s fulla grepp/släpp och de utklippta VILA-gränserna. Lås därefter REDO-kontrakt och kalibrerade ytterplatser; ingen hel bank beställs nu. Nästa kortfix kräver förbättrad maskgräns vid släpp117→118.",
+  "productionDirection": "Egen referensuppsättning för nya dealers i Scout /studio/snabb. Kevin är ett separat projekt som bara används för jämförelse. Göran, salongen och panoramat ingår inte i detta paket.",
+  "historicalQuality": {
+    "kind": "Subjektiv orienterande bedömning, inte mätning eller produktionsacceptans",
+    "basis": "Nyckelbilder, kontaktark, utvalda kritiska original- och kompositrutor samt tidigare ändpunktsmätningar. Ingen full visuell acceptans av hela klippbanker.",
+    "items": [
+      {
+        "label": "Pamela v4 · stillbild",
+        "score": 8,
+        "scope": "Bildkvalitet som arbetskandidat",
+        "decision": "Behåll som utseendereferens. Bra ansikte/händer; nedre bålen saknas."
+      },
+      {
+        "label": "Wan3 · Pamela VILA",
+        "score": 7,
+        "scope": "Aktuell tagning och dess ändpunkter",
+        "decision": "Föredragen vilokandidat. 30 fps; loop i slutscen återstår."
+      },
+      {
+        "label": "Gen-4.5 · Pamela VILA",
+        "score": 6,
+        "scope": "Exaktformatprovet",
+        "decision": "Jämförelseprov. Större ändpunktsskillnad; annat stöd för slutbild."
+      },
+      {
+        "label": "Aleph2 · Pamela GIV",
+        "score": 4,
+        "scope": "Dealerlagret i nuvarande givprov",
+        "decision": "Teknisk kandidat. Ansikte och kroppsform driver från v4; hand-, sko- och kortkontakt återstår."
+      },
+      {
+        "label": "Pamela · sammansatt scen",
+        "score": 5,
+        "scope": "Dämpat +33 px-prov",
+        "decision": "Granskningsprov. Mittglipan täcks; kortperspektiv, mask, kropp/bord och ljus är inte accepterade."
+      },
+      {
+        "label": "Liv / alternativa Göran · stillbilder",
+        "score": 7,
+        "scope": "Visade helkropps-keystones, inte hela filmerna",
+        "decision": "Referenser. Mer kropp för olika bord, men färre ansiktspixlar och ännu inte godkänd rörelsebank."
+      }
+    ]
+  },
+  "currentReferenceKit": {
+    "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-till-redo-wan3.mp4",
+    "mainSlot": "transition.shoe/to-shoe",
+    "sha256": "00efe62636916b79052b4cf9d5fa88ba1ad52c17d531f1dcc86875f94c91084c",
+    "bytes": 8164506,
+    "width": 1762,
+    "height": 1174,
+    "fps": 30,
+    "frameCount": 90,
+    "duration": 3,
+    "from": "VILA",
+    "to": "REDO",
+    "taskId": "d13b31d2-3cca-443a-a710-3827df8194c9",
+    "model": "wan3",
+    "apiCreditEstimate": 60,
+    "accepted": false
+  },
+  "oldEndpointFailure": {
+    "qa": "runs/20261108-pamela-contact-round2/qa/endpoint-review.json",
+    "image": "runs/20261108-pamela-contact-round2/qa/endpoint-first-last.png",
+    "finding": "Händernas hudcentrum ligger 23–24 px lägre vid slutet; fast skala men olika frysta ändposer. Underkänd för sömlös VILA-återgång."
+  },
+  "sequenceReview": {
+    "schema": "dealerlab-sequence-review/1",
+    "updatedAt": "2026-11-09T00:14:39.411Z",
+    "bankId": "pamela-workspace-v1",
+    "scope": "New Pamela source media, no Main import",
+    "entries": [
+      {
+        "name": "central-base",
+        "mainSlot": "deal.player.centre/box3",
+        "variant": "base",
+        "poseBefore": "REDO",
+        "poseAfter": "REDO",
+        "film": {
+          "path": "runs/20261109-pamela-sequence/original/pamela-central-base-wan3.mp4",
+          "sha256": "2445bb2ef5122fe558134d582533d277603da72c4b98b6c782be01a5bf06235a",
+          "bytes": 16802367,
+          "width": 1762,
+          "height": 1174,
+          "fps": 30,
+          "frameCount": 180,
+          "duration": 6,
+          "codec": "h264",
+          "pixelFormat": "yuv420p"
+        },
+        "model": "wan3",
+        "taskId": "390ff634-df94-4666-b9bd-8951b2ac686a",
+        "jobPath": "runs/20261109-pamela-sequence/central-base.json",
+        "qaPath": "runs/20261109-pamela-sequence/qa/central-base/inspection.json",
+        "input": {
+          "path": "runs/20261109-pamela-reference-kit/original/pamela-redo-station.png",
+          "sha256": "a9dd4882d84da1cc6f0fb3258d0fbd6d81fddac5a7f78efdaa225d6f9538576d",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 1365141
+        },
+        "lastInput": {
+          "path": "runs/20261109-pamela-sequence/original/pamela-redo-after-central.png",
+          "sha256": "f62974a66959462093fb2ecd5fa0c2470eb3cfbeece1726030218ae167f8daba",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 1521480
+        },
+        "cardStateBefore": {
+          "tableCardCount": 0,
+          "description": "One card seated at shoe outlet, no landed tabletop card."
+        },
+        "cardStateAfter": {
+          "tableCardCount": 1,
+          "description": "One landed central card remains; the next card is seated at the shoe outlet. Same hand pose does not mean identical whole scene."
+        },
+        "apiCreditEstimate": 120,
+        "productionApproval": "pending",
+        "integrationStatus": "unbound",
+        "findings": [
+          "Alla 180 rutor finns i kontaktarket. Originalrutor 44,58,84,100,122,145,179 inspekterade: kort lyfts från skon, byter hand, når central förgrund och blir kvar när händerna återgår mot REDO.",
+          "I ruta 84 har kortets synliga kant böjd/mjuk form. Styv plan kortgeometri är inte godkänd; överföring och fingersläpp behöver granskas sammanhängande.",
+          "Händer och armbågar ligger inom bilden i översikten och de inspekterade originalrutorna. Plats 1/7 är ännu inte provade.",
+          "Slutrutans handpose liknar REDO men exakta råskarvar och hastighet är inte accepterade. Samma pose får inte nollställa det redan utdelade kortet."
+        ]
+      },
+      {
+        "name": "from-shoe",
+        "mainSlot": "transition.shoe/from-shoe",
+        "variant": null,
+        "poseBefore": "REDO",
+        "poseAfter": "VILA",
+        "film": {
+          "path": "runs/20261109-pamela-sequence/original/pamela-from-shoe-wan3.mp4",
+          "sha256": "81a63227a56531103bd9d86b364442869b72eef0ddd3be65e718f3494ee2147b",
+          "bytes": 8455042,
+          "width": 1762,
+          "height": 1174,
+          "fps": 30,
+          "frameCount": 90,
+          "duration": 3,
+          "codec": "h264",
+          "pixelFormat": "yuv420p"
+        },
+        "model": "wan3",
+        "taskId": "d0f9d466-cd29-41ef-a2db-c9783bc78256",
+        "jobPath": "runs/20261109-pamela-sequence/from-shoe.json",
+        "qaPath": "runs/20261109-pamela-sequence/qa/from-shoe/inspection.json",
+        "input": {
+          "path": "runs/20261109-pamela-reference-kit/original/pamela-redo-station.png",
+          "sha256": "a9dd4882d84da1cc6f0fb3258d0fbd6d81fddac5a7f78efdaa225d6f9538576d",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 1365141
+        },
+        "lastInput": {
+          "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+          "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 1376790
+        },
+        "cardStateBefore": {
+          "tableCardCount": 0,
+          "description": "Single white card remains seated in the fixed black shoe; no card on the table."
+        },
+        "cardStateAfter": {
+          "tableCardCount": 0,
+          "description": "Single white card remains seated in the fixed black shoe; no card on the table."
+        },
+        "apiCreditEstimate": 60,
+        "productionApproval": "pending",
+        "integrationStatus": "unbound",
+        "findings": [
+          "Alla 90 rutor finns i kontaktarket. Originalrutor 32,39,51,89 inspekterade: handen lämnar skon och återgår till VILA; skons kort ligger kvar.",
+          "Händer och armbågar ligger inom bilden i översikten och de inspekterade originalrutorna. Detta bevisar inte hela givräckvidden.",
+          "Rå slutpose, identitet och rörelse genom skarven är inte godkända. Inga frysta ändar eller toningar har lagts till."
+        ]
+      }
+    ],
+    "productionAccepted": false,
+    "sequenceAssembly": {
+      "status": "not-composited-or-accepted",
+      "reason": "Central raw film retains one landed card, but the standalone return source has an empty tabletop. The final compositor must preserve that game card as its own layer with Pamela-specific track/mask; simply concatenating these originals would make it disappear."
+    },
+    "next": "Measure central card corners/contact/release and hand mask on these exact bytes; evaluate raw REDO joins before any further bank generation."
+  },
+  "dealerMap": "/nodkarta",
+  "composite": {
+    "report": "runs/20261109-pamela-card-contact-v4/composition.json",
+    "reviewUrl": "/kortkontakt-v4",
+    "url": "/kortkontakt-v4",
+    "revision": 4,
+    "accepted": false,
+    "productionAccepted": false,
+    "sourceModels": [
+      "wan3"
+    ],
+    "apiCreditsThisRound": 0,
+    "previousRevisionUrl": "/kortkontakt",
+    "limitations": [
+      "Vid källruta 117 → 118 byter kortet från observerad böjd kontur till fast landningsplan. Två riktade prov avvisades: kvarstående hopp respektive ny dubbelkant. V4:s placering behålls; tryckets böjning och denna maskgräns är inte lösta.",
+      "V4 är en kandidat: 2D-approximerad kortböjning, grön kant vid källruta 76–78, färgbaserad synlig skomask, källans bålbegränsning och råa ansiktsskarvar återstår. Handretur 118–124 är en lokal ompassning, inte ett nytt inspelat giv."
+    ],
+    "sha256": "6b2f762db11f2b6357a8e2dca9c826b13178851d94a7301a2d6790930e6c9c9d",
+    "placement": {
+      "card1": [
+        [
+          820,
+          1026
+        ],
+        [
+          943,
+          1026
+        ],
+        [
+          963,
+          1093
+        ],
+        [
+          802,
+          1093
+        ]
+      ],
+      "card2": [
+        [
+          866,
+          1026
+        ],
+        [
+          989,
+          1026
+        ],
+        [
+          1009,
+          1093
+        ],
+        [
+          848,
+          1093
+        ]
+      ],
+      "offsetPixels": [
+        46,
+        0
+      ],
+      "overlapAreaPercent": 67.6056338028169,
+      "afterReleaseTranslation": false,
+      "overlapPercent": 67.6056338028169,
+      "rankVisibility": {
+        "card1": "A spade upper-left visible",
+        "card2": "K heart upper-left and lower-right visible",
+        "verified": "Native and 1080x1920 portrait stills at source179; temporal playback remains reviewable candidate"
+      }
+    }
+  },
+  "ui": {
+    "implementation": "React component shared with Next route; public static bundle using installed Next webpack/SWC",
+    "newDependencies": 0,
+    "threeFiberAdded": false,
+    "shadcnCopied": false
+  },
+  "nextContactPlan": "/underlag/pamela-kortkontakt-v4-qa.json",
+  "idle": {
+    "report": "runs/20261109-pamela-idle-composite/composition.json",
+    "reviewUrl": "/vila",
+    "productionAccepted": false,
+    "activated": false,
+    "credits": 180,
+    "frames": 270,
+    "sequenceFrames": 630
+  },
+  "contactExperiment": {
+    "report": "runs/20261109-pamela-c2-retarget/retarget-manifest.json",
+    "status": "rejected-incomplete",
+    "next": "Foreground-aware safety check, then complete return QA; no regeneration yet"
+  },
+  "finish": {
+    "url": "/scenfinish",
+    "report": "runs/20261109-pamela-finish-study/profile.json",
+    "appliedToFilms": false
+  },
+  "idleSeams": {
+    "report": "runs/20261109-pamela-idle-seams/inspection.json",
+    "accepted": false,
+    "issue": "Source facial-detail reset, not keyed opaque face pixels or a measured global translation."
+  },
+  "cardMaterial": {
+    "url": "/kortmaterial",
+    "report": "runs/20261109-card-sg-material/review-summary.json",
+    "integratedWithPamela": false
+  },
+  "vercelAccess": {
+    "checkedAt": "2026-11-09T02:55:04.686Z",
+    "team": "scoutgaming",
+    "teamRead": true,
+    "projectRead": false,
+    "projectResponse": "404 from MCP at last check; exact project and publication verified through CLI",
+    "toolbar": "Read endpoint responds, no threads returned; no automatic screen or chat connection",
+    "dashboard": "https://vercel.com/scoutgaming/scout-dealerlab",
+    "teamId": "team_Scxorb9qtZHjNae1YEQnFCaT",
+    "projectId": "prj_mQwHzspK3GrrJA04eFOorFxth0d5"
+  },
+  "sourceQuality": {
+    "checkedAt": "2026-11-09T02:58:24.263Z",
+    "currentAnchorHashesMatched": 4,
+    "currentRawVideoHashesMatched": 5,
+    "previousExportOriginalsByteIdentical": 18,
+    "previousExportSnapshot": "public-review-20261109023124",
+    "sourcePlane": [
+      1536,
+      1024
+    ],
+    "videoPlane": [
+      1762,
+      1174
+    ],
+    "fps": 30,
+    "room": "Complete within the generated 1536x1024 image; no panorama, 3D room, extra sides or measured depth.",
+    "maxSafeZoomOut": null
+  },
+  "workbench": {
+    "url": "/studio",
+    "package": "React19 via existing Next16 bundler; no dependency install",
+    "reference": "local-studio/blackjack-studio read-only",
+    "camera": "bounded shared 2D view transform",
+    "inspectionOnly": true
+  },
+  "idleCutProof": {
+    "metadata": "runs/20261109-pamela-idle-cut-proof/metadata.json",
+    "clipIds": [
+      "a-original-cut",
+      "b-trimmed-entry-candidate"
+    ],
+    "productionAccepted": false,
+    "decodedFrameMatches": "120/120 source-selected frames"
+  },
+  "sequenceStrategy": {
+    "url": "/scenfinish#sekvenser",
+    "report": "runs/20261109-sequence-strategy/proof-plan.json",
+    "status": "proposal-only-not-submitted"
+  },
+  "chipMaterial": {
+    "url": "/markermaterial",
+    "report": "runs/20261109-chip-material-study/review-summary.json",
+    "integratedWithGame": false
+  },
+  "budget": {
+    "runwayCredits": 4000,
+    "openaiUsd": 20,
+    "maxVideoJobs": 16,
+    "maxCreditsPerJob": 250,
+    "knownReservedRunwayCredits": 1202,
+    "videoJobs": 13,
+    "conservativeJobCount": 14,
+    "submissionAttempts": 14,
+    "apiMaximumCredits": 1118,
+    "failedRequestReserve": 84,
+    "remainingCredits": 2798,
+    "noMainMerge": true,
+    "invoiceVerified": false
+  },
+  "continuousIdle": {
+    "url": "/langtagning",
+    "report": "runs/20261109-pamela-continuous-idle/composition.json",
+    "qa": "runs/20261109-pamela-continuous-idle/qa/inspection.json",
+    "productionAccepted": false
+  },
+  "pipeline": {
+    "url": "/pipeline",
+    "report": "references/pipeline-map.json",
+    "automatedEndToEnd": false
+  }
+}

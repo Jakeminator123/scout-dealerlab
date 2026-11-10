@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "status": "local-review-pass-with-limitations",
+  "evidence": {
+    "path": "runs/20261110-pamela-mask-bank/take-01/evidence.json",
+    "sha256": "ed63d72517802affc241445070c3242c5440d0ab2122d6f55a36b22f372967dc"
+  },
+  "productionAccepted": false,
+  "bundle": {
+    "path": "runs/20261110-pamela-mask-bank/take-01/download-bundle/pamela-14-scenklipp.zip",
+    "sha256": "65df554b58a732e9d4351eb19e5c9b0d4c1ea9f31bea54d3ff834c49289fba62",
+    "bytes": 68714084
+  },
+  "bundleReceipt": {
+    "path": "runs/20261110-pamela-mask-bank/take-01/download-bundle/receipt.json",
+    "sha256": "a4e78d23567d083d89dfae346bf4b15b9300e4b62224b6a84b1a1ea2a79f77f9"
+  },
+  "nativeReview": {
+    "path": "runs/20261110-pamela-mask-bank/take-01/native-review/evidence.json",
+    "sha256": "dbb6e70f9fb17cf2a405539117b05a70421a9df7ca4fd766afac9ad8fd703026"
+  },
+  "patchNative": {
+    "path": "runs/20261110-pamela-bank-mask-integration/take-03/qa/native-review.json",
+    "sha256": "808114e7aea59ac6a990bd9ec207a1703de12226fbc5f776b57324f8fb9a5c17"
+  },
+  "patchBrowser": {
+    "path": "runs/20261110-pamela-bank-mask-integration/take-03/browser-review/evidence.json",
+    "sha256": "2ed24b7772341bdd4947ba86f1e037b318a5ba0d4101a49c8b3383772ce53506"
+  },
+  "predecessor": {
+    "schemaVersion": 1,
+    "status": "local-review-pass-with-limitations",
+    "evidence": {
+      "path": "runs/20261110-pamela-two-sided-bank/take-02/evidence.json",
+      "sha256": "fd9cd8078f35d52fbe1932cb484c0ebd60db60cf5e4a0ef1716237598867fd82"
+    },
+    "productionAccepted": false,
+    "bundle": {
+      "path": "runs/20261110-pamela-two-sided-bank/take-02/download-bundle/pamela-14-scenklipp.zip",
+      "sha256": "c58252b50c52458a61d07a0e422df99335ba654b73d6598e006c38155e94ec36",
+      "bytes": 68713988
+    },
+    "browserReview": {
+      "path": "runs/20261110-pamela-two-sided-bank/take-02/browser-review/evidence.json",
+      "sha256": "f2cd1ef62d563a2150f9c5bdf6a7dfec29bf2178983e2e7e53b1deb444c3640b"
+    }
+  },
+  "rollback": {
+    "path": ".runtime/checkpoints/20261110-mask-bank-selection/pamela-two-sided-bank.json",
+    "sha256": "2982938d8b232b70342b38a7b0632e3e36ec75d8ea305d724b0a293eb61f4318"
+  },
+  "browserReview": {
+    "path": "runs/20261110-pamela-mask-bank/take-01/browser-review/evidence.json",
+    "sha256": "19516c46f12635e0eb7a791303f339e48ed12db5c7c693ce2d0ece100eed53b6"
+  }
+}

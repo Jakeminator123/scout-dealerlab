@@ -1,0 +1,49 @@
+{
+  "createdAt": "2026-11-09T04:22:39.276Z",
+  "kind": "user-feedback-reference",
+  "originalScreenshotBytesPreserved": true,
+  "request": "Fix C2 separation, printing perspective, and retain reusable mask/geometry/light/transition documentation. REDO is a common hub.",
+  "images": [
+    {
+      "path": "references/feedback/card-contact-20261109/shoe-card.png",
+      "sha256": "b5801a93f3473825b890afa6932a6e9add1dd51c0d65f961eda946b79a122dca",
+      "note": "User points to white shoe card beneath printed moving card.",
+      "sourceFilmSha256": null,
+      "sourceFrame": null,
+      "identityLimit": "User-supplied cropped screenshot; exact film time not independently identified."
+    },
+    {
+      "path": "references/feedback/card-contact-20261109/card-back.png",
+      "sha256": "bff7f7bc72d6f76c8a22496c7aef0d4f10cce989a81027d6c5da1a1fc3b50018",
+      "note": "SG back during transfer.",
+      "sourceFilmSha256": null,
+      "sourceFrame": null,
+      "identityLimit": "User-supplied cropped screenshot; exact film time not independently identified."
+    },
+    {
+      "path": "references/feedback/card-contact-20261109/card-face.png",
+      "sha256": "aa270bc99559505aca985547ca3b64110b40a09c0f0522d46745c7447074a699",
+      "note": "User asks for perspective and bending of face printing.",
+      "sourceFilmSha256": null,
+      "sourceFrame": null,
+      "identityLimit": "User-supplied cropped screenshot; exact film time not independently identified."
+    }
+  ],
+  "publicExportCopies": [
+    {
+      "original": "references/feedback/card-contact-20261109/shoe-card.png",
+      "path": "media/feedback/card-contact-20261109/shoe-card.png",
+      "sha256": "b5801a93f3473825b890afa6932a6e9add1dd51c0d65f961eda946b79a122dca"
+    },
+    {
+      "original": "references/feedback/card-contact-20261109/card-back.png",
+      "path": "media/feedback/card-contact-20261109/card-back.png",
+      "sha256": "bff7f7bc72d6f76c8a22496c7aef0d4f10cce989a81027d6c5da1a1fc3b50018"
+    },
+    {
+      "original": "references/feedback/card-contact-20261109/card-face.png",
+      "path": "media/feedback/card-contact-20261109/card-face.png",
+      "sha256": "aa270bc99559505aca985547ca3b64110b40a09c0f0522d46745c7447074a699"
+    }
+  ]
+}

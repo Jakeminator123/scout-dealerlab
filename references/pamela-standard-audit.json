@@ -1,0 +1,242 @@
+{
+  "schema": "dealerlab-pamela-standard-audit/v1",
+  "verifiedAtUtc": "2026-11-09T00:04:40.4301934Z",
+  "status": "CATALOG_MATCHES_WITH_INTEGRATION_AND_PRESENTATION_CORRECTIONS",
+  "purpose": "Avgränsad jämförelse av två förslag mot faktisk lokal Scout Main. Audit och krav på en lokal projektion, inte ett nytt produktregister, färdig kalibrering eller Main-import.",
+  "scope": {
+    "onlyWrittenFile": "references/pamela-standard-audit.json",
+    "referenceRepository": "C:/Users/jakem/dev/scoutgaming",
+    "remote": "git@github.com:Jakeminator123/scoutgaming.git",
+    "head": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544",
+    "main": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544",
+    "originMainLocalRef": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544",
+    "relevantReferencePathsClean": true,
+    "freshness": "Main refs, relevant code and both supplied documents re-read for this task; earlier agent summaries are not the authority.",
+    "networkOrGeneration": false,
+    "mainOrKevinWrites": false,
+    "liveDeploymentVerified": false,
+    "existingLocalContract": "references/main-pilot-contract.json"
+  },
+  "documents": [
+    {
+      "id": "standard",
+      "path": "C:/Users/jakem/Downloads/Scoutgaming-Pamela-standard-v0.1.md",
+      "sha256": "64fe9b604094851a59248705f036c6fa73155a0c83b76a1993ec485a3fdda481",
+      "bytes": 72928,
+      "catalogLines": "68-109",
+      "jsonLines": "412-1607",
+      "jsonBlockCount": 1,
+      "jsonParses": true,
+      "jsonSchemaName": "scout-dealer-reference-draft/1",
+      "declaredStatus": "proposal-not-runtime-config"
+    },
+    {
+      "id": "nodeCoordinates",
+      "path": "C:/Users/jakem/Downloads/Scoutgaming_dealerbank_nodtrad_koordinater_2026-11-09.md",
+      "sha256": "31b18f2c25fa5a3c690dee9832d5b26099b74529161fd44a04136ed09476ba80",
+      "bytes": 101247,
+      "catalogLines": "170-252",
+      "jsonBlockCount": 3,
+      "jsonParses": true,
+      "jsonBlocks": [
+        {"index": 0, "schema": "scout-dealer-bank-proposal/1", "implementedInMain": false},
+        {"index": 1, "schema": "scout-card-track-proposal/1", "measurementStatus": "unknown"},
+        {"index": 2, "content": "15 historical table-contour points; not a node graph or new Pamela measurements"}
+      ]
+    }
+  ],
+  "catalog": {
+    "mainAuthority": "packages/presentation/contracts/policies/studio-contract.json; apps/studio/lib/clipmap/slots.mjs:91-98; packages/presentation/contracts/roulette-media.mjs:4-8",
+    "blackjack": {"mainCount": 32, "standardJsonCount": 32, "uniqueStandardCount": 32, "missingIds": [], "extraIds": [], "matchPercentMeasured": 100},
+    "roulette": {"mainIntakeVocabularyCount": 4, "standardJsonCount": 4, "missingIds": [], "extraIds": [], "referenceImageCount": 1},
+    "crossDocument": {"commonIds": 36, "standardMarkdownMatchesItsJson": true, "nodeDocumentOnly": [], "standardOnly": [], "allMatchMainIds": true},
+    "blackjackIds": [
+      "idle.ready/",
+      "transition.shoe/to-shoe",
+      "transition.shoe/from-shoe",
+      "deal.player.left/box0",
+      "deal.player.left/box1",
+      "deal.player.centre/box2",
+      "deal.player.centre/box3",
+      "deal.player.centre/box4",
+      "deal.player.right/box5",
+      "deal.player.right/box6",
+      "deal.dealer/dealer-up",
+      "deal.dealer/dealer-hole",
+      "reveal.dealer/dealer-hole",
+      "speak.goodluck/goodluck",
+      "speak.insurance/insurance",
+      "speak.double/double",
+      "speak.other/placebets",
+      "speak.other/dealerblackjack",
+      "speak.other/blackjack",
+      "speak.other/dealerbust",
+      "speak.other/win",
+      "speak.other/push",
+      "speak.other/lose",
+      "speak.other/greeting",
+      "speak.other/peek",
+      "speak.other/bust",
+      "speak.other/sidebet",
+      "speak.other/chatter1",
+      "speak.other/chatter2",
+      "speak.other/farewell",
+      "transition.scene/enter",
+      "transition.scene/exit"
+    ],
+    "rouletteIds": ["roulette.reference/VILA", "roulette.idle/breathing", "roulette.idle/glasses-clean", "roulette.wheel-start/wheel-start"],
+    "notExtraPlaybackSlots": {
+      "anchorImages": ["pose/vila", "pose/redo"],
+      "contextEvents": ["turn.player", "settle.blackjack", "settle.dealerBust", "settle.win", "settle.push", "settle.other"],
+      "roulettePlannedUiRows": ["roulette.plan.betting", "roulette.plan.outcome", "roulette.plan.result"],
+      "note": "Roulette clip-map also displays three planned UI rows; they are not additional entries in its four-item media-intake vocabulary."
+    }
+  },
+  "poses": {
+    "matchesBothDocumentsAndMain": true,
+    "ordinaryDeal": {"base": ["REDO", "REDO"], "i": ["VILA", "REDO"], "v": ["REDO", "VILA"], "iv": ["VILA", "VILA"]},
+    "ordinaryDealScope": "Seven player facks plus dealer-up; every variant includes a full card deal, not merely a pose transition.",
+    "dealerHole": {"base": ["REDO", "VILA"], "i": ["VILA", "VILA"]},
+    "reveal": ["VILA", "VILA"],
+    "toShoe": ["VILA", "REDO"],
+    "fromShoe": ["REDO", "VILA"],
+    "idleAndSpeech": ["VILA", "VILA"],
+    "sceneTransitions": null,
+    "idleSubposes": ["rest", "clasped"],
+    "subposeBoundary": "clasped is an idle-sequence subpose requiring return and calm betting phase; neither REDO nor a new blackjack slot.",
+    "aliasBoundary": "u/v and iu/iv may agree at pose level while source files, take keys, duration and tracking differ.",
+    "holeParserBoundary": "Generic clipVariantForPoses can call VILA/VILA iv; slot-specific slotVariant(deal.dealer/dealer-hole, poses) correctly yields i. Preserve source filename, exact slot variant and poses separately.",
+    "evidence": ["packages/presentation/contracts/clip-naming.mjs:6-16,79-89,130", "apps/studio/lib/clipmap/slots.mjs:47-78,113-118,162-169", "packages/presentation/runtime/idle-rotation.mjs:3-30"]
+  },
+  "correctionsAndDifferences": [
+    {
+      "id": "roulette-intake-only-label",
+      "priority": "clarify-before-projecting-status",
+      "standardLocation": "catalog.slots[game=roulette].catalogStatus; prose lines 70,106-109",
+      "nodeDocumentLocation": "lines 243-252",
+      "finding": "The standard JSON labels all four entries intake-only. Current rouletteClipSlots marks roulette.idle and roulette.wheel-start intakeOnly=false and exposes explicit draft bindings. The node document correctly describes wheel-start's existing VILA/VILA contract.",
+      "correction": "Separate catalog existence, intake defaults, configured binding and runtime publication. Reference/VILA remains a local reference image. Unverified pose defaults do not negate the stricter VILA/VILA idle/start binding contracts; file registration alone activates nothing.",
+      "evidence": "apps/admin/components/admin/lib/roulette/roulette-clip-map.mjs:6-19,32-44; packages/presentation/contracts/roulette-media.mjs:17-19"
+    },
+    {
+      "id": "different-coordinate-spaces-not-one-conflicting-size",
+      "priority": "required-for-local-projection",
+      "standardLocation": "lines 178-244; geometry.space",
+      "nodeDocumentLocation": "lines 476-517; spaces.bank_px",
+      "finding": "Standard uses pamela-reference-v1=1536x1024 for actual station-image coordinates. The node document proposes bank_px=1920x1080 but keeps accepted dimensions null. Main's current measured dealer plane is 1080x1920/24fps. These are three distinct spaces.",
+      "correction": "Preserve a qualified spaceId and dimensions per measurement. Use review-desktop/scene_px for 1920x1080 preview placement, and graphLayout for node placement. Keep bank normalization and Main adapter pending until measured; never relabel 1536-space coordinates as 1920-space or use Astrid positions to fill nulls.",
+      "evidence": "packages/presentation/contracts/filmed-profiles/studio-profile.mjs:15-16"
+    },
+    {
+      "id": "document-kind-is-not-main-kind",
+      "priority": "mapping-required",
+      "finding": "The standard uses descriptive kind=transition for shoe and scene rows, and image/video for roulette. Main clipmap distinguishes shoe, scene, idle, deal, reveal and speech; roulette's sourceType/mediaType are separate fields.",
+      "correction": "Retain original document labels as evidence, derive canonical kind from the verified Main slot. Do not feed document kind directly into an import or assume every transition has a VILA/REDO pose.",
+      "evidence": "apps/studio/lib/clipmap/slots.mjs:19-20,34-39,47-52; packages/presentation/contracts/roulette-media.mjs:4-7,33-38"
+    },
+    {
+      "id": "bank-and-schema-names-are-proposals",
+      "priority": "do-not-auto-bind",
+      "finding": "Standard names pamela-workspace-v1/pamela-reference-v1; node manifest proposes bankId=pamela-new-reference and separate calibration/geometry revisions. Their JSON schemas differ and neither is an implemented Main import schema.",
+      "correction": "Project both documents into one local view with provenance aliases and the active existing pilot contract. Choose/freeze one future bank id explicitly; do not infer identical banks from the word Pamela or create parallel product registrations."
+    },
+    {
+      "id": "variant-count-scope",
+      "priority": "secondary-clarification",
+      "nodeDocumentLocation": "lines 340-350",
+      "finding": "The node document's 16 filmed variants per event matches the event container limit, but Main additionally limits embedded measured filmed profiles to 16 per dealer. A variant's videoGenerationId is singular.",
+      "correction": "A projected tree may group multiple candidate files for review, but must not claim they are multiple active takes inside one existing expression binding or that every event can independently store 16 measured profiles per dealer.",
+      "evidence": "packages/presentation/contracts/policies/studio-contract.json:75; packages/presentation/contracts/studio-model.mjs:32-34,549-560"
+    }
+  ],
+  "proposedNotImplementedOrNotMeasured": [
+    "Both document-level JSON schemas and a shared Atlas/canvas node projection",
+    "New Pamela bank/profile/calibration identity and accepted bank-plane transform",
+    "Actual Pamela card quads, target landings, shoe outlet, hand segmentation and frame-bound contact/release cues",
+    "A generic arbitrary-quad/segmentation-mask import path for a new filmed profile",
+    "Standard speech binding by dealer+line+language: current speechSlotVariantId/Standard is dealer+event+situation, without language in its binding key",
+    "Multiple selectable takes nested under one expression variant",
+    "Native 3:2 runtime support, wider viewer camera movement and calibrated world metres",
+    "Automatic generation acceptance from endpoints, fps, matching frame count or a parsed JSON file"
+  ],
+  "atlasCanvasProjection": {
+    "status": "local-derived-view-contract-only",
+    "nodeSchemaPresentInDocuments": false,
+    "meaning": "Neither document supplies a complete node/edge/layout dataset; their catalog, references, targets and proposed track schemas can supply one read-only projection.",
+    "sourceOfTruth": "Verified Main slot catalog plus exact media/calibration receipts and both raw document hashes. The projection creates no new product IDs or runtime selection policy.",
+    "nodeTypes": [
+      {"type": "slot", "idRule": "mainSlotId", "actualPlaybackAddress": true, "scope": "32 blackjack slots; roulette videos only through their separate explicit bindings"},
+      {"type": "reference", "examples": ["pose/vila", "pose/redo", "roulette.reference/VILA"], "actualPlaybackAddress": false},
+      {"type": "contextEvent", "examples": ["turn.player", "settle.win"], "actualPlaybackAddress": false},
+      {"type": "target", "examples": ["box3", "dealer-up", "dealer-reveal"], "actualPlaybackAddress": false, "relation": "points to a slot and calibrated placement; not itself a video fack"},
+      {"type": "poseOrVariant", "examples": ["VILA", "REDO", "base", "i", "v", "iv", "rest", "clasped"], "actualPlaybackAddress": false},
+      {"type": "groupOrLanguage", "examples": ["blackjack", "giv", "sv"], "actualPlaybackAddress": false},
+      {"type": "assetOrCalibration", "examples": ["video sha256", "card track", "hand mask", "table geometry"], "actualPlaybackAddress": false}
+    ],
+    "graphLayout": {
+      "spaceId": "graph-layout",
+      "units": "logical canvas units",
+      "fields": ["nodeId", "x", "y", "layoutVersion"],
+      "separateFrom": ["source_px", "pamela-reference-v1", "working_px", "bank_px", "scene_px", "viewport_css_px", "render_px", "table_uv", "world_m"],
+      "rule": "Dragging a graph node changes navigation layout only. It must not move the filmed hand, shoe, card target or Main geometry."
+    },
+    "spatialOverlay": "Draw quads, hand masks, contact markers and residual errors from the selected asset's own space/time and explicit transform chain. Preserve null and unmeasured status. Distinguish measured error from proposed tolerance.",
+    "playbackHighlight": "For a local preview, highlight the actual selected sourceSha256, slot/take, decoded media time/frame and local sequence step. Label it local preview. Claim current game playback only when a fresh runtime snapshot identifies the event, server destination, chosen media hash and time; a candidate or saved binding is not evidence of playback.",
+    "independentStatuses": ["measurementStatus", "productionApproval", "integrationStatus", "localPreviewState"],
+    "minimalRelations": ["group contains slot", "slot has pose variant", "variant/candidate references exact asset", "asset has calibration", "calibration references track/mask/space", "sequence transitions between compatible poses"],
+    "noSilentDefaults": "Unknown runtime selection, calibration, masks or transforms stay unknown. Never display green acceptance or insert zero coordinates because a source field is absent."
+  },
+  "minimumLocalCentralCalibration": {
+    "status": "proposed local sidecar requirements; no runtime code or measurements created",
+    "binding": {"slotId": "deal.player.centre/box3", "target": "4", "serverBox": 3, "takeKey": "4:base", "startPose": "REDO", "endPose": "REDO", "entryCardState": null, "exitCardState": null, "sourceVideoSha256": null, "finalVideoSha256": null, "calibrationId": null, "geometryRevision": null},
+    "cardStateGate": "Define and verify card ownership/visibility at both REDO anchors before generation. The node document recommends card-free REDO, ready to draw the next card. Pose labels alone do not prove this; never inherit an already held reference card without explicitly choosing that contract.",
+    "firstLocalProof": "One accepted central base give joined to independent to-shoe and from-shoe transitions; own digital test card and hand-occlusion overlay throughout the give. Full bank and Main registration follow only after this proof.",
+    "mediaIdentity": ["original/working/final path and distinct SHA-256", "exact measured width/height/fps rational/frameCount", "PTS/timeBase or explicit constant-frame-rate index", "derivation and source-fit transforms", "VILA/REDO anchor hashes"],
+    "coordinateConvention": {"origin": "top-left", "x": "right", "y": "down", "coordinates": "continuous pixel edges, domain [0,width]x[0,height]", "pixelCentre": "i+0.5,j+0.5", "normalized": "x/width,y/height", "unknown": null},
+    "cardTrack": {
+      "spaceId": "the exact final video's source_px, or another explicitly transformed named plane",
+      "cornerOrder": ["p00", "p10", "p11", "p01"],
+      "cornerRule": "Stable material-corner identity; never reorder by screen left/right as the card rotates.",
+      "sampleRequired": ["frameIndex", "pts or explicit frame/fps mapping", "quad or explicit absent state", "surfaceSide", "visibility", "measurement method/status", "occlusion-mask frame reference"],
+      "coverage": "Every affected frame from first visible card/pickup through release and hand clearance. Interpolated/occluded guesses must be marked and visually verified.",
+      "acceptance": "Rigid planar card, no unexplained jump/flip/duplicate, stable hand contact and correct landing/release in the final composition. A white-region bounding box is not a calibrated quad."
+    },
+    "handMask": {
+      "encoding": "Explicit grayscale/alpha coverage mask or image sequence, with 0=no occlusion and 1=hand occludes card; state premultiplication/encoding if used",
+      "required": ["mask file/sequence sha256", "videoSha256", "mask width/height and spaceId", "frame count and exact time mapping", "mask-to-card/source transform", "coverage/quality decision"],
+      "rule": "A point, box or four-corner paper polygon is not a finger segmentation mask. Cover already dealt cards when fingers cross them, and continue until the hand has withdrawn. Missing affected mask coverage blocks acceptance."
+    },
+    "timingCues": ["pickup/contact interval", "firstFaceFrame", "contactFrame", "landFrame", "observed releaseFrame", "clearFrame", "pose-settled intervals"],
+    "sceneMinimum": ["shoe artwork/visible-source ownership and outlet geometry", "table image hash and contact/occlusion contour", "central landing quad/centre and card size", "source-to-scene transform", "fixed camera and desktop/mobile review placement"],
+    "failClosed": "Changed video/mask/track hash, unknown coordinates, unverified frame mapping or missing cue keeps the local candidate unapproved. No fallback to Astrid or PAOW tracks, positions, masks or event times.",
+    "gameBoundary": "Only presentation/test-card geometry is local; server card values, shoe order, RNG, event destinations and payouts stay in Main."
+  },
+  "laterMainProfile": {
+    "recommendedSmallestPath": "A new registered base profile with Pamela's own measured geometry and tracks, plus explicit table/shoe placement; then existing factory/copy import references that NEW id. Keep original source and a verified compatibility export to 1080x1920/24fps for the first integration.",
+    "measuredModeNotSufficient": "studio-profile measured expands to tracks:{} and has fixed 1080x1920/24fps. It cannot transport the new moving card quad.",
+    "registeredProfileRequires": ["new registered id and immutable provenance", "plane/card dimensions", "positions 1..7 and dealer with finite cx/cy", "track firstFrame and frames with q,p,body,paper", "take key/target/variant/track/hash/frames/offsetFrames/poses/cues", "table/shoe placement and exact export binding"],
+    "centralTrackMapping": "For 4:base use target='4', variant='', track='4'. Main q/p/body are four-point arrays relative to the profile landing centre; convert from local absolute source coordinates explicitly. Main track.firstFrame + take.offsetFrames must equal firstFaceFrame and fit the final frame count.",
+    "visibilityAndMaskBoundary": "The richer local visiblePolygon and segmentation mask are not interchangeable with Main's strict q/p/body arrays. Existing filmed-profile schema has no arbitrary hand-mask field, and game-cards bypasses the legacy hand path when filmedProfile exists. Preserve the local mask and prove an explicit compositor adapter before claiming full hand-mask integration.",
+    "nullBoundary": "The honest central-only sidecar may keep other targets null. The current Main validator requires numeric positions for all seven seats plus dealer; never fill these with zeros or Astrid coordinates to make validation pass.",
+    "importBoundary": "importedFilmedProfile requires registered derivedFrom, exact base geometry/timing and own final clip hashes; native coverage requirements may require more takes before runtime import. A parsed local JSON is not import acceptance.",
+    "implemented": false
+  },
+  "blockers": [
+    {"id": "own-central-calibration-not-yet-proven", "stage": "local pilot", "detail": "No accepted central final hash plus fully measured quad, finger mask, outlet, landing and cue sequence is established by either document. Nulls and threshold/manually estimated points are appropriate draft evidence, not calibration.", "next": "Measure and inspect the actual new central give; produce the smallest local sidecar/overlay proof above."},
+    {"id": "profile-and-mask-adapter-unproven", "stage": "later Main integration", "detail": "New registered geometry and full required position fields are absent, and an arbitrary hand-mask transport/render path is not part of the read filmed-profile schema. Existing measured mode and old-bank copy do not close this gap.", "next": "After local proof, implement one scoped new-profile/adapter path, reject legacy fallback and verify exported hashes, time mapping, mask rendering and desktop/mobile placement before broader generation."}
+  ],
+  "evidence": [
+    {"path": "packages/presentation/contracts/policies/studio-contract.json", "selector": "events excluding sourceType turn/settle; limits.filmedDealVariants"},
+    {"path": "apps/studio/lib/clipmap/slots.mjs", "lines": "19-20,34-39,47-78,91-98,162-169"},
+    {"path": "packages/presentation/contracts/clip-naming.mjs", "lines": "6-16,79-89,130"},
+    {"path": "packages/presentation/contracts/roulette-media.mjs", "lines": "4-8,17-19,33-38"},
+    {"path": "apps/admin/components/admin/lib/roulette/roulette-clip-map.mjs", "lines": "6-19,32-44"},
+    {"path": "packages/presentation/contracts/speech-slot-bindings.mjs", "lines": "16-18,43-54"},
+    {"path": "packages/presentation/contracts/studio-model.mjs", "lines": "32-34,543-560"},
+    {"path": "packages/presentation/runtime/idle-rotation.mjs", "lines": "3-30"},
+    {"path": "packages/presentation/contracts/filmed-profile.mjs", "lines": "37-73,85-92"},
+    {"path": "packages/presentation/contracts/filmed-profiles/studio-profile.mjs", "lines": "4-16,52-58,78-84"},
+    {"path": "apps/admin/lib/dealers/dealer-filmed-profile.mjs", "lines": "58-88"},
+    {"path": "services/game/public/card-presentation/game-cards.js", "lines": "60-65,83-111"}
+  ]
+}

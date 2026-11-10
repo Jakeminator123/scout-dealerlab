@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "draft-not-scoutgaming-import-ready",
+  "dealerId": null,
+  "action": "idle",
+  "source": { "path": null, "sha256": null, "origin": "unknown" },
+  "generation": { "provider": "runway", "model": null, "taskId": null, "prompt": null, "seed": null, "cost": null },
+  "output": { "path": null, "sha256": null, "width": null, "height": null, "fps": null, "frameCount": null, "pixelFormat": null, "color": null },
+  "geometry": { "camera": null, "crop": null, "scale": null, "padding": null, "coordinateSpace": null },
+  "timing": { "idleFrame": null, "readyFrame": null, "cardEvents": [] },
+  "layers": { "dealer": null, "matte": null, "table": null, "shoe": null, "background": null },
+  "cardTracks": [],
+  "handOcclusion": null,
+  "processingSteps": [],
+  "qa": { "reviewPath": null, "approvedOutputSha256": null, "decision": "unreviewed" }
+}

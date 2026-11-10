@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "status": "visual-preview-only-not-calibrated",
+  "basis": "Visually estimated eye/hand rows in the exact two source images. Aligns subject size for A/B, not camera geometry or game card coordinates.",
+  "target": { "eyeY": 157.25101921956902, "handY": 473.0168899242865, "canvasWidth": 1920, "canvasHeight": 1080 },
+  "assets": [
+    { "sha256": "b13225f0b71cb6cd20d6a596c30b1502d9c0ed7ce2d0e6c8651bd3150ae1033e", "width": 916, "height": 1717, "eyeY": 250, "handY": 752 },
+    { "sha256": "4445634a5698da4121ad40bd7fcef76c8b8b8707c6fc24a87d095ad98348e5a7", "width": 1536, "height": 1024, "eyeY": 213, "handY": 952 },
+    { "sha256": "f777a3aef408e042b9c2e6cbf7cd96ec8e379406db09bacd10149959bab3c449", "width": 1104, "height": 832, "eyeY": 201.09375, "handY": 732.25 },
+    { "sha256": "3e8f1d6b280357d9ce5944cb3bccfe93970bba8b1615c56fea2f69e131ba5d60", "width": 1104, "height": 832, "eyeY": 201.09375, "handY": 732.25 }
+  ]
+}

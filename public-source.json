@@ -1,0 +1,2525 @@
+{
+  "schemaVersion": 1,
+  "repository": "Jakeminator123/scout-dealerlab",
+  "sourceCommit": "68c74bde6e977e2cda202d0501dcc419fc92864d",
+  "sourceBranch": "jakob/test",
+  "sourceIsWorkingTreeSnapshot": true,
+  "reviewSnapshot": "review-hub-20261110030156605",
+  "reviewUrl": "https://scout-dealerlab.vercel.app/granskning.html",
+  "deploymentId": "dpl_5qv9gjbH4yfui9wAmeAbXQM3xS6i",
+  "sourceTreeSha256": "49ac37ee7fdf684c691c846fb7942636c19f79d2b0df86b74b796092ae2c5384",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "178256c2b63dae0e12b915e9876bed4b27372676f5d8a2245e16c9274c502418",
+      "bytes": 625
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "2ccdf7cc9f7194bf31ea2066ae73c59525dae86432ec5b20fcbce2fb3cb36edb",
+      "bytes": 345
+    },
+    {
+      "path": "EXPORTERA-GPT.cmd",
+      "sha256": "da6d4b4863881672016abe7bc8f726964f301c3b7ab45ef95a6f3f44229c2c85",
+      "bytes": 170
+    },
+    {
+      "path": "START.cmd",
+      "sha256": "7dbc25f01b75ade8c550d39f6ea774afcc606db3144a257b7da8a7880f64e484",
+      "bytes": 112
+    },
+    {
+      "path": "STATUS.cmd",
+      "sha256": "9724f25c4fd1d8ab7c1d5b2503298a882aeb20119244aa4c4ce35ec203453e1d",
+      "bytes": 113
+    },
+    {
+      "path": "STOPP.cmd",
+      "sha256": "e97eaeccf3b08ad30e7a7bad18535ea07ff5246c4b38d3bba7e987b033b4ac94",
+      "bytes": 111
+    },
+    {
+      "path": "UPPDATERA-GRANSKNING.cmd",
+      "sha256": "984556fc1aff26c594e321386f5e08e01b167367d9aee7d136a1157e83d6c294",
+      "bytes": 137
+    },
+    {
+      "path": "app/admin-prototyp/page.tsx",
+      "sha256": "84f191cb31cbf3db58edaba948a1e55be7eba14329e27baaaec2f6c37297037d",
+      "bytes": 309
+    },
+    {
+      "path": "app/komposition/page.tsx",
+      "sha256": "b0945e7c8c1ab9094059d7d6e5ce8f189a8ca54c36b7906b3b3cbc7d05fbea87",
+      "bytes": 1041
+    },
+    {
+      "path": "app/layout.tsx",
+      "sha256": "84e93a67e6de169298f7531276009b5d28179920c80c288fee7bc56dc80b052f",
+      "bytes": 596
+    },
+    {
+      "path": "app/materialprov/page.tsx",
+      "sha256": "4f74a6e5bddf6a016f4a44ae86f8bffc5b5223128959b43ecc766fcf7dcde492",
+      "bytes": 495
+    },
+    {
+      "path": "app/maud-test/page.tsx",
+      "sha256": "8cb030b055503380a59df5c109c772da34b2ea3cc7b6f29b5fbcf2d3005253df",
+      "bytes": 109
+    },
+    {
+      "path": "app/page.tsx",
+      "sha256": "c7982597074a9f0e03d088e87298567b74425214e393d81fa16d0825ee8b6899",
+      "bytes": 466
+    },
+    {
+      "path": "app/pamela-prov/page.tsx",
+      "sha256": "c738b3a5841ab82db3c3cb25fc797fb5bc5b5cff298d34e28f8fe24415b207d8",
+      "bytes": 49085
+    },
+    {
+      "path": "app/pamela-scen/page.tsx",
+      "sha256": "3eeb32b04452037296704d62336a6d178ea18492b764003b45ad28185b34dd91",
+      "bytes": 280
+    },
+    {
+      "path": "app/pamela-shoe-gpu/page.tsx",
+      "sha256": "5a6a2ba9b6bce8c56162d9e94abfe7997c9aca040eb621c80e6e0fcd0636e778",
+      "bytes": 2880
+    },
+    {
+      "path": "app/studio/page.tsx",
+      "sha256": "fbab11b35c19329a5d1f81f37327e8f23add33ae61623c9cbb71c2fb3d2a73b6",
+      "bytes": 2502
+    },
+    {
+      "path": "builds/keystones/pamela-v4/BUILD.md",
+      "sha256": "a1bbb0b9f4a508d1eaf6d3a880e1c40ffbaa15f18b7acaf3b6a42aefd78bebf8",
+      "bytes": 2343
+    },
+    {
+      "path": "builds/keystones/pamela-v4/build-plan.json",
+      "sha256": "6a47a3c037efe364e598b9a0340408717553df27b10ec9f94327d483b6a9ed90",
+      "bytes": 16486
+    },
+    {
+      "path": "builds/keystones/pamela-v4/pos1/POSITION.md",
+      "sha256": "1c4782d2e9c5147ae31ff2090c282479a541c3f45d967fa37bb19fd6c90eeb16",
+      "bytes": 1163
+    },
+    {
+      "path": "builds/keystones/pamela-v4/pos2/POSITION.md",
+      "sha256": "cdf54cbec8069464a08bb90fe676df2ab5db3ec614281f1e729bc2b973e621c8",
+      "bytes": 1163
+    },
+    {
+      "path": "builds/keystones/pamela-v4/pos3/POSITION.md",
+      "sha256": "c9a6b5bc345987d3411deee24230112f057fc15bbf096b46f8aa7de556b67963",
+      "bytes": 1165
+    },
+    {
+      "path": "builds/keystones/pamela-v4/pos4/POSITION.md",
+      "sha256": "2170c7637590754ff92e07fe0dcdf1b449c036d13babdee7beeb5b983b3c41d9",
+      "bytes": 1159
+    },
+    {
+      "path": "builds/keystones/pamela-v4/pos5/POSITION.md",
+      "sha256": "2f868e2d7271aa32e3e7ff74f099a107b6c4156dc0ba9d5443eddd9d49636ca1",
+      "bytes": 1165
+    },
+    {
+      "path": "builds/keystones/pamela-v4/pos6/POSITION.md",
+      "sha256": "07297c57eddcd5ad00da532a095ee6109a625d87f027e2e83b888dda4048538c",
+      "bytes": 1164
+    },
+    {
+      "path": "builds/keystones/pamela-v4/pos7/POSITION.md",
+      "sha256": "065743a9c9768c284d81d6e85fd80819d920d15ad5549fb7186235b2c5c170aa",
+      "bytes": 1164
+    },
+    {
+      "path": "builds/keystones/pamela-v4/provenance.json",
+      "sha256": "fd7be8c6cfc0795262cb19818ff799ce1b0e030484dc654c5a74492973f69b0a",
+      "bytes": 2155
+    },
+    {
+      "path": "builds/keystones/pamela-v4/provenance/source-job.json",
+      "sha256": "3700cc51ba237cf2f9d218c01112b9b99a5f3a287b7f897704953bb69e909f21",
+      "bytes": 1061
+    },
+    {
+      "path": "builds/keystones/pamela-v4/provenance/source-prompt.txt",
+      "sha256": "1466fc7925d6f2e04e143c7783292c71d889ff7126ab4f479cb495f54a0d547c",
+      "bytes": 1880
+    },
+    {
+      "path": "builds/keystones/pamela-v4/templates/build-plan.template.json",
+      "sha256": "59210342fad45d45c1c9f2a14f709991f52cc8bf9ab9ebb7a3241bca1caf0769",
+      "bytes": 12583
+    },
+    {
+      "path": "docs/ALTERNATIV-3D.md",
+      "sha256": "fa09ce7a60e967a2641210910c21213c74b6817b7f84aafa3c5480fc21a6e255",
+      "bytes": 237
+    },
+    {
+      "path": "docs/DEALERS-OCH-PIPELINES.md",
+      "sha256": "332faedf1668e2955837faf66e5b21aec4fe3d56410fef28b4d41a8db3e51699",
+      "bytes": 241
+    },
+    {
+      "path": "docs/GRANSKNING-UI-VIDEO-OCH-GPT.md",
+      "sha256": "49be9e986c7057b529d06f147b37da14ed98e2f16185335464f6550c7ab8278e",
+      "bytes": 2006
+    },
+    {
+      "path": "docs/KALLKARTA.md",
+      "sha256": "d71e233ad066e333263a29413748de08478de0d032baa5242b5253f5ece59a2d",
+      "bytes": 231
+    },
+    {
+      "path": "docs/MASTERPLAN.md",
+      "sha256": "1b2384cbd577aa9734c70debf3268485fc6c92112279a726c3def4eea1ae32ec",
+      "bytes": 66901
+    },
+    {
+      "path": "docs/drift/ARBETSSATT.md",
+      "sha256": "0a4a23156a7cde806e27dd371fdd16582c1d55203cf29e205936e503058c2ba1",
+      "bytes": 4682
+    },
+    {
+      "path": "docs/drift/DELNING-OCH-CACHE.md",
+      "sha256": "2e21d3bf7afcfb3bafc5e2667a6d741a3456ed2bf7c8004cf6274fb3cad10005",
+      "bytes": 14008
+    },
+    {
+      "path": "docs/drift/LYCKAD-LIPSYNK-LOKALT.md",
+      "sha256": "43b7998658227ed92dd72ffe25f7356a15a4e75332156a485385abb2fa5e8ed0",
+      "bytes": 19461
+    },
+    {
+      "path": "docs/drift/MAUD-TESTYTA.md",
+      "sha256": "d951d01086b5d98abbd5132ffbd0b33a18467baa4d5ef76eb55c5778cf8ec89d",
+      "bytes": 11328
+    },
+    {
+      "path": "docs/drift/PROVISORISK-STRUKTUR.md",
+      "sha256": "76b9826e65eebfe46bd7f3acb451de5ea80f2d4d1f87d0e09cb52d1aa30954b0",
+      "bytes": 6989
+    },
+    {
+      "path": "docs/drift/STATUS.md",
+      "sha256": "fd41b34438ce2338adf5f85ae13fee2b48fb624e0caa5b443202d6078b5960fd",
+      "bytes": 6576
+    },
+    {
+      "path": "docs/drift/TESTA-KOAD-LAPPSYNK.md",
+      "sha256": "e14b07efe5d7007e75aa3dbf8145e9241f693edac0c3dd6127904109fefcd0a3",
+      "bytes": 3880
+    },
+    {
+      "path": "docs/granskning/FORMAT-OCH-KVALITET.md",
+      "sha256": "e3f4342be10cabc4a100322243dd23e7e755ed682ccf965c24026e527376a899",
+      "bytes": 34226
+    },
+    {
+      "path": "docs/granskning/GPT-KEDJAN.md",
+      "sha256": "fc42ac366c89bc54aabb513a583ce77dcd8a2f3403c88775c1f46bbd607c4e4c",
+      "bytes": 3638
+    },
+    {
+      "path": "docs/granskning/KEYSTONE.md",
+      "sha256": "f8b93fcd54c817d0a9c8b449940979b89e77c7cd981f5c6573a868db0ba6a307",
+      "bytes": 15835
+    },
+    {
+      "path": "docs/granskning/SYSTEMFRAGOR.md",
+      "sha256": "dd5bba3b41d85b1a7603a56c3b11d564dc98a9db0f3f3696ab945984751a28d3",
+      "bytes": 10851
+    },
+    {
+      "path": "docs/studio/ADMIN-PROTOTYP.md",
+      "sha256": "396bc7e1a5bfa4351004191d4eb7658e9d6f000e06c74f15ff624bef44258b36",
+      "bytes": 18338
+    },
+    {
+      "path": "docs/studio/ALTERNATIV-3D.md",
+      "sha256": "64e8cfaa75450f4b7de7ee563fc34e78ef43f687817f137f29dd1ad1f4dbfe15",
+      "bytes": 11550
+    },
+    {
+      "path": "docs/studio/DEALERS-OCH-PIPELINES.md",
+      "sha256": "4ce299649d38594c8f2d3fec14333a96fdfc247eb7a25cb23723d25105ee0a11",
+      "bytes": 3313
+    },
+    {
+      "path": "docs/studio/KALLKARTA.md",
+      "sha256": "9f8c78d7e84acb393d2e1c5b9d759e7afcb1c4edd8f0d9516f1d8b1f5d7f0777",
+      "bytes": 9499
+    },
+    {
+      "path": "docs/studio/KARTA.md",
+      "sha256": "8c96f4ace2050ef788b270003db4f36477a452c06dfcaa4cd85ee55de07ee8aa",
+      "bytes": 20482
+    },
+    {
+      "path": "docs/terminologi.txt",
+      "sha256": "bce7ef15c9a7ff90c0d35cceb76510947beb84690b36e7205417916b94ef3d9e",
+      "bytes": 8982
+    },
+    {
+      "path": "next-env.d.ts",
+      "sha256": "b8b3a344484b959af5e4e3fc1a1609dac3cb9ece0cdeb6c145be29bc4c491000",
+      "bytes": 303
+    },
+    {
+      "path": "next.config.ts",
+      "sha256": "61571a3ae78b3864d8e8a5bfd32d5e01bfa719b1effe2593fbd1790e47cb209b",
+      "bytes": 173
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "7859e5aa8b03a511fb714bc20aaacaa7a43e01fb65b349508339de31c8253a58",
+      "bytes": 58664
+    },
+    {
+      "path": "package.json",
+      "sha256": "aa038e95c3b6c219df9c82f83c0f88276c67e9eede4e4cfa38dd7e47b6da7ae4",
+      "bytes": 647
+    },
+    {
+      "path": "references/alternative-3d.json",
+      "sha256": "de9783cc4315654803e21274e14ba519c53c2467ca3000a317dcfd99e2180c72",
+      "bytes": 2476
+    },
+    {
+      "path": "references/alternative-bank.json",
+      "sha256": "3e8328acacf7783b64cf36e0b7bf40907354cadb04a815962284af1724a014af",
+      "bytes": 18519
+    },
+    {
+      "path": "references/alternative-fullbody.json",
+      "sha256": "db0ca5197bd478b3b5c4c23147ba6af807e327075d3f793c91fa1ef46f7e4a3a",
+      "bytes": 9722
+    },
+    {
+      "path": "references/blob-storage.json",
+      "sha256": "299283864baa3dcaa33cf9245c9a3c2591327e589d0ae7b8e4f38a721c2b3b1a",
+      "bytes": 432
+    },
+    {
+      "path": "references/card-materials/new-front2/card-geometry.ts",
+      "sha256": "34a38598c0bb0b8ea33553f232d3083b2639fe9d59fb34508db4bfc06ff7f5f8",
+      "bytes": 1686
+    },
+    {
+      "path": "references/card-materials/new-front2/card-textures.ts",
+      "sha256": "de641ec2b648a0d6f55c94bc61eb3325d96be095196169778309cc5f2d969988",
+      "bytes": 12458
+    },
+    {
+      "path": "references/card-materials/new-front2/playing-card-mesh.tsx",
+      "sha256": "5a92052f80220e0aca92042d0ff2a17ff676f71fc66935e437659d27cfcd78c2",
+      "bytes": 2315
+    },
+    {
+      "path": "references/card-materials/new-front2/provenance.json",
+      "sha256": "5df3381430245c75d151363dd836fd5a517cd8f780fdfbc2f5c25e0be4df6fc6",
+      "bytes": 1987
+    },
+    {
+      "path": "references/card-materials/vendor/three.module.js",
+      "sha256": "5289ca2dfde8572bd7715b9fa2ca929db12bae87e9a2cb53e431662df7039506",
+      "bytes": 1295459
+    },
+    {
+      "path": "references/clip-policy.json",
+      "sha256": "59c533f06ad98128524dcc7b58c5097e65bec5be166039b29805836d5f0c0372",
+      "bytes": 43863
+    },
+    {
+      "path": "references/dealer-map.json",
+      "sha256": "574c847249482655c2032a8e00a74df0a03106f7300f91c5c3e8d6ac1dea4f21",
+      "bytes": 122147
+    },
+    {
+      "path": "references/dealers.json",
+      "sha256": "9e5726a7c51e767caeecfe2871cd38e7f60e03df3e5a1ba715076de045cec75f",
+      "bytes": 62908
+    },
+    {
+      "path": "references/feedback/card-contact-20261109/manifest.json",
+      "sha256": "9d17db894d1a375aca6f0d38121d046ba1e932043033b59abaec1d9db8e928d8",
+      "bytes": 2237
+    },
+    {
+      "path": "references/kevin-production-pick.json",
+      "sha256": "1f0deac0a1d3249244ef0f880f3f564b6375e2ea3252f64c97ccf52faf7fb6e1",
+      "bytes": 21805
+    },
+    {
+      "path": "references/layer-assets.json",
+      "sha256": "333b80d59f7a5ecc95709047fb3289ca2f717164e1e371610b8244f6bb5a2513",
+      "bytes": 1129
+    },
+    {
+      "path": "references/lipsync-banks.json",
+      "sha256": "d2b291f3847fd6743df88e823c06667781328cd851b13c7ab7f25f18b6d7a698",
+      "bytes": 649
+    },
+    {
+      "path": "references/main-pilot-contract.json",
+      "sha256": "141a8a87b5f643f0460e0cc4f5e7860ca17865b5b3475f7019ea140770dc389c",
+      "bytes": 28935
+    },
+    {
+      "path": "references/material-framing.json",
+      "sha256": "ea04759750b45cdbd6c5097e9c60804ac76223dbf130df91f55ec6ee2b838724",
+      "bytes": 953
+    },
+    {
+      "path": "references/material-preview-assets.json",
+      "sha256": "c8c97c2fa0d2211b8bd997130e529b1b532f499fc08b7b6cde2c6b1b2b6c59fe",
+      "bytes": 1494
+    },
+    {
+      "path": "references/media-retention.json",
+      "sha256": "a48f2467efc5d051776fd02f908671284f5153d13d811c38213b51e185ba90e5",
+      "bytes": 284
+    },
+    {
+      "path": "references/pamela-card-scenes.json",
+      "sha256": "325ee680dcab90509c49b981ea34ac62c54027875d3bc51fd52a46fa7c9fe739",
+      "bytes": 2935
+    },
+    {
+      "path": "references/pamela-feedback.json",
+      "sha256": "e8da19072da0d9956e27923ccfa6ea952acb454545df23d075f2fb1eb6627d0f",
+      "bytes": 446
+    },
+    {
+      "path": "references/pamela-handoff.json",
+      "sha256": "7d4c21362a6a30155d34644389b3486b8210540f060a47b35beb9353dc83e6eb",
+      "bytes": 458
+    },
+    {
+      "path": "references/pamela-idle-anchor-pilot.json",
+      "sha256": "c5ee1c7238fa75e163ec9097596d70e10b11801a7e8f2d34b0d3103b158bb069",
+      "bytes": 434
+    },
+    {
+      "path": "references/pamela-idle-chain-review.json",
+      "sha256": "ffbcbad750e4dddaf9733585e7694baf2ac8cc45dfb7c57c96702c1b9b8e25e0",
+      "bytes": 511
+    },
+    {
+      "path": "references/pamela-idle-window-review.json",
+      "sha256": "c9d16084c42493ee214d6d205f5148d6e60d4fc5a4e02353cffb04c1d61800c4",
+      "bytes": 1342
+    },
+    {
+      "path": "references/pamela-issue-draft.md",
+      "sha256": "8a3f8b859abe3ba3f70fb9d450398a1e7489080cb87aa17e63671e122a007b4d",
+      "bytes": 1149
+    },
+    {
+      "path": "references/pamela-material-bank.json",
+      "sha256": "c9025685b47993ab8e5354a9f5f9c333ad0a923fd538b917d004b61c8af5714e",
+      "bytes": 240
+    },
+    {
+      "path": "references/pamela-material-render.json",
+      "sha256": "063d4a445e987eb16dc74129550ad7787255e4c713f16eb486867ff188f3820b",
+      "bytes": 314
+    },
+    {
+      "path": "references/pamela-material-selections.json",
+      "sha256": "46651969b31fcb29cc11ffab905bd5d4fd088d47c8866119493f70e36c1e3d31",
+      "bytes": 9309
+    },
+    {
+      "path": "references/pamela-motion-contract.json",
+      "sha256": "6632426731aa50cf0cdf4f814e64e55dd0e8515c6099375dfd6a5f889f9f4c8a",
+      "bytes": 35407
+    },
+    {
+      "path": "references/pamela-pilot.json",
+      "sha256": "649b76d879d775dce65bc382005786ebe673d9096b420df8bc9c726c192081c5",
+      "bytes": 10639
+    },
+    {
+      "path": "references/pamela-rest-ready-review.json",
+      "sha256": "5730464671f0f5cc6f50f21976911589609bf77e7a26ed5d821af0d0704af317",
+      "bytes": 1125
+    },
+    {
+      "path": "references/pamela-sequence.json",
+      "sha256": "713ffe99b658627fcc3940cbe2574b05a7c5f224d681dc9b49577d145815836a",
+      "bytes": 5482
+    },
+    {
+      "path": "references/pamela-stage-contract.json",
+      "sha256": "7ece792cdf43ddcd9ab5e7f92572d5e97cc958da2a36bf52dd957bafa64bf3a2",
+      "bytes": 2975
+    },
+    {
+      "path": "references/pamela-stage-motion.json",
+      "sha256": "b6aa666bb3177d8c9cffdad5010102a4b77a0224b247d0ea336bba513f500612",
+      "bytes": 396
+    },
+    {
+      "path": "references/pamela-standard-audit.json",
+      "sha256": "231d7adef6277cb4a515bb8abe7ef897f36bd5935b5a5a77cfa146ec3a4da455",
+      "bytes": 21828
+    },
+    {
+      "path": "references/pamela-two-sided-bank.json",
+      "sha256": "1efa08dbd03e64b804198fbfa3d312970c954ad569c61555203c30e8495079f1",
+      "bytes": 2399
+    },
+    {
+      "path": "references/pamela-two-sided-review.json",
+      "sha256": "ce6f72d9a8c4d6db35807d060e1795bc01fdaef88ccef8b95eb8758d163d4aa2",
+      "bytes": 471
+    },
+    {
+      "path": "references/pipeline-map.json",
+      "sha256": "5a36b59abdcb360b90db182c7ceef3537ee4b9578f27ea53afd142fccaed0a59",
+      "bytes": 7749
+    },
+    {
+      "path": "references/production-plan.json",
+      "sha256": "55539e2505794deb58c7cba5a584fdae4feec267c2a59a96d8419f3b304084fe",
+      "bytes": 8551
+    },
+    {
+      "path": "references/public-git.json",
+      "sha256": "c544a83c50a88302affdaad3313eb469b29663f98e353982fa6a669bd4f9a23f",
+      "bytes": 324
+    },
+    {
+      "path": "references/public-review.json",
+      "sha256": "c05f26286d2831d91e590b373157993af9e567147cae71568179b6ed3bb77501",
+      "bytes": 5392
+    },
+    {
+      "path": "references/public-selection.json",
+      "sha256": "2db885922e01d215f3b2de4d92feca093a2456df4c876c5fb7fe57d42df0e4da",
+      "bytes": 14987
+    },
+    {
+      "path": "references/review-brief.json",
+      "sha256": "55ad10eed304bc2ced980e58cc0a33e139c156dc19dbf426590c77f06852b275",
+      "bytes": 4367
+    },
+    {
+      "path": "references/review-round.json",
+      "sha256": "d7ee489d686c5a59fbfd7e5ff9950db5e8ef07fcb2139054b42908b04c86caad",
+      "bytes": 26495
+    },
+    {
+      "path": "references/review-status.json",
+      "sha256": "6badc509e88f2ec72363dbb3ab043078ede42c68e87ed1c5b5c0afc0707b2f1a",
+      "bytes": 4171
+    },
+    {
+      "path": "references/review-storage-audit.json",
+      "sha256": "3816f4742dd40739dca1a85c0d2b6982ba93bb24f1fca87a03d28f6f7472f603",
+      "bytes": 5681
+    },
+    {
+      "path": "references/reviewer-status.json",
+      "sha256": "c8a213d77c8f93c9f1c3bf92f34345c953760d4615e295d8adab7a9c6afb92ba",
+      "bytes": 22520
+    },
+    {
+      "path": "references/scene-composition/manifest.json",
+      "sha256": "54ed062396d49d1de540e1b548d01bf6022680aabc1bd75b5b079c30ccf4b1ec",
+      "bytes": 16390
+    },
+    {
+      "path": "references/scene-composition/source/creator/card-calibration.ts",
+      "sha256": "11b539d4818333567dca47e8a754d3bf4f129269acc5697c170906b2a9d008b6",
+      "bytes": 18373
+    },
+    {
+      "path": "references/scene-composition/source/creator/render-effects.ts",
+      "sha256": "37159758e8a788381680328e12a5571171d33240d6bb5eddb049624e22706d6c",
+      "bytes": 4892
+    },
+    {
+      "path": "references/scene-composition/source/experiments/avatar-pilot/avatar-depth.ts",
+      "sha256": "dc3f044025147b544b97606d7aed132cef1a1e40ccbeac59ff1fb77c28679064",
+      "bytes": 3488
+    },
+    {
+      "path": "references/scene-composition/source/experiments/avatar-pilot/avatar-key.ts",
+      "sha256": "6a3c619a929aa011cbec0beb013fb0260905e817dbf70308b1dfdec70a3efd5f",
+      "bytes": 1730
+    },
+    {
+      "path": "references/scene-composition/source/experiments/avatar-pilot/camera-motion.ts",
+      "sha256": "eab325313387084b8cc483fe005cf3794d9028da936a84fedd83061a9c76b407",
+      "bytes": 2201
+    },
+    {
+      "path": "references/scene-composition/source/experiments/avatar-pilot/pose-config.ts",
+      "sha256": "56b3eca8ab6f1448f8f50f1c906027fbb4d821a26e8b202a5cd002b84dd697c0",
+      "bytes": 360
+    },
+    {
+      "path": "references/scene-composition/source/experiments/avatar-pilot/preview.ts",
+      "sha256": "6e4f28ced9d2c39b4254ed16db24d862499830b4ff94d7fc719bbf6db7115d9d",
+      "bytes": 47763
+    },
+    {
+      "path": "references/scene-composition/source/experiments/avatar-pilot/room-profile.ts",
+      "sha256": "75c96dc9d53598ace1a18e790fda07775adf4dddfc4f1492a7e32d7ef7ce7c88",
+      "bytes": 1180
+    },
+    {
+      "path": "references/scene-composition/source/experiments/avatar-pilot/video-source.ts",
+      "sha256": "c8b4be5d862f8e071f33e61939569938532ea1d7f1f1dbb30d0e48581daf3163",
+      "bytes": 4153
+    },
+    {
+      "path": "references/scene-composition/source/scene/atmosphere.ts",
+      "sha256": "b885f87618238ae13b7f7b9504dba54c749a7c9b33134b7a5511bb7021c4e2e3",
+      "bytes": 3991
+    },
+    {
+      "path": "references/scene-composition/source/scene/environments/las-vegas.ts",
+      "sha256": "79b1ff6748535665288b537f876570bef1d0b94f502b59a9c4cfaae2f321a1c7",
+      "bytes": 7669
+    },
+    {
+      "path": "references/scene-composition/source/scene/environments/los-angeles.ts",
+      "sha256": "1bd1a53774cade5bc268f28947545af0aba1dcb9d531457c516ed7b3cf1bd350",
+      "bytes": 5918
+    },
+    {
+      "path": "references/scene-composition/source/scene/furniture.ts",
+      "sha256": "1efe65418e8e11d8fcd4870a791737a4f38111c44485ac38f68940b3ab4e2514",
+      "bytes": 13043
+    },
+    {
+      "path": "references/scene-composition/source/scene/material-sources.json",
+      "sha256": "aa6b1e66753116fb5aa5158d43acd2ec794d141d65848237b083cd66af36f446",
+      "bytes": 1660
+    },
+    {
+      "path": "references/scene-composition/source/scene/panorama-room.ts",
+      "sha256": "f28036b6384603aedb5c8e4f8b9f8e35c5a7feec590d226b4143c901e61459b5",
+      "bytes": 640
+    },
+    {
+      "path": "references/scene-finish-contract.json",
+      "sha256": "e968900f36eca775cd60f01bf9d121d69d549ea7133dca9787f8d14548a7e374",
+      "bytes": 3760
+    },
+    {
+      "path": "references/schemes.json",
+      "sha256": "526fdfdeaee71a2c46683b43463393cc354246edb2bc4d6eba45560272d9e549",
+      "bytes": 1276068
+    },
+    {
+      "path": "references/speech-access.json",
+      "sha256": "5306acc4bdd4770cf0be6ae4a5495810736f3a86aca5c482b91607aa233dfd2c",
+      "bytes": 3144
+    },
+    {
+      "path": "references/speech-profiles.json",
+      "sha256": "45ced81821c3e9669416ec74a552f0a66422cde27c3c0df14300b20f7fa44f33",
+      "bytes": 893
+    },
+    {
+      "path": "references/terminology.json",
+      "sha256": "93443c77e38765c7107ade37fd7deaa6a342c84d7ba4684ca8bbdc956e56a2ae",
+      "bytes": 14629
+    },
+    {
+      "path": "references/work-material.json",
+      "sha256": "b37bcb0ca673cb0a924db0d41b9d04b51af903a59590a58d1d0696b748b71a2d",
+      "bytes": 10194
+    },
+    {
+      "path": "scripts/archive-work-material.test.ts",
+      "sha256": "6ecddd8526ab75a7ea230ebc31a9a4f43f2db052bab634ff36f04bfd692ca7ef",
+      "bytes": 13807
+    },
+    {
+      "path": "scripts/archive-work-material.ts",
+      "sha256": "84fa364b84f67885eb2f076a2f2e7a889727a52ebdb4c5a1658d9ca4cfa1405b",
+      "bytes": 30970
+    },
+    {
+      "path": "scripts/build-public-review.ts",
+      "sha256": "2b5cf040ffa12c9f34499e1a6469156c11fb3bd0d3eff353ee17c30ade7959c0",
+      "bytes": 35556
+    },
+    {
+      "path": "scripts/build-review-hub.ts",
+      "sha256": "042b15dab322af88e093c0de4273480d0e3f70db6e858036743ded109c18980a",
+      "bytes": 26987
+    },
+    {
+      "path": "scripts/bundle-card-material.ts",
+      "sha256": "07ede54fdb0faa95e25930f3f39d75588fe232e67a6abdaafcdda5b92b8be499",
+      "bytes": 2335
+    },
+    {
+      "path": "scripts/bundle-chip-material.ts",
+      "sha256": "0c6014fd8167f69cc31cd880fdee8919b8f51270b14c3e7c69fd95ba040e1188",
+      "bytes": 2337
+    },
+    {
+      "path": "scripts/bundle-composition.ts",
+      "sha256": "ebc53200fc92323e0437f83c60f9de497f7366cc45dbac56c15b40917a03cda0",
+      "bytes": 1726
+    },
+    {
+      "path": "scripts/bundle-studio-workbench.ts",
+      "sha256": "e1117ddbb6942b753bec12f84fd2bb34397cce7252b9b9db68c8251a5f01c230",
+      "bytes": 1843
+    },
+    {
+      "path": "scripts/doc-version.ps1",
+      "sha256": "de1509024d6c8544c67c0cc337c00181bafeebb88c206cf023f31293a924fff7",
+      "bytes": 11322
+    },
+    {
+      "path": "scripts/export-review.ts",
+      "sha256": "5d55a9a0d5edd7e5f489457d28d11e58ccf4d210d84ce900568000c56c4d33c2",
+      "bytes": 16950
+    },
+    {
+      "path": "scripts/import-alternative-project.ts",
+      "sha256": "c830f44b447efcf0d184aa58d5e4b3634ed6cd46d08cf07f36427160426d9a4f",
+      "bytes": 5810
+    },
+    {
+      "path": "scripts/publish-review.ps1",
+      "sha256": "ab4df13db75a3be09489fc249495fe1247d739b0cdc7edc873f8b64f8eb8815f",
+      "bytes": 8494
+    },
+    {
+      "path": "scripts/publish-work-material.ts",
+      "sha256": "23308e4042a12c79e01acbcb06c40e5db4f4cf29a42d65ab0745e6d2d2065e53",
+      "bytes": 5448
+    },
+    {
+      "path": "scripts/review-blob-links.ts",
+      "sha256": "685e52c9905be4b019e97a143d589375f0e0b60433dea3de946dc593dcddec1d",
+      "bytes": 2878
+    },
+    {
+      "path": "scripts/save-local-login.ts",
+      "sha256": "cff2821f359d401187f31d7193789661349cd1806d9e76d87690520ed6b54ce1",
+      "bytes": 1839
+    },
+    {
+      "path": "scripts/server.ps1",
+      "sha256": "ee01b56334a3bad3a2756a151bbec61cc3f7e880ae0f025bae83b835f64b39ed",
+      "bytes": 5915
+    },
+    {
+      "path": "scripts/sync-public-repo.test.ts",
+      "sha256": "8700bbad742634c57927abafe7592cc3ed31b8159a30d70e2eba19bdc1ef8976",
+      "bytes": 1631
+    },
+    {
+      "path": "scripts/sync-public-repo.ts",
+      "sha256": "5e04d687e140cca1e7b8d32aec69d45a80f6944119d2f7f1292d9f91d0a08112",
+      "bytes": 8137
+    },
+    {
+      "path": "scripts/sync-terminology.ts",
+      "sha256": "75417831a0899167b606b64b5c9476b6d84c9722671b796e9e9c062085493cc5",
+      "bytes": 1681
+    },
+    {
+      "path": "scripts/verify-review-hub.ts",
+      "sha256": "194270507c87f61ab3597b8131f0b0bfe064e7b4199544009d15ede57d94e529",
+      "bytes": 2308
+    },
+    {
+      "path": "scripts/zip-review.ps1",
+      "sha256": "b9e8dcc6b537940c4b617f46cb57a956d59d1623ba4f91156e93b7e7d7e26fba",
+      "bytes": 2698
+    },
+    {
+      "path": "src/LocalSession.tsx",
+      "sha256": "b3c430a7c1b566bd6ce6790b751533debd061f43fe3f30d5f2b731aaa6efc81d",
+      "bytes": 618
+    },
+    {
+      "path": "src/ReviewBridge.tsx",
+      "sha256": "06e6fda2b06001438515a0a671cfde034e5a8f152124ab07621c6f66f5cff612",
+      "bytes": 2189
+    },
+    {
+      "path": "src/Studio.tsx",
+      "sha256": "b0867a9d6759f3b3c51a84ce1e10f7c72e28f4c33043b845bef535ab91eeb8fb",
+      "bytes": 20202
+    },
+    {
+      "path": "src/admin-prototype/AdminPrototype.tsx",
+      "sha256": "0f1f3d50f4d48802379d33616465345292a7beff94748563663e28a9d177c356",
+      "bytes": 41409
+    },
+    {
+      "path": "src/admin-prototype/CurrentAdmin.tsx",
+      "sha256": "2865a8a20bce2998040a2d7c30948f6509aef3c99e1606c80551977bcb9610a8",
+      "bytes": 8730
+    },
+    {
+      "path": "src/admin-prototype/ManagementWorkspace.tsx",
+      "sha256": "22a5eb6aa7a150900385d7ef2e9db0aaa6bc709d0e2d906438043fde7f8329e8",
+      "bytes": 12456
+    },
+    {
+      "path": "src/admin-prototype/PlacementEditor.tsx",
+      "sha256": "2b193a1cb8f465f89ddfa1a8735a13134414bcfa79922a3f4bf5a5e1454a1eed",
+      "bytes": 9732
+    },
+    {
+      "path": "src/admin-prototype/admin-prototype.css",
+      "sha256": "1dc5b47d99b96773d07ea4e6c6cfc73b91a28e48d5691deef7b146fbbeb6961d",
+      "bytes": 41191
+    },
+    {
+      "path": "src/admin-prototype/current-admin.css",
+      "sha256": "fb047add0fdf83dafeb8282d452076d97194c28859e61fd81ad3a959e6e946e3",
+      "bytes": 15523
+    },
+    {
+      "path": "src/admin-prototype/dealer-reference.json",
+      "sha256": "32cbfb6f2d92dee0878b0dfc121a60a5fae0afdec73759e41f653e41e2e682cf",
+      "bytes": 5389
+    },
+    {
+      "path": "src/admin-prototype/model.ts",
+      "sha256": "ea8480d913e7e99079fb44e8c2b64f1d083096b0ef32ff0550b5e25456ceaea3",
+      "bytes": 11468
+    },
+    {
+      "path": "src/admin-prototype/workspace-model.ts",
+      "sha256": "a0960bebc6c2aa2439afb4bbb685dffc97f07a7422bbd1651d178d62db52a84d",
+      "bytes": 2650
+    },
+    {
+      "path": "src/browser-lifecycle.ts",
+      "sha256": "4b2b9a6a82386889a425bcdf382cf59bb575f304f997117d73a5de18765e96f5",
+      "bytes": 1679
+    },
+    {
+      "path": "src/card-material-study-page.ts",
+      "sha256": "7999c888eebffd9dc040f9d655c396f10ee3858c4676fb5b56cc8dc56eccb21e",
+      "bytes": 8423
+    },
+    {
+      "path": "src/card-material-study.ts",
+      "sha256": "5e3eda345aaa7b24c83586dd4e1f0b4ec0fbdfe48af0604876bb7c6c9ee1b810",
+      "bytes": 24936
+    },
+    {
+      "path": "src/chip-material-study-page.ts",
+      "sha256": "720469f1bd1e00cd17ad2e6d6b8ddcc53863c542739729e72c9f6eb695663974",
+      "bytes": 7827
+    },
+    {
+      "path": "src/chip-material-study.ts",
+      "sha256": "3b46246e4f8cf6d8a404b1b2dbd6cacbc6b795325f5ae66f5cb92b89cf906e05",
+      "bytes": 18969
+    },
+    {
+      "path": "src/components/pamela-composition/PamelaCompositionReview.tsx",
+      "sha256": "3dc30d64918b50a07508f0a4294362768ecccf8069b5485d1f2ca42bba49eb00",
+      "bytes": 16167
+    },
+    {
+      "path": "src/components/pamela-composition/index.ts",
+      "sha256": "7744331ea327fc6b68d74d7c2951c7df45cd8b13fc6351804fb05fba107738e9",
+      "bytes": 344
+    },
+    {
+      "path": "src/components/pamela-composition/model.ts",
+      "sha256": "b22a6543f32895ea533d45a3c2597c5c4db5b516fbbb553ffa160bc7ad4fd3ed",
+      "bytes": 5191
+    },
+    {
+      "path": "src/components/pamela-composition/styles.ts",
+      "sha256": "b5a0b697a3245148d58c2eb6eb821008a2e12a98d12b7c9deb20d3a68d5bb84b",
+      "bytes": 9168
+    },
+    {
+      "path": "src/composition-review-page.ts",
+      "sha256": "e3cd9ad6c5b0080eaa7d7cd42d5ffc0dd50e5e47b51f078664b08354c5c3da9e",
+      "bytes": 3391
+    },
+    {
+      "path": "src/composition-review-react.tsx",
+      "sha256": "c5e8b4fdfd4a644c34b9dc6f7e2422fca04530a24b126eac2dedb16242f8bf4f",
+      "bytes": 494
+    },
+    {
+      "path": "src/dealer-map-client.ts",
+      "sha256": "d43a01ae0ec620e629f9aca11cdec611b2d790c0e63a04855ab7eddde5f1bc83",
+      "bytes": 18613
+    },
+    {
+      "path": "src/dealer-map-page.ts",
+      "sha256": "e01de3eedbbb19904207b3b4ca48f51097c0438c34716a0b62ba955abbdeb0d9",
+      "bytes": 9416
+    },
+    {
+      "path": "src/dealer-map.ts",
+      "sha256": "245bb70a3fe55358ee8b42f03cae2361d0a93e258e1c110d1baf6ce35aec8a94",
+      "bytes": 5387
+    },
+    {
+      "path": "src/dealer-relations.ts",
+      "sha256": "0dd6ff8c76470eb7d84ca256db1b0d569cc68ba9e30b10eeabd703562a5f2ea0",
+      "bytes": 2345
+    },
+    {
+      "path": "src/library.ts",
+      "sha256": "fdae96478fdb4dd596d041713952bd4dd46e7852f5606a3dba9faec2abbff44d",
+      "bytes": 7236
+    },
+    {
+      "path": "src/material-preview/AIReview.tsx",
+      "sha256": "735ce32ff5c48aa7bcc4f28a932e3cd92faaf2b00580371401260458dc5fc57f",
+      "bytes": 2352
+    },
+    {
+      "path": "src/material-preview/MaterialPreview.tsx",
+      "sha256": "d03b86de2dc647c01e60c01fcdcdaa3213601c3866ad15bd7863fb146e98ca51",
+      "bytes": 13745
+    },
+    {
+      "path": "src/material-preview/MaterialStage.tsx",
+      "sha256": "64eea806e939270a0f3beeac8271e91c2a868be4c590af80eebaea24656b0086",
+      "bytes": 4343
+    },
+    {
+      "path": "src/material-preview/Workbench.tsx",
+      "sha256": "f6defa9e472a492848d1e32880bf69d755219e604e2284768c4ed8234b8be499",
+      "bytes": 3967
+    },
+    {
+      "path": "src/material-preview/material-preview.css",
+      "sha256": "001d929fd28638bfb7dd5dd746e619f8f9f82cfdcaa3932fe34e19308d3b1459",
+      "bytes": 7962
+    },
+    {
+      "path": "src/material-preview/model.ts",
+      "sha256": "20167a791dbe94b9620df42365ddefefb1de14cf82b1717f3407cbd5a00b8848",
+      "bytes": 3712
+    },
+    {
+      "path": "src/material-preview/renderer.ts",
+      "sha256": "dd621afa497afb94fb3d283e230a38542e331bf86930e39e138cd291614f2a6a",
+      "bytes": 6068
+    },
+    {
+      "path": "src/material-review.ts",
+      "sha256": "6a2099067833517e9eb9244103beecc511637467aaeb659036a0d9135ecd8f1e",
+      "bytes": 5927
+    },
+    {
+      "path": "src/maud-lab/MaudLab.tsx",
+      "sha256": "b82790398819c8f2a31939974249eb5521cdfdb0dd7917803f8db96a88592f5f",
+      "bytes": 11600
+    },
+    {
+      "path": "src/maud-lab/config.ts",
+      "sha256": "07dd43d0e4c2db1eec04dc50d84bfaffe453c64908c9da31da64c9f157b7c90b",
+      "bytes": 2897
+    },
+    {
+      "path": "src/maud-lab/decoder.ts",
+      "sha256": "3405df0cda92fbbf1b0cfc07a35c1d7b8ff2c530a5589375e4b377a8a44cefe9",
+      "bytes": 2180
+    },
+    {
+      "path": "src/maud-lab/gpu.ts",
+      "sha256": "64a1422a1ed9e99fdd9059ee45ac6d614c3e19be10927ae8ce3b88dc3305865a",
+      "bytes": 9448
+    },
+    {
+      "path": "src/maud-lab/maud.css",
+      "sha256": "b687f036925b43a9cc1f1ba8b0b47c9e228725b0a6d87ea0dc91f4e644a25d73",
+      "bytes": 5140
+    },
+    {
+      "path": "src/maud-lab/player.ts",
+      "sha256": "db6a5c9494e296927999fb7d85c11b779b6567ec720961ba33bad9466637a004",
+      "bytes": 9251
+    },
+    {
+      "path": "src/maud-lab/pod.ts",
+      "sha256": "e33713ad275596690348e9a513df733b01597298deeaaa8ce198cc39353fd85f",
+      "bytes": 3213
+    },
+    {
+      "path": "src/maud-lab/service.ts",
+      "sha256": "fe2b85f18ffcfedd67287dc7f280ab3783ef57ce5060ed6b53dfa6b2fa6c7573",
+      "bytes": 8392
+    },
+    {
+      "path": "src/media.ts",
+      "sha256": "7847d6c29f01a71156b5f1a59e264e0a94e3da8991c320e8e427d5dfd814e522",
+      "bytes": 12984
+    },
+    {
+      "path": "src/pamela-background-layer.ts",
+      "sha256": "57c7d6d63803464179ae51c78647d01dd7442247d95b14a038419283d68fb28d",
+      "bytes": 13843
+    },
+    {
+      "path": "src/pamela-bank-card-surfaces.ts",
+      "sha256": "a72c9e2ab4f299be1aa81400bf7f5d7e7b46578a78d77f1b11cdea495f225466",
+      "bytes": 12908
+    },
+    {
+      "path": "src/pamela-bank-catalog.ts",
+      "sha256": "2655097ad8efb127f90724881ed5ad56fc5244f840d477889705255daa29e1b4",
+      "bytes": 4803
+    },
+    {
+      "path": "src/pamela-bank-mask-refinements.ts",
+      "sha256": "c9aba30e21e87ced5b70ddde0507fe848f8ae778eafe7acc6a70460511f5708f",
+      "bytes": 3821
+    },
+    {
+      "path": "src/pamela-bundle-download.ts",
+      "sha256": "d60379a785c3f731bbd1372aa4f82123a3ce631ad05647fc1d33785e07fd26e5",
+      "bytes": 2000
+    },
+    {
+      "path": "src/pamela-c2-bank-catalog.ts",
+      "sha256": "10ec57eeb85c2b656f223c808667c67ebe448af173149ca36c6ecc28bbd7be43",
+      "bytes": 1435
+    },
+    {
+      "path": "src/pamela-c2-card-surfaces.ts",
+      "sha256": "0da6bf21dc574f78b883a7ab76bd07b68f8078400112c7bb5df413f407021661",
+      "bytes": 6479
+    },
+    {
+      "path": "src/pamela-c2-motion-track.ts",
+      "sha256": "33d8cfc12026167cabd18b35722076263d01f20a34e679e575d3a0cf42070e39",
+      "bytes": 22281
+    },
+    {
+      "path": "src/pamela-c2-retarget-v2.ts",
+      "sha256": "b72e8034671010201bc932388a032d9e90e34643c52374b9c1939ba47452099d",
+      "bytes": 5731
+    },
+    {
+      "path": "src/pamela-c2-retarget.ts",
+      "sha256": "2cb34f95c1b8565542135b76193095a28144244a17165935641aae9f9ce83041",
+      "bytes": 5056
+    },
+    {
+      "path": "src/pamela-card-atlas.ts",
+      "sha256": "2ab3a302066524a6779a3d40cd69269db891e2076797a87b4447822717c46c1b",
+      "bytes": 3224
+    },
+    {
+      "path": "src/pamela-card-contact-page.ts",
+      "sha256": "3dfb27b70df969f619b465c3b2a42415c69e608920538f1d2bbba32ebf8facae",
+      "bytes": 6525
+    },
+    {
+      "path": "src/pamela-card-contact-v4.ts",
+      "sha256": "611f96b349580b01c45220a02888b9cda2c5927b9d4ea0c91b959bdb918e795f",
+      "bytes": 10865
+    },
+    {
+      "path": "src/pamela-card-contact-v5.ts",
+      "sha256": "ee0693e2512e7aa4e27fde1ff60fbc75c7e04a2c61894ba53077ee01b9ac3b1d",
+      "bytes": 13820
+    },
+    {
+      "path": "src/pamela-card-contact-v6.ts",
+      "sha256": "cd95b3c3ffef8b90e6e78943e92afea036c6eb5d797820e6728749249c9fdd1f",
+      "bytes": 14934
+    },
+    {
+      "path": "src/pamela-card-contact-v7.ts",
+      "sha256": "4e34a5f3bd26164b05b05d35c8bba4c1cd44f45c00f3bce96204bd4516d1df80",
+      "bytes": 15259
+    },
+    {
+      "path": "src/pamela-card-mesh-v7.ts",
+      "sha256": "29cef61831bf0aefe58fce89d11edb730be3e70926a50f6cdb6c30b8af04e918",
+      "bytes": 7385
+    },
+    {
+      "path": "src/pamela-card-mesh.ts",
+      "sha256": "ae12f14aa68f56c771759f813e4e52b7df819faf0e7cc92eb8bce4da36d7d264",
+      "bytes": 7936
+    },
+    {
+      "path": "src/pamela-card-motion-blur-v8.ts",
+      "sha256": "8840da7f5a61475b7c4336f2dda198c5f72cc59a9ea0305c4e281622e21e936d",
+      "bytes": 13356
+    },
+    {
+      "path": "src/pamela-card-scene-bank-client.tsx",
+      "sha256": "bfd34ebb1f5a35cf8bde4426bee4ce790427db367464c8c9c778e1209b35bb75",
+      "bytes": 1217
+    },
+    {
+      "path": "src/pamela-card-scene-bank.ts",
+      "sha256": "ad61144701cad2d61a4a491777775fe28af8800b808e0b0321c67e73da08d3f7",
+      "bytes": 4642
+    },
+    {
+      "path": "src/pamela-card-scene-calibration.ts",
+      "sha256": "4aae72301d6d41c1c92f3fe7a08b67cb9048de029079854a16bf4957c2a86612",
+      "bytes": 3279
+    },
+    {
+      "path": "src/pamela-card-shadow-v7.ts",
+      "sha256": "f5fe8e5adbb119476cabc404a8735eb9c8356ce7a417bb144e64f7cea8cc5862",
+      "bytes": 1581
+    },
+    {
+      "path": "src/pamela-card-shadow.ts",
+      "sha256": "898cc2260c9858eb21a753ac207a65ba5a393cceff1c6beed5eec3ef60deb7d5",
+      "bytes": 4092
+    },
+    {
+      "path": "src/pamela-card-surfaces.ts",
+      "sha256": "9ddefcaf48406f714ee9309fd64ae5307229136fea71891acef6d1825907a15b",
+      "bytes": 4444
+    },
+    {
+      "path": "src/pamela-card-v4-page.ts",
+      "sha256": "4a46bcf61a5f55c3c05c946f592c41c2b6012bf50ea058779c19d23442023ddd",
+      "bytes": 5625
+    },
+    {
+      "path": "src/pamela-combined-stage-client.tsx",
+      "sha256": "55be64a6c42cee3c80b8719c7caaeab3540041ead7ce2bfda218d22cd2172ce7",
+      "bytes": 23906
+    },
+    {
+      "path": "src/pamela-contact-calibration.ts",
+      "sha256": "fd06e3fed61d425c22733fa300a14f88ad111b604b1efd02efef8f0dc08d6d46",
+      "bytes": 7626
+    },
+    {
+      "path": "src/pamela-contact-shadow.ts",
+      "sha256": "226d45b226fe277a5a9ce4fab5dea3a0119360f8c2ed38f9ceda7d99ed9af464",
+      "bytes": 8351
+    },
+    {
+      "path": "src/pamela-continuous-idle-page.ts",
+      "sha256": "949982deb55b1b68950e12f172f96cc2fd5f33fb6638f04604ef8617c39764de",
+      "bytes": 11480
+    },
+    {
+      "path": "src/pamela-edge-card-track.ts",
+      "sha256": "abdab6e3e9026e5bdf56fba63d51ef36038e9de9930be70489cffc839d71de58",
+      "bytes": 8596
+    },
+    {
+      "path": "src/pamela-finish-profile.ts",
+      "sha256": "2b78aa7ee1d16745c99ee5b6b4110b3873c56713b4b5db6bdcea626f093d6624",
+      "bytes": 3640
+    },
+    {
+      "path": "src/pamela-finish-review-page.ts",
+      "sha256": "6d853ecab724ca61bca2dedd29166afc328cf896e7c79db1220c0d492919e981",
+      "bytes": 10187
+    },
+    {
+      "path": "src/pamela-frozen-material-track.ts",
+      "sha256": "97c52b27ff50df47b31bd9d16ece45eca22eaf449057fa2dfa277dc65f19c0ca",
+      "bytes": 6060
+    },
+    {
+      "path": "src/pamela-idle-candidates-client.tsx",
+      "sha256": "4be36d78e5c7d0ba7125d4a0efecfe2e20aafe30d2c6a029a99c27808fe0e42c",
+      "bytes": 3648
+    },
+    {
+      "path": "src/pamela-idle-chain-plan.ts",
+      "sha256": "c80d708ac454df6b086ccf5e9e0a6942e330f527cde857e304058eb6824c7754",
+      "bytes": 3038
+    },
+    {
+      "path": "src/pamela-idle-chain-review-page.tsx",
+      "sha256": "5bcda5787bc981ee1a816c4566c1d254c1c71dda15585a2e1b15b1ffd2976ae9",
+      "bytes": 3403
+    },
+    {
+      "path": "src/pamela-idle-exit-review-page.tsx",
+      "sha256": "303b42140019756060f8288060c0ecc7a386e9bf1993c45c98a1f41ff0824563",
+      "bytes": 2677
+    },
+    {
+      "path": "src/pamela-idle-return-overlap-review-page.tsx",
+      "sha256": "7429b089b40ce5f26a5fe7d0352b697b53acbd5ab8c82b456f4df508fc03d672",
+      "bytes": 2831
+    },
+    {
+      "path": "src/pamela-idle-review-client.ts",
+      "sha256": "9580a82cf8b7fd293e9a461d9a526ef6fa77ad8dcf2b7ec4ac700404d6680be6",
+      "bytes": 3802
+    },
+    {
+      "path": "src/pamela-idle-review-page.ts",
+      "sha256": "18e9ec5d68cab2cb1be5752a87f2bebbeb69853355ebfd4ce3c97828911714e3",
+      "bytes": 7322
+    },
+    {
+      "path": "src/pamela-idle-shoe-card.ts",
+      "sha256": "f5e4ad732cfb97e8d0aa767a981771a44e58c4c220fd23d02a9dd87ad5b27339",
+      "bytes": 9382
+    },
+    {
+      "path": "src/pamela-idle-source-projection.ts",
+      "sha256": "8f9668bc1118638b84e8f7f53bd026317abdd2a71ae4a4ace3b52bb5ab441d2e",
+      "bytes": 3830
+    },
+    {
+      "path": "src/pamela-key-paper.ts",
+      "sha256": "a12c50961d77f1c748b558d5d915c29c9d444278ce15063b1c23f96afeaa25ff",
+      "bytes": 2677
+    },
+    {
+      "path": "src/pamela-key.ts",
+      "sha256": "38a682369e2006da29101c7b9f023b36c8a60f4b17257fccbe49044d26965e8d",
+      "bytes": 3237
+    },
+    {
+      "path": "src/pamela-mask-refinement-review-page.tsx",
+      "sha256": "ffcf6a844c2518d8eb31a4be958dc7d98ca842915f2e9f128562245a81688a3d",
+      "bytes": 2325
+    },
+    {
+      "path": "src/pamela-material-progress-refresh.tsx",
+      "sha256": "d740e11288495f6232ab12f42c547355dd44ef9e82c6fc8bc72b6f5de189de06",
+      "bytes": 401
+    },
+    {
+      "path": "src/pamela-middle-card-track.ts",
+      "sha256": "d3a32d26d959b71dd87176de82fd57da733d2235027797d220f10521c293f209",
+      "bytes": 39934
+    },
+    {
+      "path": "src/pamela-modular-stage-client.tsx",
+      "sha256": "3755f0f1329facc5e6bbe55b86985b436e018a8ef3618d326ec6b2692ee759cd",
+      "bytes": 36886
+    },
+    {
+      "path": "src/pamela-motion-contract.ts",
+      "sha256": "75f4b518d9245afd7b6b1b61b96ac79507a85d4150af3a7d6467dcb818b79988",
+      "bytes": 19791
+    },
+    {
+      "path": "src/pamela-motion-lab-client.tsx",
+      "sha256": "bbba648b491f86d738bebb472a47e5a3aedb939ef62602589edde0c574ccfb16",
+      "bytes": 6196
+    },
+    {
+      "path": "src/pamela-neutral-card-track.ts",
+      "sha256": "e849038f46f867fe2f540c9cb7cd455a0ebfaa170a689d76f1fa2457ece3de2b",
+      "bytes": 12587
+    },
+    {
+      "path": "src/pamela-p1-side-calibration.ts",
+      "sha256": "a8604fe8fd5fa2242cabbdc928b725c7392e009595175083ef920803c232929d",
+      "bytes": 4317
+    },
+    {
+      "path": "src/pamela-p2-card-calibration.ts",
+      "sha256": "1e13a3b2953a2447d57d8b47fae9141aad0e3c7be5440e5dda739ed37bb96746",
+      "bytes": 6246
+    },
+    {
+      "path": "src/pamela-p3-card-calibration.ts",
+      "sha256": "ded01d9c36c6d573944b01e15e6ef4fdcbda9c8a2c63afb74411d5507805e648",
+      "bytes": 6147
+    },
+    {
+      "path": "src/pamela-p4-card-calibration.ts",
+      "sha256": "558066eb08fb5404fed2fcc28a26365b5c907631515e2df696088a45dd3e2726",
+      "bytes": 2726
+    },
+    {
+      "path": "src/pamela-p5-card-calibration.ts",
+      "sha256": "7e8403922bc552174cbb197fee2a8023104853709e4c3b6633bcba39b4286e23",
+      "bytes": 5887
+    },
+    {
+      "path": "src/pamela-paper-coverage.ts",
+      "sha256": "cc670527de2986cf5a3c64776d08b3bea699cf37d1fb3fce0887cf14f83a3597",
+      "bytes": 1598
+    },
+    {
+      "path": "src/pamela-paper-material.ts",
+      "sha256": "9794b7953638fb48410aef0aeea9fd3e1e6eb0cb86cedda365a6586ec3be5a60",
+      "bytes": 3160
+    },
+    {
+      "path": "src/pamela-proof-card-designs.ts",
+      "sha256": "ccb29b7e615bc3c84056455b5fa564c4a8c08d0dd0836396d3b95d7655aeb73f",
+      "bytes": 1101
+    },
+    {
+      "path": "src/pamela-proof-client.tsx",
+      "sha256": "e88b3e19d54f9875240fdb97fa13fe984a2ab7bd18a5abbeae6cfe78415bfafd",
+      "bytes": 19483
+    },
+    {
+      "path": "src/pamela-redo-overlap.ts",
+      "sha256": "34c5e28350871ba84b62653189d7dc761f8c45ec8efc19249241cdcd2a15c15c",
+      "bytes": 2314
+    },
+    {
+      "path": "src/pamela-refined-bank-card-surfaces.ts",
+      "sha256": "213258817da106c552b5d1401354ac7b53985bdb0a07f1a57fade88d6b212755",
+      "bytes": 2335
+    },
+    {
+      "path": "src/pamela-scene-renderer.ts",
+      "sha256": "cd87f80cf314821356e2225f00e3ac2f1a7887f4b84e49ba637b36bcfd70321c",
+      "bytes": 9160
+    },
+    {
+      "path": "src/pamela-seat1-matte-study.ts",
+      "sha256": "9a56eb93cc66fffc764791960fb9bd9b6408660747c3618bae93f17c170410b5",
+      "bytes": 16907
+    },
+    {
+      "path": "src/pamela-seat1-symmetric-card-track.ts",
+      "sha256": "e77051f1bf4776ea84eb44a7908707e32f77dbce1a265cda76d13186ede29ec1",
+      "bytes": 14459
+    },
+    {
+      "path": "src/pamela-seat1-two-card.ts",
+      "sha256": "7d127d1780fd8d5090a04f7b5a8e0446d3f6c7dfd6ec70e491ac1eb62a1c43e0",
+      "bytes": 2788
+    },
+    {
+      "path": "src/pamela-seat7-card-pair.ts",
+      "sha256": "ab58e80d5cea5ba9dd5da95368601a15857cfee19dbfbfcb9e238a8c7ea32f20",
+      "bytes": 3220
+    },
+    {
+      "path": "src/pamela-seat7-card-track.ts",
+      "sha256": "d4dca67ade7cfc8ea6d6286b24b7b5961cc700bc4e3ad753f06334156ef55f9b",
+      "bytes": 10511
+    },
+    {
+      "path": "src/pamela-sequence-review-client.tsx",
+      "sha256": "1a3dddc09bcf2e11430e87a20294d37d28711e28c68b57c57f5e7c423ab7bdf0",
+      "bytes": 6056
+    },
+    {
+      "path": "src/pamela-shoe-bank-profile.ts",
+      "sha256": "a9eaeade671281a52b83531e23651e403079f66d7a7f6b4dd5a7a9d46c8cc8a6",
+      "bytes": 9523
+    },
+    {
+      "path": "src/pamela-shoe-bank-shader.ts",
+      "sha256": "7e87291165659e22281b17ed6377fbba4e212e983cfda409ef8902fa3f2e25bc",
+      "bytes": 6335
+    },
+    {
+      "path": "src/pamela-shoe-geometry.ts",
+      "sha256": "cdae5bd25fc9a419f086fbc47dd551f2187c170069eba07416815274671b96fc",
+      "bytes": 9846
+    },
+    {
+      "path": "src/pamela-shoe-gpu-review-client.tsx",
+      "sha256": "e933e10e4f1950c641c9338899123ba16150749a15440427bfb37c3ed5aa1573",
+      "bytes": 17562
+    },
+    {
+      "path": "src/pamela-shoe-layer.ts",
+      "sha256": "39304da2500cb57d4fe5836cd9f4a4a9044e65d07c4c518e0af94c2211a2ebfd",
+      "bytes": 8399
+    },
+    {
+      "path": "src/pamela-shoe-p2-profile.ts",
+      "sha256": "edc460f8a2d9a091f776a76bcd75dbb3896bcf48d738ed3ccdb3b929f756162c",
+      "bytes": 6411
+    },
+    {
+      "path": "src/pamela-stage-client.tsx",
+      "sha256": "36e212d154740aff1fa59281fa4fc0fd3286cd0b6aca1b374acf566f44bd3230",
+      "bytes": 36287
+    },
+    {
+      "path": "src/pamela-stage-projection.ts",
+      "sha256": "8d3fd42f995366f144ff02785e8e4bb7b1404b255434bdd19e1fdc9ac0922df0",
+      "bytes": 2462
+    },
+    {
+      "path": "src/pamela-table-layer.ts",
+      "sha256": "1b2b1fb2aff9e970c77735deb72a4593d4dd269650fb24b253a23031906f33a7",
+      "bytes": 14741
+    },
+    {
+      "path": "src/pamela-temporal-join.ts",
+      "sha256": "bc2306e1c632af1e67ae3c91f1ddf8242a721b0c4e7c1ccfbbf5be62bfeea94a",
+      "bytes": 2042
+    },
+    {
+      "path": "src/pamela-two-sided-bank-page.tsx",
+      "sha256": "76e0732648ed2724620d9c72b3d0814d21f439154290fa45bf4d8396a7a0b3fb",
+      "bytes": 5036
+    },
+    {
+      "path": "src/pamela-two-sided-card.ts",
+      "sha256": "28c70188e9a7acf9c5942c7ff43096b3ad6fe24bdd03e40ab12b337baee7719f",
+      "bytes": 5173
+    },
+    {
+      "path": "src/pamela-two-sided-review-client.tsx",
+      "sha256": "7926e793523da4fc3f02d46a1555dd7e7e9556a4133dbc2582074dc7c1c05f9e",
+      "bytes": 5505
+    },
+    {
+      "path": "src/pipeline-overview-page.ts",
+      "sha256": "f1a8d631a297502089b7398976f9fff02dc19f447b5b25484b063b0f6ee3d653",
+      "bytes": 12665
+    },
+    {
+      "path": "src/preview-cache.ts",
+      "sha256": "494f5984ccec4bed99a36475ab0763522f71f7e2f730cd9525f0296445b7dfce",
+      "bytes": 6563
+    },
+    {
+      "path": "src/public-review-client.ts",
+      "sha256": "03a96c5375e835a2e39e563a3cbd45defd5479ee69d2ab001ee02da0a8d783a9",
+      "bytes": 9654
+    },
+    {
+      "path": "src/public-review-round.ts",
+      "sha256": "8a63ba443f8a8adcb87589ce6060bf719788f6e731369a649b390ff1d40cc6f6",
+      "bytes": 9244
+    },
+    {
+      "path": "src/public-review-ui.ts",
+      "sha256": "4a3728d7d78ced67febaa2bd3024baa821a5cf63d1dc0fa2463b8c58ae337615",
+      "bytes": 4381
+    },
+    {
+      "path": "src/review-context.ts",
+      "sha256": "959067a42ea9f9f0995bfc9862edd287e6116f0361eca9c52c30458671f2cbaf",
+      "bytes": 23064
+    },
+    {
+      "path": "src/review-hub-controls.ts",
+      "sha256": "972bfd95d5126c778d144065c512637c9e64e0dcf47b4cff786a92b0f7bf9076",
+      "bytes": 2686
+    },
+    {
+      "path": "src/review-version.ts",
+      "sha256": "a1ebae28daf2a11c6f8f02997c9a282c96fe45293cea4deba48e2d27976bbbd8",
+      "bytes": 908
+    },
+    {
+      "path": "src/sequence-guide.ts",
+      "sha256": "beb51db05af12a665fe0f7198f16e55f408849f2fa134e4a416934ce38526ffc",
+      "bytes": 5221
+    },
+    {
+      "path": "src/server.ts",
+      "sha256": "fc260ca904171af2bca85ada5ff34713c5fb289e2addab82a13369c191865775",
+      "bytes": 13681
+    },
+    {
+      "path": "src/source-tracks.ts",
+      "sha256": "e5926267dcffc6d83255c88ef3eb40b5c475645c4c4be4e5b37c602e692c8b24",
+      "bytes": 1227
+    },
+    {
+      "path": "src/studio-client.ts",
+      "sha256": "ba35ea66722ba6c60f34f274ed62df77d328443d2cd1ed802dde73c68fdf319c",
+      "bytes": 50695
+    },
+    {
+      "path": "src/studio-workbench-data.ts",
+      "sha256": "3be366a6c97433d9afe2a7c54ed6590ff7ba94af54d5ec0fdc3ae198ea7a3464",
+      "bytes": 4812
+    },
+    {
+      "path": "src/studio-workbench-page.ts",
+      "sha256": "c222aa2fa77b0232864031d43ee463bbd15ed66a49e4974fcc98cd5e625114ae",
+      "bytes": 944
+    },
+    {
+      "path": "src/studio-workbench-react.tsx",
+      "sha256": "976b645f26d6b8cb66312afdf82e9e031c42b707fdff4541f0bd9ef5d692958f",
+      "bytes": 510
+    },
+    {
+      "path": "src/studio-workbench/Icons.tsx",
+      "sha256": "d81fe6ef3370c23b3eacb1d9e9aedf281a3727f1be2000339ef45e56902697c3",
+      "bytes": 1542
+    },
+    {
+      "path": "src/studio-workbench/StudioWorkbench.tsx",
+      "sha256": "ce4e757155135a5ed9eefc37556e0d6eb760484ad95fe312dda37f4c39b935ac",
+      "bytes": 21889
+    },
+    {
+      "path": "src/studio-workbench/model.ts",
+      "sha256": "724de69dca7026a94979ad25c81a2c30c4932d1c74f46a4abc56da67ee2dc0d1",
+      "bytes": 5132
+    },
+    {
+      "path": "src/studio-workbench/styles.ts",
+      "sha256": "c4f42b488aebbe1bea1c534fa0ccc6a223d55f1860a828b5e8c72299c835e51c",
+      "bytes": 14251
+    },
+    {
+      "path": "src/studio.css",
+      "sha256": "b24aec75ad3a9ca34036808fab016acb7548a4a23a9861e6af987f846c882587",
+      "bytes": 28134
+    },
+    {
+      "path": "src/terminology/ClipAuditView.tsx",
+      "sha256": "e9e6c9cfef697b3d360412536a8222d78592b947f500a1c186241cd0cc00c087",
+      "bytes": 3972
+    },
+    {
+      "path": "src/terminology/ProductionProgress.tsx",
+      "sha256": "eee4a004d689fb6953c6d87f0c90205abbf3af55175aa31534d848fd2b05369e",
+      "bytes": 2020
+    },
+    {
+      "path": "src/terminology/TerminologyOverlay.tsx",
+      "sha256": "27206acc9c8449bcedcc2d0b1d0f38d7dd8aef5dd449aafb0b70fc515c68cd99",
+      "bytes": 14865
+    },
+    {
+      "path": "src/terminology/clip-audit.ts",
+      "sha256": "a2d778f6910545638c0d82dc3b79f9fa4d7019604bc06dad2eeb256067004aa8",
+      "bytes": 2704
+    },
+    {
+      "path": "src/terminology/terminology.css",
+      "sha256": "211a077e327616a4e2eeb738733dbfe4db2decc1bb7198d96f94ee760b996ab6",
+      "bytes": 14577
+    },
+    {
+      "path": "templates/delivery.example.json",
+      "sha256": "d1a1f2067e6816c1fe9465901435782e70477873c4f1d5d5816b43c1fb5028dd",
+      "bytes": 877
+    },
+    {
+      "path": "test/admin-prototype.test.ts",
+      "sha256": "6efe22fbd521e9187ec4e1fd62df87bc5b99d70aa8dfa34c9b1056f96d865c60",
+      "bytes": 6937
+    },
+    {
+      "path": "test/admin-workspace.test.ts",
+      "sha256": "ef1056a90845ba2922754afb843e7c602db2a747d36a9892ab3a4a00fdf6f081",
+      "bytes": 3500
+    },
+    {
+      "path": "test/browser-lifecycle.test.ts",
+      "sha256": "2aa2e2ae41f091604499977b0f1c4035be6421d66ced0eb62b10ce7b92412d5c",
+      "bytes": 2405
+    },
+    {
+      "path": "test/clip-audit.test.ts",
+      "sha256": "ad917feb40003d0e6d8f9df6d54339d3bbadd13907c637b801bcf2a441afb5b8",
+      "bytes": 1668
+    },
+    {
+      "path": "test/dealer-map.test.ts",
+      "sha256": "7700477faff6208d5eeb262dce30e4fcf97f0701addfce4ddbecc920afe2cd02",
+      "bytes": 2953
+    },
+    {
+      "path": "test/material-preview.test.ts",
+      "sha256": "5a93a3582d9308b9ecd7564d07cf3c83f9785b24cc92131ecf6070b43e21d995",
+      "bytes": 4766
+    },
+    {
+      "path": "test/material-review.test.ts",
+      "sha256": "d058587916db68162844a6364aa939067999bac88a39401fb5d480bf7129f83e",
+      "bytes": 3109
+    },
+    {
+      "path": "test/maud-lab.test.ts",
+      "sha256": "33c814b9edfb57eae042085b7076d2bf96373a7ffa135a039b44064b1b8a2c4d",
+      "bytes": 7105
+    },
+    {
+      "path": "test/pamela-bank-card-surfaces.test.ts",
+      "sha256": "93592f2b491acb76c2ad40c7e438e40ade2401e65c9969733aba4baa73108794",
+      "bytes": 2097
+    },
+    {
+      "path": "test/pamela-bank-mask-refinements.test.ts",
+      "sha256": "4eb982415b72592677fdf8db138ea000cf5ef5188808c6227283d6dd37853de9",
+      "bytes": 2860
+    },
+    {
+      "path": "test/pamela-bundle-download.test.ts",
+      "sha256": "e5e3f76f5b0ddfcef0fd7120ac50d824e34174b6f9e7285c840e05b5dd161846",
+      "bytes": 2946
+    },
+    {
+      "path": "test/pamela-card-atlas.test.ts",
+      "sha256": "f4bc01849d1f5cd31914b0932c8c4ae70799b3924ef4d1cbfd46bd6c21118af6",
+      "bytes": 1251
+    },
+    {
+      "path": "test/pamela-card-mesh-v7.test.ts",
+      "sha256": "bea33939183adf0fe6e5f86e087e7b8500c443a5dabafe66e1e7fe1e61e9e9ef",
+      "bytes": 1904
+    },
+    {
+      "path": "test/pamela-card-mesh.test.ts",
+      "sha256": "915931f3d4cbdb7d428b89ed2e216b7ac4ec1b4f197ef6fa24ee5d040168536e",
+      "bytes": 2085
+    },
+    {
+      "path": "test/pamela-card-scene-calibration.test.ts",
+      "sha256": "57883adb23aaa9d37465c140248c7754482337c158e76301d4d3ecc996e88106",
+      "bytes": 2623
+    },
+    {
+      "path": "test/pamela-idle-chain-plan.test.ts",
+      "sha256": "7b94e5f54053223f2816f3a9777374eb8e0770ffa9bb48aeda9bf2442bfbe0a4",
+      "bytes": 2905
+    },
+    {
+      "path": "test/pamela-idle-shoe-card.test.ts",
+      "sha256": "4e9e595ece44f535a537ee0d282ff3bb8af7cb06acbf6b9d63515ea07662a7d0",
+      "bytes": 4853
+    },
+    {
+      "path": "test/pamela-key-paper.test.ts",
+      "sha256": "2b3b837bbfa51e5dd1eaeeca79eb1bc23124939c17127e48225be709e17d9e67",
+      "bytes": 3042
+    },
+    {
+      "path": "test/pamela-motion-contract.test.ts",
+      "sha256": "8ae5fde6c3f03f5fa8fa0e89fc6527b3ad077a19b71ef004db71bed470c1a57f",
+      "bytes": 10977
+    },
+    {
+      "path": "test/pamela-paper-material.test.ts",
+      "sha256": "a347e115ce90bab55d287e171b47fb696db798a8e147e1a13e552fc46f1666b6",
+      "bytes": 1767
+    },
+    {
+      "path": "test/pamela-refined-bank-card-surfaces.test.ts",
+      "sha256": "a62e1e0145a9325e1ef50e59b5b18fb1c6d974f1804336c63953f6ee9b523765",
+      "bytes": 4105
+    },
+    {
+      "path": "test/pamela-shoe-bank-shader.test.ts",
+      "sha256": "e9064061098d8b5a812af7f858788de1713de7d00f29743f6756b275b8bfe9ee",
+      "bytes": 10947
+    },
+    {
+      "path": "test/pamela-shoe-p2-profile.test.ts",
+      "sha256": "4e352b14b509ea0bfb13fd6bac36b66276508c71c372d24016796bfea481c431",
+      "bytes": 2651
+    },
+    {
+      "path": "test/pamela-stage-projection.test.ts",
+      "sha256": "ce2df7048b9fa6c3264b867606a5007859d204336cda45e005ee868ff11281b1",
+      "bytes": 1718
+    },
+    {
+      "path": "test/pamela-temporal-join.test.ts",
+      "sha256": "9dd25db146550977af1b1d88294f7ee581e8d2fec43c93cf977ff1c92323f551",
+      "bytes": 1712
+    },
+    {
+      "path": "test/pamela-two-sided-card.test.ts",
+      "sha256": "7a3d2e9632f2f066869c9e905ed93f04de713afc18e5340cd189f8ff12f77691",
+      "bytes": 3562
+    },
+    {
+      "path": "test/preview-cache.test.ts",
+      "sha256": "3de83a2f01dc4219a127df7fc648a4990aa8494827c10ed8554914ce4eaf7b97",
+      "bytes": 4818
+    },
+    {
+      "path": "test/server.test.ts",
+      "sha256": "8bbaa961f8d1dfea22da22d61552bc5bc871a52827d6613258a46f9444f4d2c9",
+      "bytes": 7226
+    },
+    {
+      "path": "tools/build-dealer-map.ts",
+      "sha256": "16948c6282aba4e72961b61dee4bae8d96c8ed5eb2a32c1fe45ef3af3b6d9091",
+      "bytes": 8776
+    },
+    {
+      "path": "tools/curate-finish-round.ts",
+      "sha256": "23ae709afbb1a63c844ff4f16fb0c25c7421a80026cb37a211901e15077bbfaf",
+      "bytes": 11266
+    },
+    {
+      "path": "tools/curate-idle-round.ts",
+      "sha256": "1ba708eaf67b7f16278a691f46a86c23fbc7ca140bf1ae73b667aec9ef7cac3e",
+      "bytes": 6525
+    },
+    {
+      "path": "tools/curate-sequence-round.ts",
+      "sha256": "b07da48a228c6a23a71f2d640f48a285fa635413c650fa793e268238b4e49790",
+      "bytes": 9570
+    },
+    {
+      "path": "tools/pamela-anchor-return-qa.ts",
+      "sha256": "bfdf7729ac5376a60e461e7ca241b6c1fd47bf4c3230a967d09dce438f8f7968",
+      "bytes": 13314
+    },
+    {
+      "path": "tools/pamela-authored-flip-probe.ts",
+      "sha256": "082fed629bba43e343e2b61c739a528d685990271dd5b9bf89ed09eeb7e0bf2f",
+      "bytes": 9419
+    },
+    {
+      "path": "tools/pamela-background-proof.ts",
+      "sha256": "9cf7ef5bf8c9d6913f1568a172cba4ed6391bf9fd8b51a7c4568e125450e4f51",
+      "bytes": 8486
+    },
+    {
+      "path": "tools/pamela-bank-mask-refinement-proof.ts",
+      "sha256": "3da612f11e025c1c86ef4771a559ed5eb01218701eede3886085ad7649e1af0e",
+      "bytes": 10822
+    },
+    {
+      "path": "tools/pamela-bank-sequence.ts",
+      "sha256": "753675d649fc4527a4471ccd44a687b3d8bca3a448387da498b638cd2fc6fc38",
+      "bytes": 12790
+    },
+    {
+      "path": "tools/pamela-bank-shoe-public-review.ts",
+      "sha256": "fdcd4bb4c71d4df59eedbcf1bccb07be932c38028f989ebfe0208c4b21756123",
+      "bytes": 20708
+    },
+    {
+      "path": "tools/pamela-bank-trim.ts",
+      "sha256": "8dd36b911a33f20e5bbe414ab3d7e07be79eff16376a093e1ccfb218d51d22e9",
+      "bytes": 30782
+    },
+    {
+      "path": "tools/pamela-black-paper-probe.ts",
+      "sha256": "2c9d35e5991712f5602b956e3507c57daecb56a040acc5fd9448795ba3f53260",
+      "bytes": 4549
+    },
+    {
+      "path": "tools/pamela-blur-public-review.ts",
+      "sha256": "5de2d11f319a70c05140da752d5733af4959aaedd61e7361d650915710d73ae6",
+      "bytes": 7953
+    },
+    {
+      "path": "tools/pamela-c2-anchor.ts",
+      "sha256": "9d7864776b576b90c86cc1c6aec2928038a1e2035b78dc6354dcb207489642c1",
+      "bytes": 14723
+    },
+    {
+      "path": "tools/pamela-c2-bank-sequence.ts",
+      "sha256": "14a836e836b2c7e3fc47b8aad49638102447bb1cb532c91a7078453e0e8d32db",
+      "bytes": 8685
+    },
+    {
+      "path": "tools/pamela-c2-card-surfaces.ts",
+      "sha256": "7e4dd7fc51b80d94ad03ce89d303a75d470d30e43ce23a319a9c59ee78aa86f2",
+      "bytes": 23664
+    },
+    {
+      "path": "tools/pamela-c2-edge-shift-proof.ts",
+      "sha256": "4012116ab747b21e1424cf1f6d1e9a893546ff31534f009eeee696c309266e92",
+      "bytes": 8169
+    },
+    {
+      "path": "tools/pamela-c2-mask.ts",
+      "sha256": "a3e05b951420dad9be26fc7fd63cbae816087ef2375c31a609316acaef32b385",
+      "bytes": 14356
+    },
+    {
+      "path": "tools/pamela-c2-motion-track.ts",
+      "sha256": "e87d86f676f88842a060cd26233efb0de457acb4ce1c918f87f7ea0a8fddc5ea",
+      "bytes": 30165
+    },
+    {
+      "path": "tools/pamela-c2-retarget.ts",
+      "sha256": "874ff470b3105cdafbe573b89d1f4e2d7700afa33c18254b93372824cf3fbe9a",
+      "bytes": 11449
+    },
+    {
+      "path": "tools/pamela-c2-sequence.ts",
+      "sha256": "1f388fcb187ee8e8dd7d3b6e6dafd764ec0324245ca7eb5616ad067269d3a2f4",
+      "bytes": 4985
+    },
+    {
+      "path": "tools/pamela-card-atlas-build.ts",
+      "sha256": "9bb987ade50c26014f7447bffb72b1f01c6d693391708d65f73683b9ffa42113",
+      "bytes": 5850
+    },
+    {
+      "path": "tools/pamela-card-contact-v4.ts",
+      "sha256": "a4c71ef7f3d4bc6678b922bc5c964b119b97aa52a03d90854081b2e952e2c0f3",
+      "bytes": 13032
+    },
+    {
+      "path": "tools/pamela-card-geometry.ts",
+      "sha256": "9aa8669add953b1fe1900ad276ca59bd39650dfc61d38b1c8f5a3178b4f12a04",
+      "bytes": 19830
+    },
+    {
+      "path": "tools/pamela-card-motion-blur-v8.ts",
+      "sha256": "e24e0375deb1abdcb82a524b8652d8b2e9db61aa26fb7beff2da2675948eaf38",
+      "bytes": 8132
+    },
+    {
+      "path": "tools/pamela-card-scene-bank-public-review.ts",
+      "sha256": "4b6321971491fdc0b4086851e6009b5d70fb357a261bb52bdc93b087b17d2b25",
+      "bytes": 14405
+    },
+    {
+      "path": "tools/pamela-card-side-proof.ts",
+      "sha256": "a62bc0c7a7086a23c0498fde01e95b75584dc6c7a5a61ae015ffacc0ff688552",
+      "bytes": 15745
+    },
+    {
+      "path": "tools/pamela-central-composite.ts",
+      "sha256": "0cdcbf61db16cda60cb30f55cdd15f2eb68d81eb826d3d6c5df8502df68d300d",
+      "bytes": 16427
+    },
+    {
+      "path": "tools/pamela-central-track.ts",
+      "sha256": "a2d8d951ddbb9ed60f6287ba98fba3ab492c4d9b434cea03ccaf732cc7f9012b",
+      "bytes": 19161
+    },
+    {
+      "path": "tools/pamela-combined-preview-verify.ts",
+      "sha256": "f0df5124a5e4f9891c59bba6bc472c2914bef936df3a8671c8cdd3fcf86e9e4c",
+      "bytes": 3459
+    },
+    {
+      "path": "tools/pamela-combined-public-review.ts",
+      "sha256": "d8a135acde163e5675cf81b9f6d0ce4a22ba6e115628098481c8f1fd420c5ff9",
+      "bytes": 12720
+    },
+    {
+      "path": "tools/pamela-composite-pilot.ts",
+      "sha256": "f0d05309453a0ca3f74fbd3d850f79249d04f25704ac39eff63d98266740b1b6",
+      "bytes": 3591
+    },
+    {
+      "path": "tools/pamela-composite-review.ts",
+      "sha256": "e0a414cb7ee8018b12fcb081b94ddd076c70a450fde2dc17cf63c7f2d439b9bb",
+      "bytes": 13820
+    },
+    {
+      "path": "tools/pamela-composite-ui-review.ts",
+      "sha256": "6b8eca24e0d1c66dc9cafcf7115f3fab00911e2706eb794b0c6288b3ec6f305e",
+      "bytes": 4080
+    },
+    {
+      "path": "tools/pamela-composite-v2-review.ts",
+      "sha256": "7023d372936a7f781984ba0e7e2c3544f69291f11adff584f59f975e964a42f3",
+      "bytes": 10342
+    },
+    {
+      "path": "tools/pamela-contact-calibration-proof.ts",
+      "sha256": "30a203cf13afbed7fbdbad94c6144996fc656716e19e17952b435cc5c5b0474e",
+      "bytes": 9936
+    },
+    {
+      "path": "tools/pamela-contact-fit.ts",
+      "sha256": "3270d68f56a9a7b2a258e9fbd397009a451000954d378dcbd3eb69bf7a01c1b2",
+      "bytes": 7680
+    },
+    {
+      "path": "tools/pamela-contact-shadow.ts",
+      "sha256": "aca14eaee6fb8070fac9928262ba09028db1da95969ee5f4d772c8db1469e380",
+      "bytes": 5128
+    },
+    {
+      "path": "tools/pamela-continuous-idle-composite.ts",
+      "sha256": "a34f01f6d09f5b30b7b23e946e1ebaf39bd7f3e2e4699beae4eea94a9fc43f33",
+      "bytes": 7399
+    },
+    {
+      "path": "tools/pamela-continuous-idle-cuts.ts",
+      "sha256": "9b5b8156c39170ab88bbdf44e3e8e6e7a4caaba5455a69573006473df63b9c4d",
+      "bytes": 3609
+    },
+    {
+      "path": "tools/pamela-continuous-idle-pilot.ts",
+      "sha256": "fd9733b25802a47dde58150b6de80e43da55b87ba4c23f7a19fffcdd0561a339",
+      "bytes": 19526
+    },
+    {
+      "path": "tools/pamela-deal-pilot.ts",
+      "sha256": "a0751f370deea7f6de114aed178cf790d61ff92c2812de3eb4d0cd74b019a0f7",
+      "bytes": 8247
+    },
+    {
+      "path": "tools/pamela-edge-card-track.ts",
+      "sha256": "ffc3cbb2c96debc999617e558bf8876264a61db9af9531f66d8e90d95bfbf681",
+      "bytes": 10524
+    },
+    {
+      "path": "tools/pamela-edge-source-guides.ts",
+      "sha256": "844a45f0827ffb9bfb63ed38bd63c036e3b32b593dc15b094ae96b2526d44dc3",
+      "bytes": 2273
+    },
+    {
+      "path": "tools/pamela-finish-study.ts",
+      "sha256": "e985646d94833898ca17e1a4f51ec1ba59bdc1d9a22dac6053f5dfb859c32f15",
+      "bytes": 10509
+    },
+    {
+      "path": "tools/pamela-flip-survey.ts",
+      "sha256": "8aa628eec5a8c589cc5a9578e6f694df336721e3a561b1c153d575c8de1b80d0",
+      "bytes": 4459
+    },
+    {
+      "path": "tools/pamela-four-turns-public-review.ts",
+      "sha256": "095bf96b434750134f904f0ba024af24411d3416ea35fd140d74391043d5752b",
+      "bytes": 17930
+    },
+    {
+      "path": "tools/pamela-fourteen-full-loop.ts",
+      "sha256": "12884a3598c4c224c1d7057f46d8747ff3de276c32dcdcc081fadcacf8ce9f76",
+      "bytes": 18771
+    },
+    {
+      "path": "tools/pamela-fourteen-material-table.ts",
+      "sha256": "71d0c28f44fb9b3d7730f59c9b8da772da5371edaf6b3f5bd2d70bb1254ec6d6",
+      "bytes": 6927
+    },
+    {
+      "path": "tools/pamela-fourteen-review.ts",
+      "sha256": "30125c577f5878aac05bb56338d6c5a1e55a3cd1669b6fc61ac07228070173b2",
+      "bytes": 3297
+    },
+    {
+      "path": "tools/pamela-fourteen-trim.ts",
+      "sha256": "f649960aadb8723d02ccaeeec88c48fa167a8422c5094d77e0ff459b64c96b45",
+      "bytes": 28863
+    },
+    {
+      "path": "tools/pamela-frozen-material-probe.ts",
+      "sha256": "b2c806893552ad0ab68070fa03793c151840d97e4511d673984405a5d408044f",
+      "bytes": 2019
+    },
+    {
+      "path": "tools/pamela-full-loop.ts",
+      "sha256": "69ea739d9b04f006dbe52a1ca228eff2c32aab78ee5e01ae10b5819994576a94",
+      "bytes": 18514
+    },
+    {
+      "path": "tools/pamela-idle-anchor-pilot.ts",
+      "sha256": "1f9e7a8bf7e99c5e1f5352891dfcc1ba21c712ec5737e8bed39a11e281ebab51",
+      "bytes": 32921
+    },
+    {
+      "path": "tools/pamela-idle-anchor-review.ts",
+      "sha256": "4fb937d835c8b501041641bec8e9bb0a763119ccd8a1d266a262ecabfe31ed45",
+      "bytes": 29193
+    },
+    {
+      "path": "tools/pamela-idle-chain-assemble.ts",
+      "sha256": "e4776dcc8dc2bd23cc2f809b4d20f05d69239f9ce6e63c826e1b65c5ab7f0a40",
+      "bytes": 10673
+    },
+    {
+      "path": "tools/pamela-idle-chain-audit.ts",
+      "sha256": "470277dd1820863d07ce4fb428f9655e568c2dd8141640d5c69b68d0ca94203e",
+      "bytes": 8146
+    },
+    {
+      "path": "tools/pamela-idle-chain-bank-body.ts",
+      "sha256": "fd41e1cc456ce94f3766b2522b459df50cef3199ec647f27a788946a595553da",
+      "bytes": 7059
+    },
+    {
+      "path": "tools/pamela-idle-chain-native.ts",
+      "sha256": "429f1f70577bb33e5020d2e29377bbde6aa2915e3f98aba08bc508f25f3ee761",
+      "bytes": 4903
+    },
+    {
+      "path": "tools/pamela-idle-chain-opening.ts",
+      "sha256": "6e6e29718395d7695ba3eeb506dc008fcfea53e8cd3c0644c8260053e9288294",
+      "bytes": 10862
+    },
+    {
+      "path": "tools/pamela-idle-composite.ts",
+      "sha256": "6827c555f07359ebb8c7391beddfaf960bcbfd27fbbcc82b64afbd4105ed9e16",
+      "bytes": 6428
+    },
+    {
+      "path": "tools/pamela-idle-cut-proof.ts",
+      "sha256": "d41ffedf51742c849bc1e662c4177c8f6a4295eca7e86ce8e28315dc48fe2357",
+      "bytes": 7731
+    },
+    {
+      "path": "tools/pamela-idle-exit-overlap.ts",
+      "sha256": "f3237cdffdfa7d3902fca9ed89a220cf65bda1b7b429fa74f7dd90a17ff7efa9",
+      "bytes": 9956
+    },
+    {
+      "path": "tools/pamela-idle-loop-fit.ts",
+      "sha256": "340e83ab92f931acba18efed6494882f3c20f92dcc8a9b42306615d42c5e77f2",
+      "bytes": 26708
+    },
+    {
+      "path": "tools/pamela-idle-pilot.ts",
+      "sha256": "58977f6e83dce8ad00d961d34882b389349fdea4706a7783885eae6f29040ff3",
+      "bytes": 22924
+    },
+    {
+      "path": "tools/pamela-idle-ready-bridge.ts",
+      "sha256": "d08083ce1c256e7b9fce42df847811b53dfd4efeb492b50d4c17da0b1d330959",
+      "bytes": 13373
+    },
+    {
+      "path": "tools/pamela-idle-ready-qa.ts",
+      "sha256": "eccc956b51bb3ed3b761dfcfb50a27e387cdbe5aec20c1fe510856bf38079106",
+      "bytes": 11785
+    },
+    {
+      "path": "tools/pamela-idle-return-overlap.ts",
+      "sha256": "37f45770bd85011f1ccdfad475ac2ab39cb67ad78f11e0c617c90ef985904262",
+      "bytes": 12216
+    },
+    {
+      "path": "tools/pamela-idle-scene-proof.ts",
+      "sha256": "87a7ed58a33011b542e55a90a62eac0b7fec174c95ab3ba7185337303ef54347",
+      "bytes": 15047
+    },
+    {
+      "path": "tools/pamela-idle-seams.ts",
+      "sha256": "726b634e0f390389d9ed2d970206d1ce89e8c3b396534bc237632dd06dd0c499",
+      "bytes": 4725
+    },
+    {
+      "path": "tools/pamela-idle-sequence.ts",
+      "sha256": "f94f8d3ecaf2c8c01836691b9047a97f7a6c5a0809f791cfde086746e181babd",
+      "bytes": 2181
+    },
+    {
+      "path": "tools/pamela-idle-shoe-card-proof.ts",
+      "sha256": "088eb7e709e5ff0746cccd84895581a21127d5e5a40f71ba3bd21a4f101d44c5",
+      "bytes": 11222
+    },
+    {
+      "path": "tools/pamela-idle-window-probe.ts",
+      "sha256": "5a966b793bcd08e274a5cb423d7c6907b02ecb2a9b287b84a5c9408941d91af4",
+      "bytes": 15421
+    },
+    {
+      "path": "tools/pamela-key-quality.ts",
+      "sha256": "6d5da0fbf4f60782e193354cbe2a890fa8423b0c2362a2f01d3d1c33cd05ed59",
+      "bytes": 5406
+    },
+    {
+      "path": "tools/pamela-landed-card-layers.ts",
+      "sha256": "2ee4364e6148e912ae45e719f2ad272ab7f08be1f8e5f93d08b6ce0750d1ad11",
+      "bytes": 4885
+    },
+    {
+      "path": "tools/pamela-layered-pilot.ts",
+      "sha256": "6834710047f4266ad2548ed5e72b5e08b620a25c64cbc20934c716c35c8c29a4",
+      "bytes": 4744
+    },
+    {
+      "path": "tools/pamela-local-checkpoint.ts",
+      "sha256": "d88aad29b44c6a705377c6d953e5169ea4559fbab5ec848df03d4cbc3e47e52a",
+      "bytes": 3459
+    },
+    {
+      "path": "tools/pamela-local-idle-proof.ts",
+      "sha256": "f810134fc642e1c8e5c04248fab3fccfbf684a5d9f5028fda5dd2de7f77db0d6",
+      "bytes": 9628
+    },
+    {
+      "path": "tools/pamela-local-release-proof.ts",
+      "sha256": "54c527aa3067542fb2f25b78413abbbac19e73144fd4185bd51412579c398366",
+      "bytes": 10111
+    },
+    {
+      "path": "tools/pamela-local-shoe-proof.ts",
+      "sha256": "f3e67098893ace7eed2a04461e3e31ef5780dca358d4bc38a240dcb8852aeaf1",
+      "bytes": 7741
+    },
+    {
+      "path": "tools/pamela-loop-public-review.ts",
+      "sha256": "9c9281edaeb65bf034ffe61940c295a42adcfbc1d0be8316918a144ba9425005",
+      "bytes": 41013
+    },
+    {
+      "path": "tools/pamela-mask-bank-assemble.ts",
+      "sha256": "51dbd46fef47ef6d79c7d5bcc7b13ecc8d80143534a899e7f5d700273116770b",
+      "bytes": 27930
+    },
+    {
+      "path": "tools/pamela-matched-redo.ts",
+      "sha256": "5b5841c3f2fce26d667339d35cba7ae9e383b9ce8eedf1d2a2d4ebd9fdbc1344",
+      "bytes": 14425
+    },
+    {
+      "path": "tools/pamela-material-bank-contact.ts",
+      "sha256": "f3b8a5136ec563558537fbdae65d9d43bf54976b18b0755e55599124c563882d",
+      "bytes": 3364
+    },
+    {
+      "path": "tools/pamela-material-bank-finalize.ts",
+      "sha256": "4e00fdfbca7f90e346c2eb9fc77dfb68e3d610ea2a0ffefd4dd3c72d598fd1d9",
+      "bytes": 10658
+    },
+    {
+      "path": "tools/pamela-material-bank.ts",
+      "sha256": "23a982fad230cee011b336df75c5829f373b96a89f4184e1130564a41f2b1293",
+      "bytes": 14015
+    },
+    {
+      "path": "tools/pamela-material-clock-verify.ts",
+      "sha256": "25e5b7f3d920469e392531c6ee4210cfa4731e05ffc3c6e4d3d58c40c110f125",
+      "bytes": 3120
+    },
+    {
+      "path": "tools/pamela-material-download-bundle.ts",
+      "sha256": "1eea35b74b097f92174c94100bd8953c04248c660f6ab976109328361a9f722f",
+      "bytes": 20591
+    },
+    {
+      "path": "tools/pamela-material-orientation-probe.ts",
+      "sha256": "a47aa2cce70b296e15cf832205c36f113f106767a90c92b627c428e4d9a2cef5",
+      "bytes": 3278
+    },
+    {
+      "path": "tools/pamela-material-plan.ts",
+      "sha256": "d10db9de2b63d2f4596dbea43fb046918868e4f08bc9e1fcb559971b4dd2655f",
+      "bytes": 2692
+    },
+    {
+      "path": "tools/pamela-material-public-review.ts",
+      "sha256": "afe70ae30786412b9bbe29c63958d3edea5ab916b0ab387b462b1b39e90b1cf4",
+      "bytes": 14281
+    },
+    {
+      "path": "tools/pamela-middle-card-track.ts",
+      "sha256": "ba35efcee1e6d4dc127a869d87de8b157e92cf89c26d6ee36510859efadc0cdf",
+      "bytes": 120078
+    },
+    {
+      "path": "tools/pamela-model-comparison.ts",
+      "sha256": "7f0af1fcfe684a3a68201b4e6346ac0560c0ec85b8a6be5053e0897acdc3c9d6",
+      "bytes": 9608
+    },
+    {
+      "path": "tools/pamela-modular-public-review.ts",
+      "sha256": "0b8b032d8dc2f3fecdd6433877b61c43c9fa1546d15c1f86f64e7bafa0c0cccc",
+      "bytes": 22869
+    },
+    {
+      "path": "tools/pamela-motion-public-review.ts",
+      "sha256": "95341f76bba4f1b5c5ecc3e5af596d7601d26f7c78b4eaace13e06b413ac33bf",
+      "bytes": 7531
+    },
+    {
+      "path": "tools/pamela-motion-qa.ts",
+      "sha256": "3384ae1f821d3cf053a3d3f9355a3f67cc36001bdd7e113ab855c4da4c0983f7",
+      "bytes": 5200
+    },
+    {
+      "path": "tools/pamela-moving-pan-receipt.ts",
+      "sha256": "a36237405e28f94794eaf81f435ac63a74415f52a63f2bea9b2baa5f0293c5bd",
+      "bytes": 2769
+    },
+    {
+      "path": "tools/pamela-neutral-card-track.ts",
+      "sha256": "327d11b2e6ed4f4ec09b3cbe768084e9b6220d99fe72b3b228e333b74188f4ca",
+      "bytes": 16399
+    },
+    {
+      "path": "tools/pamela-outer-seam-soften.ts",
+      "sha256": "be29763bf65700609441431fef367450968328b933ed7b5fc5ab5625d5df52e6",
+      "bytes": 10760
+    },
+    {
+      "path": "tools/pamela-overlap-plan.ts",
+      "sha256": "76d635732a4e2309ba1c93c845a532b3a0d8b06b5bb09a33fd963dc570900099",
+      "bytes": 6969
+    },
+    {
+      "path": "tools/pamela-p1-side-proof.ts",
+      "sha256": "9bc91a088d54c958855728a8b8cfd5b8021f49fe3075e383bdbaed2d3b2aa956",
+      "bytes": 15076
+    },
+    {
+      "path": "tools/pamela-p1-turn-comparison.ts",
+      "sha256": "dcf1546c6933e8f7e664af2d445ffe45772cee112ecdc46165e33cda7a829068",
+      "bytes": 3185
+    },
+    {
+      "path": "tools/pamela-p2-atlas-build.ts",
+      "sha256": "0a8b1c42f9240c1ee0b9a9907bc7f9312b75b34052a7bad92ebb15207dad891b",
+      "bytes": 12761
+    },
+    {
+      "path": "tools/pamela-p2-calibration-proof.ts",
+      "sha256": "d2550bd74e779c4cbdddcc9502742b250da8738085e65953769978d4a4d81b8e",
+      "bytes": 17066
+    },
+    {
+      "path": "tools/pamela-p3-atlas-audit.ts",
+      "sha256": "8feb6957b0454e28c510bc8fe2463861c6ef06db8b0cc177004c113c972e3a4b",
+      "bytes": 15267
+    },
+    {
+      "path": "tools/pamela-p3-calibration-proof.ts",
+      "sha256": "efc879de09ef0e17fb892092714e2a3280e6ec199d663e9b5ba7006a04b32c3a",
+      "bytes": 15195
+    },
+    {
+      "path": "tools/pamela-p5-atlas-audit.ts",
+      "sha256": "68264384012e7cbe184f86b5b846a7491b71a235052ba9c19cf495dcb1d2f9fe",
+      "bytes": 14411
+    },
+    {
+      "path": "tools/pamela-p5-calibration-proof.ts",
+      "sha256": "218073300b1f12523327c53ab321ef5b03e0d8d284f4f2c6c5e4e6f70988865e",
+      "bytes": 12681
+    },
+    {
+      "path": "tools/pamela-pair-coverage-review.ts",
+      "sha256": "e75d7b846f450be1001cec8c25a2762a7855c115d68dc5d45cd0a45580a21550",
+      "bytes": 2657
+    },
+    {
+      "path": "tools/pamela-paper-edge-probe.ts",
+      "sha256": "ee18eef07a006499118db03c655487c9ac90c1d0ec4023db150cbe9efe1d4683",
+      "bytes": 3448
+    },
+    {
+      "path": "tools/pamela-paper-key-probe.ts",
+      "sha256": "57bbff47246645881ca34fb29ef9c59419e368a04e56d46709c8f6b8ccf90141",
+      "bytes": 3677
+    },
+    {
+      "path": "tools/pamela-proof-public-export.ts",
+      "sha256": "706025f30cfff02a2b6e4464099a0d543e6aac440c8b50c4f37fac51bc683194",
+      "bytes": 22530
+    },
+    {
+      "path": "tools/pamela-redo-cut-search.ts",
+      "sha256": "d1dd562560e18a0734118ff0e93734e8422f4272f03337a37302bc60b1a349c7",
+      "bytes": 3810
+    },
+    {
+      "path": "tools/pamela-redo-endpoints.ts",
+      "sha256": "710e0eee45257907502871bc9b1b1e2325bbb300fa27372a595b1f46331aef38",
+      "bytes": 13161
+    },
+    {
+      "path": "tools/pamela-redo-overlap.ts",
+      "sha256": "7e4ee04ef7865dafc553a76e19e1f6bc497eb16a2144102a2507d94a799458b8",
+      "bytes": 12914
+    },
+    {
+      "path": "tools/pamela-reference-kit.ts",
+      "sha256": "51011261d40ccef49a546d7a4f454abb63a60e4d5384df729b1a897dae1e52dc",
+      "bytes": 6026
+    },
+    {
+      "path": "tools/pamela-reference-qa.ts",
+      "sha256": "6f0a3bd12b24a322ad6a38f2d6189c2b2114e54a064dda8ebc7dc7ebe2067aa1",
+      "bytes": 3420
+    },
+    {
+      "path": "tools/pamela-register-c2-candidates.ts",
+      "sha256": "e1d218b8ea8f27903bd2d30a09a7e0e373b389d5ded88f366afd594a21de9e64",
+      "bytes": 4291
+    },
+    {
+      "path": "tools/pamela-register-candidates.ts",
+      "sha256": "acb7c1a2848bf724970c2ca21c9a0310270dbaffae34e4969a5599400a27c28c",
+      "bytes": 8553
+    },
+    {
+      "path": "tools/pamela-rest-ready-seam-survey.ts",
+      "sha256": "ae7055fb72584a6ab72ae3e44912144519706a3b0f3cc3ad523686695d47d858",
+      "bytes": 23588
+    },
+    {
+      "path": "tools/pamela-review-current.ts",
+      "sha256": "3cc8cca11ba027b74dcdc08bfec6b2a699524d0e5c7452e1d6432899ac98c9f4",
+      "bytes": 9158
+    },
+    {
+      "path": "tools/pamela-seat-bank.ts",
+      "sha256": "22b76939383bff14e8a2a030c4fa9dacf89d5e6af3edc1852747a8e34e8adc64",
+      "bytes": 75888
+    },
+    {
+      "path": "tools/pamela-seat-pilot-qa.ts",
+      "sha256": "157970a59e906b9283475638fc0218314aeeb1c0422085bbb4358b13628dc223",
+      "bytes": 3075
+    },
+    {
+      "path": "tools/pamela-seat-pilot.ts",
+      "sha256": "6e432fe27cb8c76c6c76e0bce90210665004ae6f2454f78889ceb5af4e4a25dc",
+      "bytes": 23541
+    },
+    {
+      "path": "tools/pamela-seat-public-review.ts",
+      "sha256": "20c9ab920330331d48838bf45e9e11f59960613bd33a3a925183c6288816638f",
+      "bytes": 6999
+    },
+    {
+      "path": "tools/pamela-seat1-geometry-probe.ts",
+      "sha256": "22e2acc54219950e00a6451684bcf5f49d9714ef7d8ca3c01146408d325e076b",
+      "bytes": 24138
+    },
+    {
+      "path": "tools/pamela-seat1-matte-study.ts",
+      "sha256": "61a5d8bcfb0012db5738fa502de4e302ccf2773837c61e47cf3a9d7751f56b53",
+      "bytes": 9232
+    },
+    {
+      "path": "tools/pamela-seat1-symmetric-card-track.ts",
+      "sha256": "8dd8b4471cb63d16795f17f6a3792542ddef3758ddb28f9dc395fd46d7f29e48",
+      "bytes": 16293
+    },
+    {
+      "path": "tools/pamela-seat1-symmetry-comparison.ts",
+      "sha256": "b3b615a5d068e1e3437221792921ab94c5bb07046561238aa7dd7f2db5c1d9b8",
+      "bytes": 3378
+    },
+    {
+      "path": "tools/pamela-seat1-two-card.ts",
+      "sha256": "40016c528ae046b60bef5c1b98656dde6053a257c587e13d47c0daa22e4fb934",
+      "bytes": 19050
+    },
+    {
+      "path": "tools/pamela-seat7-card-pair-coverage.ts",
+      "sha256": "f9dc19488cc517de862ffb95c92b7c6b4b4d3566224f5bbac46d46c03d6f5423",
+      "bytes": 23142
+    },
+    {
+      "path": "tools/pamela-seat7-card-pair.ts",
+      "sha256": "fd2bf28c35354e0f7de6529406c7b6a35bfa53d44d4a24adda8191a73aad5fcd",
+      "bytes": 16468
+    },
+    {
+      "path": "tools/pamela-seat7-card-track.ts",
+      "sha256": "4a0564aa0360349f5ed4181b6a456d9706a19376578be4d95419e2d2cb78fcd5",
+      "bytes": 18517
+    },
+    {
+      "path": "tools/pamela-sequence-pilot.ts",
+      "sha256": "d421de87c076da799c58dffe4d5d3c9d2a40e28eac2b42ac7ebb7d462e549f06",
+      "bytes": 18499
+    },
+    {
+      "path": "tools/pamela-sequence-qa.ts",
+      "sha256": "dfada6058b51ddfbb7d68f6f14cbaac45795109da0c31988c0230c0be1d62060",
+      "bytes": 3973
+    },
+    {
+      "path": "tools/pamela-shoe-bank-proof.ts",
+      "sha256": "86d33691b8fe5d3862df5091cc193eeeccd7ba365f736214ee3610db71f329cd",
+      "bytes": 15024
+    },
+    {
+      "path": "tools/pamela-shoe-geometry-proof.ts",
+      "sha256": "12ef4a27ca6fecdcf65dbe6d1c0f5124c2b9db638f41929cd2ee02ea021783ce",
+      "bytes": 8781
+    },
+    {
+      "path": "tools/pamela-shoe-p2-proof.ts",
+      "sha256": "d96ca37549f337abefe2694e316ca120abc559523c888ed7985662d443af6382",
+      "bytes": 15120
+    },
+    {
+      "path": "tools/pamela-shoe-proof.ts",
+      "sha256": "afb2e6f0a98e75b8386fae873ed97dcda08e0c9f199c663b5c70819556c4d065",
+      "bytes": 9154
+    },
+    {
+      "path": "tools/pamela-side-bank-survey.ts",
+      "sha256": "ef3332639eada832919a3f57284162e46eb42399c42f4750cfc4326894e4137b",
+      "bytes": 16158
+    },
+    {
+      "path": "tools/pamela-stage-assets.ts",
+      "sha256": "674d8acf96d104e4aa7a31076bb19c65851de1fc856c1f4692f2b5b93c1fea1f",
+      "bytes": 1836
+    },
+    {
+      "path": "tools/pamela-table-proof.ts",
+      "sha256": "1dfd0571cad8057ed02a81b4d97a17b22c75ab91f873985b8180ab2c8aeab7a2",
+      "bytes": 6079
+    },
+    {
+      "path": "tools/pamela-textured-c2-scene.ts",
+      "sha256": "4e0c4b436fe082fca6ddb962c8363ebd34964375eb24e4e47848fb523f49817a",
+      "bytes": 7753
+    },
+    {
+      "path": "tools/pamela-turn-atlas-build.ts",
+      "sha256": "e1a567396cd27bb3f511a0ff51739dafd272d088fc302b6204dfe9b6753a6767",
+      "bytes": 13738
+    },
+    {
+      "path": "tools/pamela-two-sided-bank-plan.ts",
+      "sha256": "90945c1ac60b66711a3426cc685750e178e8dc47092e1690c5af37d4f8485815",
+      "bytes": 5627
+    },
+    {
+      "path": "tools/pamela-two-sided-bank-preflight.ts",
+      "sha256": "28efb0fcfd2730743f640b1cdbcee86b9ede0cebd179326a48c9c15e4d54d9d5",
+      "bytes": 4692
+    },
+    {
+      "path": "tools/pamela-two-sided-bank-render.ts",
+      "sha256": "c410844b1fbf2123d5fe0daa13c8a1629fe734dd71d0a9ad3d94982fd983fcd4",
+      "bytes": 14161
+    },
+    {
+      "path": "tools/pamela-two-sided-download-bundle.ts",
+      "sha256": "75654c94bd5e94dfe280c413d01e19924d32b2011ea01aaaf4b530178c6cd5a0",
+      "bytes": 21226
+    },
+    {
+      "path": "tools/pamela-two-sided-native-sheets.ts",
+      "sha256": "41c238e97573a3b8bded8ef957d38ae9bde2e68b266e3ddf024c3148af82c2c6",
+      "bytes": 3245
+    },
+    {
+      "path": "tools/pamela-two-sided-proof.ts",
+      "sha256": "d1010c5c134a59334f6b075f9faf4d9a7339aa96008e9f5fb142ca44d120f3ea",
+      "bytes": 14181
+    },
+    {
+      "path": "tools/pamela-two-sided-verify.ts",
+      "sha256": "4423ad1a30f972b8e274cc04a750be7eb698411c24e4c73da48b4d340440c583",
+      "bytes": 2090
+    },
+    {
+      "path": "tools/pamela-v6-release-sequence.ts",
+      "sha256": "6267e51e3ce95a00878929cad12b9045d741080d88c43d63b69ba1ac3df43303",
+      "bytes": 10272
+    },
+    {
+      "path": "tools/pamela-v6-sequence-parallel.ts",
+      "sha256": "804f4315f1fe4bdd76163962a71b7d6be85970d2e09e5c876e830e8103d1f157",
+      "bytes": 21564
+    },
+    {
+      "path": "tools/pamela-v7-edge-proof.ts",
+      "sha256": "63f6309cfb5325ae524c49cda9102a30ef836caf514d593a7e3e697b277950dc",
+      "bytes": 3702
+    },
+    {
+      "path": "tools/preload-dealer-banks.ts",
+      "sha256": "4b776cea161eb5e1d40d18c79a9d024be38d5aa773466ff86255be325d2d0e3a",
+      "bytes": 1516
+    },
+    {
+      "path": "tools/prepare-central-input.ts",
+      "sha256": "e5921c5c6a6eadb53d9cc218d120dc5fe6a585f22ad6b82ebeeb9b4942a17fff",
+      "bytes": 4747
+    },
+    {
+      "path": "tools/runway-pamela-pilot.ts",
+      "sha256": "8b8e234c64b1a658c2fc2dccf59436fa164ff0d2494115e342fece80ce9a50b8",
+      "bytes": 4833
+    },
+    {
+      "path": "tools/verify-composite-public.ts",
+      "sha256": "4b378413fd432351e2702b6545d8a801e786cea2e3884e008fc4fc2de3613b33",
+      "bytes": 1953
+    },
+    {
+      "path": "tools/verify-finish-public.ts",
+      "sha256": "7275490d0cd683de06e07d170a15b6df6281f2c732778580049d667486d1bb78",
+      "bytes": 2954
+    },
+    {
+      "path": "tools/verify-idle-public.ts",
+      "sha256": "6e14f5e91e5c9ee74571c9788672f0ed36c57b912b71894fd4e91a74acad0586",
+      "bytes": 2579
+    },
+    {
+      "path": "tools/verify-pamela-loop-public.ts",
+      "sha256": "e1581b5b164077c7e01e60b14ee3ab554e9172cfeece8ebdcdd60e5aa3fcd911",
+      "bytes": 3826
+    },
+    {
+      "path": "tools/verify-workbench-public.ts",
+      "sha256": "edd41287daf04f39fde499d7388845dedbbe6c13c7529874cf23b28d93333444",
+      "bytes": 2283
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "b214a785f50753a15913cb1c0e6bfbd558278a24480575aba5581e36753f8ac1",
+      "bytes": 774
+    },
+    {
+      "path": "README.md",
+      "sha256": "fc12661a0b26101d6bdc64b6910fa82580adc8d2b8dfda38547a8d72e679843b",
+      "bytes": 1138
+    }
+  ],
+  "excludedFiles": [
+    ".cursorignore",
+    ".rgignore",
+    "AGENTS.md",
+    "README.md",
+    "docs/ARBETSSATT.md",
+    "docs/ATKOMST-PLAN.md",
+    "docs/ATKOMST.md",
+    "docs/INTEGRATION.md",
+    "docs/STATUS.md",
+    "docs/drift/ATKOMST-PLAN.md",
+    "docs/drift/ATKOMST.md",
+    "docs/drift/INTEGRATION.md",
+    "docs/drift/RUNPOD-OCH-LAPPSYNK.md",
+    "docs/roller/START.md",
+    "references/agent-roles.json",
+    "references/card-materials/vendor/LICENSE",
+    "references/maud-blob-inventory.json",
+    "references/maud-pamela-reuse-audit.json",
+    "references/provider-accounts.json",
+    "references/scene-composition/source/scene/vendor/LICENSE",
+    "references/storage-archives.json",
+    "snyggare-dealer.code-workspace",
+    "tools/maud-box4-pilot.ts",
+    "tools/maud-gpu-watchdog.ts",
+    "tools/pamela-bank-mask-integration.ts",
+    "tools/pamela-runway-wallet.ts",
+    "tools/runpod-lab-audit.ts",
+    "tools/runpod-mcp/package-lock.json",
+    "tools/runpod-mcp/package.json",
+    "tools/runpod-mcp/policy.test.ts",
+    "tools/runpod-mcp/policy.ts",
+    "tools/runpod-mcp/start.ts",
+    "tools/runpod-pilot.ts",
+    "tools/runpod-pilot/bootstrap.ts",
+    "tools/runpod-pilot/player.html",
+    "tools/runpod-pilot/player.ts",
+    "tools/runpod-pilot/relay.ts",
+    "tools/runpod-pilot/summarize.ts",
+    "{cleanup()",
+    "{console.error(e.message)"
+  ]
+}

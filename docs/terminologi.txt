@@ -1,0 +1,198 @@
+TERMINOLOGI – SCOUT GAMING OCH DET LOKALA DEALERLABBET
+Kontrollerat 2026-11-08. Källrevision: d86a6b47c85f4b1341e4ffe2a7a49f08800bc544.
+
+Ordlistan beskriver sakerna. Den ger inga rättigheter och kör ingen kod.
+Admin, Partnerportalen och Lobbyn är målgruppsnivåer. Grund/Utökad gäller klippomfattning.
+
+ADMIN
+Andra namn / kodnamn: nivå 1, intern administration
+Scoutgamings personals arbetsyta på /admin. Admin är produktens namn; intern beskriver målgruppen, inte en extra produkt eller roll.
+Status: Verifierat begrepp
+
+PARTNERPORTALEN
+Andra namn / kodnamn: nivå 2
+Bolagets arbetsyta på /partner/<bolag>. Partner är ingen ytterligare bolagsnivå. Åtkomst kontrolleras per bolag i det riktiga systemet.
+Status: Verifierat begrepp
+
+LOBBYN
+Andra namn / kodnamn: nivå 3
+Spelarens vy för spelbord. Spelet är den efterföljande spelvyn.
+Status: Verifierat begrepp
+
+BOLAG
+Andra namn / kodnamn: operator, operatör i äldre texter
+Verksamhetsobjektet som får tillgång till innehåll, team och egna spelbord. UI använder Bolag; operator är kod-/databasnamnet.
+Status: Verifierat begrepp
+
+STUDIO
+Andra namn / kodnamn: skapandeytan, /studio
+Scoutgamings skapandeyta för dealers. Den lokala Scenstudion är labbets kompositionsverktyg och ska inte förväxlas med den publicerade Studio-sidan.
+Status: Verifierat begrepp
+
+SCEN
+Andra namn / kodnamn: äldre: miljö
+En återanvändbar sammansättning av dealer, bakgrund och bordsgrafik, med eventuella detaljer. Kan skapas innan den kopplas till ett bolag.
+Status: Verifierat begrepp
+
+SPELBORD
+Andra namn / kodnamn: bolagets bord
+En scen hos ett bolag med exempelvis språk, spel och insatsgränser. Inte samma sak som den synliga bordsgrafiken.
+Status: Verifierat begrepp
+
+BORDSGRAFIK
+Andra namn / kodnamn: bordslager, filt och reling
+Bilden av det fysiska bordet i scenen. Ny färg med samma form kan behålla geometrin; ändrad kant, höjd eller kamera kräver ny kontroll.
+Status: Verifierat begrepp
+
+DEALER
+Andra namn / kodnamn: dealeridentitet
+Personidentiteten och dess material. Johan i begreppsvyn är bara ett pedagogiskt exempel, inte ett skapat konto eller en genererad dealer.
+Status: Verifierat begrepp
+
+MATERIAL
+Andra namn / kodnamn: tillgång, asset
+En bild, film, mask eller annan mediefil. Filnamnet räcker inte som identitet; använd dealer-ID, ursprung och filhash.
+Status: Verifierat begrepp
+
+KLIPPKORT
+Andra namn / kodnamn: kort i editorn
+Labbets visuella kort för en rörelse eller fil: namn, fack, start-/slutpose, längd och granskningsstatus. Det är inte ett spelkort.
+Status: Labbets UI-benämning
+
+KLIPPFACK
+Andra namn / kodnamn: fack, slot
+Funktionen där en film får användas, exempelvis vila, giv till spelarplats 1 eller vändning. Facket är skilt från filen, receptet och hur ofta klippet väljs.
+Status: Verifierat begrepp
+
+HÄNDELSE
+Andra namn / kodnamn: event
+Spelmotorns presentationsbehov, exempelvis en giv. Händelse och situation tillsammans kan identifiera ett fack.
+Status: Verifierat begrepp
+
+RECEPT
+Andra namn / kodnamn: genereringsinstruktion
+Beskriver vilket beteende som ska framställas, exempelvis lugn andning eller en sidoblick. Ett recept är inte en färdig film eller ett fack.
+Status: Verifierat begrepp
+
+TAGNING
+Andra namn / kodnamn: klippfil, resultat
+Ett konkret resultat från ett recept. Flera tagningar kan prövas för samma fack. Ursprung och hash följer varje fil.
+Status: Verifierat begrepp
+
+VILA
+Andra namn / kodnamn: idle, idle.ready
+Helheten när dealern väntar: basloop och valda vilovarianter. Namnet idle.ready betyder inte att kroppens pose är REDO.
+Status: Verifierat begrepp
+
+GRUNDLOOP – ANDNING
+Andra namn / kodnamn: vilans basloop, base i vilopolicyn
+Mains standardrecept för återhållsam andning med stilla händer, huvud och blick. Hela viloupplevelsen kan ändå innehålla separata blinkningar och andra varianter.
+Status: Verifierat begrepp
+
+VILOVARIANT
+Andra namn / kodnamn: beteende, infall
+Eget återgående klipp, exempelvis blinkning, sidoblick eller kliande. Kevin/Emil använder flera klipp med viktning och variationsregler.
+Status: Verifierat begrepp
+
+VILA
+Andra namn / kodnamn: vilopose
+Kroppens och händernas anslutningspose vid vila. Posens namn säger inte att ansiktet måste vara orörligt genom hela ett beteendeklipp.
+Status: Verifierat begrepp
+
+REDO
+Andra namn / kodnamn: handen vid skon
+Bankens anslutningspose för fortsatt giv. Ska förankras i rätt referensbild, inte gissas från ett filnamn.
+Status: Verifierat begrepp
+
+ANKARBILD
+Andra namn / kodnamn: poseankare, VILA-/REDO-bild
+Godkänd stillbild för en bestämd pose med samma kamera, skala, ljus och kontaktpunkter. För givbanken behövs minst matchande VILA och REDO.
+Status: Verifierat begrepp
+
+KEYSTONE
+Andra namn / kodnamn: används olika i äldre underlag
+Ange alltid om man menar identitetsbild, scenreferens eller ett geometriskt poseankare. Ordet ensamt bevisar varken bildens ursprung eller att den är kalibrerad.
+Status: Flera betydelser
+
+NYCKELBILD
+Andra namn / kodnamn: keyframe
+En bild placerad vid en viss tid/posgräns i en generering eller redigering. Ett ankare kan användas som nyckelbild, men begreppen beskriver olika roller.
+Status: Verifierat begrepp
+
+KLIPPFÖLJD
+Andra namn / kodnamn: rörelseschema, sekvens
+Ordningen av klipp och deras poseövergångar. En ritad följd blir inte automatiskt spelbar: filer, ankare och geometri måste vara bundna.
+Status: Verifierat begrepp
+
+UPPSPELNINGSREGEL
+Andra namn / kodnamn: policy, viktning och mellanrum
+Bestämmer vilket godkänt klipp som väljs och när. Urvalsvikt är inte samma sak som uppmätt andel speltid.
+Status: Verifierat begrepp
+
+GIVSUFFIX
+Andra namn / kodnamn: i, base, v, iv, äldre u/iu
+För vanliga giv: i = VILA→REDO, base = REDO→REDO, v = REDO→VILA, iv = VILA→VILA. Dolt kort och vändning har undantag. Kevins v/u kan ha olika längd trots liknande posefunktion.
+Status: Verifierat begrepp
+
+GRUND / UTÖKAD
+Andra namn / kodnamn: klippomfattning, tier
+Vilka funktioner som produceras i en klippbank. Inte kvalitetsbetyg eller administrativa nivåer 1/2.
+Status: Verifierat begrepp
+
+KORTSKO
+Andra namn / kodnamn: sko, scendetalj
+Det synliga föremålet där kort dras. Skons bildplacering är inte samma koordinat som kortets uttagspunkt. Kortvärden och spelregler hör till spelmotorn.
+Status: Verifierat begrepp
+
+SPELKORT
+Andra namn / kodnamn: kortets grafik och bana
+Det kort som syns i spelet. Dess bild, rörelsebana och täckning av handen måste passa dealerfilmen; det är inte ett klippkort i editorn.
+Status: Verifierat begrepp
+
+BILDPLAN
+Andra namn / kodnamn: källplan, arbetsformat
+Koordinatytan som en bild eller film mäts i. Dealerbankens stående 1080×1920 är skilt från datorns komponerade spelband 1920×1080.
+Status: Verifierat begrepp
+
+PASSNING
+Andra namn / kodnamn: klippassning, sourceFit
+Uppmätt skala och förskjutning från klippets pixlar till dealerns gemensamma ram. En manuell dragning i prototypen är inte automatiskt uppmätt passning.
+Status: Verifierat begrepp
+
+KALIBRERING
+Andra namn / kodnamn: verifierade koordinater
+Kontrollerad relation mellan kamera, dealer, händer, reling, sko och kortspår för bestämda filversioner. Kräver omprövning när geometri eller filer ändras.
+Status: Verifierat begrepp
+
+FRILÄGGNING
+Andra namn / kodnamn: matte, alfa, chroma key
+Tar bort arbetsbakgrunden och bevarar personen/önskade delar över tid. Chroma key är en metod; en MP4-fil betyder inte automatiskt transparens.
+Status: Verifierat begrepp
+
+SCENVERSION
+Andra namn / kodnamn: sparat scenrecept
+En sparad version av scenens materialval och placering. Skild från programversion, bildfilens revision och äldre tekniknamn V2/V3.
+Status: Verifierat begrepp
+
+PUBLICERA
+Andra namn / kodnamn: verkligt innehållsbyte
+Gör innehåll tillgängligt i det riktiga systemet. Lokal simulerad aktivering är ett provflöde. Den offentliga granskningssidan publicerar bara läsbara kopior av utvalt underlag.
+Status: Verifierat begrepp
+
+OBEKRÄFTADE KÄLLNAMN
+Andra namn / kodnamn: F73/S303, I/O/IO/OI/II, ie
+F73/S303:s betydelse är inte verifierad. I/O-varianterna och ie är inte belagda som rörelse-ID i de granskade kontrakten. Bevara källnamnet och gissa ingen översättning.
+Status: Inte verifierat
+
+KÄLLOR
+- Scoutgaming docs/TERMINOLOGI.md
+- Scoutgaming docs/plans/ADMIN-NY.md
+- Scoutgaming packages/presentation/contracts/clip-naming.mjs
+- Scoutgaming packages/presentation/contracts/dealer-clip-guide.mjs
+- Kevin-staging 61612e8f4d9d6ca66b9d57b90a47fc76f7c4cb65
+- Labbets docs/granskning/FORMAT-OCH-KVALITET.md och KEYSTONE.md
+
+UNDERHÅLL
+Gemensamt innehåll finns i references/terminology.json och används också av studions interaktiva begreppsvy.
+Ändra berörda definitioner när verifierad kod eller beslut ändras; kör node scripts/sync-terminology.ts för denna textfil.
+Begreppen ersätter inte den kanoniska ordlistan i Scoutgaming. Produktionskod och lagrade kodnamn byts inte av labbet.

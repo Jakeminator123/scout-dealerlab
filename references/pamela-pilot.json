@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "dealerId": "pamela-pilot",
+  "owner": "HUVUDAGENT 2",
+  "branch": "jakob/test",
+  "decision": {
+    "updatedAt": "2026-11-09T00:16:30.469Z",
+    "decision": "REVIEW_NEW_CENTRAL_AND_RETURN; HOLD_BANK_AND_MAIN",
+    "currentReferenceKit": "runs/20261109-pamela-reference-kit/reference-kit.json",
+    "selectedScene": null,
+    "candidateTransition": {
+      "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-till-redo-wan3.mp4",
+      "sha256": "00efe62636916b79052b4cf9d5fa88ba1ad52c17d531f1dcc86875f94c91084c",
+      "bytes": 8164506,
+      "width": 1762,
+      "height": 1174,
+      "fps": 30,
+      "frameCount": 90,
+      "duration": 3,
+      "from": "VILA",
+      "to": "REDO",
+      "mainSlot": "transition.shoe/to-shoe",
+      "taskId": "d13b31d2-3cca-443a-a710-3827df8194c9",
+      "model": "wan3",
+      "apiCreditEstimate": 60,
+      "accepted": false
+    },
+    "ownTracksRequired": true,
+    "rejectedOldEndpoints": "runs/20261108-pamela-contact-round2/qa/endpoint-review.json",
+    "sequenceReview": "references/pamela-sequence.json",
+    "dealerMap": "references/dealer-map.json"
+  },
+  "budget": {
+    "schemaVersion": 1,
+    "approved": {
+      "runwayCredits": 2000,
+      "openaiUsd": 10,
+      "maxPaidVideoJobs": 16,
+      "maxJobCredits": 250
+    },
+    "jobs": [
+      {
+        "path": "runs/20261108210457-pamela-v4-focused/runway-pilot.json",
+        "taskId": "7c8500a7-41ee-4965-96eb-2b0614693fd6",
+        "model": "gen4.5",
+        "state": "SUCCEEDED",
+        "apiMaximumCredits": 60
+      },
+      {
+        "path": "runs/20261108-pamela-model-comparison/gen45.json",
+        "taskId": "e01e63eb-6aaf-4388-85a3-550b2007322c",
+        "model": "gen4.5",
+        "state": "SUCCEEDED",
+        "apiMaximumCredits": 60
+      },
+      {
+        "path": "runs/20261108-pamela-model-comparison/wan3.json",
+        "taskId": "27ede105-b365-4d46-a90b-f4d5c8c03918",
+        "model": "wan3",
+        "state": "SUCCEEDED",
+        "apiMaximumCredits": 50
+      },
+      {
+        "path": "runs/20261108-pamela-deal-pilot/aleph2.json",
+        "taskId": "d5701e97-88ba-4dbc-b16f-87dd82e5c245",
+        "model": "aleph2",
+        "state": "SUCCEEDED",
+        "apiMaximumCredits": 56
+      },
+      {
+        "path": "runs/20261108-pamela-deal-pilot/aleph2-rigid-short.json",
+        "taskId": "82e403e7-3637-4de3-937f-3fe1d934a055",
+        "model": "aleph2",
+        "state": "SUCCEEDED",
+        "apiMaximumCredits": 56
+      },
+      {
+        "path": "runs/20261109-pamela-reference-kit/wan3ready.json",
+        "taskId": "d13b31d2-3cca-443a-a710-3827df8194c9",
+        "model": "wan3",
+        "state": "SUCCEEDED",
+        "apiMaximumCredits": 60
+      },
+      {
+        "path": "runs/20261108-pamela-v5-body/wan3give.json",
+        "taskId": "ac5822a7-47c6-4c55-b398-d1cb6f0e66d2",
+        "model": "wan3",
+        "state": "SUCCEEDED",
+        "apiMaximumCredits": 120
+      },
+      {
+        "path": "runs/20261108-pamela-v5-body/aleph2.json",
+        "taskId": "49a4d681-e05b-4e58-9ae4-6a7114488bb4",
+        "model": "aleph2",
+        "state": "SUCCEEDED",
+        "apiMaximumCredits": 56
+      },
+      {
+        "path": "runs/20261109-pamela-sequence/central-base.json",
+        "taskId": "390ff634-df94-4666-b9bd-8951b2ac686a",
+        "model": "wan3",
+        "state": "SUCCEEDED",
+        "apiMaximumCredits": 120
+      },
+      {
+        "path": "runs/20261109-pamela-sequence/from-shoe.json",
+        "taskId": "d0f9d466-cd29-41ef-a2db-c9783bc78256",
+        "model": "wan3",
+        "state": "SUCCEEDED",
+        "apiMaximumCredits": 60
+      }
+    ],
+    "acceptedJobs": 10,
+    "submissionAttempts": 11,
+    "apiMaximumCreditsTotal": 698,
+    "failedAttempt": {
+      "path": "runs/20261108-pamela-deal-pilot/aleph2-rigid.json",
+      "httpStatus": 400,
+      "taskId": null,
+      "promptCharacters": 1003,
+      "verifiedApiLimit": 1000,
+      "diagnosis": "Prompt exceeded documented limit; response body was not retained, so this is a supported diagnosis rather than a quoted API validation error.",
+      "billingVerified": false,
+      "conservativeReserveCredits": 84
+    },
+    "remainingAfterConservativeReserve": 1218,
+    "openai": {
+      "inputTokens": 5196,
+      "outputTokens": 410,
+      "estimatedUsd": 0.0027344,
+      "actualInvoiceVerified": false
+    },
+    "priorBuiltinImage": {
+      "createdBeforeLatestBudget": true,
+      "exactModelAndCost": "unknown"
+    },
+    "actualRunwayInvoiceVerified": false,
+    "pricingSource": "https://docs.dev.runwayml.com/guides/pricing/",
+    "successfulGenerations": 10,
+    "productionAcceptedJobs": 0,
+    "acceptedJobsMeaning": "Provider-accepted completed jobs, not visual or production acceptance.",
+    "builtinImagesThisStage": {
+      "count": 4,
+      "provider": "built-in image_gen",
+      "exactModel": null,
+      "costUsd": null,
+      "includedInOpenAiApiInvoice": "unknown; not asserted zero",
+      "addedThisRound": "REDO pose plus one landed blank card; exact tool model/cost not exposed"
+    },
+    "updatedAt": "2026-11-09T00:14:39.411Z"
+  },
+  "evidence": [
+    {
+      "path": "runs/20261108-pamela-deal-pilot/qa/pilot-decision.json",
+      "sha256": "42d48e78153a79fb0a33c8ebd8bf875d7ccc4962f7a057aa9651be95d0a66f26"
+    },
+    {
+      "path": "runs/20261108-pamela-deal-pilot/qa/budget-ledger.json",
+      "sha256": "9e235ea113e8fe500f1a6f3cd1be410deab31e59065dc3fbffb2c8a4738141ab"
+    },
+    {
+      "path": "runs/20261108-pamela-deal-pilot/composite/layered-scene.json",
+      "sha256": "6381906b8f8580a096036b386c683ece6635736f43f9bd1eecb15d9b572323d5"
+    },
+    {
+      "path": "runs/20261108-pamela-deal-pilot/control-contract.json",
+      "sha256": "1e4a1e90a60b2b442e0abb54d5276d120314f1f068b2a587ab59778d6e32e99f"
+    },
+    {
+      "path": "runs/20261108-pamela-contact-round2/contact-fit.json",
+      "sha256": "183088818245c31624a7be6fdf36ed69bc5e7c3ef603f50f96364354d1a49d2a"
+    },
+    {
+      "path": "references/review-round.json",
+      "sha256": "7feb3555ab5066817917a006def8626d75f28d6069304fa38d51047de9090bb5"
+    }
+  ],
+  "publication": {
+    "schemaVersion": 1,
+    "teamId": "team_Scxorb9qtZHjNae1YEQnFCaT",
+    "teamSlug": "scoutgaming",
+    "projectId": "prj_mQwHzspK3GrrJA04eFOorFxth0d5",
+    "projectName": "scout-dealerlab",
+    "access": "public-read-only",
+    "scope": "Static review copies only. No Scoutgaming production app, credentials, runtime server or admin prototype.",
+    "publicUrl": "https://scout-dealerlab.vercel.app",
+    "deploymentId": "dpl_4zo9Jn6W441gFVw9Y92f7Gcq66hC",
+    "verifiedAt": "2026-11-08T21:44:58.8700306Z",
+    "contentId": "3b6e9a715a700703b97e9f99aea47ab04983e72652a1697ecb280e68d77fdc5c",
+    "snapshot": "public-review-20261108214432"
+  },
+  "mediaPolicy": "Original bytes stay local outside Git; selected public review copies have manifest hashes. No Main merge.",
+  "initialDecisionSource": "runs/20261108-pamela-deal-pilot/qa/pilot-decision.json",
+  "currentReview": "references/review-round.json",
+  "contactRound": {
+    "sharedTranslation": {
+      "x": 0,
+      "y": 33
+    },
+    "centralTorsoDiagnostic": {
+      "frames": 63,
+      "minimumOverlapPixels": 2
+    },
+    "fullContactApproved": false,
+    "newPaidJobs": 0
+  },
+  "historicalDecision": {
+    "schemaVersion": 1,
+    "updatedAt": "2026-11-08T21:45:18.836Z",
+    "decision": "CONTINUE_WITH_REFERENCE_MOTION_AND_SEPARATE_CARD; HOLD_BANK_AND_MAIN",
+    "selectedScene": {
+      "path": "runs/20261108-pamela-contact-round2/composite/pamela-contact-fit-dim.mp4",
+      "sha256": "873c3905bce830e56ffa92ee2641713484c318b22bbc4b8428171fe2063c5867",
+      "width": 1920,
+      "height": 1080,
+      "r_frame_rate": "24/1",
+      "duration": "5.125000",
+      "nb_frames": "123",
+      "changes": [
+        "shared layer translation",
+        "room and table brightness only; dealer unchanged"
+      ]
+    },
+    "selectedIdle": {
+      "path": "runs/20261108-pamela-model-comparison/original/pamela-v4-wan3-padded-idle.mp4",
+      "sha256": "3e8f1d6b280357d9ce5944cb3bccfe93970bba8b1615c56fea2f69e131ba5d60",
+      "fps": 30,
+      "frames": 150,
+      "reason": "Same first/last input; lower measured endpoint pixel difference for face and hands than this Gen-4.5 take. Not proof of a seamless motion loop."
+    },
+    "measured": {
+      "acceptedVideoJobs": 5,
+      "sceneFrames": 123,
+      "sceneFps": 24,
+      "sceneDuration": 5.125,
+      "dealFrames": 63,
+      "dealFps": 24,
+      "apiMaximumCredits": 282
+    },
+    "visualObservations": [
+      {
+        "file": "runs/20261108-pamela-deal-pilot/original/pamela-pos4-iv-aleph2.mp4",
+        "frames": [
+          28,
+          36,
+          43,
+          48,
+          62
+        ],
+        "finding": "Identity and overall deal/return present. Card bends at f36; shoe is absent. Hold as a motion reference."
+      },
+      {
+        "file": "runs/20261108-pamela-deal-pilot/original/pamela-pos4-iv-aleph2-rigid-short.mp4",
+        "frames": [
+          28,
+          32,
+          36,
+          40,
+          43,
+          48,
+          56,
+          62
+        ],
+        "finding": "Omtag removed the card instead of rigidifying it. Useful candidate for a separate-card presentation layer, not a self-contained correct deal."
+      },
+      {
+        "file": "runs/20261108-pamela-deal-pilot/composite/pamela-lager-vila-giv-atergang.mp4",
+        "frames": [
+          58,
+          62,
+          66,
+          70,
+          74,
+          80
+        ],
+        "finding": "Separate rigid card is visible beneath hands and shoe. Pickup, release, plane perspective and all intermediate motion still require calibrated acceptance."
+      }
+    ],
+    "verificationBoundary": "All 63 frames of each deal decoded for image/color observations. Selected critical original frames and composed contact sheets inspected. This is not a claim that every output pixel or a game-engine integration has passed visual QA.",
+    "remaining": [
+      "Calibrate source-to-table plane and shoe outlet; new card anchors are a visual prototype.",
+      "Verify hand/card occlusion and pickup/release on every affected frame.",
+      "Measure and accept VILA/REDO endpoint geometry; extracted REDO f16 is a moving pose candidate.",
+      "Choose timing policy for Wan3 30fps idle versus 24fps deal; no automatic card-track resampling.",
+      "Replace soft panorama and repair table matte only after geometry is accepted."
+    ],
+    "bestSequenceMeaning": "1.25s held VILA +2.625s deal/return +1.25s held final pose; not a breathing loop or complete bank.",
+    "noMainMerge": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "status": "local-full-chain-mechanically-verified-with-known-visual-limitations",
+  "evidence": {
+    "sha256": "8a2a2d5ee96d9564fc675ffcfc896fdfa7a7188bccfa6d5601e28710476ac44f",
+    "path": "runs/20261110-pamela-idle-chain/take-01/evidence.json"
+  },
+  "productionAccepted": false,
+  "selectedBankUnchanged": true,
+  "review": {
+    "path": "runs/20261110-pamela-idle-chain/take-01/review.json",
+    "sha256": "696b0b73db3f150a86caee032b327448609dbbf23ffa7128c95ecc998c1fcdb4"
+  }
+}

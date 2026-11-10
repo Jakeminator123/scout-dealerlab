@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "dealerlab-reusable-pipeline-overview",
+  "title": "Från original till granskad scen",
+  "summary": "Återanvändbara byggdelar finns för identitet, ankare, komposition, material och QA. Varje ny dealer behöver eget källmaterial och egen kalibrering; hela kedjan är ännu inte färdigautomatiserad.",
+  "productionAccepted": false,
+  "automation": "partial-local-tools",
+  "stages": [
+    {
+      "id": "original",
+      "label": "Original",
+      "status": "measured",
+      "description": "Bevara originalet. Bind dealer, modell och jobb till exakt filhash och bildformat.",
+      "gate": "Ny filhash kräver ny berörd QA.",
+      "evidence": [
+        {"label":"Filidentiteter och mått","href":"/manifest.json","status":"measured"},
+        {"label":"Grund och källkontrakt","href":"/underlag/main-pipeline-kontrakt.json","status":"candidate"}
+      ]
+    },
+    {
+      "id": "anchors",
+      "label": "Ankare",
+      "status": "candidate",
+      "description": "VILA och REDO beskriver anslutningsposer. De binds till rätt bild, kamera, händer och sko.",
+      "gate": "Ett posnamn bevisar inte att två gränsrutor passar ihop.",
+      "evidence": [
+        {"label":"Pamela: referenspaket","href":"/underlag/pamela-referenspaket.json","status":"measured"},
+        {"label":"Poser i nodkartan","href":"/nodkarta?anchor=REDO","status":"candidate"}
+      ]
+    },
+    {
+      "id": "take",
+      "label": "Tagning",
+      "status": "candidate",
+      "description": "Pröva en tagning eller navanslutna givklipp. Önskade beteenden är mål tills originalet har granskats.",
+      "gate": "Långtagning tar bort interna klipp men godkänner inte loop eller senare klippgränser.",
+      "evidence": [
+        {"label":"Aktuell långtagning","href":"/langtagning","status":"candidate"},
+        {"label":"Tagningar och korttillstånd","href":"/underlag/pamela-sekvens.json","status":"measured"}
+      ]
+    },
+    {
+      "id": "masks",
+      "label": "Mask / kortspår",
+      "status": "candidate",
+      "description": "Mät kortets bana och vilka pixlar handen täcker. Bind mask och spår till samma källruta.",
+      "gate": "Synliga kortspår finns; dolda hörn och full fingerocklusion är inte generellt lösta.",
+      "evidence": [
+        {"label":"Uppmätta synliga kortspår","href":"/underlag/pamela-kortspor.json","status":"measured"},
+        {"label":"Maskernas QA-gräns","href":"/underlag/pamela-masker-qa.json","status":"measured"}
+      ]
+    },
+    {
+      "id": "scene",
+      "label": "Scen / ljus",
+      "status": "candidate",
+      "description": "Komponera lager i ett gemensamt bildplan. Ljusprofil, bordkontakt och material måste passa källan.",
+      "gate": "Fristående kort och marker är materialprov; de bevisar inte kontakt med dealerhanden.",
+      "evidence": [
+        {"label":"Scen- och ljuskontrakt","href":"/underlag/scenprofil.json","status":"candidate"},
+        {"label":"Ljus- och kantprov","href":"/scenfinish","status":"candidate"}
+      ]
+    },
+    {
+      "id": "qa",
+      "label": "QA",
+      "status": "measured",
+      "description": "Jämför originalrutor, rörelse, ankare, loopskarv och varje faktisk klippgräns. Redovisa även fel.",
+      "gate": "Uppmätt eller renderbart betyder inte produktionsgodkänt.",
+      "evidence": [
+        {"label":"Aktuellt granskningsläge","href":"/underlag/reviewer-status.json","status":"measured"},
+        {"label":"Exakta centralskarvar","href":"/underlag/pamela-centralskarvar.json","status":"measured"}
+      ]
+    },
+    {
+      "id": "export",
+      "label": "Export",
+      "status": "candidate",
+      "description": "Exportera fil, hash och rutmappning tillsammans. Bred och stående vy ska kunna spåras till samma original.",
+      "gate": "Granskningskopior finns. Produktionsimport och aktivering är separata beslut.",
+      "evidence": [
+        {"label":"Tekniska renderkontroller","href":"/underlag/pamela-renderkontroll.json","status":"measured"},
+        {"label":"Produktionssteg och återstående grindar","href":"/underlag/produktionsplan.json","status":"candidate"}
+      ]
+    }
+  ],
+  "hub": {
+    "status": "draft",
+    "title": "REDO är navet för box 1–7",
+    "summary": "En giv kan gå REDO → vald box → REDO. Nästa giv väljer en annan box från samma nav. När bild- och rörelsekontrakten matchar behövs inte 49 parvisa boxövergångar.",
+    "conditions": [
+      "Matchande pose och bild: kamera, skala, händer, sko och täckning.",
+      "Matchande rörelse vid gränsen: källrutor, tidbas och hastighet.",
+      "Samma godkända scen-/ljusfamilj, eller ny granskning av skillnaden."
+    ],
+    "persistentState": "Utdelade kort är separat beständigt tillstånd. De ligger kvar när dealern återgår till REDO eller VILA; samma handpose får inte nollställa bordet.",
+    "indexNote": "Box 1–7 i skissen är mänsklig numrering av sju spelarplatser. Motorns boxindex 0–6 mappas separat i källkontraktet.",
+    "coverage": null,
+    "evidence": [
+      {"label":"REDO → REDO och platsmappning","href":"/underlag/main-pipeline-kontrakt.json","status":"measured"},
+      {"label":"Utdelat kort är kvar efter giv","href":"/underlag/pamela-sekvens.json","status":"measured"}
+    ]
+  },
+  "genericContract": {
+    "status": "draft",
+    "note": "Detta är kontraktets fält, inte uppmätta generiska koordinater. null betyder okänt tills en viss fil, dealer och scen har bundits. Pamela-specifika mått får inte användas som fasta personkoordinater för nästa dealer.",
+    "fields": [
+      {"id":"identity","label":"Hash & identitet","description":"Dealer/projekt, originalets SHA-256 samt modell och jobb-ID.","value":null},
+      {"id":"timebase","label":"Källruta & tidbas","description":"Source frame, fps, bildruteantal och exakt källruta → export-ruta.","value":null},
+      {"id":"transform","label":"Transform","description":"Källplan → scen → porträtt, dimensioner och kalibrering för just dessa filer.","value":null},
+      {"id":"mask","label":"Mask & ocklusion","description":"Maskhash, källruta, kortspår och vad hand/fingrar faktiskt täcker.","value":null},
+      {"id":"light","label":"Ljus","description":"Källans utseende, fast scenprofil och tydlig gräns för omatchat eller omätt ljus.","value":null},
+      {"id":"pose","label":"Pose & anslutning","description":"Start-/slutankare, rörelse vid gränsen och accepterad tolerans per anslutning.","value":null}
+    ]
+  },
+  "terms": [
+    {"term":"Original","definition":"Bevarade källbytes med egen hash; bearbetningar får egna identiteter."},
+    {"term":"Ankare","definition":"Referens för en bestämd pose i rätt bild- och scenkontrakt."},
+    {"term":"Tagning","definition":"Ett konkret filmresultat. En tagning kan innehålla flera önskade beteenden."},
+    {"term":"Klipp","definition":"En hel tagning eller ett valt intervall. Ett nytt intervall får egna gränser att granska."},
+    {"term":"Nod","definition":"En anslutningspose som VILA eller REDO. Rörelser är länkar mellan poser."},
+    {"term":"Ocklusion","definition":"Vilka pixlar som ska döljas när till exempel fingrar passerar framför kortet."}
+  ],
+  "documents": [
+    {"label":"Masterplan","href":"/underlag/masterplan.txt","status":"candidate"},
+    {"label":"Full ordlista","href":"/underlag/terminologi.txt","status":"measured"},
+    {"label":"Interaktiv nodkarta","href":"/nodkarta","status":"candidate"},
+    {"label":"Format och beviskrav","href":"/underlag/format-och-kvalitet.txt","status":"candidate"},
+    {"label":"Kortmaterial","href":"/kortmaterial","status":"candidate"},
+    {"label":"Markermaterial","href":"/markermaterial","status":"candidate"}
+  ]
+}

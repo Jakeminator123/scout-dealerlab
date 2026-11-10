@@ -1,0 +1,202 @@
+{
+  "id": "alternative-fullbody-goran",
+  "label": "Göran · levande blackjack · rev 103",
+  "workflow": "alternative",
+  "sourceRef": "blackjack-studio · projekt e19d226c-c586-467e-b126-6a9f90e1675e · revision 103",
+  "sourcePath": "references/alternative-bank.json",
+  "summary": "Källprojekt med dealerfilmer och Three.js-komposition. Filhashar verifierade; visuell godkänning och kompatibilitet med Main återstår.",
+  "states": [
+    {
+      "id": "VILA",
+      "label": "VILA"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "idle",
+      "label": "Andas naturligt",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_idle.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/90924b04-f54e-4486-8bec-11d8b09b47a0.mp4",
+      "evidence": "Källprojekt revision 103; SHA 9a840a11d5323c4e530e76a802fb97f24315239080c1a33fff5e7595b864aaf8. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "idle-blink",
+      "label": "Blinkar och mjuknar i blicken",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_idle-blink.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/2edf0d90-2380-475a-8980-5066f8527131.mp4",
+      "evidence": "Källprojekt revision 103; SHA 3f65721e5fd604b60c3f566f61130125f97f8affe555471f9a2f24caa9c1662e. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "idle-scratch",
+      "label": "Kliar sig i huvudet",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_idle-scratch.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/4a0e7980-8127-4331-9642-421e9e99f012.mp4",
+      "evidence": "Källprojekt revision 103; SHA 125f3d860f68740d501ed17840d869a9051a55a309d79213493825da5e175044. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "pos4-iv",
+      "label": "Plats 4 · VILA → VILA",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_pos4-iv.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/9497d643-2ba1-408c-8371-87926e305f9f.mp4",
+      "evidence": "Källprojekt revision 103; SHA 46ec653ba18e9ce8b2ec3b07ae0fbf9ed2b4ddb186676f7751e5b7030f39ea60. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "idle-nod",
+      "label": "Liten vänlig nick",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_idle-nod.mp4",
+      "assetPath": "media/runway/979a734bf850e7d8/Locked_camera__continuous_full_body_shot_of_exactly_the_older_male_dealer_in_the.mp4",
+      "evidence": "Källprojekt revision 103; SHA 7d55c33b93d6a4fedf01777030e05d8a9b4384dace73daee32f692f0f6822b3e. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "idle-glance",
+      "label": "Blick åt sidan",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_idle-glance.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/0a7dd33f-be3a-438b-bc82-4a6eca17f13b.mp4",
+      "evidence": "Källprojekt revision 103; SHA 8bf0f26e1df5010643a1e3f39b4d222caa297ea8233d82d8d08926b91f9ebe25. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "pos1-iv",
+      "label": "Plats 1 · VILA → VILA",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_pos1-iv.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/22019230-cc35-4344-880c-2004d52fd280.mp4",
+      "evidence": "Källprojekt revision 103; SHA d9d98215364cbce8dbafe21c82eb6626842ac15535fb342795d3fd3fef3d2bf7. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "pos2-iv",
+      "label": "Plats 2 · VILA → VILA",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_pos2-iv.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/84706a6e-2849-4040-a7a3-67730c2c9d1e.mp4",
+      "evidence": "Källprojekt revision 103; SHA fe91a50d765679cd93985f5b41e9805057166ab33f609d8f8ecff3711f14155e. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "pos5-iv",
+      "label": "Plats 5 · VILA → VILA",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_pos5-iv.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/ad37cbf9-5266-4646-813f-316cd6e08220.mp4",
+      "evidence": "Källprojekt revision 103; SHA f852769ae4e346f60879cf2c7c16e945b763ae6f28471bb2f36a0ae5cdabaf07. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "pos6-iv",
+      "label": "Plats 6 · VILA → VILA",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_pos6-iv.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/fbbceb16-5e56-4856-9bd6-f4ae2f9f20c1.mp4",
+      "evidence": "Källprojekt revision 103; SHA 9868b3f0cac2ed6daaf7fe0ff2f7a1e6001a3715f85beb675c7dd4a71c6e3677. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "pos7-iv",
+      "label": "Plats 7 · VILA → VILA",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_pos7-iv.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/a20919b3-120b-40ae-926e-7ce73486172e.mp4",
+      "evidence": "Källprojekt revision 103; SHA 351b2555f83855816a5389e94c10e54a76c62b7ea8c5ffbe185c6e819360371f. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "posdealer-iv",
+      "label": "Dealerns öppna kort · VILA → VILA",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_posdealer-iv.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/e2c95829-d008-4f45-9917-92f126ea5e44.mp4",
+      "evidence": "Källprojekt revision 103; SHA 98ac754735865608cec76f43707027d1ec568ffe62e0ebbe0b9c5654d9cf58ad. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "hole-i",
+      "label": "Dolt dealerkort · VILA → VILA",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_hole-i.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/e2c95829-d008-4f45-9917-92f126ea5e44.mp4",
+      "evidence": "Källprojekt revision 103; SHA 98ac754735865608cec76f43707027d1ec568ffe62e0ebbe0b9c5654d9cf58ad. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "flip",
+      "label": "Vänd dealerns kort",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_flip.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/a9c2d516-9c40-49e0-9e55-523af71d83ae.mp4",
+      "evidence": "Källprojekt revision 103; SHA 9a744ab1e3f4b454fba1ae9d392e866d34ff22d0184262e4df74e0391b474154. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "idle-smile",
+      "label": "Litet leende",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_idle-smile.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/24f69524-cb3f-4698-b7df-9cdf0b6c3940.mp4",
+      "evidence": "Källprojekt revision 103; SHA 6b84ccf93c8dc232879ec32a30d92096341501f07eb1dc3cece2ac2e396a5dc9. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "pos3-iv",
+      "label": "Plats 3 · VILA → VILA",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "goran_pos3-iv.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/29a98d32-dbe1-4835-a178-6dd83678246d.mp4",
+      "evidence": "Källprojekt revision 103; SHA daa8558f9eef6ed124db2300a9babe32071609e690429629a2092156dc533a72. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "custom-d7221a7b-3627-464c-9730-cb0877d499cf",
+      "label": "Robotarmen · specialprov",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "dealer_custom-d7221a7b-3627-464c-9730-cb0877d499cf.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/ca8d9d93-0e42-4ad8-9543-a6a800638b70.mp4",
+      "evidence": "Källprojekt revision 103; SHA b29ee5ed2df8724dc9759fe9ea8b78687b9872fcf06fbeb90d5e5abd8e6971cd. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    },
+    {
+      "id": "custom-4f0bd1e5-af14-48a6-a7ec-786681478c81",
+      "label": "Välkomnande high five · specialprov",
+      "from": "VILA",
+      "to": "VILA",
+      "clipKey": "dealer_custom-4f0bd1e5-af14-48a6-a7ec-786681478c81.mp4",
+      "assetPath": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/a10d95b7-4d38-4991-9e1e-25765c97720a.mp4",
+      "evidence": "Källprojekt revision 103; SHA 604ac6731ed919b285d42649989f9e2f25e5c83ad895230067d9418b157e5540. Källans reviewed=false. Ingen importerad geometri.",
+      "coordinates": null
+    }
+  ],
+  "coordinateSpace": null,
+  "notes": [
+    "Samma projektsamband som den äldre 3D-exporten: ankare, panorama och nickfilm matchar exakt.",
+    "Källans fack och poser återges; det är inte bevis för skarvfrihet eller kompatibilitet med Main.",
+    "Kompositionen finns i den separata lokala appen på port 4323. Ingen andra server startas av labbet."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "snyggare-dealer-local",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.21.0 <25"
+  },
+  "volta": {
+    "node": "24.21.0"
+  },
+  "scripts": {
+    "start": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/server.ps1 -Action start",
+    "test": "node --test --test-concurrency=4 test/*.test.ts"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.8.2",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2"
+  }
+}

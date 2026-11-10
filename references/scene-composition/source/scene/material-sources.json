@@ -1,0 +1,51 @@
+[
+  {
+    "asset": "wood_table",
+    "map": "Diffuse",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table/wood_table_diff_1k.jpg",
+    "license": "CC0",
+    "local": "wood_table-diffuse.jpg"
+  },
+  {
+    "asset": "wood_table",
+    "map": "nor_gl",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table/wood_table_nor_gl_1k.jpg",
+    "license": "CC0",
+    "local": "wood_table-nor_gl.jpg"
+  },
+  {
+    "asset": "wood_table",
+    "map": "rough",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_table/wood_table_rough_1k.jpg",
+    "license": "CC0",
+    "local": "wood_table-rough.jpg"
+  },
+  {
+    "asset": "brown_leather",
+    "map": "nor_gl",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_nor_gl_1k.jpg",
+    "license": "CC0",
+    "local": "brown_leather-nor_gl.jpg"
+  },
+  {
+    "asset": "brown_leather",
+    "map": "rough",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_leather/brown_leather_rough_1k.jpg",
+    "license": "CC0",
+    "local": "brown_leather-rough.jpg"
+  },
+  {
+    "asset": "denim_fabric",
+    "map": "nor_gl",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/denim_fabric/denim_fabric_nor_gl_1k.jpg",
+    "license": "CC0",
+    "local": "denim_fabric-nor_gl.jpg"
+  },
+  {
+    "asset": "denim_fabric",
+    "map": "rough",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/denim_fabric/denim_fabric_rough_1k.jpg",
+    "license": "CC0",
+    "local": "denim_fabric-rough.jpg"
+  }
+]

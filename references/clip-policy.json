@@ -1,0 +1,871 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-08T20:53:18.198Z",
+  "purpose": "Lokal urvals- och granskningspolicy. Ändrar ingen runtime/publicering och ger ingen raderingsrätt.",
+  "defaultStatus": "hold",
+  "statusDefinitions": {
+    "keep": "Bevara som identifierad källa/referens. Inte automatiskt vald eller godkänd för spel.",
+    "reuse-candidate": "Prioriterad kandidat för återanvändning efter hashbunden granskning i angivet projekt/dealer/kontrakt. Inte aktiv.",
+    "hold": "Uteslut från automatisk urvalslista tills angivet hinder är löst. Bevara fil och proveniens."
+  },
+  "rules": [
+    "Identitet = projekt + dealer-ID + filhash + bindning. Filnamn, personnamn och gemensam lagring räcker inte.",
+    "Ingen fil raderas, flyttas, omkodas, publiceras eller aktiveras av denna policy.",
+    "Samma SHA256 får refereras av flera logiska fack endast efter separat funktions-, pose-, kortyta- och geometrigranskning. Dela bytes; dubblera inte rörelsevikten av misstag.",
+    "Olika hash är skilda tagningar även om namn och funktion är lika. Saknad shot-bindning betyder obunden i denna snapshot, inte globalt oanvänd.",
+    "Varje byteändring kräver nytt hashbundet underlag och QA. Behåll originalfps, originalrutor och ursprunglig geometri.",
+    "24fps- och30fps-spår, masker, offsets, ankare och klipplängder är inte utbytbara. Ommappning sker via tid med dokumenterade avrundningar och ny granskning.",
+    "Kontraktsreferenser i schemes.json har inte automatiskt en lokal kandidatfil. Astrid-/Paow-spår får inte ärvas av Pamela.",
+    "Source reviewed=false, hasSourceCalibration=true eller hashparitet är inte lokal visuell acceptans."
+  ],
+  "sources": {
+    "scoutRoot": "C:/Users/jakem/dev/scoutgaming",
+    "remote": "git@github.com:Jakeminator123/scoutgaming.git",
+    "main": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544",
+    "originKevinStaging": "61612e8f4d9d6ca66b9d57b90a47fc76f7c4cb65",
+    "verification": "Local refs and objects only; no fetch or live remote/deployment verification",
+    "schemesPath": "references/schemes.json",
+    "sceneManifestPath": "references/scene-composition/manifest.json"
+  },
+  "banks": [
+    {
+      "id": "alternative-goran-revision103",
+      "projectId": "e19d226c-c586-467e-b126-6a9f90e1675e",
+      "dealerId": "goran-alternativ-helkropp",
+      "revision": 103,
+      "keystoneSha256": "54224fb918c5cb839554381e468ddbf4fdae64008c537150335ad21660db14a9",
+      "sourceManifestPath": "references/alternative-bank.json",
+      "sourceProjectSha256": "97c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899",
+      "assetCount": 23,
+      "videoCount": 19,
+      "sourceShotCount": 18,
+      "sourceReviewedShotCount": 0,
+      "sourceCardCalibrationCount": 10,
+      "assets": [
+        {
+          "sourceAssetId": "8fe99408-26c2-4dae-a1e7-bc5324061258",
+          "label": "Göran · VILA",
+          "role": "keystone",
+          "path": "extra/insperationsmall-alternativ/goran-vila-referens.png",
+          "sha256": "54224fb918c5cb839554381e468ddbf4fdae64008c537150335ad21660db14a9",
+          "status": "keep",
+          "reason": "Bevara identifierad scen-/ankarreferens för detta projekt; innebär inte spel- eller rörelseacceptans.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": null,
+          "bindings": [],
+          "evidence": "references/alternative-bank.json assets[id=8fe99408-26c2-4dae-a1e7-bc5324061258]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "90924b04-f54e-4486-8bec-11d8b09b47a0",
+          "label": "Andas naturligt",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/90924b04-f54e-4486-8bec-11d8b09b47a0.mp4",
+          "sha256": "9a840a11d5323c4e530e76a802fb97f24315239080c1a33fff5e7595b864aaf8",
+          "status": "reuse-candidate",
+          "reason": "Källans funktionsbindning finns. Kandidat endast inom samma alternativa dealer/scen; samtliga källshots är reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 240,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "idle",
+              "eventId": "idle.ready",
+              "filename": "goran_idle.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": false,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=90924b04-f54e-4486-8bec-11d8b09b47a0]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "2edf0d90-2380-475a-8980-5066f8527131",
+          "label": "Blinkar och mjuknar i blicken",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/2edf0d90-2380-475a-8980-5066f8527131.mp4",
+          "sha256": "3f65721e5fd604b60c3f566f61130125f97f8affe555471f9a2f24caa9c1662e",
+          "status": "reuse-candidate",
+          "reason": "Källans funktionsbindning finns. Kandidat endast inom samma alternativa dealer/scen; samtliga källshots är reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "idle-blink",
+              "eventId": "idle.ready",
+              "filename": "goran_idle-blink.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": false,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=2edf0d90-2380-475a-8980-5066f8527131]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "34b51580-da3e-4a00-b775-27c2dcebfb41",
+          "label": "Huvudkli · original med bildartefakt",
+          "role": "reference-video",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/34b51580-da3e-4a00-b775-27c2dcebfb41.mp4",
+          "sha256": "6350288ccf1b8b9ce59f5f4223f1735a9b342d6baf9ee2f8cdc01f89ce29a21f",
+          "status": "hold",
+          "reason": "Källmanifestet märker originalet med bildartefakt; saknar shot-bindning och uppmätt metadata i källprojektet. Bevara som felreferens, välj inte till uppspelning.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": null,
+            "frameCount": null,
+            "width": null,
+            "height": null,
+            "constantFrameRate": null,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [],
+          "evidence": "references/alternative-bank.json assets[id=34b51580-da3e-4a00-b775-27c2dcebfb41]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "4a0e7980-8127-4331-9642-421e9e99f012",
+          "label": "Kliar sig i huvudet",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/4a0e7980-8127-4331-9642-421e9e99f012.mp4",
+          "sha256": "125f3d860f68740d501ed17840d869a9051a55a309d79213493825da5e175044",
+          "status": "reuse-candidate",
+          "reason": "Separat huvudkli-kandidat. Kan granskas som sällsynt vilovariant; ersätter inte originalets felbevis och är ännu inte godkänd.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "idle-scratch",
+              "eventId": "idle.ready",
+              "filename": "goran_idle-scratch.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": false,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=4a0e7980-8127-4331-9642-421e9e99f012]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "9497d643-2ba1-408c-8371-87926e305f9f",
+          "label": "Plats 4 · utdelning",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/9497d643-2ba1-408c-8371-87926e305f9f.mp4",
+          "sha256": "46ec653ba18e9ce8b2ec3b07ae0fbf9ed2b4ddb186676f7751e5b7030f39ea60",
+          "status": "reuse-candidate",
+          "reason": "Källans funktionsbindning finns. Kandidat endast inom samma alternativa dealer/scen; samtliga källshots är reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "pos4-iv",
+              "eventId": "deal.player.centre",
+              "filename": "goran_pos4-iv.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": true,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=9497d643-2ba1-408c-8371-87926e305f9f]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "e710c374-c998-4662-8bcd-cfbd267bfcfc",
+          "label": "Liten vänlig nick",
+          "role": "clip",
+          "path": "media/runway/979a734bf850e7d8/Locked_camera__continuous_full_body_shot_of_exactly_the_older_male_dealer_in_the.mp4",
+          "sha256": "7d55c33b93d6a4fedf01777030e05d8a9b4384dace73daee32f692f0f6822b3e",
+          "status": "reuse-candidate",
+          "reason": "Källans funktionsbindning finns. Kandidat endast inom samma alternativa dealer/scen; samtliga källshots är reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 90,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "idle-nod",
+              "eventId": "idle.ready",
+              "filename": "goran_idle-nod.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": false,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=e710c374-c998-4662-8bcd-cfbd267bfcfc]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "0a7dd33f-be3a-438b-bc82-4a6eca17f13b",
+          "label": "Blick åt sidan",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/0a7dd33f-be3a-438b-bc82-4a6eca17f13b.mp4",
+          "sha256": "8bf0f26e1df5010643a1e3f39b4d222caa297ea8233d82d8d08926b91f9ebe25",
+          "status": "reuse-candidate",
+          "reason": "Källans funktionsbindning finns. Kandidat endast inom samma alternativa dealer/scen; samtliga källshots är reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "idle-glance",
+              "eventId": "idle.ready",
+              "filename": "goran_idle-glance.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": false,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=0a7dd33f-be3a-438b-bc82-4a6eca17f13b]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "22019230-cc35-4344-880c-2004d52fd280",
+          "label": "Plats 1 · VILA → VILA",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/22019230-cc35-4344-880c-2004d52fd280.mp4",
+          "sha256": "d9d98215364cbce8dbafe21c82eb6626842ac15535fb342795d3fd3fef3d2bf7",
+          "status": "reuse-candidate",
+          "reason": "Källans funktionsbindning finns. Kandidat endast inom samma alternativa dealer/scen; samtliga källshots är reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "pos1-iv",
+              "eventId": "deal.player.left",
+              "filename": "goran_pos1-iv.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": true,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=22019230-cc35-4344-880c-2004d52fd280]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "84706a6e-2849-4040-a7a3-67730c2c9d1e",
+          "label": "Plats 2 · VILA → VILA",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/84706a6e-2849-4040-a7a3-67730c2c9d1e.mp4",
+          "sha256": "fe91a50d765679cd93985f5b41e9805057166ab33f609d8f8ecff3711f14155e",
+          "status": "reuse-candidate",
+          "reason": "Källans funktionsbindning finns. Kandidat endast inom samma alternativa dealer/scen; samtliga källshots är reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "pos2-iv",
+              "eventId": "deal.player.left",
+              "filename": "goran_pos2-iv.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": true,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=84706a6e-2849-4040-a7a3-67730c2c9d1e]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "c7ef9e9c-db77-4d83-85f7-15340f9fa125",
+          "label": "Träkasino · miljöprov",
+          "role": "environment",
+          "path": "extra/insperationsmall-alternativ/trakasino-foto-referens.png",
+          "sha256": "372722aa116e6734a87b3d3d131c2fb2096d91012aa15c406d0d8868f4e2d985",
+          "status": "keep",
+          "reason": "Bevara identifierad scen-/ankarreferens för detta projekt; innebär inte spel- eller rörelseacceptans.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": null,
+          "bindings": [],
+          "evidence": "references/alternative-bank.json assets[id=c7ef9e9c-db77-4d83-85f7-15340f9fa125]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "fe2f5d97-fa36-455d-8323-4a3791450b62",
+          "label": "Plats 3 · VILA → VILA",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/fe2f5d97-fa36-455d-8323-4a3791450b62.mp4",
+          "sha256": "4627c5dcfa8e27bc64583a3e92b31aa26bb61f5919e57a170f56792a109811b5",
+          "status": "hold",
+          "reason": "Äldre plats3-fil utan shot-bindning i revision103. Nyare 29a98d32 har annan hash och den bundna pos3-iv-raden. Ej en bevisad byte-dubblett eller globalt oanvänd fil.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [],
+          "evidence": "references/alternative-bank.json assets[id=fe2f5d97-fa36-455d-8323-4a3791450b62]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "ad37cbf9-5266-4646-813f-316cd6e08220",
+          "label": "Plats 5 · VILA → VILA",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/ad37cbf9-5266-4646-813f-316cd6e08220.mp4",
+          "sha256": "f852769ae4e346f60879cf2c7c16e945b763ae6f28471bb2f36a0ae5cdabaf07",
+          "status": "reuse-candidate",
+          "reason": "Källans funktionsbindning finns. Kandidat endast inom samma alternativa dealer/scen; samtliga källshots är reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "pos5-iv",
+              "eventId": "deal.player.centre",
+              "filename": "goran_pos5-iv.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": true,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=ad37cbf9-5266-4646-813f-316cd6e08220]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "fbbceb16-5e56-4856-9bd6-f4ae2f9f20c1",
+          "label": "Plats 6 · VILA → VILA",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/fbbceb16-5e56-4856-9bd6-f4ae2f9f20c1.mp4",
+          "sha256": "9868b3f0cac2ed6daaf7fe0ff2f7a1e6001a3715f85beb675c7dd4a71c6e3677",
+          "status": "reuse-candidate",
+          "reason": "Källans funktionsbindning finns. Kandidat endast inom samma alternativa dealer/scen; samtliga källshots är reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "pos6-iv",
+              "eventId": "deal.player.right",
+              "filename": "goran_pos6-iv.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": true,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=fbbceb16-5e56-4856-9bd6-f4ae2f9f20c1]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "a20919b3-120b-40ae-926e-7ce73486172e",
+          "label": "Plats 7 · VILA → VILA",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/a20919b3-120b-40ae-926e-7ce73486172e.mp4",
+          "sha256": "351b2555f83855816a5389e94c10e54a76c62b7ea8c5ffbe185c6e819360371f",
+          "status": "reuse-candidate",
+          "reason": "Källans funktionsbindning finns. Kandidat endast inom samma alternativa dealer/scen; samtliga källshots är reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "pos7-iv",
+              "eventId": "deal.player.right",
+              "filename": "goran_pos7-iv.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": true,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=a20919b3-120b-40ae-926e-7ce73486172e]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "e2c95829-d008-4f45-9917-92f126ea5e44",
+          "label": "Dealerns öppna kort · VILA → VILA",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/e2c95829-d008-4f45-9917-92f126ea5e44.mp4",
+          "sha256": "98ac754735865608cec76f43707027d1ec568ffe62e0ebbe0b9c5654d9cf58ad",
+          "status": "hold",
+          "reason": "Samma fil är bunden till både posdealer-iv och hole-i. Öppet/dolt kort har skilda mål och kortytor; återanvändning måste godkännas separat per bindning.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "posdealer-iv",
+              "eventId": "deal.dealer",
+              "filename": "goran_posdealer-iv.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": true,
+              "localCalibrationImported": false
+            },
+            {
+              "shotId": "hole-i",
+              "eventId": "deal.dealer",
+              "filename": "goran_hole-i.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": true,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=e2c95829-d008-4f45-9917-92f126ea5e44]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "a9c2d516-9c40-49e0-9e55-523af71d83ae",
+          "label": "Vänd dealerns kort",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/a9c2d516-9c40-49e0-9e55-523af71d83ae.mp4",
+          "sha256": "9a744ab1e3f4b454fba1ae9d392e866d34ff22d0184262e4df74e0391b474154",
+          "status": "reuse-candidate",
+          "reason": "Källans funktionsbindning finns. Kandidat endast inom samma alternativa dealer/scen; samtliga källshots är reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "flip",
+              "eventId": "reveal.dealer",
+              "filename": "goran_flip.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": true,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=a9c2d516-9c40-49e0-9e55-523af71d83ae]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "24f69524-cb3f-4698-b7df-9cdf0b6c3940",
+          "label": "Litet leende",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/24f69524-cb3f-4698-b7df-9cdf0b6c3940.mp4",
+          "sha256": "6b84ccf93c8dc232879ec32a30d92096341501f07eb1dc3cece2ac2e396a5dc9",
+          "status": "reuse-candidate",
+          "reason": "Källans funktionsbindning finns. Kandidat endast inom samma alternativa dealer/scen; samtliga källshots är reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "idle-smile",
+              "eventId": "idle.ready",
+              "filename": "goran_idle-smile.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": false,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=24f69524-cb3f-4698-b7df-9cdf0b6c3940]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "29a98d32-dbe1-4835-a178-6dd83678246d",
+          "label": "Plats 3 · VILA → VILA",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/29a98d32-dbe1-4835-a178-6dd83678246d.mp4",
+          "sha256": "daa8558f9eef6ed124db2300a9babe32071609e690429629a2092156dc533a72",
+          "status": "reuse-candidate",
+          "reason": "Bundna pos3-iv-kandidaten i revision103; föredras för granskning framför obunden äldre fil. Källans reviewed=false.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 180,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "pos3-iv",
+              "eventId": "deal.player.centre",
+              "filename": "goran_pos3-iv.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": true,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=29a98d32-dbe1-4835-a178-6dd83678246d]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "9e6fcd2e-3dc9-4b93-aefc-dddf4262b78b",
+          "label": "Träkasino · 360° panorama",
+          "role": "environment",
+          "path": "extra/insperationsmall-alternativ/trakasino-360-panorama.png",
+          "sha256": "c78d8099a7d6c4c3adb9ab4d357dd37822c12366c9da6c4590d3a2ff59356a2b",
+          "status": "keep",
+          "reason": "Bevara identifierad scen-/ankarreferens för detta projekt; innebär inte spel- eller rörelseacceptans.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": null,
+          "bindings": [],
+          "evidence": "references/alternative-bank.json assets[id=9e6fcd2e-3dc9-4b93-aefc-dddf4262b78b]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "5ce772d0-0d47-4915-b5ef-d4ebace4582b",
+          "label": "Göran · avslappnad VILA · ny kandidat",
+          "role": "keystone-candidate",
+          "path": "extra/insperationsmall-alternativ/goran-vila-stangd-mun-kandidat.png",
+          "sha256": "2453f4a451974114df43ebc47a2b938eab32eede9e0463d10e837ba05b695f87",
+          "status": "hold",
+          "reason": "Ny VILA-bild är en separat kandidat med annan hash. Den ersätter inte bankens keystone och kan inte ärva dess kalibrering.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": null,
+          "bindings": [],
+          "evidence": "references/alternative-bank.json assets[id=5ce772d0-0d47-4915-b5ef-d4ebace4582b]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "ca8d9d93-0e42-4ad8-9543-a6a800638b70",
+          "label": "Special · robotarmen",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/ca8d9d93-0e42-4ad8-9543-a6a800638b70.mp4",
+          "sha256": "b29ee5ed2df8724dc9759fe9ea8b78687b9872fcf06fbeb90d5e5abd8e6971cd",
+          "status": "hold",
+          "reason": "Robotarmen är ett särskilt custom-prov, utan belagt obligatoriskt Main-fack eller visuell acceptans.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 420,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "custom-d7221a7b-3627-464c-9730-cb0877d499cf",
+              "eventId": null,
+              "filename": "dealer_custom-d7221a7b-3627-464c-9730-cb0877d499cf.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": false,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=ca8d9d93-0e42-4ad8-9543-a6a800638b70]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        },
+        {
+          "sourceAssetId": "a10d95b7-4d38-4991-9e1e-25765c97720a",
+          "label": "Special · välkomnande high five",
+          "role": "clip",
+          "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/a10d95b7-4d38-4991-9e1e-25765c97720a.mp4",
+          "sha256": "604ac6731ed919b285d42649989f9e2f25e5c83ad895230067d9418b157e5540",
+          "status": "hold",
+          "reason": "High five är ett särskilt custom-prov, utan belagt obligatoriskt Main-fack eller visuell acceptans.",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z",
+          "sourceMetadata": {
+            "fps": 30,
+            "frameCount": 300,
+            "width": 1920,
+            "height": 1080,
+            "constantFrameRate": true,
+            "basis": "Source project metadata, not a new ffprobe or proof of native generation fps"
+          },
+          "bindings": [
+            {
+              "shotId": "custom-4f0bd1e5-af14-48a6-a7ec-786681478c81",
+              "eventId": null,
+              "filename": "dealer_custom-4f0bd1e5-af14-48a6-a7ec-786681478c81.mp4",
+              "startPose": "VILA",
+              "endPose": "VILA",
+              "sourceReviewed": false,
+              "sourceReviewedSha256": null,
+              "sourceHasCalibration": false,
+              "localCalibrationImported": false
+            }
+          ],
+          "evidence": "references/alternative-bank.json assets[id=a10d95b7-4d38-4991-9e1e-25765c97720a]; source project revision103, SHA25697c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899"
+        }
+      ]
+    },
+    {
+      "id": "local-comparison-references",
+      "projectId": "snyggare-dealer",
+      "dealerId": null,
+      "scope": "Eight explicit existing comparison videos; not a complete disk inventory or live Scout library",
+      "assets": [
+        {
+          "path": "gpt-underlag/uppackad-zip-underlag/01_original/goran_vila_grundloop.mp4",
+          "dealerId": "goran-scout",
+          "status": "keep",
+          "reason": "Identifierad Scout-Göran-referens enligt references/dealers.json. Ingen Pamela- eller alternativ-Göran-bindning.",
+          "sha256": "9492f43d0b66f863591aa071df996875afa36ce22aae22c251fe8afda5350d2d",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z"
+        },
+        {
+          "path": "gpt-underlag/uppackad-zip-underlag/01_original/goran_flip.mp4",
+          "dealerId": null,
+          "status": "hold",
+          "reason": "Namnet föreslår Göran/flip men filspecifik dealer-/kortspårbindning saknas i references/dealers.json. Bevara som jämförelse.",
+          "sha256": "e5bc5efef6db1ee54eb894084819335e0996f47e674a85108d358750d46d09ea",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z"
+        },
+        {
+          "path": "gpt-underlag/uppackad-zip-underlag/01_original/4da97d9e-b14a-4d5e-a962-df30a8aea966.mp4",
+          "dealerId": null,
+          "status": "hold",
+          "reason": "Okänd filidentitet utöver lokala bytes; ingen automatisk namn- eller dealerbindning.",
+          "sha256": "1ee9d15efe228c22dc1dfd16df816641483570c9f50ecb55a33ef9b0116a7edc",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z"
+        },
+        {
+          "path": "gpt-underlag/uppackad-zip-underlag/01_original/idle_breath_f73_s303.mp4",
+          "dealerId": null,
+          "status": "keep",
+          "reason": "Historiskt rörelseunderlag. F73/S303 och dealeridentitet är inte belagda av namnet.",
+          "sha256": "9c8a4ed6af99b022351a58df8db6ddf88542c7c76f876c193a6fbb8690960982",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z"
+        },
+        {
+          "path": "gpt-underlag/uppackad-zip-underlag/01_original/idle_still_f73_s302.mp4",
+          "dealerId": null,
+          "status": "keep",
+          "reason": "Historiskt rörelseunderlag. Samma funktion/längd som annan vila bevisar inte samma bytes.",
+          "sha256": "4a459446ba3c007504abff6ed0b501a4c6e9355897cad3090f44a606186ef5ad",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z"
+        },
+        {
+          "path": "gpt-underlag/uppackad-zip-underlag/05_referens_Emil/andas.mp4",
+          "dealerId": null,
+          "status": "keep",
+          "reason": "Emils referensfil. Ingen exakt match till en aktuell publicerad dealerprofil har fastställts här.",
+          "sha256": "2f456e486b521d7b93139b31c306921a72effa3599c6eb6aa8306b30f50d4ef3",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z"
+        },
+        {
+          "path": "gpt-underlag/uppackad-zip-underlag/05_referens_Emil/pos4-iv.mp4",
+          "dealerId": null,
+          "status": "keep",
+          "reason": "Emils pos4-iv-referens. 24fps eller namn betyder inte bindning till Pamela eller alternativbankens 30fps.",
+          "sha256": "c21df20182ca6db798ff33554563ec585200d93d7283e10b3d21c570646a41bc",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z"
+        },
+        {
+          "path": "media/maud-reference/maud-bank-source.mp4",
+          "dealerId": "maud-scout",
+          "status": "keep",
+          "reason": "Maud-referens med source.json och dealeridentitet. Hela bankens rörelser är inte godkända; inga spår förs över till Pamela.",
+          "sha256": "3f4ffc848cf6ae0192d4a8b5556a973845b99d7522d616fa0a006b5f87532425",
+          "active": false,
+          "localBytesVerifiedAt": "2026-11-08T20:34:02.6417084Z"
+        }
+      ]
+    },
+    {
+      "id": "pamela-v4-pilot",
+      "projectId": "snyggare-dealer",
+      "dealerId": "pamela-pilot",
+      "assets": [
+        {
+          "path": "runs/20261108210457-pamela-v4-focused/original/pamela-v4-vila-gen45-5s.mp4",
+          "sha256": "2f97e12b523c10fd93873fc65bd871b8c3827d1d1b68c1d44819b2cccb9d32e7",
+          "status": "hold",
+          "active": false,
+          "reason": "VILA-pilot for comparison; output1104x832/24fps is not a calibrated Main-plane file or native30. Loop/motion/geometry acceptance pending.",
+          "sourceTaskId": "7c8500a7-41ee-4965-96eb-2b0614693fd6",
+          "sourceModel": "gen4.5",
+          "localBytesVerifiedAt": "2026-11-08T20:35:14.9631773Z",
+          "reportedMetadata": {
+            "fps": 24,
+            "frameCount": 121,
+            "width": 1104,
+            "height": 832,
+            "durationSeconds": 5.041667,
+            "basis": "Root agent output inspection, not independently ffprobed in this policy review"
+          }
+        }
+      ],
+      "comparisonDerivative": {
+        "path": "runs/20261108210457-pamela-v4-focused/qa/pamela-v4-vila-preview-30fps.mp4",
+        "status": "hold",
+        "native30": false,
+        "sha256": "5e04a5d5feec9f8a05406805d71a985590111b8851c8076f27a21943792ea118",
+        "creationVerified": true,
+        "method": "Frame duplication; keep the original and store source-frame mapping",
+        "plannedFrameCount": 151,
+        "plannedFps": 30,
+        "plannedDurationSeconds": 5.033333,
+        "plannedDurationDeltaMs": -8.333333,
+        "acceptance": "Verified derived bytes and frame mapping only; hold for production event/geometry QA.",
+        "fps": 30,
+        "frameCount": 151,
+        "duration": 5.033333333333333,
+        "provenance": "runs/20261108210457-pamela-v4-focused/qa/preview30-provenance.json"
+      }
+    }
+  ],
+  "compatibilityHolds": [
+    {
+      "id": "main-profile-versus-factory",
+      "status": "hold",
+      "example": "Astrid2 pos1-v: frozen profile39 frames versus factory fixture63 frames at24fps",
+      "evidence": "references/schemes.json main-astrid2-frozen-profile 1:v; main-astrid2-factory-plan pos1-v",
+      "release": "Choose one exact target profile/clip hash and verify its own timeline; do not copy frame numbers."
+    },
+    {
+      "id": "kevin-u-versus-v",
+      "status": "hold",
+      "example": "Kevin staging pos1: v39, iv63, u63, iu87 frames. Pose aliases are not timing equivalence.",
+      "evidence": "61612e8f4d9d6ca66b9d57b90a47fc76f7c4cb65:kevin/croupier-scoutgg/public/media/dealers/astrid2/v2/meta.json frames[1]",
+      "release": "Bind exact bytes and measured timeline."
+    },
+    {
+      "id": "pamela-native30",
+      "status": "hold",
+      "example": "Requested comparison output30fps is not evidence of native30 model output. Current pilot reported24fps.",
+      "release": "Choose labelled30fps comparison derivative versus separately verified native30 generation; no extra paid job is implied."
+    }
+  ],
+  "activationRequirements": [
+    "Exact project/dealer/asset SHA and intended slot/pose chain",
+    "Measured fps, frame count, duration and dimensions for the candidate file",
+    "First/last pose and visible loop seams, including repeated playback and entry/exit",
+    "Hash-bound contact/release/landing/clear frames, card face/hand occlusion and all used dealing targets",
+    "Shoe outlet contact and geometry at supported viewer cameras, separate from dealing destinations",
+    "Clock and event consistency using the candidate media time; no changes to server-owned game rules",
+    "Explicit reviewed hash and selected policy; no promotion from filename or source reviewed flag"
+  ]
+}

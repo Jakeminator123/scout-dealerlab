@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "maxFramesPerSource": 20,
+  "minimumAgeMinutes": 60,
+  "pinnedFrames": [],
+  "scope": "Only tracked generated frames in media/preview-cache/<sha256>; originals, media/analysis, anchors, contact sheets and review evidence are preserved."
+}

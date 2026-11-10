@@ -1,0 +1,7 @@
+{
+  "selectionStatus": "integration-candidate-with-limitations",
+  "evidence": {
+    "path": "runs/20261109-pamela-material-bank/take-03/evidence.json",
+    "sha256": "8166b22d2c69d7b85ee16688474e6fb8a86edc15cee0eeddd97483a319ce5ae4"
+  }
+}

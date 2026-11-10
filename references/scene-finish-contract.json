@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "pamela-scene-finish-candidate-1",
+  "status": "candidate-contract-not-main-import",
+  "dealerId": "pamela-pilot",
+  "geometry": {
+    "sourceWidth": 1762,
+    "sourceHeight": 1174,
+    "fps": 30,
+    "camera": "fixed native close view; shared projection for all layers",
+    "contactLineY": 817,
+    "coordinateStatus": "image-plane calibration; not measured 3D camera/extrinsics"
+  },
+  "appearance": {
+    "sceneProfile": "runs/20261109-pamela-finish-study/",
+    "baselineRenderer": "src/pamela-scene-renderer.ts",
+    "gradeMode": "one approved fixed profile for compatible clip/scene family",
+    "perFrameAutoExposure": false,
+    "globalEdgeBlur": false,
+    "globalSharpeningBeforeMatteRepair": false,
+    "physicalLightDirection": null,
+    "physicalLightIntensity": null,
+    "measuredColorCalibrationChart": null,
+    "sourceLight": "baked into generated RGB; warm frontal appearance is a visual inference, not a measured light rig"
+  },
+  "pipeline": [
+    {"step":"input-identity","automatic":"Validate source hash, dealer ID, dimensions, fps, anchors and model/task provenance.","gate":"Different source bytes require fresh QA."},
+    {"step":"scene-compatibility","automatic":"Compare camera, contact line, shoe outlet and work area with the chosen scene profile.","gate":"Moved shoe, higher rail or changed viewpoint require recalibration."},
+    {"step":"matte","automatic":"Apply approved key/despill and object-mask recipe; inspect dark and light control backgrounds.","gate":"Reject missing fingers, eroded sleeves, halos or temporal chatter instead of hiding them with global blur."},
+    {"step":"fixed-grade","automatic":"Measure reference ROIs, propose a fixed exposure/color profile, then use that same profile through the clip family.","gate":"Approval of a matched-frame comparison; no frame-by-frame brightness chasing."},
+    {"step":"contact","automatic":"Compose table, source-derived hand shadow, replacement card and visible hand matte in consistent order.","gate":"No duplicate paper, slipping grip, disappearing landed cards or covered hand pixels."},
+    {"step":"card-material","automatic":"Render game-supplied rank/suit on a two-sided surface with shared UV deformation and restrained specular response.","gate":"No RNG/game rules here; held deformation must match observed grip; land flat and stay fixed."},
+    {"step":"continuity","automatic":"Compare raw start/end, face/hand regions and motion around every join.","gate":"Appearance drift at 6/12/15 seconds is an open failure. Color grading cannot correct facial anatomy/texture drift."},
+    {"step":"export","automatic":"Keep one-to-one 30 fps frame mapping, shared portrait transform, hashes and original outputs.","gate":"Visual motion approval and final scene approval remain explicit before Main activation."}
+  ],
+  "sceneVariants": {
+    "compatible": ["alternative felt color/texture on same plane", "brighter or darker room within a validated lighting family"],
+    "requiresNewReview": ["light from opposite side", "shoe outlet moved", "raised chip tray crossing arm path", "large camera rotation", "larger zoom-out exposing unrecorded body pixels"],
+    "chipTray": "Optional scene asset. It may cover a torso boundary only if its height and position are physically plausible and every hand/card path remains visible. It cannot repair face drift or regenerate missing forearm pixels.",
+    "shoe": "Still baked into original dealer footage. New material rendering does not make it independently swappable."
+  },
+  "automationBoundary": "Most repeatable measurements and approved transforms can be automated. New geometry, incompatible lighting and generative anatomy failures require review or a targeted new source."
+}

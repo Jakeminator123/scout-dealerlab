@@ -1,0 +1,10 @@
+{
+  "status": "full-take-rejected-job02-held",
+  "rootDecision": {
+    "path": "runs/20261109-pamela-idle-anchor-pilot/run-01/root-job01-qa.json",
+    "sha256": "62e0a9b8f0248c4ea431507ee02662912f2708e4e38d7f9917140a73e7165f75"
+  },
+  "nativeState": "runs/20261109-pamela-idle-anchor-pilot/run-01/jobs/01.state.json",
+  "separateLocalWindowStudy": "runs/20261109-pamela-idle-window-probe/take-01",
+  "selectedForIntegration": false
+}

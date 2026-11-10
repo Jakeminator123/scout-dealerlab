@@ -1,0 +1,21 @@
+{
+  "id": "alternative-3d",
+  "label": "Alternativ · 3D-scen och videodealer",
+  "sourceRef": "blackjack-studio · exportrevision 91 · Git-commit okänd",
+  "sourcePath": "extra/insperationsmall-alternativ/standard.json",
+  "summary": "Separat referenspaket från blackjack-studio: Three.js, geometriskt bord, fotopanorama och bild-/videodealer. Det är inte en verifierad riggad 3D-dealer eller Scoutgamings ordinarie klippbank.",
+  "states": [],
+  "transitions": [],
+  "notes": [
+    "Verifierat 2026-11-08: standard.json anger projekt e19d226c-c586-467e-b126-6a9f90e1675e, exportrevision 91 och skapandetid 2026-11-07T22:51:28.239Z. Exportrevisionen är inte ett Git-commit.",
+    "Den flyttade källappen finns i C:/Users/jakem/dev/super-feature-sg/local-studio/blackjack-studio. Projekt e19d226c-c586-467e-b126-6a9f90e1675e har revision 103. VILA-ankare, panorama och nickfilm är byteidentiska med labbets kopior. Ingen Git-branch finns för denna fristående katalog.",
+    "Bevarad kod använder Three.js. avatar-depth.mjs beskriver uttryckligen en kalibrerad bildyta, inte en rekonstruerad eller spårad 3D-person. panorama-room.mjs visar ett foto på en sfär utan återvunnet rumsdjup.",
+    "Källprojektets 23 mediefiler (19 filmer och fyra bilder) är hashverifierade. 18 källfack har återgetts i alternative-fullbody.json. Detta är inte ny visuell acceptans; source reviewed-flaggor och kalibrering granskas separat.",
+    "standard.json har geometri i meter med Y upp och separat bildkalibrering i 1920×1080, 30 fps. Dessa koordinater har inte blandats med main- eller Kevin/Emil-scheman; coordinateSpace är null.",
+    "Närliggande men separat källa: C:/Users/jakem/dev/scoutgaming/.worktrees/skogsrum-4k-1107, remote git@github.com:Jakeminator123/scoutgaming.git, branch jakob/codex-skogsrum-4k-1107, HEAD 06cc3e15d99a3124c481fdd4037c2aa7f2063b87. Dess tools/room-study har lokala ändringar och använder också videoklipp i en 3D-scen. Källorna har inte fastställts vara samma projekt.",
+    "F73 och S303: betydelse okänd. Inga belägg hittades i det relevanta lokala underlaget eller skogsrum-worktreens room-study och docs. Beteckningarna har inte tolkats som rörelse-ID, bildrutor eller platser.",
+    "Detaljer och bevisgränser: docs/ALTERNATIV-3D.md. Main är det primära systemet; Kevin/Emil och detta alternativ är separata jämförelsereferenser."
+  ],
+  "coordinateSpace": null,
+  "workflow": "alternative"
+}

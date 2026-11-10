@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "profiles": [
+    {
+      "id": "maud",
+      "label": "Maud · box fyra",
+      "manifest": "runs/maud-runpod-warm-20261109-04/manifest.json",
+      "archive": "runs/maud-runpod-warm-20261109-04/bank.tar",
+      "receipt": "runs/maud-runpod-warm-20261109-04/bank-receipt.json",
+      "source": "runs/maud-box4-jakob-20261108-01/maud-box4-source.mp4",
+      "savedVideo": "runs/maud-box4-jakob-20261108-01/maud-box4-jakob-ar-kung-review.mp4",
+      "warmupAudio": "runs/maud-box4-jakob-20261108-01/jakob-ar-kung.wav",
+      "voiceId": "aSLKtNoVBZlxQEMsnGL2",
+      "voiceCredential": "ELEVENLABS_SCOUT_API_KEY"
+    }
+  ]
+}

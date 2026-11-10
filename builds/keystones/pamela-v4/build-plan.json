@@ -1,0 +1,566 @@
+{
+  "schemaVersion": 1,
+  "kind": "keystone-seat-view-build-plan",
+  "buildId": "pamela-v4",
+  "createdAt": "2026-11-08T20:37:27.3660413Z",
+  "status": "groundwork-only",
+  "generationEnabled": false,
+  "runtimeBinding": null,
+  "generatedViews": [],
+  "sourceAnchor": {
+    "id": "pamela-v4-vila-4445634a5698",
+    "project": "snyggare-dealer",
+    "dealerId": "pamela-pilot",
+    "pose": "VILA",
+    "path": "original/pamela-vila-focused-v4.png",
+    "sha256": "4445634a5698da4121ad40bd7fcef76c8b8b8707c6fc24a87d095ad98348e5a7",
+    "nativePixels": {
+      "width": 1536,
+      "height": 1024
+    },
+    "sourcePath": "runs/20261108210457-pamela-v4-focused/original/pamela-vila-focused-v4.png",
+    "provenancePath": "provenance.json",
+    "approval": "candidate-not-calibrated",
+    "sourceViewpointId": null,
+    "sourceViewpointStatus": "UNKNOWN",
+    "note": "Frontal intent in source prompt does not establish measured seat4 camera geometry."
+  },
+  "semantics": {
+    "positionFolders": "pos1..pos7 describe dealing destinations, as in the Scout naming contract.",
+    "viewpoints": "seat1..seat7 describe observer cameras in this local plan only; they are not new Scout runtime slots.",
+    "independentDimensions": [
+      "cameraViewpointId",
+      "targetPositionId"
+    ],
+    "example": {
+      "cameraViewpointId": "seat2",
+      "targetPositionId": "pos4",
+      "meaning": "A viewer at seat 2 watches a deal landing at player seat 4.",
+      "status": "illustration-only-no-job"
+    },
+    "cameraSeatMustNotSelectTarget": true,
+    "unknownEncoding": "Unknown numeric values are null, paired with UNKNOWN status; never substitute invented measurements."
+  },
+  "commonWorldTable": {
+    "id": "pamela-v4-common-table",
+    "status": "UNKNOWN",
+    "sharedByAllViewpointsAndTargets": true,
+    "tableAssetPath": null,
+    "tableAssetSha256": null,
+    "geometryVersion": null,
+    "coordinateFrame": {
+      "units": null,
+      "origin": null,
+      "axes": null,
+      "handedness": null
+    },
+    "dealerRootTransform": null,
+    "shoeOutletWorld": {
+      "status": "UNKNOWN",
+      "x": null,
+      "y": null,
+      "z": null
+    },
+    "sharedOrbitCenterWorld": {
+      "status": "UNKNOWN",
+      "x": null,
+      "y": null,
+      "z": null
+    },
+    "sharedLookAtPointWorld": {
+      "status": "UNKNOWN",
+      "x": null,
+      "y": null,
+      "z": null
+    },
+    "note": "One common world table and the same physical target points must be projected into every observer view. Screen-space target coordinates are not world geometry."
+  },
+  "viewReference": {
+    "baselineViewpointId": "seat4",
+    "baselineReason": "User-designated central observer seat.",
+    "calibrated": false,
+    "azimuthDefinition": "After calibration, measure each observer ray around the shared orbit center relative to seat4; establish axis/sign convention before storing degrees.",
+    "radiusDefinition": "Distance from that same shared orbit center to the observer camera in declared world units; never assume a circular or equally spaced seating arc.",
+    "sourceImageIsBaselineEvidence": false
+  },
+  "viewpoints": [
+    {
+      "id": "seat1",
+      "cameraSeat": 1,
+      "role": "observer-viewpoint",
+      "referenceViewpointId": "seat4",
+      "status": "planned-not-generated",
+      "sourceAnchorViewMatch": "UNKNOWN",
+      "cameraPositionWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "lookAtPointWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "azimuthRelativeToSeat4Degrees": null,
+      "radiusFromSharedOrbitCenter": null,
+      "elevation": null,
+      "lens": {
+        "focalLength": null,
+        "fieldOfViewDegrees": null
+      },
+      "sourceImageToViewTransform": null,
+      "calibrationStatus": "UNKNOWN",
+      "calibratedAnchorPaths": {
+        "VILA": null,
+        "REDO": null
+      },
+      "generatedAssets": []
+    },
+    {
+      "id": "seat2",
+      "cameraSeat": 2,
+      "role": "observer-viewpoint",
+      "referenceViewpointId": "seat4",
+      "status": "planned-not-generated",
+      "sourceAnchorViewMatch": "UNKNOWN",
+      "cameraPositionWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "lookAtPointWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "azimuthRelativeToSeat4Degrees": null,
+      "radiusFromSharedOrbitCenter": null,
+      "elevation": null,
+      "lens": {
+        "focalLength": null,
+        "fieldOfViewDegrees": null
+      },
+      "sourceImageToViewTransform": null,
+      "calibrationStatus": "UNKNOWN",
+      "calibratedAnchorPaths": {
+        "VILA": null,
+        "REDO": null
+      },
+      "generatedAssets": []
+    },
+    {
+      "id": "seat3",
+      "cameraSeat": 3,
+      "role": "observer-viewpoint",
+      "referenceViewpointId": "seat4",
+      "status": "planned-not-generated",
+      "sourceAnchorViewMatch": "UNKNOWN",
+      "cameraPositionWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "lookAtPointWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "azimuthRelativeToSeat4Degrees": null,
+      "radiusFromSharedOrbitCenter": null,
+      "elevation": null,
+      "lens": {
+        "focalLength": null,
+        "fieldOfViewDegrees": null
+      },
+      "sourceImageToViewTransform": null,
+      "calibrationStatus": "UNKNOWN",
+      "calibratedAnchorPaths": {
+        "VILA": null,
+        "REDO": null
+      },
+      "generatedAssets": []
+    },
+    {
+      "id": "seat4",
+      "cameraSeat": 4,
+      "role": "observer-viewpoint",
+      "referenceViewpointId": "seat4",
+      "status": "planned-not-generated",
+      "sourceAnchorViewMatch": "UNKNOWN",
+      "cameraPositionWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "lookAtPointWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "azimuthRelativeToSeat4Degrees": null,
+      "radiusFromSharedOrbitCenter": null,
+      "elevation": null,
+      "lens": {
+        "focalLength": null,
+        "fieldOfViewDegrees": null
+      },
+      "sourceImageToViewTransform": null,
+      "calibrationStatus": "UNKNOWN",
+      "calibratedAnchorPaths": {
+        "VILA": null,
+        "REDO": null
+      },
+      "generatedAssets": []
+    },
+    {
+      "id": "seat5",
+      "cameraSeat": 5,
+      "role": "observer-viewpoint",
+      "referenceViewpointId": "seat4",
+      "status": "planned-not-generated",
+      "sourceAnchorViewMatch": "UNKNOWN",
+      "cameraPositionWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "lookAtPointWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "azimuthRelativeToSeat4Degrees": null,
+      "radiusFromSharedOrbitCenter": null,
+      "elevation": null,
+      "lens": {
+        "focalLength": null,
+        "fieldOfViewDegrees": null
+      },
+      "sourceImageToViewTransform": null,
+      "calibrationStatus": "UNKNOWN",
+      "calibratedAnchorPaths": {
+        "VILA": null,
+        "REDO": null
+      },
+      "generatedAssets": []
+    },
+    {
+      "id": "seat6",
+      "cameraSeat": 6,
+      "role": "observer-viewpoint",
+      "referenceViewpointId": "seat4",
+      "status": "planned-not-generated",
+      "sourceAnchorViewMatch": "UNKNOWN",
+      "cameraPositionWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "lookAtPointWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "azimuthRelativeToSeat4Degrees": null,
+      "radiusFromSharedOrbitCenter": null,
+      "elevation": null,
+      "lens": {
+        "focalLength": null,
+        "fieldOfViewDegrees": null
+      },
+      "sourceImageToViewTransform": null,
+      "calibrationStatus": "UNKNOWN",
+      "calibratedAnchorPaths": {
+        "VILA": null,
+        "REDO": null
+      },
+      "generatedAssets": []
+    },
+    {
+      "id": "seat7",
+      "cameraSeat": 7,
+      "role": "observer-viewpoint",
+      "referenceViewpointId": "seat4",
+      "status": "planned-not-generated",
+      "sourceAnchorViewMatch": "UNKNOWN",
+      "cameraPositionWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "lookAtPointWorld": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "azimuthRelativeToSeat4Degrees": null,
+      "radiusFromSharedOrbitCenter": null,
+      "elevation": null,
+      "lens": {
+        "focalLength": null,
+        "fieldOfViewDegrees": null
+      },
+      "sourceImageToViewTransform": null,
+      "calibrationStatus": "UNKNOWN",
+      "calibratedAnchorPaths": {
+        "VILA": null,
+        "REDO": null
+      },
+      "generatedAssets": []
+    }
+  ],
+  "targets": [
+    {
+      "id": "pos1",
+      "targetSeat": 1,
+      "engineSituation": "box0",
+      "takeTarget": "1",
+      "eventId": "deal.player.left",
+      "role": "dealing-destination",
+      "worldLandingPoint": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "landingAreaGeometry": null,
+      "handContactGeometry": null,
+      "sourceCardTrack": null,
+      "notePath": "pos1/POSITION.md",
+      "plannedJobs": [],
+      "generatedAssets": []
+    },
+    {
+      "id": "pos2",
+      "targetSeat": 2,
+      "engineSituation": "box1",
+      "takeTarget": "2",
+      "eventId": "deal.player.left",
+      "role": "dealing-destination",
+      "worldLandingPoint": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "landingAreaGeometry": null,
+      "handContactGeometry": null,
+      "sourceCardTrack": null,
+      "notePath": "pos2/POSITION.md",
+      "plannedJobs": [],
+      "generatedAssets": []
+    },
+    {
+      "id": "pos3",
+      "targetSeat": 3,
+      "engineSituation": "box2",
+      "takeTarget": "3",
+      "eventId": "deal.player.centre",
+      "role": "dealing-destination",
+      "worldLandingPoint": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "landingAreaGeometry": null,
+      "handContactGeometry": null,
+      "sourceCardTrack": null,
+      "notePath": "pos3/POSITION.md",
+      "plannedJobs": [],
+      "generatedAssets": []
+    },
+    {
+      "id": "pos4",
+      "targetSeat": 4,
+      "engineSituation": "box3",
+      "takeTarget": "4",
+      "eventId": "deal.player.centre",
+      "role": "dealing-destination",
+      "worldLandingPoint": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "landingAreaGeometry": null,
+      "handContactGeometry": null,
+      "sourceCardTrack": null,
+      "notePath": "pos4/POSITION.md",
+      "plannedJobs": [],
+      "generatedAssets": []
+    },
+    {
+      "id": "pos5",
+      "targetSeat": 5,
+      "engineSituation": "box4",
+      "takeTarget": "5",
+      "eventId": "deal.player.centre",
+      "role": "dealing-destination",
+      "worldLandingPoint": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "landingAreaGeometry": null,
+      "handContactGeometry": null,
+      "sourceCardTrack": null,
+      "notePath": "pos5/POSITION.md",
+      "plannedJobs": [],
+      "generatedAssets": []
+    },
+    {
+      "id": "pos6",
+      "targetSeat": 6,
+      "engineSituation": "box5",
+      "takeTarget": "6",
+      "eventId": "deal.player.right",
+      "role": "dealing-destination",
+      "worldLandingPoint": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "landingAreaGeometry": null,
+      "handContactGeometry": null,
+      "sourceCardTrack": null,
+      "notePath": "pos6/POSITION.md",
+      "plannedJobs": [],
+      "generatedAssets": []
+    },
+    {
+      "id": "pos7",
+      "targetSeat": 7,
+      "engineSituation": "box6",
+      "takeTarget": "7",
+      "eventId": "deal.player.right",
+      "role": "dealing-destination",
+      "worldLandingPoint": {
+        "status": "UNKNOWN",
+        "x": null,
+        "y": null,
+        "z": null
+      },
+      "landingAreaGeometry": null,
+      "handContactGeometry": null,
+      "sourceCardTrack": null,
+      "notePath": "pos7/POSITION.md",
+      "plannedJobs": [],
+      "generatedAssets": []
+    }
+  ],
+  "calibration": {
+    "status": "UNKNOWN",
+    "version": null,
+    "sourceToWorldTransform": null,
+    "sourceToMainReferenceTransform": null,
+    "VILAHandAnchors": null,
+    "REDOAnchor": null,
+    "fullDealingMotionEnvelope": null,
+    "cardTracksByViewAndTarget": null,
+    "handOcclusionMasks": null,
+    "timing": {
+      "fps": null,
+      "frameCount": null
+    },
+    "exclusions": [
+      "Do not copy Astrid2/Main pixel coordinates, card tracks or 1080x1920 transforms into Pamela V4.",
+      "Do not treat provisional UI eye/hand alignment, source prompt percentages or height-fit as calibration.",
+      "Do not obtain new camera views by relabelling, mirroring or copying the V4 PNG.",
+      "The existing candidate is not approved as a calibrated central seat4 anchor."
+    ]
+  },
+  "futureJobContract": {
+    "requiredIdentityFields": [
+      "project",
+      "dealerId",
+      "sourceAnchorId",
+      "sourceSha256",
+      "worldGeometryVersion",
+      "cameraViewpointId",
+      "targetPositionId",
+      "poseVariant"
+    ],
+    "jobFolderPattern": "future-unique-run-id/view-seatN/target-posM/poseVariant",
+    "preparedJobs": [],
+    "poseVariants": {
+      "base": {
+        "from": "REDO",
+        "to": "REDO"
+      },
+      "i": {
+        "from": "VILA",
+        "to": "REDO"
+      },
+      "v": {
+        "from": "REDO",
+        "to": "VILA"
+      },
+      "iv": {
+        "from": "VILA",
+        "to": "VILA"
+      }
+    },
+    "note": "Only player-deal conventions are listed. A future selected pilot must explicitly name its camera and target; this plan does not request a 7x7 bank."
+  },
+  "nextGates": [
+    "Approve exact source hash and choose a common table asset/geometry version.",
+    "Calibrate the central seat4 observer, source-image transform, common world origin/axes and source camera relation.",
+    "Measure observer angle/radius and camera parameters for each selected seat; seat2 is distinct from dealing target pos2.",
+    "Measure all requested world landing targets, shoe outlet, VILA/REDO hand anchors and full motion bounds.",
+    "Select one explicit view-target pilot; confirm model capability, count and cost before any generation.",
+    "Validate each output hash, timing, card contact, hand occlusion and pose joins before runtime binding or expansion."
+  ],
+  "reuse": {
+    "templatePath": "templates/build-plan.template.json",
+    "method": "Instantiate metadata for a new build ID and source hash. Never copy Pamela assets or calibration to represent another keystone."
+  },
+  "evidence": [
+    {
+      "path": "references/schemes.json",
+      "schemeId": "main-pose-contract",
+      "sourceRef": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544",
+      "sha256": "526fdfdeaee71a2c46683b43463393cc354246edb2bc4d6eba45560272d9e549",
+      "scope": "Naming and pose conventions only."
+    },
+    {
+      "repository": "Jakeminator123/scoutgaming",
+      "checkout": "C:/Users/jakem/dev/scoutgaming",
+      "localBranch": "main",
+      "localHead": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544",
+      "path": "packages/presentation/contracts/clip-naming.mjs",
+      "lines": [
+        114,
+        118
+      ],
+      "sha256": "9da44f8c104192b87d816666b3ef9262ec36883ca88cd60b17948de6cc53b7e5",
+      "scope": "posN uses one-based target seats; boxN uses zero-based target seats. Read from working tree; HEAD read from local ref, not remote verification."
+    },
+    {
+      "repository": "Jakeminator123/scoutgaming",
+      "path": "packages/presentation/contracts/engine-signals.json",
+      "lines": [
+        111,
+        113
+      ],
+      "sha256": "dbcab837f5c72e56c151094aa9bb9735694094e46016fb3380d4d61a15c2eeb6",
+      "scope": "Target groups 1-2 left, 3-5 centre, 6-7 right; these labels do not establish physical camera azimuth."
+    }
+  ]
+}

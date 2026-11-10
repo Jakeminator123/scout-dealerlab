@@ -1,0 +1,234 @@
+{
+  "measuredAt": "2026-11-10T01:50:11.2367904Z",
+  "scope": "runs",
+  "fileCount": 86516,
+  "logicalBytes": 49407741489.0,
+  "categories": [
+    {
+      "category": "Uppackade filmrutor",
+      "files": 12631,
+      "bytes": 19799489733.0,
+      "gib": 18.44
+    },
+    {
+      "category": "Övriga PNG: renderingar, bilder och bevis",
+      "files": 37640,
+      "bytes": 17891851702.0,
+      "gib": 16.663
+    },
+    {
+      "category": "MP4-filmer",
+      "files": 559,
+      "bytes": 5205885509.0,
+      "gib": 4.848
+    },
+    {
+      "category": "MKV-mellanfilmer",
+      "files": 27,
+      "bytes": 2989798708.0,
+      "gib": 2.784
+    },
+    {
+      "category": "Övrigt",
+      "files": 8436,
+      "bytes": 1916018910.0,
+      "gib": 1.784
+    },
+    {
+      "category": "Masker och alpha-PNG",
+      "files": 27223,
+      "bytes": 1604696927.0,
+      "gib": 1.494
+    }
+  ],
+  "largestRuns": [
+    {
+      "run": "20261109-pamela-c2-motion-track",
+      "files": 14672,
+      "bytes": 14325259804.0,
+      "gib": 13.341
+    },
+    {
+      "run": "20261109-pamela-seat-bank",
+      "files": 7078,
+      "bytes": 10134479518.0,
+      "gib": 9.438
+    },
+    {
+      "run": "20261109-pamela-middle-card-track",
+      "files": 20145,
+      "bytes": 3323137893.0,
+      "gib": 3.095
+    },
+    {
+      "run": "20261109-pamela-fourteen-trim",
+      "files": 570,
+      "bytes": 1380772615.0,
+      "gib": 1.286
+    },
+    {
+      "run": "20261109-pamela-bank-trim",
+      "files": 553,
+      "bytes": 1149644280.0,
+      "gib": 1.071
+    },
+    {
+      "run": "20261109-pamela-seat7-card-pair",
+      "files": 2138,
+      "bytes": 1148701320.0,
+      "gib": 1.07
+    },
+    {
+      "run": "20261109-pamela-seat1-matte-study",
+      "files": 1614,
+      "bytes": 1062535966.0,
+      "gib": 0.99
+    },
+    {
+      "run": "20261109-pamela-full-loop",
+      "files": 1733,
+      "bytes": 964024264.0,
+      "gib": 0.898
+    },
+    {
+      "run": "20261109-pamela-material-bank",
+      "files": 458,
+      "bytes": 889172545.0,
+      "gib": 0.828
+    },
+    {
+      "run": "20261110-pamela-two-sided-bank",
+      "files": 588,
+      "bytes": 745553177.0,
+      "gib": 0.694
+    },
+    {
+      "run": "20261109-pamela-continuous-idle",
+      "files": 611,
+      "bytes": 708742228.0,
+      "gib": 0.66
+    },
+    {
+      "run": "20261109-pamela-idle-anchor-review",
+      "files": 421,
+      "bytes": 634214565.0,
+      "gib": 0.591
+    },
+    {
+      "run": "20261109-pamela-idle-loop-fit",
+      "files": 182,
+      "bytes": 633102299.0,
+      "gib": 0.59
+    },
+    {
+      "run": "20261109-pamela-edge-card-track",
+      "files": 8467,
+      "bytes": 525530017.0,
+      "gib": 0.489
+    },
+    {
+      "run": "20261109-pamela-seat7-card-track",
+      "files": 1848,
+      "bytes": 522544269.0,
+      "gib": 0.487
+    },
+    {
+      "run": "20261109-pamela-neutral-card-track",
+      "files": 1861,
+      "bytes": 517510201.0,
+      "gib": 0.482
+    },
+    {
+      "run": "20261109-pamela-fourteen-full-loop",
+      "files": 868,
+      "bytes": 500870140.0,
+      "gib": 0.466
+    },
+    {
+      "run": "20261109-pamela-p2-card-calibration",
+      "files": 649,
+      "bytes": 476804082.0,
+      "gib": 0.444
+    },
+    {
+      "run": "20261109-pamela-seat-pilot-plan",
+      "files": 392,
+      "bytes": 460512565.0,
+      "gib": 0.429
+    },
+    {
+      "run": "20261109-pamela-idle-scene-proof",
+      "files": 39,
+      "bytes": 439786912.0,
+      "gib": 0.41
+    }
+  ],
+  "largestOtherPngDirectories": [
+    {
+      "dir": "20261109-pamela-continuous-idle\\qa",
+      "files": 373,
+      "gib": 0.402
+    },
+    {
+      "dir": "20261109-pamela-idle-anchor-review\\job01-width-mismatch-01\\native",
+      "files": 360,
+      "gib": 0.396
+    },
+    {
+      "dir": "20261109-pamela-c2-motion-track\\take-01\\seat-1\\draft-02\\black-probe",
+      "files": 360,
+      "gib": 0.291
+    },
+    {
+      "dir": "20261109-pamela-c2-motion-track\\take-01\\seat-1\\draft-01\\black-probe",
+      "files": 360,
+      "gib": 0.291
+    },
+    {
+      "dir": "20261109-pamela-c2-motion-track\\take-01\\seat-3\\draft-01\\black-probe",
+      "files": 360,
+      "gib": 0.286
+    },
+    {
+      "dir": "20261109-pamela-c2-motion-track\\take-01\\seat-2\\draft-01\\black-probe",
+      "files": 360,
+      "gib": 0.285
+    },
+    {
+      "dir": "20261109-pamela-c2-motion-track\\take-01\\seat-2\\draft-02\\black-probe",
+      "files": 360,
+      "gib": 0.285
+    },
+    {
+      "dir": "20261110-pamela-two-sided-bank\\take-02\\qa",
+      "files": 186,
+      "gib": 0.283
+    },
+    {
+      "dir": "20261110-pamela-idle-chain-opening\\take-01\\sources",
+      "files": 163,
+      "gib": 0.246
+    },
+    {
+      "dir": "20261109-pamela-bank-trim\\take-02\\qa\\source-d1d2aae1c7",
+      "files": 231,
+      "gib": 0.222
+    }
+  ],
+  "duplicateCheck": {
+    "duplicatedLogicalGiB": 0.7,
+    "compared": 360,
+    "different": 8,
+    "folders": [
+      "20261109-pamela-c2-motion-track/take-01/seat-6/draft-01/frames",
+      "20261109-pamela-c2-motion-track/take-01/seat-6/draft-02/frames"
+    ],
+    "identical": 352
+  },
+  "limits": [
+    "Logical sizes, not unique allocated disk blocks. Hard links can reduce physically occupied space.",
+    "Filename-based categories; no deletion authorized or performed.",
+    "Duplicate frame bytes do not prove an entire run can be deleted. Preserve originals, cited evidence, contracts and QA."
+  ],
+  "deletedFiles": 0
+}

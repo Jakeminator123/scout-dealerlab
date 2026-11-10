@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "20261108210457-pamela-v4-focused",
+  "title": "Pamela VILA v4 – tätare bildplan",
+  "createdAt": "2026-11-08T20:04:57.0987566Z",
+  "source": {
+    "path": "runs/20261108175519-74d6c57e/original/pamela-vila-candidate-v3.png",
+    "sha256": "b13225f0b71cb6cd20d6a596c30b1502d9c0ed7ce2d0e6c8651bd3150ae1033e"
+  },
+  "output": {
+    "path": "runs/20261108210457-pamela-v4-focused/original/pamela-vila-focused-v4.png",
+    "sha256": "4445634a5698da4121ad40bd7fcef76c8b8b8707c6fc24a87d095ad98348e5a7"
+  },
+  "generation": {
+    "provider": "built-in-imagegen",
+    "model": null,
+    "taskId": "exec-b3e4a563-4796-40d5-b96b-ac5003d3bc89",
+    "seed": null,
+    "cost": null
+  },
+  "decision": "candidate-not-calibrated",
+  "qa": {
+    "identity": "visual candidate, preserve fictional Pamela",
+    "pose": "VILA only",
+    "handMargin": "Hands close to bottom; full dealing motion envelope not verified",
+    "sourceToReferenceTransform": null,
+    "handPoints": null,
+    "shoeOutlet": null,
+    "productionApproved": false
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-11-08T20:13:50.133Z",
+  "source": {
+    "projectId": "wandering-hill-60561912",
+    "branchId": "br-flat-fog-b161a6r8",
+    "database": "scoutgaming_main",
+    "environment": "production",
+    "workspace": "croupier",
+    "readOnly": true
+  },
+  "assets": [
+    {
+      "role": "table",
+      "label": "Scout Main · bord A / J3",
+      "path": "media/blob/0097086f5a546805/9b5cd545387065a3a13559eaf41d90aba30963a805b5bc1b48753b07dd0ac0c8.png",
+      "sha256": "9b5cd545387065a3a13559eaf41d90aba30963a805b5bc1b48753b07dd0ac0c8"
+    },
+    {
+      "role": "shoe",
+      "label": "Scout Sko · 18fdcf3f",
+      "path": "media/blob/1c373ae651dad0a4/18fdcf3fdd25658698d6f8b97817fb91adee605d01f4a6a787603a930040742d.png",
+      "sha256": "18fdcf3fdd25658698d6f8b97817fb91adee605d01f4a6a787603a930040742d"
+    },
+    {
+      "role": "shoe",
+      "label": "Scout Sko · 798608cc",
+      "path": "media/blob/db0c727a0b1294f1/798608cc2f9ffd521d75a34bdb0b27a14b0765decd599ad983d5a310f2f9a297.png",
+      "sha256": "798608cc2f9ffd521d75a34bdb0b27a14b0765decd599ad983d5a310f2f9a297"
+    }
+  ]
+}

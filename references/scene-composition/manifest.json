@@ -1,0 +1,354 @@
+{
+  "schema": "dealerlab-scene-reference/v1",
+  "createdAtUtc": "2026-11-08T19:35:36.1630088Z",
+  "purpose": "Read-only source snapshots for a proposed scene renderer in snyggare-dealer. Not runnable and not imported by app code.",
+  "workRoot": "C:\\Users\\jakem\\dev\\super-feature-sg\\snyggare-dealer",
+  "dealerId": "goran-alternativ-helkropp",
+  "sourceRoot": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio",
+  "roomStudyRoot": "C:\\Users\\jakem\\Desktop\\wow\\rumsstudie-3d-2026-11-07",
+  "projectId": "e19d226c-c586-467e-b126-6a9f90e1675e",
+  "sourceRevision": 103,
+  "sourceProjectSha256": "97c28d7c997366f2d01af2acfdc61febbc149e5b15cea113df302d73edff9899",
+  "keystoneHash": "54224fb918c5cb839554381e468ddbf4fdae64008c537150335ad21660db14a9",
+  "sourceShotCount": 18,
+  "sourceReviewedShotCount": 0,
+  "sourceCardCalibrationCount": 10,
+  "existingMediaManifest": "references/alternative-bank.json",
+  "existingEnvironmentAssets": [
+    {
+      "path": "extra/insperationsmall-alternativ/trakasino-foto-referens.png",
+      "sha256": "372722aa116e6734a87b3d3d131c2fb2096d91012aa15c406d0d8868f4e2d985"
+    },
+    {
+      "path": "extra/insperationsmall-alternativ/trakasino-360-panorama.png",
+      "sha256": "c78d8099a7d6c4c3adb9ab4d357dd37822c12366c9da6c4590d3a2ff59356a2b"
+    }
+  ],
+  "sourceVendorRevision": "180",
+  "vendorDependencies": [
+    {
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\vendor\\three.module.js",
+      "sha256": "852c06b9fe936cf8ebc2870c86370d1015c310b04de98cdfc07f4efaf6afd2af",
+      "copied": false
+    },
+    {
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\vendor\\three.core.min.js",
+      "sha256": "4183cee05f0aa093682fdf551363a16bb20bd92b68e14f7576905f45c461ba82",
+      "copied": false
+    },
+    {
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\vendor\\GroundedSkybox.js",
+      "sha256": "cbf8a3e2b290b9dcba5d78a52da0d1694bfb5e91b581c7a7e3c70b713287a69e",
+      "copied": false
+    }
+  ],
+  "verification": {
+    "allCopiedFilesMatch": true,
+    "copiedFileCount": 32,
+    "comparedSourceAssetCount": 10,
+    "assetParity": [
+      {
+        "file": "la-panorama.jpg",
+        "sameSha256": true
+      },
+      {
+        "file": "vegas-panorama.jpg",
+        "sameSha256": true
+      },
+      {
+        "file": "panorama-4096.avif",
+        "sameSha256": true
+      },
+      {
+        "file": "wood_table-diffuse.webp",
+        "sameSha256": true
+      },
+      {
+        "file": "wood_table-nor_gl.webp",
+        "sameSha256": true
+      },
+      {
+        "file": "wood_table-rough.webp",
+        "sameSha256": true
+      },
+      {
+        "file": "brown_leather-nor_gl.webp",
+        "sameSha256": true
+      },
+      {
+        "file": "brown_leather-rough.webp",
+        "sameSha256": true
+      },
+      {
+        "file": "denim_fabric-nor_gl.webp",
+        "sameSha256": true
+      },
+      {
+        "file": "denim_fabric-rough.webp",
+        "sameSha256": true
+      }
+    ],
+    "liveRuntimeStarted": false,
+    "newMotionAcceptance": false,
+    "historicalScreenshotsReviewed": true,
+    "note": "Environment screenshots from the room study show a different dealer. They are environment references only. Source reviewed flags remain unchanged."
+  },
+  "files": [
+    {
+      "path": "source/scene/furniture.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\furniture.ts",
+      "role": "source-reference",
+      "sha256": "1efe65418e8e11d8fcd4870a791737a4f38111c44485ac38f68940b3ab4e2514",
+      "bytes": 13043,
+      "sourceModifiedUtc": "2026-11-08T03:35:18.3056683Z"
+    },
+    {
+      "path": "source/scene/panorama-room.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\panorama-room.ts",
+      "role": "source-reference",
+      "sha256": "f28036b6384603aedb5c8e4f8b9f8e35c5a7feec590d226b4143c901e61459b5",
+      "bytes": 640,
+      "sourceModifiedUtc": "2026-11-07T23:02:04.5680804Z"
+    },
+    {
+      "path": "source/scene/atmosphere.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\atmosphere.ts",
+      "role": "source-reference",
+      "sha256": "b885f87618238ae13b7f7b9504dba54c749a7c9b33134b7a5511bb7021c4e2e3",
+      "bytes": 3991,
+      "sourceModifiedUtc": "2026-11-07T23:02:04.5665678Z"
+    },
+    {
+      "path": "source/scene/environments/los-angeles.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\environments\\los-angeles.ts",
+      "role": "source-reference",
+      "sha256": "1bd1a53774cade5bc268f28947545af0aba1dcb9d531457c516ed7b3cf1bd350",
+      "bytes": 5918,
+      "sourceModifiedUtc": "2026-11-07T23:02:04.5717834Z"
+    },
+    {
+      "path": "source/scene/environments/las-vegas.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\environments\\las-vegas.ts",
+      "role": "source-reference",
+      "sha256": "79b1ff6748535665288b537f876570bef1d0b94f502b59a9c4cfaae2f321a1c7",
+      "bytes": 7669,
+      "sourceModifiedUtc": "2026-11-07T23:02:04.5742882Z"
+    },
+    {
+      "path": "source/experiments/avatar-pilot/preview.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\experiments\\avatar-pilot\\preview.ts",
+      "role": "source-reference",
+      "sha256": "6e4f28ced9d2c39b4254ed16db24d862499830b4ff94d7fc719bbf6db7115d9d",
+      "bytes": 47763,
+      "sourceModifiedUtc": "2026-11-08T04:15:26.2527226Z"
+    },
+    {
+      "path": "source/experiments/avatar-pilot/room-profile.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\experiments\\avatar-pilot\\room-profile.ts",
+      "role": "source-reference",
+      "sha256": "75c96dc9d53598ace1a18e790fda07775adf4dddfc4f1492a7e32d7ef7ce7c88",
+      "bytes": 1180,
+      "sourceModifiedUtc": "2026-11-08T03:32:52.4838328Z"
+    },
+    {
+      "path": "source/experiments/avatar-pilot/avatar-key.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\experiments\\avatar-pilot\\avatar-key.ts",
+      "role": "source-reference",
+      "sha256": "6a3c619a929aa011cbec0beb013fb0260905e817dbf70308b1dfdec70a3efd5f",
+      "bytes": 1730,
+      "sourceModifiedUtc": "2026-11-07T23:00:05.0951226Z"
+    },
+    {
+      "path": "source/experiments/avatar-pilot/avatar-depth.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\experiments\\avatar-pilot\\avatar-depth.ts",
+      "role": "source-reference",
+      "sha256": "dc3f044025147b544b97606d7aed132cef1a1e40ccbeac59ff1fb77c28679064",
+      "bytes": 3488,
+      "sourceModifiedUtc": "2026-11-07T23:55:04.0809693Z"
+    },
+    {
+      "path": "source/experiments/avatar-pilot/pose-config.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\experiments\\avatar-pilot\\pose-config.ts",
+      "role": "source-reference",
+      "sha256": "56b3eca8ab6f1448f8f50f1c906027fbb4d821a26e8b202a5cd002b84dd697c0",
+      "bytes": 360,
+      "sourceModifiedUtc": "2026-11-07T23:00:05.0967528Z"
+    },
+    {
+      "path": "source/experiments/avatar-pilot/video-source.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\experiments\\avatar-pilot\\video-source.ts",
+      "role": "source-reference",
+      "sha256": "c8b4be5d862f8e071f33e61939569938532ea1d7f1f1dbb30d0e48581daf3163",
+      "bytes": 4153,
+      "sourceModifiedUtc": "2026-11-08T03:12:13.9907207Z"
+    },
+    {
+      "path": "source/experiments/avatar-pilot/camera-motion.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\experiments\\avatar-pilot\\camera-motion.ts",
+      "role": "source-reference",
+      "sha256": "eab325313387084b8cc483fe005cf3794d9028da936a84fedd83061a9c76b407",
+      "bytes": 2201,
+      "sourceModifiedUtc": "2026-11-07T23:00:05.0929691Z"
+    },
+    {
+      "path": "source/creator/card-calibration.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\creator\\card-calibration.ts",
+      "role": "source-reference",
+      "sha256": "11b539d4818333567dca47e8a754d3bf4f129269acc5697c170906b2a9d008b6",
+      "bytes": 18373,
+      "sourceModifiedUtc": "2026-11-08T04:30:01.0299480Z"
+    },
+    {
+      "path": "source/creator/render-effects.ts",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\creator\\render-effects.ts",
+      "role": "source-reference",
+      "sha256": "37159758e8a788381680328e12a5571171d33240d6bb5eddb049624e22706d6c",
+      "bytes": 4892,
+      "sourceModifiedUtc": "2026-11-07T23:11:02.4502961Z"
+    },
+    {
+      "path": "source/scene/material-sources.json",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\material-sources.json",
+      "role": "source-reference",
+      "sha256": "aa6b1e66753116fb5aa5158d43acd2ec794d141d65848237b083cd66af36f446",
+      "bytes": 1660,
+      "sourceModifiedUtc": "2026-11-07T03:28:08.1025427Z"
+    },
+    {
+      "path": "source/scene/vendor/LICENSE",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\vendor\\LICENSE",
+      "role": "source-reference",
+      "sha256": "df2a91696186fe58c92518a25d48bc59c8ee2edc7cac9ca6d19a5a0d599a2a05",
+      "bytes": 1102,
+      "sourceModifiedUtc": "2026-11-07T03:28:11.2938463Z"
+    },
+    {
+      "path": "assets/la-panorama.jpg",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\la-panorama.jpg",
+      "role": "environment-or-material-reference",
+      "sha256": "84d3a766369aec4129aef1d15d99098cac1e629b9868a61f01eea42339521920",
+      "bytes": 231259,
+      "sourceModifiedUtc": "2026-11-07T03:28:07.9137190Z"
+    },
+    {
+      "path": "assets/vegas-panorama.jpg",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\vegas-panorama.jpg",
+      "role": "environment-or-material-reference",
+      "sha256": "f3d13ff2009d9f19420bfece9cf173f1e3a6a976c1fc991ff88f5f6b1d6ee253",
+      "bytes": 567656,
+      "sourceModifiedUtc": "2026-11-07T03:28:07.9658566Z"
+    },
+    {
+      "path": "assets/panorama-4096.avif",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\panorama-4096.avif",
+      "role": "environment-or-material-reference",
+      "sha256": "ae26f10562b3d64fbdf96facfebce6ec61e80a032fe07f2da8bbd3877fd50699",
+      "bytes": 1032861,
+      "sourceModifiedUtc": "2026-11-07T03:28:07.9367188Z"
+    },
+    {
+      "path": "assets/wood_table-diffuse.webp",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\wood_table-diffuse.webp",
+      "role": "environment-or-material-reference",
+      "sha256": "e307b54f608386e1357df40c297a1d687aeb1559dd02257f75ed243b88d5159c",
+      "bytes": 89658,
+      "sourceModifiedUtc": "2026-11-07T03:28:07.9738814Z"
+    },
+    {
+      "path": "assets/wood_table-nor_gl.webp",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\wood_table-nor_gl.webp",
+      "role": "environment-or-material-reference",
+      "sha256": "c1df20651130754fe7a19fe7ef6b23bd155fba3ab0bb6d70d5fbd54bd679e5db",
+      "bytes": 30152,
+      "sourceModifiedUtc": "2026-11-07T03:28:07.9808807Z"
+    },
+    {
+      "path": "assets/wood_table-rough.webp",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\wood_table-rough.webp",
+      "role": "environment-or-material-reference",
+      "sha256": "b4499bd05618490a827f9344516fc8106c3925e16ea49c99d6adf6c6bb07f1d4",
+      "bytes": 50740,
+      "sourceModifiedUtc": "2026-11-07T03:28:07.9878890Z"
+    },
+    {
+      "path": "assets/brown_leather-nor_gl.webp",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\brown_leather-nor_gl.webp",
+      "role": "environment-or-material-reference",
+      "sha256": "5563963829922e802aef387d7e8d5580aaa03066929be0dea74a7a78995b4386",
+      "bytes": 76228,
+      "sourceModifiedUtc": "2026-11-07T03:28:07.8374663Z"
+    },
+    {
+      "path": "assets/brown_leather-rough.webp",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\brown_leather-rough.webp",
+      "role": "environment-or-material-reference",
+      "sha256": "00612ec28b54cf8da43dc60085be0511a65112825e8ca863afaadefce556d7e4",
+      "bytes": 134886,
+      "sourceModifiedUtc": "2026-11-07T03:28:07.8474643Z"
+    },
+    {
+      "path": "assets/denim_fabric-nor_gl.webp",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\denim_fabric-nor_gl.webp",
+      "role": "environment-or-material-reference",
+      "sha256": "47d6e98f08a4311f7e7332b159d0ec3aa4b472d3f94b781c664a971655e77119",
+      "bytes": 29240,
+      "sourceModifiedUtc": "2026-11-07T03:28:07.8674647Z"
+    },
+    {
+      "path": "assets/denim_fabric-rough.webp",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\blackjack-studio\\scene\\assets\\denim_fabric-rough.webp",
+      "role": "environment-or-material-reference",
+      "sha256": "a9a9483ca0672ef18329e7d7de6acd7b6742201808cd91e4e1c36829fd27d97d",
+      "bytes": 62308,
+      "sourceModifiedUtc": "2026-11-07T03:28:07.8754625Z"
+    },
+    {
+      "path": "evidence/goran-3d-salong.jpg",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\verification\\goran-3d-salong.jpg",
+      "role": "historical-screenshot-or-contact-sheet",
+      "sha256": "696609c424f9d939b43fde3ea1129af630f114e41135c72e7b53af5741a0cc12",
+      "bytes": 128172,
+      "sourceModifiedUtc": "2026-11-08T03:39:55.1409444Z"
+    },
+    {
+      "path": "evidence/goran-final-review.png",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\verification\\goran-final-review.png",
+      "role": "historical-screenshot-or-contact-sheet",
+      "sha256": "e29b599d65339aa5ed0263be74ac537f8fc1dfb99009a598694293594d2d0152",
+      "bytes": 162843,
+      "sourceModifiedUtc": "2026-11-08T14:47:19.9310036Z"
+    },
+    {
+      "path": "evidence/goran-shoe-pickups.jpg",
+      "source": "C:\\Users\\jakem\\dev\\super-feature-sg\\local-studio\\verification\\goran-shoe-pickups.jpg",
+      "role": "historical-screenshot-or-contact-sheet",
+      "sha256": "959f22fdbafc402872dca379a1ed7116b579aed5c5a19af89389fae99d710034",
+      "bytes": 151648,
+      "sourceModifiedUtc": "2026-11-08T03:49:18.9880873Z"
+    },
+    {
+      "path": "evidence/forest-3d.png",
+      "source": "C:\\Users\\jakem\\Desktop\\wow\\rumsstudie-3d-2026-11-07\\evidence\\preview-images\\forest-3d.png",
+      "role": "historical-screenshot-other-dealer",
+      "sha256": "1729b8f747914e81e8de3b2d419e410bcf1deaa556893022e36709bb9754520f",
+      "bytes": 889629,
+      "sourceModifiedUtc": "2026-11-07T03:28:11.5600627Z"
+    },
+    {
+      "path": "evidence/la-3d.png",
+      "source": "C:\\Users\\jakem\\Desktop\\wow\\rumsstudie-3d-2026-11-07\\evidence\\preview-images\\la-3d.png",
+      "role": "historical-screenshot-other-dealer",
+      "sha256": "fe8275f818d18a51fc8933774eb5075406092fd28a93d2c203a777ba9f06a4d1",
+      "bytes": 593686,
+      "sourceModifiedUtc": "2026-11-07T03:28:11.6470644Z"
+    },
+    {
+      "path": "evidence/vegas-3d.png",
+      "source": "C:\\Users\\jakem\\Desktop\\wow\\rumsstudie-3d-2026-11-07\\evidence\\preview-images\\vegas-3d.png",
+      "role": "historical-screenshot-other-dealer",
+      "sha256": "8916032b55cd59f18986b59ddf0bfe0f3d33855cb22fa0da8500883affb09161",
+      "bytes": 624054,
+      "sourceModifiedUtc": "2026-11-07T03:28:11.8195944Z"
+    }
+  ]
+}

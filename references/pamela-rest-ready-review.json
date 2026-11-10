@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "entryEvidence": {
+    "sha256": "c0e13a1e230e08f84d45595213d1a6319b72f6f9493b2371e62ad0d7d77ec3c4",
+    "path": "runs/20261109-pamela-rest-ready-seam-survey/take-01/entry-playback-evidence.json"
+  },
+  "generationPlan": {
+    "sha256": "eb8dc4a56f7bf533bff49a517e9eacd5a23978d64910b7449679402e9a6814c6",
+    "path": "runs/20261109-pamela-idle-ready-bridge/run-01/plan.json"
+  },
+  "bridgeSeams": {
+    "path": "runs/20261109-pamela-idle-ready-bridge/run-01/qa/take-01/seam-proof.json",
+    "sha256": "3a6581619e6fb625674aee9265a2e8819b84a5cdc53ca6d74b92477969e452d6"
+  },
+  "processedExitCandidate": {
+    "evidence": {
+      "path": "runs/20261110-pamela-idle-exit-overlap/take-01/evidence.json",
+      "sha256": "2405d388ba7b1a88c9cdbfcdd4f4b8a705db870f11cb57f9b43f6040992c300a"
+    },
+    "browserReview": {
+      "path": "runs/20261110-pamela-idle-exit-overlap/take-01/browser-review/evidence.json",
+      "sha256": "bb757a0506e3a4bb37ff910df21d78d811bdd253ea129ff563e13dc6b01d84b8"
+    },
+    "selectedId": "overlap-4",
+    "originalSeamAccepted": false,
+    "productionAccepted": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "status": "local-scene-study-not-production",
+  "dealer": {"id": "pamela", "sourceFrame": 0, "sourceSha256": "2445bb2ef5122fe558134d582533d277603da72c4b98b6c782be01a5bf06235a", "representation": "keyed planar still including source shoe, baked source lighting; no reconstructed depth"},
+  "assets": {"dealer": "runs/20261109-pamela-stage/dealer-reference.png", "room": "runs/20261109-pamela-stage/room-reference.jpg", "felt": "runs/20261109-pamela-stage/felt-reference.jpg", "provenance": "runs/20261109-pamela-stage/assets.json"},
+  "camera": {"mode": "perspective", "position": [0,3.5,8], "target": [0,1.35,0], "fieldOfViewDegrees": 35, "maxPan": [0.16,0.07], "rotationLocked": true, "basis": "authored, not a recovered source camera"},
+  "table": {"width": 7.6, "depth": 3.5, "thickness": 0.22, "rimHeight": 0.075, "cornerRadius": 0.46, "rimWidth": 0.13, "feltHeight": 0.014, "feltColor": "#315b46", "feltRoughness": 1, "feltBumpScale": 0.012, "feltTextureRepeat": 1.25, "feltTextureMean": 0.12034, "feltTextureContrast": 4, "rimColor": "#292c27", "rimRoughness": 0.38, "units": "scene units, not measured metres", "textureRole": "source grain normalized around measured mean as subtle reflectance variation plus bump; not measured albedo", "diagnosis": "Previous shaded felt RGB mean 21.99/33.60/27.36 was multiplied by #566f62; double darkening caused the black surface"},
+  "dealerPlacement": {"width": 5.9, "sourceWidth": 1762, "cropHeight": 900, "contactSourceY": 876, "depth": -0.75, "basis": "manual contact baseline near resting hand; shoe remains planar and lower edge is occluded by tabletop"},
+  "contactShadows": [{"sourceX": 735, "sourceY": 874, "width": 0.58, "depth": 0.2, "opacity": 0.16, "role": "resting hand, authored source anchor"}, {"sourceX": 1435, "sourceY": 892, "width": 1.6, "depth": 0.24, "opacity": 0.18, "role": "shoe foot, authored source anchor"}],
+  "lights": {
+    "neutral": {"label": "Neutral", "key": "#fff3e3", "keyIntensity": 2.2, "fill": "#dfeaff", "fillIntensity": 0.8, "exposure": 1.0},
+    "warm": {"label": "Varm", "key": "#ffdbac", "keyIntensity": 2.1, "fill": "#f4e7d7", "fillIntensity": 0.75, "exposure": 0.96},
+    "cool": {"label": "Sval", "key": "#d9e9ff", "keyIntensity": 2.2, "fill": "#ecf3ff", "fillIntensity": 0.85, "exposure": 1.02}
+  },
+  "lightPlacement": {"key": [-3,6,4], "fill": [4,3,2], "hemisphereIntensity": 0.65, "basis": "authored relative intensities, not lux or measured Kelvin", "appliesTo": "3D table only; dealer and background use unlit materials preserving baked appearance"},
+  "limitations": ["No new dealer viewpoint", "No physical dealer relighting", "No depth recovered from the room photograph", "Manual scale/contact alignment and source-bound approximate contact shadows", "Matte edge is a candidate, not an accepted optical alpha", "The source matte leaves a hard lower jacket edge; proper seated torso/table occlusion needs separate depth or a repaired source matte"]
+}

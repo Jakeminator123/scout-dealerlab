@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "project": "snyggare-dealer",
+  "dealerId": "pamela",
+  "presentationOnly": true,
+  "productionAccepted": false,
+  "entries": [
+    {
+      "id": "C1-P1",
+      "status": "integration-candidate",
+      "kind": "edge",
+      "evidence": {
+        "path": "runs/20261109-pamela-edge-card-track/take-02/p1/evidence.json",
+        "sha256": "ad69cc9a91f68292213f4d23e0a7d0a8ec5912c582444deb117b388db5ac91e9"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-edge-card-track/take-04-probe/independent-review/review.json",
+        "sha256": "0602d59c2b705ca0ca13caf4f0cd3c6f84878ec2a17f1648855b91fdaff01f8d"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 1
+    },
+    {
+      "id": "C1-P2",
+      "status": "integration-candidate",
+      "kind": "middle",
+      "evidence": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p2-stable-integration/evidence.json",
+        "sha256": "5bf4c6c97f32b10097e74a53e2ecc4f6bd2c4b57db4e1886858a735771ac17a0"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p2-stable-integration/visual-review.json",
+        "sha256": "34e6fe2159ed582bfa2609b6a99fc9c72834b242c2d3d25b28b59c71770846c3"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 1
+    },
+    {
+      "id": "C1-P3",
+      "status": "integration-candidate",
+      "kind": "middle",
+      "evidence": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p3-stable-integration/evidence.json",
+        "sha256": "83d2e4764d05b0dd17b7b60e186c5e2ec1320b52ae4765097e5f62ef3f87f49e"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p3-stable-integration/visual-review.json",
+        "sha256": "12cd9df82215c260e4bc3aedc79f7b38bda70f730eb87fadd7a7310726696622"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 1
+    },
+    {
+      "id": "C1-P4",
+      "status": "integration-candidate",
+      "kind": "middle",
+      "evidence": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p4-stable-integration/evidence.json",
+        "sha256": "7cf6d4a8891a613646ed978e575810d0812158174cbc064aa639643b035c0015"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p4-stable-integration/visual-review.json",
+        "sha256": "45208894d5d114f898c86afaf8880cd6beba108d7b81dc859e95a20b1e189666"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 0
+    },
+    {
+      "id": "C1-P5",
+      "status": "integration-candidate",
+      "kind": "middle",
+      "evidence": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p5-stable-integration/evidence.json",
+        "sha256": "3ea39a7a3988ae0b9afba0c584c40f5169e39a4998ca0aa2e306e2bbc2ab2ebd"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p5-stable-integration/visual-review.json",
+        "sha256": "7d52b928425d98e79318349ff4c989f44eda27881f22113ba533ca93d2ed4ae7"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 0
+    },
+    {
+      "id": "C1-P6",
+      "status": "integration-candidate",
+      "kind": "middle",
+      "evidence": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p6-source99-integration/evidence.json",
+        "sha256": "3a4d4e0aa5a792085628a21801a2a4fd8ae06ec123d45c6736bb8ea42cd719ac"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-middle-card-track/take-07/p6-source99-integration/visual-review.json",
+        "sha256": "f157ad3d3d068ca69ec7d78f3e4fceca02315eeacd42759ce240a251b1d8c1ce"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 0
+    },
+    {
+      "id": "C1-P7",
+      "status": "integration-candidate",
+      "kind": "edge",
+      "evidence": {
+        "path": "runs/20261109-pamela-edge-card-track/take-03/p7/evidence.json",
+        "sha256": "3fdcd73b06165ae4069365fdf10de718b7b3b9f05e4c9c8be4402a351143b116"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-edge-card-track/take-03/independent-review/review.json",
+        "sha256": "3c910b181b358eae7a98ebe92dc8d04da9bbeff8d06041a86c57ea72fc8e4eec"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 0
+    },
+    {
+      "id": "C2-P1",
+      "status": "integration-candidate",
+      "kind": "c2",
+      "evidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-1/draft-02/track.json",
+        "sha256": "cc9a001383f96eeacbd18ce62a77949b1efdd52ecf5a9892503a03e1a2d0bd17"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-1/draft-02-independent-review/review.json",
+        "sha256": "e0701b15414249506c45bb4fd2b1ea5a28a6f7e697d37ab69e11968aac7bed7c"
+      },
+      "physicalSide": "UNKNOWN",
+      "previewOnly": true,
+      "finalAcceptanceBlocked": true,
+      "limitation": "Cirka 1–2 pixlars blandkant och konservativt otryckt greppyta i källruta 115–118. Begränsat integrationsprov; fysisk kortsida är UNKNOWN.",
+      "canonicalUvQuarterTurns": 0,
+      "producerReview": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-1/draft-02/review.json",
+        "sha256": "3fb23e823ce2c630e0d95b69fbb4e15a4cc4e17ab097de5eff14361c8fd06fff"
+      }
+    },
+    {
+      "id": "C2-P2",
+      "status": "integration-candidate",
+      "kind": "c2",
+      "evidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-2/draft-02/track.json",
+        "sha256": "78b42df54c83c0189a70e0924d1ab35e28b54c654c2a7146161d5cb9a91e90e0"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-2/draft-02/review.json",
+        "sha256": "245c15a2fa3225e12115622fc0458450aec11af9dca4595d2b05a8f63c87b9f8"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 0
+    },
+    {
+      "id": "C2-P3",
+      "status": "integration-candidate",
+      "kind": "c2",
+      "evidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-3/draft-01/track.json",
+        "sha256": "19d20efd01824a8032662caaf575a196247472bbc8dff7451f9aa2895ca73692"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-3/draft-01/review.json",
+        "sha256": "bc34506d24df61c7391d241231a6c564210e436b86d83a3c7672f075b1e23fed"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 0
+    },
+    {
+      "id": "C2-P4",
+      "status": "integration-candidate",
+      "kind": "c2",
+      "evidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-4/draft-03/track.json",
+        "sha256": "5f7bdf302f9a1cc602c0addac3a691888af019fefede75d671fe59ccff1bb4d8"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-4/draft-03/review.json",
+        "sha256": "19321babe318833089da1a47ab7fdd0037af8ebdb952949b31ab7392e8a119ac"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 0
+    },
+    {
+      "id": "C2-P5",
+      "status": "integration-candidate",
+      "kind": "c2",
+      "evidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-5/draft-01/track.json",
+        "sha256": "a3d3962c461bd7e651143058410d07394025dd05ec376626056db94b69622220"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-5/draft-01/review.json",
+        "sha256": "8b8068e7773ceffb1cdd6bfa1bf2596918f26217641f7463c7f0361c6a5a2cb1"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 0
+    },
+    {
+      "id": "C2-P6",
+      "status": "integration-candidate",
+      "kind": "c2",
+      "evidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-6/draft-02/track.json",
+        "sha256": "4f2ceef57d52ea5ffb3619377617e48639183204d443929ad069ceba6f4eab19"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-6/draft-02/review.json",
+        "sha256": "6a4174844341ad1ce7216f01eea443e0454d892bc7bb0faeb0828d271bac22f2"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 0
+    },
+    {
+      "id": "C2-P7",
+      "status": "integration-candidate",
+      "kind": "c2",
+      "evidence": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-7/draft-02/track.json",
+        "sha256": "76037f72ab544a57a608e4d961a2b06114656c3d8be499c8048a6650cc4f2050"
+      },
+      "review": {
+        "path": "runs/20261109-pamela-c2-motion-track/take-01/seat-7/draft-02/review.json",
+        "sha256": "78ceac5bab9f7886a8e472b1d0a15dd674d39ea28f2f826b3842d56b3c9dc1dc"
+      },
+      "physicalSide": "UNKNOWN",
+      "canonicalUvQuarterTurns": 0
+    }
+  ],
+  "canonicalOrientation": {
+    "reason": "Continuous artwork orientation between the same C1 card in first/second motion sources.",
+    "sourceProbe": "runs/20261109-pamela-frozen-material-probe/take-04/evidence.json",
+    "mapping": "quarterTurns1 = [1-v,u]; constant over all 360 source frames; no physical-side inference",
+    "review": {
+      "path": "runs/20261109-pamela-frozen-material-probe/orientation-review/review.json",
+      "sha256": "fbe3936b3d8cf780146dac44c5443a195c5560b2167ce899cfa244df0c941a1d"
+    }
+  }
+}

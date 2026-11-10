@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "buildId": "pamela-v4",
+  "createdAt": "2026-11-08T20:37:27.3660413Z",
+  "decision": "groundwork-only-no-new-generation",
+  "identity": {
+    "project": "snyggare-dealer",
+    "dealerId": "pamela-pilot",
+    "sourceAnchorId": "pamela-v4-vila-4445634a5698",
+    "sha256": "4445634a5698da4121ad40bd7fcef76c8b8b8707c6fc24a87d095ad98348e5a7"
+  },
+  "source": {
+    "path": "runs/20261108210457-pamela-v4-focused/original/pamela-vila-focused-v4.png",
+    "sha256": "4445634a5698da4121ad40bd7fcef76c8b8b8707c6fc24a87d095ad98348e5a7",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 1453588,
+    "verification": "SHA-256 and PNG IHDR read locally; no visual or geometric acceptance implied."
+  },
+  "preservedCopy": {
+    "path": "original/pamela-vila-focused-v4.png",
+    "sha256": "4445634a5698da4121ad40bd7fcef76c8b8b8707c6fc24a87d095ad98348e5a7",
+    "bytes": 1453588,
+    "operation": "byte-for-byte-copy-no-transform"
+  },
+  "preservedSourceRecords": [
+    {
+      "sourcePath": "runs/20261108210457-pamela-v4-focused/job.json",
+      "copyPath": "provenance/source-job.json",
+      "sha256": "3700cc51ba237cf2f9d218c01112b9b99a5f3a287b7f897704953bb69e909f21",
+      "bytes": 1061
+    },
+    {
+      "sourcePath": "runs/20261108210457-pamela-v4-focused/prompt.txt",
+      "copyPath": "provenance/source-prompt.txt",
+      "sha256": "1466fc7925d6f2e04e143c7783292c71d889ff7126ab4f479cb495f54a0d547c",
+      "bytes": 1880
+    }
+  ],
+  "sourceGeneration": {
+    "provider": "built-in-imagegen",
+    "model": null,
+    "modelStatus": "UNKNOWN",
+    "taskId": "exec-b3e4a563-4796-40d5-b96b-ac5003d3bc89",
+    "taskIdType": "recorded-tool-execution-id-provider-task-id-unverified",
+    "seed": null,
+    "cost": null,
+    "evidence": "provenance/source-job.json"
+  },
+  "sourceParent": {
+    "path": "runs/20261108175519-74d6c57e/original/pamela-vila-candidate-v3.png",
+    "sha256": "b13225f0b71cb6cd20d6a596c30b1502d9c0ed7ce2d0e6c8651bd3150ae1033e",
+    "evidence": "Source job record; parent bytes not revalidated for this build."
+  },
+  "calibrationStatus": "UNKNOWN",
+  "generatedViewCount": 0,
+  "productionApproved": false
+}

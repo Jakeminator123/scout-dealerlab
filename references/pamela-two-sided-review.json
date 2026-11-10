@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "status": "local-integration-candidate",
+  "evidence": {
+    "path": "runs/20261109-pamela-two-sided-flip/take-03/evidence.json",
+    "sha256": "fabf6f623d2064d3c40111742eb8a53d3f8d532d06bfbdd1c314c1b5e0a2385e"
+  },
+  "frames": 360,
+  "designCombinations": 4,
+  "protectedChanges": 0,
+  "outsideCoverageChanges": 0,
+  "frontIndependentFrames": 262,
+  "repeatedNativeProbes": 16,
+  "unitTests": 5,
+  "apiCalls": 0,
+  "productionAccepted": false
+}

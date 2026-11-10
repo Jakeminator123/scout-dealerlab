@@ -1,0 +1,274 @@
+{
+  "schema": "dealer-lab.kevin-production-pick.v1",
+  "verifiedAt": "2026-11-08T23:50:52+01:00",
+  "scope": "Local selection for the next Pamela production trial; no generation, upload, integration or source modification",
+  "decision": {
+    "recommendedSource": "Kevin/Emil Astrid2 v2: VILA + REDO + pos4-iv",
+    "status": "selected-as-pose-and-motion-reference-only",
+    "why": [
+      "A coherent pair of stored pose anchors and a complete central deal with visible shoe interaction, card transport, landing and return to VILA.",
+      "The source camera is static, both hands and elbows remain visible, and the complete 63-frame action is locally available.",
+      "The green working plate is more useful for pose comparison than the older classic image with the room, table lettering and shoe already baked in."
+    ],
+    "criticalFinding": "The recommended Kevin v2 pos4-iv is byte-identical to the existing Main control. Selecting it again, or using its AV1 encode, is not a new or better motion source.",
+    "improvementTarget": "Preserve Pamela v4 identity while making a coherent Pamela VILA/REDO pair with sufficient motion room and a complete lower torso before the next movie trial.",
+    "rankingBoundary": "Best coherent production reference among the inspected Astrid2 pair and classic Astrid start image; not an exhaustive quality ranking of every Kevin dealer."
+  },
+  "sourceRepository": {
+    "root": "C:/Users/jakem/dev/scoutgaming",
+    "remote": "git@github.com:Jakeminator123/scoutgaming.git",
+    "localOriginKevinStaging": "61612e8f4d9d6ca66b9d57b90a47fc76f7c4cb65",
+    "localOriginKevin": "d96c6eb0e8588e50efdb7640dec1a16dd042579c",
+    "localMain": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544",
+    "verificationBoundary": "Local Git objects and refs only; no remote fetch or service request"
+  },
+  "keystone": {
+    "role": "VILA pose reference, not Pamela identity",
+    "localPath": "gpt-underlag/uppackad-zip-underlag/05_referens_Emil/vila.png",
+    "repositoryPath": "kevin/croupier-scoutgg/public/media/dealers/astrid2/v2/vila.png",
+    "gitBlob": "c75925c18e4187a1a1a370590552eb74dc7fd64b",
+    "sha256": "667ca81dd2d54dfa09957d68011ae490fe22e1f4cfa98a52828dce5b7dea4a5f",
+    "format": { "codec": "png", "width": 1080, "height": 1920 },
+    "observations": [
+      "Upright front-facing pose, separately readable hands near the centre and both elbows within the frame.",
+      "The green rear table rail hides the lower torso; that missing body cannot be recovered by cropping or chroma keying.",
+      "Shoe and table are baked into the image; this is not a clean dealer-only plate."
+    ],
+    "provenanceLimit": "A verified later Astrid2 anchor; the first/original Kevin keystone generation input is unknown."
+  },
+  "redo": {
+    "role": "Matching REDO pose reference",
+    "localDiagnosticPath": ".runtime/kevin-reference-pick/astrid2-v2-redo.png",
+    "repositoryPath": "kevin/croupier-scoutgg/public/media/dealers/astrid2/v2/redo.png",
+    "gitBlob": "39267ae343348bf007fec4ec9075492ac84e8b36",
+    "sha256": "1c88d59fe4d6c7244fe456abea05a223eccb287d9334c93f7bd693bf91a2fc7c",
+    "observations": [
+      "Dealer's left hand rests at the shoe opening on image right; dealer's right hand is on the cloth nearer the centre.",
+      "Head and torso turn slightly toward the shoe. Both arms remain inside the source frame.",
+      "Use this pose as a geometrical reference for a Pamela-derived REDO, not as a second identity image."
+    ]
+  },
+  "centralDeal": {
+    "role": "Central position 4, VILA to VILA, complete source motion",
+    "localPath": "media/blob/9c3589bb6b65d52c/5dcb18927d0b92fc481848920f6ea7680cd9eddfd0a398681b6a3f10c028b1ac.mp4",
+    "localDiagnosticPath": ".runtime/kevin-reference-pick/astrid2-v2-pos4-iv.mp4",
+    "repositoryPath": "kevin/croupier-scoutgg/public/media/dealers/astrid2/v2/pos4-iv.mp4",
+    "gitBlob": "58e04f6829ecae15bf974bc8dbaf78493afeb38c",
+    "sha256": "5dcb18927d0b92fc481848920f6ea7680cd9eddfd0a398681b6a3f10c028b1ac",
+    "bytes": 1943419,
+    "format": {
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "width": 1080,
+      "height": 1920,
+      "fps": "24/1",
+      "frames": 63,
+      "durationSeconds": 2.625,
+      "alpha": false
+    },
+    "sameHashAsExistingMainControl": true,
+    "observations": [
+      "VILA at frame 0 and return to the matching hand arrangement at frame 62; the dealt card remains on the cloth at the end.",
+      "Shoe contact is visible around the stored REDO pose; the dealing hand crosses toward the centre and moves the card outward.",
+      "Frame 40 shows the hand holding the upper card edge and the card still raised above the cloth.",
+      "Original-pixel crops of frames 43, 47, 48 and 49 show the approach, covered card edge and hand release. The hand still overlaps the card at frame 48; it is clear in frame 49.",
+      "The plate cuts off the lower torso behind the rear rail throughout the movement. A tightly cropped Pamela film cannot fix that absent source body.",
+      "Beginning and end were visually compared; this is not temporal loop acceptance or pixel-exact seam approval."
+    ],
+    "av1Alternative": {
+      "localPath": "gpt-underlag/uppackad-zip-underlag/05_referens_Emil/pos4-iv.mp4",
+      "sha256": "c21df20182ca6db798ff33554563ec585200d93d7283e10b3d21c570646a41bc",
+      "format": "AV1, yuv420p, 1080x1920, 24 fps, 63 frames, 2.625 seconds",
+      "decision": "Use for existing reference viewing; prefer the v2 H.264 source for the next input. No measured quality improvement is claimed."
+    }
+  },
+  "classicAlternative": {
+    "localDiagnosticPath": ".runtime/kevin-reference-pick/classic-startbild.png",
+    "repositoryPath": "kevin/croupier-scoutgg/public/media/startbild.png",
+    "sha256": "eda87f9e877b00dbd2f02479db44ae5f41e2f182563825304906880ceee0088a",
+    "format": "PNG, 1080x1920",
+    "decision": "Secondary scene/lighting reference only: attractive finished setting, but room, table, lettering and shoe are baked in, and lower torso is still hidden. It does not solve the current body cutoff."
+  },
+  "nextPamelaInputs": {
+    "identity": {
+      "path": "runs/20261108210457-pamela-v4-focused/original/pamela-vila-focused-v4.png",
+      "sha256": "4445634a5698da4121ad40bd7fcef76c8b8b8707c6fc24a87d095ad98348e5a7",
+      "format": "PNG, 1536x1024",
+      "rule": "Keep v4 face, apparent age, hair, skin texture and clothing. Do not blend Astrid facial identity into Pamela."
+    },
+    "anchorWork": [
+      "Create one Pamela VILA production anchor from v4, with visible lower torso continuing behind the forearms, and the full central dealing reach inside the canvas.",
+      "Derive Pamela REDO from that same anchor and camera. Match the Kevin shoe-side hand and opposite supporting hand; preserve the Pamela head scale, lighting and body proportions.",
+      "Keep table, rail and shoe separately identifiable. A green table-shaped cutoff cannot substitute for missing torso; the dealer plate must contain the required body before composition.",
+      "Use frame 0, the stored REDO image, frame 40, frames 43/47/48/49 and frame 62 as pose/contact checkpoints.",
+      "For the first film, retain the complete 63-frame, 24-fps source action. Treat that clip as a motion reference; the newly rendered body, hand/card contact and identity require fresh QA."
+    ],
+    "framingConstraint": {
+      "sourceEnvelopeEstimatePx": { "left": 250, "top": 160, "right": 960, "bottom": 1170 },
+      "basis": "Manual visual estimate enclosing the person, moving hands and central dealt card in the 1080x1920 source; not a calibrated transform or final crop.",
+      "implication": "Pamela v4 hands already sit close to the 1024-pixel lower edge. Do not force the full central deal into that tight original framing; add motion room or reframe both anchors together.",
+      "finalPamelaCanvas": "To be fixed and measured with the new anchor pair; no source coordinates or card tracks are automatically transferable."
+    },
+    "acceptance": [
+      "V4 identity remains stable in VILA, REDO, extended arm and return frames, with no unrequested apparent-age change.",
+      "Complete torso exists behind the final table mask; hands and elbows remain uncropped throughout.",
+      "Shoe contact, card rigidity, hand occlusion, landing and clearance are checked at full quality.",
+      "VILA/REDO hand positions, camera, scale and light are coherent between images and movie.",
+      "Any generated or reprocessed file receives a new hash and QA; original references stay preserved."
+    ]
+  },
+  "reviewEvidence": {
+    "contactSheet": ".runtime/kevin-reference-pick/hands-all-63-contact.png",
+    "contactSheetCoverage": "63/63 source frames, hands/table crop, downscaled thumbnails; not 63 full-quality frame inspections",
+    "fullResolutionFrameExtraction": {
+      "pattern": ".runtime/kevin-reference-pick/source-pos4-iv-selected-%02d.png",
+      "indicesInFileOrder": [0, 12, 24, 40, 50, 51, 52, 62],
+      "fullOriginalFramesVisuallyInspected": [0, 40, 62]
+    },
+    "landingOriginalPixelCrops": ".runtime/kevin-reference-pick/landing-original-crops-f43-f47-f48-f49.png",
+    "landingCrop": { "x": 240, "y": 500, "width": 720, "height": 720, "frames": [43, 47, 48, 49] },
+    "additionalOriginalImagesInspected": ["Astrid2 vila.png", "Astrid2 redo.png", "classic startbild.png", "Pamela v4"],
+    "av1OriginalFramesInspected": [24, 51, 62],
+    "sourceManifest": "gpt-underlag/uppackad-zip-underlag/05_referens_Emil/kallor.json",
+    "existingControlManifest": "runs/20261108-pamela-deal-pilot/control-contract.json",
+    "limits": "No real-time playback, alpha/composite acceptance, generation or production compatibility certification in this selection task."
+  },
+  "pamelaV5RendererFollowup": {
+    "verifiedAt": "2026-11-09T00:00:03+01:00",
+    "currentDirection": "Produce a new Pamela v5 reference package. Goran, salon and panorama are side references only. Main remains the receiving system; Kevin/Emil supply visual and compositing evidence.",
+    "supersedes": ["decision.improvementTarget", "nextPamelaInputs"],
+    "approvedIdentity": {
+      "path": "runs/20261108-pamela-v5-body/original/pamela-v5-body.png",
+      "sha256": "2f11686b223925d8fc791735c32a7b4550af5f1ea4936df8ee03d982c7607795",
+      "width": 1536,
+      "height": 1024,
+      "approval": "Jakob called the v5 image very good, relayed by the main agent in this task.",
+      "verification": "Local file hash checked and original image visually inspected. Body now continues beneath the hands; full dealing reach is not established by this still."
+    },
+    "separateArmLayerAnswer": {
+      "separatelyGeneratedOrFilmedArmAsset": "Not present in the inspected active classic/Astrid2 rendering paths. This is a bounded code finding, not a claim about every historical or external Emil project.",
+      "astrid2": "One complete dealer video is keyed in WebGL and drawn above all game cards. Hands and arms are part of that same source image. The canvas has generated alpha; the inspected H.264/AV1 movie itself has no alpha.",
+      "classic": "The complete scene video sits below SVG cards. Frame-indexed polygon holes in the SVG card layer expose the original filmed fingers. This is a hand occlusion mask, not a separate arm movie.",
+      "oldSoftMatte": "dealer-hand-matte.js and matte PNGs exist, with a SAM2/build-matte provenance comment. A targeted search of the current public code found only the exported DEALER_HAND_MATTE definition, no consumer. Its present runtime use is not established; the active classic import is dealer-hand-occlusion.js.",
+      "evidence": [
+        "61612e8f:public/dealer-layer.js:3-7,146-152",
+        "61612e8f:public/style.css:35,176-177",
+        "61612e8f:public/dealer-hand-occlusion.js:4-16",
+        "61612e8f:public/game-cards.js:7,25-28,148-153",
+        "61612e8f:public/dealers.js:125-127",
+        "61612e8f:public/dealer-hand-matte.js:1-2"
+      ]
+    },
+    "formatAndAppearance": {
+      "sourcePlane": "1080x1920, 9:16, 24 fps for the inspected Astrid2 deal; classic start image is also 1080x1920.",
+      "classic": "Full scene with dealer, dark tabletop, bright silver/white rail and clear shoe with a dark front baked into the image/video. No keyed dealer configuration in dealers.js:110.",
+      "astrid2": "Green working footage plus a separate finished room/table image. Green background and green table/rail are removed by the shader, revealing the dark final table and silver rail.",
+      "shoeQualification": "The reviewed finished reference shoe is clear acrylic with a dark/black front, not a verified entirely opaque black shoe. It appears in both the room image and the dealer plate. table-style.js:41-54 explicitly handles the duplicate shoe when recolouring felt; the live plate preserves the interacting shoe foreground. No standalone shoe image is established for this renderer.",
+      "imageEvidence": {
+        "classic": ".runtime/kevin-reference-pick/classic-startbild.png",
+        "astrid2Green": "gpt-underlag/uppackad-zip-underlag/05_referens_Emil/vila.png",
+        "finishedWideRoom": "gpt-underlag/uppackad-zip-underlag/05_referens_Emil/darkhall.jpg",
+        "finishedWideRoomSha256": "4e6da3e5342915fe7cae370c267137604bfee2f8de2ba3daae7a7b1ce112e35a",
+        "finishedWideRoomDimensions": [2560, 1440]
+      },
+      "evidence": [
+        "61612e8f:public/dealers.js:110,125-127",
+        "61612e8f:public/dealer-layer.js:59-111",
+        "61612e8f:public/table-style.js:41-54",
+        "gpt-underlag/uppackad-zip-underlag/05_referens_Emil/kallor.json"
+      ]
+    },
+    "whatCreatesContactAndQuality": [
+      {
+        "mechanism": "Matching plate and table geometry",
+        "fact": "The shader includes a rear-rail occlusion correction for mismatched plates. Finished KLARA plates bypass this correction because they share the room table pixels. A visually plausible rail requires a matching plate, not just a chroma key.",
+        "evidence": "61612e8f:public/dealer-layer.js:93-101"
+      },
+      {
+        "mechanism": "Source-frame card tracking",
+        "fact": "Card artwork follows four measured corners using homography and a 3x3 triangle mesh. The frame is selected with floor(time*24), not interpolated independently against a wall clock.",
+        "evidence": "61612e8f:public/card-face-projection.js:26-55; public/game-cards.js:216-227"
+      },
+      {
+        "mechanism": "White stand-in removal while preserving fingers",
+        "fact": "Astrid2's shader removes the white landed prop and the moving tracked card region, retaining skin inside it. The game's valued card appears underneath, while the original hand remains above.",
+        "evidence": "61612e8f:public/dealer-layer.js:64-65,102-109,246-262"
+      },
+      {
+        "mechanism": "Occlusion continuing through withdrawal",
+        "fact": "Classic masks the complete game-card layer, including already dealt cards, and continues hand tracking after release until withdrawal. Otherwise old cards can draw on top of fingers.",
+        "evidence": "61612e8f:public/game-cards.js:148-153"
+      },
+      {
+        "mechanism": "Preserving finished edge pixels",
+        "fact": "Finished KLARA plates use different edge handling. Comments record pink finger rims and hollow hair/finger edges when general despill and rim cleanup were applied again. The finished branch avoids that extra cleanup.",
+        "evidence": "61612e8f:public/dealer-layer.js:66-92"
+      }
+    ],
+    "existingDesktopAndPortraitFraming": {
+      "portrait": "The common scene plane is 1080x1920; CSS starts with aspect-ratio 9/16 and contain/top placement. Phone rules can fill taller screens with a blurred band without changing source coordinates.",
+      "desktop": "Same 1080x1920 dealer plane, not a different generated dealer. Stage width is 0.9 times scene height, stage height 1.6 times scene height, and top offset -0.1 times scene height. This corresponds to source rows 120-1320 within the viewport, as the CSS comment states. A 2560x1440 room extends behind it.",
+      "runtimeLimit": "Desktop code is gated by DESKTOP_LAYOUT === true; current deployed flag and live appearance were not queried.",
+      "evidence": [
+        "61612e8f:public/style.css:13-17,129,145-146",
+        "61612e8f:public/desk-mode.js:1-12,36-47",
+        "61612e8f:public/desk.css:9-13,20-25,37-46"
+      ]
+    },
+    "proposedNewReferencePackage": {
+      "status": "Concrete production specification for the main agent; no assets generated in this follow-up",
+      "identity": "Use only the approved Pamela v5 image for identity, apparent age, hair and clothing. Kevin imagery controls pose/contact technique only.",
+      "masterGeometry": {
+        "proposedFile": "geometry.json",
+        "plane": { "width": 1080, "height": 1920, "origin": "top-left", "fps": 24 },
+        "meaning": "A new calibrated working plane. Choosing the same dimensions as Kevin does not import Kevin's positions or Main card tracks.",
+        "requiredDefinitions": [
+          "Fixed camera and Pamela placement; head/eye, shoulder, elbow, wrist and fingertip landmarks for VILA and REDO.",
+          "Separate table asset hash, tabletop plane and rear-rail occlusion boundary.",
+          "Separate black shoe asset hash, perspective, opening polygon and exact card-exit/contact point.",
+          "boxN landing quadrilaterals and card physical aspect ratio; one explicit mapping of box labels to target geometry.",
+          "Per-frame card corners, visible-paper contour, hand occlusion, contact, landing, release and clear frame indices for each generated take.",
+          "Complete body and arm motion envelope, including the extreme left/right target reach before a bank is accepted."
+        ]
+      },
+      "anchors": [
+        { "file": "anchors/vila.png", "pose": "VILA", "requirement": "Pamela v5, full torso beneath the forearms, both hands readable and resting at the fixed contact plane; fixed camera, light and scale." },
+        { "file": "anchors/redo.png", "pose": "REDO", "requirement": "Derived from that same VILA: eyes toward the black shoe, shoe-side hand at its opening and other hand ready to receive/guide a card; preserve torso and head scale." }
+      ],
+      "motionSet": [
+        { "id": "to-ready", "from": "VILA", "to": "REDO", "action": "Look to the shoe and place the hand at its opening, without dealing a card." },
+        { "id": "deal-boxN", "from": "REDO", "to": "REDO", "action": "Take one rigid white stand-in card, deliver it to the calibrated boxN, return to exactly the same REDO." },
+        { "id": "deal-boxN-exit", "from": "REDO", "to": "VILA", "action": "Same target/contact convention, ending at the approved VILA." },
+        { "id": "from-ready", "from": "REDO", "to": "VILA", "action": "Optional separate exit when a deal ends REDO. Do not add this after a take that already ends VILA." }
+      ],
+      "firstTrial": "Create the two anchors, to-ready, one central deal returning REDO, and one explicit return to VILA. Inspect these before expanding boxN to all targets. Counts and costs for actual generation remain the main agent's responsibility.",
+      "framing": {
+        "desktop": { "proposedFile": "framing-desktop.json", "output": [1920, 1080], "fields": ["geometryVersion", "sourceViewport", "sharedTransform", "safeMotionBounds", "backgroundPlacement"], "rule": "Compose the wide room around the calibrated working plane. One transform must move dealer, table, shoe, cards and masks together; crop only after the entire hand/contact envelope has been verified." },
+        "portrait": { "proposedFile": "framing-portrait.json", "output": [1080, 1920], "fields": ["geometryVersion", "sourceViewport", "sharedTransform", "safeMotionBounds", "uiSafeInsets"], "rule": "Reuse the same anchor geometry and clips. Adapt the viewport/UI, not the physical position of hands relative to shoe, rail and cards." },
+        "transformStatus": "Matrices and viewport values must be measured from the new Pamela pair; old Kevin desktop crop and Pamela v5's previous control-plane transform are evidence only, not accepted defaults."
+      },
+      "layerDeliverables": [
+        "Dealer RGB original plus a hash-bound matte; keep the approved full torso even where the composed table later hides it.",
+        "Table/rail and black shoe as separate identified assets, with contact geometry fixed before motion.",
+        "Rigid card layer plus per-frame corners and occlusion data; white generated props are motion references and require replacement/cleanup.",
+        "If a foreground hands/arms pass is needed to place the torso behind the table and fingers above cards, derive it from the same dealer frame and matte. Do not generate an independent arm movie with a separate clock."
+      ],
+      "acceptance": "Same v5 identity in both anchors and every selected motion/contact frame; fixed camera, full elbows/fingers, stable shoe, rigid card, correct hand-over-card occlusion and matching endpoint pose. Then verify both viewports with the same geometry version."
+    },
+    "codeEvidenceResolution": {
+      "commit": "61612e8f4d9d6ca66b9d57b90a47fc76f7c4cb65",
+      "pathPrefix": "kevin/croupier-scoutgg/",
+      "method": "Read local Git objects only; line numbers refer to this immutable source revision.",
+      "productionVerification": "No live service, UI playback, generation, upload or Main modification performed."
+    }
+  },
+  "resources": {
+    "startedServices": [],
+    "openedBrowserTabs": [],
+    "paidJobs": [],
+    "ownedTrackedFile": "references/kevin-production-pick.json",
+    "ownedDiagnosticDirectory": ".runtime/kevin-reference-pick",
+    "remainingSelectionWorkPercentEstimate": 0,
+    "closureBlocker": null
+  }
+}

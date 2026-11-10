@@ -1,0 +1,258 @@
+{
+  "schema": "dealerlab-main-pilot-contract/v1",
+  "verifiedAtUtc": "2026-11-08T23:00:09.9052394Z",
+  "status": "NEW_REFERENCE_PACKAGE_PLANNED_VILA_TO_REDO_FIRST",
+  "purpose": "Bygg NYTT referensmaterial med NYA koordinater från godkänd Pamela v5 för framtida andra dealers i /studio/snabb. Detta är ett nytt rörelse- och geometripaket, inte förbättring eller ometikettering av Astrids gamla klipp. Lokal kartläggning, ingen bankbeställning eller Main-import.",
+  "approvedFoundation": {
+    "path": "runs/20261108-pamela-v5-body/original/pamela-v5-body.png",
+    "sha256": "2f11686b223925d8fc791735c32a7b4550af5f1ea4936df8ee03d982c7607795",
+    "width": 1536,
+    "height": 1024,
+    "hashAndDimensionsRechecked": true,
+    "approval": "Approved as the new foundation in the current user instruction relayed by the main agent; this does not approve future motion or geometry.",
+    "secondaryReferencesOnly": ["Göran", "salong", "panorama", "Astrid motion control"],
+    "geometryRule": "Create and measure a new source plane, shoe outlet, table/hand anchors, card tracks and release timing. Quality references do not supply Pamela coordinates."
+  },
+  "scope": {
+    "workspace": "C:/Users/jakem/dev/super-feature-sg/snyggare-dealer",
+    "branch": "jakob/test",
+    "ownedFile": "references/main-pilot-contract.json",
+    "targetDealerId": "pamela-pilot",
+    "targetDealerIdStatus": "local-pilot-id; actual Main dealer registration must be verified before import",
+    "referenceRepository": "C:/Users/jakem/dev/scoutgaming",
+    "referenceRemote": "git@github.com:Jakeminator123/scoutgaming.git",
+    "mainCommit": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544",
+    "kevinRemoteTrackingCommit": "61612e8f4d9d6ca66b9d57b90a47fc76f7c4cb65",
+    "revisionEvidence": "Local HEAD/main and origin/kevin-staging; no network fetch or live deployment verification.",
+    "referenceRepositoryReadOnly": true,
+    "apiCallsMadeForThisContract": false,
+    "runtimeOrLabFeaturesAdded": false,
+    "fullBankAuthorizedByThisFile": false
+  },
+  "nextProof": {
+    "scope": "First prove VILA to REDO: gaze and hand move naturally to the new calibrated shoe. Next prove a central REDO to box3 to REDO give and separate return. VILA to box3 to VILA is its own later variant.",
+    "slotId": "transition.shoe/to-shoe",
+    "eventId": "transition.shoe",
+    "situation": "to-shoe",
+    "playerSeatOneBased": null,
+    "serverBoxZeroBased": null,
+    "takeKey": null,
+    "variant": null,
+    "filenameSuggestion": "pamela-vila-till-redo.mp4",
+    "startPose": "VILA",
+    "endPose": "REDO",
+    "namingBoundary": "Main uses slotId/eventId/situation, a separate pose variant and profile take.key. The local schemes field clipKey is not proof of an import API field. A filename only proposes a binding.",
+    "acceptance": [
+      "Pamela identity agrees with the selected hash-bound keystone through the entire action; no face, hair, outfit or hand identity drift between endpoints and contact frames.",
+      "Torso and both arms remain complete through the intended table boundary, including the lowest body motion; framing must not hide a missing lower torso by trimming the failing interval.",
+      "First transfer: stable gaze and hand travel to the new shoe and settle in REDO without a jump; no card is dealt in this to-shoe clip. Subsequent give: the same locked camera and measured dealer/table/shoe geometry hold for pickup, passage, landing, finger release and return to REDO; exactly one rigid planar card is dealt.",
+      "The card-shoe outlet and fingers actually meet in the new footage/composition. Old shoe placement boxes alone do not prove contact.",
+      "Every affected frame from pickup to clear is inspected at original quality and in the intended final composition, with explicit evidence for occlusion and visible prop removal. Contact sheets are an index, not the acceptance itself.",
+      "Each endpoint matches its own accepted VILA or REDO anchor: geometry, scale, eye line and hands. Inspect a moving sequence across to-shoe/base/from-shoe joins; equal endpoint pixels alone do not prove matching velocity.",
+      "Final file hash, fps, frame count, timing, anchors and QA all refer to the same delivered bytes. Any crop, matte, retime or re-encode creates a new hash and requires new affected QA."
+    ],
+    "measuredTolerance": null,
+    "toleranceStatus": "No accepted numeric tolerance established. About 2 px and 1 frame are prior proposals, not measured passes.",
+    "acceptanceResult": "pending",
+    "sequenceOrder": [
+      {"order": 1, "action": "VILA to REDO, gaze/hand to shoe", "slotId": "transition.shoe/to-shoe", "takeKey": null},
+      {"order": 2, "action": "REDO to central box3 to REDO; later expand to boxN", "slotId": "deal.player.centre/box3", "takeKey": "4:base"},
+      {"order": 3, "action": "REDO to VILA", "slotId": "transition.shoe/from-shoe", "takeKey": null},
+      {"order": 4, "action": "VILA to box3 to VILA as a separately accepted variant", "slotId": "deal.player.centre/box3", "takeKey": "4:iv"},
+      {"order": 5, "action": "Prove i/base/v joins and outer targets 1/7 before expanding coverage", "slotId": null, "takeKey": null}
+    ],
+    "bankGate": "No full bank before the new transfer plus central give and return pass. A shoe-only transfer is not an i give. Later full target/pose coverage and Main event integration remain separate acceptance gates."
+  },
+  "poseContract": {
+    "VILA": "Hands in the accepted resting pose.",
+    "REDO": "Hand at the card shoe in the accepted ready pose.",
+    "criticalSemanticRule": "Every ordinaryDeal variant i/base/v/iv contains ONE COMPLETE CARD DEAL to its target; the suffix only describes entry/exit pose. In particular 4:i means VILA -> deal a card to box3 -> REDO. It NEVER means a shoe-only VILA -> REDO movement.",
+    "separateShoeTransitionRule": "A pure VILA -> REDO clip with no deal binds transition.shoe/to-shoe. A pure REDO -> VILA clip binds transition.shoe/from-shoe. Neither is a profile 4:i/4:v give.",
+    "semanticEvidence": {
+      "profile": {"path": "packages/presentation/contracts/filmed-profiles/kevin-astrid2-99d6447b.mjs", "line": 6, "takeKey": "4:i", "target": "4", "track": "4", "frames": 63, "offsetFrames": 24, "firstFaceFrame": 42, "contactFrame": 46, "landFrame": 51, "clearFrame": 51, "startPose": "VILA", "endPose": "REDO", "boundary": "Source evidence only; not timing for the new package."},
+      "selection": "packages/presentation/runtime/filmed-deal-sequence.mjs:75-93 selects the i/base/v/iv take for a deal event carrying shoeDraw and box; separate toShoe/fromShoe clips become beforeVideoId/afterVideoId.",
+      "renderer": "services/game/public/card-presentation/filmed-table-projection.mjs:54-57 computes landed from take.landFrame and reads that take's card quad through filmedFaceAtTime.",
+      "factory": "services/studio-worker/dealer-factory/dealer_factory/profile.py:22-28 maps pos4-i to 4:i; it is a destination deal alongside pos4/base, not a shoe-only transition."
+    },
+    "ordinaryDeal": [
+      {"variant": "i", "startPose": "VILA", "endPose": "REDO", "centralTakeKey": "4:i"},
+      {"variant": "base", "startPose": "REDO", "endPose": "REDO", "centralTakeKey": "4:base", "filenameSuffix": "none or base"},
+      {"variant": "v", "startPose": "REDO", "endPose": "VILA", "centralTakeKey": "4:v"},
+      {"variant": "iv", "startPose": "VILA", "endPose": "VILA", "centralTakeKey": "4:iv"}
+    ],
+    "otherSlots": [
+      {"slotId": "idle.ready/", "startPose": "VILA", "endPose": "VILA", "note": "ready is the slot name, not the REDO pose"},
+      {"slotId": "transition.shoe/to-shoe", "startPose": "VILA", "endPose": "REDO"},
+      {"slotId": "transition.shoe/from-shoe", "startPose": "REDO", "endPose": "VILA"},
+      {"slotId": "deal.dealer/dealer-up", "target": "dealer", "variants": ["base", "i", "v", "iv"]},
+      {"slotId": "deal.dealer/dealer-hole", "target": "hole", "variants": ["base", "i"], "basePoses": ["REDO", "VILA"], "iPoses": ["VILA", "VILA"]},
+      {"slotId": "reveal.dealer/dealer-hole", "target": "flip", "startPose": "VILA", "endPose": "VILA"}
+    ],
+    "playerSlots": [
+      {"seat": 1, "box": 0, "slotId": "deal.player.left/box0"},
+      {"seat": 2, "box": 1, "slotId": "deal.player.left/box1"},
+      {"seat": 3, "box": 2, "slotId": "deal.player.centre/box2"},
+      {"seat": 4, "box": 3, "slotId": "deal.player.centre/box3"},
+      {"seat": 5, "box": 4, "slotId": "deal.player.centre/box4"},
+      {"seat": 6, "box": 5, "slotId": "deal.player.right/box5"},
+      {"seat": 7, "box": 6, "slotId": "deal.player.right/box6"}
+    ],
+    "legacyAliases": {"u": "v", "iu": "iv", "boundary": "Pose aliases do not establish equal duration, tracks or file identity."},
+    "keystoneNames": {"VILA": "pose/vila", "REDO": "pose/redo", "boundary": "Filename parser proposals; no automatic approval or runtime selection."}
+  },
+  "controlReference": {
+    "contractPath": "runs/20261108-pamela-deal-pilot/control-contract.json",
+    "assetPath": "media/blob/9c3589bb6b65d52c/5dcb18927d0b92fc481848920f6ea7680cd9eddfd0a398681b6a3f10c028b1ac.mp4",
+    "sha256": "5dcb18927d0b92fc481848920f6ea7680cd9eddfd0a398681b6a3f10c028b1ac",
+    "hashRechecked": true,
+    "ffprobeRechecked": true,
+    "width": 1080,
+    "height": 1920,
+    "rFrameRate": "24/1",
+    "avgFrameRate": "24/1",
+    "frames": 63,
+    "durationSeconds": 2.625,
+    "takeKey": "4:iv",
+    "sourceDealerId": "astrid-6",
+    "sourceProfileId": "kevin-astrid2-99d6447b",
+    "sourceOnlyTiming": {"frameIndexBase": 0, "offsetFrames": 24, "firstFaceFrame": 36, "contactFrame": 43, "landFrame": 48, "clearFrame": 48, "releaseFrame": null},
+    "sourceOnlyTrack": {"key": "4v", "firstFrameInBaseTake": 12, "firstFrameInWholeClip": 36, "sampleCount": 27, "lastWholeClipFrame": 62, "landingCentre": [540, 1115]},
+    "reuseBoundary": "Reference timing and shape only. A new output does not inherit these 63 frames, cues, card tracks, release assumption or geometry merely because it has the same duration."
+  },
+  "newAssetSidecarRequired": {
+    "status": "Required deliverable fields; not an existing Main API request schema.",
+    "identity": ["project identity", "verified Main dealerId or clearly marked local pilot id", "source keystone path and sha256", "reference motion path and sha256", "original generated path and sha256", "final export path and sha256", "model", "endpoint", "prompt", "durable taskId", "generation and derivation provenance"],
+    "media": ["codec and pixel/alpha format", "width", "height", "actual rational fps", "decoded frame count", "duration", "first/last frame", "CFR or explicit time-base evidence", "all crop/scale/pad/retime/matte transformations"],
+    "mainDeliveryPlane": {"width": 1080, "height": 1920, "fps": 24, "why": "Current Main measured-profile validator fixes this portrait plane; clipmap also uses 24 fps.", "rawModelOutput": "Preserve original output even if different. An explicitly derived compliant export needs its own hash and remapped/re-measured data."},
+    "timing": ["frameIndexBase=0", "time origin and whole-clip versus base-take frame space", "offsetFrames", "firstFaceFrame", "contactFrame", "landFrame", "clearFrame", "observed releaseFrame", "pickup/contact interval", "startPose/endPose"],
+    "timingRules": ["seconds = frame / actual fps", "duration = frameCount / fps; last-frame timestamp = (frameCount-1) / fps", "Separate source media time, clipmap time and server event time.", "If fps or trim changes, preserve an explicit old-to-new time/frame map and recheck event/occlusion cues.", "Runtime may fit playback to the server event window; all card/hand timing must follow the same clip media time."],
+    "card": ["landing position in declared source coordinate space", "card width/height", "per-frame quad q", "paper/ink clipping polygon p", "prop body polygon body", "paper RGB", "track firstFrame and offsetFrames", "corner ordering and visible/occluded intervals", "explicit card-removal region separate from full hand mask"],
+    "hand": ["hash-bound foreground/hand occlusion evidence or mask", "frame coverage and time base", "hand above/below card ordering", "finger contact and release evidence", "no unverified legacy 24-fps mask inheritance"],
+    "shoeAndScene": ["table image sha256", "shoe artwork sha256", "dealer source-plane transform", "table placement and rail", "shoe placement and outlet point/polygon", "pickup frame and hand contact trajectory", "source-to-destination transform", "landing/box geometry", "cardView", "fixed camera description and supported view bounds"],
+    "qa": ["inspected final sha256", "original-resolution contact frames and consecutive motion interval", "endpoint/join evidence", "intended final composition", "measured error values where available", "pass/hold/reject with reasons and reviewer/time"],
+    "gameOwnership": "Card value, RNG, shoe order, shoeDraw, event order and box destination remain server-owned Scoutgaming game data. The generated clip carries presentation and geometry only."
+  },
+  "currentMainImportBoundary": {
+    "existingMeasuredPath": "apps/admin/lib/dealers/dealer-filmed-profile.mjs measuredFilmedProfile",
+    "measurementTopLevelFields": ["card", "plane", "positions", "takes"],
+    "requiredPositions": ["1", "2", "3", "4", "5", "6", "7", "dealer"],
+    "positionShape": {"cx": "number in source plane", "cy": "number in source plane"},
+    "takeRequiredFields": ["sha256", "frames", "startPose", "endPose", "landFrame"],
+    "takeOptionalFields": ["contactFrame", "clearFrame"],
+    "cardMaxSourcePixels": {"width": 216, "height": 320},
+    "bindingChecks": "The media must be the dealer's own action clip, not deleted, archived, roulette or a separate mediaType, with the exact sha256, pose classification, measured fps and frame count. Main constructs the studio profile id and measuredAt; runtime availability remains a separate check.",
+    "measuredTrackSupport": false,
+    "measuredExpansion": "tracks:{}; offsetFrames:0; firstFaceFrame=contactFrame or landFrame. This path only supplies measured landings, not arbitrary generated card motion.",
+    "copyProfileBoundary": "kind:copy deliberately inherits registered bank geometry, tracks and cues. Do not select it solely because a new Pamela clip is 63 frames or resembles the reference.",
+    "futureTrackedPipeline": "Register the new package's OWN tracked base profile and point its plan.json.referenceProfile and factory derivedFrom to that new id. Existing factory/copy intake can then reuse that package for future identities, subject to per-output QA. The old measured-only path need not become a general track editor. No registration or integration is implemented here.",
+    "readyForImport": false
+  },
+  "snabbInsertionMap": {
+    "targetUrl": "https://www.scoutgaming.tech/studio/snabb",
+    "verificationBoundary": "Mapped from read-only local Main d86a6b47c85f4b1341e4ffe2a7a49f08800bc544. Live page/deployment and private BANK.json bytes were not contacted or verified.",
+    "route": [
+      {"stage": "UI", "path": "apps/studio/app/snabb/page.tsx", "lines": "1-4", "role": "SnabbFlow dealer creation page"},
+      {"stage": "client request", "path": "apps/studio/lib/snabb/client.mjs", "lines": "1-10,105-111", "role": "POST /admin-app/api/jobs/snabb with identity photo/description and scope"},
+      {"stage": "input gate", "path": "apps/admin/lib/snabb-api.mjs", "lines": "274-276", "role": "Rejects unknown request properties; no geometryReferenceId, filmbank or output-format input currently accepted here"},
+      {"stage": "durable jobs", "path": "packages/studio-registry/server/snabb-chain.mjs", "lines": "6-14,37-42", "role": "plan -> portratt -> dealer -> klippkarta -> import"},
+      {"stage": "worker bank selection", "path": "services/studio-worker/kinds/snabblage.mjs", "lines": "256-277", "role": "Keeps an existing chain's saved filmbank; new plan defaults to STANDARD_FILMBANK"},
+      {"stage": "generation", "path": "services/studio-worker/pipelines/snabblage/lib/dealer.mjs", "lines": "522-565", "role": "Asserts bankId, generates reference image and then bank blocks; persisted block task IDs guard retries"},
+      {"stage": "clip map and export", "path": "services/studio-worker/pipelines/snabblage/lib/paket.mjs", "lines": "1-25", "role": "Builds klippkarta.json and admin_export/filmed_profile.json for existing admin slots"},
+      {"stage": "admin import", "path": "apps/admin/lib/dealers/snabb-import.mjs", "lines": "579-590,691-699", "role": "Preflight then importedFilmedProfile with exact registered profile geometry/timing and own clip hashes"}
+    ],
+    "currentPreset": {
+      "displayName": "Standard 2 (astrid2-v1)",
+      "filmbank": "astrid2",
+      "factoryBankDirectory": "astrid2-v1",
+      "bankId": "astrid2-motion-reference-v1",
+      "profileId": "kevin-astrid2-99d6447b",
+      "blobPrefixFromCode": "croupier/bank/astrid2/",
+      "manifest": "BANK.json",
+      "manifestSchema": "studio-bank/1",
+      "manifestFields": "bank; files[{path,size,sha256}]",
+      "legacyBehavior": "Older saved input without filmbank remains PAOW. Existing chain never silently switches bank.",
+      "source": "services/studio-worker/pipelines/snabblage/lib/kostnad.mjs:31-40; services/studio-worker/lib/bank.mjs:1-8,30-39"
+    },
+    "newGeometryBinding": {
+      "geometryReferenceIdExistsInCurrentCode": false,
+      "searchScope": "apps, packages, services",
+      "proposedGeometryReferenceId": "pamela-v5-motion-reference-v1",
+      "proposedIdStatus": "Design name only; not registered, uploaded, selected or claimed available.",
+      "packageSha256": null,
+      "referenceProfileSha256": null,
+      "imageSha256": "2f11686b223925d8fc791735c32a7b4550af5f1ea4936df8ee03d982c7607795",
+      "existingBindingToReuse": "New filmbank -> plan.bankId -> plan.referenceProfile (reference/*.json) -> registered profile id -> exported profile.derivedFrom. BANK.json binds the reference profile, pose images, motion source files and plan by file SHA-256.",
+      "freezeRule": "Freeze the reference package's file hashes and own geometry before reusing it for another identity. Persist the selected package identity plus manifest/profile digest with the plan/job receipt; never resolve mutable latest geometry mid-chain.",
+      "sourceProfileRule": "The new reference profile must contain measured Pamela plane/card/positions/tracks/takes. Do not copy kevin-astrid2-99d6447b and substitute only hashes or dealer name.",
+      "mainRegistryPoint": "packages/presentation/contracts/filmed-profiles/registry.mjs:1-20,83-87: add a separate bank profile and its own shoe details/table placement identity; do not replace existing immutable ids.",
+      "factoryPoint": "services/studio-worker/dealer-factory/dealer_factory/profile.py:53-60,126-139: referenceProfile already resolves the selected bank profile; export copies THAT profile's plane/card/positions/tracks.",
+      "importPoint": "apps/admin/lib/dealers/dealer-filmed-profile.mjs:58-75: derivedFrom must be registered and geometry/timing must match it. A new unregistered id fails; Astrid derivedFrom with new coordinates also fails.",
+      "futureIdentityRule": "After the new source package is accepted, generation may use it for future identities. Equal frames and copied timing remain declarations; each generated final hash still needs contact/occlusion/identity QA."
+    },
+    "packageContents": [
+      "BANK.json with per-file path, size and sha256",
+      "plan.json with new bankId, fps, referenceProfile, blocks/segments and measured own pose boundaries",
+      "pose_references/VILA.png and an accepted REDO anchor with hashes",
+      "new original reference motion, beginning with to-shoe then central base give and from-shoe",
+      "reference/<new-profile>.json with OWN plane/card/positions/tracks/takes/timing",
+      "own shoe outlet, hand occlusion and source-plane calibration sidecars",
+      "desktop/mobile placement manifests tied to the same source geometry",
+      "hash-bound QA decisions and provenance"
+    ],
+    "formatContract": {
+      "keystoneOriginal": "1536x1024 image, preserved unchanged as the approved foundation.",
+      "dealerMotionPlaneForExistingPipeline": "1080x1920 portrait, 24 fps. Create a deliberate framed derivative and motion in this plane; preserve all relevant body/hand content and bind its new hash.",
+      "desktopScene": "1920x1080 composition using the portrait dealer plane and separately placed table/shoe/background.",
+      "mobileScene": "1080x1920 composition using the same source plane with its own placement.",
+      "uiFormatSelector": "No generation format or bank selector found in createSnabbChain; it sends only etikett, beskrivning, foto, prov, omfattning. Desktop/mobile are composition layouts, not separate admin deal facks.",
+      "adminSlotRule": "Admin facks use eventId/situation plus pose and exact asset identity, e.g. transition.shoe/to-shoe and deal.player.centre/box3. Do not create a desktop box3 or reinterpret viewer position as a deal target.",
+      "source": "services/studio-worker/pipelines/snabblage/lib/placering.mjs:49-66,94-110; packages/presentation/contracts/filmed-profiles/studio-profile.mjs:15-16; apps/studio/lib/snabb/client.mjs:105-111",
+      "notEquivalent": "A 1920x1080 full-scene video is not a replacement for the portrait dealer layer with independently rendered server cards."
+    },
+    "minimumFutureIntegration": {
+      "recommendation": "One explicitly selected new reference-bank preset for /studio/snabb, using existing generation/export/import machinery and a NEW registered tracked profile. Keep existing banks and active chains unchanged.",
+      "beforeAnyMainWork": "Accept the new local VILA->REDO, central base give and from-shoe sequence, then freeze own source geometry and package hashes. Do not start the existing full /snabb dealer stage as a pilot: it iterates the selected bank's blocks.",
+      "coherentChangeSet": [
+        "Register the new measured base profile and bank metadata in filmed-profiles/registry.mjs, including new geometry, own shoe details and verified table placement for that profile.",
+        "Add one matching worker filmbank entry in kostnad.mjs and corresponding block/timing/cost map in snabb-omgor.mjs; map that bank to its profile in snabb-api.mjs SNABB_BANK_PROFIL.",
+        "Connect an explicit preset choice through the existing Snabb client, strict API, chain payload and worker plan. Freeze package/profile hashes in the job receipt; reject mismatches and prohibit fallback to Astrid/PAOW for this preset.",
+        "Reuse plan.referenceProfile, factory profile export and importedFilmedProfile. If i/v/iv are separately filmed, revise profile.py TAKE_MAP's current appended-return assumption for this bank instead of assigning sourceTakeKey blindly."
+      ],
+      "validationNeeded": "Dry-run/preflight the new preset with no paid requests, prove its generated export resolves only the new profile and exact hashes, verify existing bank contracts unchanged, then inspect card/hand rendering in desktop and mobile layouts. Full-bank coverage/import requirements remain a separate later gate.",
+      "deploymentUploadOrImplementationPerformed": false
+    }
+  },
+  "reusableAutomation": [
+    {"path": "tools/pamela-deal-pilot.ts", "lines": "16-39,41-54", "available": "Runway Developer video_to_video submission, input hash guard, local server-side key access, unique job record, budget reservation, durable task ID, separate status/download, output host/MP4 guard and sha256.", "limit": "Pilot-specific source/guidance/run paths and Aleph2 variants. Not a general validated motion-bank pipeline; no automatic retry after uncertain submission."},
+    {"path": "tools/runway-pamela-pilot.ts", "lines": "19-27,44-55", "available": "Explicit single Gen-4.5 image_to_video job with state/input guards and separate download receipt.", "limit": "Configured for its existing VILA experiment; not central-deal acceptance or a new model capability claim."},
+    {"path": "tools/pamela-model-comparison.ts", "lines": "13-35", "available": "Small image_to_video comparison, including same first/last input on the recorded Wan3 request.", "limit": "Endpoint support and costs must be checked for the concrete next request. A prompt or requested fps is not evidence of native output fps."},
+    {"path": "tools/pamela-motion-qa.ts", "lines": "7-26,29-43", "available": "Whole-clip decoded-frame observations, endpoint difference and explicit 24-to-30 derivation map.", "limit": "White-component observations are approximate QA, not calibrated corners, motion continuity or hand masks."},
+    {"path": "tools/pamela-contact-fit.ts", "lines": "11-18,69-88", "available": "Source hash guards, ffmpeg composition, ffprobe receipts and targeted body/table overlap diagnostics.", "limit": "Existing coordinates and separate card frames are prototype data. Refit and remeasure for new bytes; moving the table does not repair missing anatomy."},
+    {"path": "C:/Users/jakem/dev/scoutgaming/packages/presentation/runtime/filmed-deal-timeline.mjs", "lines": "30-58,82-114", "available": "Main already sequences pose-compatible takes, converts frames through profile fps and aligns presentation to the server event clock.", "limit": "Local read-only code verification; no new Pamela runtime/profile has been imported or played."}
+  ],
+  "blockers": [
+    {"id": "new-reference-motion-and-coordinates", "stage": "new package acceptance", "status": "open", "detail": "Pamela v5 is approved as the image foundation, but its new VILA/REDO transfer, central base give, return and own contact/card coordinates are not an accepted frozen reference package.", "nextEvidence": "Accept that local sequence in order, then freeze the exact source files, anchors, geometry and QA. Old Astrid or Göran coordinates do not fill this gap."},
+    {"id": "new-bank-preset-registration", "stage": "later /studio/snabb integration", "status": "verified-code-gap", "detail": "The current worker/API maps only its existing banks, current /snabb request rejects a geometryReferenceId/preset field, and Main import requires a registered derivedFrom with matching geometry. A new package is therefore not selectable/importable yet. Existing factory TAKE_MAP also assumes v/iv derive from base/i, which must not silently overwrite separately filmed variants.", "nextEvidence": "Implement the single coherent new-preset change set in snabbInsertionMap only after local motion acceptance, with own registered geometry and explicit selection/hash provenance. No Scout changes are authorized or made here."}
+  ],
+  "budgetBoundary": {
+    "source": "references/production-plan.json",
+    "approvedRunwayCredits": 2000,
+    "maxVideoJobs": 16,
+    "maxCreditsPerJob": 250,
+    "submissionOwner": "main agent",
+    "remainingBudget": null,
+    "rule": "Re-read the current ledger before the next job; this contract does not reserve credits or authorize extra jobs. Save task ID before status/download or any considered retry. No full-bank job follows automatically."
+  },
+  "evidence": [
+    {"repository": "Scoutgaming", "commit": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544", "path": "packages/presentation/contracts/clip-naming.mjs", "lines": "1-16,63-89,102-112"},
+    {"repository": "Scoutgaming", "commit": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544", "path": "apps/studio/lib/clipmap/slots.mjs", "lines": "3-16,42-78"},
+    {"repository": "Scoutgaming", "commit": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544", "path": "packages/presentation/contracts/policies/studio-contract.json", "selector": "events: deal.player.*, deal.dealer, reveal.dealer, idle.ready, transition.shoe"},
+    {"repository": "Scoutgaming", "commit": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544", "path": "packages/presentation/contracts/filmed-profiles/studio-profile.mjs", "lines": "4-16,41-58,78-86"},
+    {"repository": "Scoutgaming", "commit": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544", "path": "packages/presentation/contracts/filmed-profile.mjs", "lines": "11-15,37-73,85-92"},
+    {"repository": "Scoutgaming", "commit": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544", "path": "apps/admin/lib/dealers/dealer-filmed-profile.mjs", "lines": "92-100"},
+    {"repository": "local lab", "path": "references/schemes.json", "selector": "main-pose-contract; main-astrid2-frozen-profile/4:iv"},
+    {"repository": "local lab", "path": "runs/20261108-pamela-deal-pilot/control-contract.json", "selector": "take; coordinateSystem; timing; cardTrack; tableBinding; shoeBinding; handOcclusionBinding"},
+    {"repository": "local lab", "path": "runs/20261108-pamela-deal-pilot/qa/pilot-decision.json", "selector": "visualObservations; remaining; verificationBoundary"},
+    {"repository": "local lab", "path": "docs/granskning/SYSTEMFRAGOR.md", "lines": "19-36,50-60"}
+  ]
+}

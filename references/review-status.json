@@ -1,0 +1,37 @@
+{
+  "updatedAt": "2026-11-09T04:23:35.477Z",
+  "scope": "Lokal dealerstudio och offentlig granskning; Scoutgamings produktion är separat.",
+  "complete": [
+    "Central V4: C2 +46 px, 67,6 % överlapp, båda valörer synliga. 520 rutor i två format, explicit kvarliggande kort och separat kort-/handkontakt. Kandidat, inte produktionsgodkännande.",
+    "12-sekunders Wan3-original med samtliga 360 rutor bevarade i QA-underlaget; samma scen samt tre direkta loopar. Alla 360 originalrutor granskade i översikt och native-ögonutsnitt. Cirka tio blinkförlopp samt en tydlig sidoblick åt bildens höger (217–233), åter framåt runt239–242. Huvud och handkontakt är stabila, men ansiktsdetaljerna matchar inte första/sista rutan exakt. Fem olika VILA-varianter är inte belagda. Två oacceptade klippförslag: [88,132) och [204,265); rörelse-/skarvgranskning återstår.",
+    "Central V3 korrigeringskandidat: explicit SG-baksida, kortmaskens opacitet och kort framför bordskarmen. Samma 520 rutor/30 fps; ingen ny AI-film. Fristående SG-spelmarker i 3D.",
+    "SG-kortstudie med tydligare linjer, kontrollerat material och tre ljusprofiler. Ej integrerad med Pamela. Originalgrönvariation uppmätt; publicerad metod för tagningar, bryggor och nodspellistor.",
+    "Samma-ruta: -0,18 EV-ljusprov och originalbaserad diagnos av ansiktsskiftet vid 6/12 s. Ingen ny film.",
+    "V2: stationära landade kort, förbättrad friläggning, mörkt fotobord och separat stående1080×1920-komposit.",
+    "Central komposit: två givningar och återgång med beständiga kort, 520 rutor i 30 fps; rå kedja och samma hela vy publiceras tillsammans.",
+    "Standard och nodträd matchar 36 Main-fack. Publik nodkarta visar kandidater och saknade mätningar.",
+    "Nytt centralgiv: 180 rutor/6 s. Ny återgång: 90 rutor/3 s. Båda 1762×1174/30 fps, originalhashar och visuella begränsningar dokumenterade.",
+    "Pamela v5 med mer bål, egna VILA/REDO-bilder och en ny övergång finns som hashbundna original.",
+    "VILA→REDO: 3 sekunder, 30 fps, 90 rutor. Avkodad metadata och kontaktark verifierade.",
+    "Main-fack och införandebegränsning kartlagda. Kevin är ett separat referensprojekt."
+  ],
+  "simulated": [
+    "Äldre panoramakompositer, +33 px-placering och provkort är historiska försök, inte godkända klippfack."
+  ],
+  "remaining": [
+    "Vid källruta 117 → 118 byter kortet från observerad böjd kontur till fast landningsplan. Två riktade prov avvisades: kvarstående hopp respektive ny dubbelkant. V4:s placering behålls; tryckets böjning och denna maskgräns är inte lösta.",
+    "V4 är en kandidat: 2D-approximerad kortböjning, grön kant vid källruta 76–78, färgbaserad synlig skomask, källans bålbegränsning och råa ansiktsskarvar återstår. Handretur 118–124 är en lokal ompassning, inte ett nytt inspelat giv.",
+    "VILA-skarvar: ansiktets detaljering återställs vid originalens klippbyten. Befintlig loop är inte sömlös eller produktionsgodkänd.",
+    "Grundmjukhet och skiftningar i ansikte/ljus finns i de tre Wan3-källorna. Full temporal skarvacceptans återstår.",
+    "Kantbehandlingen är förbättrad men ännu inte godkänd genom alla rörelser; kvarvarande hår-/skokonturer behöver bedömas.",
+    "Nuvarande original har bara central landning. Kort2 bredvid/halvöverlapp och ytterplats1/7 kräver egen kontaktkontroll och vid behov riktad ny rörelse.",
+    "Mobil är en separat stående scen med samma centrala rörelse. Skosvans beskärs; yttergivningar och Main-kontroller är inte accepterade."
+  ],
+  "limitations": [
+    "Ingen godkänd dealerbank ännu. Ny övergång ska inte loopas tillbaka till VILA.",
+    "Ingen merge eller Main-/Kevin-ändring. Publik läskopia, lokalserver stoppad.",
+    "Görans helkropp, salong och panorama är valbara sidoreferenser och ingår inte i huvudplanen.",
+    "30 fps-originalet är inte automatiskt kompatibelt med Main-fabrikens nuvarande 24 fps-kontrakt."
+  ],
+  "maintenance": "Redigera relevanta punkter när verifierad funktion eller beslut ändras. Publiceringsverktyget återanvänder denna fil; inga löpande append-loggar."
+}

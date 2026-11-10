@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-11-08",
+  "sourceRevision": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544",
+  "sources": [
+    "Scoutgaming docs/TERMINOLOGI.md",
+    "Scoutgaming docs/plans/ADMIN-NY.md",
+    "Scoutgaming packages/presentation/contracts/clip-naming.mjs",
+    "Scoutgaming packages/presentation/contracts/dealer-clip-guide.mjs",
+    "Kevin-staging 61612e8f4d9d6ca66b9d57b90a47fc76f7c4cb65",
+    "Labbets docs/granskning/FORMAT-OCH-KVALITET.md och KEYSTONE.md"
+  ],
+  "terms": [
+    {
+      "id": "admin",
+      "label": "Admin",
+      "aliases": [
+        "nivå 1",
+        "intern administration"
+      ],
+      "description": "Scoutgamings personals arbetsyta på /admin. Admin är produktens namn; intern beskriver målgruppen, inte en extra produkt eller roll.",
+      "status": "verified"
+    },
+    {
+      "id": "partner",
+      "label": "Partnerportalen",
+      "aliases": [
+        "nivå 2"
+      ],
+      "description": "Bolagets arbetsyta på /partner/<bolag>. Partner är ingen ytterligare bolagsnivå. Åtkomst kontrolleras per bolag i det riktiga systemet.",
+      "status": "verified"
+    },
+    {
+      "id": "lobby",
+      "label": "Lobbyn",
+      "aliases": [
+        "nivå 3"
+      ],
+      "description": "Spelarens vy för spelbord. Spelet är den efterföljande spelvyn.",
+      "status": "verified"
+    },
+    {
+      "id": "company",
+      "label": "Bolag",
+      "aliases": [
+        "operator",
+        "operatör i äldre texter"
+      ],
+      "description": "Verksamhetsobjektet som får tillgång till innehåll, team och egna spelbord. UI använder Bolag; operator är kod-/databasnamnet.",
+      "status": "verified"
+    },
+    {
+      "id": "studio",
+      "label": "Studio",
+      "aliases": [
+        "skapandeytan",
+        "/studio"
+      ],
+      "description": "Scoutgamings skapandeyta för dealers. Den lokala Scenstudion är labbets kompositionsverktyg och ska inte förväxlas med den publicerade Studio-sidan.",
+      "status": "verified"
+    },
+    {
+      "id": "scene",
+      "label": "Scen",
+      "aliases": [
+        "äldre: miljö"
+      ],
+      "description": "En återanvändbar sammansättning av dealer, bakgrund och bordsgrafik, med eventuella detaljer. Kan skapas innan den kopplas till ett bolag.",
+      "status": "verified"
+    },
+    {
+      "id": "game-table",
+      "label": "Spelbord",
+      "aliases": [
+        "bolagets bord"
+      ],
+      "description": "En scen hos ett bolag med exempelvis språk, spel och insatsgränser. Inte samma sak som den synliga bordsgrafiken.",
+      "status": "verified"
+    },
+    {
+      "id": "table",
+      "label": "Bordsgrafik",
+      "aliases": [
+        "bordslager",
+        "filt och reling"
+      ],
+      "description": "Bilden av det fysiska bordet i scenen. Ny färg med samma form kan behålla geometrin; ändrad kant, höjd eller kamera kräver ny kontroll.",
+      "status": "verified"
+    },
+    {
+      "id": "dealer",
+      "label": "Dealer",
+      "aliases": [
+        "dealeridentitet"
+      ],
+      "description": "Personidentiteten och dess material. Johan i begreppsvyn är bara ett pedagogiskt exempel, inte ett skapat konto eller en genererad dealer.",
+      "status": "verified"
+    },
+    {
+      "id": "material",
+      "label": "Material",
+      "aliases": [
+        "tillgång",
+        "asset"
+      ],
+      "description": "En bild, film, mask eller annan mediefil. Filnamnet räcker inte som identitet; använd dealer-ID, ursprung och filhash.",
+      "status": "verified"
+    },
+    {
+      "id": "clip-card",
+      "label": "Klippkort",
+      "aliases": [
+        "kort i editorn"
+      ],
+      "description": "Labbets visuella kort för en rörelse eller fil: namn, fack, start-/slutpose, längd och granskningsstatus. Det är inte ett spelkort.",
+      "status": "lab-proposal"
+    },
+    {
+      "id": "slot",
+      "label": "Klippfack",
+      "aliases": [
+        "fack",
+        "slot"
+      ],
+      "description": "Funktionen där en film får användas, exempelvis vila, giv till spelarplats 1 eller vändning. Facket är skilt från filen, receptet och hur ofta klippet väljs.",
+      "status": "verified"
+    },
+    {
+      "id": "event",
+      "label": "Händelse",
+      "aliases": [
+        "event"
+      ],
+      "description": "Spelmotorns presentationsbehov, exempelvis en giv. Händelse och situation tillsammans kan identifiera ett fack.",
+      "status": "verified"
+    },
+    {
+      "id": "recipe",
+      "label": "Recept",
+      "aliases": [
+        "genereringsinstruktion"
+      ],
+      "description": "Beskriver vilket beteende som ska framställas, exempelvis lugn andning eller en sidoblick. Ett recept är inte en färdig film eller ett fack.",
+      "status": "verified"
+    },
+    {
+      "id": "take",
+      "label": "Tagning",
+      "aliases": [
+        "klippfil",
+        "resultat"
+      ],
+      "description": "Ett konkret resultat från ett recept. Flera tagningar kan prövas för samma fack. Ursprung och hash följer varje fil.",
+      "status": "verified"
+    },
+    {
+      "id": "idle",
+      "label": "Vila",
+      "aliases": [
+        "idle",
+        "idle.ready"
+      ],
+      "description": "Helheten när dealern väntar: basloop och valda vilovarianter. Namnet idle.ready betyder inte att kroppens pose är REDO.",
+      "status": "verified"
+    },
+    {
+      "id": "base",
+      "label": "Grundloop – andning",
+      "aliases": [
+        "vilans basloop",
+        "base i vilopolicyn"
+      ],
+      "description": "Mains standardrecept för återhållsam andning med stilla händer, huvud och blick. Hela viloupplevelsen kan ändå innehålla separata blinkningar och andra varianter.",
+      "status": "verified"
+    },
+    {
+      "id": "variant",
+      "label": "Vilovariant",
+      "aliases": [
+        "beteende",
+        "infall"
+      ],
+      "description": "Eget återgående klipp, exempelvis blinkning, sidoblick eller kliande. Kevin/Emil använder flera klipp med viktning och variationsregler.",
+      "status": "verified"
+    },
+    {
+      "id": "vila",
+      "label": "VILA",
+      "aliases": [
+        "vilopose"
+      ],
+      "description": "Kroppens och händernas anslutningspose vid vila. Posens namn säger inte att ansiktet måste vara orörligt genom hela ett beteendeklipp.",
+      "status": "verified"
+    },
+    {
+      "id": "redo",
+      "label": "REDO",
+      "aliases": [
+        "handen vid skon"
+      ],
+      "description": "Bankens anslutningspose för fortsatt giv. Ska förankras i rätt referensbild, inte gissas från ett filnamn.",
+      "status": "verified"
+    },
+    {
+      "id": "anchor",
+      "label": "Ankarbild",
+      "aliases": [
+        "poseankare",
+        "VILA-/REDO-bild"
+      ],
+      "description": "Godkänd stillbild för en bestämd pose med samma kamera, skala, ljus och kontaktpunkter. För givbanken behövs minst matchande VILA och REDO.",
+      "status": "verified"
+    },
+    {
+      "id": "keystone",
+      "label": "Keystone",
+      "aliases": [
+        "används olika i äldre underlag"
+      ],
+      "description": "Ange alltid om man menar identitetsbild, scenreferens eller ett geometriskt poseankare. Ordet ensamt bevisar varken bildens ursprung eller att den är kalibrerad.",
+      "status": "ambiguous"
+    },
+    {
+      "id": "keyframe",
+      "label": "Nyckelbild",
+      "aliases": [
+        "keyframe"
+      ],
+      "description": "En bild placerad vid en viss tid/posgräns i en generering eller redigering. Ett ankare kan användas som nyckelbild, men begreppen beskriver olika roller.",
+      "status": "verified"
+    },
+    {
+      "id": "sequence",
+      "label": "Klippföljd",
+      "aliases": [
+        "rörelseschema",
+        "sekvens"
+      ],
+      "description": "Ordningen av klipp och deras poseövergångar. En ritad följd blir inte automatiskt spelbar: filer, ankare och geometri måste vara bundna.",
+      "status": "verified"
+    },
+    {
+      "id": "policy",
+      "label": "Uppspelningsregel",
+      "aliases": [
+        "policy",
+        "viktning och mellanrum"
+      ],
+      "description": "Bestämmer vilket godkänt klipp som väljs och när. Urvalsvikt är inte samma sak som uppmätt andel speltid.",
+      "status": "verified"
+    },
+    {
+      "id": "suffix",
+      "label": "Givsuffix",
+      "aliases": [
+        "i",
+        "base",
+        "v",
+        "iv",
+        "äldre u/iu"
+      ],
+      "description": "För vanliga giv: i = VILA→REDO, base = REDO→REDO, v = REDO→VILA, iv = VILA→VILA. Dolt kort och vändning har undantag. Kevins v/u kan ha olika längd trots liknande posefunktion.",
+      "status": "verified"
+    },
+    {
+      "id": "tier",
+      "label": "Grund / Utökad",
+      "aliases": [
+        "klippomfattning",
+        "tier"
+      ],
+      "description": "Vilka funktioner som produceras i en klippbank. Inte kvalitetsbetyg eller administrativa nivåer 1/2.",
+      "status": "verified"
+    },
+    {
+      "id": "shoe",
+      "label": "Kortsko",
+      "aliases": [
+        "sko",
+        "scendetalj"
+      ],
+      "description": "Det synliga föremålet där kort dras. Skons bildplacering är inte samma koordinat som kortets uttagspunkt. Kortvärden och spelregler hör till spelmotorn.",
+      "status": "verified"
+    },
+    {
+      "id": "card",
+      "label": "Spelkort",
+      "aliases": [
+        "kortets grafik och bana"
+      ],
+      "description": "Det kort som syns i spelet. Dess bild, rörelsebana och täckning av handen måste passa dealerfilmen; det är inte ett klippkort i editorn.",
+      "status": "verified"
+    },
+    {
+      "id": "plane",
+      "label": "Bildplan",
+      "aliases": [
+        "källplan",
+        "arbetsformat"
+      ],
+      "description": "Koordinatytan som en bild eller film mäts i. Dealerbankens stående 1080×1920 är skilt från datorns komponerade spelband 1920×1080.",
+      "status": "verified"
+    },
+    {
+      "id": "fit",
+      "label": "Passning",
+      "aliases": [
+        "klippassning",
+        "sourceFit"
+      ],
+      "description": "Uppmätt skala och förskjutning från klippets pixlar till dealerns gemensamma ram. En manuell dragning i prototypen är inte automatiskt uppmätt passning.",
+      "status": "verified"
+    },
+    {
+      "id": "calibration",
+      "label": "Kalibrering",
+      "aliases": [
+        "verifierade koordinater"
+      ],
+      "description": "Kontrollerad relation mellan kamera, dealer, händer, reling, sko och kortspår för bestämda filversioner. Kräver omprövning när geometri eller filer ändras.",
+      "status": "verified"
+    },
+    {
+      "id": "matte",
+      "label": "Friläggning",
+      "aliases": [
+        "matte",
+        "alfa",
+        "chroma key"
+      ],
+      "description": "Tar bort arbetsbakgrunden och bevarar personen/önskade delar över tid. Chroma key är en metod; en MP4-fil betyder inte automatiskt transparens.",
+      "status": "verified"
+    },
+    {
+      "id": "version",
+      "label": "Scenversion",
+      "aliases": [
+        "sparat scenrecept"
+      ],
+      "description": "En sparad version av scenens materialval och placering. Skild från programversion, bildfilens revision och äldre tekniknamn V2/V3.",
+      "status": "verified"
+    },
+    {
+      "id": "publish",
+      "label": "Publicera",
+      "aliases": [
+        "verkligt innehållsbyte"
+      ],
+      "description": "Gör innehåll tillgängligt i det riktiga systemet. Lokal simulerad aktivering är ett provflöde. Den offentliga granskningssidan publicerar bara läsbara kopior av utvalt underlag.",
+      "status": "verified"
+    },
+    {
+      "id": "unknown-names",
+      "label": "Obekräftade källnamn",
+      "aliases": [
+        "F73/S303",
+        "I/O/IO/OI/II",
+        "ie"
+      ],
+      "description": "F73/S303:s betydelse är inte verifierad. I/O-varianterna och ie är inte belagda som rörelse-ID i de granskade kontrakten. Bevara källnamnet och gissa ingen översättning.",
+      "status": "unknown"
+    }
+  ],
+  "systems": [
+    {
+      "id": "main",
+      "label": "Scout Main",
+      "plane": "1080 × 1920 → spelband 1920 × 1080",
+      "fps": 24,
+      "status": "Dokumenterat kontrakt; Johan saknar filmer",
+      "note": "Vanliga giv använder base/i/v/iv. Dolt kort och vändning har egna kontrakt. Vila har andningsbas och separata beteenden."
+    },
+    {
+      "id": "kevin",
+      "label": "Kevin / Emil",
+      "plane": "1080 × 1920, fryst Astrid2-referens",
+      "fps": 24,
+      "status": "Källbank och schema finns; Johan saknar filmer",
+      "note": "Flera VILA→VILA-beteenden. Kevin-staging och kevin skiljer sig. För pos1 har v/iv 39/63 rutor medan u/iu har 63/87; liknande posnamn ger inte samma timing."
+    },
+    {
+      "id": "alternative",
+      "label": "Alternativ scen",
+      "plane": "1920 × 1080 i den exporterade kalibreringen",
+      "fps": 30,
+      "status": "Källbank hittad och hashverifierad; rörelse-QA och Main-kompatibilitet återstår",
+      "note": "Blackjack-studio revision 103 har 19 filmer och 18 återgivna fackbindningar. Nickfilmen, VILA-ankaret och panoramat matchar labbets alternativa Göran. Tio kalibreringar är inte ett kvalitetsgodkännande. Ingen automatisk översättning till Main."
+    }
+  ],
+  "steps": [
+    {
+      "id": "idle",
+      "label": "Vila",
+      "slot": "idle.ready/",
+      "start": "VILA",
+      "end": "VILA",
+      "suffix": "idle"
+    },
+    {
+      "id": "first",
+      "label": "Första giv · plats 1",
+      "slot": "deal.player.left/box0",
+      "start": "VILA",
+      "end": "REDO",
+      "suffix": "i"
+    },
+    {
+      "id": "middle",
+      "label": "Fortsatt giv · plats 1",
+      "slot": "deal.player.left/box0",
+      "start": "REDO",
+      "end": "REDO",
+      "suffix": "base"
+    },
+    {
+      "id": "last",
+      "label": "Sista vanliga giv · plats 1",
+      "slot": "deal.player.left/box0",
+      "start": "REDO",
+      "end": "VILA",
+      "suffix": "v"
+    },
+    {
+      "id": "single",
+      "label": "Enstaka giv · plats 1",
+      "slot": "deal.player.left/box0",
+      "start": "VILA",
+      "end": "VILA",
+      "suffix": "iv"
+    }
+  ]
+}

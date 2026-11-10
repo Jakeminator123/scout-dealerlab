@@ -1,0 +1,8 @@
+{
+  "file": "runs/20261109-pamela-seat-bank/original/pamela-seat-1-wan3-first-last.mp4",
+  "sha256": "5abd5dd1107d7433c8efc0d95164c2c7af3b2b9703f1123c87f8f02da378bc0b",
+  "width": 1762, "height": 1174, "fps": 30, "frames": 360,
+  "reviewEndFrame": 356, "contactFrame": 171,
+  "label": "Plats 1 · 12 sekunders råtagning",
+  "provenance": "runs/20261109-pamela-seat-bank/qa/seat-1/review.json"
+}

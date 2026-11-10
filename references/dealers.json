@@ -1,0 +1,1151 @@
+{
+  "checkedAt": "2026-11-08T23:13:31.955Z",
+  "basis": "Jakobs uttryckliga identifiering och bilder 2026-11-08; separata dealer-ID:n lästa i inloggad Scoutgaming-admin. Hudton används inte som automatisk identitetsregel.",
+  "dealers": [
+    {
+      "id": "goran-scout",
+      "label": "Göran · Scout Main",
+      "scoutDealerId": "goran",
+      "adminUrl": "https://www.scoutgaming.tech/admin/dealers/goran",
+      "idleClipId": "fbb08d0c-856c-52ca-a18b-1865866aa64f",
+      "adminClipName": "Göran · vila_andning_01 · 9492f43d",
+      "pipeline": "scout-main",
+      "referenceImage": "media/identities/goran-scout-reference.png"
+    },
+    {
+      "id": "blankurius-scout",
+      "label": "Blankurius · Scout Main",
+      "scoutDealerId": "blankurius",
+      "adminUrl": "https://www.scoutgaming.tech/admin/dealers/blankurius",
+      "idleClipId": "54c3ff6f-78ae-555e-8fdf-e7309c913d71",
+      "adminClipName": "Blankurius · vila_andning_01 · 9fe76a9f",
+      "pipeline": "scout-main",
+      "referenceImage": null,
+      "generationOrigin": {
+        "reportedBy": "Jakob, 2026-11-08",
+        "route": "https://www.scoutgaming.tech/studio/snabb",
+        "scope": "utokad",
+        "sourceImage": "Användarskapad bild på vit bakgrund",
+        "jobId": null,
+        "sourceImageHash": null,
+        "keystoneQuality": "Ej granskad",
+        "verification": "Vägen och alternativen Grund/Utökad är bekräftade i koden. Blankurius specifika jobb- och bildkedja återstår att verifiera."
+      }
+    },
+    {
+      "id": "goran-alternativ-helkropp",
+      "label": "Göran · alternativ helkropp",
+      "scoutDealerId": null,
+      "adminUrl": null,
+      "pipeline": "runway-fullbody-experimental",
+      "referenceImage": "media/identities/goran-alternativ-helkropp-reference.png",
+      "notes": [
+        "Projektkopplingen till blackjack-studio är verifierad med projekt-ID och tre identiska filhashar.",
+        "19 källfilmer, genererad dealer på bildplan i en Three.js-scen; inte en riggad 3D-kropp.",
+        "Grön inspelningsbakgrund är belagd. Vit bakgrund är inte belagd."
+      ],
+      "sourceProjectId": "e19d226c-c586-467e-b126-6a9f90e1675e"
+    },
+    {
+      "id": "pamela-pilot",
+      "label": "Pamela · Keystone-pilot",
+      "scoutDealerId": null,
+      "adminUrl": null,
+      "pipeline": "local-keystone-pilot",
+      "referenceImage": "runs/20261108-pamela-v5-body/original/pamela-v5-body.png",
+      "notes": [
+        "Fiktiv dealer skapad på Jakobs uppdrag. V5 är vald identitetsgrund; senare stationbilder och filmer är kandidater.",
+        "Ny egen referensbank för Main-facken. Inga Astrid-kortspår ärvs, ingen Main-integration är godkänd."
+      ]
+    },
+    {
+      "id": "maud-scout",
+      "label": "Maud · Scout-referens",
+      "scoutDealerId": "maud",
+      "pipeline": "scout-main",
+      "referenceImage": "media/maud-reference/contact-sheet.jpg"
+    }
+  ],
+  "assetMappings": [
+    {
+      "path": "gpt-underlag/uppackad-zip-underlag/01_original/goran_vila_grundloop.mp4",
+      "dealerId": "goran-scout",
+      "sha256": "9492f43d0b66f863591aa071df996875afa36ce22aae22c251fe8afda5350d2d",
+      "evidence": "Jakobs bild, visuellt klipp och adminfilens hashprefix 9492f43d."
+    },
+    {
+      "path": "media/identities/goran-scout-reference.png",
+      "dealerId": "goran-scout",
+      "sha256": "34f939117088e36a9f65d919c7ab1ff12f7a3b5c11eb4b5f6c90eec50e267db6",
+      "evidence": "Användarens bild 1."
+    },
+    {
+      "path": "media/identities/goran-alternativ-helkropp-reference.png",
+      "dealerId": "goran-alternativ-helkropp",
+      "sha256": "49c54c7565b269d8e6384e67517f43aa85434c188f1f993571fee7b1fc3f6674",
+      "evidence": "Användarens bild 2."
+    },
+    {
+      "path": "media/runway/979a734bf850e7d8/Locked_camera__continuous_full_body_shot_of_exactly_the_older_male_dealer_in_the.mp4",
+      "dealerId": "goran-alternativ-helkropp",
+      "sha256": "7d55c33b93d6a4fedf01777030e05d8a9b4384dace73daee32f692f0f6822b3e",
+      "evidence": "Runway asset 893e4e04-f48f-4bf7-8e38-c416de50b033; kontaktark granskat mot användarens bild 2."
+    },
+    {
+      "path": "runs/20261108175519-74d6c57e/original/pamela-scene-reference-v1.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "a5985932655105c47b696cece02fc96b1480f3469132f83e776a0b18dc54bc8d",
+      "evidence": "Lokalt sparad första bildgenerering, prompt och job.json."
+    },
+    {
+      "path": "runs/20261108175519-74d6c57e/original/pamela-scene-reference-v2.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "ab824acf77ddab4d43359ad5d744f5e7b619859738aca8d660d41a0a4d2be0b4",
+      "evidence": "Riktad omramning av v1 för mer marginal ovanför huvudet; ny geometri, inte kalibreringsarv."
+    },
+    {
+      "evidence": "Pamela v2 som identitetsreferens och Astrid2 VILA som geometrimål. Prompt v3 och job.json bevarade; geometri inte verifierad.",
+      "dealerId": "pamela-pilot",
+      "sha256": "b13225f0b71cb6cd20d6a596c30b1502d9c0ed7ce2d0e6c8651bd3150ae1033e",
+      "path": "runs/20261108175519-74d6c57e/original/pamela-vila-candidate-v3.png"
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/90924b04-f54e-4486-8bec-11d8b09b47a0.mp4",
+      "sha256": "9a840a11d5323c4e530e76a802fb97f24315239080c1a33fff5e7595b864aaf8",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/2edf0d90-2380-475a-8980-5066f8527131.mp4",
+      "sha256": "3f65721e5fd604b60c3f566f61130125f97f8affe555471f9a2f24caa9c1662e",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/34b51580-da3e-4a00-b775-27c2dcebfb41.mp4",
+      "sha256": "6350288ccf1b8b9ce59f5f4223f1735a9b342d6baf9ee2f8cdc01f89ce29a21f",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/4a0e7980-8127-4331-9642-421e9e99f012.mp4",
+      "sha256": "125f3d860f68740d501ed17840d869a9051a55a309d79213493825da5e175044",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/9497d643-2ba1-408c-8371-87926e305f9f.mp4",
+      "sha256": "46ec653ba18e9ce8b2ec3b07ae0fbf9ed2b4ddb186676f7751e5b7030f39ea60",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/0a7dd33f-be3a-438b-bc82-4a6eca17f13b.mp4",
+      "sha256": "8bf0f26e1df5010643a1e3f39b4d222caa297ea8233d82d8d08926b91f9ebe25",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/22019230-cc35-4344-880c-2004d52fd280.mp4",
+      "sha256": "d9d98215364cbce8dbafe21c82eb6626842ac15535fb342795d3fd3fef3d2bf7",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/84706a6e-2849-4040-a7a3-67730c2c9d1e.mp4",
+      "sha256": "fe91a50d765679cd93985f5b41e9805057166ab33f609d8f8ecff3711f14155e",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/fe2f5d97-fa36-455d-8323-4a3791450b62.mp4",
+      "sha256": "4627c5dcfa8e27bc64583a3e92b31aa26bb61f5919e57a170f56792a109811b5",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/ad37cbf9-5266-4646-813f-316cd6e08220.mp4",
+      "sha256": "f852769ae4e346f60879cf2c7c16e945b763ae6f28471bb2f36a0ae5cdabaf07",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/fbbceb16-5e56-4856-9bd6-f4ae2f9f20c1.mp4",
+      "sha256": "9868b3f0cac2ed6daaf7fe0ff2f7a1e6001a3715f85beb675c7dd4a71c6e3677",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/a20919b3-120b-40ae-926e-7ce73486172e.mp4",
+      "sha256": "351b2555f83855816a5389e94c10e54a76c62b7ea8c5ffbe185c6e819360371f",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/e2c95829-d008-4f45-9917-92f126ea5e44.mp4",
+      "sha256": "98ac754735865608cec76f43707027d1ec568ffe62e0ebbe0b9c5654d9cf58ad",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/a9c2d516-9c40-49e0-9e55-523af71d83ae.mp4",
+      "sha256": "9a744ab1e3f4b454fba1ae9d392e866d34ff22d0184262e4df74e0391b474154",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/24f69524-cb3f-4698-b7df-9cdf0b6c3940.mp4",
+      "sha256": "6b84ccf93c8dc232879ec32a30d92096341501f07eb1dc3cece2ac2e396a5dc9",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/29a98d32-dbe1-4835-a178-6dd83678246d.mp4",
+      "sha256": "daa8558f9eef6ed124db2300a9babe32071609e690429629a2092156dc533a72",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/ca8d9d93-0e42-4ad8-9543-a6a800638b70.mp4",
+      "sha256": "b29ee5ed2df8724dc9759fe9ea8b78687b9872fcf06fbeb90d5e5abd8e6971cd",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "media/alternative-project/e19d226c-c586-467e-b126-6a9f90e1675e/a10d95b7-4d38-4991-9e1e-25765c97720a.mp4",
+      "sha256": "604ac6731ed919b285d42649989f9e2f25e5c83ad895230067d9418b157e5540",
+      "dealerId": "goran-alternativ-helkropp",
+      "evidence": "Källprojekt e19d226c-c586-467e-b126-6a9f90e1675e, revision 103; exakta filbytes verifierade. Ingen ny visuell QA."
+    },
+    {
+      "path": "runs/20261108210457-pamela-v4-focused/original/pamela-vila-focused-v4.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "4445634a5698da4121ad40bd7fcef76c8b8b8707c6fc24a87d095ad98348e5a7",
+      "evidence": "Imagegen V4 from Pamela V3; tighter separate VILA candidate. New geometry, no inherited calibration."
+    },
+    {
+      "path": "media/maud-reference/maud-bank-source.mp4",
+      "dealerId": "maud-scout",
+      "sha256": "3f4ffc848cf6ae0192d4a8b5556a973845b99d7522d616fa0a006b5f87532425",
+      "evidence": "media/maud-reference/source.json binds dealer maud in Jakeminator123/scoutgaming to croupier/media/dealers/maud/review/uploads/71ae6704-63e9-575e-afd2-a183f589675a/3f4ffc848cf6ae0192d4a8b5556a973845b99d7522d616fa0a006b5f87532425.mp4. Local SHA-256 verified 2026-11-08. Contact sheet reviewed; no whole-bank motion approval."
+    },
+    {
+      "path": "runs/20261108-pamela-model-comparison/original/pamela-v4-gen45-padded-idle.mp4",
+      "sha256": "f777a3aef408e042b9c2e6cbf7cd96ec8e379406db09bacd10149959bab3c449",
+      "dealerId": "pamela-pilot",
+      "role": "vila-candidate",
+      "note": "Generated from exact Pamela v4 padded input; not a calibrated production clip."
+    },
+    {
+      "path": "runs/20261108-pamela-model-comparison/original/pamela-v4-wan3-padded-idle.mp4",
+      "sha256": "3e8f1d6b280357d9ce5944cb3bccfe93970bba8b1615c56fea2f69e131ba5d60",
+      "dealerId": "pamela-pilot",
+      "role": "vila-candidate",
+      "note": "Generated from exact Pamela v4 padded input; not a calibrated production clip."
+    },
+    {
+      "path": "runs/20261108210457-pamela-v4-focused/original/pamela-v4-vila-gen45-5s.mp4",
+      "sha256": "2f97e12b523c10fd93873fc65bd871b8c3827d1d1b68c1d44819b2cccb9d32e7",
+      "dealerId": "pamela-pilot",
+      "role": "vila-candidate"
+    },
+    {
+      "path": "runs/20261108210457-pamela-v4-focused/qa/pamela-v4-vila-preview-30fps.mp4",
+      "sha256": "5e04a5d5feec9f8a05406805d71a985590111b8851c8076f27a21943792ea118",
+      "dealerId": "pamela-pilot",
+      "role": "motion-candidate",
+      "note": "Presentation pilot, not production approved."
+    },
+    {
+      "path": "runs/20261108-pamela-deal-pilot/original/pamela-pos4-iv-aleph2.mp4",
+      "sha256": "f9e90923c1e050ab09c5bac6376895830dea1ec4bf45707def767b95e7c73ba4",
+      "dealerId": "pamela-pilot",
+      "role": "motion-candidate",
+      "note": "Presentation pilot, not production approved."
+    },
+    {
+      "path": "runs/20261108-pamela-deal-pilot/original/pamela-pos4-iv-aleph2-rigid-short.mp4",
+      "sha256": "2038742949ab3c5797b8af9a8877953e50059b6cf3051ab4e860e0c00a55aebf",
+      "dealerId": "pamela-pilot",
+      "role": "motion-candidate",
+      "note": "Presentation pilot, not production approved."
+    },
+    {
+      "path": "runs/20261108-pamela-deal-pilot/composite/pamela-lager-vila-giv-atergang.mp4",
+      "sha256": "fed8b9598f2143e300b314538de2786e45f24ef581d62093df9c4a998c142888",
+      "dealerId": "pamela-pilot",
+      "role": "scene-candidate",
+      "note": "Presentation pilot, not production approved."
+    },
+    {
+      "path": "runs/20261108-pamela-deal-pilot/composite/pamela-vila-giv-atergang-wide-room-wide.mp4",
+      "sha256": "c0b0cbaf76cc4c39af44bebb368b255a4cdaaae15383c4bd9943f08195603fd4",
+      "dealerId": "pamela-pilot",
+      "role": "scene-candidate",
+      "note": "Presentation pilot, not production approved."
+    },
+    {
+      "path": "runs/20261108-pamela-contact-round2/composite/pamela-contact-fit.mp4",
+      "sha256": "fbaffe8fa4a768318a0fdda57b86c801f2914515ed6d01136d87f83b852ac8b4",
+      "dealerId": "pamela-pilot",
+      "role": "scene-candidate",
+      "note": "Contact-fit round 2: unchanged original dealer, shared geometry translation. Not production approved."
+    },
+    {
+      "path": "runs/20261108-pamela-contact-round2/composite/pamela-contact-fit-dim.mp4",
+      "sha256": "873c3905bce830e56ffa92ee2641713484c318b22bbc4b8428171fe2063c5867",
+      "dealerId": "pamela-pilot",
+      "role": "scene-candidate",
+      "note": "Contact-fit round 2: unchanged original dealer, shared geometry translation. Not production approved."
+    },
+    {
+      "path": "runs/20261108-pamela-v5-body/original/pamela-v5-body.png",
+      "sha256": "2f11686b223925d8fc791735c32a7b4550af5f1ea4936df8ee03d982c7607795",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela reference work; not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+      "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela reference work; not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-reference-kit/original/pamela-redo-station.png",
+      "sha256": "a9dd4882d84da1cc6f0fb3258d0fbd6d81fddac5a7f78efdaa225d6f9538576d",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela reference work; not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-till-redo-wan3.mp4",
+      "sha256": "00efe62636916b79052b4cf9d5fa88ba1ad52c17d531f1dcc86875f94c91084c",
+      "dealerId": "pamela-pilot",
+      "role": "to-shoe-candidate",
+      "note": "New Pamela reference work; not production accepted."
+    },
+    {
+      "path": "runs/20261108-pamela-v5-body/original/pamela-v5-pos4-iv-wan3.mp4",
+      "sha256": "85ed40ee85db31e13eb4aba631cc2dda8da53699fe57930eea4c9303da8bebf9",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela reference work; not production accepted."
+    },
+    {
+      "path": "runs/20261108-pamela-v5-body/original/pamela-v5-pos4-iv-aleph2.mp4",
+      "sha256": "66043abbf3d27b99168de1312066fd80c0073387823c53b4f315a383004108e8",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela reference work; not production accepted."
+    },
+    {
+      "path": "runs/20261108-pamela-v5-body/input/pamela-v5-control-plane.png",
+      "sha256": "1a1664b5733c491985740101618120e9cd08a3a38749b15bf035f72bce2a6759",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela reference work; not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-reference-kit/qa/all-90-frames.jpg",
+      "sha256": "3857796c2bdaddee2af6dfe0420cfbebf0d4ff82fbafce1f81a91744a9b5a907",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela reference work; not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-reference-kit/qa/selected-01.png",
+      "sha256": "064513dff52b0f927666758e143565f66cea3f843da7a2a37526686653da1dc9",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela reference work; not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-reference-kit/qa/selected-04.png",
+      "sha256": "297c5ab7e360c6f63859b419d9addf387e339e5e91abceed3c7f3edf43b8cff2",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela reference work; not production accepted."
+    },
+    {
+      "path": "runs/20261108-pamela-contact-round2/qa/endpoint-first-last.png",
+      "sha256": "25c0941d0301de119ed951eeaeb3d929bda99914e6f96ed139276d00e1685525",
+      "dealerId": "pamela-pilot",
+      "role": "historical-rejected-endpoints",
+      "note": "Measured first/last mismatch, not the current reference kit."
+    },
+    {
+      "path": "runs/20261109-pamela-sequence/original/pamela-central-base-wan3.mp4",
+      "sha256": "2445bb2ef5122fe558134d582533d277603da72c4b98b6c782be01a5bf06235a",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela sequence evidence, not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-sequence/original/pamela-from-shoe-wan3.mp4",
+      "sha256": "81a63227a56531103bd9d86b364442869b72eef0ddd3be65e718f3494ee2147b",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela sequence evidence, not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-sequence/original/pamela-redo-after-central.png",
+      "sha256": "f62974a66959462093fb2ecd5fa0c2470eb3cfbeece1726030218ae167f8daba",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela sequence evidence, not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-sequence/qa/central-base/frame-001.png",
+      "sha256": "7b8bc6ada476c586069851760948e7c74d5f58c05ae576dad1d7a6c3cadb7533",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela sequence evidence, not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-sequence/qa/central-base/frame-085.png",
+      "sha256": "4d9fcb1afeca1114a6a34409ac4382f84e451798ae7f2ac5637e41b33a8b7999",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela sequence evidence, not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-sequence/qa/central-base/frame-101.png",
+      "sha256": "837749ff540ed2dd79f109b6510dd315a11eac80b24b9f3ca1b6cf0a76c13259",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela sequence evidence, not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-sequence/qa/central-base/frame-180.png",
+      "sha256": "35ef36437b9ae9a96310b29abcd3fa77899d0587c202203e14d912cb2a9a0db5",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela sequence evidence, not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-sequence/qa/central-base/all-frames.jpg",
+      "sha256": "1134464039dffc4b0bfee7eb9e06b6586bdebd3af93731ad8bfacbb79f5dac25",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela sequence evidence, not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-sequence/qa/from-shoe/frame-090.png",
+      "sha256": "dd86c75def815c5db1ba1e47fcf42627adb1f1143e9ac0c9b5a011bbfbed6de5",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela sequence evidence, not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-sequence/qa/from-shoe/all-frames.jpg",
+      "sha256": "a18907655690b0803e56f4a64c21fb5580fa088f64091113c590a59b351a721f",
+      "dealerId": "pamela-pilot",
+      "role": "reference-candidate",
+      "note": "New Pamela sequence evidence, not production accepted."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/render/pamela-two-deals-native-v1.mp4",
+      "dealerId": "pamela-pilot",
+      "sha256": "d07999bb7d1ead310e6a54ae86ff259c2f6bec3c4cd126fa5acc48604ab8d065",
+      "basis": "Hash-verified composition of three Pamela source clips; presentation derivative, not a new generated identity."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/render/pamela-two-deals-raw-v1.mp4",
+      "dealerId": "pamela-pilot",
+      "sha256": "4628c6b824c6dc2dd6c9e9b325f97bb4ea5f74ba5e7a8c8dbfe6ec98028b83f3",
+      "basis": "Hash-verified composition of three Pamela source clips; presentation derivative, not a new generated identity."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/composite-000.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "ab8af5fa907c439cebf34b8b64009892818556cc841752e5756a9a002433f35f",
+      "basis": "Hash-verified composition of three Pamela source clips; presentation derivative, not a new generated identity."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/composite-171.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "9c4f39c947bb4905d1c4e6e08e10b7bb1c5aaaab6daa40cd2efc523ec4ff72d0",
+      "basis": "Hash-verified composition of three Pamela source clips; presentation derivative, not a new generated identity."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/composite-185.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "1a50c43c467e47b314f99cef9fe521d0e3d147665965b711397425a9161f1a86",
+      "basis": "Hash-verified composition of three Pamela source clips; presentation derivative, not a new generated identity."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/composite-266.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "57ec75fe43a9dc635dfe4bc1f939d1d38cead1d5f6bc373d839313a32062ff30",
+      "basis": "Hash-verified composition of three Pamela source clips; presentation derivative, not a new generated identity."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/composite-348.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "18cb202d0d41b1727c08717eaf5abb034f07a7c5e2336b63ac2f52b8a2e4c581",
+      "basis": "Hash-verified composition of three Pamela source clips; presentation derivative, not a new generated identity."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/composite-429.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "b4bfda3155acb64dc2bdb908a19abed1ef6de8f3444a56ff5796598b6af6fc92",
+      "basis": "Hash-verified composition of three Pamela source clips; presentation derivative, not a new generated identity."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/composite-430.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "fd0078091cc0ac8c7cafefa61651e18bc44ec0a1cd4a96350515ca640732370a",
+      "basis": "Hash-verified composition of three Pamela source clips; presentation derivative, not a new generated identity."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/composite-519.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "da89df14ff28a8964902b1a78c315129f0c7ec07c0ec9129cb2cbd7c8ee03866",
+      "basis": "Hash-verified composition of three Pamela source clips; presentation derivative, not a new generated identity."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/tracking/c2-pilot/proofs/c2-proof-077.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "88b8fcd393390292021c7723bbcba2265b2864518444458d384f11caf6aa118c",
+      "basis": "Derived central card-2 occlusion proof, not an approved bank variant."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/tracking/c2-pilot/proofs/c2-proof-084.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "db348c314c021fa8891585b287f28817d7e43ff7084e17449e3645be333df07d",
+      "basis": "Derived central card-2 occlusion proof, not an approved bank variant."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/tracking/c2-pilot/proofs/c2-proof-098.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "2d2ff60831a8eea1bfadd19c651dfd8aec7279023cfa0be54d07da997f6838dc",
+      "basis": "Derived central card-2 occlusion proof, not an approved bank variant."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/tracking/c2-pilot/proofs/c2-proof-114.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "8a91c1fcad717f56640ad9b8b32d6274dd709f6b47255238ce2567011d73cb49",
+      "basis": "Derived central card-2 occlusion proof, not an approved bank variant."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/tracking/c2-pilot/proofs/c2-proof-118.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "37a88542a286da610bd9f4d909d066a9660b3ade926106152bbb5c29393a2f5a",
+      "basis": "Derived central card-2 occlusion proof, not an approved bank variant."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/tracking/c2-pilot/proofs/placement-variants.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "4d7f0abedbe85c414e7ec5826948b692bffacadb8a1672e4f293d131be6f1323",
+      "basis": "Derived central card-2 occlusion proof, not an approved bank variant."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/render/pamela-two-deals-native-v2.mp4",
+      "dealerId": "pamela-pilot",
+      "sha256": "f4ee51b895ec6b3d72ad54ef06ce019d06bfbda8e7e09976d5e7559bce890102",
+      "basis": "Source-bound v2 compositing/projection evidence; no new dealer generation."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/render/pamela-two-deals-portrait-v2.mp4",
+      "dealerId": "pamela-pilot",
+      "sha256": "31bf279efc1e88b877a5813299229d73c3eb4ca813f0db970c4f1acc9f0ac40f",
+      "basis": "Source-bound v2 compositing/projection evidence; no new dealer generation."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/v2/composite-000.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "c90f089ded8a7a8c50518613c78036c504d74048f87a91e84382d65a5ec7914e",
+      "basis": "Source-bound v2 compositing/projection evidence; no new dealer generation."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/v2/portrait-000.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "6b0f120c0dd5ed6be37e5ff980b1e65ed7edb6b0f1c2ad29ec80735886f0965e",
+      "basis": "Source-bound v2 compositing/projection evidence; no new dealer generation."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/v2/composite-185.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "1b5cdcf642a68eb586da063d4c02c6f71b885444316147fbad8b191c8c73f4b1",
+      "basis": "Source-bound v2 compositing/projection evidence; no new dealer generation."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/v2/composite-519.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "896cb2c5e6eb24f7fa476ab0a0073d4e5cb81cdd938129fedb62ba3fb50ef58b",
+      "basis": "Source-bound v2 compositing/projection evidence; no new dealer generation."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/qa/v2/portrait-185.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "4d6f6c47fbf5df30ae227d3e06775ff402ade3d0c83b66729ef22fec62c774b8",
+      "basis": "Source-bound v2 compositing/projection evidence; no new dealer generation."
+    },
+    {
+      "path": "runs/20261109-pamela-central-composite/review/key-quality/approach000-hair-ears-native-comparison.png",
+      "dealerId": "pamela-pilot",
+      "sha256": "7954c07c40774ad8935262c23254c85efe0e1c0995204e79aeb3303465a2389c",
+      "basis": "Source-bound v2 compositing/projection evidence; no new dealer generation."
+    },
+    {
+      "path": "runs/20261109-pamela-idle-pilot/original/pamela-breath-wan3.mp4",
+      "sha256": "ea74eb1c8724246571600648bf3acfccbadea5a8caf74d8963ba0d56be368049",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/render/pamela-breath-native-v1.mp4",
+      "sha256": "63398ddf31356a6ca897c2193a07e3e2975f0df05f72c76b941ac7ce44f90358",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/render/pamela-breath-portrait-v1.mp4",
+      "sha256": "af8611adf4088d1ba35913fbc9181b27640d8faae5ccfeae6d8cd324f4109c3c",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/qa/breath-000.png",
+      "sha256": "ac97733f46393c3388af6c91829527f7ed7796c8903e9ae34ad36d0506098cc8",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/qa/breath-000-portrait.png",
+      "sha256": "55f1d589f3ae9d4ef69585888f78528356cc27673d5dad4d712c9e0646b2684d",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/qa/breath-090.png",
+      "sha256": "ddd4448438390e9c13ae2a3b4a440ba2ff395fd25a78f3648d063ba9747025b0",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/qa/breath-090-portrait.png",
+      "sha256": "b64e1de69a9c488b3f83099d08fafa6da09a329fd22f69aaf0e8c943506bbf5e",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/qa/breath-179.png",
+      "sha256": "801b52b6ecd32c8f2fd898b7d74f2a9a61e2da8fcea3b78473f10a5bf43192f7",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/qa/breath-179-portrait.png",
+      "sha256": "cccdef051cb83b70a06b8bb421417552407d023a18c34f1e7bdb0fa5a9fd2d2e",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-pilot/original/pamela-glance-wan3.mp4",
+      "sha256": "af76918b478c78859d85733651ec987777e184fbc62dfe6097d4306c2c438564",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/render/pamela-glance-native-v1.mp4",
+      "sha256": "bd3e7808940ee03f018fab0a9d46eb6554583f5ca03f6efa8c2e0476590ec50a",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/render/pamela-glance-portrait-v1.mp4",
+      "sha256": "90450d206edc062babaa4086139b5c00356eaa3158b7e2b9db2b57141906070a",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/qa/glance-000.png",
+      "sha256": "2a10641376b55fb088f7afccb9c7a0fbee106c7d5ea0b57682f3778de2fcda9c",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/qa/glance-000-portrait.png",
+      "sha256": "930d8ddea33cf65b03d3665b3f98e196e82e0b4bc9ee770c597abb3fb7cb2bac",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/qa/glance-045.png",
+      "sha256": "8224a8a9922dcc7cb8b6f46f9ac0784b1376735deb7f44d44c58041814250b15",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/qa/glance-045-portrait.png",
+      "sha256": "877d33858c1565fd9f4bc0beb2c2e355adedbf836e05da1d5161a54d4251bf26",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/qa/glance-089.png",
+      "sha256": "5578a4ec46885028458b21d6fbe265e6970ac0f2d0fb8e1d85c0bbeda427e0c7",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/qa/glance-089-portrait.png",
+      "sha256": "3104904fd6f9aa9570b10dcf63b181c0a8ff88c2918f70f21a28ef6d48022576",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/render/pamela-idle-andning-blick-native-v1.mp4",
+      "sha256": "394cbb96c59b6ac73bc2692dba67c4fd4a1ef3d211a04cc89d5a4862a081e2a9",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-composite/render/pamela-idle-andning-blick-portrait-v1.mp4",
+      "sha256": "fb41147362ce2b9db116835c13b86151b2637b8bc9a2eebe7bbf756079daf74d",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-pilot/qa/breath/raw-loop-3x.mp4",
+      "sha256": "6d65d3c213a87a5795830337afdbcc2da88b56a8ad0901a83b05d52e39cb625b",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-pilot/qa/breath/all-frames-000.jpg",
+      "sha256": "b72857074c7705584bc27b5c8e0cad529ddc3992dd8e0a6495f9b18858dfb71d",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-pilot/qa/breath/all-frames-060.jpg",
+      "sha256": "42a807652d044ed044776cee62e68a4dc55720bde6ccc9ee139de0b1a02e0c63",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-pilot/qa/breath/all-frames-120.jpg",
+      "sha256": "3389b1ae2a69355db412eebbbfe08c9ba19f232d27ea799321f2b846a411f785",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-pilot/qa/glance/raw-loop-3x.mp4",
+      "sha256": "0fb1a2dc94b76093e2be6dfcc95a66fe94a8c749a59307aac51f73d4ad208ccd",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-pilot/qa/glance/all-frames-000.jpg",
+      "sha256": "f55bd46190a35d3f912844d84a24946f8be4d394f05771fcab8f31f2486d4630",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-idle-pilot/qa/glance/all-frames-060.jpg",
+      "sha256": "08fd8968ca2fe8418e873ccc846d880687c6e9150b5630cd4c689039e92c7b09",
+      "dealerId": "pamela-pilot",
+      "basis": "Current VILA anchor and task-bound idle original; composited derivatives keep source geometry"
+    },
+    {
+      "path": "runs/20261109-pamela-finish-study/breath-090-dark-baseline.png",
+      "sha256": "ddd4448438390e9c13ae2a3b4a440ba2ff395fd25a78f3648d063ba9747025b0",
+      "dealerId": "pamela-pilot",
+      "basis": "Same-frame native Pamela originals: source-bound light comparison or original seam diagnosis; no new generation."
+    },
+    {
+      "path": "runs/20261109-pamela-finish-study/breath-090-dark-tone-only.png",
+      "sha256": "c3e0c9c246373c59aa8a02120052df0b27d7ab3890e797f2c10f133ab359ec04",
+      "dealerId": "pamela-pilot",
+      "basis": "Same-frame native Pamela originals: source-bound light comparison or original seam diagnosis; no new generation."
+    },
+    {
+      "path": "runs/20261109-pamela-finish-study/comparison-skin.png",
+      "sha256": "1efa528c7551cf314d37112a9fcdf044c36d69ba33ec18fc4f5cd5838d837d0d",
+      "dealerId": "pamela-pilot",
+      "basis": "Same-frame native Pamela originals: source-bound light comparison or original seam diagnosis; no new generation."
+    },
+    {
+      "path": "runs/20261109-pamela-finish-study/comparison-edge.png",
+      "sha256": "5a98986b43f8f5bf9e7c5b66871c71baab7f4e74923a68d119eaf3dbd2ef2c85",
+      "dealerId": "pamela-pilot",
+      "basis": "Same-frame native Pamela originals: source-bound light comparison or original seam diagnosis; no new generation."
+    },
+    {
+      "path": "runs/20261109-pamela-finish-study/comparison-torso.png",
+      "sha256": "0ad33d5d8a370b5134619827bf2ee86a07ab1de571532d73ce3de8afd3dc0cab",
+      "dealerId": "pamela-pilot",
+      "basis": "Same-frame native Pamela originals: source-bound light comparison or original seam diagnosis; no new generation."
+    },
+    {
+      "path": "runs/20261109-pamela-idle-seams/12s-face-originals.png",
+      "sha256": "cff622666d32a47d2263ab728cacc8bc6e9e261b717f4df64565387fb71c5685",
+      "dealerId": "pamela-pilot",
+      "basis": "Same-frame native Pamela originals: source-bound light comparison or original seam diagnosis; no new generation."
+    },
+    {
+      "path": "runs/20261109-pamela-idle-cut-proof/render/a-original-cut.mp4",
+      "sha256": "66427e5d159fa2a922d9a94cfc50cda92ec2da1b1768edd28f96635b6a34ab46",
+      "dealerId": "pamela-pilot",
+      "basis": "Frame-exact extract from existing native idle composites; no new generation."
+    },
+    {
+      "path": "runs/20261109-pamela-idle-cut-proof/render/b-trimmed-entry-candidate.mp4",
+      "sha256": "c727977b14aae743659643f156ce8bbbb38db8a057b53c84265321e0aa13b289",
+      "dealerId": "pamela-pilot",
+      "basis": "Frame-exact extract from existing native idle composites; no new generation."
+    },
+    {
+      "path": "runs/20261109-pamela-idle-cut-proof/qa/seam-face-hands.png",
+      "sha256": "a1ef97c818175dc50a9ef649eba8bf1158b399163ff02a7df2251a594e9c371e",
+      "dealerId": "pamela-pilot",
+      "basis": "Frame-exact extract from existing native idle composites; no new generation."
+    },
+    {
+      "path": "runs/20261109-pamela-card-side-proof/render/pamela-two-deals-native-v3-card-sides.mp4",
+      "sha256": "3ec7d24cc08d789362638037cc9d164f0c605ef39770cf8d4ea71ea39e061921",
+      "dealerId": "pamela-pilot",
+      "basis": "Same source-bound central timeline; card surface/alpha/contact correction candidate, or diagnostic unchanged raw endpoint evidence. No new AI generation."
+    },
+    {
+      "path": "runs/20261109-pamela-card-side-proof/render/pamela-two-deals-portrait-v3-card-sides.mp4",
+      "sha256": "f49dbc9a5dcc7a5000026ed9b5f653ac2242b52c45113aa44ba824a22c9efb90",
+      "dealerId": "pamela-pilot",
+      "basis": "Same source-bound central timeline; card surface/alpha/contact correction candidate, or diagnostic unchanged raw endpoint evidence. No new AI generation."
+    },
+    {
+      "path": "runs/20261109-pamela-card-side-proof/qa/sequence-000.png",
+      "sha256": "6c08c5d822182440302221e2c17b9ae49029b51725548e3f83259b72e081dd4d",
+      "dealerId": "pamela-pilot",
+      "basis": "Same source-bound central timeline; card surface/alpha/contact correction candidate, or diagnostic unchanged raw endpoint evidence. No new AI generation."
+    },
+    {
+      "path": "runs/20261109-pamela-card-side-proof/qa/portrait-sequence-000.png",
+      "sha256": "30b45500ccd57a1cd705e3487662f26640bfec5f6c548960e7d999d8fba21dc1",
+      "dealerId": "pamela-pilot",
+      "basis": "Same source-bound central timeline; card surface/alpha/contact correction candidate, or diagnostic unchanged raw endpoint evidence. No new AI generation."
+    },
+    {
+      "path": "runs/20261109-pamela-card-side-proof/qa/contact-1.png",
+      "sha256": "4e4f1e17e3455f8d7960e297f41c35a737b517768f03b0cd31b5d6cd9b2ad644",
+      "dealerId": "pamela-pilot",
+      "basis": "Same source-bound central timeline; card surface/alpha/contact correction candidate, or diagnostic unchanged raw endpoint evidence. No new AI generation."
+    },
+    {
+      "path": "runs/20261109-pamela-card-side-proof/qa/contact-2.png",
+      "sha256": "3e2631db5e2c63d4f8151857350cbc695d7309d7fd564adda571184d4c50d8ec",
+      "dealerId": "pamela-pilot",
+      "basis": "Same source-bound central timeline; card surface/alpha/contact correction candidate, or diagnostic unchanged raw endpoint evidence. No new AI generation."
+    },
+    {
+      "path": "runs/20261109-pamela-card-side-proof/qa/contact-3.png",
+      "sha256": "9070aea1d8557bdb9c973bb934ece25404f418fbf89bfd6905e61fd45359d6e4",
+      "dealerId": "pamela-pilot",
+      "basis": "Same source-bound central timeline; card surface/alpha/contact correction candidate, or diagnostic unchanged raw endpoint evidence. No new AI generation."
+    },
+    {
+      "path": "runs/20261109-central-seam-audit/decoded-first-last-native-detail.png",
+      "sha256": "56a1b644d61943383094cd79b858cfd845f32ce3e6e65ff628d963def0109dd0",
+      "dealerId": "pamela-pilot",
+      "basis": "Same source-bound central timeline; card surface/alpha/contact correction candidate, or diagnostic unchanged raw endpoint evidence. No new AI generation."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/pamela-continuous-native-v1.mp4",
+      "sha256": "f17a2a112e7a31ea36623a33280ff44e504acf9aed5aa644a68793b4eba9065a",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/pamela-continuous-portrait-v1.mp4",
+      "sha256": "ec2d36b0d321ce653d98e17b4e60407d596170dc628eef03aeabe51cfb321e33",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/original/pamela-continuous-wan3.mp4",
+      "sha256": "213bf02130cf7e02fc9d68b9ddc6f34a08dff9c5cb22c537af82a0c56bffe3d8",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/pamela-continuous-native-3loops-v1.mp4",
+      "sha256": "00bee3b3aa41f902d0629e853b6dad5b21fdb2a49b923b113d9c7f292a8dc853",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/pamela-continuous-portrait-3loops-v1.mp4",
+      "sha256": "ccfb3fae97f3906112c059091b7e6fec786422d53f4660918c0ec54bece255c2",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/pamela-cut-proof-native-v1.mp4",
+      "sha256": "c858d0986c3e0db328845de9adb27ed7539c0207fac1147100d10de2a61bc52c",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/pamela-cut-proof-portrait-v1.mp4",
+      "sha256": "7c4fba9c2a0b584dd9b1d7714a34ff330568e7446942bfbd7ec4ce080f42900d",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-000.png",
+      "sha256": "f7cf82ac9690abbc877c333fe00fc4d785368de8901ebef2e535039e865102ed",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-000-portrait.png",
+      "sha256": "2519f0581e2cca1f5c687c2a52bcb06cc57686920b003f7ed0f0a98add79e69c",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-059.png",
+      "sha256": "3b301b3fc1e4bff4baba4f1a92b5d3805c12ca58a57f7ff79126a8c7b5a564e3",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-059-portrait.png",
+      "sha256": "96e57edbed1d6f1bb2bbeca420b5da1a4d9a5e332e2990507803bfdf33a2e888",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-119.png",
+      "sha256": "4a60f0b80a7858099af1a33ac2bfbcf0495972d6fae6706a6258ac55b8494b83",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-119-portrait.png",
+      "sha256": "f78305fb76031873c1840d15e74be8b7f6bafa5ba8f9ad9676c33bd59c5a95db",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-179.png",
+      "sha256": "71f1e14c1024fd729dbf0721700ff466bdf6a5abe7cbce3db384775050a6fe8c",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-179-portrait.png",
+      "sha256": "f9efbad3f134712a6e1d3307580f35a9666952ff53067de911d78ef80d8fd6ec",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-239.png",
+      "sha256": "08d8feba9ca6b8ce04b2f5be5fc2a4cdfbb2fb4902497d8f7ea26faf0a7df301",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-239-portrait.png",
+      "sha256": "c498e1f32cc13917ce4ec6ebe38c283c203140b6b64595bdb95f955686c0edbd",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-314.png",
+      "sha256": "e4482c60b5a87d15fff0765ab6204b7168011bf3c80eab421841e986b1c20461",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-314-portrait.png",
+      "sha256": "1848a367a2b3342ae9d60f2eb8b2048add1364f25c0d61eed2d7cdbbf9268710",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-359.png",
+      "sha256": "eefbe2444ba2d9bbc3410445e2748e6ca8ca0576f6a142c1654bffd4c569382c",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/render/scene-359-portrait.png",
+      "sha256": "ebc2967a212f2f11930aaf77db5ae24ffe201c0f6615280cbfe10aadd0f84028",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/qa/return-face-native.png",
+      "sha256": "2431a4663b6a5ed5e3843658f91a4d95de0f06a25d0e4c9eacb0e7cde686e713",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/qa/return-hands-native.png",
+      "sha256": "ec14571dbbb2009a158889dbcdc432993f9d149261acac1589a3ee4184fff3d3",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/qa/first-last-face-native.png",
+      "sha256": "5267acc1d976ea33124d04b69dd95415b918e7ef09a2dca2d175d81aa6d8bd85",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/qa/all-frames-000.jpg",
+      "sha256": "fe5ecc4fc43c891849ea4955db965ac6495dd621a9de5e991e87d1036c7350c2",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/qa/all-frames-060.jpg",
+      "sha256": "eb8276ba95002d042739ba00952c4aaf86c3e141e2a33c95db2938ae239e7541",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/qa/all-frames-120.jpg",
+      "sha256": "9d0b79821638da59c544c6bd556d06c428f2181ba1d6d88c8d6b4d0d26de0207",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/qa/all-frames-180.jpg",
+      "sha256": "9bad249c85aefa51285f89e5cfb5a68b42eb94412895538a8a3c728e28320d57",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/qa/all-frames-240.jpg",
+      "sha256": "2a9bf8388c6bce7ff2645ce892b1d1a41bb99790e22917e108d211104700bcbb",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/qa/all-frames-300.jpg",
+      "sha256": "6dce1910718e89dacf5f728980d749c70803d447d467faff1c360d388c332c46",
+      "dealerId": "pamela-pilot",
+      "basis": "One new continuous Wan3 take from the same hash-bound VILA image; source-preserving scene derivatives and direct-repeat QA evidence."
+    },
+    {
+      "path": "runs/20261109-pamela-card-contact-v4/render/pamela-two-deals-native-v4.mp4",
+      "sha256": "6b2f762db11f2b6357a8e2dca9c826b13178851d94a7301a2d6790930e6c9c9d",
+      "dealerId": "pamela-pilot",
+      "basis": "Same source-bound central timeline; V4 local C2 hand/forearm contact remapping, stable landed card positions, SG shoe card and sampled printed surfaces. Not new AI source."
+    },
+    {
+      "path": "runs/20261109-pamela-card-contact-v4/render/pamela-two-deals-portrait-v4.mp4",
+      "sha256": "e6207ea9ded5e1cbace6bd8f99756c390353bcfcf46df38464002220beab1e7b",
+      "dealerId": "pamela-pilot",
+      "basis": "Same source-bound central timeline; V4 local C2 hand/forearm contact remapping, stable landed card positions, SG shoe card and sampled printed surfaces. Not new AI source."
+    },
+    {
+      "path": "runs/20261109-pamela-card-contact-v4/qa/sequence-000.png",
+      "sha256": "3378d1f8aef668ae7545f01a5c3da1d9bbfa7bcd528a9fafff441d1246efbda9",
+      "dealerId": "pamela-pilot",
+      "basis": "Same source-bound central timeline; V4 local C2 hand/forearm contact remapping, stable landed card positions, SG shoe card and sampled printed surfaces. Not new AI source."
+    },
+    {
+      "path": "runs/20261109-pamela-card-contact-v4/qa/portrait-sequence-000.png",
+      "sha256": "581802fe2116dda3097f8436aa2d857607191512be18d0509ae055156b69a671",
+      "dealerId": "pamela-pilot",
+      "basis": "Same source-bound central timeline; V4 local C2 hand/forearm contact remapping, stable landed card positions, SG shoe card and sampled printed surfaces. Not new AI source."
+    },
+    {
+      "path": "runs/20261109-pamela-card-contact-v4/qa/contact-contact-sheet.png",
+      "sha256": "9ff48aaed72c8dda3e3a9a5a9315967f07c62b39bcc99341086e5ff693640e9a",
+      "dealerId": "pamela-pilot",
+      "basis": "Source-bound comparison of rendered/native candidate frames; not production acceptance."
+    },
+    {
+      "path": "runs/20261109-pamela-card-contact-v4/qa/return-contact-sheet.png",
+      "sha256": "83fa8d7bdbe12156b144c7803139366e70d18f561a2bd066f24b0dbeb3c0a9c3",
+      "dealerId": "pamela-pilot",
+      "basis": "Source-bound comparison of rendered/native candidate frames; not production acceptance."
+    },
+    {
+      "path": "runs/20261109-pamela-card-contact-v4/qa/landed-contact-sheet.png",
+      "sha256": "34e10cb2970878acb3ea6e96cc90d686ebb6a34e1705ab8749a633fd9c3ff326",
+      "dealerId": "pamela-pilot",
+      "basis": "Source-bound comparison of rendered/native candidate frames; not production acceptance."
+    },
+    {
+      "path": "runs/20261109-pamela-card-contact-v4/qa/shoe-contact-sheet.png",
+      "sha256": "91d5602834eac4c8d10f5751eee503dff1344e97480b0b6f8323bd8c71907887",
+      "dealerId": "pamela-pilot",
+      "basis": "Source-bound comparison of rendered/native candidate frames; not production acceptance."
+    },
+    {
+      "path": "runs/20261109-pamela-card-contact-v4/qa/release-contact-sheet.png",
+      "sha256": "f47ebb3fb2329a2a26e6eeef3568cd7e3f1179cfef2ea51a035f5c4860895822",
+      "dealerId": "pamela-pilot",
+      "basis": "Source-bound comparison of rendered/native candidate frames; not production acceptance."
+    },
+    {
+      "path": "references/feedback/card-contact-20261109/shoe-card.png",
+      "sha256": "b5801a93f3473825b890afa6932a6e9add1dd51c0d65f961eda946b79a122dca",
+      "dealerId": "pamela-pilot",
+      "basis": "User screenshot feedback, exact original film/frame unknown; not a generated source."
+    },
+    {
+      "path": "references/feedback/card-contact-20261109/card-back.png",
+      "sha256": "bff7f7bc72d6f76c8a22496c7aef0d4f10cce989a81027d6c5da1a1fc3b50018",
+      "dealerId": "pamela-pilot",
+      "basis": "User screenshot feedback, exact original film/frame unknown; not a generated source."
+    },
+    {
+      "path": "references/feedback/card-contact-20261109/card-face.png",
+      "sha256": "aa270bc99559505aca985547ca3b64110b40a09c0f0522d46745c7447074a699",
+      "dealerId": "pamela-pilot",
+      "basis": "User screenshot feedback, exact original film/frame unknown; not a generated source."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/qa/cut-proposal-face-native.png",
+      "sha256": "85a3f211b06752ba10fe266f6b809bfbf884a463a7b2998c5ef039e23b0f3b37",
+      "dealerId": "pamela-pilot",
+      "basis": "Source-bound comparison of rendered/native candidate frames; not production acceptance."
+    },
+    {
+      "path": "runs/20261109-pamela-continuous-idle/qa/cut-proposal-hands-native.png",
+      "sha256": "5f07ba7a092e04011f6cd9582359d4fffecab9210fadb791f95f2d5bb4e676d5",
+      "dealerId": "pamela-pilot",
+      "basis": "Source-bound comparison of rendered/native candidate frames; not production acceptance."
+    },
+    {
+      "path": "runs/20261109-pamela-card-contact-v4/release-try/comparison.png",
+      "sha256": "6464a88346e04c34f78997f50ad6db53d4ff32374c4734e52ef36ed885f17b49",
+      "dealerId": "pamela-pilot",
+      "basis": "Rejected source-bound local refinement; not activated in V4."
+    },
+    {
+      "path": "runs/20261109-pamela-card-contact-v4/release-plane-try/comparison.png",
+      "sha256": "dbbb20a1684a12303bbb3b6811a5c73a93bc5dc79f4f66e1b446b4ba53f9e30f",
+      "dealerId": "pamela-pilot",
+      "basis": "Rejected source-bound local refinement; not activated in V4."
+    },
+    {
+      "path": "media/feedback/card-contact-20261109/shoe-card.png",
+      "sha256": "b5801a93f3473825b890afa6932a6e9add1dd51c0d65f961eda946b79a122dca",
+      "dealerId": "pamela-pilot",
+      "basis": "Byte-identical public copy of explicitly selected user screenshot feedback; original film/frame unknown."
+    },
+    {
+      "path": "media/feedback/card-contact-20261109/card-back.png",
+      "sha256": "bff7f7bc72d6f76c8a22496c7aef0d4f10cce989a81027d6c5da1a1fc3b50018",
+      "dealerId": "pamela-pilot",
+      "basis": "Byte-identical public copy of explicitly selected user screenshot feedback; original film/frame unknown."
+    },
+    {
+      "path": "media/feedback/card-contact-20261109/card-face.png",
+      "sha256": "aa270bc99559505aca985547ca3b64110b40a09c0f0522d46745c7447074a699",
+      "dealerId": "pamela-pilot",
+      "basis": "Byte-identical public copy of explicitly selected user screenshot feedback; original film/frame unknown."
+    }
+  ]
+}

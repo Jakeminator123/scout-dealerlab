@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "status": "prepared-for-user-requested-goal-pause",
+  "createdAt": "2026-11-10T01:36:28.514Z",
+  "validUntil": "2026-11-10T02:36:28.514Z",
+  "threadId": "01a1c0ad-9566-72b2-a90c-e0939bf602ec",
+  "handoff": {
+    "path": ".runtime/handoffs/PAMELA/PAMELA-20261110-pausunderlag.md",
+    "sha256": "70b65a11e714fd4576e2a8041a258db443d78deaf72b24debbd802f074bea63f"
+  },
+  "successorCreated": false,
+  "goalPauseRequestedByUser": true
+}

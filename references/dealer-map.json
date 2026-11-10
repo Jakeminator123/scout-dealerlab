@@ -1,0 +1,4416 @@
+{
+  "schema": "dealerlab-map/1",
+  "generatedAt": "2026-11-09T00:35:18.496Z",
+  "mainRevision": "d86a6b47c85f4b1341e4ffe2a7a49f08800bc544",
+  "bankId": "pamela-workspace-v1",
+  "mainConnected": false,
+  "importedIntoAtlas": false,
+  "sources": [
+    {
+      "path": "gpt-underlag/5/Scoutgaming-Pamela-standard-v0.1.md",
+      "sha256": "64fe9b604094851a59248705f036c6fa73155a0c83b76a1993ec485a3fdda481",
+      "role": "preserved proposal; not executable instructions"
+    },
+    {
+      "path": "gpt-underlag/5/Scoutgaming_dealerbank_nodtrad_koordinater_2026-11-09.md",
+      "sha256": "31b18f2c25fa5a3c690dee9832d5b26099b74529161fd44a04136ed09476ba80",
+      "role": "preserved proposal; not executable instructions"
+    },
+    {
+      "path": "references/pamela-standard-audit.json",
+      "sha256": "231d7adef6277cb4a515bb8abe7ef897f36bd5935b5a5a77cfa146ec3a4da455",
+      "role": "verified catalog comparison"
+    },
+    {
+      "path": "runs/20261109-pamela-reference-kit/reference-kit.json",
+      "sha256": "f6fa8f79991070fc7df2cc50561293cf053e0467807b3a4ae70fc7e0dbc0fa52",
+      "role": "current local media identities and candidate measurements"
+    },
+    {
+      "path": "references/pamela-sequence.json",
+      "sha256": "713ffe99b658627fcc3940cbe2574b05a7c5f224d681dc9b49577d145815836a",
+      "role": "current central deal and return original metadata and QA"
+    }
+  ],
+  "counts": {
+    "blackjack": 32,
+    "roulette": 4,
+    "candidateBindings": 3,
+    "productionAccepted": 0
+  },
+  "coordinateSpaces": [
+    {
+      "id": "station-image/source_px",
+      "width": 1536,
+      "height": 1024,
+      "status": "verified file dimensions; every point is tied to its own image hash"
+    },
+    {
+      "id": "to-shoe-video/source_px",
+      "width": 1762,
+      "height": 1174,
+      "status": "verified file dimensions; image coordinates are not measured motion tracks"
+    },
+    {
+      "id": "review-desktop/scene_px",
+      "width": 1920,
+      "height": 1080,
+      "status": "review composition; not an approved bank plane"
+    },
+    {
+      "id": "future-bank/bank_px",
+      "width": null,
+      "height": null,
+      "status": "1920x1080 proposed; acceptance pending"
+    },
+    {
+      "id": "main-current/working_px",
+      "width": 1080,
+      "height": 1920,
+      "status": "current Main pipeline, 24fps; explicit adapter required"
+    }
+  ],
+  "anchors": [
+    {
+      "id": "VILA",
+      "asset": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-station.png",
+        "sha256": "ac2924b76ebab596918fa802b6145628ee805e0b37a04d1117c8dc4f4aae2621",
+        "kind": "image",
+        "width": 1536,
+        "height": 1024
+      },
+      "points": [
+        {
+          "id": "hand-0",
+          "label": "Höger hand (bildvänster)",
+          "x": 665,
+          "y": 741,
+          "measurementStatus": "proposed",
+          "method": "Manuell ungefärlig referenspunkt; inte ett rörligt handspår."
+        },
+        {
+          "id": "hand-1",
+          "label": "Vänster hand (bildhöger)",
+          "x": 847,
+          "y": 741,
+          "measurementStatus": "proposed",
+          "method": "Manuell ungefärlig referenspunkt; inte ett rörligt handspår."
+        },
+        {
+          "id": "shoe-proxy",
+          "label": "Vit kortyta i skon",
+          "x": 1124.5,
+          "y": 691,
+          "measurementStatus": "proposed",
+          "method": "Mittpunkt från segmenterad vit region i referensen; inte kalibrerad skomynning eller greppunkt."
+        }
+      ]
+    },
+    {
+      "id": "REDO",
+      "asset": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-redo-station.png",
+        "sha256": "a9dd4882d84da1cc6f0fb3258d0fbd6d81fddac5a7f78efdaa225d6f9538576d",
+        "kind": "image",
+        "width": 1536,
+        "height": 1024
+      },
+      "points": [
+        {
+          "id": "ready-contact",
+          "label": "Föreslagen fingerkontakt",
+          "x": 1130,
+          "y": 668,
+          "measurementStatus": "proposed",
+          "method": "Manuell uppskattning i denna REDO-bild; kontakt måste verifieras i filmen."
+        },
+        {
+          "id": "shoe-proxy",
+          "label": "Vit kortyta i skon",
+          "x": 1124.5,
+          "y": 691,
+          "measurementStatus": "proposed",
+          "method": "Mittpunkt från segmenterad vit region i referensen; inte kalibrerad skomynning eller greppunkt."
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "idle.ready/",
+      "label": "Grundloop",
+      "game": "blackjack",
+      "kind": "idle",
+      "sourceKind": "idle",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 0,
+        "row": 0
+      }
+    },
+    {
+      "id": "transition.shoe/to-shoe",
+      "label": "Till skon",
+      "game": "blackjack",
+      "kind": "shoe",
+      "sourceKind": "transition",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "REDO"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": {
+        "path": "runs/20261109-pamela-reference-kit/original/pamela-vila-till-redo-wan3.mp4",
+        "sha256": "00efe62636916b79052b4cf9d5fa88ba1ad52c17d531f1dcc86875f94c91084c",
+        "width": 1762,
+        "height": 1174,
+        "kind": "video",
+        "fps": 30,
+        "frameCount": 90,
+        "duration": 3
+      },
+      "assetVariant": null,
+      "missing": [
+        "Råa ändposer och rörelsen genom skarven är inte accepterade.",
+        "Rörlig handmask och kontaktkoordinater saknas."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 0,
+        "row": 1
+      }
+    },
+    {
+      "id": "transition.shoe/from-shoe",
+      "label": "Från skon",
+      "game": "blackjack",
+      "kind": "shoe",
+      "sourceKind": "transition",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "REDO",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": {
+        "path": "runs/20261109-pamela-sequence/original/pamela-from-shoe-wan3.mp4",
+        "sha256": "81a63227a56531103bd9d86b364442869b72eef0ddd3be65e718f3494ee2147b",
+        "bytes": 8455042,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frameCount": 90,
+        "duration": 3,
+        "codec": "h264",
+        "pixelFormat": "yuv420p",
+        "kind": "video"
+      },
+      "assetVariant": null,
+      "missing": [
+        "Alla 90 rutor finns i kontaktarket. Originalrutor 32,39,51,89 inspekterade: handen lämnar skon och återgår till VILA; skons kort ligger kvar.",
+        "Händer och armbågar ligger inom bilden i översikten och de inspekterade originalrutorna. Detta bevisar inte hela givräckvidden.",
+        "Rå slutpose, identitet och rörelse genom skarven är inte godkända. Inga frysta ändar eller toningar har lagts till.",
+        "Egna godkända kortspår, handmask och slutkomposition återstår."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 0,
+        "row": 2
+      }
+    },
+    {
+      "id": "deal.player.left/box0",
+      "label": "Ge kort till plats 1",
+      "game": "blackjack",
+      "kind": "deal",
+      "sourceKind": "deal",
+      "playerSeat": 1,
+      "box": 0,
+      "poseVariants": {
+        "base": [
+          "REDO",
+          "REDO"
+        ],
+        "i": [
+          "VILA",
+          "REDO"
+        ],
+        "v": [
+          "REDO",
+          "VILA"
+        ],
+        "iv": [
+          "VILA",
+          "VILA"
+        ]
+      },
+      "poses": null,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken.",
+        "Egna kortspår, landning, fingersläpp och handmask saknas."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 1,
+        "row": 3
+      }
+    },
+    {
+      "id": "deal.player.left/box1",
+      "label": "Ge kort till plats 2",
+      "game": "blackjack",
+      "kind": "deal",
+      "sourceKind": "deal",
+      "playerSeat": 2,
+      "box": 1,
+      "poseVariants": {
+        "base": [
+          "REDO",
+          "REDO"
+        ],
+        "i": [
+          "VILA",
+          "REDO"
+        ],
+        "v": [
+          "REDO",
+          "VILA"
+        ],
+        "iv": [
+          "VILA",
+          "VILA"
+        ]
+      },
+      "poses": null,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken.",
+        "Egna kortspår, landning, fingersläpp och handmask saknas."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 1,
+        "row": 4
+      }
+    },
+    {
+      "id": "deal.player.centre/box2",
+      "label": "Ge kort till plats 3",
+      "game": "blackjack",
+      "kind": "deal",
+      "sourceKind": "deal",
+      "playerSeat": 3,
+      "box": 2,
+      "poseVariants": {
+        "base": [
+          "REDO",
+          "REDO"
+        ],
+        "i": [
+          "VILA",
+          "REDO"
+        ],
+        "v": [
+          "REDO",
+          "VILA"
+        ],
+        "iv": [
+          "VILA",
+          "VILA"
+        ]
+      },
+      "poses": null,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken.",
+        "Egna kortspår, landning, fingersläpp och handmask saknas."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 1,
+        "row": 5
+      }
+    },
+    {
+      "id": "deal.player.centre/box3",
+      "label": "Ge kort till plats 4",
+      "game": "blackjack",
+      "kind": "deal",
+      "sourceKind": "deal",
+      "playerSeat": 4,
+      "box": 3,
+      "poseVariants": {
+        "base": [
+          "REDO",
+          "REDO"
+        ],
+        "i": [
+          "VILA",
+          "REDO"
+        ],
+        "v": [
+          "REDO",
+          "VILA"
+        ],
+        "iv": [
+          "VILA",
+          "VILA"
+        ]
+      },
+      "poses": null,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": {
+        "path": "runs/20261109-pamela-sequence/original/pamela-central-base-wan3.mp4",
+        "sha256": "2445bb2ef5122fe558134d582533d277603da72c4b98b6c782be01a5bf06235a",
+        "bytes": 16802367,
+        "width": 1762,
+        "height": 1174,
+        "fps": 30,
+        "frameCount": 180,
+        "duration": 6,
+        "codec": "h264",
+        "pixelFormat": "yuv420p",
+        "kind": "video"
+      },
+      "assetVariant": "base",
+      "missing": [
+        "Alla 180 rutor finns i kontaktarket. Originalrutor 44,58,84,100,122,145,179 inspekterade: kort lyfts från skon, byter hand, når central förgrund och blir kvar när händerna återgår mot REDO.",
+        "I ruta 84 har kortets synliga kant böjd/mjuk form. Styv plan kortgeometri är inte godkänd; överföring och fingersläpp behöver granskas sammanhängande.",
+        "Händer och armbågar ligger inom bilden i översikten och de inspekterade originalrutorna. Plats 1/7 är ännu inte provade.",
+        "Slutrutans handpose liknar REDO men exakta råskarvar och hastighet är inte accepterade. Samma pose får inte nollställa det redan utdelade kortet.",
+        "Egna godkända kortspår, handmask och slutkomposition återstår."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 1,
+        "row": 6
+      }
+    },
+    {
+      "id": "deal.player.centre/box4",
+      "label": "Ge kort till plats 5",
+      "game": "blackjack",
+      "kind": "deal",
+      "sourceKind": "deal",
+      "playerSeat": 5,
+      "box": 4,
+      "poseVariants": {
+        "base": [
+          "REDO",
+          "REDO"
+        ],
+        "i": [
+          "VILA",
+          "REDO"
+        ],
+        "v": [
+          "REDO",
+          "VILA"
+        ],
+        "iv": [
+          "VILA",
+          "VILA"
+        ]
+      },
+      "poses": null,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken.",
+        "Egna kortspår, landning, fingersläpp och handmask saknas."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 1,
+        "row": 7
+      }
+    },
+    {
+      "id": "deal.player.right/box5",
+      "label": "Ge kort till plats 6",
+      "game": "blackjack",
+      "kind": "deal",
+      "sourceKind": "deal",
+      "playerSeat": 6,
+      "box": 5,
+      "poseVariants": {
+        "base": [
+          "REDO",
+          "REDO"
+        ],
+        "i": [
+          "VILA",
+          "REDO"
+        ],
+        "v": [
+          "REDO",
+          "VILA"
+        ],
+        "iv": [
+          "VILA",
+          "VILA"
+        ]
+      },
+      "poses": null,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken.",
+        "Egna kortspår, landning, fingersläpp och handmask saknas."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 1,
+        "row": 8
+      }
+    },
+    {
+      "id": "deal.player.right/box6",
+      "label": "Ge kort till plats 7",
+      "game": "blackjack",
+      "kind": "deal",
+      "sourceKind": "deal",
+      "playerSeat": 7,
+      "box": 6,
+      "poseVariants": {
+        "base": [
+          "REDO",
+          "REDO"
+        ],
+        "i": [
+          "VILA",
+          "REDO"
+        ],
+        "v": [
+          "REDO",
+          "VILA"
+        ],
+        "iv": [
+          "VILA",
+          "VILA"
+        ]
+      },
+      "poses": null,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken.",
+        "Egna kortspår, landning, fingersläpp och handmask saknas."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 1,
+        "row": 9
+      }
+    },
+    {
+      "id": "deal.dealer/dealer-up",
+      "label": "Ge öppet dealerkort",
+      "game": "blackjack",
+      "kind": "deal",
+      "sourceKind": "deal",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {
+        "base": [
+          "REDO",
+          "REDO"
+        ],
+        "i": [
+          "VILA",
+          "REDO"
+        ],
+        "v": [
+          "REDO",
+          "VILA"
+        ],
+        "iv": [
+          "VILA",
+          "VILA"
+        ]
+      },
+      "poses": null,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken.",
+        "Egna kortspår, landning, fingersläpp och handmask saknas."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 1,
+        "row": 10
+      }
+    },
+    {
+      "id": "deal.dealer/dealer-hole",
+      "label": "Ge dolt kort",
+      "game": "blackjack",
+      "kind": "deal",
+      "sourceKind": "deal",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {
+        "base": [
+          "REDO",
+          "VILA"
+        ],
+        "i": [
+          "VILA",
+          "VILA"
+        ]
+      },
+      "poses": null,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken.",
+        "Egna kortspår, landning, fingersläpp och handmask saknas."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 1,
+        "row": 11
+      }
+    },
+    {
+      "id": "reveal.dealer/dealer-hole",
+      "label": "Vänd dolt kort",
+      "game": "blackjack",
+      "kind": "reveal",
+      "sourceKind": "reveal",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 1,
+        "row": 12
+      }
+    },
+    {
+      "id": "speak.goodluck/goodluck",
+      "label": "Lycka till",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 13
+      }
+    },
+    {
+      "id": "speak.insurance/insurance",
+      "label": "Försäkring",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 14
+      }
+    },
+    {
+      "id": "speak.double/double",
+      "label": "Dubbling",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 15
+      }
+    },
+    {
+      "id": "speak.other/placebets",
+      "label": "Lägg insatser",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 16
+      }
+    },
+    {
+      "id": "speak.other/dealerblackjack",
+      "label": "Dealerns blackjack",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 17
+      }
+    },
+    {
+      "id": "speak.other/blackjack",
+      "label": "Blackjack",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 18
+      }
+    },
+    {
+      "id": "speak.other/dealerbust",
+      "label": "Dealern över 21",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 19
+      }
+    },
+    {
+      "id": "speak.other/win",
+      "label": "Vinst",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 20
+      }
+    },
+    {
+      "id": "speak.other/push",
+      "label": "Lika",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 21
+      }
+    },
+    {
+      "id": "speak.other/lose",
+      "label": "Förlust",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 22
+      }
+    },
+    {
+      "id": "speak.other/greeting",
+      "label": "Välkomsthälsning",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 23
+      }
+    },
+    {
+      "id": "speak.other/peek",
+      "label": "Titt",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 24
+      }
+    },
+    {
+      "id": "speak.other/bust",
+      "label": "Över 21",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 25
+      }
+    },
+    {
+      "id": "speak.other/sidebet",
+      "label": "Sidospel",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 26
+      }
+    },
+    {
+      "id": "speak.other/chatter1",
+      "label": "Prat 1",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 27
+      }
+    },
+    {
+      "id": "speak.other/chatter2",
+      "label": "Prat 2",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 28
+      }
+    },
+    {
+      "id": "speak.other/farewell",
+      "label": "Avsked",
+      "game": "blackjack",
+      "kind": "speech",
+      "sourceKind": "speak",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 2,
+        "row": 29
+      }
+    },
+    {
+      "id": "transition.scene/enter",
+      "label": "Dealer kommer in",
+      "game": "blackjack",
+      "kind": "scene",
+      "sourceKind": "transition",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": null,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 0,
+        "row": 30
+      }
+    },
+    {
+      "id": "transition.scene/exit",
+      "label": "Dealer går ut",
+      "game": "blackjack",
+      "kind": "scene",
+      "sourceKind": "transition",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": null,
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Inget accepterat klipp i den nya referensbanken."
+      ],
+      "mainCatalogStatus": "Verified catalog ID; Pamela runtime binding is unverified",
+      "graphLayout": {
+        "column": 0,
+        "row": 31
+      }
+    },
+    {
+      "id": "roulette.reference/VILA",
+      "label": "Roulette – VILA-bild",
+      "game": "roulette",
+      "kind": "reference-image",
+      "sourceKind": "image",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Utanför Pamela-pilotens scope. Ingen Pamela-bindning verifierad."
+      ],
+      "mainCatalogStatus": "Reference image in intake catalog; not a playback clip",
+      "graphLayout": {
+        "column": 3,
+        "row": 32
+      }
+    },
+    {
+      "id": "roulette.idle/breathing",
+      "label": "Roulette – andning",
+      "game": "roulette",
+      "kind": "roulette-video",
+      "sourceKind": "video",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Utanför Pamela-pilotens scope. Ingen Pamela-bindning verifierad."
+      ],
+      "mainCatalogStatus": "Catalog slot with explicit draft binding support; registration alone does not activate it",
+      "graphLayout": {
+        "column": 3,
+        "row": 33
+      }
+    },
+    {
+      "id": "roulette.idle/glasses-clean",
+      "label": "Roulette – rengör glasögon",
+      "game": "roulette",
+      "kind": "roulette-video",
+      "sourceKind": "video",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Utanför Pamela-pilotens scope. Ingen Pamela-bindning verifierad."
+      ],
+      "mainCatalogStatus": "Catalog slot with explicit draft binding support; registration alone does not activate it",
+      "graphLayout": {
+        "column": 3,
+        "row": 34
+      }
+    },
+    {
+      "id": "roulette.wheel-start/wheel-start",
+      "label": "Roulette – hjulstart",
+      "game": "roulette",
+      "kind": "roulette-video",
+      "sourceKind": "video",
+      "playerSeat": null,
+      "box": null,
+      "poseVariants": {},
+      "poses": [
+        "VILA",
+        "VILA"
+      ],
+      "productionApproval": "pending",
+      "integrationStatus": "unbound",
+      "measurementStatus": "unknown",
+      "asset": null,
+      "assetVariant": null,
+      "missing": [
+        "Utanför Pamela-pilotens scope. Ingen Pamela-bindning verifierad."
+      ],
+      "mainCatalogStatus": "Catalog slot with explicit draft binding support; registration alone does not activate it",
+      "graphLayout": {
+        "column": 3,
+        "row": 35
+      }
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "pose:VILA",
+        "type": "pose",
+        "label": "VILA",
+        "pose": "VILA",
+        "status": "candidate"
+      },
+      {
+        "id": "pose:REDO",
+        "type": "pose",
+        "label": "REDO",
+        "pose": "REDO",
+        "status": "candidate"
+      },
+      {
+        "id": "motion:idle.ready/:default",
+        "type": "motion",
+        "label": "Grundloop",
+        "status": "missing",
+        "slotId": "idle.ready/",
+        "variant": null
+      },
+      {
+        "id": "motion:idle.ready/:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:transition.shoe/to-shoe:default",
+        "type": "motion",
+        "label": "Till skon",
+        "status": "candidate",
+        "slotId": "transition.shoe/to-shoe",
+        "variant": null
+      },
+      {
+        "id": "film:00efe62636916b79052b4cf9d5fa88ba1ad52c17d531f1dcc86875f94c91084c",
+        "type": "film",
+        "label": "Originalfilm",
+        "status": "candidate",
+        "sha256": "00efe62636916b79052b4cf9d5fa88ba1ad52c17d531f1dcc86875f94c91084c"
+      },
+      {
+        "id": "motion:transition.shoe/to-shoe:default:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:transition.shoe/to-shoe:default:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:transition.shoe/from-shoe:default",
+        "type": "motion",
+        "label": "Från skon",
+        "status": "candidate",
+        "slotId": "transition.shoe/from-shoe",
+        "variant": null
+      },
+      {
+        "id": "film:81a63227a56531103bd9d86b364442869b72eef0ddd3be65e718f3494ee2147b",
+        "type": "film",
+        "label": "Originalfilm",
+        "status": "candidate",
+        "sha256": "81a63227a56531103bd9d86b364442869b72eef0ddd3be65e718f3494ee2147b"
+      },
+      {
+        "id": "motion:transition.shoe/from-shoe:default:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:transition.shoe/from-shoe:default:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box0:base",
+        "type": "motion",
+        "label": "Ge kort till plats 1",
+        "status": "missing",
+        "slotId": "deal.player.left/box0",
+        "variant": "base"
+      },
+      {
+        "id": "motion:deal.player.left/box0:base:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "target:seat-1",
+        "type": "target",
+        "label": "Plats 1",
+        "status": "unmeasured"
+      },
+      {
+        "id": "motion:deal.player.left/box0:base:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box0:base:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box0:i",
+        "type": "motion",
+        "label": "Ge kort till plats 1",
+        "status": "missing",
+        "slotId": "deal.player.left/box0",
+        "variant": "i"
+      },
+      {
+        "id": "motion:deal.player.left/box0:i:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box0:i:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box0:i:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box0:v",
+        "type": "motion",
+        "label": "Ge kort till plats 1",
+        "status": "missing",
+        "slotId": "deal.player.left/box0",
+        "variant": "v"
+      },
+      {
+        "id": "motion:deal.player.left/box0:v:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box0:v:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box0:v:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box0:iv",
+        "type": "motion",
+        "label": "Ge kort till plats 1",
+        "status": "missing",
+        "slotId": "deal.player.left/box0",
+        "variant": "iv"
+      },
+      {
+        "id": "motion:deal.player.left/box0:iv:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box0:iv:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box0:iv:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box1:base",
+        "type": "motion",
+        "label": "Ge kort till plats 2",
+        "status": "missing",
+        "slotId": "deal.player.left/box1",
+        "variant": "base"
+      },
+      {
+        "id": "motion:deal.player.left/box1:base:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "target:seat-2",
+        "type": "target",
+        "label": "Plats 2",
+        "status": "unmeasured"
+      },
+      {
+        "id": "motion:deal.player.left/box1:base:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box1:base:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box1:i",
+        "type": "motion",
+        "label": "Ge kort till plats 2",
+        "status": "missing",
+        "slotId": "deal.player.left/box1",
+        "variant": "i"
+      },
+      {
+        "id": "motion:deal.player.left/box1:i:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box1:i:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box1:i:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box1:v",
+        "type": "motion",
+        "label": "Ge kort till plats 2",
+        "status": "missing",
+        "slotId": "deal.player.left/box1",
+        "variant": "v"
+      },
+      {
+        "id": "motion:deal.player.left/box1:v:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box1:v:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box1:v:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box1:iv",
+        "type": "motion",
+        "label": "Ge kort till plats 2",
+        "status": "missing",
+        "slotId": "deal.player.left/box1",
+        "variant": "iv"
+      },
+      {
+        "id": "motion:deal.player.left/box1:iv:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box1:iv:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.left/box1:iv:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:base",
+        "type": "motion",
+        "label": "Ge kort till plats 3",
+        "status": "missing",
+        "slotId": "deal.player.centre/box2",
+        "variant": "base"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:base:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "target:seat-3",
+        "type": "target",
+        "label": "Plats 3",
+        "status": "unmeasured"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:base:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:base:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:i",
+        "type": "motion",
+        "label": "Ge kort till plats 3",
+        "status": "missing",
+        "slotId": "deal.player.centre/box2",
+        "variant": "i"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:i:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:i:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:i:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:v",
+        "type": "motion",
+        "label": "Ge kort till plats 3",
+        "status": "missing",
+        "slotId": "deal.player.centre/box2",
+        "variant": "v"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:v:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:v:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:v:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:iv",
+        "type": "motion",
+        "label": "Ge kort till plats 3",
+        "status": "missing",
+        "slotId": "deal.player.centre/box2",
+        "variant": "iv"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:iv:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:iv:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box2:iv:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:base",
+        "type": "motion",
+        "label": "Ge kort till plats 4",
+        "status": "candidate",
+        "slotId": "deal.player.centre/box3",
+        "variant": "base"
+      },
+      {
+        "id": "film:2445bb2ef5122fe558134d582533d277603da72c4b98b6c782be01a5bf06235a",
+        "type": "film",
+        "label": "Originalfilm",
+        "status": "candidate",
+        "sha256": "2445bb2ef5122fe558134d582533d277603da72c4b98b6c782be01a5bf06235a"
+      },
+      {
+        "id": "target:seat-4",
+        "type": "target",
+        "label": "Plats 4",
+        "status": "unmeasured"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:base:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:base:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:i",
+        "type": "motion",
+        "label": "Ge kort till plats 4",
+        "status": "missing",
+        "slotId": "deal.player.centre/box3",
+        "variant": "i"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:i:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:i:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:i:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:v",
+        "type": "motion",
+        "label": "Ge kort till plats 4",
+        "status": "missing",
+        "slotId": "deal.player.centre/box3",
+        "variant": "v"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:v:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:v:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:v:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:iv",
+        "type": "motion",
+        "label": "Ge kort till plats 4",
+        "status": "missing",
+        "slotId": "deal.player.centre/box3",
+        "variant": "iv"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:iv:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:iv:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box3:iv:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:base",
+        "type": "motion",
+        "label": "Ge kort till plats 5",
+        "status": "missing",
+        "slotId": "deal.player.centre/box4",
+        "variant": "base"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:base:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "target:seat-5",
+        "type": "target",
+        "label": "Plats 5",
+        "status": "unmeasured"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:base:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:base:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:i",
+        "type": "motion",
+        "label": "Ge kort till plats 5",
+        "status": "missing",
+        "slotId": "deal.player.centre/box4",
+        "variant": "i"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:i:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:i:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:i:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:v",
+        "type": "motion",
+        "label": "Ge kort till plats 5",
+        "status": "missing",
+        "slotId": "deal.player.centre/box4",
+        "variant": "v"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:v:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:v:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:v:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:iv",
+        "type": "motion",
+        "label": "Ge kort till plats 5",
+        "status": "missing",
+        "slotId": "deal.player.centre/box4",
+        "variant": "iv"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:iv:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:iv:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.centre/box4:iv:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box5:base",
+        "type": "motion",
+        "label": "Ge kort till plats 6",
+        "status": "missing",
+        "slotId": "deal.player.right/box5",
+        "variant": "base"
+      },
+      {
+        "id": "motion:deal.player.right/box5:base:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "target:seat-6",
+        "type": "target",
+        "label": "Plats 6",
+        "status": "unmeasured"
+      },
+      {
+        "id": "motion:deal.player.right/box5:base:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box5:base:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box5:i",
+        "type": "motion",
+        "label": "Ge kort till plats 6",
+        "status": "missing",
+        "slotId": "deal.player.right/box5",
+        "variant": "i"
+      },
+      {
+        "id": "motion:deal.player.right/box5:i:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box5:i:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box5:i:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box5:v",
+        "type": "motion",
+        "label": "Ge kort till plats 6",
+        "status": "missing",
+        "slotId": "deal.player.right/box5",
+        "variant": "v"
+      },
+      {
+        "id": "motion:deal.player.right/box5:v:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box5:v:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box5:v:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box5:iv",
+        "type": "motion",
+        "label": "Ge kort till plats 6",
+        "status": "missing",
+        "slotId": "deal.player.right/box5",
+        "variant": "iv"
+      },
+      {
+        "id": "motion:deal.player.right/box5:iv:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box5:iv:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box5:iv:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box6:base",
+        "type": "motion",
+        "label": "Ge kort till plats 7",
+        "status": "missing",
+        "slotId": "deal.player.right/box6",
+        "variant": "base"
+      },
+      {
+        "id": "motion:deal.player.right/box6:base:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "target:seat-7",
+        "type": "target",
+        "label": "Plats 7",
+        "status": "unmeasured"
+      },
+      {
+        "id": "motion:deal.player.right/box6:base:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box6:base:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box6:i",
+        "type": "motion",
+        "label": "Ge kort till plats 7",
+        "status": "missing",
+        "slotId": "deal.player.right/box6",
+        "variant": "i"
+      },
+      {
+        "id": "motion:deal.player.right/box6:i:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box6:i:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box6:i:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box6:v",
+        "type": "motion",
+        "label": "Ge kort till plats 7",
+        "status": "missing",
+        "slotId": "deal.player.right/box6",
+        "variant": "v"
+      },
+      {
+        "id": "motion:deal.player.right/box6:v:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box6:v:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box6:v:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box6:iv",
+        "type": "motion",
+        "label": "Ge kort till plats 7",
+        "status": "missing",
+        "slotId": "deal.player.right/box6",
+        "variant": "iv"
+      },
+      {
+        "id": "motion:deal.player.right/box6:iv:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box6:iv:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.player.right/box6:iv:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:base",
+        "type": "motion",
+        "label": "Ge öppet dealerkort",
+        "status": "missing",
+        "slotId": "deal.dealer/dealer-up",
+        "variant": "base"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:base:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:base:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:base:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:i",
+        "type": "motion",
+        "label": "Ge öppet dealerkort",
+        "status": "missing",
+        "slotId": "deal.dealer/dealer-up",
+        "variant": "i"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:i:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:i:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:i:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:v",
+        "type": "motion",
+        "label": "Ge öppet dealerkort",
+        "status": "missing",
+        "slotId": "deal.dealer/dealer-up",
+        "variant": "v"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:v:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:v:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:v:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:iv",
+        "type": "motion",
+        "label": "Ge öppet dealerkort",
+        "status": "missing",
+        "slotId": "deal.dealer/dealer-up",
+        "variant": "iv"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:iv:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:iv:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-up:iv:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-hole:base",
+        "type": "motion",
+        "label": "Ge dolt kort",
+        "status": "missing",
+        "slotId": "deal.dealer/dealer-hole",
+        "variant": "base"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-hole:base:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-hole:base:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-hole:base:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-hole:i",
+        "type": "motion",
+        "label": "Ge dolt kort",
+        "status": "missing",
+        "slotId": "deal.dealer/dealer-hole",
+        "variant": "i"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-hole:i:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-hole:i:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:deal.dealer/dealer-hole:i:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:reveal.dealer/dealer-hole:default",
+        "type": "motion",
+        "label": "Vänd dolt kort",
+        "status": "missing",
+        "slotId": "reveal.dealer/dealer-hole",
+        "variant": null
+      },
+      {
+        "id": "motion:reveal.dealer/dealer-hole:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:reveal.dealer/dealer-hole:default:track",
+        "type": "track",
+        "label": "Kortspår / kontakt",
+        "status": "missing"
+      },
+      {
+        "id": "motion:reveal.dealer/dealer-hole:default:mask",
+        "type": "mask",
+        "label": "Handmask",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.goodluck/goodluck:default",
+        "type": "motion",
+        "label": "Lycka till",
+        "status": "missing",
+        "slotId": "speak.goodluck/goodluck",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.goodluck/goodluck:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.insurance/insurance:default",
+        "type": "motion",
+        "label": "Försäkring",
+        "status": "missing",
+        "slotId": "speak.insurance/insurance",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.insurance/insurance:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.double/double:default",
+        "type": "motion",
+        "label": "Dubbling",
+        "status": "missing",
+        "slotId": "speak.double/double",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.double/double:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/placebets:default",
+        "type": "motion",
+        "label": "Lägg insatser",
+        "status": "missing",
+        "slotId": "speak.other/placebets",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/placebets:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/dealerblackjack:default",
+        "type": "motion",
+        "label": "Dealerns blackjack",
+        "status": "missing",
+        "slotId": "speak.other/dealerblackjack",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/dealerblackjack:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/blackjack:default",
+        "type": "motion",
+        "label": "Blackjack",
+        "status": "missing",
+        "slotId": "speak.other/blackjack",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/blackjack:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/dealerbust:default",
+        "type": "motion",
+        "label": "Dealern över 21",
+        "status": "missing",
+        "slotId": "speak.other/dealerbust",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/dealerbust:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/win:default",
+        "type": "motion",
+        "label": "Vinst",
+        "status": "missing",
+        "slotId": "speak.other/win",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/win:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/push:default",
+        "type": "motion",
+        "label": "Lika",
+        "status": "missing",
+        "slotId": "speak.other/push",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/push:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/lose:default",
+        "type": "motion",
+        "label": "Förlust",
+        "status": "missing",
+        "slotId": "speak.other/lose",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/lose:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/greeting:default",
+        "type": "motion",
+        "label": "Välkomsthälsning",
+        "status": "missing",
+        "slotId": "speak.other/greeting",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/greeting:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/peek:default",
+        "type": "motion",
+        "label": "Titt",
+        "status": "missing",
+        "slotId": "speak.other/peek",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/peek:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/bust:default",
+        "type": "motion",
+        "label": "Över 21",
+        "status": "missing",
+        "slotId": "speak.other/bust",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/bust:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/sidebet:default",
+        "type": "motion",
+        "label": "Sidospel",
+        "status": "missing",
+        "slotId": "speak.other/sidebet",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/sidebet:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/chatter1:default",
+        "type": "motion",
+        "label": "Prat 1",
+        "status": "missing",
+        "slotId": "speak.other/chatter1",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/chatter1:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/chatter2:default",
+        "type": "motion",
+        "label": "Prat 2",
+        "status": "missing",
+        "slotId": "speak.other/chatter2",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/chatter2:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:speak.other/farewell:default",
+        "type": "motion",
+        "label": "Avsked",
+        "status": "missing",
+        "slotId": "speak.other/farewell",
+        "variant": null
+      },
+      {
+        "id": "motion:speak.other/farewell:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:transition.scene/enter:default",
+        "type": "motion",
+        "label": "Dealer kommer in",
+        "status": "missing",
+        "slotId": "transition.scene/enter",
+        "variant": null
+      },
+      {
+        "id": "motion:transition.scene/enter:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:transition.scene/exit:default",
+        "type": "motion",
+        "label": "Dealer går ut",
+        "status": "missing",
+        "slotId": "transition.scene/exit",
+        "variant": null
+      },
+      {
+        "id": "motion:transition.scene/exit:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:roulette.reference/VILA:default",
+        "type": "motion",
+        "label": "Roulette – VILA-bild",
+        "status": "missing",
+        "slotId": "roulette.reference/VILA",
+        "variant": null
+      },
+      {
+        "id": "motion:roulette.reference/VILA:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:roulette.idle/breathing:default",
+        "type": "motion",
+        "label": "Roulette – andning",
+        "status": "missing",
+        "slotId": "roulette.idle/breathing",
+        "variant": null
+      },
+      {
+        "id": "motion:roulette.idle/breathing:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:roulette.idle/glasses-clean:default",
+        "type": "motion",
+        "label": "Roulette – rengör glasögon",
+        "status": "missing",
+        "slotId": "roulette.idle/glasses-clean",
+        "variant": null
+      },
+      {
+        "id": "motion:roulette.idle/glasses-clean:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      },
+      {
+        "id": "motion:roulette.wheel-start/wheel-start:default",
+        "type": "motion",
+        "label": "Roulette – hjulstart",
+        "status": "missing",
+        "slotId": "roulette.wheel-start/wheel-start",
+        "variant": null
+      },
+      {
+        "id": "motion:roulette.wheel-start/wheel-start:default:film",
+        "type": "film",
+        "label": "Film saknas",
+        "status": "missing"
+      }
+    ],
+    "edges": [
+      {
+        "from": "pose:VILA",
+        "to": "motion:idle.ready/:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:idle.ready/:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:idle.ready/:default",
+        "to": "motion:idle.ready/:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:transition.shoe/to-shoe:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:transition.shoe/to-shoe:default",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:transition.shoe/to-shoe:default",
+        "to": "film:00efe62636916b79052b4cf9d5fa88ba1ad52c17d531f1dcc86875f94c91084c",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:transition.shoe/to-shoe:default",
+        "to": "motion:transition.shoe/to-shoe:default:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:transition.shoe/to-shoe:default",
+        "to": "motion:transition.shoe/to-shoe:default:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:transition.shoe/from-shoe:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:transition.shoe/from-shoe:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:transition.shoe/from-shoe:default",
+        "to": "film:81a63227a56531103bd9d86b364442869b72eef0ddd3be65e718f3494ee2147b",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:transition.shoe/from-shoe:default",
+        "to": "motion:transition.shoe/from-shoe:default:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:transition.shoe/from-shoe:default",
+        "to": "motion:transition.shoe/from-shoe:default:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.left/box0:base",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.left/box0:base",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.left/box0:base",
+        "to": "motion:deal.player.left/box0:base:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.left/box0:base",
+        "to": "target:seat-1",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.left/box0:base",
+        "to": "motion:deal.player.left/box0:base:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.left/box0:base",
+        "to": "motion:deal.player.left/box0:base:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.left/box0:i",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.left/box0:i",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.left/box0:i",
+        "to": "motion:deal.player.left/box0:i:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.left/box0:i",
+        "to": "target:seat-1",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.left/box0:i",
+        "to": "motion:deal.player.left/box0:i:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.left/box0:i",
+        "to": "motion:deal.player.left/box0:i:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.left/box0:v",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.left/box0:v",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.left/box0:v",
+        "to": "motion:deal.player.left/box0:v:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.left/box0:v",
+        "to": "target:seat-1",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.left/box0:v",
+        "to": "motion:deal.player.left/box0:v:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.left/box0:v",
+        "to": "motion:deal.player.left/box0:v:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.left/box0:iv",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.left/box0:iv",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.left/box0:iv",
+        "to": "motion:deal.player.left/box0:iv:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.left/box0:iv",
+        "to": "target:seat-1",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.left/box0:iv",
+        "to": "motion:deal.player.left/box0:iv:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.left/box0:iv",
+        "to": "motion:deal.player.left/box0:iv:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.left/box1:base",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.left/box1:base",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.left/box1:base",
+        "to": "motion:deal.player.left/box1:base:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.left/box1:base",
+        "to": "target:seat-2",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.left/box1:base",
+        "to": "motion:deal.player.left/box1:base:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.left/box1:base",
+        "to": "motion:deal.player.left/box1:base:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.left/box1:i",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.left/box1:i",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.left/box1:i",
+        "to": "motion:deal.player.left/box1:i:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.left/box1:i",
+        "to": "target:seat-2",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.left/box1:i",
+        "to": "motion:deal.player.left/box1:i:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.left/box1:i",
+        "to": "motion:deal.player.left/box1:i:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.left/box1:v",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.left/box1:v",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.left/box1:v",
+        "to": "motion:deal.player.left/box1:v:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.left/box1:v",
+        "to": "target:seat-2",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.left/box1:v",
+        "to": "motion:deal.player.left/box1:v:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.left/box1:v",
+        "to": "motion:deal.player.left/box1:v:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.left/box1:iv",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.left/box1:iv",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.left/box1:iv",
+        "to": "motion:deal.player.left/box1:iv:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.left/box1:iv",
+        "to": "target:seat-2",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.left/box1:iv",
+        "to": "motion:deal.player.left/box1:iv:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.left/box1:iv",
+        "to": "motion:deal.player.left/box1:iv:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.centre/box2:base",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:base",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:base",
+        "to": "motion:deal.player.centre/box2:base:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:base",
+        "to": "target:seat-3",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:base",
+        "to": "motion:deal.player.centre/box2:base:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:base",
+        "to": "motion:deal.player.centre/box2:base:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.centre/box2:i",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:i",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:i",
+        "to": "motion:deal.player.centre/box2:i:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:i",
+        "to": "target:seat-3",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:i",
+        "to": "motion:deal.player.centre/box2:i:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:i",
+        "to": "motion:deal.player.centre/box2:i:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.centre/box2:v",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:v",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:v",
+        "to": "motion:deal.player.centre/box2:v:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:v",
+        "to": "target:seat-3",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:v",
+        "to": "motion:deal.player.centre/box2:v:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:v",
+        "to": "motion:deal.player.centre/box2:v:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.centre/box2:iv",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:iv",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:iv",
+        "to": "motion:deal.player.centre/box2:iv:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:iv",
+        "to": "target:seat-3",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:iv",
+        "to": "motion:deal.player.centre/box2:iv:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.centre/box2:iv",
+        "to": "motion:deal.player.centre/box2:iv:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.centre/box3:base",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:base",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:base",
+        "to": "film:2445bb2ef5122fe558134d582533d277603da72c4b98b6c782be01a5bf06235a",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:base",
+        "to": "target:seat-4",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:base",
+        "to": "motion:deal.player.centre/box3:base:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:base",
+        "to": "motion:deal.player.centre/box3:base:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.centre/box3:i",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:i",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:i",
+        "to": "motion:deal.player.centre/box3:i:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:i",
+        "to": "target:seat-4",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:i",
+        "to": "motion:deal.player.centre/box3:i:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:i",
+        "to": "motion:deal.player.centre/box3:i:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.centre/box3:v",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:v",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:v",
+        "to": "motion:deal.player.centre/box3:v:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:v",
+        "to": "target:seat-4",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:v",
+        "to": "motion:deal.player.centre/box3:v:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:v",
+        "to": "motion:deal.player.centre/box3:v:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.centre/box3:iv",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:iv",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:iv",
+        "to": "motion:deal.player.centre/box3:iv:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:iv",
+        "to": "target:seat-4",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:iv",
+        "to": "motion:deal.player.centre/box3:iv:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.centre/box3:iv",
+        "to": "motion:deal.player.centre/box3:iv:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.centre/box4:base",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:base",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:base",
+        "to": "motion:deal.player.centre/box4:base:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:base",
+        "to": "target:seat-5",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:base",
+        "to": "motion:deal.player.centre/box4:base:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:base",
+        "to": "motion:deal.player.centre/box4:base:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.centre/box4:i",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:i",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:i",
+        "to": "motion:deal.player.centre/box4:i:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:i",
+        "to": "target:seat-5",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:i",
+        "to": "motion:deal.player.centre/box4:i:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:i",
+        "to": "motion:deal.player.centre/box4:i:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.centre/box4:v",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:v",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:v",
+        "to": "motion:deal.player.centre/box4:v:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:v",
+        "to": "target:seat-5",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:v",
+        "to": "motion:deal.player.centre/box4:v:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:v",
+        "to": "motion:deal.player.centre/box4:v:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.centre/box4:iv",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:iv",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:iv",
+        "to": "motion:deal.player.centre/box4:iv:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:iv",
+        "to": "target:seat-5",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:iv",
+        "to": "motion:deal.player.centre/box4:iv:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.centre/box4:iv",
+        "to": "motion:deal.player.centre/box4:iv:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.right/box5:base",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.right/box5:base",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.right/box5:base",
+        "to": "motion:deal.player.right/box5:base:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.right/box5:base",
+        "to": "target:seat-6",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.right/box5:base",
+        "to": "motion:deal.player.right/box5:base:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.right/box5:base",
+        "to": "motion:deal.player.right/box5:base:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.right/box5:i",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.right/box5:i",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.right/box5:i",
+        "to": "motion:deal.player.right/box5:i:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.right/box5:i",
+        "to": "target:seat-6",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.right/box5:i",
+        "to": "motion:deal.player.right/box5:i:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.right/box5:i",
+        "to": "motion:deal.player.right/box5:i:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.right/box5:v",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.right/box5:v",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.right/box5:v",
+        "to": "motion:deal.player.right/box5:v:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.right/box5:v",
+        "to": "target:seat-6",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.right/box5:v",
+        "to": "motion:deal.player.right/box5:v:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.right/box5:v",
+        "to": "motion:deal.player.right/box5:v:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.right/box5:iv",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.right/box5:iv",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.right/box5:iv",
+        "to": "motion:deal.player.right/box5:iv:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.right/box5:iv",
+        "to": "target:seat-6",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.right/box5:iv",
+        "to": "motion:deal.player.right/box5:iv:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.right/box5:iv",
+        "to": "motion:deal.player.right/box5:iv:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.right/box6:base",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.right/box6:base",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.right/box6:base",
+        "to": "motion:deal.player.right/box6:base:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.right/box6:base",
+        "to": "target:seat-7",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.right/box6:base",
+        "to": "motion:deal.player.right/box6:base:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.right/box6:base",
+        "to": "motion:deal.player.right/box6:base:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.right/box6:i",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.right/box6:i",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.right/box6:i",
+        "to": "motion:deal.player.right/box6:i:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.right/box6:i",
+        "to": "target:seat-7",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.right/box6:i",
+        "to": "motion:deal.player.right/box6:i:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.right/box6:i",
+        "to": "motion:deal.player.right/box6:i:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.player.right/box6:v",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.right/box6:v",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.right/box6:v",
+        "to": "motion:deal.player.right/box6:v:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.right/box6:v",
+        "to": "target:seat-7",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.right/box6:v",
+        "to": "motion:deal.player.right/box6:v:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.right/box6:v",
+        "to": "motion:deal.player.right/box6:v:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.player.right/box6:iv",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.player.right/box6:iv",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.player.right/box6:iv",
+        "to": "motion:deal.player.right/box6:iv:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.player.right/box6:iv",
+        "to": "target:seat-7",
+        "relation": "lands",
+        "label": "landar vid"
+      },
+      {
+        "from": "motion:deal.player.right/box6:iv",
+        "to": "motion:deal.player.right/box6:iv:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.player.right/box6:iv",
+        "to": "motion:deal.player.right/box6:iv:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.dealer/dealer-up:base",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:base",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:base",
+        "to": "motion:deal.dealer/dealer-up:base:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:base",
+        "to": "motion:deal.dealer/dealer-up:base:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:base",
+        "to": "motion:deal.dealer/dealer-up:base:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.dealer/dealer-up:i",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:i",
+        "to": "pose:REDO",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:i",
+        "to": "motion:deal.dealer/dealer-up:i:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:i",
+        "to": "motion:deal.dealer/dealer-up:i:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:i",
+        "to": "motion:deal.dealer/dealer-up:i:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.dealer/dealer-up:v",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:v",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:v",
+        "to": "motion:deal.dealer/dealer-up:v:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:v",
+        "to": "motion:deal.dealer/dealer-up:v:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:v",
+        "to": "motion:deal.dealer/dealer-up:v:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.dealer/dealer-up:iv",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:iv",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:iv",
+        "to": "motion:deal.dealer/dealer-up:iv:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:iv",
+        "to": "motion:deal.dealer/dealer-up:iv:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-up:iv",
+        "to": "motion:deal.dealer/dealer-up:iv:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:REDO",
+        "to": "motion:deal.dealer/dealer-hole:base",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-hole:base",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-hole:base",
+        "to": "motion:deal.dealer/dealer-hole:base:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-hole:base",
+        "to": "motion:deal.dealer/dealer-hole:base:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-hole:base",
+        "to": "motion:deal.dealer/dealer-hole:base:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:deal.dealer/dealer-hole:i",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-hole:i",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-hole:i",
+        "to": "motion:deal.dealer/dealer-hole:i:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-hole:i",
+        "to": "motion:deal.dealer/dealer-hole:i:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:deal.dealer/dealer-hole:i",
+        "to": "motion:deal.dealer/dealer-hole:i:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:reveal.dealer/dealer-hole:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:reveal.dealer/dealer-hole:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:reveal.dealer/dealer-hole:default",
+        "to": "motion:reveal.dealer/dealer-hole:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:reveal.dealer/dealer-hole:default",
+        "to": "motion:reveal.dealer/dealer-hole:default:track",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "motion:reveal.dealer/dealer-hole:default",
+        "to": "motion:reveal.dealer/dealer-hole:default:mask",
+        "relation": "requires",
+        "label": "behöver"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.goodluck/goodluck:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.goodluck/goodluck:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.goodluck/goodluck:default",
+        "to": "motion:speak.goodluck/goodluck:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.insurance/insurance:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.insurance/insurance:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.insurance/insurance:default",
+        "to": "motion:speak.insurance/insurance:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.double/double:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.double/double:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.double/double:default",
+        "to": "motion:speak.double/double:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/placebets:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/placebets:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/placebets:default",
+        "to": "motion:speak.other/placebets:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/dealerblackjack:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/dealerblackjack:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/dealerblackjack:default",
+        "to": "motion:speak.other/dealerblackjack:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/blackjack:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/blackjack:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/blackjack:default",
+        "to": "motion:speak.other/blackjack:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/dealerbust:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/dealerbust:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/dealerbust:default",
+        "to": "motion:speak.other/dealerbust:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/win:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/win:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/win:default",
+        "to": "motion:speak.other/win:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/push:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/push:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/push:default",
+        "to": "motion:speak.other/push:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/lose:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/lose:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/lose:default",
+        "to": "motion:speak.other/lose:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/greeting:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/greeting:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/greeting:default",
+        "to": "motion:speak.other/greeting:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/peek:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/peek:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/peek:default",
+        "to": "motion:speak.other/peek:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/bust:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/bust:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/bust:default",
+        "to": "motion:speak.other/bust:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/sidebet:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/sidebet:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/sidebet:default",
+        "to": "motion:speak.other/sidebet:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/chatter1:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/chatter1:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/chatter1:default",
+        "to": "motion:speak.other/chatter1:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/chatter2:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/chatter2:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/chatter2:default",
+        "to": "motion:speak.other/chatter2:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:speak.other/farewell:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:speak.other/farewell:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:speak.other/farewell:default",
+        "to": "motion:speak.other/farewell:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:transition.scene/enter:default",
+        "to": "motion:transition.scene/enter:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "motion:transition.scene/exit:default",
+        "to": "motion:transition.scene/exit:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:roulette.reference/VILA:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:roulette.reference/VILA:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:roulette.reference/VILA:default",
+        "to": "motion:roulette.reference/VILA:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:roulette.idle/breathing:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:roulette.idle/breathing:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:roulette.idle/breathing:default",
+        "to": "motion:roulette.idle/breathing:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:roulette.idle/glasses-clean:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:roulette.idle/glasses-clean:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:roulette.idle/glasses-clean:default",
+        "to": "motion:roulette.idle/glasses-clean:default:film",
+        "relation": "uses",
+        "label": "använder"
+      },
+      {
+        "from": "pose:VILA",
+        "to": "motion:roulette.wheel-start/wheel-start:default",
+        "relation": "starts",
+        "label": "startpose"
+      },
+      {
+        "from": "motion:roulette.wheel-start/wheel-start:default",
+        "to": "pose:VILA",
+        "relation": "ends",
+        "label": "slutpose"
+      },
+      {
+        "from": "motion:roulette.wheel-start/wheel-start:default",
+        "to": "motion:roulette.wheel-start/wheel-start:default:film",
+        "relation": "uses",
+        "label": "använder"
+      }
+    ]
+  },
+  "pilot": [
+    {
+      "order": 1,
+      "slotId": "transition.shoe/to-shoe",
+      "variant": null
+    },
+    {
+      "order": 2,
+      "slotId": "deal.player.centre/box3",
+      "variant": "base"
+    },
+    {
+      "order": 3,
+      "slotId": "transition.shoe/from-shoe",
+      "variant": null
+    }
+  ],
+  "targets": [
+    {
+      "playerSeat": 1,
+      "box": 0,
+      "landingQuad": null,
+      "measurementStatus": "unknown"
+    },
+    {
+      "playerSeat": 2,
+      "box": 1,
+      "landingQuad": null,
+      "measurementStatus": "unknown"
+    },
+    {
+      "playerSeat": 3,
+      "box": 2,
+      "landingQuad": null,
+      "measurementStatus": "unknown"
+    },
+    {
+      "playerSeat": 4,
+      "box": 3,
+      "landingQuad": null,
+      "measurementStatus": "unknown"
+    },
+    {
+      "playerSeat": 5,
+      "box": 4,
+      "landingQuad": null,
+      "measurementStatus": "unknown"
+    },
+    {
+      "playerSeat": 6,
+      "box": 5,
+      "landingQuad": null,
+      "measurementStatus": "unknown"
+    },
+    {
+      "playerSeat": 7,
+      "box": 6,
+      "landingQuad": null,
+      "measurementStatus": "unknown"
+    }
+  ],
+  "findings": [
+    {
+      "id": "catalog",
+      "label": "36 av 36 fack-ID:n stämmer",
+      "detail": "32 blackjack + 4 roulette, varav ett roulettefack är en referensbild. Antal fack är inte antal färdiga filmer."
+    },
+    {
+      "id": "coordinates",
+      "label": "Tre bildplan behöver hållas isär",
+      "detail": "1536×1024 referensbild, 1920×1080 datorvy/föreslaget bankplan och 1080×1920 i dagens Main. Inget gammalt kortspår fyller Pamelas tomma mätningar."
+    },
+    {
+      "id": "roulette",
+      "label": "Rättelse: roulette har stöd för utkastbindningar",
+      "detail": "Standardens generella intake-only gäller inte idle och wheel-start. Registrering eller ett namn innebär ändå inte publicering i spelet."
+    },
+    {
+      "id": "identity",
+      "label": "Banknamn, kind och variantgränser kräver översättning",
+      "detail": "Dokumentens schema- och banknamn är förslag. Main har egna facktyper och separata gränser per händelse och per dealer. Kartan är ingen färdig import."
+    },
+    {
+      "id": "card-state",
+      "label": "Samma pose betyder inte samma bordstillstånd",
+      "detail": "Efter ett giv ska dealerns REDO-pose återkomma, men det utdelade kortet ska ligga kvar. Filmankare, spelkort och handmask behöver därför egna tillstånd."
+    },
+    {
+      "id": "version",
+      "label": "v0.1 och v1.0 är dokumentversioner",
+      "detail": "Två olika författares versionsnummer mäter varken kvalitet eller färdiggrad. Nodträdet utgår från en äldre publicering än standarden."
+    }
+  ]
+}
