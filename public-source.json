@@ -8,7 +8,7 @@
   "pendingReviewSnapshot": "review-hub-20261110140202586",
   "reviewUrl": "https://scout-dealerlab.vercel.app/granskning.html",
   "deploymentId": "dpl_HcEQwgah8s6kn1T9p9f9ouY3dqev",
-  "sourceTreeSha256": "46a65d9551a4a8afea96c3b18f8cab6371130c846b9324a8dc57fa7f4b5a0d3e",
+  "sourceTreeSha256": "27b9527afbca27cc4ef9b68d0c31ec8e49df14969c285149672d4df8157c2bbc",
   "files": [
     {
       "path": ".env.example",
@@ -787,8 +787,8 @@
     },
     {
       "path": "scripts/publish-review.ps1",
-      "sha256": "ab4df13db75a3be09489fc249495fe1247d739b0cdc7edc873f8b64f8eb8815f",
-      "bytes": 8494
+      "sha256": "149a669406e0e8a1610ee7cc2fce0e9c93d4f83cb613024db5d1bd526468cc2c",
+      "bytes": 8959
     },
     {
       "path": "scripts/publish-work-material.ts",

@@ -57,6 +57,10 @@ try {
     $output = & vercel deploy --prebuilt --prod --skip-domain --scope $team --non-interactive --yes --format json 2> $log
     $exitCode = $LASTEXITCODE
     $ErrorActionPreference = 'Stop'
+    # Preserve structured errors and successful task IDs before parsing or throwing.
+    # A retry must first establish whether the provider created a deployment.
+    [IO.File]::WriteAllText((Join-Path $directory 'deployment-result.json'), ($output -join [Environment]::NewLine), $utf8)
+    [IO.File]::WriteAllText((Join-Path $directory 'deployment-process.json'), (@{ exitCode = $exitCode; recordedAt = [DateTime]::UtcNow.ToString('o') } | ConvertTo-Json), $utf8)
     if ($exitCode -ne 0) { throw "Deployment failed. See $log. Do not blindly retry: verify whether a deployment was created." }
     $deployment = (($output -join [Environment]::NewLine) | ConvertFrom-Json).deployment
     if ($deployment.readyState -ne 'READY') { throw 'Deployment did not report READY.' }
