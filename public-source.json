@@ -5,9 +5,10 @@
   "sourceBranch": "jakob/test",
   "sourceIsWorkingTreeSnapshot": true,
   "reviewSnapshot": "review-hub-20261110064626749",
+  "pendingReviewSnapshot": "review-hub-20261110065307768",
   "reviewUrl": "https://scout-dealerlab.vercel.app/granskning.html",
   "deploymentId": "dpl_6kbcAFfpNwchHA5RKJNYQDVYuqja",
-  "sourceTreeSha256": "bda5bd8a2e1f2aa64b35eabdcdcf0c0f8af287c2d5d543bcb7a236b35d057f21",
+  "sourceTreeSha256": "bd8f7bb508a23c598c87698d2f1999e62eed969ce1fd782e2bbffd85aa16b108",
   "files": [
     {
       "path": ".env.example",
@@ -196,8 +197,8 @@
     },
     {
       "path": "docs/MASTERPLAN.md",
-      "sha256": "4a738cf19939f1c02c7d573736f132cb711fd332198b0a81d954dae500609405",
-      "bytes": 8753
+      "sha256": "dd6e4646e229161776e291ee61c0cef07210f9510b1711b82d861a22d468bfc4",
+      "bytes": 9463
     },
     {
       "path": "docs/drift/ARBETSSATT.md",
@@ -731,8 +732,8 @@
     },
     {
       "path": "scripts/build-review-hub.ts",
-      "sha256": "b083673c683acf54c2ce7450c8e68859629bd43744b09ffe20589bd2a5d49fbf",
-      "bytes": 41558
+      "sha256": "14d42456eac47a24fae8ac544ecb0b1a8958aba8493e28d5d66c7d5e319e69d3",
+      "bytes": 41587
     },
     {
       "path": "scripts/bundle-card-material.ts",
@@ -976,8 +977,8 @@
     },
     {
       "path": "src/dealer-node-review-page.ts",
-      "sha256": "0d0a879608f2513ca720d89b6b08d704a3c60ef109a1dd815f589667a85cb027",
-      "bytes": 12961
+      "sha256": "7a646d74130c38cdcc95f76924bfbbe4923c534c9db1abab0230d2ea22f8d20c",
+      "bytes": 13019
     },
     {
       "path": "src/dealer-node-review.ts",
@@ -1541,8 +1542,8 @@
     },
     {
       "path": "src/review-hub-controls.ts",
-      "sha256": "972bfd95d5126c778d144065c512637c9e64e0dcf47b4cff786a92b0f7bf9076",
-      "bytes": 2686
+      "sha256": "d43048c35a39e6bdfb76098ef4404c59664c046066d0feb6ca4fff491c7397bd",
+      "bytes": 7511
     },
     {
       "path": "src/review-version.ts",
