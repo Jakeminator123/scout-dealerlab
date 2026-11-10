@@ -1,6 +1,6 @@
 # Scout Dealerlab
 
-Public source snapshots for Snyggare dealer, a local dealer/video presentation studio related to Scoutgaming.
+Public source snapshots for Snyggare dealer, a local dealer/video presentation studio related to [Scoutgaming](https://github.com/Jakeminator123/scoutgaming).
 
 - [Live review](https://scout-dealerlab.vercel.app/granskning.html)
 - [Reviewer instructions](https://scout-dealerlab.vercel.app/granskning/starttext.txt)

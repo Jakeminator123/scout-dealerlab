@@ -7,7 +7,7 @@
   "reviewSnapshot": "review-hub-20261110030156605",
   "reviewUrl": "https://scout-dealerlab.vercel.app/granskning.html",
   "deploymentId": "dpl_5qv9gjbH4yfui9wAmeAbXQM3xS6i",
-  "sourceTreeSha256": "49ac37ee7fdf684c691c846fb7942636c19f79d2b0df86b74b796092ae2c5384",
+  "sourceTreeSha256": "32f7ace9e216727554dcc839bdbf61096dfd9f869a65cb117b532d099b6fec3a",
   "files": [
     {
       "path": ".env.example",
@@ -191,8 +191,8 @@
     },
     {
       "path": "docs/drift/DELNING-OCH-CACHE.md",
-      "sha256": "2e21d3bf7afcfb3bafc5e2667a6d741a3456ed2bf7c8004cf6274fb3cad10005",
-      "bytes": 14008
+      "sha256": "e0c9647126bc3aac47a328c77930f1a1f7ef91f7ee2e529c8acce3e7bf59df6e",
+      "bytes": 14831
     },
     {
       "path": "docs/drift/LYCKAD-LIPSYNK-LOKALT.md",
@@ -206,8 +206,8 @@
     },
     {
       "path": "docs/drift/PROVISORISK-STRUKTUR.md",
-      "sha256": "76b9826e65eebfe46bd7f3acb451de5ea80f2d4d1f87d0e09cb52d1aa30954b0",
-      "bytes": 6989
+      "sha256": "a484266e6eec04fbc8ad6817c650853dc37c75ff502fcc1f466f94dd3bc3cdfe",
+      "bytes": 7170
     },
     {
       "path": "docs/drift/STATUS.md",
@@ -731,8 +731,8 @@
     },
     {
       "path": "scripts/sync-public-repo.ts",
-      "sha256": "5e04d687e140cca1e7b8d32aec69d45a80f6944119d2f7f1292d9f91d0a08112",
-      "bytes": 8137
+      "sha256": "4495fe146b561748f79b10aa060b835ea451eca2cdfbd348fb0cfa18b7414b34",
+      "bytes": 8186
     },
     {
       "path": "scripts/sync-terminology.ts",
@@ -2476,8 +2476,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "fc12661a0b26101d6bdc64b6910fa82580adc8d2b8dfda38547a8d72e679843b",
-      "bytes": 1138
+      "sha256": "0ca8ec5dc307ae9221e5726916ad4ca6ba31f94510c80483535f745f0ac6d5d9",
+      "bytes": 1187
     }
   ],
   "excludedFiles": [

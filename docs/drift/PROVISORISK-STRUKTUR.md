@@ -4,7 +4,7 @@ Beslutad inriktning 2026-11-10. Lokal arbetsyta: `C:/Users/jakem/dev/super-featu
 
 ## Identitet och ansvar
 
-- Lokalt projekt: **Snyggare dealer**, paket `snyggare-dealer-local`, lokal Git-gren `jakob/test`. Ingen Git-remote är ansluten.
+- Lokalt projekt: **Snyggare dealer**, paket `snyggare-dealer-local`, lokal Git-gren `jakob/test`. Remote `origin` pekar på det separata publika GitHub-repot `Jakeminator123/scout-dealerlab`. Arbetsgrenen `jakob/test` behålls lokalt; den filtrerade publiceringsgrenen `public/main` synkas till GitHub `main`.
 - Publik granskningsyta: Vercel-projekt **scout-dealerlab**, team **scoutgaming**. Exakta ID:n och publicerad version finns i `references/public-review.json`.
 - Scoutgamings huvudrepo är en läsreferens. Detta projekt skapar presentationstillgångar och metadata; spelregler, sko och slump stannar i Scoutmotorn.
 - Den publika webbsidan visar en verifierad ögonblicksbild. Lokala ändringar kräver en ny uttrycklig publicering för att bli synliga där.

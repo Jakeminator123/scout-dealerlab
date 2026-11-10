@@ -115,3 +115,7 @@ Minsta genomförandeordning:
 3. Lägg gemensamma kvalitetskrav på tidsbas, geometri, handocklusion, skarvar och export. Bevisa hela kedjan med ett platsprov innan en större bank.
 
 Knappen kan sedan starta denna beställning. Den kan inte i sig garantera ett godkänt visuellt resultat eller ta bort behovet av kvalitetskontroll.
+
+## GitHub och liveversion
+
+Det separata publika repot är https://github.com/Jakeminator123/scout-dealerlab. references/public-git.json låser destinationen. UPPDATERA-GRANSKNING.cmd synkar till GitHub före bytet av publik URL-version och uppdaterar publiceringskvittot efteråt. public-source.json i GitHub innehåller filhashar, live-snapshot och deployment-ID. Lokala grenen public/main publiceras som GitHub main; jakob/test och dess tidigare historik behålls lokalt. Filurval och hemlighetskontroll sker vid varje synk. Råmedia, D-arkiv och privata drift-/kontounderlag ingår inte. Om kvittosynken efter ett lyckat livebyte misslyckas rapporteras fel; kör scripts/publish-review.ps1 -SyncGitOnly för att reparera Git utan ny deploy. En manuell publicering utanför detta kommando omfattas inte automatiskt.
