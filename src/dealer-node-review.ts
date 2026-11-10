@@ -137,9 +137,10 @@ export function projectDealerNodeMotions(contract: DealerMotionContract, labels:
       presentation: m.binding.presentation, sourceCards: m.binding.sourceCards,
     } : null;
     const linked = byMotion.get(m.id);
+    const movesCard = m.kind === 'deal' || m.kind === 'reveal';
     const physicalEvidence = m.sideTrack?.ranges.some(r => r.method === 'marker-observation') ? file(contract.markerLegend.qa.evidence!) : m.sideTrack?.ranges.some(r => r.method === 'geometry-observation') && m.qa.evidence ? file(m.qa.evidence) : null;
     const observed = !!m.sideTrack?.ranges.some(r => ['marker-observation', 'geometry-observation'].includes(r.method) && r.side !== 'UNKNOWN') && !!physicalEvidence?.bytesVerified && !!candidate?.file.bytesVerified;
-    const physicalSideStatus: DealerNodeObservation['physicalSideStatus'] = observed ? 'SOURCE_OBSERVED' : m.sideTrack?.ranges.some(r => r.method === 'authored') ? 'AUTHORED_ONLY' : m.kind === 'deal' ? 'UNKNOWN' : 'NOT_APPLICABLE';
+    const physicalSideStatus: DealerNodeObservation['physicalSideStatus'] = observed ? 'SOURCE_OBSERVED' : m.sideTrack?.ranges.some(r => r.method === 'authored') ? 'AUTHORED_ONLY' : movesCard ? 'UNKNOWN' : 'NOT_APPLICABLE';
     const variantMissing = [
       ...(!m.variant ? ['Samma start-/slutankare och korttillstånd före/efter är inte deklarerade som utbytbar variant.'] : []),
       ...(m.qa.status !== 'approved' ? ['Rörelsens QA är inte godkänd.'] : []),
@@ -148,14 +149,15 @@ export function projectDealerNodeMotions(contract: DealerMotionContract, labels:
     const missing = [
       ...(!candidate ? ['Ingen källfilm är bunden till rörelsen.'] : !candidate.file.bytesVerified ? ['Källfilens bytes är inte verifierade.'] : []),
       ...(m.kind === 'deal' && m.releaseFrame === null ? ['Exakt släppruta saknas.'] : []),
-      ...(m.kind === 'deal' && physicalSideStatus !== 'SOURCE_OBSERVED' ? ['Fysisk kortsida är inte källobserverad.'] : []),
+      ...(movesCard && physicalSideStatus !== 'SOURCE_OBSERVED' ? ['Fysisk kortsida är inte källobserverad.'] : []),
       ...(!m.geometry ? ['Kalibrerat kortspår och handmask saknas i v2-kontraktet.'] : []),
       'Kroppsgeometri och uppmätt landningsposition/-vinkel saknas i v2-kontraktet.',
       ...(m.binding?.presentation !== 'separable-layers' ? ['Separata produktionslager är inte bundna.'] : []),
       ...(m.qa.status !== 'approved' ? ['Rörelsens QA är inte godkänd.'] : []),
     ];
     return {
-      id: m.id, label: m.label, kind: m.kind, target: targetOf(m), from: pose(m.from), to: pose(m.to), sourceFrom: m.from, sourceTo: m.to,
+      id: m.id, label: m.label, kind: m.kind, target: linked?.descriptor.contextCardPlacementId ? canonicalPlacement(contract, linked.descriptor.contextCardPlacementId) : targetOf(m),
+      from: pose(m.from), to: pose(m.to), sourceFrom: m.from, sourceTo: m.to,
       dl1: linked?.value ?? null, dl1Intent: linked ? 'REQUESTED' : null, dl1Ref: linked?.ref ?? null, requested: linked?.descriptor.projection ?? null,
       dl1UnavailableReason: linked ? null : ['idle', 'approach'].includes(m.kind) ? 'DL1 har ingen stödd handling för denna rörelsetyp. Använd motion-ID.' : 'Ingen DL1-deskriptor pekar på detta motion-ID; ingen sträng har gissats.',
       candidate, reuse: null, observation: {
@@ -221,9 +223,10 @@ export async function buildDealerNodeReview(snapshot: string): Promise<DealerNod
     const ref = m.qa.evidence;
     if (!qaDocs.has(ref.path)) qaDocs.set(ref.path, JSON.parse(await readFile(await localPath(ref.path), 'utf8')));
     const qa = qaDocs.get(ref.path)!;
-    const original = qa.original as HashRef | undefined;
+    const original = (qa.original ?? qa.source) as HashRef | undefined;
+    const scope = qa.acceptanceScope ?? qa.reviewScope;
     if (typeof qa.localMotionAccepted === 'boolean' && qa.dealerId === source.value.dealerId && original?.path === m.candidate.file.path && original.sha256 === m.candidate.file.sha256) {
-      m.observation.localMotionReview = { accepted: qa.localMotionAccepted, scope: typeof qa.acceptanceScope === 'string' ? qa.acceptanceScope : 'Lokal rörelsebedömning, inte lager- eller runtimeacceptans.', evidence: { ...ref, bytesVerified: true } };
+      m.observation.localMotionReview = { accepted: qa.localMotionAccepted, scope: typeof scope === 'string' ? scope : 'Lokal rörelsebedömning, inte lager- eller runtimeacceptans.', evidence: { ...ref, bytesVerified: true } };
     }
   }
   const requirements: DealerNodeRequirement[] = storedLabels.value.labels.map(label => {

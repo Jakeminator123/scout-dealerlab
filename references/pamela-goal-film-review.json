@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "projectId": "snyggare-dealer",
+  "dealerId": "pamela-pilot",
+  "revision": "20261110-final-film-r2",
+  "route": "/pamela-film.html",
+  "productionAccepted": false,
+  "poster": {
+    "path": "runs/20261110-pamela-goal-scene/take-09/decoded-board-842dd48296/pamela-vila-17-kort.png",
+    "sha256": "ba8e116bf90b475e3ce1fb63c14d8a0cd91b9f388f647babdcd5f7a5c332f639"
+  },
+  "films": [
+    {
+      "id": "wide",
+      "label": "Helfilm",
+      "path": "runs/20261110-pamela-goal-scene/take-09/full-candidate-3598-89d0a448-b6afbd/pamela-sammanhangande-kandidat.mp4",
+      "sha256": "842dd4829654195d559acd27ae66b74eb0a9793e2392993685557b94bc76e9e4",
+      "frames": 3598,
+      "fps": 30,
+      "width": 1764,
+      "height": 1174,
+      "finalCards": 17
+    },
+    {
+      "id": "mobile",
+      "label": "Mobilversion",
+      "path": "runs/20261110-pamela-goal-scene/take-14/842dd4829654/pamela-sammanhangande-mobil.mp4",
+      "sha256": "2233434001c3e7d957fc6eb86291b298e64e5feffe8d3e0f9dd20acf71935460",
+      "frames": 3598,
+      "fps": 30,
+      "width": 1080,
+      "height": 1920,
+      "finalCards": 17
+    },
+    {
+      "id": "fourth",
+      "label": "Med fjärde dealerkortet",
+      "path": "runs/20261110-pamela-goal-scene/take-16/branch-842dd48296-r2/pamela-sammanhangande-med-villkorad-d-c4.mp4",
+      "sha256": "8fba3a2c7e5f361956c47846e9404a9ac333962ada0c76d1590b00b58293e944",
+      "frames": 3807,
+      "fps": 30,
+      "width": 1764,
+      "height": 1174,
+      "finalCards": 18
+    }
+  ],
+  "chapters": [
+    {"label": "Början", "frame": 0},
+    {"label": "P7 · första kortet", "frame": 59},
+    {"label": "P1 · första kortet", "frame": 1254},
+    {"label": "Dealerns första", "frame": 1417},
+    {"label": "P7 · andra kortet", "frame": 1595},
+    {"label": "P1 · andra kortet", "frame": 2973},
+    {"label": "Dolt dealerkort", "frame": 3152},
+    {"label": "Vänd dealerkortet", "frame": 3296},
+    {"label": "Dealerns tredje", "frame": 3475},
+    {"label": "Dealerns fjärde", "frame": 3598, "filmId": "fourth"}
+  ]
+}

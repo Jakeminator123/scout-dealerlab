@@ -1,6 +1,6 @@
 # Namn och rörelsesträngar
 
-Norm för ny dokumentation och synliga etiketter, beslutad med Jakob och synkad med HUVUDAGENT-3 den 2026-11-10. DL1 nedan är ett granskat formatförslag för en framtida implementation. Befintliga JSON-kontrakt är sanningskälla för dagens system.
+Norm för ny dokumentation och synliga etiketter, beslutad med Jakob och synkad med HUVUDAGENT-3 den 2026-11-10. DL1 är implementerat för granskning i tools/dealer-motion-labels.ts med parser, serialisering och hashbunden ref-upplösning. V2-kontraktet äger rörelserna; genererade DL1-krav och nodvyn är projektioner. Detta är inte en aktiverad Scout-runtimeadapter.
 
 ## Ord och identiteter
 
@@ -22,7 +22,7 @@ Användarspråk som ”öppet/stängt kort” måste först preciseras till fysi
 
 ## DL1 och dess bundna underlag
 
-En DL1-sträng är en deterministisk projektion av ett strukturerat beskrivningsobjekt. Objektet innehåller projektionen och bundna referenser till källschema/revision, projekt/dealer/bank, rörelse-ID, käll- och leveranshashar, poser, board-state, QA samt eventuella sid- och handspår. Det är ett föreslaget adapterobjekt utanför dagens V2-schema.
+En DL1-sträng är en deterministisk projektion av ett strukturerat beskrivningsobjekt. Objektet innehåller projektionen och bundna referenser till källschema/revision, projekt/dealer/bank, rörelse-ID, käll- och leveranshashar, poser, board-state, QA samt eventuella sid- och handspår. Granskningsobjektet är implementerat utanför V2-schemat; det ersätter inte dess rörelse- och QA-kontrakt.
 
 Fältet `ref` identifierar objektet i ett medföljande manifest. Där binds ID:t till exakt objektsökväg och SHA-256. Samma ID får förekomma högst en gång i manifestets projektrevision. Beskrivningsobjektet anger `intent=REQUESTED|OBSERVED` och källschemats revision. Strängen måste läsas tillsammans med manifestet för att bära proveniens och mening. Exempel-ID:n nedan är hypotetiska och saknar bindning till verkliga filmer.
 
@@ -75,9 +75,9 @@ DL1|action=DEAL|target=P1.C1|hand=BOTH|from=SHOE|to=P1.C1|pickupSide=BACK|landin
 - K-aliasexempel i ett uttryckligen identifierat V2-kortmålsschema är `P1.K2` → `P1.C2`. Original-ID:t sparas i aliasposten. `P1-K2` och `C2-P1` kräver egna, identifierade äldre scheman.
 - Otillåtet exempel är `DL1|action=R|target=P1.C2|...`. R får användas som höger hand endast i handfältet. Avkortningen `...` är också ogiltig strängsyntax.
 
-Round-trip-gränsen är `parse(serialize(projection)) = projection`. Varje giltigt exempel har tio unika fält i fast ordning och ett explicit värde per fält. Om projektionen återskapas som dessa tio strängvärden och serialiseras i samma ordning blir strängen identisk. Likheten omfattar projektionen. Återläsning av hela beskrivningsobjektet kräver det hashverifierade manifestet och dess referenser. Ingen parser eller runtimekoppling har införts genom denna dokumentnorm.
+Round-trip-gränsen är `parse(serialize(projection)) = projection`. Varje giltigt exempel har tio unika fält i fast ordning och ett explicit värde per fält. Om projektionen återskapas som dessa tio strängvärden och serialiseras i samma ordning blir strängen identisk. Likheten omfattar projektionen. Återläsning av hela beskrivningsobjektet kräver det hashverifierade manifestet och dess referenser. Parser och granskningsgenerator finns i tools/dealer-motion-labels.ts; någon runtimekoppling följer inte av detta.
 
-Framtida parser och adapter ska avvisa fel version, fel ordning, saknade/extra/dubbla fält, tomma värden, fel skiftläge, whitespace, escape-sekvenser, otillåtna tecken, mål med noll eller inledande nollor, råa K-alias i kanonisk DL1, tvetydigt R/V, olika DEAL-mål/to, REVEAL med olika mål/from/to, RETURN med kortfält som saknar NOT_APPLICABLE samt RELEASE som pekar på annat kortmål. Strängsyntax och operativ validering är två steg. Operativ användning kräver dessutom en entydig ref-bindning, korrekt SHA-256, källschema, intent och de evidensspår handlingen behöver. Okända fält ska inte tyst tappas bort.
+Parser och adapter ska avvisa fel version, fel ordning, saknade/extra/dubbla fält, tomma värden, fel skiftläge, whitespace, escape-sekvenser, otillåtna tecken, mål med noll eller inledande nollor, råa K-alias i kanonisk DL1, tvetydigt R/V, olika DEAL-mål/to, REVEAL med olika mål/from/to, RETURN med kortfält som saknar NOT_APPLICABLE samt RELEASE som pekar på annat kortmål. Strängsyntax och operativ validering är två steg. Operativ användning kräver dessutom en entydig ref-bindning, korrekt SHA-256, källschema, intent och de evidensspår handlingen behöver. Okända fält ska inte tyst tappas bort.
 
 ## Alias och stegvis migration
 
@@ -85,19 +85,19 @@ Varje aliaspost behöver `sourceSchema`, `sourceRevision`, `originalId`, `canoni
 
 | Befintlig yta | Verifierat nuläge | Föreslagen senare ändring och ansvar |
 |---|---|---|
-| `references/pamela-motion-contract-v2.json` | Kortmål och motion-bindningar använder K. Kandidat, ej aktivt produktionsval. | Huvudagenten inför schemaidentifierad aliasmappning innan nya läsare accepterar C. |
+| `references/pamela-motion-contract-v2.json` | Kortmål och motion-bindningar använder K. Kandidat, ej aktivt produktionsval. | Granskningsgeneratorn projekterar identifierade V2-mål till C. Original-ID och källschema bevaras; gör ingen global K-ersättning. |
 | `src/dealer-motion-contract.ts` | Skiljer katalogfack, kortmål och spelhand. RETURN kräver null i cardPlacementId. SideTrack har fysiska sidor och metod. | Huvudagenten bedömer adapter och separata kontext-, synlighets- och handspår. Ingen dokumentregel får antas vara en redan implementerad validator. |
 | `references/pamela-card-side-review.json` | observedPhysicalSide är UNKNOWN; policyMethod är authored. | Behåll gränsen mellan observation och önskemål. Bind nytt sidbevis först efter ny QA. |
 | `references/pamela-presentation-review.json` | C är primärt i synliga etiketter; 14/17 givmål har kandidater. | Huvudagenten håller acceptans och etiketter aktuella. |
 | `docs/MASTERPLAN.md`, `docs/studio/DEALERS-OCH-PIPELINES.md` | Äldre K-exempel och historiska underlag finns kvar. | Huvudagenten länkar normen och preciserar vilka exempel som är historiska. |
 | `docs/studio/KARTA.md`, ämnesingången | Hänvisning till denna norm. | Dokumentationsansvarig underhåller ingångarna. |
-| Framtida DL1-adapter | Grammar och exempel är dokumentförslag. | Separat implementation med meningsfulla positiva/negativa parserfall och referensvalidering före användning. |
+| tools/dealer-motion-labels.ts | Parser, serialisering och hashbunden REQUESTED-projektion finns; testfilen verifierar format och referenser. | Runtimeval, observerade handspår och fulla produktionsgrindar kräver separat verifiering. |
 
 Inför normen först i ny förklarande text och etiketter. Lägg därefter ett schemaidentifierat adapterlager runt äldre data, verifiera projektion och referenser, och migrera konsumenter var för sig. Versionsbyte av kontrakt kräver egen QA och överenskommet skrivansvar.
 
 ## Aktuell bevisgräns och källor
 
-Kontrollerat 2026-11-10 mot V2-kontraktet, dess TypeScript-typer, kortsidegranskningen och presentationsgranskningen. 14/17 är kandidattäckning. D.C1–D.C3 saknar valda filmer. Ursprungliga P1-returers preliminära godkännande är återtaget. Vid synken rapporterade huvudagenten att canonical C1 take01 nådde VILA men underkändes för återkontakt med kortet; f210-underlag förbereds och C2 är osänt. Det senare är huvudagentens statusrapport och behöver återverifieras inför filmval. Produktionsacceptans är fortfarande false i det kontrollerade presentationsmanifestet.
+Aktuella filmval och acceptans läses från references/pamela-motion-contract-v2.json, references/pamela-physical-deal-review.json och masterplanen. Den äldre kortsidegranskningens authored-policy gäller endast dess egna källor. Nyare fysisk P1-film får inte ärva äldre status, geometri eller masker. Löpande jobbstatus hör inte hemma i namnnormen. Granskningssträngar är fortsatt REQUESTED tills motsvarande observationer och QA binds uttryckligen.
 
 Kevin/Emil-proveniens hålls separat. `kevin` och `kevin-staging` betecknar Git-grenar i `Jakeminator123/scoutgaming`, medan `kevin/croupier-scoutgg/` är en paketväg i en gren. Dokumentera gren, paket, fryst revision och dealerbank var för sig. Emils omnämnande i README belägger inte varje MP4:s ursprung. Saknad proveniens anges som okänd.
 

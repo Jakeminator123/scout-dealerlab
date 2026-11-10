@@ -55,6 +55,16 @@ export function createLabServer(root: string, options: { shutdownToken?: string;
       const url = new URL(req.url ?? '/', origin);
       if (await maudLab.handle(req, res, url)) return;
       if (req.method === 'GET' && url.pathname === '/api/session') { lifecycle.connect(res); return; }
+      if (req.method === 'GET' && ['/pamela-bord', '/pamela-bord-runtime.js'].includes(url.pathname)) {
+        const artifact = 'runs/20261110-pamela-bordskalibrering/take-04';
+        if (url.pathname.endsWith('.js')) return respond(res, 200, await readFile(path.join(root, artifact, 'build/table.js'), 'utf8'), 'text/javascript; charset=utf-8');
+        const document = (await readFile(path.join(root, artifact, 'index.html'), 'utf8'))
+          .replace('src="build/table.js"', 'src="/pamela-bord-runtime.js"')
+          .replace('href="binding.json"', `href="/files/${artifact}/binding.json"`)
+          .replace('href="assets-v2/media.json"', `href="/files/${artifact}/assets-v2/media.json"`)
+          .replace('href="README.txt"', `href="/files/${artifact}/README.txt"`);
+        return respond(res, 200, document);
+      }
       if (req.method === 'GET' && url.pathname === '/api/lifecycle') return respond(res, 200, JSON.stringify(lifecycle.status()), 'application/json');
       if (req.method === 'GET' && url.pathname === '/agent-context.json') return respond(res, 200, JSON.stringify({ ...await reviewContext(root), page: url.searchParams.get('page') || 'studio' }), 'application/json; charset=utf-8');
       if (req.method === 'GET' && url.pathname === '/llms.txt') return respond(res, 200, llmOverview(await reviewContext(root)), 'text/plain; charset=utf-8');

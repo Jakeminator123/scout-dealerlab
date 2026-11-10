@@ -32,7 +32,7 @@ export type MotionVariant = {
   };
 };
 export type Motion = {
-  id: string; label: string; kind: 'idle' | 'approach' | 'deal' | 'return'; from: Pose; to: Pose;
+  id: string; label: string; kind: 'idle' | 'approach' | 'deal' | 'return' | 'reveal'; from: Pose; to: Pose;
   clipSlotId: string;
   legacyV1: { clipId: string; slotId: string | null } | null;
   cardPlacementId: string | null; returnMode: ReturnMode; binding: Binding | null; qa: Qa;
@@ -73,6 +73,13 @@ export type DealEvent = { eventId: string; card: BoardCard };
  * Resolving a front never grants permission to reveal it; only the engine does.
  */
 export type CardFrontResolution = { cardId: string; materialId: string; qa: Qa };
+type RevealSignal = { eventId: string; instanceId: string; cardId: string | null; frontAllowed: boolean };
+/** The caller supplies the committed engine reveal for this round and draw. */
+export type RevealEvent = RevealSignal & {
+  type: 'reveal'; to: 'dealer'; roundId: string; shoeDraw: number;
+  cardId: string; frontAllowed: true; front?: CardFrontResolution;
+};
+type MotionEvent = DealEvent | RevealEvent;
 
 const hash = (v: unknown): v is string => typeof v === 'string' && /^[a-f0-9]{64}$/.test(v);
 const text = (v: unknown): v is string => typeof v === 'string' && v.trim().length > 0;
@@ -110,11 +117,19 @@ function pathErrors(m: Motion): string[] {
   const first = p.points[0], last = p.points.at(-1)!;
   if (first.frame !== b.startFrame || last.frame !== b.endFrameExclusive - 1 || !samePose(first.pose, m.from) || !samePose(last.pose, m.to)) e.push('Film path endpoints differ from motion');
   if (m.kind === 'deal' && m.releaseFrame !== null && !p.points.some(x => x.frame === m.releaseFrame && x.pose.kind === 'ACTION_BOUNDARY')) e.push('Release requires an explicit action boundary');
+  if (m.kind === 'reveal' && p.points.some(x => x.pose.kind === 'REDO')) e.push('Reveal film cannot visit REDO');
   const after = p.points.filter(x => x.frame >= (m.kind === 'deal' ? m.releaseFrame ?? Infinity : b.startFrame));
   if (m.returnMode === 'direct' && (!after.length || after.some(x => x.pose.kind === 'REDO'))) e.push('Direct return contains REDO or lacks release path');
   if (m.returnMode === 'via-redo' && !after.some(x => x.pose.kind === 'REDO')) e.push('Via-REDO return lacks REDO evidence');
   if (m.qa.status === 'approved' && p.qa.status !== 'approved') e.push('Film path QA not approved');
   return e;
+}
+
+function hasObservedRevealTurn(track: SideTrack | null): boolean {
+  const visible = track?.ranges.filter(range => range.side !== 'UNKNOWN');
+  if (!visible?.length || visible.some(range => range.method !== 'marker-observation' && range.method !== 'geometry-observation')) return false;
+  const phases = visible.map(range => range.side).filter((side, index, sides) => index === 0 || sides[index - 1] !== side);
+  return phases.length === 3 && phases[0] === 'BACK' && phases[1] === 'EDGE' && phases[2] === 'FRONT';
 }
 
 const sameSlots = (a: string[], b: string[]) => JSON.stringify([...a].sort()) === JSON.stringify([...b].sort());
@@ -169,17 +184,20 @@ export function validateDealerMotionContract(value: unknown): string[] {
     const legend = c.markerLegend;
     if (!text(legend.id) || legend.front !== 'blue' || legend.back !== 'yellow' || !['proposed', 'source-verified'].includes(legend.status) || !validQa(legend.qa) || !Array.isArray(legend.sourceHashes) || legend.sourceHashes.some(x => !hash(x) || !c.assets.some(a => a.sha256 === x)) || legend.status === 'source-verified' && (!legend.sourceHashes.length || legend.qa.status !== 'approved')) errors.push('Invalid marker legend/source evidence');
     for (const m of c.motions) {
-      if (!text(m.label) || !text(m.clipSlotId) || !pose(m.from) || !pose(m.to) || !['idle', 'approach', 'deal', 'return'].includes(m.kind) || !['none', 'direct', 'via-redo', 'to-redo'].includes(m.returnMode) || !validQa(m.qa)) errors.push(`Invalid motion: ${m.id}`);
+      if (!text(m.label) || !text(m.clipSlotId) || !pose(m.from) || !pose(m.to) || !['idle', 'approach', 'deal', 'return', 'reveal'].includes(m.kind) || !['none', 'direct', 'via-redo', 'to-redo'].includes(m.returnMode) || !validQa(m.qa)) errors.push(`Invalid motion: ${m.id}`);
       if (m.legacyV1 !== null && (!text(m.legacyV1.clipId) || m.legacyV1.slotId !== null && !text(m.legacyV1.slotId))) errors.push(`Invalid v1 crosswalk: ${m.id}`);
-      if (m.kind === 'deal' ? !c.cardPlacements.some(s => s.id === m.cardPlacementId) : m.cardPlacementId !== null) errors.push(`Invalid motion slot: ${m.id}`);
+      const movesCard = m.kind === 'deal' || m.kind === 'reveal';
+      const slot = c.cardPlacements.find(s => s.id === m.cardPlacementId);
+      if (movesCard ? !slot : m.cardPlacementId !== null) errors.push(`Invalid motion slot: ${m.id}`);
       if (m.kind === 'idle' && (!samePose(m.from, m.to) || m.from.kind !== 'VILA') || m.kind === 'approach' && (m.from.kind !== 'VILA' || m.to.kind !== 'REDO') || !['deal', 'return'].includes(m.kind) && m.returnMode !== 'none') errors.push(`Invalid motion route: ${m.id}`);
+      if (m.kind === 'reveal' && (m.from.kind !== 'VILA' || m.to.kind !== 'VILA' || m.cardPlacementId !== 'D.K2' || slot?.recipientId !== 'D' || slot?.cardOrdinal !== 2 || m.clipSlotId !== 'reveal.dealer/dealer-hole')) errors.push(`Reveal must turn the dealer hole card in place and return to VILA: ${m.id}`);
       const b = m.binding, a = b && c.assets.find(a => a.id === b.assetId);
       if (b && (!a || a.kind !== 'video' || a.sha256 !== b.sha256 || !integer(b.startFrame) || !integer(b.endFrameExclusive) || b.endFrameExclusive <= b.startFrame || b.endFrameExclusive > a.frames || !['raw-reference', 'separable-layers'].includes(b.presentation) || !['unresolved', 'separated'].includes(b.sourceCards))) errors.push(`Invalid hash/frame binding: ${m.id}`);
       if (m.releaseFrame !== null && (!b || m.kind !== 'deal' || !integer(m.releaseFrame) || m.releaseFrame < b.startFrame || m.releaseFrame >= b.endFrameExclusive)) errors.push(`Invalid release cue: ${m.id}`);
       if (m.qa.status === 'approved' && (!b || b.presentation !== 'separable-layers' || b.sourceCards !== 'separated' || m.kind === 'deal' && m.releaseFrame === null)) errors.push(`Unsafe approved motion: ${m.id}`);
       const g = m.geometry;
       if (g && (!b || g.sourceSha256 !== b.sha256 || !text(g.spaceId) || !ref(g.cardTrack) || !ref(g.handMask))) errors.push(`Invalid geometry binding: ${m.id}`);
-      if (m.qa.status === 'approved' && m.kind === 'deal' && !g) errors.push(`Missing approved geometry: ${m.id}`);
+      if (m.qa.status === 'approved' && movesCard && !g) errors.push(`Missing approved geometry: ${m.id}`);
       const t = m.sideTrack;
       if (t) {
         if (!b || t.sourceSha256 !== b.sha256 || t.markerLegendId !== null && t.markerLegendId !== legend.id) errors.push(`Invalid side-track hash/legend: ${m.id}`);
@@ -191,7 +209,8 @@ export function validateDealerMotionContract(value: unknown): string[] {
         }
         if (!t.ranges.length || frame !== b?.endFrameExclusive) errors.push(`Incomplete side-track: ${m.id}`);
       }
-      if (b && m.kind === 'deal' && !t) errors.push(`Missing side-track: ${m.id}`);
+      if (b && movesCard && !t) errors.push(`Missing side-track: ${m.id}`);
+      if (m.kind === 'reveal' && m.qa.status === 'approved' && !hasObservedRevealTurn(t)) errors.push(`Reveal requires an observed BACK→EDGE→FRONT turn: ${m.id}`);
       errors.push(...pathErrors(m).map(e => `${e}: ${m.id}`));
       errors.push(...variantErrors(c, m).map(e => `${e}: ${m.id}`));
     }
@@ -220,7 +239,8 @@ function blockers(m: Motion): string[] {
   else if (m.binding.presentation !== 'separable-layers' || m.binding.sourceCards !== 'separated') e.push('source-cards-not-separated');
   if (m.qa.status !== 'approved') e.push(`qa-${m.qa.status}`);
   if (m.filmPath?.qa.status !== 'approved') e.push('film-path-not-approved');
-  if (m.kind === 'deal' && !m.geometry) e.push('missing-geometry');
+  if ((m.kind === 'deal' || m.kind === 'reveal') && !m.geometry) e.push('missing-geometry');
+  if (m.kind === 'reveal' && !hasObservedRevealTurn(m.sideTrack)) e.push('missing-observed-reveal-turn');
   return e;
 }
 
@@ -280,32 +300,54 @@ export function initialDealerMotionState(c: DealerMotionContract, anchorId: stri
   if (!a || !end || !text(roundId) || e.length) throw Error(['Invalid initial state', ...e].join('; '));
   return freeze({ projectId: c.projectId, dealerId: c.dealerId, bankId: c.bankId, contractRevision: c.revision, roundId, pose: structuredClone(a.pose), boundary: end.boundary, board: structuredClone(board), consumedEventIds: [] });
 }
-export function checkDealerMotionTransition(c: DealerMotionContract, s: DealerMotionState, motionId: string, event?: DealEvent): string[] {
-  const e = validateDealerMotionContract(c); if (e.length) return e;
-  e.push(...stateErrors(c, s)); if (e.length) return e;
-  const m = c.motions.find(m => m.id === motionId);
-  if (!m) return [...e, 'Unknown motion'];
-  e.push(...blockers(m)); if (!samePose(s.pose, m.from)) e.push('Pose mismatch');
-  if (m.variant?.cardsBefore.some(id => !s.board.some(card => card.cardPlacementId === id))) e.push('Variant card precondition not satisfied');
-  const next = endpoint(c, motionId, 'start');
-  if (!next || !c.edgeGates.some(g => g.qa.status === 'approved' && sameBoundary(g.from, s.boundary) && sameBoundary(g.to, next.boundary))) e.push('Endpoint compatibility gate not approved');
-  if (m.kind === 'deal') {
-    if (!event || !text(event.eventId) || !event.card || event.card.cardPlacementId !== m.cardPlacementId) e.push('Matching engine deal event required');
-    else {
-      if (s.consumedEventIds.includes(event.eventId)) e.push('Engine event already consumed');
-      e.push(...boardErrors(c, [...s.board, event.card]));
-    }
-  } else if (event) e.push('Only a deal motion may add a card');
-  return e;
+function isRevealEvent(event: MotionEvent | undefined): event is RevealEvent {
+  return !!event && typeof event === 'object' && 'type' in event && event.type === 'reveal';
 }
-export function applyDealerMotionTransition(c: DealerMotionContract, s: DealerMotionState, motionId: string, event?: DealEvent): DealerMotionState {
-  const e = checkDealerMotionTransition(c, s, motionId, event); if (e.length) throw Error(e.join('; '));
+
+function inspectDealerMotionTransition(c: DealerMotionContract, s: DealerMotionState, motionId: string, event?: MotionEvent): { errors: string[]; revealed?: DealerMotionState } {
+  const errors = validateDealerMotionContract(c); if (errors.length) return { errors };
+  errors.push(...stateErrors(c, s)); if (errors.length) return { errors };
+  const m = c.motions.find(m => m.id === motionId);
+  if (!m) return { errors: ['Unknown motion'] };
+  errors.push(...blockers(m)); if (!samePose(s.pose, m.from)) errors.push('Pose mismatch');
+  if (m.variant?.cardsBefore.some(id => !s.board.some(card => card.cardPlacementId === id))) errors.push('Variant card precondition not satisfied');
+  const next = endpoint(c, motionId, 'start');
+  if (!next || !c.edgeGates.some(g => g.qa.status === 'approved' && sameBoundary(g.from, s.boundary) && sameBoundary(g.to, next.boundary))) errors.push('Endpoint compatibility gate not approved');
+  if (m.kind === 'deal') {
+    if (!event || isRevealEvent(event) || !text(event.eventId) || !event.card || event.card.cardPlacementId !== m.cardPlacementId) errors.push('Matching engine deal event required');
+    else {
+      if (s.consumedEventIds.includes(event.eventId)) errors.push('Engine event already consumed');
+      errors.push(...boardErrors(c, [...s.board, event.card]));
+    }
+  } else if (m.kind === 'reveal') {
+    if (!isRevealEvent(event) || event.to !== 'dealer' || event.roundId !== s.roundId || event.frontAllowed !== true || !text(event.cardId) || 'card' in event) {
+      errors.push('Matching committed engine reveal event required');
+    } else {
+      const card = s.board.find(card => card.instanceId === event.instanceId);
+      if (!card || card.cardPlacementId !== m.cardPlacementId || card.shoeDraw !== event.shoeDraw || card.engine.frontAllowed) errors.push('Reveal requires the same hidden dealer card and shoe draw');
+      if (!errors.length) {
+        try { return { errors, revealed: applyDealerReveal(c, s, event, event.front) }; }
+        catch (error) { errors.push(error instanceof Error ? error.message : 'Invalid engine reveal'); }
+      }
+    }
+  } else if (event) errors.push(isRevealEvent(event) ? 'Engine reveal event requires a reveal motion' : 'Only a deal motion may add a card');
+  return { errors };
+}
+
+export function checkDealerMotionTransition(c: DealerMotionContract, s: DealerMotionState, motionId: string, event?: MotionEvent): string[] {
+  return inspectDealerMotionTransition(c, s, motionId, event).errors;
+}
+
+export function applyDealerMotionTransition(c: DealerMotionContract, s: DealerMotionState, motionId: string, event?: MotionEvent): DealerMotionState {
+  const { errors, revealed } = inspectDealerMotionTransition(c, s, motionId, event); if (errors.length) throw Error(errors.join('; '));
   const m = c.motions.find(m => m.id === motionId)!, next = endpoint(c, motionId, 'end')!;
-  return freeze({ ...structuredClone(s), pose: structuredClone(m.to), boundary: next.boundary, board: structuredClone(event ? [...s.board, event.card] : [...s.board]), consumedEventIds: event ? [...s.consumedEventIds, event.eventId] : [...s.consumedEventIds] });
+  if (revealed) return freeze({ ...revealed, pose: structuredClone(m.to), boundary: next.boundary });
+  const deal = isRevealEvent(event) ? undefined : event;
+  return freeze({ ...structuredClone(s), pose: structuredClone(m.to), boundary: next.boundary, board: structuredClone(deal ? [...s.board, deal.card] : [...s.board]), consumedEventIds: deal ? [...s.consumedEventIds, deal.eventId] : [...s.consumedEventIds] });
 }
 
 /** Engine visibility changes are separate from the film's physical side. */
-export function applyDealerReveal(c: DealerMotionContract, s: DealerMotionState, signal: { eventId: string; instanceId: string; cardId: string | null; frontAllowed: boolean }, front?: CardFrontResolution): DealerMotionState {
+export function applyDealerReveal(c: DealerMotionContract, s: DealerMotionState, signal: RevealSignal, front?: CardFrontResolution): DealerMotionState {
   assertContract(c); const e = stateErrors(c, s), card = s.board.find(x => x.instanceId === signal.instanceId);
   if (!text(signal.eventId) || s.consumedEventIds.includes(signal.eventId) || !card) e.push('Unknown card or consumed reveal event');
   if (card?.engine.cardId && signal.cardId !== card.engine.cardId) e.push('Reveal cannot replace card identity');
