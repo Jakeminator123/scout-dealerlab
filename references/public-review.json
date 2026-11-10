@@ -102,10 +102,10 @@
                      "productionAccepted":  false
                  },
     "publicUrl":  "https://scout-dealerlab.vercel.app",
-    "deploymentId":  "dpl_3H4F5mwKbF6FTktx5xXRLzjadYMz",
-    "verifiedAt":  "2026-11-10T05:09:11.3823750Z",
-    "contentId":  "cf6b9a65288fad548e79064f5fbe9048d5235bc1bedfd5e57998e3d2c21494ad",
-    "snapshot":  "review-hub-20261110050427598",
-    "currentExport":  "exports/review-hub-20261110050427598",
+    "deploymentId":  "dpl_DJvUUMHjf1Dk41Ki7k1Y34mVCPgo",
+    "verifiedAt":  "2026-11-10T06:22:00.8148667Z",
+    "contentId":  "9b211c25c48063256ddc029fb1a07c6821ba6443d2324f7fa04c0cd4e6a70cab",
+    "snapshot":  "review-hub-20261110053953764",
+    "currentExport":  "exports/review-hub-20261110053953764",
     "reviewUrl":  "https://scout-dealerlab.vercel.app/granskning.html"
 }
