@@ -18,3 +18,19 @@ test('only the inspected negative-test credential fixture is permitted',()=>{
   assert.throws(()=>assertPublicText(fake,[],'src/a.ts'));
   assert.throws(()=>assertPublicText(fake.replace(':pass@',':actual-secret@'),[],'test/server.test.ts'));
 });
+test('desktop map public selection is exact and excludes environments and local drafts',()=>{
+  for(const file of [
+    'tools/dealer-map/dealer_map.py','tools/dealer-map/dealer_map_data.py',
+    'tools/dealer-map/STARTA-KARTA.cmd','tools/dealer-map/INSTALLERA.cmd',
+    'tools/dealer-map/.gitignore','tools/dealer-map/data/dealer-map.json',
+    'tools/dealer-map/web/index.html','tools/dealer-map/publishing/check_web_export.py',
+    '.github/workflows/dealer-map-pages.yml',
+  ])assert.equal(allowedPublicPath(file),true,file);
+  for(const file of [
+    'tools/dealer-map/.venv/Lib/site-packages/package.py',
+    'tools/dealer-map/.venv/pyvenv.cfg','tools/dealer-map/.venv/settings.json',
+    'tools/dealer-map/__pycache__/dealer_map.pyc','tools/dealer-map/local-draft.json',
+    'tools/dealer-map/private/data.json','tools/dealer-map/new_unreviewed_tool.py',
+    '.github/workflows/unreviewed.yml',
+  ])assert.equal(allowedPublicPath(file),false,file);
+});

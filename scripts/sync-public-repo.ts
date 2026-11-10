@@ -9,11 +9,23 @@ import {pathToFileURL} from 'node:url';
 
 const root=path.resolve(import.meta.dirname,'..');
 const hash=(b:Buffer|string)=>createHash('sha256').update(b).digest('hex');
+// Reviewed desktop viewer/exporter only. A local .venv, cache or new file must
+// never become public merely because its extension is Python or JSON.
+const dealerMapPublicPaths=new Set([
+  '.gitignore','README.md','README-PUBLICERING.md','README_web.md','requirements.txt',
+  'INSTALLERA.cmd','STARTA-KARTA.cmd','build_standalone.py',
+  'dealer_map.py','dealer_map_data.py','dealer_map_io.py','dealer_map_desktop.py','dealer_map_sequence.py',
+  'test_dealer_map_data.py','test_dealer_map_io.py','test_dealer_map_sequence.py',
+  'data/dealer-map.json','web/index.html',
+  'publishing/check_web_export.py','publishing/dealer-map-pages.yml',
+].map(file=>'tools/dealer-map/'+file));
 export function allowedPublicPath(file:string):boolean {
   if(!file||file.includes('\\')||/[\x00-\x1f]/.test(file)||file.split('/').some(p=>p==='..'))return false;
   if(/(?:^|\/)(?:node_modules|private|\.git|\.env[^/]*|\.runtime|\.history)(?:\/|$)/i.test(file))return file==='.env.example';
   if(/(?:ATKOMST|INTEGRATION|RUNPOD|provider-accounts|agent-roles|maud-blob-inventory|maud-pamela-reuse-audit|wallet|credential|account)/i.test(file))return false;
   if(/^docs\/(?:roller\/|STATUS\.md|ARBETSSATT\.md)|^tools\/maud-|^references\/storage-archives\.json$/.test(file))return false;
+  if(file.startsWith('tools/dealer-map/'))return dealerMapPublicPaths.has(file);
+  if(file==='.github/workflows/dealer-map-pages.yml')return true;
   return /^(?:app|src|tools|scripts|test|templates|references|builds|docs)\/[\w./ -]+\.(?:ts|tsx|js|json|md|txt|ps1|css|html)$/.test(file)||/^(?:package(?:-lock)?\.json|tsconfig\.json|next\.config\.ts|next-env\.d\.ts|\.gitignore|\.env\.example|(?:START|STOPP|STATUS|UPPDATERA-GRANSKNING|EXPORTERA-GPT)\.cmd)$/.test(file);
 }
 export function assertPublicText(text:string,secrets:string[],file:string){
