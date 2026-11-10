@@ -22,7 +22,7 @@ const oldSite=baseline+'/.vercel/output/static';
 const originalManifest=await readFile(oldSite+'/granskning/manifest.json','utf8');
 assert.equal(hash(originalManifest),target.contentId,'Published baseline manifest changed locally');
 const env=parseEnv(await readFile('.env.local','utf8'));
-const secrets=Object.entries(env).flatMap(([key,value])=>/KEY|TOKEN|SECRET|PASSWORD|CREDENTIAL|^(?:PW|UN)$/i.test(key)&&value.length>=8?[value]:[]);
+const secrets=Object.entries(env).flatMap(([key,value])=>/KEY|TOKEN|SECRET|PASSWORD|CREDENTIAL|^(?:PW|UN)$/i.test(key)&&typeof value==='string'&&value.length>=8?[value]:[]);
 function guard(text:string){assert.ok(!privateReviewJsonField(text),'Private operational JSON field');assert.ok(!secrets.some(value=>text.includes(value)),'Private value in publication');assert.ok(!/\bsk-(?:proj-|live-)?[A-Za-z0-9_-]{28,}|\bgh[pousr]_[A-Za-z0-9]{25,}/.test(text),'Credential pattern');}
 const now=new Date(),id='review-hub-'+now.toISOString().replace(/\D/g,''),directory='exports/'+id,site=directory+'/.vercel/output/static';
 let totalStaticFiles=0;
